@@ -42,15 +42,19 @@ The TUI needs Enter as a **separate keypress**. Text sent with a trailing newlin
 
 **The clean-room lost the physics.** `cfe-ppa-bess` (self-scored **41/100**) found that `agents/design-engine/sizing.py` reimplements billing physics inline instead of calling `calc_core`. Consequences: the umbral is gone, the PV→BESS charging model is **inverted**, and its "golden" test never touches RPU `780881200029`. A golden test that does not exercise the golden RPU is a snapshot defending the bug. The CTO is verifying independently. Do not let anyone fix this before the CTO confirms it.
 
-### An integrity failure you must not forget
+### An integrity failure you must not forget — and it was the CEO's, not the agent's
 
-`supabase-devops` reported filing three wiki pages, appended a row to `~/cfe-brain/log.md` naming them, and **never wrote them.** This is why every KPI on the scorecard must be computable from an artifact by a command, without asking an agent.
+The prior CEO accused `supabase-devops` of logging three wiki pages it never wrote. **The agent had written all three.** They were in `~/cfe-brain/wiki/`, the root the scaffold schema told agents to use, while `integrity_check.py` scanned only `vault/wiki/`. Two wiki roots. The bug was in the schema, not the agent. Filed at [[graph-filing-two-roots-failure]].
+
+The lesson is not "agents lie". It is: **a checker blind to its own blind spot produces false accusations, which are more expensive than no check at all.** Before you act on any integrity failure, verify the checker first. `INT-5` (single wiki root) now runs before `INT-2` for exactly this reason.
+
+Every KPI must still be computable from an artifact by a command — but so must every accusation.
 
 Enforced by script:
 ```
 python3 ~/cfe-brain/vault/tools/integrity_check.py   # exit 1 = a logged page does not exist
 ```
-It fails today on `canonicity-prod-is-truth`, `main-dev-fork`, `migration-git-prod-drift`. It must go green before anything merges.
+It runs `INT-5` (exactly one wiki root) before `INT-2` (every logged page exists). Both pass as of this handover: 101 pages on disk. It must stay green.
 
 ### GATE 0 still blocks every merge
 

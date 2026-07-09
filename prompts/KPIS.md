@@ -6,7 +6,11 @@ Jesus is the board. The CEO reports. The CTO verifies. Agents do not score thems
 
 **Every KPI must be computable from an artifact, by a command, without asking an agent.**
 
-On 2026-07-09 `supabase-devops` reported filing three wiki pages, appended a row to `log.md` naming them, and the pages did not exist. Any metric derived from an agent's own account of its work is unverifiable. A KPI an agent can satisfy by *claiming* to satisfy it manufactures false confidence, which is worse than having no KPI.
+On 2026-07-09 the CEO accused `supabase-devops` of logging three wiki pages it never wrote. The agent had written all three — into the wiki root the scaffold schema named, while the checker scanned a different root. **The check was wrong, not the agent.**
+
+Two lessons, and the second is sharper. A metric derived from an agent's own account of its work is unverifiable. *And* a check blind to its own blind spot manufactures false accusations, which cost more than no check at all — they burn trust in the one direction you cannot rebuild.
+
+Verify the checker before acting on what it reports. `INT-5` runs before `INT-2` for this reason.
 
 If a proposed KPI has no `ls`, `git log`, `grep`, `pytest`, or SQL query behind it, it is not a KPI. It is a hope. Do not put it on the scorecard.
 
@@ -19,7 +23,8 @@ These are not performance metrics. They are trust metrics. A failure here invali
 | KPI | Definition | Measured by | Target |
 |---|---|---|---|
 | `INT-1` Claim–artifact match | Of all artifacts an agent reports creating, the share that exist on disk | `ls` every claimed path from the agent's report | **100%.** Anything below is a P0. |
-| `INT-2` Log truthfulness | Rows in `vault/log.md` whose named pages exist | script over `log.md` vs `wiki/` | **100%** |
+| `INT-2` Log truthfulness | Rows in `vault/wiki/log.md` whose named pages exist | `integrity_check.py` | **100%** |
+| `INT-5` Single wiki root | Exactly one `wiki/`, at `vault/wiki/` | `integrity_check.py` (runs before INT-2) | **1 root** |
 | `INT-3` Evidence density | Normative requirements (`NRM-xx`) carrying a verification method | grep the specs | **100%** |
 | `INT-4` Part B independence | Normative requirements sourced from outside the implementation | CTO review, written verdict | **100%** |
 

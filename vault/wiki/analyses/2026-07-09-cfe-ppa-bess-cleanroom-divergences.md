@@ -17,9 +17,12 @@ engine-enforced price floor actually be built?
 
 ## Answer
 
-### Two parallel stacks — only one is golden
-- **Vault pricing stack** `ppa_pricer.price()` → `calc_core.compute()` → `optimize_sizing.propose()`: golden-anchored, internally consistent, has a `/cotizador` webapp + `/api/ppa`. **This is what the charter says to wrap.**
-- **Clean-room** `design-engine/sizing.py` + `finance.py`: reimplements the billing physics inline, **never calls `calc_core`/`ppa_pricer`**, and is tested only against itself. Diverges (below).
+### Three engines — only one is golden
+- **Vault pricing stack** `ppa_pricer.price()` → `calc_core.compute()` → `optimize_sizing.propose()`: golden-anchored, umbral ✓, all-equity (no DSCR), has a `/cotizador` webapp + `/api/ppa`. **This is what the charter says to wrap.**
+- **Clean-room** `design-engine/sizing.py` + `finance.py`: reimplements billing physics inline, **never calls `calc_core`/`ppa_pricer`**, no umbral, no DSCR, tested only against itself. Diverges (below).
+- **Underwriting model** `crm-web/lib/finance.ts`: full **levered** project finance — LCOE, project/equity/after-tax IRR, and a **DSCR credit gate** (`gateDecision` APPROVE/REFER/DECLINE, `finance.ts:241-262`). Its revenue physics is also flat (no umbral, `finance.ts:294-307`) and **un-reconciled** to `calc_core`.
+
+Three engines model the same deal with three different revenue bases, none reconciled to each other.
 
 ### P0 divergences (clean-room vs golden engine)
 1. **Umbral lost.** `sizing.py:143-149` charges flat `kw_punta × demand_charge` — no `kWh_red/(d×0.57×24)`, no `max(kW B,I,P)`. `calc_core:87,178` applies both. Violates [[demanda-facturable]]. Any clean-room savings number fails to reconcile to golden when the umbral binds.
@@ -38,8 +41,11 @@ engine-enforced price floor actually be built?
 
 ### The floor — DECISION (Jesus, 2026-07-09): IRR-only
 The pricing engine computes **financier IRR** but has **no DSCR** — it models an all-equity financier
-(`ppa_pricer.deal_flows`, no debt tranche). DSCR exists only in `crm-web/lib/finance.ts`, unreconciled
-to the engine. **Decision: the salesman floor enforces the IRR floor only.** Floor price =
+(`ppa_pricer.deal_flows`, no debt tranche). DSCR is **not missing from the org** — it lives in the
+levered underwriting model `crm-web/lib/finance.ts` (`gateDecision`, `target_dscr`), but that engine
+is un-reconciled to the golden pricing path and uses its own non-umbral revenue. Enforcing IRR (from
+`ppa_pricer`) and DSCR (from `finance.ts`) as one floor would join two engines that disagree on the
+underlying cashflow. **Decision: the salesman floor enforces the IRR floor only.** Floor price =
 `solve_ppa_rate(target_irr)` (the lowest PPA $/kWh meeting target financier IRR); below it the UI
 refuses by recomputing `financier_irr` at the rep's price. DSCR is deferred as a scoped follow-on;
 re-opens only if deals are levered at point of sale. Rejected alternative: build/reconcile a DSCR
