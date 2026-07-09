@@ -1,0 +1,200 @@
+a81c43c feat(crm): ongoing risk-based transaction monitoring (perfil + operaciones relevantes + fraccionamiento)
+1681d4e feat(crm): RAROC pricing-adequacy + concentration hard gate on the it-27 sanction
+6d399f5 test(crm): make UC11 assert the KYB row specifically (robust to other pending approvals)
+8c6536f feat(crm): unified notification + approval inbox (the bell)
+03b8e17 feat(crm): full deal-detail page + ToDo subtasks + sidebar logo alignment
+b524078 crm(auth): admin-provisioned login gate + link-only provisioning (enables magic link)
+3e0b5a5 cfe-collector: emit importes with canonical snake_case keys (design-engine contract)
+9bb9615 cfe-collector: extract TOU base/intermedia/punta split (was zeroing all BESS sizing)
+254eec8 cfe-collector: populate cp / division_code / demanda_contratada / fp (were 100% NULL)
+6764997 cfe-collector: near-cap Consulta-only with enough months fires design (stop 13h starvation)
+ccb0484 cfe-collector: page invalid-RPU terminals for human verify (don't silently drop leads)
+c9f71bf cfe-collector: treat CFE 'numero no se encuentra disponible' as terminal invalid-RPU
+fac3ee7 cfe-collector: fall back to FECHASTA for period when OCR_AAAAMM is absent
+85ded13 cfe-collector: stop silently losing 'stored 0' clients + stop reclaim thrashing the shared account
+563d57d test(crm): satisfy sanctions_entry NOT NULL (alt_name) in UC10 fixture
+06ad06d test(crm): fix UC10 sanctions_entry insert (id is bigint serial, not uuid)
+1b9acdb test(crm): fix latent syntax error in crm_project get_deal_project
+95cf78c test(crm): capture 'compliance' user_role enum value as a migration
+8ef413f test(crm): define role helpers early to fix cold-build migration order
+8718573 test(crm): de-duplicate migration version prefixes for supabase test db
+46b71c0 test(crm): add external-boundary stubs so DB tests build from scratch
+3de78dd cfe-collector: distinguish bad-download (WAF/HTML/empty) from parser-gap quarantine
+4451980 test(crm): pgTAP DB regression suite + synthetic use cases + CI job
+5a465d6 cfe-collector: period_days grounding, TZ stealth, store-vs-parse split, grid drift, media 4xx dead-letter
+24dbda4 feat(crm): AML program-governance / three-lines-of-defense + training-gated clearance
+673033a crm(whatsapp): conversational lead enrichment — ask name+email, parse reply via OpenRouter
+ff6d81d feat(crm): embedded AI copilot — grounded RAG + governed human-approved drafts
+447e9c2 harden extraction (committee round 23: 71, mean 81.5, top lens 88 -> close highs)
+e1b752e feat(crm): problem-loan workout lifecycle — IFRS9 forbearance/modification + recovery + realized-LGD calibration
+642778e crm: repo migrations for user roles/ownership RLS, admin user mgmt, whatsapp owner-by-line
+6874d48 feat(crm): sales quota/target + attainment-pacing layer
+e69ab7d harden extraction (committee round 22: 75, mean 82.25 -> close critical + highs)
+7ec68de feat(crm): post-COD performance-guarantee reconciliation + DLP clock
+c6173ab harden extraction (committee round 21: 72, mean 81 -> close critical + highs)
+1a05f98 feat(crm): banking-case freeze + LLCR/PLCR forward-coverage; move nav to a left sidebar
+5314814 harden extraction (committee round 20: 77, mean 82.5 -> close critical + highs)
+1c5c3aa feat(crm): Company/Account 360 — exposure rollup + relationship graph + maker-checker merge
+a13a659 feat(crm): self-serve dashboards + custom report builder
+3a60d27 harden extraction (committee round 19: 75, no critical -> close 5 highs)
+ae4667b feat(crm): suspicious-operation (Operación Inusual) detection + case mgmt + ROI
+37e32dc harden extraction (committee round 18: 70, reviewers 80-82 -> close critical + highs)
+c3a8c8e feat(crm): spreadsheet grid + inline edit + bulk actions + Cmd-K command palette
+e8564ed feat(crm): SPPLD Aviso artifact pipeline + immutable screening-list provenance
+4a0bac9 harden extraction (committee round 17: 70, reviewers 79-82 -> close critical + highs)
+e655687 feat(crm): EPC subcontractor / installation-labor subledger (measure-and-value vs it-24)
+f1b2713 harden extraction (committee round 16: 74, reviewers 78-84 -> close cap + highs)
+c2a41b8 feat(crm): field-rep PWA — installable app, web-push, offline visit/CFE capture
+3fe825e harden extraction (committee round 15: 70, reviewers 79-83 -> close critical + highs)
+763bbf7 feat(crm): forecast-COD CPM + earned-schedule engine (predictive schedule control)
+623336a feat(crm): probability-weighted multi-scenario ECL + correlated portfolio stress (IFRS 9 5.5.17a)
+b6f25e9 harden extraction (committee round 14: 70, per-lens 84/84/83/80 -> close criticals)
+c8ac6ca feat(crm): deal-native quote/proposal generator + e-signature (Propuestas)
+a7d2ad2 feat(crm): two-way email via IMAP/SMTP, wired into comms/dispatch/sequence engine
+2838035 harden extraction (committee round 13: 76 -> close critical + highs)
+5adb2ba feat(crm): native sales forecasting + pipeline analytics (Ventas tab)
+42bb6e7 harden extraction (committee round 12: 78 -> close criticals + highs)
+b39613b feat(crm): EBR risk-based-approach engine — inherent ML/FT risk drives DD intensity
+85a4906 harden extraction (committee round 11: 76 -> close critical + highs)
+54d794d feat(crm): mandatory verified UBO expediente + hard clearance gate for personas morales
+fb82f53 feat(crm): credit-approval spine — memo + delegated-authority sanction + conditions precedent
+ae111c4 harden extraction (committee round 10: 72 -> close critical + highs)
+6b6ef8e feat(crm): obligor/facility PD rating engine + forward-looking DSCR-covenant SICR
+ba3600f harden extraction (committee round 9: 69 -> close critical + highs)
+2a2d483 feat(crm): no-code automation + multi-step sequence engine
+9813b7b feat(crm): EPC QA/commissioning spine — verified physical %-complete + retention + LD, wired to EVM & facility
+69a889c harden extraction (committee round 8: 69 -> close critical + highs)
+8a2e55e feat(crm): comms dispatch worker — Enviar now actually sends (WhatsApp via Twilio)
+a4c9c3d harden extraction (committee round 7: 69 -> close highs/mediums)
+3a5b34b feat(crm): two-way comms capture — auto-ingest + outbox + unlinked tray
+818a216 deploy whatsapp-intake v26 (timeouts + unidentified reply); fix BufferSource type
+4712161 harden extraction (committee round 6: 64 -> close 12 findings)
+95804db feat(crm): collateral / security-package module → real exposure-net LGD
+7717114 feat(crm): procurement / PO commitment subledger with FX-lock feeding EVM
+f02c1e9 harden extraction (committee round 5: 64->target): MEM gate, partial-detect, races
+9542fce feat(crm): engagement layer — activity timeline + task cadence + Mi Día queue
+d002849 harden extraction (committee round 4: 60->target): observability, dead-letter, race
+5c7eb71 feat(crm): post-close loan-servicing spine + LFPIORPI operations register
+462cf7c harden extraction (committee round 3: 46->target): lock TTL, SIGTERM-node, tariff
+08ea538 harden extraction (committee round 2: 55->target): permaban lock, verify, MEM
+ea43fc4 feat(crm): EPC cost-control + change-order ledger + EVM on project panel
+bd9df93 harden extraction (committee round 1: 58->target): permaban, webhook, ETL
+748c7ef crm-web: portfolio concentration + ECL Stage 1/2/3 provisioning
+e4b9239 crm: intake creates a Tuesday deal card (stage 'lead')
+c0a4c3d crm-web: UIF Lista de Personas Bloqueadas screening + LFPIORPI Aviso register
+5134d1c crm-web: notification/routing spine — silent events → routed alerts + @mentions
+de29c9b crm-web: expected-loss (PD·LGD·EAD) risk-based pricing on the credit gate
+1900170 crm-web: LFPDPPP consent ledger + field-level PII masking
+a7481f3 crm-web: periodic DD re-screening cron + clearance TTL + sanctions-delta auto-flip
+66c7303 crm-web: EPC delivery spine (crm.project) + milestone drawdown + IDC
+f3a41f5 crm-web: reporting dashboard + saved/shared pipeline views
+ee80423 crm-web: downside/FX scenario stress + risk_tier→terms credit gate
+04000d9 crm-web: TOU-period-resolved savings + demand charges + BESS dispatch
+f649230 todos: click-to-open ToDo drawer (edit title/detail/status/owner/due/blocker + delete)
+84fca25 crm-web: CFE-grounded, after-tax underwriting
+75f79c8 todos: restrict to @newman.re, fix authenticated SELECT grant, rename navbar → ToDos
+b52457a huddle-sync: directory sync (auto-activates when GWS token gains admin scope)
+9daaf1b db: intake auto-registers the client (rpu catalog + company contact)
+7618c7b crm-web: role-enforced RLS + role-segregated four-eyes (RBAC)
+81a057f huddle-sync agent + Todos board (tuesday.newman.re)
+5b5b12e crm-web: DD adjudication console — hit disposition + maker-checker + audit log
+b3b929d CRM contacts: tags, company description, address + category/country filters
+256472a crm-web: UBO capture + sanctions/PEP screening (LFPIORPI floor)
+e44ad63 crm-web: underwriting engine — LCOE / IRR / DSCR / sculpted debt sizing
+e996b2b crm-web: 'Agendar' link on Kanban cards → Google Calendar appointment
+d06be84 cfe-collector: Consulta full window first, then MiEspacio extends
+60e50e1 crm-web: due-diligence foundation — counterparty + SAT Lista 69-B (EFOS) screening
+e4c68fe docs: CFE collection subsystem architecture + gotchas
+a0722d1 docs: committee comparison — Newman CRM vs Twenty/OSS + due-diligence roadmap
+8c7d63c cfe-collector: full Consulta drain when MiEspacio is blocked
+671b1b2 cfe-collector: detect "asignado a otra cuenta" (service on another account)
+1b5f55f cfe-collector: MiEspacio name match via CFDI candidates
+4c0a500 crm-web: live pipeline filter (name or regex)
+f9fb007 crm-web: split contacts into Clients / Providers tables + tidy phone numbers
+e7f7ed9 crm-web: AI client research, invoice auto-extraction, client/provider split
+6ec7c45 whatsapp-intake: auto-create a CRM lead card for new WhatsApp clients
+7e6fb65 crm-web: multiple RPUs per deal + razón social + Validate against CFE backend
+366299f crm-web: fix mobile card overflow (truncate VPN, constrain drag overlay width)
+a8b1094 crm-web: smaller Kanban cards + touch-friendly drag/scroll
+e2ed928 crm-contacts-migrate: headless OAuth-client flow + People API enablement docs
+5e2202f crm-web: mobile-friendly header + page padding
+8ed380d agents/crm-contacts-migrate: one-off Google Contacts → crm.contact (People API)
+f6b221a feat: multi-bill PDF intake (split one statement into N collections)
+dfb3100 crm-web: richer contacts — more columns + user-defined custom columns
+8d6a757 crm-web: deal comments + attachments on the card; logo links home
+8e3a6db crm-web: interactive Kanban (drag-drop + inline edit) + contact directory
+e1ffb29 edge: chunked base64 to avoid 546 WORKER_LIMIT on large bill photos
+9b957b6 deploy/sso-gateway: version the login.newman.re SSO gateway + fix OAuth redirect loop
+8bf1f57 crm-web: use the real Newman logo assets (from newman-brand-ui), not a retyped wordmark
+ddb49e4 etl: classify CFDI de Pago (TipoDeComprobante=P), don't count as failed
+dce6b2c crm-web: central SSO gateway at login.newman.re (shared *.newman.re session)
+7b5a4b4 etl: make invoice load crash-robust (per-file isolation + RPC retry)
+0acba64 cfe-collector: self-correct the CFE account name from the harvested CFDI
+7ad9fb5 edge: normalize OCR'd nombre toward CFE's "Nombre del servicio"
+d5e3d04 cfe-collector: classify Consulta grid-render failures
+d1ea94e crm-web: Google OAuth (newman.re-only) + fix auth redirect host
+1c9d01b crm-web: pin sharp so next build traces are deterministic in CI deploy
+9a1d67f ci: document automated crm-web deploy workflow (triggers this run)
+2c549ed ci: auto-deploy crm-web to newman-crm droplet on push to dev
+9edc633 crm: tuesday.newman.re is live — dedicated Cloudflare tunnel on the droplet
+56a1f01 crm: run the web app on its own droplet (newman-crm), not co-hosted on newman-vps
+5432a37 crm: Epic 5 — cutover runbook + roadmap complete
+3d9e48b cfe-collector: hard timeout on the harvest subprocess
+ec42994 cfe-collector: parallelize fetchDrain (chunked in-page fetches)
+2855e86 crm: deploy the web app to newman-vps via Cloudflare Tunnel (tuesday.newman.re)
+71cc6d4 crm: Epic 4 — in-app assistant (OpenRouter), grounded on the live pipeline
+8556acf crm: Epic 3b — deals list + deal-detail (financial model) as internal ops dashboard
+0ebe637 crm: Epic 3 — Newman-branded web app (Next.js + Supabase + shadcn) pipeline slice
+6a72602 crm: Epic 2 — crm-mcp operator agent (MCP server over the service_role contract)
+de59db0 crm: Epic 1 — crm-migrate agent (monday -> Supabase) + financial reconciliation
+287ba82 cfe-collector: self-heal leftover MiEspacio services before registering
+4223569 crm: lock crm_* RPCs to service_role (revoke authenticated)
+14b539f crm: move migrations to supabase/migrations for the GitHub integration + 3-env flow
+75b189b cfe-collector: latestOnly picks first XML+PDF by order, not _0 suffix
+aa6b155 cfe-collector: Consulta pulls latest recibo only; MiEspacio does the rest
+0984e16 crm: Epic 0 — schema + service_role RPC contract + phase plan
+d28ae6b cfe-collector: wait for the recibo grid before draining Consulta
+44b717d db: public wrappers for register_bill_file / pipeline_set_path*
+d549e1d db: drop unused client.app_secret table + get/set RPCs
+a62dd98 db: enqueue harvest at month_count <= 12 (was < 12)
+2a0406c db: drop monthly pg_cron enqueue, keep only the 5-min job
+681abd3 feat(cfe): fetchDrain in harvest.js + MiEspacio depth path + pg_cron enqueue (#5)
+4c5a80d edge: read secrets from Deno.env, not the app_secret table
+328ab98 db: auto-reclaim stale 'processing' requests in claim
+d5db51b mini: replace forever-loop with 5-min scheduled one-shot drain
+88f2019 feat: pg_cron enqueues collection for under-covered RPUs
+2d83ae0 ci: bump actions to Node 24 majors
+247eeb1 ci: auto-deploy cfe-collector to the mini after CI
+a9de89f cfe-collector: register harvested CFDIs in the document pipeline
+7a0c88b edge+db: document pipeline with SHA-1 bill dedupe
+669a314 Extraction hardening loop: fix DAP double-count + expand tests (#4)
+029beed feat(cfe-collector): fetch-drain pseudo-API + integration CI (#3)
+8151003 cfe-collector: unit-test the browser extraction stage + run it in CI
+ea41c3c cfe-collector: MiEspacio >12 WORKS — register on home page + resilient drain
+b10ee4b cfe-collector: reconcile untaxed DAP extras in CFDI-identity path
+f92425f edge fn: store media under identifying name <rpu>_<slug>.<ext> (OCR before upload)
+3d9e18a cfe-collector: close stray download tabs (fix detached-frame crash / data loss)
+84f0689 cfe-collector: crack OtrasFacturas (>12) + eliminar (CFE UI changes)
+1370634 drive: per-client dataroom (00_Leads/<slug>/01_recibos); reorg shared drive
+3a20b49 docs: HANDOFF — end-to-end works; remaining piece is MiEspacio for >12 months
+7708898 cfe-collector: upload harvested CFDIs (XML+PDF) to per-client Drive folder
+bcdcdd3 cfe-collector: crack CFE download flow + fiscal CFDI reconcile (end-to-end works)
+73a60c6 cfe-collector: Browser.setDownloadBehavior; document CFE download-flow change
+1a84bfb Edge function reads config from DB (get_app_secrets); record migrations
+f02ae0c google: OAuth creds use granted scopes (fix invalid_scope on Drive read)
+4f0e930 Add whatsapp-intake Supabase Edge Function (Twilio listener)
+dc56f9c Wire intake -> collection queue; collector forever-loop worker
+d4606f6 collector runs on mini (residential); don't install Chrome on VPS
+c8a6ce5 intake: fix reconciliation on merged two-column bills; OCR via OpenRouter
+eebc46e Add always-on WhatsApp-intake notifier (systemd)
+4fb06f8 gateway drop-in: set GATEWAY_PUBLIC_URL (non-secret, systemd env)
+87b538e docs: Cloudflare tunnel ingress for the WhatsApp webhook
+bb8fcb4 gateway-webhook systemd drop-in (binds $PORT, no --loop)
+7d6bc91 Fix Drive folder query: literal UTF-8, not \uXXXX escapes
+094a3b5 Google auth: accept OAuth user creds, not just service-account keys
+79ce300 Deploy: auto-trigger on push (after CI); fix unit naming to newman-agent@
+157379b Deploy: manual dispatch gate (Free plan has no env reviewers)
+14b669c Deploy over public SSH (drop Tailscale); provision droplet
+44f65e1 Merge pull request #2 from NewmanTech27/ci/github-actions
+63f85d0 Add GitHub Actions CI + gated CD, systemd units
+3390147 Merge pull request #1 from NewmanTech27/transfer/agents-front-to-back

@@ -1,0 +1,93 @@
+1ad3af353bd00069eade84348044523f9c4a4482
+Jesus Lopez Palacios
+Tue Jul 7 17:46:48 2026 +0200
+
+Transfer front-to-back pipeline agents (clean-room) into the repo
+
+Bring the WhatsApp→proposal pipeline into newman-architecture as the
+deployable source of truth. Seven self-contained agents under agents/,
+clean-room re-implemented from newman-pipeline (spec) + newman-agents
+(reference) — adapted, not copied.
+
+Agents: gateway-webhook, email-intake, intake-worker, cfe-collector,
+design-engine, proposal-builder, market-loaders, plus _shared (newman_common:
+env, service_role Supabase RPC client, Google service-account, Twilio).
+
+Integration contract enforced:
+- Secrets from env only (.env.example names; vault-env in prod). No secrets committed.
+- Supabase service_role only; anon key + direct client.* table access removed.
+- RPC contract in db/rpc_contract.sql (claim_intake_events/request_design
+  replace advance_stage + table polls).
+- gws CLI → GOOGLE_SERVICE_ACCOUNT_JSON service account (flagged Vault gap).
+
+Docs: README updated (bill-journey sequence to the real RPC contract, repo
+layout, Deployment/agents, known Google-credential gap). Makefile + per-agent
+READMEs + tests. ruff clean; 55 tests pass (per-agent).
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+
+ .env.example                             |  63 +++++
+ .gitignore                               |   7 +
+ Makefile                                 |  60 +++++
+ README.md                                | 136 ++++++++--
+ agents/_shared/README.md                 |  29 +++
+ agents/_shared/newman_common/__init__.py |  15 ++
+ agents/_shared/newman_common/env.py      |  94 +++++++
+ agents/_shared/newman_common/google.py   | 115 +++++++++
+ agents/_shared/newman_common/supa.py     | 108 ++++++++
+ agents/_shared/newman_common/twilio.py   |  25 ++
+ agents/_shared/pyproject.toml            |  17 ++
+ agents/cfe-collector/README.md           | 103 ++++++++
+ agents/cfe-collector/captcha.py          |  91 +++++++
+ agents/cfe-collector/conftest.py         |   4 +
+ agents/cfe-collector/main.py             | 162 ++++++++++++
+ agents/cfe-collector/portal.py           | 242 ++++++++++++++++++
+ agents/cfe-collector/requirements.txt    |   6 +
+ agents/cfe-collector/test_collector.py   | 122 +++++++++
+ agents/design-engine/README.md           | 146 +++++++++++
+ agents/design-engine/conftest.py         |   4 +
+ agents/design-engine/finance.py          | 145 +++++++++++
+ agents/design-engine/main.py             | 254 +++++++++++++++++++
+ agents/design-engine/requirements.txt    |   3 +
+ agents/design-engine/roof.py             | 149 +++++++++++
+ agents/design-engine/sizing.py           | 247 +++++++++++++++++++
+ agents/design-engine/test_sizing.py      |  89 +++++++
+ agents/email-intake/README.md            |  77 ++++++
+ agents/email-intake/conftest.py          |   4 +
+ agents/email-intake/gmail_poll.py        | 127 ++++++++++
+ agents/email-intake/main.py              | 149 +++++++++++
+ agents/email-intake/requirements.txt     |   2 +
+ agents/email-intake/test_email_intake.py |  36 +++
+ agents/gateway-webhook/README.md         |  92 +++++++
+ agents/gateway-webhook/conftest.py       |   4 +
+ agents/gateway-webhook/main.py           | 130 ++++++++++
+ agents/gateway-webhook/requirements.txt  |   4 +
+ agents/gateway-webhook/test_gateway.py   |  36 +++
+ agents/intake-worker/README.md           | 106 ++++++++
+ agents/intake-worker/conftest.py         |   4 +
+ agents/intake-worker/division_codes.py   |  80 ++++++
+ agents/intake-worker/drive_download.py   |  54 ++++
+ agents/intake-worker/extract.py          | 307 +++++++++++++++++++++++
+ agents/intake-worker/main.py             | 220 +++++++++++++++++
+ agents/intake-worker/preflight.py        | 134 ++++++++++
+ agents/intake-worker/reconcile.py        |  77 ++++++
+ agents/intake-worker/requirements.txt    |   4 +
+ agents/intake-worker/test_division.py    |  42 ++++
+ agents/intake-worker/test_reconcile.py   |  75 ++++++
+ agents/market-loaders/README.md          |  96 ++++++++
+ agents/market-loaders/conftest.py        |   4 +
+ agents/market-loaders/main.py            |  98 ++++++++
+ agents/market-loaders/pml.py             | 348 ++++++++++++++++++++++++++
+ agents/market-loaders/requirements.txt   |   8 +
+ agents/market-loaders/tariffs.py         | 411 +++++++++++++++++++++++++++++++
+ agents/market-loaders/test_manifest.py   |  95 +++++++
+ agents/proposal-builder/README.md        | 137 +++++++++++
+ agents/proposal-builder/conftest.py      |   4 +
+ agents/proposal-builder/enrich.py        | 112 +++++++++
+ agents/proposal-builder/main.py          | 323 ++++++++++++++++++++++++
+ agents/proposal-builder/render.py        | 295 ++++++++++++++++++++++
+ agents/proposal-builder/requirements.txt |   7 +
+ agents/proposal-builder/test_render.py   |  92 +++++++
+ db/rpc_contract.sql                      |  43 ++++
+ 63 files changed, 6255 insertions(+), 18 deletions(-)

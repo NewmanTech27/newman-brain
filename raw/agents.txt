@@ -1,0 +1,12 @@
+_shared
+cfe-collector
+crm-contacts-migrate
+crm-mcp
+crm-migrate
+design-engine
+email-intake
+gateway-webhook
+huddle-sync
+intake-worker
+market-loaders
+proposal-builder
