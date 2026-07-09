@@ -1,0 +1,70 @@
+{
+ "designs": [
+  {
+   "rpu": "780881200029",
+   "client_name": "GRUPO POSADAS S.A.B DE C.V",
+   "tier": "HIGH",
+   "confidence": 90,
+   "evidence": [
+    "POI match: Fiesta Americana Condesa Cancún (Blvd. Kukulcán Km 16.5 Lt 44, CP 77500)",
+    "CP 77500 matches POI address",
+    "km marker unique on Kukulcán",
+    "manual web verification 2026-07-09 — coords approximate, Places run will refine"
+   ],
+   "lat": 21.0902,
+   "lng": -86.7672,
+   "status": "dry_run",
+   "would_create": {
+    "project": "780881200029 - Fiesta Americana Benito Juárez",
+    "field_segment": {
+     "geometry": [
+      [
+       21.090559324469996,
+       -86.76758512181807
+      ],
+      [
+       21.090559324469996,
+       -86.76681487818193
+      ],
+      [
+       21.089840675530002,
+       -86.76681487818193
+      ],
+      [
+       21.089840675530002,
+       -86.76758512181807
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "671071116338",
+   "client_name": "ALIM Y FRANQ DE CHIS SA DE CV",
+   "tier": "LOW",
+   "confidence": 35,
+   "evidence": [
+    "no branded POI; restaurant franchise, between-streets address only — needs Places/manual pin"
+   ],
+   "lat": null,
+   "lng": null,
+   "status": "skipped_low_confidence"
+  },
+  {
+   "rpu": "415130200040",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "LOW",
+   "confidence": 45,
+   "evidence": [
+    "nearest Fiesta Inn found (La Fe) is CP 66486 San Nicolás — CP mismatch with bill 66628; candidate Fiesta Inn Monterrey Aeropuerto on Miguel Alemán needs Places confirmation"
+   ],
+   "lat": null,
+   "lng": null,
+   "status": "skipped_low_confidence"
+  }
+ ]
+}

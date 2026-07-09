@@ -1,0 +1,16 @@
+{
+  "_note": "VALIDATE against the API docs HelioScope sends with the Enterprise key. Paths here are the publicly documented Project->Design->Simulation shape; adjust to the real spec before first run.",
+  "base_url": "https://api.helioscope.com/v1",
+  "auth_scheme": "Api-Key {key}",
+  "paths": {
+    "projects": "/projects",
+    "designs": "/projects/{project_id}/designs",
+    "simulations": "/designs/{design_id}/simulations",
+    "simulation": "/simulations/{simulation_id}"
+  },
+  "project_type": "commercial",
+  "default_module_id": null,
+  "default_racking": "flush_mount",
+  "default_tilt_deg": 10,
+  "default_azimuth_deg": 180
+}

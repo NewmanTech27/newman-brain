@@ -53,9 +53,12 @@ Two regulatory constants drive every branch of the model:
   the punta window on weekdays**, and the discharge is capped at the bill's actual punta kWh.
 
 Tariff mechanics baked in:
-- **Capacidad** charge is billed on `kW_punta`.
-- **Distribución** charge is billed on `max(kW_base, kW_inter, kW_punta)`.
 - The demand **umbral** (threshold) = `kWh / (days × 24 × FC)`, with load factor **`FC = 0.57`**.
+- **Capacidad** charge is billed on peak demand, **capped by the threshold**:
+  basis = `min(kW_punta, umbral)` (falls back to `umbral` when there is no `kW_punta`). The engine
+  takes the actual `capacidad` amount from the bill and derives its unit rate as
+  `r_cap = capacidad / basis` — it is not recomputed from a published $/kW rate (see §6, step 3).
+- **Distribución** charge is billed on `max(kW_base, kW_inter, kW_punta)`.
 - **`IVA = 0.16`** (VAT).
 
 ---
