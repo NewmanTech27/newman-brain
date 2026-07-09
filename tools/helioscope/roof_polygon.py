@@ -38,10 +38,12 @@ ROOF_DIR = os.path.join(HERE, "out", "roof")
 TILE_URL = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
 TILE = 256
 
-# keep in sync with design_pack.py
-MODULE_WP = 575
-MODULE_M2 = 2.69
+# keep in sync with design_pack.py — Tongwei TWMNF-66HD715 (CFE Brain wiki/equipment/pv-modules,
+# datasheet raw/pdfs/2025-06-30 - 720w TONGWEI.pdf): 715 Wp bin, 2384x1303 mm
+MODULE_WP = 715
+MODULE_M2 = 3.106
 PACKING = 0.75  # on an already-digitized clear plane (rows + walkways), vs 0.55 on gross roof
+# sanity: 0.75 * 715 / 3.106 = 172.6 W/m2 — matches the CFE Brain intake heuristic 0.17 kWp/m2
 
 
 def latlng_to_tile(lat, lng, z):
@@ -118,6 +120,87 @@ def fetch(site, zoom, grid):
     json.dump(georef, open(base + "_georef.json", "w"), indent=1)
     mpp = 156543.03392 * math.cos(math.radians(lat)) / (2 ** zoom)
     print(f"{base}.png  ({grid}x{grid} tiles, {mpp:.2f} m/px, verified point at pixel {cx:.0f},{cy:.0f})")
+
+
+def layers(site, zoom):
+    """Google Solar API dataLayers → digitizing aids reprojected onto the Esri frame.
+
+    Produces out/roof/<RPU>_aid.png: Esri image + roof-mask edge (cyan) +
+    local relief >=0.8 m over the surrounding roof plane (red: equipment, cores) + annual-flux
+    shading deficit on the roof (blue hatch = bottom-quartile flux).
+    Requires GOOGLE_MAPS_API_KEY (Solar API) and rasterio + numpy in the venv.
+    Note: check the reported imageryDate — layers can predate the Esri frame.
+    """
+    import numpy as np
+    import rasterio
+    from rasterio.warp import reproject, Resampling
+    from rasterio.transform import Affine
+
+    key = os.environ.get("GOOGLE_MAPS_API_KEY")
+    if not key and os.path.exists(os.path.join(HERE, ".env")):
+        for line in open(os.path.join(HERE, ".env")):
+            if line.startswith("GOOGLE_MAPS_API_KEY="):
+                key = line.split("=", 1)[1].strip()
+    if not key:
+        sys.exit("GOOGLE_MAPS_API_KEY not set (env or .env)")
+
+    base = os.path.join(ROOF_DIR, f"{site['rpu']}_z{zoom}")
+    georef = json.load(open(base + "_georef.json"))
+    ldir = os.path.join(ROOF_DIR, f"{site['rpu']}_layers")
+    os.makedirs(ldir, exist_ok=True)
+
+    meta_path = os.path.join(ldir, "dataLayers.json")
+    if not os.path.exists(meta_path):
+        url = (f"https://solar.googleapis.com/v1/dataLayers:get?location.latitude={site['lat']}"
+               f"&location.longitude={site['lng']}&radiusMeters=60&view=FULL_LAYERS"
+               f"&requiredQuality=MEDIUM&key={key}")
+        with urllib.request.urlopen(url, timeout=30) as r:
+            json.dump(json.load(r), open(meta_path, "w"))
+    meta = json.load(open(meta_path))
+    print(f"imagery: {meta.get('imageryQuality')} {meta.get('imageryDate')}")
+    for name in ("maskUrl", "dsmUrl", "annualFluxUrl"):
+        fn = os.path.join(ldir, name.replace("Url", "") + ".tif")
+        if not os.path.exists(fn):
+            urllib.request.urlretrieve(meta[name] + "&key=" + key, fn)
+
+    # destination grid = the stitched Esri frame, in EPSG:3857
+    n = 2 ** georef["zoom"]
+    res = 2 * 20037508.342789244 / (TILE * n)
+    dst_transform = Affine(res, 0, -20037508.342789244 + georef["tile_x0"] * TILE * res,
+                           0, -res, 20037508.342789244 - georef["tile_y0"] * TILE * res)
+    shape = (georef["height"], georef["width"])
+
+    def to_frame(path, resampling):
+        with rasterio.open(path) as src:
+            dst = np.full(shape, np.nan, dtype="float32")
+            reproject(src.read(1).astype("float32"), dst, src_transform=src.transform,
+                      src_crs=src.crs, dst_transform=dst_transform, dst_crs="EPSG:3857",
+                      dst_nodata=np.nan, resampling=resampling)
+        return dst
+
+    mask = to_frame(os.path.join(ldir, "mask.tif"), Resampling.nearest)
+    dsm = to_frame(os.path.join(ldir, "dsm.tif"), Resampling.bilinear)
+    flux = to_frame(os.path.join(ldir, "annualFlux.tif"), Resampling.bilinear)
+    roof = mask == 1
+
+    img = Image.open(base + ".png").convert("RGB")
+    px = np.array(img)
+    # roof edge: mask pixels adjacent to non-mask
+    edge = roof & ~(np.roll(roof, 1, 0) & np.roll(roof, -1, 0) & np.roll(roof, 1, 1) & np.roll(roof, -1, 1))
+    # obstacle relief: DSM minus the local roof plane (median filter ~8 m window),
+    # so HVAC units/cores pop out on any level of a multi-level building
+    if roof.any():
+        from scipy.ndimage import median_filter
+        filled = np.where(np.isnan(dsm), np.nanmin(dsm), dsm)
+        rel = dsm - median_filter(filled, size=25)
+        tall = roof & (rel > 0.8)
+        low_flux = roof & (flux < np.nanpercentile(flux[roof], 25))
+        px[low_flux] = (0.5 * px[low_flux] + 0.5 * np.array([60, 120, 255])).astype("uint8")
+        px[tall] = (0.35 * px[tall] + 0.65 * np.array([235, 60, 50])).astype("uint8")
+    px[edge] = [0, 230, 230]
+    out = os.path.join(ROOF_DIR, f"{site['rpu']}_aid.png")
+    Image.fromarray(px).save(out)
+    print(f"{out}  (cyan=roof edge, red=+0.8 m local relief (equipment/cores), blue=bottom-quartile flux)")
 
 
 def kml_coords(latlngs):
@@ -206,6 +289,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--site", required=True)
     ap.add_argument("--fetch", action="store_true")
+    ap.add_argument("--layers", action="store_true", help="Solar API dataLayers digitizing aid")
     ap.add_argument("--export", action="store_true")
     ap.add_argument("--zoom", type=int, default=19)
     ap.add_argument("--grid", type=int, default=5, help="tiles per side (odd)")
@@ -219,10 +303,12 @@ def main():
 
     if args.fetch:
         fetch(site, args.zoom, args.grid)
+    if args.layers:
+        layers(site, args.zoom)
     if args.export:
         export(site, args.zoom)
-    if not (args.fetch or args.export):
-        sys.exit("nothing to do: pass --fetch and/or --export")
+    if not (args.fetch or args.layers or args.export):
+        sys.exit("nothing to do: pass --fetch, --layers and/or --export")
 
 
 if __name__ == "__main__":

@@ -7,21 +7,21 @@
   <Style id="obstacle"><LineStyle><color>ff3c4ce7</color><width>2</width></LineStyle>
    <PolyStyle><color>6e3c4ce7</color></PolyStyle></Style>
   <Style id="obstaclePt"><IconStyle><color>ff3c4ce7</color></IconStyle></Style>
-  <Placemark><name>Ala Oriente — franja sur — 126 m2, ~35 mod / 20.1 kWp</name>
+  <Placemark><name>Ala Oriente — franja sur — 100 m2, ~24 mod / 17.2 kWp</name>
    <styleUrl>#usable</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692107,32.6457034,0 -115.4688486,32.6455791,0 -115.4688299,32.6455340,0 -115.4692054,32.6456740,0 -115.4692107,32.6457034,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692107,32.6456966,0 -115.4688486,32.6455724,0 -115.4688299,32.6455340,0 -115.4692054,32.6456740,0 -115.4692107,32.6456966,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark><name>Ala Oriente — franja norte — 83 m2, ~23 mod / 13.2 kWp</name>
+  <Placemark><name>Ala Oriente — franja norte — 83 m2, ~20 mod / 14.3 kWp</name>
    <styleUrl>#usable</styleUrl>
    <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692000,32.6457508,0 -115.4688513,32.6456333,0 -115.4688594,32.6456153,0 -115.4692081,32.6457282,0 -115.4692000,32.6457508,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark><name>Ala Surponiente — franja poniente — 137 m2, ~38 mod / 21.9 kWp</name>
+  <Placemark><name>Ala Surponiente — franja poniente — 121 m2, ~29 mod / 20.7 kWp</name>
    <styleUrl>#usable</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4694253,32.6456469,0 -115.4693770,32.6456333,0 -115.4695246,32.6453646,0 -115.4695594,32.6453804,0 -115.4694253,32.6456469,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4694253,32.6456469,0 -115.4693824,32.6456311,0 -115.4695299,32.6453668,0 -115.4695594,32.6453804,0 -115.4694253,32.6456469,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark><name>Ala Surponiente — franja oriente — 127 m2, ~35 mod / 20.1 kWp</name>
+  <Placemark><name>Ala Surponiente — franja oriente — 105 m2, ~25 mod / 17.9 kWp</name>
    <styleUrl>#usable</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4693395,32.6456175,0 -115.4693019,32.6456040,0 -115.4694468,32.6453443,0 -115.4694897,32.6453533,0 -115.4693395,32.6456175,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4693314,32.6456153,0 -115.4693019,32.6456040,0 -115.4694441,32.6453443,0 -115.4694816,32.6453510,0 -115.4693314,32.6456153,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
   <Placemark><name>Obstáculo: Fila central HVAC/ductos — ala oriente</name><styleUrl>#obstacle</styleUrl>
    <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692081,32.6457259,0 -115.4688594,32.6456130,0 -115.4688674,32.6455904,0 -115.4692161,32.6457056,0 -115.4692081,32.6457259,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
@@ -30,7 +30,7 @@
    <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4688191,32.6456243,0 -115.4686475,32.6455656,0 -115.4686877,32.6454617,0 -115.4688594,32.6455204,0 -115.4688191,32.6456243,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
   <Placemark><name>Obstáculo: Fila central HVAC/ductos — ala surponiente</name><styleUrl>#obstacle</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4693690,32.6456311,0 -115.4693449,32.6456221,0 -115.4694951,32.6453488,0 -115.4695192,32.6453601,0 -115.4693690,32.6456311,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4693636,32.6456333,0 -115.4693368,32.6456243,0 -115.4694870,32.6453510,0 -115.4695138,32.6453623,0 -115.4693636,32.6456333,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
   <Placemark><name>Obstáculo: Núcleo elevadores/escaleras (vértice)</name><styleUrl>#obstacle</styleUrl>
    <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4693395,32.6456740,0 -115.4692161,32.6456288,0 -115.4692322,32.6455972,0 -115.4693556,32.6456424,0 -115.4693395,32.6456740,0</coordinates></LinearRing></outerBoundaryIs></Polygon>

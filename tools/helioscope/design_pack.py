@@ -19,10 +19,10 @@ import json
 import os
 
 # Flat commercial roof packing assumptions (match client.design conventions):
-# 575 Wp module 2.38 x 1.13 m ≈ 2.69 m2; 10 deg ballasted south rows with
+# Tongwei TWMNF-66HD715: 715 Wp, 2.384 x 1.303 m = 3.106 m2; 10 deg ballasted south rows with
 # walkways/setbacks => ~55% of usable roof covered by module area.
-MODULE_WP = 575
-MODULE_M2 = 2.69
+MODULE_WP = 715
+MODULE_M2 = 3.106
 USABLE_FRACTION = 0.55
 
 

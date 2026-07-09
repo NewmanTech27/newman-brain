@@ -11,11 +11,11 @@
    "pixels": [
     [
      700,
-     553
+     556
     ],
     [
      835,
-     608
+     611
     ],
     [
      842,
@@ -28,11 +28,11 @@
    ],
    "latlngs": [
     [
-     32.6457033583935,
+     32.645696582953306,
      -115.46921074390411
     ],
     [
-     32.645579141908364,
+     32.64557236645875,
      -115.4688486456871
     ],
     [
@@ -44,9 +44,9 @@
      -115.46920537948608
     ]
    ],
-   "area_m2": 125.9,
-   "modules": 35,
-   "kwp": 20.1
+   "area_m2": 100.0,
+   "modules": 24,
+   "kwp": 17.2
   },
   {
    "name": "Ala Oriente — franja norte",
@@ -87,8 +87,8 @@
     ]
    ],
    "area_m2": 83.1,
-   "modules": 23,
-   "kwp": 13.2
+   "modules": 20,
+   "kwp": 14.3
   },
   {
    "name": "Ala Surponiente — franja poniente",
@@ -98,12 +98,12 @@
      578
     ],
     [
-     638,
-     584
+     636,
+     585
     ],
     [
-     583,
-     703
+     581,
+     702
     ],
     [
      570,
@@ -116,46 +116,46 @@
      -115.4694253206253
     ],
     [
-     32.64563334548673,
-     -115.46937704086304
+     32.64563108700495,
+     -115.46938240528107
     ],
     [
-     32.64536458575494,
-     -115.46952456235886
+     32.64536684424344,
+     -115.46952992677689
     ],
     [
      32.645380395173284,
      -115.46955943107605
     ]
    ],
-   "area_m2": 136.7,
-   "modules": 38,
-   "kwp": 21.9
+   "area_m2": 121.0,
+   "modules": 29,
+   "kwp": 20.7
   },
   {
    "name": "Ala Surponiente — franja oriente",
    "pixels": [
     [
-     652,
-     591
+     655,
+     592
     ],
     [
      666,
      597
     ],
     [
-     612,
+     613,
      712
     ],
     [
-     596,
-     708
+     599,
+     709
     ]
    ],
    "latlngs": [
     [
-     32.6456175361131,
-     -115.46933948993683
+     32.64561527763092,
+     -115.46933144330978
     ],
     [
      32.645603985219196,
@@ -163,16 +163,16 @@
     ],
     [
      32.64534425935581,
-     -115.46944677829742
+     -115.46944409608841
     ],
     [
-     32.64535329331155,
-     -115.46948969364166
+     32.6453510348227,
+     -115.46948164701462
     ]
    ],
-   "area_m2": 126.5,
-   "modules": 35,
-   "kwp": 20.1
+   "area_m2": 104.7,
+   "modules": 25,
+   "kwp": 17.9
   }
  ],
  "obstacles": [
@@ -222,20 +222,20 @@
    "name": "Fila central HVAC/ductos — ala surponiente",
    "pixels": [
     [
-     641,
-     585
+     643,
+     584
     ],
     [
-     650,
-     589
+     653,
+     588
     ],
     [
-     594,
-     710
+     597,
+     709
     ],
     [
-     585,
-     705
+     587,
+     704
     ]
    ]
   },
@@ -268,5 +268,6 @@
    ]
   }
  ],
- "notes": "Franja poniente del ala SW acotada a la zona visiblemente despejada (la imagen fue capturada con sol bajo; el borde NW queda en sombra y debe verificarse en campo). lean_px calibrado contra huella OSM way 194172404/194172405."
+ "notes": "Franja poniente del ala SW acotada a la zona visiblemente despejada (la imagen fue capturada con sol bajo; el borde NW queda en sombra y debe verificarse en campo). lean_px calibrado contra huella OSM way 194172404/194172405. Bordes ajustados con la capa de relieve local del DSM de Google Solar API (dataLayers 2013, --layers).",
+ "module": "Tongwei TWMNF-66HD715 (715 Wp, 2.384x1.303 m)"
 }

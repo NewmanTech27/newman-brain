@@ -114,7 +114,41 @@ installable. `roof_polygon.py` closes that gap keylessly:
   digitizing — it also calibrates `lean_px`, the off-nadir displacement of the
   roof vs its ground position (~7 m at Mexicali z19), applied to KML/GeoJSON.
 - `PACKING = 0.75` on digitized *clear* planes (vs 0.55 on gross roof in
-  design_pack.py).
-- Deps: `python3 -m venv .venv && .venv/bin/pip install pillow`.
-- First worked site: 016040800020 Fiesta Inn Mexicali — 4 planes, 472 m²,
-  ~131×575 W ≈ 75 kWp conservative (Solar API whole-roof max: 430 panels).
+  design_pack.py). Module: **Tongwei TWMNF-66HD715** (715 Wp, 3.106 m²) — from
+  CFE Brain wiki/equipment; 0.75 × 715 / 3.106 = 0.173 kWp/m² clear.
+- Deps: `python3 -m venv .venv && .venv/bin/pip install pillow numpy scipy rasterio`.
+- First worked site: 016040800020 Fiesta Inn Mexicali — 4 strips, 409 m²,
+  ~98×715 W ≈ 70 kWp conservative (Solar API whole-roof max: 430 panels).
+
+### `--layers`: Solar API digitizing aid (needs GOOGLE_MAPS_API_KEY)
+
+```bash
+.venv/bin/python roof_polygon.py --site <RPU> --layers
+```
+
+Downloads Solar API dataLayers (roof mask, DSM, annual flux) and renders
+`out/roof/<RPU>_aid.png` on the Esri frame: cyan = true roof edge (also
+validates `lean_px`), red = ≥0.8 m local relief (equipment/cores to trace
+around), blue = bottom-quartile flux (chronic shade). Check the printed
+`imageryDate` — layers can be years older than the Esri frame (Mexicali: 2013).
+
+### Running a new site end-to-end
+
+```bash
+RPU=xxxxxxxxxxxx
+.venv/bin/python roof_polygon.py --site $RPU --fetch     # imagery (any tier site with lat/lng)
+.venv/bin/python roof_polygon.py --site $RPU --layers    # optional aid, if Solar API covers it
+# trace out/roof/$RPU_polygons.json (ask Claude: "roof analysis for RPU $RPU" —
+#   it reads examples/HOUSE_STYLE.md first, verifies vs OSM, digitizes, iterates)
+.venv/bin/python roof_polygon.py --site $RPU --export    # KML + GeoJSON + annotated PNG
+```
+
+Candidates: the 36 HIGH-tier sites in `out/verified_sites.json` first;
+MEDIUM sites need the roof confirmed by a human before tracing.
+
+### examples/ — training library
+
+Put past HelioScope project exports in `examples/<year>-<slug>/` (see
+`examples/README.md`). The digitizing agent reads `examples/HOUSE_STYLE.md`
+before tracing; corrections to `_polygons.json` files are committed and become
+new training examples.

@@ -7,3 +7,4 @@ node_modules/
 __pycache__/
 .venv/
 tools/helioscope/out/roof/*_z*.png
+tools/helioscope/out/roof/*_layers/
