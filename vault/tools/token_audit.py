@@ -334,6 +334,23 @@ def main():
     print(f"  → output tokens are {100*g['output']/max(total_ctx+g['output'],1):.1f}% "
           f"of all tokens billed. Confirms: compression of output is not the lever.")
 
+    # ---- Tier 3 Economics KPIs (KPIS.md) — greppable, one line each ---------
+    # Every KPI is computed here from the transcripts, by this command.
+    eco1 = 100 * hit_rate(g["cache_read"], g["cache_creation"])
+    # ECO-2: the baseline "33,560:5" was a cold turn (cache_read=0), so its
+    # 33,560 = input + cache_creation = all input-side tokens paid at write price.
+    # The faithful fleet analog is non-cached-input : output.
+    noncached_in = g["input"] + g["cache_creation"]
+    eco2_paid = noncached_in / max(g["output"], 1)
+    eco2_attn = total_ctx / max(g["output"], 1)   # all input-side : output
+    print("\n## KPI — Tier 3 Economics (KPIS.md)")
+    print(f"  ECO-1 cache_hit_rate      = {eco1:.1f}%   "
+          f"(cache_read {fmt(g['cache_read'])} / (read+creation {fmt(g['cache_read']+g['cache_creation'])}))")
+    print(f"  ECO-2 input:output        = {eco2_paid:.1f} : 1  (non-cached-input:output; "
+          f"attention-in:output = {eco2_attn:.0f}:1)")
+    print(f"  ECO-3 tokens_per_point    = BLOCKED — no machine-readable CTO verdict artifact to divide by")
+    print(f"  ECO-4 rework_rate         = BLOCKED — no CTO submission/rejection log to count")
+
     if args.json_out:
         out = {
             "files": len(files),
