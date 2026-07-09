@@ -80,3 +80,33 @@ Three sibling Claude sessions run on this VPS, in the same repos, right now.
 - Never file secrets, client PII, or real RPUs.
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites from overcomplication, and clarifying questions arrive before implementation rather than after mistakes.
+
+## 7. Token discipline
+
+Your cost is dominated by what you **read**, not what you write. Attack input first.
+
+### Input — this is where the tokens are
+- **Query the vault index, do not read the vault.** `~/cfe-brain/vault/wiki/index.md` catalogs 91 pages. Grep it, open the two pages you need. Never read the tree.
+- **Grep before you read.** `grep -rl` to find the file, then read the relevant range with an offset. Reading a 2000-line file to check one function is waste.
+- **Never re-read what you have read.** If it is in your context, it is in your context.
+- **Do not read `node_modules`, `.next`, `__pycache__`, or `raw/pdfs`.** Ever.
+- **Capture panes with a bound.** `tmux capture-pane -p -t <s>` defaults to the visible screen. Only pass `-S -2000` when you genuinely need scrollback.
+- **Subagents for search.** A fan-out search returns you a conclusion, not a file dump.
+
+### Output — caveman mode, scoped
+For **status, progress, and inter-agent chatter**: write like a smart caveman. Drop articles, filler, pleasantries, hedging. Fragments fine. Short synonyms. Technical terms stay exact.
+
+> Not: "I'd be happy to help! It looks like the issue may be caused by..."
+> Yes: "Bug in auth middleware. Expiry check uses `<` not `<=`. Fix:"
+
+**Caveman is OFF for anything a human or another agent must act on precisely:**
+- `NRM-xx` normative requirements and the specs that hold them
+- CTO reviews and verdicts
+- commit messages, PR bodies
+- security warnings and anything irreversible
+- the reconciliation report
+
+Those are read once and acted on for months. A fragment misread there costs more than every token caveman ever saved. Write them in full, plain prose.
+
+### What this is not
+Do not compress by omitting evidence. A score without `file:line` citations is not cheaper, it is worthless. Brevity is selecting what to include, not abbreviating what you included.
