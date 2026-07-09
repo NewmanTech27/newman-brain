@@ -1,0 +1,8 @@
+{
+  "gepp-ixtlahuacan":   {"area_m2": 4938, "fp_correction": false, "bess_kw": 0, "bess_kwh": 0},
+  "gepp-acapulco":      {"area_m2": 4938, "fp_correction": true,  "capacitor": 1000000, "bess_kw": 0, "bess_kwh": 0},
+  "gepp-cancun":        {"area_m2": 4938, "fp_correction": true,  "capacitor": 500000,  "bess_kw": 0, "bess_kwh": 0},
+  "gepp-proplasa-pr1":  {"area_m2": 4938, "fp_correction": false, "bess_kw": 0, "bess_kwh": 0},
+  "gepp-proplasa-pr2":  {"area_m2": 4938, "fp_correction": false, "bess_kw": 0, "bess_kwh": 0},
+  "gepp-proplasa-tap":  {"area_m2": 4938, "fp_correction": false, "bess_kw": 0, "bess_kwh": 0}
+}

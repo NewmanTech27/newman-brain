@@ -1,0 +1,117 @@
+{
+  "source": "raw/Perfil de Consumo Electrico GEPP 2025-26 (1).xlsx",
+  "sheet": "ACA",
+  "servicio": "MX096Y",
+  "year": 2025,
+  "block": "Total Planta",
+  "block_inventory": [
+    "Total Planta",
+    "CFE",
+    "TALA",
+    "PTAR"
+  ],
+  "n_months": 12,
+  "basis": "full load @ CFE rates",
+  "n_within_0p5pct": 0,
+  "worst_diff_vs_client": 0.093031,
+  "tarifa": "Acapulco / GDMTH",
+  "validation": [
+    {
+      "year": 2025,
+      "month": 1,
+      "diff": -0.066684,
+      "ok": false,
+      "d_energia": -0.065101,
+      "d_dem": -0.069941
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "diff": -0.06764,
+      "ok": false,
+      "d_energia": -0.065764,
+      "d_dem": -0.071164
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "diff": -0.066506,
+      "ok": false,
+      "d_energia": -0.064705,
+      "d_dem": -0.071619
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "diff": -0.060665,
+      "ok": false,
+      "d_energia": -0.064798,
+      "d_dem": -0.056279
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "diff": -0.065696,
+      "ok": false,
+      "d_energia": -0.064948,
+      "d_dem": -0.068309
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "diff": -0.08222,
+      "ok": false,
+      "d_energia": -0.085124,
+      "d_dem": -0.08301
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "diff": -0.093031,
+      "ok": false,
+      "d_energia": -0.097702,
+      "d_dem": -0.093568
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "diff": -0.092147,
+      "ok": false,
+      "d_energia": -0.097498,
+      "d_dem": -0.091815
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "diff": -0.081863,
+      "ok": false,
+      "d_energia": -0.093374,
+      "d_dem": -0.073752
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "diff": -0.08243,
+      "ok": false,
+      "d_energia": -0.093628,
+      "d_dem": -0.073486
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "diff": -0.066444,
+      "ok": false,
+      "d_energia": -0.083208,
+      "d_dem": -0.049716
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "diff": -0.036652,
+      "ok": false,
+      "d_energia": -0.025269,
+      "d_dem": -0.047166
+    }
+  ],
+  "note": "Diverge del total impreso por el cliente — tipicamente sitio con autoabasto (descuento Tala/ENEL). La reconstruccion = carga TOTAL valuada a tarifas CFE GDMTH, la base correcta para dimensionar PV/BESS. Delta ~= descuento autoabasto."
+}

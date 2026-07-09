@@ -1,0 +1,39 @@
+========================================================================================================================
+COMPARISON: v3 vs v3.1
+========================================================================================================================
+
+v3 sheets (10): ['Resumen Ejecutivo', 'Supuestos', 'Ixtlahuacán', 'Acapulco', 'Cancún', 'Proplasa PR1', 'Proplasa PR2', 'Proplasa Tapas', 'Comparativo Comercial', 'Proyección 20 años']
+v3.1 sheets (10): ['Resumen Ejecutivo', 'Supuestos', 'Ixtlahuacán', 'Acapulco', 'Cancún', 'Proplasa PR1', 'Proplasa PR2', 'Proplasa Tapas', 'Comparativo Comercial', 'Proyección 20 años']
+
+-> Sheet names are IDENTICAL
+
+Comparing SUPUESTOS sheet dimensions:
+  v3: A1:Q42
+  v3.1: A1:N36
+
+Supuestos content differences:
+  L27: v3=BESS (años) | v3.1=TIR financiador
+  M27: v3=TIR financiador | v3.1=TIR compra
+  N27: v3=TIR compra | v3.1=Ahorro bruto/año $
+  O27: v3=Ahorro bruto/año $ | v3.1=None
+  P27: v3=Ahorro PPA&SAAS anual | v3.1=None
+  Q27: v3=Ahorro PPA&SAAS 20 años | v3.1=None
+  B28: v3=2529.67 | v3.1=2530
+  C28: v3=751.5 | v3.1=850
+  D28: v3=1470 | v3.1=1700
+  L28: v3=20 | v3.1==Ixtlahuacán!$G$101
+  M28: v3==Ixtlahuacán!$G$101 | v3.1==Ixtlahuacán!$G$100
+  N28: v3==Ixtlahuacán!$G$100 | v3.1==Ixtlahuacán!$J$72
+  O28: v3==Ixtlahuacán!$J$72 | v3.1=None
+  P28: v3==Ixtlahuacán!$K$79 | v3.1=None
+  Q28: v3==+Ixtlahuacán!K99 | v3.1=None
+  B29: v3=1020.305 | v3.1=1020
+  C29: v3=250.5 | v3.1=320
+  D29: v3=490 | v3.1=640
+  L29: v3=20 | v3.1==Acapulco!$G$101
+  M29: v3==Acapulco!$G$101 | v3.1==Acapulco!$G$100
+
+
+First site sheet (Ixtlahuac?n):
+  v3: A1:R119
+  v3.1: A1:R119

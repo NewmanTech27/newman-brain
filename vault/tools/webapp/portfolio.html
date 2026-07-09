@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CFE Brain OS — Portafolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg0:#070b14;--bg1:#0b1120;--card:rgba(20,28,46,.72);--line:#1f2b44;--line2:#2c3c5e;
+  --txt:#e9eef7;--mut:#8b9bb4;--acc:#34d399;--acc2:#10b981;--amber:#fbbf24;--err:#f87171;
+  --info:#60a5fa;--violet:#a78bfa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif;color:var(--txt);
+  background:var(--bg0);min-height:100vh;padding:0 0 70px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(1000px 500px at 20% -10%, rgba(52,211,153,.14), transparent 60%),
+  radial-gradient(900px 450px at 95% 5%, rgba(96,165,250,.11), transparent 55%),
+  radial-gradient(800px 600px at 50% 115%, rgba(167,139,250,.09), transparent 60%),
+  linear-gradient(180deg,var(--bg0),var(--bg1))}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;background-image:
+  linear-gradient(rgba(44,60,94,.14) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(44,60,94,.14) 1px,transparent 1px);
+  background-size:42px 42px;mask-image:radial-gradient(900px 600px at 50% 0%,#000 30%,transparent 80%)}
+.wrap{max-width:1240px;margin:auto;padding:0 24px}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:34px 0 8px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.bolt{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:23px;
+  background:linear-gradient(135deg,#0e2e22,#123a2b);border:1px solid rgba(52,211,153,.45);
+  box-shadow:0 0 28px rgba(52,211,153,.25)}
+h1{font-size:26px;font-weight:800;letter-spacing:-.02em;
+  background:linear-gradient(90deg,#e9eef7 20%,#34d399 75%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:12.5px;margin-top:2px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+a.btn{display:inline-block;text-decoration:none;color:var(--acc);border:1px solid rgba(52,211,153,.5);
+  border-radius:10px;padding:9px 18px;font-weight:600;font-size:13px;transition:.15s}
+a.btn:hover{background:rgba(52,211,153,.08)}
+a.btn.solid{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04130c;border:none;
+  box-shadow:0 5px 18px rgba(16,185,129,.3)}
+
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0 8px}
+.kpi{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;
+  padding:18px;position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;
+  background:linear-gradient(90deg,var(--c,#34d399),transparent)}
+.kpi h3{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.09em;font-weight:600}
+.kpi .v{font-size:26px;font-weight:800;margin-top:6px;letter-spacing:-.02em;color:var(--c,#34d399)}
+.kpi .d{font-size:11.5px;color:var(--mut);margin-top:3px}
+
+h2.sec{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);
+  margin:30px 0 14px;display:flex;align-items:center;gap:12px}
+h2.sec::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+
+/* lever ranking bars */
+.panel{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;padding:20px}
+.duo{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}
+@media(max-width:980px){.duo{grid-template-columns:1fr}}
+.lever{margin:10px 0}
+.lever .lab{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px}
+.lever .lab b{font-weight:700}
+.lever .lab span{color:var(--mut)}
+.bar{height:14px;border-radius:8px;background:rgba(255,255,255,.05);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,var(--c),transparent 240%);
+  transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--mut);margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+canvas{width:100%;height:230px}
+
+/* service cards */
+.svc{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:18px;
+  padding:22px;margin-bottom:16px;transition:.18s}
+.svc:hover{border-color:var(--line2)}
+.svc .head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.svc h3{font-size:17px;font-weight:750;letter-spacing:-.01em}
+.svc .rpu{font:12px ui-monospace,Consolas,monospace;color:#9fd4ff;background:#0a101d;
+  border:1px solid var(--line);border-radius:8px;padding:3px 10px}
+.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px}
+.badge{font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 9px;border-radius:99px;border:1px solid var(--line2);color:var(--mut)}
+.badge.ok{color:var(--acc);border-color:rgba(52,211,153,.5)}
+.badge.warn{color:var(--amber);border-color:rgba(251,191,36,.5)}
+.badge.err{color:var(--err);border-color:rgba(248,113,113,.5)}
+.badge.info{color:var(--info);border-color:rgba(96,165,250,.5)}
+.svc .big{text-align:right}
+.svc .big .v{font-size:25px;font-weight:800;color:var(--acc)}
+.svc .big .d{font-size:11.5px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:16px}
+.cell{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:11px 13px}
+.cell h4{font-size:10px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.cell .v{font-size:16.5px;font-weight:750;margin-top:3px}
+.cell .v small{font-size:11px;color:var(--mut);font-weight:500}
+.cell.hi{border-color:rgba(52,211,153,.45);background:rgba(52,211,153,.05)}
+.cell.hi .v{color:var(--acc)}
+.alerts{margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.alert{font-size:12px;color:var(--mut);background:rgba(255,255,255,.03);border:1px solid var(--line);
+  border-left:3px solid var(--line2);border-radius:8px;padding:7px 11px}
+.alert.error{border-left-color:var(--err)}
+.alert.warn{border-left-color:var(--amber)}
+.alert.opp{border-left-color:var(--acc)}
+.alert.info{border-left-color:var(--info)}
+details summary{cursor:pointer;font-size:12px;color:var(--mut);margin-top:12px;user-select:none}
+details summary:hover{color:var(--txt)}
+.invalid{border-color:rgba(248,113,113,.5)}
+.foot{color:var(--mut);font-size:11px;margin-top:34px;line-height:1.7;text-align:center}
+.loading{text-align:center;color:var(--mut);padding:60px 0;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+  <div class="brand">
+    <div class="bolt">📊</div>
+    <div>
+      <h1>Portafolio</h1>
+      <div class="sub">Todos los servicios de <code>raw/bills/</code> en una pasada determinística — mismo motor, mismos números.</div>
+    </div>
+  </div>
+  <div class="nav">
+    <a class="btn" href="/">← Centro de mando</a>
+    <a class="btn" href="/chat">💬 Chat</a>
+    <a class="btn solid" href="/cotizador">⚡ Cotizador</a>
+  </div>
+</div>
+
+<div id="app"><div class="loading">Corriendo el portafolio — parseando y validando cada recibo…</div></div>
+
+<div class="foot">
+Bill ANTES = MEM + bonificación FP (sin IVA) — la base real del recibo · ahorros = motor v2 golden-validado ·
+yield municipal y curvas por giro = supuesto (prefactibilidad)<br>
+Un RPU con recibos que no cuadran (&gt;0.5%) se excluye del agregado — no se construye encima de un recibo que no cuadra.
+</div>
+</div>
+
+<script>
+const mxn = x => "$" + Math.round(x).toLocaleString("es-MX");
+const mxnM = x => Math.abs(x) >= 1e6 ? "$" + (x/1e6).toLocaleString("es-MX",{maximumFractionDigits:1}) + " M" : mxn(x);
+const pct = x => (100*x).toLocaleString("es-MX",{maximumFractionDigits:1}) + "%";
+const LCOL = {pv:"#fbbf24", bess:"#60a5fa", fp:"#a78bfa"};
+const LNAME = {pv:"PV (energía)", bess:"BESS (demanda + arbitraje)", fp:"Corrección FP"};
+
+fetch("/api/portfolio").then(r=>r.json()).then(render)
+  .catch(e=>{document.getElementById("app").innerHTML =
+    `<div class="loading">No se pudo correr el portafolio: ${e}</div>`});
+
+function render(d){
+  const ag = d.aggregate, ok = d.services.filter(s=>s.status==="ok");
+  let h = "";
+
+  /* ---- KPIs ---- */
+  h += `<div class="kpis">
+    <div class="kpi" style="--c:#e9eef7"><h3>Servicios</h3><div class="v" style="color:var(--txt)">${ag.servicios}</div>
+      <div class="d">${ag.ok} válidos${ag.invalidos?` · <span style="color:var(--err)">${ag.invalidos} no cuadran</span>`:""}</div></div>
+    <div class="kpi" style="--c:#8b9bb4"><h3>Facturación anual (antes)</h3><div class="v" style="color:var(--txt)">${mxnM(ag.antes)}</div>
+      <div class="d">${Math.round(ag.kwh_total/1e6).toLocaleString("es-MX")} GWh/año</div></div>
+    <div class="kpi" style="--c:#34d399"><h3>Ahorro anual total</h3><div class="v">${mxnM(ag.total)}</div>
+      <div class="d">${pct(ag.pct)} del bill · neto disp. ${mxnM(ag.neto_disp)}</div></div>
+    <div class="kpi" style="--c:#fbbf24"><h3>Sistemas propuestos</h3><div class="v" style="color:var(--amber)">${Math.round(ag.kwp).toLocaleString("es-MX")} kWp</div>
+      <div class="d">+ ${Math.round(ag.bess_kwh).toLocaleString("es-MX")} kWh BESS</div></div>
+    <div class="kpi" style="--c:#60a5fa"><h3>CAPEX agregado</h3><div class="v" style="color:var(--info)">${mxnM(ag.capex)}</div>
+      <div class="d">payback agregado ~${(ag.capex/ag.total).toLocaleString("es-MX",{maximumFractionDigits:1})} años (bruto)</div></div>
+  </div>`;
+
+  /* ---- levers + monthly chart ---- */
+  const lmax = Math.max(...Object.values(ag.levers), 1);
+  h += `<div class="duo">
+    <div class="panel"><h2 class="sec" style="margin:0 0 14px">Palancas del portafolio — de dónde sale el ahorro</h2>
+      ${Object.entries(ag.levers).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`
+        <div class="lever"><div class="lab"><b style="color:${LCOL[k]}">${LNAME[k]}</b>
+          <span>${mxn(v)} · ${pct(v/(ag.total||1))} del total</span></div>
+          <div class="bar"><i style="--c:${LCOL[k]};width:${100*v/lmax}%"></i></div></div>`).join("")}
+      <div class="legend">El ranking de palancas es la tesis comercial: qué vender primero en cada sitio.</div>
+    </div>
+    <div class="panel"><h2 class="sec" style="margin:0 0 14px">Bill mensual — antes vs después (agregado)</h2>
+      <canvas id="mchart" width="640" height="230"></canvas>
+      <div class="legend"><span><i style="background:#3a4a6b"></i>antes</span>
+        <span><i style="background:#34d399"></i>después (híbrido + FP)</span></div>
+    </div>
+  </div>`;
+
+  /* ---- service cards ---- */
+  h += `<h2 class="sec">Servicios — escenarios por RPU</h2>`;
+  for(const s of d.services){
+    if(s.status!=="ok"){
+      h += `<div class="svc invalid"><div class="head"><div>
+        <h3>${s.site||s.rpu}</h3><div class="badges"><span class="rpu">${s.rpu}</span>
+        <span class="badge err">${s.status==="invalido"?`${s.bad_bills.length} recibos no cuadran (>0.5%)`:"sin recibos"}</span></div></div></div>
+        <div class="alerts"><div class="alert error">Excluido del agregado: ${(s.bad_bills||[]).join(", ")||"carpeta vacía"} —
+        probable error CFE o de parseo; revisar antes de usar números.</div></div></div>`;
+      continue;
+    }
+    const lv = s.levers, ltot = lv.pv+lv.bess+lv.fp || 1;
+    h += `<div class="svc">
+      <div class="head">
+        <div>
+          <h3>${s.site || s.municipio || s.rpu}</h3>
+          <div class="badges">
+            <span class="rpu">${s.rpu}</span>
+            <span class="badge info">${s.division}</span>
+            <span class="badge ok">${s.months} meses · recibos cuadran</span>
+            <span class="badge ${s.config_source==="inputs.json"?"ok":"warn"}">config ${s.config_source}</span>
+            ${s.fp_correction?'<span class="badge ok">FP activa</span>':""}
+            <span class="badge">palanca nº1: ${s.best_lever.toUpperCase()}</span>
+          </div>
+        </div>
+        <div class="big"><div class="v">${mxn(s.total)}/año</div>
+          <div class="d">${pct(s.pct)} del bill · neto disp. ${mxn(s.neto_disp)}</div></div>
+      </div>
+      <div class="bar" style="margin-top:14px;height:10px;display:flex">
+        <i style="--c:${LCOL.pv};width:${100*lv.pv/ltot}%;border-radius:8px 0 0 8px"></i><i style="--c:${LCOL.bess};width:${100*lv.bess/ltot}%;border-radius:0"></i><i style="--c:${LCOL.fp};width:${100*lv.fp/ltot}%;border-radius:0 8px 8px 0"></i>
+      </div>
+      <div class="legend">
+        <span><i style="background:${LCOL.pv}"></i>PV ${mxn(lv.pv)}</span>
+        <span><i style="background:${LCOL.bess}"></i>BESS ${mxn(lv.bess)}</span>
+        <span><i style="background:${LCOL.fp}"></i>FP ${mxn(lv.fp)}</span>
+      </div>
+      <div class="grid">
+        <div class="cell"><h4>Bill antes</h4><div class="v">${mxnM(s.antes)}<small>/año</small></div></div>
+        <div class="cell"><h4>Solo PV</h4><div class="v">${mxnM(s.pv_only)}</div></div>
+        <div class="cell"><h4>Solo BESS</h4><div class="v">${mxnM(s.bess_only)}</div></div>
+        <div class="cell hi"><h4>Híbrido${s.fp_correction?" + FP":""}</h4><div class="v">${mxnM(s.total)}</div></div>
+        <div class="cell"><h4>Sistema</h4><div class="v">${Math.round(s.kwp).toLocaleString("es-MX")} kWp <small>+ ${Math.round(s.bess_kwh).toLocaleString("es-MX")} kWh</small></div></div>
+        <div class="cell"><h4>CAPEX</h4><div class="v">${mxnM(s.capex||0)}</div></div>
+        <div class="cell"><h4>TIR proyecto</h4><div class="v">${s.tir_proyecto!=null?pct(s.tir_proyecto):"—"}</div></div>
+        <div class="cell"><h4>Payback</h4><div class="v">${s.payback!=null?s.payback+" años":"—"}</div></div>
+      </div>
+      ${s.alerts && s.alerts.length ? `<details><summary>${s.alerts.length} alertas del régimen — ver</summary>
+        <div class="alerts">${s.alerts.map(a=>`<div class="alert ${a[0]}">${a[1]}</div>`).join("")}</div></details>`:""}
+    </div>`;
+  }
+
+  document.getElementById("app").innerHTML = h;
+  drawMonthly(ok);
+}
+
+function drawMonthly(ok){
+  const cv = document.getElementById("mchart"); if(!cv) return;
+  const ctx = cv.getContext("2d");
+  const agg = {};
+  for(const s of ok) for(const r of s.monthly){
+    const k = `${r.year}-${String(r.month).padStart(2,"0")}`;
+    agg[k] = agg[k] || {antes:0, ahorro:0, mes:r.mes, n:0};
+    agg[k].antes += r.antes; agg[k].ahorro += r.hibrido + (r.fp||0); agg[k].n++;
+  }
+  const keys = Object.keys(agg).sort();
+  const W = cv.width, H = cv.height, padL = 46, padB = 22, padT = 8;
+  const max = Math.max(...keys.map(k=>agg[k].antes), 1);
+  const bw = (W - padL - 8) / keys.length;
+  ctx.clearRect(0,0,W,H);
+  ctx.font = "10px Segoe UI"; ctx.textAlign = "right"; ctx.fillStyle = "#8b9bb4";
+  for(let i=0;i<=3;i++){
+    const v = max*i/3, y = H-padB-(H-padB-padT)*i/3;
+    ctx.fillText((v/1e6).toFixed(1)+"M", padL-6, y+3);
+    ctx.strokeStyle = "rgba(44,60,94,.5)"; ctx.beginPath(); ctx.moveTo(padL,y); ctx.lineTo(W-4,y); ctx.stroke();
+  }
+  ctx.textAlign = "center";
+  keys.forEach((k,i)=>{
+    const a = agg[k], x = padL + i*bw;
+    const hA = (H-padB-padT)*a.antes/max, hD = (H-padB-padT)*(a.antes-a.ahorro)/max;
+    ctx.fillStyle = "#3a4a6b"; ctx.fillRect(x+bw*.14, H-padB-hA, bw*.34, hA);
+    ctx.fillStyle = "#34d399"; ctx.fillRect(x+bw*.52, H-padB-hD, bw*.34, hD);
+    if(bw>26){ ctx.fillStyle = "#8b9bb4"; ctx.fillText(a.mes, x+bw/2, H-7); }
+  });
+}
+</script>
+</body>
+</html>

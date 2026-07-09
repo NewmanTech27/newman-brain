@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CFE Brain OS — Chat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg0:#070b14;--bg1:#0b1120;--card:rgba(20,28,46,.72);--line:#1f2b44;--line2:#2c3c5e;
+  --txt:#e9eef7;--mut:#8b9bb4;--acc:#34d399;--acc2:#10b981;--amber:#fbbf24;--err:#f87171;
+  --info:#60a5fa;--violet:#a78bfa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font:14px/1.6 "Segoe UI",system-ui,sans-serif;color:var(--txt);background:var(--bg0);
+  display:flex;flex-direction:column;overflow:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+  radial-gradient(1000px 500px at 20% -10%,rgba(52,211,153,.13),transparent 60%),
+  radial-gradient(900px 450px at 95% 5%,rgba(96,165,250,.10),transparent 55%),
+  linear-gradient(180deg,var(--bg0),var(--bg1))}
+.wrap{max-width:920px;margin:auto;width:100%;padding:0 22px;display:flex;flex-direction:column;height:100%}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 0 14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.bolt{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:20px;
+  background:linear-gradient(135deg,#0e2e22,#123a2b);border:1px solid rgba(52,211,153,.45);
+  box-shadow:0 0 24px rgba(52,211,153,.25)}
+h1{font-size:21px;font-weight:800;letter-spacing:-.02em;
+  background:linear-gradient(90deg,#e9eef7 20%,#34d399 75%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:11.5px;margin-top:1px}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+a.chip,button.chip{display:inline-block;text-decoration:none;color:var(--acc);border:1px solid rgba(52,211,153,.5);
+  border-radius:9px;padding:7px 14px;font-weight:600;font-size:12px;background:transparent;cursor:pointer;transition:.15s;font-family:inherit}
+a.chip:hover,button.chip:hover{background:rgba(52,211,153,.08)}
+
+#log{flex:1;overflow-y:auto;padding:6px 2px 14px;display:flex;flex-direction:column;gap:14px;scroll-behavior:smooth}
+.msg{max-width:86%;border-radius:16px;padding:12px 16px;white-space:normal;word-wrap:break-word}
+.msg.user{align-self:flex-end;background:linear-gradient(135deg,rgba(52,211,153,.16),rgba(16,185,129,.10));
+  border:1px solid rgba(52,211,153,.35);border-bottom-right-radius:5px}
+.msg.bot{align-self:flex-start;background:var(--card);border:1px solid var(--line);border-bottom-left-radius:5px}
+.msg.err{align-self:flex-start;background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.4)}
+.msg .meta{font-size:10px;color:var(--mut);margin-top:8px}
+.msg p{margin:6px 0}
+.msg p:first-child{margin-top:0}.msg p:last-child{margin-bottom:0}
+.msg h-b{display:block;font-weight:750;margin:10px 0 4px;color:var(--txt)}
+.msg ul{margin:6px 0 6px 20px}
+.msg li{margin:3px 0}
+.msg code{font:12px ui-monospace,Consolas,monospace;color:#9fd4ff;background:#0a101d;
+  border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+.msg pre{font:12px/1.5 ui-monospace,Consolas,monospace;background:#0a101d;border:1px solid var(--line);
+  border-radius:10px;padding:11px 13px;overflow-x:auto;margin:8px 0}
+.msg pre code{border:none;background:none;padding:0}
+.msg .wl{color:var(--violet);font-weight:600;background:rgba(167,139,250,.09);
+  border:1px solid rgba(167,139,250,.3);border-radius:6px;padding:0 6px;font-size:12.5px}
+.msg b,.msg strong{color:var(--txt)}
+
+.hello{align-self:center;text-align:center;color:var(--mut);font-size:13px;margin-top:8vh;max-width:560px}
+.hello .big{font-size:17px;color:var(--txt);font-weight:700;margin-bottom:8px}
+.sugs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+.sug{font-size:12px;color:var(--mut);border:1px solid var(--line2);border-radius:99px;padding:7px 14px;
+  cursor:pointer;transition:.15s;background:var(--card)}
+.sug:hover{color:var(--acc);border-color:rgba(52,211,153,.5)}
+
+.wait{align-self:flex-start;display:flex;align-items:center;gap:10px;color:var(--mut);font-size:12.5px;
+  background:var(--card);border:1px solid var(--line);border-radius:16px;border-bottom-left-radius:5px;padding:12px 16px}
+.dots{display:inline-flex;gap:4px}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--acc);animation:dotp 1.2s infinite}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes dotp{0%,80%,100%{opacity:.25;transform:scale(.85)}40%{opacity:1;transform:scale(1)}}
+
+.inputbar{padding:12px 0 18px}
+.box{display:flex;gap:10px;align-items:flex-end;background:var(--card);backdrop-filter:blur(8px);
+  border:1px solid var(--line2);border-radius:16px;padding:10px 12px}
+.box:focus-within{border-color:rgba(52,211,153,.55);box-shadow:0 0 0 3px rgba(52,211,153,.08)}
+textarea{flex:1;background:transparent;border:none;outline:none;resize:none;color:var(--txt);
+  font:14px/1.5 "Segoe UI",system-ui,sans-serif;max-height:140px;min-height:24px}
+textarea::placeholder{color:#5a6a85}
+#send{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04130c;font-weight:800;border:none;
+  border-radius:11px;padding:10px 20px;cursor:pointer;font:inherit;font-size:13px;transition:.15s;
+  box-shadow:0 4px 14px rgba(16,185,129,.3)}
+#send:hover{transform:translateY(-1px)}
+#send:disabled{opacity:.45;cursor:wait;transform:none}
+.foot{font-size:10.5px;color:var(--mut);text-align:center;margin-top:9px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand">
+      <div class="bolt">💬</div>
+      <div><h1>Chat — CFE Brain OS</h1>
+      <div class="sub">Pregunta sobre proyectos, normas, tarifas y reglas — responde leyendo el wiki y, si hace falta, corriendo el motor.</div></div>
+    </div>
+    <div class="nav">
+      <a class="chip" href="/">⌂ Centro de mando</a>
+      <a class="chip" href="/portafolio">📊 Portafolio</a>
+      <a class="chip" href="/cotizador">⚡ Cotizador</a>
+      <button class="chip" id="reset">🧹 Nueva conversación</button>
+    </div>
+  </div>
+
+  <div id="log"></div>
+
+  <div class="inputbar">
+    <div class="box">
+      <textarea id="inp" rows="1" placeholder="p. ej. ¿puedo instalar 900 kWp sin permiso de la CNE?"></textarea>
+      <button id="send">Enviar</button>
+    </div>
+    <div class="foot">Corre 100% local vía Claude Code CLI · lee el wiki y puede ejecutar el motor · <b>no modifica archivos</b> · cada respuesta tarda ~20–90 s porque consulta fuentes reales</div>
+  </div>
+</div>
+
+<script>
+const log = document.getElementById("log"), inp = document.getElementById("inp"),
+      send = document.getElementById("send");
+let SID = null, hist = [], waitEl = null, timer = null;
+
+const SUGS = [
+  "¿Puedo instalar 900 kWp sin permiso?",
+  "¿Cómo se calcula la demanda facturable en GDMTH?",
+  "¿Qué obligaciones trae el autoconsumo ≥0.7 MW?",
+  "¿Cómo va el portafolio? corre tools/portfolio.py",
+  "¿Qué dice la NOM-001 sobre el bus del 120%?",
+  "¿Por qué el BESS y no el PV baja la capacidad en el SIN?"
+];
+
+// ---------- markdown ligero ----------
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function md(src){
+  let s = esc(src);
+  const blocks = [];
+  s = s.replace(/```([\s\S]*?)```/g, (_,c)=>{blocks.push(c.replace(/^\w*\n/,""));return " B"+(blocks.length-1)+" "});
+  s = s.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_,p,d)=>`<span class="wl">${d||p}</span>`);
+  s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
+  s = s.replace(/^#{1,6}\s*(.+)$/gm, "<h-b>$1</h-b>");
+  s = s.replace(/((?:^\|.*\|\s*$\n?)+)/gm, m=>"<pre>"+m.trim()+"</pre>");
+  s = s.replace(/((?:^[-*]\s+.+$\n?)+)/gm,
+        m=>"<ul>"+m.trim().split(/\n/).map(l=>"<li>"+l.replace(/^[-*]\s+/,"")+"</li>").join("")+"</ul>");
+  s = s.replace(/((?:^\d+\.\s+.+$\n?)+)/gm,
+        m=>"<ul>"+m.trim().split(/\n/).map(l=>"<li>"+l.replace(/^\d+\.\s+/,"")+"</li>").join("")+"</ul>");
+  s = s.split(/\n{2,}/).map(p=>/^<(ul|pre|h-b)/.test(p.trim())?p:"<p>"+p.replace(/\n/g,"<br>")+"</p>").join("");
+  s = s.replace(/ B(\d+) /g, (_,i)=>"<pre><code>"+blocks[+i]+"</code></pre>");
+  return s;
+}
+
+// ---------- render ----------
+function paint(){
+  log.innerHTML = "";
+  if(!hist.length){
+    log.innerHTML = `<div class="hello"><div class="big">¿Qué quieres saber?</div>
+      Respondo con el wiki del vault (fuentes primarias citadas como <span class="wl">página</span>)
+      y puedo correr el motor si la pregunta lo pide.
+      <div class="sugs">${SUGS.map(s=>`<div class="sug">${s}</div>`).join("")}</div></div>`;
+    log.querySelectorAll(".sug").forEach(el=>el.onclick=()=>{inp.value=el.textContent;go()});
+    return;
+  }
+  for(const m of hist){
+    const d = document.createElement("div");
+    d.className = "msg " + (m.role==="user"?"user":(m.err?"err":"bot"));
+    d.innerHTML = m.role==="user" ? "<p>"+esc(m.text).replace(/\n/g,"<br>")+"</p>" : md(m.text);
+    if(m.meta) d.innerHTML += `<div class="meta">${m.meta}</div>`;
+    log.appendChild(d);
+  }
+  log.scrollTop = log.scrollHeight;
+}
+function save(){ try{localStorage.setItem("cfe_chat_v1", JSON.stringify({sid:SID, hist}))}catch(e){} }
+function load(){ try{const d=JSON.parse(localStorage.getItem("cfe_chat_v1")||"null");
+  if(d){SID=d.sid; hist=d.hist||[]}}catch(e){} }
+
+// ---------- envío ----------
+const PHASES = ["leyendo wiki/index.md…","consultando las páginas del wiki…",
+  "revisando fuentes primarias…","corriendo herramientas si hace falta…","redactando la respuesta…"];
+function showWait(){
+  waitEl = document.createElement("div"); waitEl.className = "wait";
+  waitEl.innerHTML = `<span class="dots"><i></i><i></i><i></i></span><span id="ph">${PHASES[0]}</span><span id="tk" style="font:11px ui-monospace,Consolas,monospace"></span>`;
+  log.appendChild(waitEl); log.scrollTop = log.scrollHeight;
+  const t0 = Date.now(); let i = 0;
+  timer = setInterval(()=>{
+    const s = Math.round((Date.now()-t0)/1000);
+    waitEl.querySelector("#tk").textContent = s+"s";
+    if(s>0 && s%18===0) waitEl.querySelector("#ph").textContent = PHASES[Math.min(++i, PHASES.length-1)];
+  }, 1000);
+}
+function hideWait(){ if(timer)clearInterval(timer); if(waitEl)waitEl.remove(); waitEl=null; timer=null; }
+
+async function go(){
+  const q = inp.value.trim(); if(!q || send.disabled) return;
+  inp.value = ""; inp.style.height = "auto";
+  hist.push({role:"user", text:q}); paint(); save();
+  send.disabled = true; showWait();
+  try{
+    const r = await fetch("/api/chat", {method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({prompt:q, session_id:SID})});
+    const d = await r.json();
+    hideWait();
+    if(d.error){ hist.push({role:"bot", err:true, text:d.error}); }
+    else{
+      SID = d.session_id || SID;
+      const meta = [d.turns?`${d.turns} pasos`:null, d.cost!=null?`$${(+d.cost).toFixed(2)} USD`:null]
+                   .filter(Boolean).join(" · ");
+      hist.push({role:"bot", text:d.text||"(respuesta vacía)", meta});
+    }
+  }catch(e){ hideWait(); hist.push({role:"bot", err:true, text:"No pude contactar el servidor local: "+e}); }
+  send.disabled = false; paint(); save(); inp.focus();
+}
+
+send.onclick = go;
+inp.addEventListener("keydown", e=>{ if(e.key==="Enter" && !e.shiftKey){ e.preventDefault(); go(); } });
+inp.addEventListener("input", ()=>{ inp.style.height="auto"; inp.style.height=Math.min(inp.scrollHeight,140)+"px"; });
+document.getElementById("reset").onclick = ()=>{ SID=null; hist=[]; save(); paint(); inp.focus(); };
+
+load(); paint(); inp.focus();
+</script>
+</body>
+</html>

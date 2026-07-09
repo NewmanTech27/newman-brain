@@ -1,0 +1,57 @@
+========================================================================================================================
+AGGREGATE SHEETS
+========================================================================================================================
+
+--- Sheet 8: Comparativo Comercial ---
+Dimensions: A1:H26
+
+Row  1: A=COMPARATIVO COMERCIAL — Comprar vs 
+Row  2: A=⚙ Variables por proyecto (PV/BESS, 
+Row  4: A=VARIABLES POR PROYECTO (desde Supue
+Row  5: A=Proyecto | B=PV kWp | C=BESS kW | D=BESS kWh | E=PPA $/kWh | F=PPA plazo | G=Comisión % | H=Capacitor $
+Row  6: A=Ixtlahuacán | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row  7: A=Acapulco | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row  8: A=Cancún | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row  9: A=Proplasa PR1 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 10: A=Proplasa PR2 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 11: A=Proplasa Tapas | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 14: A=RESULTADO POR PROYECTO (beneficio a
+Row 15: A=Proyecto | B=Compra: benef./año | C=Compra: inversión | D=Compra: TIR | E=PPA: benef. cliente/año | F=PPA: TIR financiador | G=Ahorro bruto/año | H=Ahorro % (proyecto)
+Row 16: A=Ixtlahuacán | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 17: A=Acapulco | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 18: A=Cancún | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 19: A=Proplasa PR1 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 20: A=Proplasa PR2 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 21: A=Proplasa Tapas | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA]
+Row 22: A=PORTAFOLIO | B=[FORMULA] | C=[FORMULA] | E=[FORMULA] | G=[FORMULA]
+Row 24: A=Comprar maximiza el ahorro de GEPP 
+
+
+--- Sheet 9: Proyección 20 años ---
+Dimensions: A1:I27
+
+Row  1: A=PROYECCIÓN 20 AÑOS — Portafolio GEP
+Row  2: A=Tarifa Actual = lo que pagarían sin
+Row  4: A=Año | B=Régimen | C=Tarifa Actual $ | D=Ahorro total $ | E=Costo c/proyecto $ | F=Flujo Compra $ | G=Flujo Cliente PPA $ | H=Acum. Compra $ | I=Acum. Cliente PPA $
+Row  5: A=1 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row  6: A=2 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row  7: A=3 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row  8: A=4 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row  9: A=5 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 10: A=6 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 11: A=7 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 12: A=8 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 13: A=9 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 14: A=10 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 15: A=11 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 16: A=12 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 17: A=13 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 18: A=14 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 19: A=15 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 20: A=16 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 21: A=17 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 22: A=18 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 23: A=19 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 24: A=20 | B=[FORMULA] | C=[FORMULA] | D=[FORMULA] | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA]
+Row 25: A=Acum 20a: | H=[FORMULA] | I=[FORMULA]
+Row 27: A=Acumulado Compra ~ supera el PPA cl

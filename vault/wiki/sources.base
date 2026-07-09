@@ -1,0 +1,28 @@
+filters:
+  and:
+    - 'type == "source"'
+    - 'file.inFolder("wiki/sources")'
+properties:
+  note.created:
+    displayName: Ingresada
+  note.tags:
+    displayName: Etiquetas
+views:
+  - type: table
+    name: Biblioteca
+    order:
+      - file.name
+      - created
+      - tags
+    sort:
+      - property: created
+        direction: DESC
+  - type: table
+    name: Recientes
+    limit: 5
+    order:
+      - file.name
+      - created
+    sort:
+      - property: created
+        direction: DESC
