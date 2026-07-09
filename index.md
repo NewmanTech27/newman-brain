@@ -9,7 +9,9 @@ _(empty — awaiting first ingest)_
 _(empty)_
 
 ## supabase-devops
-_(empty)_
+- [[canonicity-prod-is-truth]] — decision: production DB is source of truth; reconcile git to it, unify the fork
+- [[main-dev-fork]] — finding: main (cfe-collector) vs dev (CRM) is a two-way fork off frozen staging, not drift
+- [[migration-git-prod-drift]] — finding: only 5/75 dev migration versions match the 117-migration prod ledger
 
 ## tuesday-inputs
 _(empty)_

@@ -97,3 +97,20 @@ The same gate protects `extraction.newman.re`. `tuesday-inputs` builds it once, 
 These pages expose client RPUs, invoices, deal pricing, and margins. An unauthenticated deploy is a P0, not a follow-up ticket.
 
 Owner: `tuesday-inputs` builds the auth shell and the CEO page. Content is fed by the CEO session.
+
+---
+
+## The org
+
+| Session | tmux | Pane | Role |
+|---|---|---|---|
+| CEO | — | Jesus's MacBook | Direction, re-tasking, reports to Jesus |
+| CTO | `cto` | bottom-left, amber | **Merge veto.** Independent re-score. Blocks below 95/100. |
+| `cfe-bill-parser` | `cfe` | mid-top, green | Extraction pipeline + `extraction.newman.re` |
+| `tuesday-inputs` | `tuesday` | mid-bottom, green | CRM + shared Google auth gate |
+| `supabase-devops` | `data` | right-top, teal | **GATE 0 branch audit**, Supabase, CI/CD, executes merges |
+| `cfe-ppa-bess` | `ppa` | right-bottom, teal | Deal offer + engine-enforced price floor |
+| `ai-research` | `research` | left, cyan | Token optimization + upskilling. Measures, does not build. |
+
+`ai-research` touches no product code. It proposes; the CEO decides; the CTO reviews.
+Its prompt edits go through the CEO. Prompts are version-controlled at `~/cfe-brain/prompts/`.
