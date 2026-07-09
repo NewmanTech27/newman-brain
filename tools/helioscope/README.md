@@ -61,6 +61,24 @@ python3 run_pipeline.py --site 780881200029 --live   # single site
 Refresh the dataset after new bills land: run `extract_sites.sql` via the
 Supabase MCP / psql and rewrite `sites.json`.
 
+## Proof-of-concept mode (no HelioScope API key)
+
+While the Enterprise key is pending, `design_pack.py` replaces the API leg:
+
+```bash
+python3 geocode_verify.py            # still the core: location + confidence
+python3 design_pack.py               # → out/packs/<RPU>.md + INDEX.md
+python3 design_pack.py --site 780881200029 --roof-m2 3200   # manual roof area
+```
+
+Each pack answers "how many modules fit" via Solar API `maxArrayPanelsCount`
+(or a flat-roof packing estimate: usable 55%, 575 Wp @ 2.69 m² per module),
+links the exact satellite/Street View frames to confirm the roof, states the
+confidence tier + evidence, and ends with a paste-ready checklist to recreate
+the design manually in the HelioScope browser UI (~5 min per site). Design
+manually from the pack, then record the IDs in `client.helioscope_site`;
+when the API key lands, `run_pipeline.py --live` takes over unchanged.
+
 ## Persistence & deploy
 
 - `schema.sql` creates `client.helioscope_site` — **apply on the dev branch only**.

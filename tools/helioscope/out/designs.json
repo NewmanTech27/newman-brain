@@ -1,0 +1,2447 @@
+{
+ "designs": [
+  {
+   "rpu": "003170218883",
+   "client_name": "FIDEICOMISO . F/1596",
+   "tier": "HIGH",
+   "confidence": 95,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: one Tijuana Otay (Rampa Aeropuerto #16000 Col. La Pechuga, Interior Hotel One Alameda Otay Town Center, La Pechuga, 22425 Tijuana, B.C.)",
+    "municipio matches POI address",
+    "POI and geocode agree within 648 m",
+    "geocode GEOMETRIC_CENTER: C. E, Fovissste, 22457 Tijuana, B.C., Mexico",
+    "Solar API: building found, roof 445 m2, max 106 panels"
+   ],
+   "lat": 32.530189799999995,
+   "lng": -116.95019149999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "003170218883 - FIDEICOMISO . F/1596 Tijuana",
+    "field_segment": {
+     "geometry": [
+      [
+       32.53054912446999,
+       -116.95061769021105
+      ],
+      [
+       32.53054912446999,
+       -116.94976530978893
+      ],
+      [
+       32.52983047553,
+       -116.94976530978893
+      ],
+      [
+       32.52983047553,
+       -116.95061769021105
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 106
+   }
+  },
+  {
+   "rpu": "008111000167",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 80,
+   "evidence": [
+    "POI match: Médano Hotel & Suites (Camino Real y Paseo Del Pescador, Av. del Pescador, El Medano Ejidal, El Medano, 23453 Cabo San Lucas, B.C.S.)",
+    "CP 23453 matches POI address",
+    "POI and geocode agree within 412 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode GEOMETRIC_CENTER: Lázaro Cárdenas, El Medano Ejidal, 23453 Cabo San Lucas, B.C.S., Mexico",
+    "Solar API: building found, roof 15 m2, max 4 panels"
+   ],
+   "lat": 22.890933,
+   "lng": -109.90700659999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "008111000167 - FIDEICOMISO F/1596 Los Cabos",
+    "field_segment": {
+     "geometry": [
+      [
+       22.891292324469998,
+       -109.90739664141203
+      ],
+      [
+       22.891292324469998,
+       -109.90661655858794
+      ],
+      [
+       22.890573675530003,
+       -109.90661655858794
+      ],
+      [
+       22.890573675530003,
+       -109.90739664141203
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 4
+   }
+  },
+  {
+   "rpu": "016040800020",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 80,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Mexicali (Calz. Adolfo López Mateos 1029 Col. Industrial Centro Cívico, Blvd. Adolfo López Mateos 1029-Norte, Zona Industrial, 21000 Mexicali, B.C.)",
+    "municipio matches POI address",
+    "geocode APPROXIMATE: Residencial Cerrada del Parque, 21010 Mexicali, B.C., Mexico",
+    "Solar API: building found, roof 1643 m2, max 430 panels"
+   ],
+   "lat": 32.6455925,
+   "lng": -115.4693296,
+   "status": "dry_run",
+   "would_create": {
+    "project": "016040800020 - Fiesta Inn Mexicali",
+    "field_segment": {
+     "geometry": [
+      [
+       32.645951824469996,
+       -115.46975633928781
+      ],
+      [
+       32.645951824469996,
+       -115.46890286071218
+      ],
+      [
+       32.64523317553,
+       -115.46890286071218
+      ],
+      [
+       32.64523317553,
+       -115.46975633928781
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 430
+   }
+  },
+  {
+   "rpu": "016981200989",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Mexicali (Calz. Adolfo López Mateos 1029 Col. Industrial Centro Cívico, Blvd. Adolfo López Mateos 1029-Norte, Zona Industrial, 21000 Mexicali, B.C.)",
+    "CP 21000 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 755 m",
+    "geocode APPROXIMATE: Centro Cívico, 21000 Mexicali, B.C., Mexico",
+    "Solar API: building found, roof 1643 m2, max 430 panels"
+   ],
+   "lat": 32.6455925,
+   "lng": -115.4693296,
+   "status": "dry_run",
+   "would_create": {
+    "project": "016981200989 - FIDEICOMISO F/1596 Mexicali",
+    "field_segment": {
+     "geometry": [
+      [
+       32.645951824469996,
+       -115.46975633928781
+      ],
+      [
+       32.645951824469996,
+       -115.46890286071218
+      ],
+      [
+       32.64523317553,
+       -115.46890286071218
+      ],
+      [
+       32.64523317553,
+       -115.46975633928781
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 430
+   }
+  },
+  {
+   "rpu": "061950755457",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn León (Blvd. Adolfo López Mateos 2502, Jardines de Jerez, 37530 León de los Aldama, Gto.)",
+    "CP 37530 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 571 m",
+    "geocode APPROXIMATE: Jaime Nuno, 37530 León de los Aldama, Gto., Mexico",
+    "Solar API: building found, roof 3065 m2, max 590 panels"
+   ],
+   "lat": 21.102888699999998,
+   "lng": -101.6373368,
+   "status": "dry_run",
+   "would_create": {
+    "project": "061950755457 - FIDEICOMISO F/1596 León",
+    "field_segment": {
+     "geometry": [
+      [
+       21.103248024469995,
+       -101.63772195472382
+      ],
+      [
+       21.103248024469995,
+       -101.63695164527618
+      ],
+      [
+       21.10252937553,
+       -101.63695164527618
+      ],
+      [
+       21.10252937553,
+       -101.63772195472382
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 590
+   }
+  },
+  {
+   "rpu": "076130805317",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Querétaro (Av. 5 de Febrero 108, Niños Heroes, 76010 Santiago de Querétaro, Qro.)",
+    "CP 76010 matches POI address",
+    "municipio matches POI address",
+    "geocode ROOFTOP: Prol. Pino Suárez 467_7, Modelo, 76177 Santiago de Querétaro, Qro., Mexico",
+    "Solar API: building found, roof 4932 m2, max 1259 panels"
+   ],
+   "lat": 20.583641999999998,
+   "lng": -100.407377,
+   "status": "dry_run",
+   "would_create": {
+    "project": "076130805317 - FIDEICOMISO F/1596 Querétaro",
+    "field_segment": {
+     "geometry": [
+      [
+       20.584001324469995,
+       -100.40776082807392
+      ],
+      [
+       20.584001324469995,
+       -100.40699317192608
+      ],
+      [
+       20.58328267553,
+       -100.40699317192608
+      ],
+      [
+       20.58328267553,
+       -100.40776082807392
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 1259
+   }
+  },
+  {
+   "rpu": "081151202144",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Grand Fiesta Americana Querétaro (Prol. Bernardo Quintana 4050, Plaza Boulevares, 76160 Santiago de Querétaro, Qro.)",
+    "municipio matches POI address",
+    "geocode ROOFTOP: Anillo Vial Fray Junípero Serra 21260, 76127 Santiago de Querétaro, Qro., Mexico",
+    "Solar API: building found, roof 3755 m2, max 895 panels"
+   ],
+   "lat": 20.615384300000002,
+   "lng": -100.3890299,
+   "status": "dry_run",
+   "would_create": {
+    "project": "081151202144 - FIDEICOMISO F/1596 Querétaro",
+    "field_segment": {
+     "geometry": [
+      [
+       20.61574362447,
+       -100.38941380800769
+      ],
+      [
+       20.61574362447,
+       -100.3886459919923
+      ],
+      [
+       20.615024975530005,
+       -100.3886459919923
+      ],
+      [
+       20.615024975530005,
+       -100.38941380800769
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 895
+   }
+  },
+  {
+   "rpu": "081160205628",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 80,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Grand Fiesta Americana Querétaro (Prol. Bernardo Quintana 4050, Plaza Boulevares, 76160 Santiago de Querétaro, Qro.)",
+    "municipio matches POI address",
+    "geocode GEOMETRIC_CENTER: México 57, Jurica, Santiago de Querétaro, Qro., Mexico",
+    "Solar API: building found, roof 3755 m2, max 895 panels"
+   ],
+   "lat": 20.615384300000002,
+   "lng": -100.3890299,
+   "status": "dry_run",
+   "would_create": {
+    "project": "081160205628 - FIDEICOMISO F/1596 Querétaro",
+    "field_segment": {
+     "geometry": [
+      [
+       20.61574362447,
+       -100.38941380800769
+      ],
+      [
+       20.61574362447,
+       -100.3886459919923
+      ],
+      [
+       20.615024975530005,
+       -100.3886459919923
+      ],
+      [
+       20.615024975530005,
+       -100.38941380800769
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 895
+   }
+  },
+  {
+   "rpu": "096080502408",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 70,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Americana Aguascalientes (Calle, Los Laureles S/N, Desarrollo Especial Zona de la Feria, 20000 Aguascalientes, Ags.)",
+    "municipio matches POI address",
+    "geocode APPROXIMATE: Cd Industrial, 20290 Aguascalientes, Ags., Mexico"
+   ],
+   "lat": 21.8759277,
+   "lng": -102.30382639999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "096080502408 - FIDEICOMISO F/1596 Aguascalientes",
+    "field_segment": {
+     "geometry": [
+      [
+       21.876287024469995,
+       -102.30421360606371
+      ],
+      [
+       21.876287024469995,
+       -102.30343919393627
+      ],
+      [
+       21.87556837553,
+       -102.30343919393627
+      ],
+      [
+       21.87556837553,
+       -102.30421360606371
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "156130302700",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 85,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Morelia Altozano (Av Montaña Monarca 1000, Centro Comercial Altozano, Av Montaña Monarca, Ejido del Monte, 58093 Morelia, Mich.)",
+    "municipio matches POI address",
+    "POI and geocode agree within 374 m",
+    "geocode GEOMETRIC_CENTER: Ramal Camelinas, 58093 Morelia, Mich., Mexico"
+   ],
+   "lat": 19.6749694,
+   "lng": -101.1632211,
+   "status": "dry_run",
+   "would_create": {
+    "project": "156130302700 - FIDEICOMISO F/1596 Morelia",
+    "field_segment": {
+     "geometry": [
+      [
+       19.675328724469995,
+       -101.163602703343
+      ],
+      [
+       19.675328724469995,
+       -101.162839496657
+      ],
+      [
+       19.67461007553,
+       -101.162839496657
+      ],
+      [
+       19.67461007553,
+       -101.163602703343
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "257140107396",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Express Puebla Finsa (Autop. México - Puebla 7735, Rancho Moratilla, 72110 Heroica Puebla de Zaragoza, Pue.)",
+    "CP 72110 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 419 m",
+    "geocode APPROXIMATE: Moratilla, 72110 Heroica Puebla de Zaragoza, Pue., Mexico",
+    "Solar API: building found, roof 1694 m2, max 373 panels"
+   ],
+   "lat": 19.099356,
+   "lng": -98.2347992,
+   "status": "dry_run",
+   "would_create": {
+    "project": "257140107396 - FIDEICOMISO F/1596 Puebla",
+    "field_segment": {
+     "geometry": [
+      [
+       19.099715324469997,
+       -98.2351794566116
+      ],
+      [
+       19.099715324469997,
+       -98.23441894338839
+      ],
+      [
+       19.098996675530003,
+       -98.23441894338839
+      ],
+      [
+       19.098996675530003,
+       -98.2351794566116
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 373
+   }
+  },
+  {
+   "rpu": "257140107531",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 75,
+   "evidence": [
+    "POI match: Hilton Garden Inn Puebla Angelópolis (Atlixcáyotl 2528, Reserva Territorial Atlixcáyotl, Conjunto Residencial el Pilar, 72830 San Andrés Cholula, Pue.)",
+    "CP 72830 matches POI address",
+    "municipio matches POI address",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode GEOMETRIC_CENTER: La Vista Country Club, 72830 San Bernardino Tlaxcalancingo, Pue., Mexico",
+    "Solar API: building found, roof 60 m2, max 19 panels"
+   ],
+   "lat": 19.0204387,
+   "lng": -98.2475405,
+   "status": "dry_run",
+   "would_create": {
+    "project": "257140107531 - FIDEICOMISO F/1596 San Andrés Cholula",
+    "field_segment": {
+     "geometry": [
+      [
+       19.020798024469997,
+       -98.2479205756994
+      ],
+      [
+       19.020798024469997,
+       -98.2471604243006
+      ],
+      [
+       19.020079375530003,
+       -98.2471604243006
+      ],
+      [
+       19.020079375530003,
+       -98.2479205756994
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 19
+   }
+  },
+  {
+   "rpu": "257140206025",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 70,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Grand Fiesta Americana Puebla Angelópolis (Osa Mayor 2507 Col, Reserva Territorial Atlixcáyotl, Concepción las Lajas, 72190 Heroica Puebla de Zaragoza, Pue.)",
+    "geocode GEOMETRIC_CENTER: Maravillas - Rio Lerma, 72730 Sanctorum, Pue., Mexico",
+    "Solar API: building found, roof 1426 m2, max 590 panels"
+   ],
+   "lat": 19.033065099999998,
+   "lng": -98.2300052,
+   "status": "dry_run",
+   "would_create": {
+    "project": "257140206025 - FIDEICOMISO F/1596 San Pedro Cholula",
+    "field_segment": {
+     "geometry": [
+      [
+       19.033424424469995,
+       -98.23038530458447
+      ],
+      [
+       19.033424424469995,
+       -98.22962509541551
+      ],
+      [
+       19.03270577553,
+       -98.22962509541551
+      ],
+      [
+       19.03270577553,
+       -98.23038530458447
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 590
+   }
+  },
+  {
+   "rpu": "257160306867",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 85,
+   "evidence": [
+    "POI match: Hilton Garden Inn Puebla Angelópolis (Atlixcáyotl 2528, Reserva Territorial Atlixcáyotl, Conjunto Residencial el Pilar, 72830 San Andrés Cholula, Pue.)",
+    "CP 72830 matches POI address",
+    "municipio matches POI address",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode RANGE_INTERPOLATED: Av. Las Torres 7, El Molinito, 72197 San Bernardino Tlaxcalancingo, Pue., Mexico",
+    "Solar API: building found, roof 60 m2, max 19 panels"
+   ],
+   "lat": 19.0204387,
+   "lng": -98.2475405,
+   "status": "dry_run",
+   "would_create": {
+    "project": "257160306867 - FIDEICOMISO F/1596 San Andrés Cholula",
+    "field_segment": {
+     "geometry": [
+      [
+       19.020798024469997,
+       -98.2479205756994
+      ],
+      [
+       19.020798024469997,
+       -98.2471604243006
+      ],
+      [
+       19.020079375530003,
+       -98.2471604243006
+      ],
+      [
+       19.020079375530003,
+       -98.2479205756994
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 19
+   }
+  },
+  {
+   "rpu": "320071203080",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 80,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Americana Acapulco Villas (Av Costera Miguel Alemán 97, Fracc, Farallon, 39690 Acapulco de Juárez, Gro.)",
+    "municipio matches POI address",
+    "geocode APPROXIMATE: Lomas de Costa Azul, 39830 Acapulco de Juárez, Gro., Mexico",
+    "Solar API: building found, roof 3895 m2, max 808 panels"
+   ],
+   "lat": 16.856298,
+   "lng": -99.866422,
+   "status": "dry_run",
+   "would_create": {
+    "project": "320071203080 - FIDEICOMISO F/1596 Acapulco de Juárez",
+    "field_segment": {
+     "geometry": [
+      [
+       16.856657324469996,
+       -99.8667974559197
+      ],
+      [
+       16.856657324469996,
+       -99.8660465440803
+      ],
+      [
+       16.855938675530002,
+       -99.8660465440803
+      ],
+      [
+       16.855938675530002,
+       -99.8667974559197
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 808
+   }
+  },
+  {
+   "rpu": "336080201956",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 80,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Toluca Centro (Ignacio Allende 124, Centro, 50000 Toluca de Lerdo, Méx.)",
+    "municipio matches POI address",
+    "geocode APPROXIMATE: 50245 State of Mexico, Mexico",
+    "Solar API: building found, roof 945 m2, max 249 panels"
+   ],
+   "lat": 19.288525,
+   "lng": -99.65592129999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "336080201956 - FIDEICOMISO F/1596 Toluca",
+    "field_segment": {
+     "geometry": [
+      [
+       19.288884324469997,
+       -99.65630199391309
+      ],
+      [
+       19.288884324469997,
+       -99.65554060608689
+      ],
+      [
+       19.288165675530003,
+       -99.65554060608689
+      ],
+      [
+       19.288165675530003,
+       -99.65630199391309
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 249
+   }
+  },
+  {
+   "rpu": "337981000026",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Toluca Tollocan (Paseo Tollocan Oriente esq, Francisco I Madero Sur 1132, Santa Ana Tlapaltitlán, 50160 Santa Ana Tlapaltitlán, Méx.)",
+    "CP 50160 matches POI address",
+    "POI and geocode agree within 760 m",
+    "geocode APPROXIMATE: Santa Ana Tlapaltitlán, 50160 Toluca, State of Mexico, Mexico",
+    "Solar API: building found, roof 4298 m2, max 1040 panels"
+   ],
+   "lat": 19.2873791,
+   "lng": -99.62411139999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "337981000026 - FIDEICOMISO F 1596 Toluca",
+    "field_segment": {
+     "geometry": [
+      [
+       19.287738424469996,
+       -99.62449209124858
+      ],
+      [
+       19.287738424469996,
+       -99.6237307087514
+      ],
+      [
+       19.287019775530002,
+       -99.6237307087514
+      ],
+      [
+       19.287019775530002,
+       -99.62449209124858
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 1040
+   }
+  },
+  {
+   "rpu": "343080702307",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Cuernavaca (Carretera México - Acapulco Km 88 S/N, Delicias, 62330 Cuernavaca, Mor.)",
+    "CP 62330 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 0 m",
+    "geocode GEOMETRIC_CENTER: Carretera México - Acapulco Km 88 S/N, Delicias, 62330 Cuernavaca, Mor., Mexico",
+    "Solar API: building found, roof 2743 m2, max 985 panels"
+   ],
+   "lat": 18.932819,
+   "lng": -99.2006351,
+   "status": "dry_run",
+   "would_create": {
+    "project": "343080702307 - Fiesta Inn Cuernavaca",
+    "field_segment": {
+     "geometry": [
+      [
+       18.933178324469996,
+       -99.20101497588296
+      ],
+      [
+       18.933178324469996,
+       -99.20025522411704
+      ],
+      [
+       18.93245967553,
+       -99.20025522411704
+      ],
+      [
+       18.93245967553,
+       -99.20101497588296
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 985
+   }
+  },
+  {
+   "rpu": "344150515221",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Cuernavaca (Carretera México - Acapulco Km 88 S/N, Delicias, 62330 Cuernavaca, Mor.)",
+    "CP 62330 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 313 m",
+    "geocode GEOMETRIC_CENTER: Mexico-Acapulco, Villas del Lago, 62370 Cuernavaca, Mor., Mexico",
+    "Solar API: building found, roof 2743 m2, max 985 panels"
+   ],
+   "lat": 18.932819,
+   "lng": -99.2006351,
+   "status": "dry_run",
+   "would_create": {
+    "project": "344150515221 - FIDEICOMISO F/1596 Cuernavaca",
+    "field_segment": {
+     "geometry": [
+      [
+       18.933178324469996,
+       -99.20101497588296
+      ],
+      [
+       18.933178324469996,
+       -99.20025522411704
+      ],
+      [
+       18.93245967553,
+       -99.20025522411704
+      ],
+      [
+       18.93245967553,
+       -99.20101497588296
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 985
+   }
+  },
+  {
+   "rpu": "350100102065",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 75,
+   "evidence": [
+    "POI match: Hotel Quinta Royal (Blvd Miguel Ramos Arizpe 65-Sur, Centro, 25900 Ramos Arizpe, Coah.)",
+    "municipio matches POI address",
+    "POI and geocode agree within 128 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode GEOMETRIC_CENTER: Carr. Monterrey, Eulalio Gutiérrez, 25903 Ramos Arizpe, Coah., Mexico",
+    "Solar API: building found, roof 461 m2, max 160 panels"
+   ],
+   "lat": 25.534488699999997,
+   "lng": -100.94848599999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "350100102065 - FIDEICOMISO F/1596 Ramos Arizpe",
+    "field_segment": {
+     "geometry": [
+      [
+       25.534848024469994,
+       -100.94888422024256
+      ],
+      [
+       25.534848024469994,
+       -100.94808777975742
+      ],
+      [
+       25.53412937553,
+       -100.94808777975742
+      ],
+      [
+       25.53412937553,
+       -100.94888422024256
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 160
+   }
+  },
+  {
+   "rpu": "351140601028",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 70,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Saltillo (Carr. Monterrey - Saltillo No. 6607, Zona Industrial, 25270 Saltillo, Coah.)",
+    "geocode APPROXIMATE: Privanzas del Campestre, 25369 Coah., Mexico",
+    "Solar API: building found, roof 163 m2, max 53 panels"
+   ],
+   "lat": 25.480848899999998,
+   "lng": -100.97372709999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "351140601028 - Fiesta Inn Arteaga",
+    "field_segment": {
+     "geometry": [
+      [
+       25.481208224469995,
+       -100.97412514239964
+      ],
+      [
+       25.481208224469995,
+       -100.97332905760034
+      ],
+      [
+       25.48048957553,
+       -100.97332905760034
+      ],
+      [
+       25.48048957553,
+       -100.97412514239964
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 53
+   }
+  },
+  {
+   "rpu": "369140903713",
+   "client_name": "FIESTA INN FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 75,
+   "evidence": [
+    "POI match: Holiday Inn Monclova (Blvd. Harold R. Pape # 200 Col. Guadalaupe, Guadalupe, 25750 Monclova, Coah.)",
+    "CP 25750 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 154 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode GEOMETRIC_CENTER: Harold R. Pape, Guadalupe, 25750 Monclova, Coah., Mexico"
+   ],
+   "lat": 26.9062706,
+   "lng": -101.42949349999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "369140903713 - Fiesta Inn Monclova",
+    "field_segment": {
+     "geometry": [
+      [
+       26.906629924469996,
+       -101.4298964439556
+      ],
+      [
+       26.906629924469996,
+       -101.42909055604439
+      ],
+      [
+       26.905911275530002,
+       -101.42909055604439
+      ],
+      [
+       26.905911275530002,
+       -101.4298964439556
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "415130200040",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 80,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: One Monterrey Aeropuerto (Blvd. Aeropuerto 12, Parque Industrial FINSA, Parque industrial Milenio, 66600 Cdad. Apodaca, N.L.)",
+    "municipio matches POI address",
+    "geocode GEOMETRIC_CENTER: via rapida aeropuerto, 66628 Cdad. Apodaca, N.L., Mexico",
+    "Solar API: building found, roof 502 m2, max 147 panels"
+   ],
+   "lat": 25.785743699999998,
+   "lng": -100.13530560000001,
+   "status": "dry_run",
+   "would_create": {
+    "project": "415130200040 - FIDEICOMISO F/1596 Apodaca",
+    "field_segment": {
+     "geometry": [
+      [
+       25.786103024469995,
+       -100.13570466006267
+      ],
+      [
+       25.786103024469995,
+       -100.13490653993735
+      ],
+      [
+       25.78538437553,
+       -100.13490653993735
+      ],
+      [
+       25.78538437553,
+       -100.13570466006267
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 147
+   }
+  },
+  {
+   "rpu": "415130800039",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 90,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Monterrey La Fe (Av. Miguel Alemán km 105, La Fe, 66486 San Nicolás de los Garza, N.L.)",
+    "geocode ROOFTOP: Gral. Ignacio Zaragoza 349, Cabecera Municipal (Apodaca), Apodaca Centro, 66600 Cdad. Apodaca, N.L., Mexico",
+    "Solar API: building found, roof 3197 m2, max 1233 panels"
+   ],
+   "lat": 25.720907999999998,
+   "lng": -100.21665,
+   "status": "dry_run",
+   "would_create": {
+    "project": "415130800039 - FIDEICOMISO F/1596 Guadalupe",
+    "field_segment": {
+     "geometry": [
+      [
+       25.721267324469995,
+       -100.21704884227589
+      ],
+      [
+       25.721267324469995,
+       -100.21625115772412
+      ],
+      [
+       25.72054867553,
+       -100.21625115772412
+      ],
+      [
+       25.72054867553,
+       -100.21704884227589
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 1233
+   }
+  },
+  {
+   "rpu": "487080713751",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Express Tepic (Blvrd Luis Donaldo Colosio 580, Benito Juárez Ote, 63175 Tepic, Nay.)",
+    "CP 63175 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 0 m",
+    "geocode ROOFTOP: Blvrd Luis Donaldo Colosio 580, Benito Juárez Ote, 63175 Tepic, Nay., Mexico",
+    "Solar API: building found, roof 5894 m2, max 2518 panels"
+   ],
+   "lat": 21.4922169,
+   "lng": -104.86613009999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "487080713751 - Fiesta Inn Tepic",
+    "field_segment": {
+     "geometry": [
+      [
+       21.492576224469996,
+       -104.86651627633584
+      ],
+      [
+       21.492576224469996,
+       -104.86574392366414
+      ],
+      [
+       21.491857575530002,
+       -104.86574392366414
+      ],
+      [
+       21.491857575530002,
+       -104.86651627633584
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 2518
+   }
+  },
+  {
+   "rpu": "494170100479",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Americana Puerto Vallarta All Inclusive & Spa (Blvd. Francisco Medina Ascencio 2179, Zona Hotelera, Las Glorias, 48333 Puerto Vallarta, Jal.)",
+    "CP 48333 matches POI address",
+    "municipio matches POI address",
+    "geocode ROOFTOP: San Salvador 276, 5 de Diciembre, 48350 Puerto Vallarta, Jal., Mexico",
+    "Solar API: building found, roof 1643 m2, max 421 panels"
+   ],
+   "lat": 20.6411244,
+   "lng": -105.2358203,
+   "status": "dry_run",
+   "would_create": {
+    "project": "494170100479 - FIDEICOMISO F 1596 Puerto Vallarta",
+    "field_segment": {
+     "geometry": [
+      [
+       20.641483724469996,
+       -105.23620427293766
+      ],
+      [
+       20.641483724469996,
+       -105.23543632706235
+      ],
+      [
+       20.640765075530002,
+       -105.23543632706235
+      ],
+      [
+       20.640765075530002,
+       -105.23620427293766
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 421
+   }
+  },
+  {
+   "rpu": "507130603251",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI match: Radisson Hotel Tapatio Guadalajara (A Chapala Km 6.5, El Tapatío, 45588 San Pedro Tlaquepaque, Jal.)",
+    "CP 45588 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 585 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode ROOFTOP: C. Batalla de Celaya 3285, El Tapatío, 45580 San Pedro Tlaquepaque, Jal., Mexico",
+    "Solar API: building found, roof 833 m2, max 310 panels"
+   ],
+   "lat": 20.6114095,
+   "lng": -103.3214035,
+   "status": "dry_run",
+   "would_create": {
+    "project": "507130603251 - FIDEICOMISO F/1596 San Pedro Tlaquepaque",
+    "field_segment": {
+     "geometry": [
+      [
+       20.611768824469998,
+       -103.32178739799004
+      ],
+      [
+       20.611768824469998,
+       -103.32101960200997
+      ],
+      [
+       20.611050175530004,
+       -103.32101960200997
+      ],
+      [
+       20.611050175530004,
+       -103.32178739799004
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 310
+   }
+  },
+  {
+   "rpu": "508950500909",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 85,
+   "evidence": [
+    "POI match: Hotel Santo Santiago (Av. Benito Juárez 314, Tonalá Centro, 45400 Tonalá, Jal.)",
+    "CP 45400 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 215 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode GEOMETRIC_CENTER: Privada Rcda. del Sol, Tonalá Centro, 45400 Tonalá, Jal., Mexico",
+    "Solar API: building found, roof 92 m2, max 29 panels"
+   ],
+   "lat": 20.6257122,
+   "lng": -103.2488844,
+   "status": "dry_run",
+   "would_create": {
+    "project": "508950500909 - FIDEICOMISO F/1596 Tonalá",
+    "field_segment": {
+     "geometry": [
+      [
+       20.626071524469996,
+       -103.2492683340481
+      ],
+      [
+       20.626071524469996,
+       -103.24850046595189
+      ],
+      [
+       20.62535287553,
+       -103.24850046595189
+      ],
+      [
+       20.62535287553,
+       -103.2492683340481
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 29
+   }
+  },
+  {
+   "rpu": "516051003213",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Ecatepec (Av. 1ro de Mayo s/n, Fraccionamiento Las Americas, Las Américas, 55076 Ciudad de México, Méx.)",
+    "CP 55076 matches POI address",
+    "POI and geocode agree within 627 m",
+    "geocode GEOMETRIC_CENTER: Av. Central, 55076 Ecatepec de Morelos, Méx., Mexico",
+    "Solar API: building found, roof 1686 m2, max 734 panels"
+   ],
+   "lat": 19.582854299999997,
+   "lng": -99.0247749,
+   "status": "dry_run",
+   "would_create": {
+    "project": "516051003213 - FIDEICOMISO F 1596 Ecatepec de Morelos",
+    "field_segment": {
+     "geometry": [
+      [
+       19.583213624469995,
+       -99.02515628459633
+      ],
+      [
+       19.583213624469995,
+       -99.02439351540366
+      ],
+      [
+       19.58249497553,
+       -99.02439351540366
+      ],
+      [
+       19.58249497553,
+       -99.02515628459633
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 734
+   }
+  },
+  {
+   "rpu": "527070306792",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 60,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn (Av. Miguel Alemán #755 norte, Av. Miguel Alemán 755, Norte, Urb. No. 4, 85000 Cdad. Obregón, Son.)",
+    "geocode APPROXIMATE: Norte, Zona Nte, 85040 Cdad. Obregón, Son., Mexico"
+   ],
+   "lat": 27.5094642,
+   "lng": -109.93087009999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "527070306792 - Fiesta Inn Cajeme",
+    "field_segment": {
+     "geometry": [
+      [
+       27.509823524469997,
+       -109.93127523076245
+      ],
+      [
+       27.509823524469997,
+       -109.93046496923753
+      ],
+      [
+       27.509104875530003,
+       -109.93046496923753
+      ],
+      [
+       27.509104875530003,
+       -109.93127523076245
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "538161004341",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 85,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Hotel Fiesta Inn Plaza Paseo (Blvd. Antonio Rosales 810, Terreno, 81270 Los Mochis, Sin.)",
+    "POI and geocode agree within 54 m",
+    "geocode RANGE_INTERPOLATED: P.º Los Mochis 1, Terreno, 81270 Los Mochis, Sin., Mexico"
+   ],
+   "lat": 25.7813977,
+   "lng": -109.0060496,
+   "status": "dry_run",
+   "would_create": {
+    "project": "538161004341 - FIDEICOMISO F/1596 Ahome",
+    "field_segment": {
+     "geometry": [
+      [
+       25.781757024469997,
+       -109.00644864544078
+      ],
+      [
+       25.781757024469997,
+       -109.00565055455921
+      ],
+      [
+       25.781038375530002,
+       -109.00565055455921
+      ],
+      [
+       25.781038375530002,
+       -109.00644864544078
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "546120105071",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 70,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Culiacán (J. Diego Valadez Poniente No. 1676, Desarrollo Urbano Tres Ríos, 80000 Culiacán Rosales, Sin.)",
+    "municipio matches POI address",
+    "geocode GEOMETRIC_CENTER: Nte. 3, 80020 Culiacán Rosales, Sin., Mexico"
+   ],
+   "lat": 24.813121499999998,
+   "lng": -107.40187139999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "546120105071 - FIDEICOMISO F/1596 Culiacán",
+    "field_segment": {
+     "geometry": [
+      [
+       24.813480824469995,
+       -107.40226727070103
+      ],
+      [
+       24.813480824469995,
+       -107.40147552929895
+      ],
+      [
+       24.81276217553,
+       -107.40147552929895
+      ],
+      [
+       24.81276217553,
+       -107.40226727070103
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "555160804809",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 75,
+   "evidence": [
+    "POI match: Fairfield Inn & Suites by Marriott Nogales, Sonora (Boulevard El Greco, Arcadias 45, El Greco, 84066 Heroica Nogales, Son.)",
+    "CP 84066 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 107 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode APPROXIMATE: El Greco, Heroica Nogales, Son., Mexico"
+   ],
+   "lat": 31.289108,
+   "lng": -110.94004199999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "555160804809 - FIDEICOMISO F/1596 Nogales",
+    "field_segment": {
+     "geometry": [
+      [
+       31.289467324469996,
+       -110.94046248011756
+      ],
+      [
+       31.289467324469996,
+       -110.93962151988242
+      ],
+      [
+       31.28874867553,
+       -110.93962151988242
+      ],
+      [
+       31.28874867553,
+       -110.94046248011756
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "564161004481",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: one Cuautitlán (Paseo de Las Hdas. s.n-Norte, Jardines de la Hacienda, 54720 Cuautitlán Izcalli, Méx.)",
+    "CP 54720 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 399 m",
+    "geocode APPROXIMATE: Jardines de la Hacienda, Cuautitlán Izcalli, Méx., Mexico",
+    "Solar API: building found, roof 3206 m2, max 1210 panels"
+   ],
+   "lat": 19.671719,
+   "lng": -99.205911,
+   "status": "dry_run",
+   "would_create": {
+    "project": "564161004481 - FIDEICOMISO F 1596 Cuautitlán Izcalli",
+    "field_segment": {
+     "geometry": [
+      [
+       19.672078324469997,
+       -99.20629259560319
+      ],
+      [
+       19.672078324469997,
+       -99.20552940439681
+      ],
+      [
+       19.671359675530002,
+       -99.20552940439681
+      ],
+      [
+       19.671359675530002,
+       -99.20629259560319
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 1210
+   }
+  },
+  {
+   "rpu": "564220401431",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Cuautitlán (Av. Chalma Esq. Autopista México-Quéretaro Lote 8 Col, Manzana 043, Jardines de la Hacienda, 54700 Cuautitlán Izcalli, Méx.)",
+    "municipio matches POI address",
+    "POI and geocode agree within 285 m",
+    "geocode ROOFTOP: Plaza San Marcos, Av Chalma 281, Jardines de la Hacienda, 54720 Cuautitlán Izcalli, Méx., Mexico",
+    "Solar API: building found, roof 1791 m2, max 581 panels"
+   ],
+   "lat": 19.6712786,
+   "lng": -99.2010646,
+   "status": "dry_run",
+   "would_create": {
+    "project": "564220401431 - FIDEICOMISO F/1596 Cuautitlán Izcalli",
+    "field_segment": {
+     "geometry": [
+      [
+       19.671637924469998,
+       -99.20144619455462
+      ],
+      [
+       19.671637924469998,
+       -99.20068300544537
+      ],
+      [
+       19.670919275530004,
+       -99.20068300544537
+      ],
+      [
+       19.670919275530004,
+       -99.20144619455462
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 581
+   }
+  },
+  {
+   "rpu": "568960601188",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "MEDIUM",
+   "confidence": 70,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Americana Mexico Satelite (Perif. Blvd. Manuel Ávila Camacho 1434, San Andres Atenco, 54040 Tlalnepantla, Méx.)",
+    "geocode APPROXIMATE: Lecheria, Buenavista, Méx., Mexico",
+    "Solar API: building found, roof 332 m2, max 99 panels"
+   ],
+   "lat": 19.5402658,
+   "lng": -99.2160408,
+   "status": "dry_run",
+   "would_create": {
+    "project": "568960601188 - FIDEICOMISO F 1596 Tultitlán",
+    "field_segment": {
+     "geometry": [
+      [
+       19.540625124469997,
+       -99.21642208387878
+      ],
+      [
+       19.540625124469997,
+       -99.21565951612122
+      ],
+      [
+       19.539906475530003,
+       -99.21565951612122
+      ],
+      [
+       19.539906475530003,
+       -99.21642208387878
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 99
+   }
+  },
+  {
+   "rpu": "569940900916",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Tlalnepantla (Av Sor Juana Inés de La Cruz 22, Tlalnepantla Centro, 54000 Tlalnepantla, Méx.)",
+    "CP 54000 matches POI address",
+    "POI and geocode agree within 44 m",
+    "geocode GEOMETRIC_CENTER: Dunant, Tlalnepantla Centro, 54000 Tlalnepantla, Méx., Mexico",
+    "Solar API: building found, roof 66 m2, max 23 panels"
+   ],
+   "lat": 19.539013,
+   "lng": -99.2001408,
+   "status": "dry_run",
+   "would_create": {
+    "project": "569940900916 - FIDEICOMISO F 1596 Tlalnepantla de Baz",
+    "field_segment": {
+     "geometry": [
+      [
+       19.539372324469998,
+       -99.20052208092002
+      ],
+      [
+       19.539372324469998,
+       -99.19975951907998
+      ],
+      [
+       19.538653675530004,
+       -99.19975951907998
+      ],
+      [
+       19.538653675530004,
+       -99.20052208092002
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 23
+   }
+  },
+  {
+   "rpu": "573170411137",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "MEDIUM",
+   "confidence": 75,
+   "evidence": [
+    "POI match: Fairfield Inn & Suites by Marriott Mexico City Vallejo (Calzada Vallejo, Eje Pte 1) 1090, Col Cruz De, Las Salinas, Azcapotzalco, 02300 Ciudad de México, CDMX)",
+    "municipio matches POI address",
+    "POI and geocode agree within 282 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode GEOMETRIC_CENTER: Pte 122, Sta Cruz de las Salinas, 02340 Ciudad de México, CDMX, Mexico",
+    "Solar API: building found, roof 570 m2, max 171 panels"
+   ],
+   "lat": 19.487842999999998,
+   "lng": -99.1521089,
+   "status": "dry_run",
+   "would_create": {
+    "project": "573170411137 - FIDEICOMISO F 1596 Azcapotzalco",
+    "field_segment": {
+     "geometry": [
+      [
+       19.488202324469995,
+       -99.15249006026616
+      ],
+      [
+       19.488202324469995,
+       -99.15172773973384
+      ],
+      [
+       19.48748367553,
+       -99.15172773973384
+      ],
+      [
+       19.48748367553,
+       -99.15249006026616
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 171
+   }
+  },
+  {
+   "rpu": "671071116338",
+   "client_name": "ALIM Y FRANQ DE CHIS SA DE CV",
+   "tier": "MEDIUM",
+   "confidence": 50,
+   "evidence": [
+    "Place found (non-lodging): FedEx",
+    "CP 29000 matches POI address",
+    "municipio matches POI address",
+    "geocode GEOMETRIC_CENTER: Poniente, Terán, 29050 Tuxtla Gutiérrez, Chis., Mexico"
+   ],
+   "lat": 16.7468376,
+   "lng": -93.12106179999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "671071116338 - ALIM Y FRANQ DE CHIS SA DE CV Tuxtla Gutiérrez",
+    "field_segment": {
+     "geometry": [
+      [
+       16.747196924469996,
+       -93.12143703939874
+      ],
+      [
+       16.747196924469996,
+       -93.12068656060124
+      ],
+      [
+       16.746478275530002,
+       -93.12068656060124
+      ],
+      [
+       16.746478275530002,
+       -93.12143703939874
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "671140638635",
+   "client_name": "ALIMENTOS Y FRANQ DE CHIS SACV",
+   "tier": "LOW",
+   "confidence": 35,
+   "evidence": [
+    "Place found (non-lodging): Suzuki Tuxtla",
+    "municipio matches POI address",
+    "geocode APPROXIMATE: Magisterial, Tuxtla Gutiérrez, Chis., Mexico"
+   ],
+   "lat": 16.7489202,
+   "lng": -93.1472651,
+   "status": "skipped_low_confidence"
+  },
+  {
+   "rpu": "679220758161",
+   "client_name": "ALIMENTOS Y FRANQ D CHIAPAS",
+   "tier": "MEDIUM",
+   "confidence": 50,
+   "evidence": [
+    "Place found (non-lodging): Plaza Bella",
+    "municipio matches POI address",
+    "POI and geocode agree within 0 m",
+    "geocode GEOMETRIC_CENTER: Carr. a Atzompa, Agencia de Policia Montoya, 68143 Oaxaca de Juárez, Oax., Mexico"
+   ],
+   "lat": 17.0755813,
+   "lng": -96.7579736,
+   "status": "dry_run",
+   "would_create": {
+    "project": "679220758161 - ALIMENTOS Y FRANQ D CHIAPAS Oaxaca de Juárez",
+    "field_segment": {
+     "geometry": [
+      [
+       17.075940624469997,
+       -96.75834949456235
+      ],
+      [
+       17.075940624469997,
+       -96.75759770543765
+      ],
+      [
+       17.075221975530003,
+       -96.75759770543765
+      ],
+      [
+       17.075221975530003,
+       -96.75834949456235
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "726800102236",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Villahermosa Cencali (Benito Juárez García 105, Loma Linda, 86050 Villahermosa, Tab.)",
+    "CP 86050 matches POI address",
+    "POI and geocode agree within 0 m",
+    "geocode ROOFTOP: Benito Juárez García 105, Loma Linda, 86050 Villahermosa, Tab., Mexico"
+   ],
+   "lat": 17.9945466,
+   "lng": -92.9389625,
+   "status": "dry_run",
+   "would_create": {
+    "project": "726800102236 - Fiesta Inn Centro",
+    "field_segment": {
+     "geometry": [
+      [
+       17.994905924469997,
+       -92.93934030442426
+      ],
+      [
+       17.994905924469997,
+       -92.93858469557574
+      ],
+      [
+       17.994187275530003,
+       -92.93858469557574
+      ],
+      [
+       17.994187275530003,
+       -92.93934030442426
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "744931031693",
+   "client_name": "ALIMENTOS Y FRANQUICIAS CHIS",
+   "tier": "MEDIUM",
+   "confidence": 60,
+   "evidence": [
+    "Place found (non-lodging): Grupo Médico Arboledas [Especialidades Médicas]",
+    "CP 29030 matches POI address",
+    "municipio matches POI address",
+    "geocode RANGE_INTERPOLATED: Las Arboledas 22, Patria Nueva, 29045 Tuxtla Gutiérrez, Chis., Mexico"
+   ],
+   "lat": 16.7568535,
+   "lng": -93.1319183,
+   "status": "dry_run",
+   "would_create": {
+    "project": "744931031693 - ALIMENTOS Y FRANQUICIAS CHIS Tuxtla Gutiérrez",
+    "field_segment": {
+     "geometry": [
+      [
+       16.757212824469995,
+       -93.13229355914365
+      ],
+      [
+       16.757212824469995,
+       -93.13154304085634
+      ],
+      [
+       16.75649417553,
+       -93.13154304085634
+      ],
+      [
+       16.75649417553,
+       -93.13229355914365
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "749150997314",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 60,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Villahermosa Cencali (Benito Juárez García 105, Loma Linda, 86050 Villahermosa, Tab.)",
+    "geocode GEOMETRIC_CENTER: José María Pino Suárez, Jose Maria Pino Suarez, 86029 Villahermosa, Tab., Mexico"
+   ],
+   "lat": 17.9945466,
+   "lng": -92.9389625,
+   "status": "dry_run",
+   "would_create": {
+    "project": "749150997314 - FIDEICOMISO F/1596 Centro",
+    "field_segment": {
+     "geometry": [
+      [
+       17.994905924469997,
+       -92.93934030442426
+      ],
+      [
+       17.994905924469997,
+       -92.93858469557574
+      ],
+      [
+       17.994187275530003,
+       -92.93858469557574
+      ],
+      [
+       17.994187275530003,
+       -92.93934030442426
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "780881200029",
+   "client_name": "GRUPO POSADAS S.A.B DE C.V",
+   "tier": "HIGH",
+   "confidence": 85,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Americana Condesa Cancún All Inclusive (Blvd. Kukulcan km 16.5, Zona Hotelera, 77500 Cancún, Q.R.)",
+    "CP 77500 matches POI address",
+    "geocode APPROXIMATE: Supermanzana 2A, 77500 Cancún, Q.R., Mexico",
+    "Solar API: building found, roof 5329 m2, max 1665 panels"
+   ],
+   "lat": 21.081167999999998,
+   "lng": -86.773713,
+   "status": "dry_run",
+   "would_create": {
+    "project": "780881200029 - GRUPO POSADAS S.A.B DE C.V Benito Juárez",
+    "field_segment": {
+     "geometry": [
+      [
+       21.081527324469995,
+       -86.7740980984102
+      ],
+      [
+       21.081527324469995,
+       -86.7733279015898
+      ],
+      [
+       21.08080867553,
+       -86.7733279015898
+      ],
+      [
+       21.08080867553,
+       -86.7740980984102
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 1665
+   }
+  },
+  {
+   "rpu": "795150706028",
+   "client_name": "FIDEICOMISO F1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn & Loft Ciudad del Carmen (Av. 10 de Julio 2, Puntilla, 24139 Cdad. del Carmen, Camp.)",
+    "CP 24139 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 0 m",
+    "geocode ROOFTOP: Av. 10 de Julio 2, Puntilla, 24139 Cdad. del Carmen, Camp., Mexico"
+   ],
+   "lat": 18.6311134,
+   "lng": -91.82389119999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "795150706028 - Fiesta Inn Loft Carmen",
+    "field_segment": {
+     "geometry": [
+      [
+       18.631472724469997,
+       -91.82427039622327
+      ],
+      [
+       18.631472724469997,
+       -91.82351200377671
+      ],
+      [
+       18.630754075530003,
+       -91.82351200377671
+      ],
+      [
+       18.630754075530003,
+       -91.82427039622327
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "795151204620",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "MEDIUM",
+   "confidence": 75,
+   "evidence": [
+    "POI match: Hotel Puntilla (Av. 10 de Julio s/n, Puntilla, 24139 Cdad. del Carmen, Camp.)",
+    "CP 24139 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 170 m",
+    "CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property",
+    "geocode GEOMETRIC_CENTER: Arroyo Grande, Guanal, 24139 Cdad. del Carmen, Camp., Mexico"
+   ],
+   "lat": 18.6327118,
+   "lng": -91.82460689999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "795151204620 - FIDEICOMISO F 1596 Carmen",
+    "field_segment": {
+     "geometry": [
+      [
+       18.633071124469996,
+       -91.82498609978992
+      ],
+      [
+       18.633071124469996,
+       -91.82422770021006
+      ],
+      [
+       18.632352475530002,
+       -91.82422770021006
+      ],
+      [
+       18.632352475530002,
+       -91.82498609978992
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "810160510261",
+   "client_name": "GRUPO POSADAS S A B DE CV",
+   "tier": "MEDIUM",
+   "confidence": 75,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Playa del Carmen (Av. 10 Esq. con Calle 26 Col, Gonzalo Guerrero, 77710 Playa del Carmen, Q.R.)",
+    "CP 77710 matches POI address",
+    "geocode APPROXIMATE: Centro, 77710 Playa del Carmen, Q.R., Mexico"
+   ],
+   "lat": 20.632924,
+   "lng": -87.069413,
+   "status": "dry_run",
+   "would_create": {
+    "project": "810160510261 - GRUPO POSADAS S A B DE CV Solidaridad",
+    "field_segment": {
+     "geometry": [
+      [
+       20.633283324469996,
+       -87.06979695224118
+      ],
+      [
+       20.633283324469996,
+       -87.06902904775882
+      ],
+      [
+       20.632564675530002,
+       -87.06902904775882
+      ],
+      [
+       20.632564675530002,
+       -87.06979695224118
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "827120705565",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 85,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: one Xalapa Las Ánimas (Blvd Cristobal Colon, De Las Animas 26 Fracc, Rubi Animas, 91190 Xalapa-Enríquez, Ver.)",
+    "municipio matches POI address",
+    "POI and geocode agree within 162 m",
+    "geocode GEOMETRIC_CENTER: Carretera México-Veracruz No 560, Carr. Xalapa Veracruz, Pastoresa, 91198 Xalapa-Enríquez, Ver., Mexico"
+   ],
+   "lat": 19.516064099999998,
+   "lng": -96.8797645,
+   "status": "dry_run",
+   "would_create": {
+    "project": "827120705565 - One Hotel Xalapa",
+    "field_segment": {
+     "geometry": [
+      [
+       19.516423424469995,
+       -96.8801457267617
+      ],
+      [
+       19.516423424469995,
+       -96.87938327323829
+      ],
+      [
+       19.51570477553,
+       -96.87938327323829
+      ],
+      [
+       19.51570477553,
+       -96.8801457267617
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "827930905757",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 70,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Xalapa (Carr. Xalapa-Veracruz, km 2.5 Fracc, De Las Animas, Rubi Animas, 91190 Xalapa-Enríquez, Ver.)",
+    "municipio matches POI address",
+    "geocode APPROXIMATE: Diamante, 91018 Xalapa-Enríquez, Ver., Mexico"
+   ],
+   "lat": 19.5167546,
+   "lng": -96.88001229999999,
+   "status": "dry_run",
+   "would_create": {
+    "project": "827930905757 - Fiesta Inn Xalapa",
+    "field_segment": {
+     "geometry": [
+      [
+       19.517113924469996,
+       -96.88039352839013
+      ],
+      [
+       19.517113924469996,
+       -96.87963107160985
+      ],
+      [
+       19.51639527553,
+       -96.87963107160985
+      ],
+      [
+       19.51639527553,
+       -96.88039352839013
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "864070902090",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 85,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: one Coatzacoalcos Fórum (Av Universidad Veracruzana km. 8, El Tesoro, 96535 Coatzacoalcos, Ver.)",
+    "municipio matches POI address",
+    "POI and geocode agree within 621 m",
+    "geocode GEOMETRIC_CENTER: Av. Universidad km 8, Col. El Tesoro, 96537 Coatzacoalcos, Ver., Mexico"
+   ],
+   "lat": 18.145100199999998,
+   "lng": -94.4880398,
+   "status": "dry_run",
+   "would_create": {
+    "project": "864070902090 - FIDEICOMISO F/1596 Coatzacoalcos",
+    "field_segment": {
+     "geometry": [
+      [
+       18.145459524469995,
+       -94.4884179284622
+      ],
+      [
+       18.145459524469995,
+       -94.4876616715378
+      ],
+      [
+       18.14474087553,
+       -94.4876616715378
+      ],
+      [
+       18.14474087553,
+       -94.4884179284622
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "886171004355",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 60,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Grand Fiesta Americana Veracruz (Prol, Blvd. Manuel Ávila Camacho s/n, Fracc, Costa de Oro, 94299 Veracruz, Ver.)",
+    "geocode GEOMETRIC_CENTER: Av. Ejército Mexicano, Veracruz, Ver., Mexico"
+   ],
+   "lat": 19.1506108,
+   "lng": -96.0941613,
+   "status": "dry_run",
+   "would_create": {
+    "project": "886171004355 - FIDEICOMISO F/1596 Boca del Río",
+    "field_segment": {
+     "geometry": [
+      [
+       19.150970124469996,
+       -96.09454167458847
+      ],
+      [
+       19.150970124469996,
+       -96.09378092541152
+      ],
+      [
+       19.150251475530002,
+       -96.09378092541152
+      ],
+      [
+       19.150251475530002,
+       -96.09454167458847
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": null
+   }
+  },
+  {
+   "rpu": "965980304910",
+   "client_name": "FIDEICOMISO F 1596",
+   "tier": "HIGH",
+   "confidence": 95,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Express Naucalpan (Periférico Norte, Av. Dr. Gustavo Baz esq, Alce Blanco, 53370 Naucalpan de Juárez, Méx.)",
+    "municipio matches POI address",
+    "POI and geocode agree within 258 m",
+    "geocode GEOMETRIC_CENTER: Perif. Sur, Naucalpan Centro, 53000 Naucalpan de Juárez, Méx., Mexico",
+    "Solar API: building found, roof 4456 m2, max 1322 panels"
+   ],
+   "lat": 19.479813099999998,
+   "lng": -99.2307146,
+   "status": "dry_run",
+   "would_create": {
+    "project": "965980304910 - FIDEICOMISO F 1596 Naucalpan de Juárez",
+    "field_segment": {
+     "geometry": [
+      [
+       19.480172424469995,
+       -99.23109574136696
+      ],
+      [
+       19.480172424469995,
+       -99.23033345863304
+      ],
+      [
+       19.47945377553,
+       -99.23033345863304
+      ],
+      [
+       19.47945377553,
+       -99.23109574136696
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 1322
+   }
+  },
+  {
+   "rpu": "968221200700",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Periférico Sur (Periferico Sur 5530, Pedregal de Carrasco, Coyoacán, 04700 Ciudad de México, CDMX)",
+    "CP 04700 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 780 m",
+    "geocode GEOMETRIC_CENTER: México 1968, Pedregal de Carrasco, Ciudad de México, CDMX, Mexico",
+    "Solar API: building found, roof 2052 m2, max 389 panels"
+   ],
+   "lat": 19.302315699999998,
+   "lng": -99.1657146,
+   "status": "dry_run",
+   "would_create": {
+    "project": "968221200700 - FIDEICOMISO F/1596 Coyoacán",
+    "field_segment": {
+     "geometry": [
+      [
+       19.302675024469995,
+       -99.16609532599475
+      ],
+      [
+       19.302675024469995,
+       -99.16533387400526
+      ],
+      [
+       19.30195637553,
+       -99.16533387400526
+      ],
+      [
+       19.30195637553,
+       -99.16609532599475
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 389
+   }
+  },
+  {
+   "rpu": "976070803264",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "MEDIUM",
+   "confidence": 70,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Grand Fiesta Americana Chapultepec (Calz. Gral. Mariano Escobedo 756, Anzures, Miguel Hidalgo, 11590 Ciudad de México, CDMX)",
+    "geocode GEOMETRIC_CENTER: 11 de Abril, 8 de Agosto, 01180 Ciudad de México, CDMX, Mexico",
+    "Solar API: building found, roof 521 m2, max 84 panels"
+   ],
+   "lat": 19.425181600000002,
+   "lng": -99.178145,
+   "status": "dry_run",
+   "would_create": {
+    "project": "976070803264 - FIDEICOMISO F/1596 Álvaro Obregón",
+    "field_segment": {
+     "geometry": [
+      [
+       19.42554092447,
+       -99.17852601303444
+      ],
+      [
+       19.42554092447,
+       -99.17776398696556
+      ],
+      [
+       19.424822275530005,
+       -99.17776398696556
+      ],
+      [
+       19.424822275530005,
+       -99.17852601303444
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 84
+   }
+  },
+  {
+   "rpu": "980180100061",
+   "client_name": "FIDEICOMISO F/1596",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Inn Express Ciudad de México Fórum Buenavista (Eje 1 Nte, Mosqueta 259, Buenavista, Cuauhtémoc, 06350 Ciudad de México, CDMX)",
+    "CP 06350 matches POI address",
+    "municipio matches POI address",
+    "POI and geocode agree within 93 m",
+    "geocode GEOMETRIC_CENTER: Av. Insurgentes Nte., Buenavista, 06350 Ciudad de México, CDMX, Mexico",
+    "Solar API: building found, roof 85 m2, max 18 panels"
+   ],
+   "lat": 19.4482824,
+   "lng": -99.1524445,
+   "status": "dry_run",
+   "would_create": {
+    "project": "980180100061 - FIDEICOMISO F/1596 Cuauhtémoc",
+    "field_segment": {
+     "geometry": [
+      [
+       19.448641724469997,
+       -99.15282556724672
+      ],
+      [
+       19.448641724469997,
+       -99.15206343275328
+      ],
+      [
+       19.447923075530003,
+       -99.15206343275328
+      ],
+      [
+       19.447923075530003,
+       -99.15282556724672
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 18
+   }
+  },
+  {
+   "rpu": "986190901451",
+   "client_name": "FIDEICOMISO F/1596 HOTEL FIEST",
+   "tier": "HIGH",
+   "confidence": 100,
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Americana Viaducto Aeropuerto (Viad. Río de la Piedad 515, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX)",
+    "CP 08400 matches POI address",
+    "municipio matches POI address",
+    "geocode ROOFTOP: Centeno 667, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX, Mexico",
+    "Solar API: building found, roof 1376 m2, max 549 panels"
+   ],
+   "lat": 19.4058142,
+   "lng": -99.1106295,
+   "status": "dry_run",
+   "would_create": {
+    "project": "986190901451 - FIDEICOMISO F/1596 HOTEL FIEST Iztacalco",
+    "field_segment": {
+     "geometry": [
+      [
+       19.406173524469995,
+       -99.1110104676432
+      ],
+      [
+       19.406173524469995,
+       -99.1102485323568
+      ],
+      [
+       19.40545487553,
+       -99.1102485323568
+      ],
+      [
+       19.40545487553,
+       -99.1110104676432
+      ]
+     ],
+     "racking": "flush_mount",
+     "tilt": 10,
+     "azimuth": 180
+    },
+    "solar_max_panels": 549
+   }
+  }
+ ]
+}

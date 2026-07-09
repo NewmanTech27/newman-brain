@@ -1,0 +1,32 @@
+{
+ "results": [
+  {
+   "rpu": "780881200029",
+   "client_name": "GRUPO POSADAS S.A.B DE C.V",
+   "tariff": "GDMTH",
+   "calle1": "KM 16.5",
+   "calle2": "ZONA HOTELERA",
+   "colonia": "Z TURISTICA 2A ET B.J.F",
+   "cp": "77500",
+   "municipio": "Benito Juárez",
+   "estado": "Quintana Roo",
+   "brand_guess": null,
+   "place_query": "Fiesta Americana Benito Juárez Quintana Roo",
+   "geocode_query": "KM 16.5, Z TURISTICA 2A ET B.J.F, 77500 Benito Juárez, Quintana Roo, México",
+   "lat": 21.081167999999998,
+   "lng": -86.773713,
+   "confidence": 85,
+   "tier": "HIGH",
+   "evidence": [
+    "POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)",
+    "POI match: Fiesta Americana Condesa Cancún All Inclusive (Blvd. Kukulcan km 16.5, Zona Hotelera, 77500 Cancún, Q.R.)",
+    "CP 77500 matches POI address",
+    "geocode APPROXIMATE: Supermanzana 2A, 77500 Cancún, Q.R., Mexico",
+    "Solar API: building found, roof 5329 m2, max 1665 panels"
+   ],
+   "place_id": "ChIJBShVLTcoTI8R2izqxu6YFzM",
+   "solar_max_panels": 1665,
+   "solar_roof_m2": 5329.0557
+  }
+ ]
+}

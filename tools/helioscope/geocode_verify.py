@@ -34,12 +34,21 @@ GEOCODE_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 SOLAR_URL = "https://solar.googleapis.com/v1/buildingInsights:findClosest"
 
 # Landmark/brand tokens seen in this portfolio (Grupo Posadas trust + franchises).
+# NOTE: no brand default for the trust itself — F/1596 spans Fiesta Americana,
+# Fiesta Inn, One and Gamma, so guessing a brand picks the wrong hotel in
+# cities with several Posadas properties. The landmark in CALLE1/2 must win;
+# the brandless fallback query uses generic "hotel".
 BRAND_HINTS = [
     (re.compile(r"FIESTA AMERICANA", re.I), "Fiesta Americana"),
-    (re.compile(r"FIESTA INN LOFT|HOTEL ONE|EL HOTEL ONE", re.I), "One Hotel"),
+    (re.compile(r"FIESTA INN LOFT", re.I), "Fiesta Inn Loft"),
+    (re.compile(r"HOTEL ONE|EL HOTEL ONE", re.I), "One Hotel"),
     (re.compile(r"FIESTA INN|FIESTA I\b", re.I), "Fiesta Inn"),
-    (re.compile(r"GRUPO POSADAS|FIDEICOMISO.*1596", re.I), "Fiesta Inn"),  # trust default: Posadas brand
+    (re.compile(r"CENCALI", re.I), "Fiesta Inn Cencali"),
 ]
+IS_TRUST = re.compile(r"GRUPO POSADAS|FIDEICOMISO.*1596|F\s*/?\s*1596", re.I)
+# Posadas portfolio brands — used to prefer the trust's own hotel when several
+# hotels share a landmark (e.g. two resorts both at "Km 16.5").
+POSADAS_RX = re.compile(r"fiesta (?:americana|inn)|grand fiesta|live aqua|gamma\b|\bone\b|curamoria", re.I)
 JUNK = re.compile(r"\b(CALLE2|S N|SSE\.|DP\w*|SE\d+|\d{3,}KVA|ORDEN L\d+|\d{6,})\b", re.I)
 
 
@@ -94,47 +103,86 @@ def haversine_m(a, b):
     return 6371000 * 2 * math.asin(math.sqrt(h))
 
 
+def score_place(site, place, brand, gloc, is_trust=False):
+    """Score one Places candidate against the bill's independent facts."""
+    score, evidence = 0, []
+    if is_trust and POSADAS_RX.search(place["displayName"]["text"]):
+        score += 20
+        evidence.append("POI name matches a Posadas portfolio brand (client is FIDEICOMISO F/1596)")
+    if "lodging" in place.get("types", []) or brand:
+        score += 40
+        evidence.append(f"POI match: {place['displayName']['text']} ({place['formattedAddress']})")
+    else:
+        score += 25
+        evidence.append(f"Place found (non-lodging): {place['displayName']['text']}")
+    if site["cp"] in place.get("formattedAddress", ""):
+        score += 15
+        evidence.append(f"CP {site['cp']} matches POI address")
+    if site["municipio"].lower() in place.get("formattedAddress", "").lower():
+        score += 10
+        evidence.append("municipio matches POI address")
+    if gloc:
+        d = haversine_m((place["location"]["latitude"], place["location"]["longitude"]), gloc)
+        if d < 800:
+            score += 15
+            evidence.append(f"POI and geocode agree within {d:.0f} m")
+    return score, evidence
+
+
 def verify_site(key, site):
     brand = brand_of(site)
     landmark = clean(site["calle1"])
-    place_q = f"{brand or landmark} {site['municipio']} {site['estado']}"
-    addr_q = ", ".join(filter(None, [clean(site["calle1"]), clean(site["colonia"]),
+    colonia = clean(site["colonia"])
+    is_trust = bool(IS_TRUST.search(site.get("client_name", "")))
+    addr_q = ", ".join(filter(None, [clean(site["calle1"]), colonia,
                                      f"{site['cp']} {site['municipio']}", site["estado"], "México"]))
 
     geo = geocode(key, addr_q)
-    bias = None
+    gloc = bias = None
     if geo:
         loc = geo["geometry"]["location"]
+        gloc = (loc["lat"], loc["lng"])
         bias = {"latitude": loc["lat"], "longitude": loc["lng"]}
-    places = places_search(key, place_q, bias)
-    place = places[0] if places else None
 
-    score, evidence = 0, []
-    chosen = None
+    # Candidate queries, strongest first: the CFE landmark text is the best
+    # disambiguator (e.g. "KM 16.5 ZONA HOTELERA"); a bare brand guess can hit
+    # the wrong property in cities with several hotels of the same chain.
+    kind = "hotel" if (is_trust or brand) else ""
+    queries = []
+    if landmark and landmark.upper() != "CALLE2":
+        queries.append(f"{kind} {landmark} {colonia} {site['municipio']} {site['estado']}".strip())
+    if brand:
+        queries.append(f"{brand} {site['municipio']} {site['estado']}")
+    elif is_trust:
+        # trust site with no explicit brand in the bill: try the two dominant
+        # Posadas brands; candidate scoring picks the corroborated one
+        queries.append(f"Fiesta Americana {site['municipio']} {site['estado']}")
+        queries.append(f"Fiesta Inn {site['municipio']} {site['estado']}")
+    if not queries:
+        queries.append(f"{colonia} {site['municipio']} {site['estado']}")
 
-    if place:
-        chosen = (place["location"]["latitude"], place["location"]["longitude"])
-        if "lodging" in place.get("types", []) or brand:
-            score += 40
-            evidence.append(f"POI match: {place['displayName']['text']} ({place['formattedAddress']})")
-        else:
-            score += 25
-            evidence.append(f"Place found (non-lodging): {place['displayName']['text']}")
-        if site["cp"] in place.get("formattedAddress", ""):
-            score += 15
-            evidence.append(f"CP {site['cp']} matches POI address")
-        if site["municipio"].lower() in place.get("formattedAddress", "").lower():
-            score += 10
-            evidence.append("municipio matches POI address")
+    best = (0, [], None, None)  # score, evidence, place, query
+    for q in queries:
+        for place in places_search(key, q, bias)[:3]:
+            sc, ev = score_place(site, place, brand, gloc, is_trust)
+            if sc > best[0]:
+                best = (sc, ev, place, q)
+
+    score, evidence, place, place_q = best
+    chosen = (place["location"]["latitude"], place["location"]["longitude"]) if place else None
+
+    # Trust client but the matched hotel is not a Posadas brand: probably the
+    # neighbor property (two hotels often share a landmark/block). Never let
+    # these auto-design — cap below HIGH so a human confirms the roof.
+    if place and is_trust and "lodging" in place.get("types", []) \
+            and not POSADAS_RX.search(place["displayName"]["text"]):
+        score = min(score, 75)
+        evidence.append("CAPPED at 75: matched hotel is not a Posadas brand — confirm it is the trust's property")
 
     if geo:
-        gloc = (geo["geometry"]["location"]["lat"], geo["geometry"]["location"]["lng"])
         lt = geo["geometry"].get("location_type", "APPROXIMATE")
         score += {"ROOFTOP": 20, "RANGE_INTERPOLATED": 10}.get(lt, 0)
         evidence.append(f"geocode {lt}: {geo.get('formatted_address', '')}")
-        if chosen and haversine_m(chosen, gloc) < 800:
-            score += 15
-            evidence.append(f"POI and geocode agree within {haversine_m(chosen, gloc):.0f} m")
         chosen = chosen or gloc
 
     solar = None
