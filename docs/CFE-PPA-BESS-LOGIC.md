@@ -9,6 +9,13 @@ This document walks the logic end‑to‑end so a reader can follow *exactly* ho
 CFE bills (tarifa **GDMTH**) is turned into PV / BESS / Hybrid savings, a regulatory régime, and a
 project financial model.
 
+> **This is a general‑purpose engine, not a GEPP‑specific one.** The logic below applies to **any**
+> CFE **GDMTH** client — industrial, commercial, hotel, office — regardless of division or giro.
+> The **GEPP 4‑sites dataset is only a worked proof of concept** used to validate the port; it is
+> not the subject. To model a new project you supply that project's own bills and inputs and run the
+> exact same `compute` / `size-bess` path (see **§11 — Applying the engine to a new project**). Every
+> new project that arrives follows this same recipe.
+
 ---
 
 ## 0. Files & responsibilities
@@ -252,9 +259,61 @@ The rev3 doctrine (`sizing.py propose_bess` / `gepp_bess_scenarios.tam_B`):
 
 ---
 
-## 11. GEPP seed run — `runGepp()` + `gepp_data.js`
+## 11. Applying the engine to a new project (the replicable recipe)
 
-`mode: "gepp"` runs the seeded **"GEPP — Propuesta PV+BESS 4 Sitios rev3 — BESS verano 2h"** design.
+Everything above is client‑agnostic. To model **any** new CFE **GDMTH** project, you never touch the
+engine — you only supply that project's data and call the same functions. GEPP (§12) is just this
+recipe run once, with its numbers baked into `gepp_data.js`.
+
+**Step 1 — Parse the bills.** Transcribe each monthly CFE receipt into a bill object. The engine
+reads these fields (missing numerics default to 0; see `compute()` / `validate_bill()`):
+
+| Field | Meaning |
+|-------|---------|
+| `year`, `month`, `days` | Billing period (days defaults to 30). |
+| `kwh_base`, `kwh_inter`, `kwh_punta` | Energy per tariff band. |
+| `kw_base`, `kw_inter`, `kw_punta` | Measured demand per band. |
+| `capacidad` | Capacidad charge (MXN) — the engine derives its unit rate from this. |
+| `gen_base`, `gen_inter`, `gen_punta` | Energy charges per band (MXN). |
+| `transmision`, `cenace`, `scnmem` | Flat per‑kWh MEM adders (MXN). |
+| `suministro`, `distribucion` | Fixed + distribution charges (validation only). |
+| `bonif_fp`, `cargo_fp_penalty` | Power‑factor bonus (negative) / penalty. |
+| `facturacion_recibo` | The receipt's own printed total — used to **validate** the transcription. |
+
+Aim for **12 months** (seasonality); fewer works but the result is annualized and flagged (§7).
+
+**Step 2 — Set the project inputs.** Anything not supplied falls back to `DEFAULT_INPUTS` (§4). The
+ones that matter per project:
+
+- `division` — `SIN` (default, calibrated), `BC`, or `BCS`. Non‑SIN is flagged as conservative (§8).
+- `giro` — one of the six curves, or let **`fit_bills()`** (§3.3) pick the best fit from the bills.
+- `demanda_contratada` — contracted demand (used to sanity‑check BESS size).
+- `kwp` + `yield_monthly` — PV size and monthly yield (kWh/kWp). `kwp = 0` ⇒ **BESS‑only**.
+- `bess_kw`, `bess_kwh` — battery size (or derive it in Step 3).
+- Commercial terms — `ppa`, `epc_usd_wp`, `epc_bess`, `fx`, `comision`, `wacc`, escalations, etc.
+
+**Step 3 — (Optional) size the BESS.** Call `mode: "size-bess"` with the bills to get the rev3
+verano‑2h size (§10); feed the returned `bess_kw` / `bess_kwh` back into Step 2.
+
+**Step 4 — Compute.** Call `mode: "compute"` with `{ inputs, bills }`. You get back:
+
+- `validacion[]` — did every bill foot? (fix transcription before trusting anything);
+- `monthly[]` — the per‑bill breakdown (§6);
+- `annual` + `neto_disp` — annual savings, availability‑derated (§7);
+- `regimen` — the regulatory régime + typed **alerts** to act on (§8);
+- `finance{PV,BESS,Hibrido}` — TIR / VPN / payback from both perspectives (§9).
+
+That's the whole loop. A new project is *only* new bills + new inputs; the doctrine, curves,
+tariff windows, and finance math are shared and fixed.
+
+---
+
+## 12. Worked example (proof of concept) — GEPP — `runGepp()` + `gepp_data.js`
+
+`mode: "gepp"` is **§11 pre‑applied to one real portfolio**: it runs the seeded
+**"GEPP — Propuesta PV+BESS 4 Sitios rev3 — BESS verano 2h"** design. It exists to prove the engine
+against real bills end‑to‑end — treat it as a reference example, not a special code path (it calls
+the same `compute()` every new project uses).
 
 For each of the **6 services** (4 physical sites), it builds standardized inputs (EPC $0.65/Wp PV,
 $280/kWh BESS, PPA $1.20, comisión 0.5, fx 17.55, 15‑yr terms, verano‑2h BESS size from `meta`),
@@ -282,7 +341,7 @@ The handler then produces:
 
 ---
 
-## 12. End‑to‑end flow (summary)
+## 13. End‑to‑end flow (summary)
 
 ```
 POST {mode}

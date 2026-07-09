@@ -20,6 +20,12 @@ numbers‑only port of the CFE Brain Python engine (`calc_core.py` + `load_curve
 `cfe_savings/defaults.py`), verified bit‑for‑bit against the Python golden reference (4,536 fields,
 0 diff).
 
+It is **general‑purpose**: the same logic applies to *any* CFE GDMTH client. The seeded **GEPP**
+4‑sites dataset is only a worked **proof of concept** — every new project follows the same recipe
+(parse bills → optionally size‑bess / fit giro → compute → read régimen/alerts/finance). See
+[§11 of the logic doc](docs/CFE-PPA-BESS-LOGIC.md#11-applying-the-engine-to-a-new-project-the-replicable-recipe)
+for the step‑by‑step.
+
 ### Modes
 
 - **`compute`** `{ inputs, bills[] }` → monthly + annual + régimen + finance (PV/BESS/Hibrido)
