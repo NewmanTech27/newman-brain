@@ -5,3 +5,5 @@ node_modules/
 *.log
 .supabase/
 __pycache__/
+.venv/
+tools/helioscope/out/roof/*_z*.png

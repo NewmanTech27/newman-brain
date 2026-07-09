@@ -98,3 +98,23 @@ when the API key lands, `run_pipeline.py --live` takes over unchanged.
   HelioScope UI before quoting module counts to a client.
 - Solar API coverage in Mexico is partial; a missing building response does
   not lower the score, it just withholds the +10.
+
+## Usable-roof polygons without any API key (`roof_polygon.py`)
+
+The Solar API summary says how big the roof is, not *which part* is
+installable. `roof_polygon.py` closes that gap keylessly:
+
+```bash
+.venv/bin/python roof_polygon.py --site 016040800020 --fetch   # Esri World Imagery (free) → georeferenced PNG + grid copy
+# digitize usable planes + obstacles into out/roof/<RPU>_polygons.json (pixel coords; an LLM can do this visually)
+.venv/bin/python roof_polygon.py --site 016040800020 --export  # → .kml (Google Earth), .geojson, annotated PNG, m²/modules per plane
+```
+
+- Cross-check the building against the OSM footprint (Overpass, free) before
+  digitizing — it also calibrates `lean_px`, the off-nadir displacement of the
+  roof vs its ground position (~7 m at Mexicali z19), applied to KML/GeoJSON.
+- `PACKING = 0.75` on digitized *clear* planes (vs 0.55 on gross roof in
+  design_pack.py).
+- Deps: `python3 -m venv .venv && .venv/bin/pip install pillow`.
+- First worked site: 016040800020 Fiesta Inn Mexicali — 4 planes, 472 m²,
+  ~131×575 W ≈ 75 kWp conservative (Solar API whole-roof max: 430 panels).
