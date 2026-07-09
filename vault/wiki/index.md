@@ -108,6 +108,7 @@
 - [[solar-resource-data]] — solar resource data quality; yield bankability
 
 ## Analyses
+- [[2026-07-09-cfe-ppa-bess-cleanroom-divergences]] — clean-room `design-engine/sizing.py` dropped the umbral + inverted the PV→BESS coupling + isn't golden-tested (P0); deal-offer floor decided IRR-only (engine has no DSCR). Feeds `docs/specs/cfe-ppa-bess.md`
 - [[2026-06-08-780881200029-yearly-savings]] — Grupo Posadas Cancún PV+BESS yearly savings; baseline validated peso-exact; combined $7.59M/yr gross (25.2%), BESS = dominant lever
 - [[2026-06-09-456220800389-yearly-savings]] — Industrial Tototlán Jalisco PV+BESS; CFDI XML bills; combined $4.31M/yr gross (27.6%), TIR 22.5% / payback 5.0y; with FP correction $5.18M/yr (33.2%), TIR 27.8% / payback 4.0y; PV = dominant lever
 - [[2026-06-09-456220800389-propuesta]] — client-facing Spanish proposal for 456220800389: PV 700 kWp + BESS 1,700 kWh/850 kW + FP correction; $5.18M/yr (33.2%), TIR 27.8%, payback 4.0y

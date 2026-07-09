@@ -588,3 +588,10 @@
 - Backups pre-corrección de los 5 libros rev2 persistidos a `entregables/propuestas/_backup rev2 pre-correcciones (2026-07-07)/`
 - index.md: tool registrada en Tools; análisis ya filed en la entrada anterior
 - Key insight: los modelos de sesión que sustentan entregables van a `tools/` SIEMPRE — scratchpad muere con la sesión y la siguiente tiene que hacer ingeniería inversa del Excel
+
+## [2026-07-09] finding | cfe-ppa-bess clean-room sizing divergences + IRR-only floor decision
+- Source: newman-architecture/agents/design-engine/{sizing.py,finance.py,test_sizing.py} diffed vs vault tools/{optimize_sizing,calc_core,ppa_pricer}.py
+- Pages created: [[2026-07-09-cfe-ppa-bess-cleanroom-divergences]]
+- Spec landed: newman-architecture/docs/specs/cfe-ppa-bess.md (Part A/B/C, GAP-01..11, score ~41/100) on branch spec/cfe-ppa-bess (worktree off dev @ a81c43c) — NOT merged, GATE 0 blocks main
+- Decision (Jesus): salesman price floor is IRR-only — engine has no DSCR (all-equity ppa_pricer); DSCR deferred
+- Key insight: the clean-room reimplements billing physics inline instead of calling calc_core, so it lost the umbral, inverted the PV→BESS charging model, and its "golden" test never touches RPU 780881200029 — a snapshot that defends the divergence
