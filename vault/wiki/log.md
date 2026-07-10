@@ -721,3 +721,11 @@
 - Governance gap: the "sacred" golden fixture raw/bills/780881200029/ is not in the vault (permission-denied under /home/mario) — the 18-check test cannot be run from git by anyone but the operator; I never ran it.
 - Honest gaps: prod "union of both arms" / 119-ledger / DEL-4 5/75 inherited from 2026-07-09 report, not re-queried today (confidence: medium); integration/gate0 +57 verified by commit count only, content uninspected (low).
 - Key insight: never port the billing math — calc_core.py is the only engine anchored to the sacred RPU; finance.ts and sizing.py both re-implemented it and both silently overstate savings. Dump prod bwudgrwfwjdbvqhgbwty before dropping it — git cannot rebuild it.
+
+## [2026-07-10] decision | Engine wrap decision — vendor pinned+checksummed, not live call
+- Pages created: [[2026-07-10-engine-wrap-decision]]
+- Decision: vendor newman-brain's `engine.js` at a pinned commit SHA into the new project, with golden-CI (#9) diffing the vendored copy byte-for-byte against that SHA on every run — not a live cross-project HTTP call to the deployed `cfe-ppa-bess` function on frozen old prod (`bwudgrwfwjdbvqhgbwty`).
+- Why: calling live couples us to a project the charter marks for eventual decommission and makes golden-CI depend on cross-project network reachability; vendoring is the historical failure mode (finance.ts, sizing.py) unless drift is a hard CI failure rather than a silent copy — the checksum tripwire is the difference.
+- Reconciliation target restated per CEO: the FIXED golden system (194.48 kWp / 2940 kWh BESS), never the NPV sweep (optimize_sizing.py, Python-only, not in newman-brain).
+- Dependency chain named: #9 (golden CI) gates any merge; recibo-PDF horaria (base/inter/punta) capture — upstream of #5, not solved by #5 alone — gates any meaningful output (CFDI has no split); P1 schema (#2/#3) gates where output lands.
+- Status: decided, nothing merged. Filed per newman-rebuild#7 CEO direction (hold behind #9).
