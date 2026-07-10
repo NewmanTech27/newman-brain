@@ -679,3 +679,37 @@
 - Pages created:
 - Evidence: log.md had 88 heading entries + 30 'Pages created' bullets but only 10 table rows; INT-2 parsed table rows only, so it validated 9 legacy entries and ignored every entry since the format changed. Also mishandled [[path|alias]] links.
 - Key insight: INT-5 caught a checker blind to a second wiki root. INT-6 catches a checker blind to an empty match set. A green check over zero parsed claims proves nothing — a checker must assert it found something to check. Newly visible: 9 pages claimed in mario's June log exist in no vault (historical, pre-import; not an agent of this org).
+
+## [2026-07-10] handoff | CTO final handoff before clean-room rebuild
+- Source: vault/wiki/cto-verdict-log.jsonl (CTO-V-001..003), newman-architecture@a81c43c, wt-cfe-ppa-bess@4a2f319
+- Pages created: [[2026-07-10-cto-final-handoff]]
+- Key insight: three parallel savings engines exist (calc_core golden, design-engine/sizing.py, crm-web/lib/finance.ts); only calc_core is authoritative and the rebuild's chief risk is rewriting the math instead of calling it — the exact divergence this exercise existed to kill. Sizing fix is at step 2A (4a2f319, divergence removed on-branch); step 3 (golden-exact live path) unstarted, blocked upstream on horaria-capture; GATE 0 canonicity ruling never issued.
+
+## [2026-07-10] handoff | cfe-ppa-bess final drain handoff
+- Source: agents/design-engine (sizing.py @ spec/cfe-ppa-bess 4a2f319, local-only), agents/cfe-collector/enrich.py:349, vault/tools/calc_core.py:14, live prod SQL
+- Pages created: [[2026-07-10-cfe-ppa-bess-final-handoff]]
+- Evidence: step-2A delegated sizing to the golden engine (inline divergent physics deleted), 4 test suites green (golden 18/18, bridge 3/3, integration 14/14, legacy 2/2); main.py rewire deferred (blocked on horaria-capture); 58 prod designs untouched.
+- Key insight: the rebuild will feed the deterministic engine from CFDI XML and get silently-wrong all-base zero-punta designs — CFDI carries no base/intermedio/punta split; only the recibo PDF does. Capture the recibo split first.
+
+## [2026-07-10] handoff | ai-research final drain handoff
+- Source: vault/wiki/ai-research/2026-07-09-token-audit-baseline.md (Phase-0 audit, orphaned from index.md), vault/tools/token_audit.py, KPIS.md:52
+- Pages created: [[2026-07-10-ai-research-final-handoff]]
+- Evidence: Phase-0 measure done ($2,475 fleet spend, 98.3% cache hit, tuesday 64% / $1,587); Phase-1 optimize never authorized, no product code touched; my audit page + ai-research/ folder are unreferenced in index.md (grep → 0).
+- Key insight: cost is context-size × turn-count, not output volume or miss rate — a rebuild on Opus/--effort-high with fat per-turn context reproduces the ~$2,475 bill no matter how terse the writing; attack the median 147k carried context or optimize nothing.
+
+## [2026-07-10] handoff | cfe-bill-parser final handoff (org clean-room rebuild)
+- Task (board): final drain before retirement — write only what a successor could NOT reconstruct from repos + wiki.
+- Pages created: [[2026-07-10-cfe-bill-parser-final-handoff]]
+- Top trap: the sacred golden test is NOT self-contained — fixture raw/bills/780881200029/ is gitignored real PDFs on one operator disk; a fresh clone FileNotFoundErrors and risks silent re-baselining of the peso-exact anchor.
+- Also: README golden numbers stale ($7,593,969/25.2% vs corrected $7,083,252/23.5%); vault engine ≠ divergent design-engine/sizing.py; deps pdfplumber+openpyxl not in system python.
+- Honest gaps: my Phase-1 spec was never delivered (docs/specs/cfe-bill-parser.md absent from git); I never watched the golden PASS myself (Jesus ran it); CFE-portal gotchas remain unverified (confidence: low).
+- Key insight: extraction proven for ONE RPU on ONE offline path — not flawless in production; the fixture must travel out-of-band or the golden anchor breaks.
+
+## [2026-07-10] handoff | tuesday-inputs final drain — CRM input surface + auth gate
+- Pages created: [[2026-07-10-tuesday-final-handoff]]
+- Top trap: a WORKING `*.newman.re` auth gate already exists STAGED at `~/newman-sso` (nginx auth_request → Python validator → Supabase), in NO git repo — it dies with this box; copy it out before the box goes.
+- Sharpest gotcha: that validator gates on EMAIL SUFFIX (`endswith @newman.re`), NOT the Google `hd` claim the charter demands — do not assume suffix-matching is the control. `login.newman.re` CNAME also never created.
+- CRM traps: RLS final state is decided by migration ORDER (20260708240000_crm_rbac.sql:53 drops+recreates all policies); whatsapp-intake acks 200 on downstream failure → silent lead loss (never retried).
+- Work in flight: spec/tuesday-inputs@5f6f804 off dev, UNMERGED, self-score 56/100 (never CTO re-scored); next step was Phase-4 GAP-01 (whatsapp deadletter/non-2xx), unstarted.
+- Honest gaps: every spec "Met" is code-read not test-run; tuesday.newman.re=CRM inferred from config, never curled live; 56/100 is my own uncontested claim.
+- Key insight: the auth gate the org thinks is unbuilt is 80% built on disk — but its domain check is suffix ≠ hd; capture and correct it before any ceo./extraction. deploy (P0, exposes RPUs/margins).
