@@ -667,3 +667,15 @@
 - Pages created: [[single-disk-risks]]
 - Evidence: du/ls/git verified — /home/mario ~155MB (denied, charter), ~/newman-sso 92K + ~/excalidraw-auth 36K (no .git), local-only branches spec/cfe-ppa-bess@4a2f319 / spec/tuesday-inputs@5f6f804 / integration/gate0@38ebff0 (+57 vs origin/dev), 84MB transcripts ~/.claude/projects/-home-jesus/.
 - Key insight: inventory only, committed none; the golden fixture and tonight's fix both live single-disk; mitigations (push/backup/version) are outward-facing = Jesus.
+
+## [2026-07-10] finding | The 58 designs are physically impossible (prod-data confirmation)
+- Source: live prod SQL (client.design) + live systemd/proc reads on newman-vps, re-run first-hand
+- Pages created: [[2026-07-10-design-savings-inverted-in-prod]]
+- Evidence: PV-only cohort avg savings 62.0% vs PV+BESS 55.2% (n=30/28) — inverted, since PV ⊥ punta means BESS can only raise savings; roof_bound false on all 58; 54/58 reconciled=false; golden RPU answer is 23.5%.
+- Key insight: design-engine has NEVER run on this box (journalctl: no entries), so the 58 rows have unexplained provenance. The live hazard is proposal-builder (enabled, ACTIVE, pid 1199), whose only brake is an unset PROPOSAL_RPUS. A brake that works by omission is not a brake.
+
+## [2026-07-10] fix | INT-2 was blind a second time; added INT-6 (parser coverage)
+- Source: vault/tools/integrity_check.py
+- Pages created:
+- Evidence: log.md had 88 heading entries + 30 'Pages created' bullets but only 10 table rows; INT-2 parsed table rows only, so it validated 9 legacy entries and ignored every entry since the format changed. Also mishandled [[path|alias]] links.
+- Key insight: INT-5 caught a checker blind to a second wiki root. INT-6 catches a checker blind to an empty match set. A green check over zero parsed claims proves nothing — a checker must assert it found something to check. Newly visible: 9 pages claimed in mario's June log exist in no vault (historical, pre-import; not an agent of this org).
