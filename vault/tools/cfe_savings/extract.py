@@ -20,8 +20,6 @@ import os
 from datetime import date
 import xml.etree.ElementTree as ET
 
-import pdfplumber
-
 from .defaults import MONTH_TOKENS
 
 _NUM = re.compile(r"-?\d[\d,]*\.\d\d|-?\d[\d,]*")
@@ -74,6 +72,7 @@ def _parse_period(text):
 
 
 def parse_bill(path: str) -> dict:
+    import pdfplumber  # lazy: only the PDF path needs it; XML path is stdlib-only
     with pdfplumber.open(path) as pdf:
         text = pdf.pages[0].extract_text()
     lines = text.split("\n")
@@ -176,6 +175,52 @@ def _parse_period_xml(desde: str, hasta: str):
     return start, end, (end - start).days, end.month, end.year
 
 
+# CFDI CONSUMO<n>F -> billing period, keyed by CFE DIVISION code.
+#
+# The CFE horaria addenda numbers the three registers 1F/2F/3F. The mapping to
+# base/intermedia/punta is a per-division-code fact, NOT the fixed 1F=base order
+# the pre-2026-07 code assumed ("verified by EG* importes" — a method proven
+# WRONG for DW, and never independently confirmed for any other division).
+#
+# Byte-verified CFE convention (harvest PR #17, cfe-collector enrich.py): the
+# addenda orders the registers **1F=Punta, 2F=Intermedia, 3F=Base**, confirmed
+# by two independent reconciliations to CONSUMO_R (the total):
+#   - BG-000027808909.xml: 1F=6132(punta) + 2F=64288(inter) + 3F=26894(base)
+#                          = 97314 = CONSUMO_R  (punta smallest = fewest peak hrs)
+#   - RPU 780881200029 / DW (SIN Peninsular), NOV25, WH-000552276133.xml:
+#                          1F=104467(punta) 2F=440446(inter) 3F=268822(base),
+#                          PDF-validated peso-exact (4/4 canonical XMLs). #18.
+#
+# So the register order is a fixed CFE convention, and the OLD extract.py order
+# was inverted for base<->punta on every division. The table below is keyed by
+# division so a genuine per-division exception (if CFE ever ships one) is a
+# one-line addition, not a silent re-inversion. Order = (1F, 2F, 3F) fields.
+_STD_CONSUMO_ORDER = ("kwh_punta", "kwh_inter", "kwh_base")  # CFE addenda default
+
+# Divisions whose (1F,2F,3F)->period order is BYTE-VERIFIED against ground truth.
+# Everything not listed here falls back to _STD_CONSUMO_ORDER (the CFE convention
+# above) and is flagged unverified via _consumo_order_verified().
+_CONSUMO_ORDER_BY_DIVISION = {
+    "DW": _STD_CONSUMO_ORDER,  # SIN Peninsular — #18, PDF + byte verified (4/4)
+    "DB": _STD_CONSUMO_ORDER,  # BG-000027808909.xml reconciles to CONSUMO_R (PR #17)
+}
+# NOTE: DX (Jalisco, RPU 456220800389) is NOT listed — the only prior "check" used
+# the discredited EG*-importe method. It falls back to the CFE-standard order,
+# which is the safest default, but is flagged as unverified until a PDF-validated
+# split confirms it. See #18.
+
+
+def _consumo_order(division: str | None) -> tuple[str, str, str]:
+    d = (division or "").strip().upper()
+    return _CONSUMO_ORDER_BY_DIVISION.get(d, _STD_CONSUMO_ORDER)
+
+
+def consumo_order_verified(division: str | None) -> bool:
+    """True iff the CONSUMO->period order for this division is byte-verified
+    against PDF/CONSUMO_R ground truth (not merely the CFE-convention default)."""
+    return (division or "").strip().upper() in _CONSUMO_ORDER_BY_DIVISION
+
+
 # CFE MEM concept codes (IMPTE_TOT_REG_n / MOTIVO_REG_n) -> engine field.
 # Verified against bill arithmetic for RPU 456220800389 (tarifa HM/GDMTH).
 _MEM_CODE_MAP = {
@@ -206,10 +251,27 @@ def parse_bill_xml(path: str) -> dict:
         if field:
             mem[field] = _f(v.get(f"IMPTE_TOT_REG_{i}")) or 0.0
 
-    # kWh by period: CONSUMO1F=base, 2F=intermedia, 3F=punta (verified by EG* importes)
-    kwh_base = _f(v.get("CONSUMO1F")) or 0.0
-    kwh_inter = _f(v.get("CONSUMO2F")) or 0.0
-    kwh_punta = _f(v.get("CONSUMO3F")) or 0.0
+    # kWh by period: the CONSUMO1F/2F/3F -> base/inter/punta order is a per-
+    # division CFE-addenda fact, mapped via _consumo_order (see #18). The old
+    # fixed 1F=base order was inverted (base<->punta) for DW and unverified
+    # elsewhere. Default is the byte-verified CFE convention 1F=punta/2F=inter/3F=base.
+    division = v.get("DIVISION")
+    f1 = _f(v.get("CONSUMO1F")) or 0.0
+    f2 = _f(v.get("CONSUMO2F")) or 0.0
+    f3 = _f(v.get("CONSUMO3F")) or 0.0
+    by_field = dict(zip(_consumo_order(division), (f1, f2, f3)))
+    kwh_base = by_field["kwh_base"]
+    kwh_inter = by_field["kwh_inter"]
+    kwh_punta = by_field["kwh_punta"]
+    # Self-validating guard (mirrors harvest PR #17): the three registers must
+    # reconcile to CONSUMO_R (the total). A mismatch means an unknown addenda
+    # layout for this division — surface it rather than emit a garbage split.
+    consumo_r = _f(v.get("CONSUMO_R"))
+    if consumo_r and abs((f1 + f2 + f3) - consumo_r) > max(1.0, 0.001 * consumo_r):
+        raise ValueError(
+            f"CONSUMO1F+2F+3F ({f1 + f2 + f3:.0f}) != CONSUMO_R ({consumo_r:.0f}) "
+            f"for division {division!r} in {os.path.basename(path)} — "
+            f"unknown addenda layout; add it to _CONSUMO_ORDER_BY_DIVISION (#18)")
     # demands by period: DEMANDA1P/2P/3P; DEMANDA = max register
     kw_base = _f(v.get("DEMANDA1P")) or 0.0
     kw_inter = _f(v.get("DEMANDA2P")) or 0.0
