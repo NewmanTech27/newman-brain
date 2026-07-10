@@ -713,3 +713,11 @@
 - Work in flight: spec/tuesday-inputs@5f6f804 off dev, UNMERGED, self-score 56/100 (never CTO re-scored); next step was Phase-4 GAP-01 (whatsapp deadletter/non-2xx), unstarted.
 - Honest gaps: every spec "Met" is code-read not test-run; tuesday.newman.re=CRM inferred from config, never curled live; 56/100 is my own uncontested claim.
 - Key insight: the auth gate the org thinks is unbuilt is 80% built on disk — but its domain check is suffix ≠ hd; capture and correct it before any ceo./extraction. deploy (P0, exposes RPUs/margins).
+
+## [2026-07-10] handoff | Final drain — agent data (supabase-devops) retires
+- Pages created: [[2026-07-10-data-final-handoff]]
+- Top trap: "merge to main" ≠ deploy and is backwards — CRM ships from `dev` (deploy-crm.yml, dev-only), collector from `main`; a rebuild treating main as truth loses the entire CRM.
+- Ledger-invisible drift: the 3 client-facing freeze REVOKEs are runtime ACL changes (execute_sql, no migration file) — invisible to `supabase migration list`, silently re-GRANT on any schema replay.
+- Governance gap: the "sacred" golden fixture raw/bills/780881200029/ is not in the vault (permission-denied under /home/mario) — the 18-check test cannot be run from git by anyone but the operator; I never ran it.
+- Honest gaps: prod "union of both arms" / 119-ledger / DEL-4 5/75 inherited from 2026-07-09 report, not re-queried today (confidence: medium); integration/gate0 +57 verified by commit count only, content uninspected (low).
+- Key insight: never port the billing math — calc_core.py is the only engine anchored to the sacred RPU; finance.ts and sizing.py both re-implemented it and both silently overstate savings. Dump prod bwudgrwfwjdbvqhgbwty before dropping it — git cannot rebuild it.
