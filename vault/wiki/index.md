@@ -108,6 +108,13 @@
 - [[solar-resource-data]] — solar resource data quality; yield bankability
 
 ## Analyses
+- [[reset-vs-merge-hazard]] — **finding (2026-07-10 drain):** GATE 0 reconciliation must be a preserve-both MERGE, never a reset; fork dev +102 / main +55 over `d28ae6b`; a reset orphans an entire product (CRM or collector + `docs/cfe-collection.md`); executor = `supabase-devops` with Supabase write tools + skip-permissions; precondition for safety
+- [[design-engine-live-or-orphan]] — **finding (2026-07-10 drain):** `design-engine/sizing.py` is live-capable but dormant behind 3 gates (worker off, allowlist empty, 0 live data); prod `/opt` still runs the OLD divergent file; **latent DEL-5 P0** — one re-arm from pricing deals on 3 invariant violations
+- [[the-58-designs]] — **finding (2026-07-10 drain):** 58 rows in prod `client.design` = stored PV/BESS sizings from the divergent engine; flawed (overstate) AND unreproducible (`invoice`/`bulk_bill` = 0); latent landmine on allowlist entry; quarantine recommended, not executed (prod write = Jesus)
+- [[tonight-sizing-fix]] — **decision (2026-07-10 drain):** sizing.py rewired to delegate to the golden engine, divergent physics removed, on `spec/cfe-ppa-bess @ 4a2f319` (local-only); golden 18/18 + sizing 3/3 + integ 14/14 re-run; NOT 95 (gap = step 3, upstream-blocked); changed no prod
+- [[single-disk-risks]] — **finding (2026-07-10 drain):** inventory of what exists only on this box — `/home/mario` ~155MB PDFs+entregables (incl. the golden fixture), unversioned `~/newman-sso` 92K / `~/excalidraw-auth` 36K, local-only branches (`spec/cfe-ppa-bess@4a2f319`, `spec/tuesday-inputs@5f6f804`, `integration/gate0@38ebff0` +57), 84MB transcripts
+- [[2026-07-10-extraction-golden-proof-scope]] — golden test PASSED (18/18, exit 0) on RPU 780881200029: exact scope of what the proof covers (vault `cfe_savings` extract→arithmetic, 1 RPU/GDMTH/SIN) vs what it does NOT (other formats, failure paths, the whole live production pipeline, the divergent `design-engine`, dashboard/deploy)
+- [[2026-07-09-sizing-py-golden-ingest-materiality]] — clean-room `sizing.py` can't reproduce golden RPU 780881200029: fixture unreachable from vault + structurally lossy (capacidad/distribución, seasonal shave, weekday arbitrage); net direction = **overstate/oversell**
 - [[2026-07-09-cfe-ppa-bess-cleanroom-divergences]] — clean-room `design-engine/sizing.py` dropped the umbral + inverted the PV→BESS coupling + isn't golden-tested (P0); deal-offer floor decided IRR-only (engine has no DSCR). Feeds `docs/specs/cfe-ppa-bess.md`
 - [[2026-06-08-780881200029-yearly-savings]] — Grupo Posadas Cancún PV+BESS yearly savings; baseline validated peso-exact; combined $7.59M/yr gross (25.2%), BESS = dominant lever
 - [[2026-06-09-456220800389-yearly-savings]] — Industrial Tototlán Jalisco PV+BESS; CFDI XML bills; combined $4.31M/yr gross (27.6%), TIR 22.5% / payback 5.0y; with FP correction $5.18M/yr (33.2%), TIR 27.8% / payback 4.0y; PV = dominant lever
@@ -149,3 +156,22 @@
 - `tools/intake/` — **client-intake layer (2026-06-16):** front of the funnel. `email_connector.py` (on-demand IMAP fetch of client mail+attachments → `intake/<slug>/`; approval-gated SMTP `send --confirm` — nothing leaves without sign-off), `profile_builder.py` (summarizes attachments via `cfe_savings.extract` — raw bytes never in context — fills the profile, computes completeness, writes `profile.json` + `outbound_draft.md`), `intake_schema.py` (machine-readable mirror of CLAUDE.md's Intake question bank; `audience=client` simple Spanish Qs vs `internal` defaults). Driven by the `client-intake` subagent; hands `profile.json` to `cfe-savings-analyst`. Email transport chosen first; WhatsApp slots behind the same adapter. See `tools/intake/README.md`.
 - `intake/` — **client profiling workspace (2026-06-16):** one folder per client (`messages/`, `attachments/`, `thread.json`, `answers.json`, `profile.json`, `outbound_draft.md`); regenerable, not `raw/`. `profile.json.ready_for == ["cfe-savings-analyst"]` = enough to run the engine.
 - `.claude/agents/` — six executors: `cfe-savings-analyst` (W4), `project-checker` (W5), `financial-auditor` (W6), `ppa-deal-pricer` (W7), `proposal-writer`, `client-intake` (front-of-funnel profiling).
+
+## Pipeline Engineering — Findings (cfe-bill-parser)
+
+*Engineering knowledge-graph findings on the WhatsApp→CFE bill-intake pipeline. See [[edge-function-maximalist]] for the governing decision.*
+
+- [[needs-name-has-no-outbound-prompt-consumer]] — WhatsApp intake acks "te confirmaremos los RPUs" and stores `confirm_phone`, but the `needs_name`/`needs_ocr` bulk_pdf states have no consumer that prompts the sender — a silent dead-end (watchdog only logs at ~2h). The "wired-consumer" gap of [[edge-function-maximalist]].
+- [[pdf-intake-titular-extraction-fails-real-bill]] — on a real CFE bulk PDF the RPU parses but the titular does not (observed 3×), so nameless bills can't reach CFE Consulta. The per-function-test / RPU+titular-only-purpose gap of [[edge-function-maximalist]].
+
+## Supabase-DevOps — Reconciliation & Drift
+
+*Git↔prod reconciliation and the GATE-0 fork. See [[canonicity-prod-is-truth]] for the governing decision.*
+
+- [[2026-07-09-gate0-reconciliation-report]] — GATE-0 report for Jesus's canonicity ruling: dev vs main uniqueness, live-vs-dead code, stranded files, the 119-migration prod ledger (DEL-4), recommended direction, and preserve-both merge mechanics (no reset, nothing orphaned). Authorizes no execution.
+- [[prod-only-drift-register]] — prod-only changes owed to the canonical branch: the 3 freeze REVOKEs, 016 claim_media (`20260709124613`), 017 bulk_pdf (`20260709132040`).
+- [[2026-07-10-multirepo-branch-audit]] — READ-ONLY post-fetch audit across all repos/worktrees: per-repo divergence, stranded files, live-surface→branch map (main is live for nothing on its own), 3 unversioned deploy/auth dirs, 4 unpushed local branches. Confirms the newman-architecture fork still current (dev +102 / main +55).
+- [[canonicity-prod-is-truth]] — decision: prod DB is source of truth; reconcile git to it, unify the fork.
+- [[main-dev-fork]] — finding: main (cfe-collector) vs dev (CRM) is a two-way fork off frozen staging.
+- [[migration-git-prod-drift]] — finding: git migrations do not reproduce the prod schema.
+- [[graph-filing-two-roots-failure]] — finding: two wiki roots caused the phantom-page false alarm; single-root enforced.

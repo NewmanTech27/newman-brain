@@ -598,3 +598,72 @@
 |------|--------|---------------|-------|
 | 2026-07-09 | Phase 0 assessment (git fetch + Supabase live state) | canonicity-prod-is-truth, main-dev-fork, migration-git-prod-drift | supabase-devops |
 | 2026-07-09 | tuesday.newman.re scope resolution + input-surface spec (docs/specs/tuesday-inputs.md) | tuesday-newman-re-is-the-crm, whatsapp-intake-silent-drop, crm-rls-rbac-ordering-trap | tuesday-inputs |
+| 2026-07-09 | CTO verification of GATE-0 fork + design-engine live-path/blast-radius | 2026-07-09-gate0-fork-cto-verification, 2026-07-09-cleanroom-sizing-live-path-verified | cto |
+| 2026-07-09 | CTO audit: crm-web lib/finance.ts vs golden — diverges, client-facing | 2026-07-09-crmweb-finance-ts-diverges-client-facing | cto |
+| 2026-07-09 | DECISION: client-facing proposal freeze gates (REVOKE runbook, prep only) | 2026-07-09-crmweb-client-facing-freeze-gates-decision | cto |
+| 2026-07-09 | CTO verify: public.claim_media boolean=int bug — CONFIRMED, provenance corrected (claim_media_atomic, not 014/015) | 2026-07-09-claim-media-boolean-bug-verified | cto |
+| 2026-07-09 | CTO verify: bulk_pdf_status_chk missing statuses — CONFIRMED; fix must add needs_name+needs_ocr+pending, not needs_name alone | 2026-07-09-bulk-pdf-status-chk-gap-verified | cto |
+| 2026-07-09 | GATE-0 reconciliation report (preserve-both mechanics, for canonicity ruling) + prod-only-drift register (freeze REVOKEs, 016, 017) | 2026-07-09-gate0-reconciliation-report, prod-only-drift-register | supabase-devops |
+| 2026-07-10 | Multi-repo READ-ONLY branch audit (post git-fetch): per-repo divergence, stranded files, live-surface→branch map, unversioned dirs + unpushed worktree branches | 2026-07-10-multirepo-branch-audit | supabase-devops |
+
+## [2026-07-09] finding | sizing.py cannot reproduce golden RPU — materiality is net-overstate
+- Task (board): quantify how far clean-room design-engine/sizing.py diverges from the golden calc_core result for RPU 780881200029. READ-ONLY, no engine/test modified.
+- Pages created: [[2026-07-09-sizing-py-golden-ingest-materiality]]
+- Blocker 1: golden fixture raw/bills/780881200029/ absent from vault + permission-denied under /home/mario/CFE Brain → neither sizing.py nor calc_core can run the golden RPU from the knowledge base
+- Blocker 2 (structural): sizing.py's TariffCells/MonthLoad cannot represent capacidad-vs-distribución, the seasonal energy-limited shave, or weekday multi-cycle arbitrage — the mechanics that make 90%+ of the golden savings
+- Direction: NET OVERSTATE / oversell (capacidad 79% of savings is overstated; arbitrage 11% understated ~19×). No single peso delta quoted — inputs inaccessible, would be false precision
+- Key insight: the golden RPU the org calls "sacred" is not reproducible from the vault — the fixture lives only on one operator's disk; this is a governance gap, not just a data-access nuisance
+
+## [2026-07-09] decision | edge-function-maximalist architecture
+- Task (board): Jesus ruled the org adopts Supabase edge functions as the primary ingest/orchestration/UI layer; standalone Python agents demoted to invoked workers.
+- Pages created: [[edge-function-maximalist]]
+- Evidence: a real WhatsApp invoice reached the edge-fn path (Twilio points there); the gateway-webhook Flask path received nothing ("No entries" in its journal).
+- Constraints (normative): edge must CALL the golden Python engine, never reimplement it (finance.ts is that trap, now frozen); cfe-collector browser+captcha cannot run on edge → stays a worker; every edge fn + RPC ships with a test (the claim_media silent-loss regression proves why); build sequenced behind GATE 0 + git↔prod cleanup (DEL-4 5/75).
+- Key insight: edge-maximalist applied to the math reproduces the finance.ts divergence — the rule is edge-for-glue, python-engine-authoritative, collector-stays-a-worker.
+
+## [2026-07-09] finding | needs_name/needs_ocr bulk_pdf states have no outbound-prompt consumer
+- Task: file the "silent dead-end" gap found while tracing Jesus's real WhatsApp invoice (bulk_pdf id=2) through the fixed pipeline. READ-ONLY; no prod touched, no fix drafted.
+- Pages created: [[needs-name-has-no-outbound-prompt-consumer]]
+- Evidence: WhatsApp intake acks "te confirmaremos los RPUs" + stores confirm_phone, but the nameless bulk-PDF branch (cfe-collector/main.py:871) only marks needs_name and never calls send_whatsapp (only the named branch, :864, does); no cron/function consumes needs_name; cfe_deadletter_watchdog (migration 012) merely logs cfe_health at >2h. Prod: crm.comms_outbox empty, 0 outbound ever to the sender.
+- Link: [[edge-function-maximalist]] — the "wired-consumer" gap (an orchestration status written with nothing to advance it).
+- Key insight: a nameless bulk PDF is a silent dead-end — sender promised a follow-up that never fires, confirm_phone captured but unused, bill can never reach CFE Consulta.
+
+## [2026-07-09] finding | pdf_intake extracts RPU but not titular on a real CFE bulk PDF
+- Task: file the extraction data-quality gap observed 3× on Jesus's real invoice (bulk_pdf id=2). READ-ONLY.
+- Pages created: [[pdf-intake-titular-extraction-fails-real-bill]]
+- Evidence: pdf_intake.parse_pdf_bills read the RPU (NO. DE SERVICIO) but not the titular (name off the TOTAL A PAGAR line) — "enqueued 0, 1 missing name" on all three re-forwards. Only rpu+name rows are enqueued (main.py:847), so nameless bills can't reach CFE Consulta (exact-titular match).
+- Link: [[edge-function-maximalist]] — constraint #2 (image only reads RPU+titular) unmet; constraint #3 (no test exercises a real bill through pdf_intake). Downstream: [[needs-name-has-no-outbound-prompt-consumer]].
+- Key insight: an RPU-only parse is a full stop, not a partial success — real-bill titular extraction is unreliable and untested end-to-end. No RPU/titular values recorded (PII).
+
+## [2026-07-10] analysis | Extraction golden proof — scope (what 18/18 proves vs not)
+- Task (board): golden test PASSED (18/18, exit 0) on RPU 780881200029, re-run by Jesus; write the honest scope so "one golden RPU passes" is not overstated to "flawless in production".
+- Enablement: provisioned local venv ~/cfe-brain/.venv (pdfplumber 0.11.10, openpyxl 3.1.5); staged gitignored fixture vault/raw/bills/780881200029/ (12 real GDMTH PDFs, Jesus-copied from mario disk); added .gitignore guards (vault/raw/, .venv/, __pycache__/) — verified no real CFE PDF can enter a tracked path.
+- Pages created: [[2026-07-10-extraction-golden-proof-scope]]
+- Covers: vault `cfe_savings` extract_folder→parse_bill (pdfplumber, extract.py:265/76/271) → run_scenarios/receipt_check (engine.py:154/63) → 18 peso-exact checks; 1 RPU / GDMTH / SIN Peninsular.
+- Does NOT cover: other CFE formats + CFDI-XML path; any failure path (missing/corrupt/nameless/OCR-scan/bulk-split); the live production pipeline (WhatsApp intake→DB queue→cfe-collector 2captcha/WAF→design-engine→proposal); the divergent design-engine/sizing.py (still broken, [[2026-07-09-sizing-py-golden-ingest-materiality]]); no dashboard/deploy/auth. Cross-linked [[needs-name-has-no-outbound-prompt-consumer]], [[pdf-intake-titular-extraction-fails-real-bill]].
+- Key insight: proven = one RPU on one offline extract→arithmetic code path, peso-exact; NOT flawless in production. Nothing deployed.
+
+## [2026-07-10] finding | DRAIN: GATE 0 reset-vs-merge hazard
+- Pages created: [[reset-vs-merge-hazard]]
+- Evidence: post-fetch `git rev-list d28ae6b..origin/dev`=102, `..origin/main`=55; merge-base `d28ae6b`=origin/staging; `docs/cfe-collection.md` on origin/main only. Executor = `supabase-devops` (Supabase merge/reset/rebase tools, --dangerously-skip-permissions).
+- Key insight: the two arms are disjoint products (CRM vs collector); "make X canonical" executed as a reset orphans the other product wholesale. Safe only as a preserve-both MERGE after Jesus's ruling, with a git baseline built FROM the prod ledger (DEL-4 5/75).
+
+## [2026-07-10] finding | DRAIN: design-engine live-or-orphan (latent DEL-5 P0)
+- Pages created: [[design-engine-live-or-orphan]]
+- Evidence: main.py:34/171/205/222 (import/optimize/insert_design/claim at pipeline_stage verified→designed); deploy.sh:2/31 (newman-vps CD, AGENTS incl design-engine+proposal-builder); CTO-V-001 deployed_identical_to /opt old divergent sizing.py; gates: worker disabled, PROPOSAL_RPUS empty, client.invoice/bulk_bill=0.
+- Key insight: not orphan — fully wired, ran 2026-07-06, re-arms with one `systemctl enable --now` + allowlist entry. Latent DEL-5 P0: one re-arm from pricing on 3 invariant violations; 58 flawed designs already persisted.
+
+## [2026-07-10] finding | DRAIN: the 58 designs in client.design
+- Pages created: [[the-58-designs]]
+- Evidence: client.design=58 rows (latest 2026-07-06), written by insert_design (main.py:205); invoice/bulk_bill=0 so unreproducible; produced by the CTO-V-001 divergent engine.
+- Key insight: flawed AND unreproducible; latent landmine on any PROPOSAL_RPUS entry; quarantine recommended but NOT executed (prod write = Jesus). Safe interim (worker off, allowlist empty) already holds.
+
+## [2026-07-10] decision | DRAIN: tonight's sizing.py fix
+- Pages created: [[tonight-sizing-fix]]
+- Evidence: spec/cfe-ppa-bess @ 4a2f319 (off dev, wt-cfe-ppa-bess), golden_engine.py bridge + delegated sizing.py + guards; CEO re-ran test_golden 18/18, test_sizing_golden 3/3, test_sizing_integration 14/14 (all exit 0); CTO-V-001/002/003.
+- Key insight: divergence removed on-branch, changed no prod; NOT 95 — gap to 95 is step 3 (rewire main.py, retire lossy bridge, source FC from engine, peso-reconcile live path), upstream-blocked on horaria-capture. Commit is local-only (loss risk).
+
+## [2026-07-10] finding | DRAIN: single-disk risks inventory
+- Pages created: [[single-disk-risks]]
+- Evidence: du/ls/git verified — /home/mario ~155MB (denied, charter), ~/newman-sso 92K + ~/excalidraw-auth 36K (no .git), local-only branches spec/cfe-ppa-bess@4a2f319 / spec/tuesday-inputs@5f6f804 / integration/gate0@38ebff0 (+57 vs origin/dev), 84MB transcripts ~/.claude/projects/-home-jesus/.
+- Key insight: inventory only, committed none; the golden fixture and tonight's fix both live single-disk; mitigations (push/backup/version) are outward-facing = Jesus.
