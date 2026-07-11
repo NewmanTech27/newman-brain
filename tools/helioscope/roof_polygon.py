@@ -10,6 +10,12 @@ the roof is actually installable" with geometry, not just a m2 summary:
                 (Web Mercator tile origin), so any pixel maps to lat/lng.
   2. (human/LLM) look at the image, digitize the usable planes and obstacles
                 into out/roof/<RPU>_polygons.json (pixel coordinates).
+                BEFORE tracing, read examples/HOUSE_STYLE.md — rules distilled
+                from 30 real HelioScope designs (setbacks, equipment buffers,
+                carpet-vs-rack, keepout policy) with citations into
+                examples/2026-<slug>/. Trace to those rules, not to intuition:
+                0.5 m (2 px @ z19) off parapets, ~1 px off equipment rows,
+                carpet the full clear plane, obstacles get their own polygons.
   3. --export   geodesic area per polygon, module packing estimate
                 (same constants as design_pack.py), and emits:
                   out/roof/<RPU>.kml            Google Earth overlay
