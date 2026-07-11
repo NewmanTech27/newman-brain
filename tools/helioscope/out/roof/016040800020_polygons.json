@@ -10,54 +10,54 @@
    "name": "Ala Oriente — franja sur",
    "pixels": [
     [
-     700,
-     556
+     699,
+     554
     ],
     [
-     835,
-     611
+     838,
+     608
     ],
     [
-     842,
+     843,
      628
     ],
     [
-     702,
-     566
+     703,
+     567
     ]
    ],
    "latlngs": [
     [
-     32.645696582953306,
-     -115.46921074390411
+     32.645701099913495,
+     -115.46921342611313
     ],
     [
-     32.64557236645875,
-     -115.4688486456871
+     32.645579141908364,
+     -115.46884059906006
     ],
     [
      32.645533972234624,
-     -115.468829870224
+     -115.46882718801498
     ],
     [
-     32.64567399814895,
-     -115.46920537948608
+     32.6456717396682,
+     -115.46920269727707
     ]
    ],
-   "area_m2": 100.0,
-   "modules": 24,
-   "kwp": 17.2
+   "area_m2": 128.3,
+   "modules": 30,
+   "kwp": 21.4
   },
   {
    "name": "Ala Oriente — franja norte",
    "pixels": [
     [
-     704,
-     532
+     706,
+     530
     ],
     [
-     834,
-     584
+     843,
+     583
     ],
     [
      831,
@@ -70,12 +70,12 @@
    ],
    "latlngs": [
     [
-     32.645750786460496,
-     -115.46920001506805
+     32.64575530341795,
+     -115.46919465065002
     ],
     [
-     32.64563334548673,
-     -115.46885132789612
+     32.64563560396845,
+     -115.46882718801498
     ],
     [
      32.64561527763092,
@@ -86,93 +86,93 @@
      -115.4692080616951
     ]
    ],
-   "area_m2": 83.1,
-   "modules": 20,
-   "kwp": 14.3
+   "area_m2": 115.5,
+   "modules": 27,
+   "kwp": 19.3
   },
   {
    "name": "Ala Surponiente — franja poniente",
    "pixels": [
     [
-     620,
-     578
+     624,
+     570
     ],
     [
-     636,
-     585
+     640,
+     586
     ],
     [
-     581,
-     702
+     585,
+     703
     ],
     [
-     570,
-     696
+     575,
+     706
     ]
    ],
    "latlngs": [
     [
-     32.64564689637619,
-     -115.4694253206253
+     32.6456649642256,
+     -115.46941459178925
     ],
     [
-     32.64563108700495,
-     -115.46938240528107
+     32.64562882852312,
+     -115.46937167644501
     ],
     [
-     32.64536684424344,
-     -115.46952992677689
+     32.64536458575494,
+     -115.46951919794083
     ],
     [
-     32.645380395173284,
-     -115.46955943107605
+     32.64535781028907,
+     -115.46954602003098
     ]
    ],
-   "area_m2": 121.0,
-   "modules": 29,
-   "kwp": 20.7
+   "area_m2": 124.5,
+   "modules": 30,
+   "kwp": 21.4
   },
   {
    "name": "Ala Surponiente — franja oriente",
    "pixels": [
     [
      655,
-     592
+     590
     ],
     [
-     666,
-     597
+     667,
+     596
     ],
     [
-     613,
-     712
+     621,
+     710
     ],
     [
-     599,
-     709
+     600,
+     708
     ]
    ],
    "latlngs": [
     [
-     32.64561527763092,
+     32.64561979459522,
      -115.46933144330978
     ],
     [
-     32.645603985219196,
-     -115.46930193901062
+     32.64560624370165,
+     -115.4692992568016
     ],
     [
-     32.64534425935581,
-     -115.46944409608841
+     32.6453487763338,
+     -115.46942263841629
     ],
     [
-     32.6453510348227,
-     -115.46948164701462
+     32.64535329331155,
+     -115.4694789648056
     ]
    ],
-   "area_m2": 104.7,
-   "modules": 25,
-   "kwp": 17.9
+   "area_m2": 132.8,
+   "modules": 32,
+   "kwp": 22.9
   }
  ],
  "obstacles": [
@@ -268,6 +268,6 @@
    ]
   }
  ],
- "notes": "Franja poniente del ala SW acotada a la zona visiblemente despejada (la imagen fue capturada con sol bajo; el borde NW queda en sombra y debe verificarse en campo). lean_px calibrado contra huella OSM way 194172404/194172405. Bordes ajustados con la capa de relieve local del DSM de Google Solar API (dataLayers 2013, --layers).",
+ "notes": "Re-trazado 2026-07-11 aplicando HOUSE_STYLE v1 (biblioteca de 30 disenos): carpeta flush siguiendo el azimut de cada ala (regla hotel-yori-inn / hotel-tesoro-manzanillo), setback de parapeto 0.5 m = 2 px z19 (regla §6, confirma buffer v0), buffer 1 px a la fila central de equipos, obstaculos con poligonos propios (§7: shape-around, no keepouts sueltos). Correccion vs v0: el borde poniente del ala SW estaba sobre la sombra de fachada (v0 lo advertia); el borde norte del ala oriente gana ~1.5 m sobre plano limpio verificado a 8x. lean_px calibrado contra huella OSM way 194172404/194172405 (sin cambio).",
  "module": "Tongwei TWMNF-66HD715 (715 Wp, 2.384x1.303 m)"
 }

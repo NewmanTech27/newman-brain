@@ -7,21 +7,21 @@
   <Style id="obstacle"><LineStyle><color>ff3c4ce7</color><width>2</width></LineStyle>
    <PolyStyle><color>6e3c4ce7</color></PolyStyle></Style>
   <Style id="obstaclePt"><IconStyle><color>ff3c4ce7</color></IconStyle></Style>
-  <Placemark><name>Ala Oriente — franja sur — 100 m2, ~24 mod / 17.2 kWp</name>
+  <Placemark><name>Ala Oriente — franja sur — 128 m2, ~30 mod / 21.4 kWp</name>
    <styleUrl>#usable</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692107,32.6456966,0 -115.4688486,32.6455724,0 -115.4688299,32.6455340,0 -115.4692054,32.6456740,0 -115.4692107,32.6456966,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692134,32.6457011,0 -115.4688406,32.6455791,0 -115.4688272,32.6455340,0 -115.4692027,32.6456717,0 -115.4692134,32.6457011,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark><name>Ala Oriente — franja norte — 83 m2, ~20 mod / 14.3 kWp</name>
+  <Placemark><name>Ala Oriente — franja norte — 115 m2, ~27 mod / 19.3 kWp</name>
    <styleUrl>#usable</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692000,32.6457508,0 -115.4688513,32.6456333,0 -115.4688594,32.6456153,0 -115.4692081,32.6457282,0 -115.4692000,32.6457508,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4691947,32.6457553,0 -115.4688272,32.6456356,0 -115.4688594,32.6456153,0 -115.4692081,32.6457282,0 -115.4691947,32.6457553,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark><name>Ala Surponiente — franja poniente — 121 m2, ~29 mod / 20.7 kWp</name>
+  <Placemark><name>Ala Surponiente — franja poniente — 124 m2, ~30 mod / 21.4 kWp</name>
    <styleUrl>#usable</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4694253,32.6456469,0 -115.4693824,32.6456311,0 -115.4695299,32.6453668,0 -115.4695594,32.6453804,0 -115.4694253,32.6456469,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4694146,32.6456650,0 -115.4693717,32.6456288,0 -115.4695192,32.6453646,0 -115.4695460,32.6453578,0 -115.4694146,32.6456650,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
-  <Placemark><name>Ala Surponiente — franja oriente — 105 m2, ~25 mod / 17.9 kWp</name>
+  <Placemark><name>Ala Surponiente — franja oriente — 133 m2, ~32 mod / 22.9 kWp</name>
    <styleUrl>#usable</styleUrl>
-   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4693314,32.6456153,0 -115.4693019,32.6456040,0 -115.4694441,32.6453443,0 -115.4694816,32.6453510,0 -115.4693314,32.6456153,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+   <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4693314,32.6456198,0 -115.4692993,32.6456062,0 -115.4694226,32.6453488,0 -115.4694790,32.6453533,0 -115.4693314,32.6456198,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
   <Placemark><name>Obstáculo: Fila central HVAC/ductos — ala oriente</name><styleUrl>#obstacle</styleUrl>
    <Polygon><outerBoundaryIs><LinearRing><coordinates>-115.4692081,32.6457259,0 -115.4688594,32.6456130,0 -115.4688674,32.6455904,0 -115.4692161,32.6457056,0 -115.4692081,32.6457259,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
