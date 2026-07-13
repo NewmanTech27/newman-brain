@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solución Energética — GEPP · Solar + Almacenamiento · Newman Power Alliance</title>
+<style>
+:root{
+  --canvas:#F6F4F9; --ink:#221A33; --accent:#621558;
+  --ink-60:rgba(34,26,51,.62); --ink-30:rgba(34,26,51,.32);
+  --line:rgba(34,26,51,.14); --accent-tint:rgba(98,21,88,.07);
+  --s-purple:#8F3A81; --s-amber:#B8741A; --s-navy:#4356A5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--canvas);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+section.page{min-height:100vh;padding:9vh 7vw;display:flex;flex-direction:column;justify-content:center;position:relative;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:1.1rem}
+.pagenum{position:absolute;top:4.5vh;right:7vw;font-size:.72rem;letter-spacing:.25em;color:var(--ink-30)}
+h1{font-size:clamp(2.2rem,5vw,4rem);font-weight:300;letter-spacing:-.02em;line-height:1.08}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:300;letter-spacing:-.015em;line-height:1.15;margin-bottom:1.6rem}
+h3{font-size:1.05rem;font-weight:600;margin-bottom:.5rem}
+p{max-width:62ch;color:var(--ink-60)}
+p strong{color:var(--ink);font-weight:600}
+a{color:var(--accent);text-decoration:none}
+.wordmark{font-weight:700;letter-spacing:.14em;font-size:1.15rem}
+.wordmark sup{font-size:.5em;font-weight:400}
+.wordmark-sub{font-size:.68rem;letter-spacing:.52em;text-transform:uppercase;color:var(--ink-60);margin-top:.35rem}
+.kpi{display:flex;flex-direction:column;gap:.2rem}
+.kpi .v{font-size:clamp(1.5rem,2.8vw,2.2rem);font-weight:300;letter-spacing:-.02em;color:var(--ink)}
+.kpi .l{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60)}
+.kpi-rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem 2.5rem;padding:1.6rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:2rem 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.cols2{columns:2;column-gap:3rem}
+@media(max-width:820px){.grid2{grid-template-columns:1fr}.cols2{columns:1}}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.8rem 2rem;margin:1.4rem 0}
+@media(max-width:820px){.checks{grid-template-columns:1fr}}
+.checks li{display:flex;gap:.7rem;align-items:baseline;color:var(--ink-60);font-size:.95rem}
+.checks li::before{content:"✓";color:var(--accent);font-weight:700;flex:0 0 auto}
+.card{border:1px solid var(--line);padding:1.5rem;background:#fff}
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;margin-top:1.6rem}
+.tag{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:.2rem .6rem;margin-bottom:.8rem}
+table{width:100%;border-collapse:collapse;font-size:.85rem;font-variant-numeric:tabular-nums}
+th{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-60);font-weight:600;text-align:right;padding:.55rem .6rem;border-bottom:1px solid var(--ink)}
+td{padding:.5rem .6rem;text-align:right;border-bottom:1px solid var(--line);color:var(--ink)}
+th:first-child,td:first-child{text-align:left}
+tr.total td{font-weight:600;border-top:1px solid var(--ink);border-bottom:none;background:var(--accent-tint)}
+tr.jump td{border-top:2px solid var(--s-amber)}
+tr.sub td:first-child{padding-left:1.6rem;color:var(--ink-60)}
+tr.expand{cursor:pointer}
+tr.expand td:first-child::before{content:"▸ ";color:var(--accent);font-size:.8em}
+tr.expand.open td:first-child::before{content:"▾ "}
+.tablewrap{overflow-x:auto;margin-top:1.2rem}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 .6rem}
+.tabs button{font:inherit;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:.5rem 1rem;border:1px solid var(--line);background:#fff;color:var(--ink-60);cursor:pointer}
+.tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.subtabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:.2rem 0 1rem}
+.subtabs button{font:inherit;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink-60);cursor:pointer}
+.subtabs button.on{border-color:var(--accent);color:var(--accent);background:var(--accent-tint)}
+.terms{display:flex;flex-direction:column;gap:1.2rem;border-left:2px solid var(--accent);padding-left:1.4rem}
+.terms .v{font-size:1.4rem;font-weight:300}
+.terms .l{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60)}
+.layout-sb{display:grid;grid-template-columns:230px 1fr;gap:3rem;align-items:start}
+@media(max-width:900px){.layout-sb{grid-template-columns:1fr}}
+.chart{position:relative}
+.chart svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:1.4rem;font-size:.72rem;color:var(--ink-60);margin-top:.5rem;flex-wrap:wrap}
+.legend i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:.4rem}
+.legend i.sq{height:12px;border-radius:2px}
+.legend i.dash{background:repeating-linear-gradient(90deg,currentColor 0 4px,transparent 4px 7px)!important;height:2px}
+.footnote{font-size:.72rem;color:var(--ink-30);margin-top:1.4rem;max-width:none}
+.quote{font-size:clamp(1.2rem,2.4vw,1.8rem);font-weight:300;font-style:italic;color:var(--accent);max-width:30ch;line-height:1.35;margin-top:3rem}
+.guarantees{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.2rem;margin-top:2rem}
+.guarantees .g{border-top:2px solid var(--accent);padding-top:.7rem;font-size:.85rem;color:var(--ink-60)}
+.guarantees .g b{display:block;color:var(--ink);font-weight:600;margin-bottom:.15rem}
+.isotype{display:block;margin:0 auto 1.4rem}
+.cta{border:1px solid var(--accent);background:var(--accent-tint);padding:1.5rem 1.8rem;max-width:560px}
+.cta h3{color:var(--accent)}
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:.9rem}
+@media(max-width:640px){.dual{grid-template-columns:1fr}}
+.dual .card{padding:1.2rem 1.3rem}
+.dual .big{font-size:1.6rem;font-weight:300;color:var(--ink);letter-spacing:-.02em}
+.dual .sub{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-60);margin-bottom:.7rem}
+.dual .row{display:flex;justify-content:space-between;font-size:.85rem;padding:.28rem 0;border-bottom:1px solid var(--line);color:var(--ink-60)}
+.dual .row b{color:var(--ink);font-weight:600}
+.dual .card.rec{background:var(--accent-tint);border-color:var(--accent)}
+.prob{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.4rem}
+@media(max-width:900px){.prob{grid-template-columns:1fr}}
+.prob .card{display:flex;flex-direction:column;gap:.6rem}
+.prob blockquote{font-size:.92rem;font-style:italic;color:var(--ink-60);border-left:2px solid var(--line);padding-left:.9rem}
+.prob .resp{font-size:.9rem;color:var(--ink-60)}
+.prob .resp b{color:var(--ink)}
+.prob .verdict{font-size:.78rem;color:var(--accent);font-weight:600;letter-spacing:.06em;margin-top:auto;padding-top:.4rem}
+.chip{display:inline-block;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;padding:.12rem .5rem;border:1px solid var(--line);color:var(--ink-60);margin-right:.35rem}
+.chip.ok{border-color:#2E7D4F;color:#2E7D4F}
+.chip.warn{border-color:var(--s-amber);color:var(--s-amber)}
+.chip.bad{border-color:#B3392E;color:#B3392E}
+/* superficie bars */
+.supbar{display:grid;grid-template-columns:190px 1fr 300px;gap:1.2rem;align-items:center;padding:.75rem 0;border-bottom:1px solid var(--line)}
+.supbar.subrow{grid-template-columns:190px 1fr 300px;opacity:.85}
+.supbar.subrow .supname{padding-left:1.4rem;color:var(--ink-60);font-weight:400}
+@media(max-width:900px){.supbar{grid-template-columns:1fr;gap:.4rem}}
+.supname{font-size:.92rem;font-weight:600;color:var(--ink)}
+.supname small{display:block;font-weight:400;font-size:.7rem;color:var(--ink-60)}
+.suptrack{height:22px;background:#fff;border:1px solid var(--line);position:relative;border-radius:3px;overflow:hidden}
+.supfill{position:absolute;top:0;left:0;bottom:0;background:var(--s-purple);border-radius:2px 0 0 2px}
+.supfill.limit{background:var(--s-amber)}
+.supover{position:absolute;top:0;bottom:0;background:repeating-linear-gradient(45deg,#B3392E 0 6px,#D9847D 6px 12px)}
+.supmeta{font-size:.78rem;color:var(--ink-60);font-variant-numeric:tabular-nums}
+.supmeta b{color:var(--ink)}
+/* option switch */
+#opswitch{position:fixed;bottom:1.1rem;left:50%;transform:translateX(-50%);z-index:60;display:flex;gap:0;background:#fff;border:1px solid var(--accent);border-radius:999px;box-shadow:0 4px 18px rgba(34,26,51,.18);overflow:hidden}
+#opswitch button{font:inherit;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.55rem 1.15rem;border:none;background:transparent;color:var(--ink-60);cursor:pointer;white-space:nowrap}
+#opswitch button.on{background:var(--accent);color:#fff}
+#tt{position:fixed;pointer-events:none;background:#221A33;color:#fff;font-size:.72rem;line-height:1.45;padding:.5rem .7rem;border-radius:4px;opacity:0;transition:opacity .12s;z-index:99;max-width:260px;white-space:nowrap}
+#tt b{color:#fff}
+@media print{
+  @page{size:letter landscape;margin:10mm}
+  body{background:#fff}
+  section.page{min-height:0;height:auto;page-break-after:always;break-after:page;border-bottom:none;padding:4vh 4vw;justify-content:flex-start}
+  section.page:last-child{page-break-after:auto;break-after:auto}
+  .tabs,.subtabs,#tt,#opswitch{display:none}
+  a{color:var(--ink)}
+}
+</style>
+</head>
+<body>
+<div id="tt"></div>
+<div id="opswitch" role="tablist" aria-label="Esquema de la propuesta">
+  <button data-op="0" class="on">Opción 1 · Autoconsumo</button>
+  <button data-op="1">Opción 2 · GD Medición Neta</button>
+</div>
+
+<!-- 1 · PORTADA -->
+<section class="page" id="portada" style="align-items:center;text-align:center;justify-content:center">
+  <div>
+    <svg class="isotype" viewBox="0 0 120 72" width="104" height="62" role="img" aria-label="Isotipo Newman Power Alliance">
+      <defs><linearGradient id="nwm-g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1E2A6E"/><stop offset="1" stop-color="#C81E82"/></linearGradient></defs>
+      <g fill="url(#nwm-g1)"><rect x="0" y="42" width="16" height="30" rx="2"/><rect x="26" y="26" width="16" height="46" rx="2"/><rect x="52" y="10" width="16" height="62" rx="2"/><rect x="78" y="26" width="16" height="46" rx="2"/><rect x="104" y="42" width="16" height="30" rx="2"/></g>
+    </svg>
+    <div class="wordmark" style="font-size:2.4rem">NEWMAN<sup>®</sup></div>
+    <div class="wordmark-sub" style="text-align:center">Power Alliance</div>
+    <p style="margin:2.2rem auto 0;color:var(--ink);font-size:1.05rem;max-width:44ch">Solución Energética · Solar + Almacenamiento (BESS)</p>
+    <div class="eyebrow" style="margin-top:1.6rem">GEPP · 4 sitios — Ixtlahuacán · Acapulco · Cancún · Proplasa</div>
+    <p class="footnote" style="text-align:center;margin-top:.4rem">Portafolio industrial · Prefactibilidad · Julio 2026 · MXN sin IVA</p>
+    <p class="footnote" style="text-align:center;margin-top:1.2rem;color:var(--accent)">Documento interactivo: use el selector inferior para ver toda la propuesta en Autoconsumo o en Generación Distribuida.</p>
+  </div>
+</section>
+
+<!-- 2 · MANIFIESTO -->
+<section class="page" id="manifiesto">
+  <div class="pagenum">02 · Manifiesto</div>
+  <div class="eyebrow">Quiénes somos</div>
+  <h2>Energía que impulsa<br>a quienes construyen.</h2>
+  <div class="cols2" style="margin-top:1rem">
+    <p style="margin-bottom:1rem">En <strong>Newman Power Alliance</strong> creemos que la energía no debe ser un costo que se padece, sino una ventaja que se diseña. Desarrollamos, financiamos y operamos activos de generación distribuida —solar fotovoltaica y almacenamiento en baterías— para que sus plantas paguen menos por cada kilowatt-hora desde el primer día, <strong>sin invertir un peso</strong>.</p>
+    <p style="margin-bottom:1rem">Cada sitio se dimensiona a la medida de su techo, su curva de carga y su realidad contractual: donde hay autoabasto vigente, el sistema <strong>convive con él</strong> y se convierte en la cobertura natural para cuando venza. Donde el suministro es 100 % CFE, el PPA en sitio fija un precio por kWh menor al de la red.</p>
+    <p>Esta propuesta parte de datos reales: sus recibos CFE de los últimos 12 meses, sus perfiles de consumo por periodo horario y las tarifas vigentes, modelados sitio por sitio con un motor determinista para que cada número sea trazable y defendible.</p>
+  </div>
+  <div class="quote">“What we do today becomes tomorrow’s past, let’s light it up.”</div>
+</section>
+
+<!-- 3 · PROBLEMÁTICA -->
+<section class="page" id="problematica">
+  <div class="pagenum">03 · Su problemática</div>
+  <div class="eyebrow">Lo que nos plantearon — y cómo lo respondemos</div>
+  <h2>Diseñamos sobre su problemática,<br>no sobre un catálogo.</h2>
+  <p>Del perfil de consumo eléctrico que nos compartieron tomamos, textual, la problemática de cada planta. Esta propuesta se construyó para responderla punto por punto.</p>
+  <div class="prob" id="prob-cards"></div>
+  <p class="footnote">Fuente: “Perfil de Consumo Eléctrico GEPP 2025-26”, hoja Resumen (descripción y problemática por planta). Cifras citadas en el diseño de referencia (Opción 1 — Autoconsumo). El abasto aislado en Acapulco y Cancún queda disponible como fase 2: el PPA en sitio captura hoy el ahorro sin el trámite de permisos ni obra de interconexión dedicada.</p>
+</section>
+
+<!-- 4 · PORTAFOLIO -->
+<section class="page" id="resumen">
+  <div class="pagenum">04 · Resumen</div>
+  <div style="border-left:2px solid var(--accent);padding-left:1.4rem;margin-bottom:2.2rem">
+    <div class="eyebrow" style="margin-bottom:.5rem">Propuesta de solución energética</div>
+    <h1 style="font-size:clamp(1.8rem,3.6vw,2.8rem)">GEPP · 4 sitios · Solar + BESS</h1>
+    <p style="margin-top:.5rem;color:var(--ink-60)">Jalisco · Guerrero · Quintana Roo · Estado de México · Prefactibilidad · Julio 2026</p>
+    <p id="hero-line" style="color:var(--ink);font-size:1.1rem;margin-top:.7rem"></p>
+  </div>
+  <div class="eyebrow">El portafolio de un vistazo · <span class="opname"></span></div>
+  <div class="kpi-rail" id="kpi-portfolio"></div>
+  <div class="grid2" style="align-items:start;margin-top:.6rem">
+    <div>
+      <div class="tag">Portafolio · ahorro neto acumulado 20 años</div>
+      <div class="chart" id="chart-cum"></div>
+      <div class="legend" id="leg-cum"></div>
+      <p class="footnote">Cero inversión de GEPP en ambas opciones: Newman funda el CAPEX. El ahorro neto ya descuenta el pago del PPA y la participación del BESS.</p>
+    </div>
+    <div>
+      <div class="guarantees">
+        <div class="g"><b>$0 de inversión</b>Newman desarrolla, financia y opera los activos</div>
+        <div class="g"><b>Convive con su autoabasto</b>TALA y ENEL siguen operando hasta su vencimiento 2032</div>
+        <div class="g"><b>O&amp;M incluido</b>Operación y mantenimiento por todo el contrato</div>
+        <div class="g"><b>Hedge 2033</b>El ahorro amortigua el salto al vencer el autoabasto</div>
+      </div>
+      <p class="footnote" style="margin-top:1.4rem">Baseline: últimos 12 meses reales (may-25 → abr-26) de recibos CFE, sin IVA. Cambie de esquema con el selector inferior — todo el documento se recalcula.</p>
+    </div>
+  </div>
+  <div class="tablewrap" id="tabla-resumen"></div>
+  <p class="footnote">Haga clic en <strong>Proplasa</strong> para desglosar sus tres medidores (Preforma 1, Preforma 2 y Tapa — mismo predio). Los libros por medidor modelan cada recibo individual, por lo que el consolidado del predio puede diferir ligeramente de la suma.</p>
+</section>
+
+<!-- 5 · DOS ESQUEMAS -->
+<section class="page" id="esquemas">
+  <div class="pagenum">05 · Dos esquemas</div>
+  <div class="eyebrow">Opción 1 vs. Opción 2 — elija con el selector</div>
+  <h2>Dos rutas legales,<br>el mismo cero de inversión.</h2>
+  <p>En ambas opciones el BESS es idéntico y Newman funda todo el CAPEX. La diferencia está en el tamaño del sistema solar y su vía de interconexión bajo la Ley del Sector Eléctrico (DOF 18-mar-2025). <strong>Use el selector inferior</strong>: portafolio, superficies, cascada y proyección se recalculan en la opción elegida.</p>
+  <div class="dual">
+    <div class="card" id="esq-card-0">
+      <div class="sub" style="color:var(--accent)">Opción 1 · Autoconsumo interconectado</div>
+      <div class="big">PV a la medida del sitio</div>
+      <div class="footnote" style="margin:.2rem 0 .8rem">Permiso CNE simplificado</div>
+      <div class="row"><span>Tamaño PV</span><b>El que el techo y la carga permiten</b></div>
+      <div class="row"><span>Portafolio PV</span><b id="op1-kwp"></b></div>
+      <div class="row"><span>Ahorro neto GEPP · año 1</span><b id="op1-neto"></b></div>
+      <div class="row" style="border:none"><span>Cobertura del consumo</span><b>Máxima</b></div>
+    </div>
+    <div class="card" id="esq-card-1">
+      <div class="sub">Opción 2 · Generación Distribuida — Medición Neta</div>
+      <div class="big">839.45 kWp por medidor</div>
+      <div class="footnote" style="margin:.2rem 0 .8rem">Exento &lt;0.7 MW-AC — sin permiso (Art. 30)</div>
+      <div class="row"><span>Tamaño PV</span><b>Tope legal por servicio</b></div>
+      <div class="row"><span>Portafolio PV</span><b id="op2-kwp"></b></div>
+      <div class="row"><span>Ahorro neto GEPP · año 1</span><b id="op2-neto"></b></div>
+      <div class="row" style="border:none"><span>Cobertura del consumo</span><b>Parcial · arranque más rápido</b></div>
+    </div>
+  </div>
+  <ul class="checks" style="margin-top:2rem">
+    <li>GEPP paga solo la energía solar generada, a un precio PPA fijo por kWh con escalación pactada — siempre por debajo de su costo CFE.</li>
+    <li>El ahorro del BESS (demanda facturable y arbitraje punta) se comparte 50 / 50 entre GEPP y el inversionista.</li>
+    <li>Al término del plazo de 15 años, el 100 % del ahorro queda para GEPP.</li>
+    <li>Las dos opciones son combinables por sitio: puede arrancar en GD exenta y escalar a autoconsumo.</li>
+  </ul>
+</section>
+
+<!-- 6 · SUPERFICIE -->
+<section class="page" id="superficie">
+  <div class="pagenum">06 · Superficie</div>
+  <div class="eyebrow">¿Cabe en su techo? · <span class="opname"></span></div>
+  <h2 id="sup-headline"></h2>
+  <p>Verificamos cada sistema contra la superficie disponible que nos indicaron, con la densidad real del módulo propuesto (Tongwei 715 Wp · 4.0 m²/kWp). La barra muestra la superficie que ocupa el sistema dentro de la disponible de cada sitio.</p>
+  <div id="sup-body" style="margin-top:1.6rem"></div>
+  <div class="kpi-rail" id="kpi-sup"></div>
+  <p class="footnote" id="foot-sup"></p>
+</section>
+
+<!-- 7 · CONSUMO HOY -->
+<section class="page" id="consumo">
+  <div class="pagenum">07 · Su consumo hoy</div>
+  <div class="eyebrow">Baseline · 12 meses reales de recibos CFE</div>
+  <h2>Dónde está el costo:<br>energía en punta y demanda.</h2>
+  <div class="tabs" id="tabs-consumo" role="tablist"></div>
+  <div class="subtabs" id="sub-consumo" hidden></div>
+  <div class="layout-sb">
+    <aside class="terms" id="terms-consumo"></aside>
+    <div>
+      <div class="chart" id="chart-consumo"></div>
+      <div class="legend" id="leg-consumo"></div>
+      <div class="tablewrap" id="tabla-consumo" style="max-height:34vh;overflow-y:auto"></div>
+      <p class="footnote" id="foot-consumo"></p>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · SOLUCIÓN -->
+<section class="page" id="solucion">
+  <div class="pagenum">08 · La solución</div>
+  <div class="eyebrow">Sistema propuesto y ahorro año 1 · <span class="opname"></span></div>
+  <h2>Lo que paga hoy,<br>y lo que pagaría con Newman.</h2>
+  <div class="tabs" id="tabs-sol" role="tablist"></div>
+  <div class="subtabs" id="sub-sol" hidden></div>
+  <div class="layout-sb">
+    <aside class="terms" id="terms-sol"></aside>
+    <div>
+      <div class="chart" id="chart-cascada"></div>
+      <div class="legend">
+        <span><i class="sq" style="background:var(--ink-30)"></i>Gasto eléctrico</span>
+        <span><i class="sq" style="background:var(--s-purple)"></i>Ahorro bruto (PV + BESS)</span>
+        <span><i class="sq" style="background:var(--s-amber)"></i>Pagos a Newman (PPA + participación)</span>
+        <span><i class="sq" style="background:var(--accent)"></i>Gasto final con Newman</span>
+      </div>
+      <div id="sol-dual"></div>
+      <p class="footnote" id="foot-sol"></p>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · DESPACHO -->
+<section class="page" id="despacho">
+  <div class="pagenum">09 · Cómo opera</div>
+  <div class="eyebrow">Despacho de un día típico · PV + BESS · <span class="opname"></span></div>
+  <h2>El sol cubre el día.<br>La batería borra la punta.</h2>
+  <p>El BESS se carga en horario base (energía barata) y descarga en horario punta con un rasurado plano: recorta la demanda facturable y desplaza los kWh más caros del recibo.</p>
+  <div class="tabs" id="tabs-desp" role="tablist"></div>
+  <div class="subtabs" id="sub-desp" hidden></div>
+  <div class="subtabs" id="season-desp" style="margin-top:.4rem"></div>
+  <div class="layout-sb">
+    <aside class="terms" id="terms-desp"></aside>
+    <div>
+      <div class="chart" id="chart-desp"></div>
+      <div class="legend">
+        <span><i style="background:var(--ink-30)"></i>Carga del sitio</span>
+        <span><i class="sq" style="background:var(--s-amber);opacity:.55"></i>Generación solar</span>
+        <span><i style="background:var(--s-navy)"></i>Carga neta con PV + BESS</span>
+        <span><i class="sq" style="background:rgba(98,21,88,.10)"></i>Horario punta</span>
+      </div>
+      <p class="footnote" id="foot-desp"></p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · PROYECCIÓN -->
+<section class="page" id="veinte">
+  <div class="pagenum">10 · Proyección 20 años</div>
+  <div class="eyebrow">Horizonte 2026 – 2045 · <span class="opname"></span> · el hedge de 2033</div>
+  <h2>En 2033 vence su autoabasto.<br>El ahorro Newman ya estará ahí.</h2>
+  <div class="tabs" id="tabs-veinte" role="tablist"></div>
+  <div class="subtabs" id="sub-veinte" hidden></div>
+  <div class="grid2" style="align-items:start">
+    <div>
+      <div class="chart" id="chart-veinte"></div>
+      <div class="legend">
+        <span><i class="dash" style="color:var(--ink-30)"></i>Gasto CFE pleno (sin autoabasto)</span>
+        <span><i style="background:var(--ink-30)"></i>Gasto sin sistema</span>
+        <span><i style="background:var(--accent)"></i>Gasto con Newman</span>
+      </div>
+      <div class="kpi-rail" id="kpi-veinte" style="grid-template-columns:1fr 1fr;margin:1.4rem 0 0"></div>
+    </div>
+    <div>
+      <div class="tablewrap" id="tabla-veinte" style="max-height:62vh;overflow-y:auto;margin-top:0"></div>
+    </div>
+  </div>
+  <p class="footnote" id="foot-veinte"></p>
+</section>
+
+<!-- 11 · SUPUESTOS -->
+<section class="page" id="supuestos">
+  <div class="pagenum">11 · Supuestos</div>
+  <div class="eyebrow">Transparencia del modelo</div>
+  <h2>Cada número, trazable.</h2>
+  <div class="grid2" style="align-items:start">
+    <div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Supuesto</th><th>Valor</th></tr></thead>
+        <tbody>
+          <tr><td>Baseline</td><td>12 meses reales · may-25 → abr-26 · recibos CFE sin IVA</td></tr>
+          <tr><td>Tipo de cambio</td><td>17.55 MXN/USD</td></tr>
+          <tr><td>Escalación tarifas CFE</td><td>5 % anual (6 % en libro Proplasa por medidor)</td></tr>
+          <tr><td>Escalación precio PPA</td><td>5 % anual</td></tr>
+          <tr><td>Degradación PV / BESS</td><td>0.5 % · 1.25 % anual</td></tr>
+          <tr><td>BESS DoD / round-trip</td><td>96 % / 96 %</td></tr>
+          <tr><td>Merma de riesgo BESS</td><td>2 meses sin ahorro al año</td></tr>
+          <tr><td>Plazo PPA y participación BESS</td><td>15 años · después, 100 % del ahorro para GEPP</td></tr>
+          <tr><td>Participación BESS</td><td>50 / 50 GEPP · inversionista</td></tr>
+          <tr><td>Horizonte / WACC</td><td>20 años · 12 %</td></tr>
+          <tr><td>Vencimiento autoabasto TALA / ENEL</td><td>2032 (editable en el modelo)</td></tr>
+          <tr><td>Módulo fotovoltaico</td><td>Tongwei TWMNF-66HD715 · 715 Wp · η 23.0 % · 4.0 m²/kWp</td></tr>
+          <tr><td>Superficies disponibles</td><td>Ixtlahuacán 25,308 · Acapulco 7,019 · Cancún 6,828 · Proplasa 15,396 m²</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div>
+      <h3 style="font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60)">Notas clave</h3>
+      <ul style="list-style:none;font-size:.8rem;color:var(--ink-60);line-height:1.6;margin-top:.6rem">
+        <li style="margin-bottom:.6rem">· <strong style="color:var(--ink)">Marco legal:</strong> Ley del Sector Eléctrico (DOF 18-mar-2025). GD exenta &lt;0.7 MW sin permiso (Art. 30); autoconsumo interconectado con permiso CNE simplificado.</li>
+        <li style="margin-bottom:.6rem">· <strong style="color:var(--ink)">Autoabasto:</strong> el “gasto real hoy” de Ixtlahuacán y Proplasa ya descuenta el beneficio de TALA / ENEL. Ese beneficio desaparece en 2033: la proyección lo muestra explícitamente y el ahorro Newman actúa como amortiguador.</li>
+        <li style="margin-bottom:.6rem">· <strong style="color:var(--ink)">Ahorros de demanda:</strong> calibrados con simulación horaria (rasurado plano) al tamaño de diseño de cada sitio; escalan linealmente con la energía útil del BESS. En Opción 2 el despacho mostrado escala la curva solar al tamaño GD; el comportamiento del BESS es idéntico.</li>
+        <li style="margin-bottom:.6rem">· <strong style="color:var(--ink)">Superficies:</strong> verificadas contra los m² disponibles indicados por GEPP (pág. 06). Proplasa Opción 1 usa el 100.0 % del predio: cualquier obstáculo de azotea se resuelve en visita técnica.</li>
+        <li>· <strong style="color:var(--ink)">Prefactibilidad:</strong> cifras sujetas a visita técnica, medición de sitio y validación de superficies. El modelo Excel entregado es editable: cada supuesto puede moverse y el libro recalcula en vivo.</li>
+      </ul>
+      <div class="guarantees" style="margin-top:1.6rem">
+        <div class="g"><b>Motor determinista</b>Sin cajas negras: fórmulas vivas sobre sus 12 recibos</div>
+        <div class="g"><b>Simulación horaria</b>Despacho PV + BESS hora por hora, invierno y verano</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · CIERRE -->
+<section class="page" id="cierre">
+  <div class="pagenum">12 · Siguiente paso</div>
+  <div class="eyebrow">Gracias</div>
+  <h2>Convirtamos esta prefactibilidad<br>en un contrato.</h2>
+  <div class="grid2" style="align-items:start;margin-top:1rem">
+    <div class="cta">
+      <h3>Siguiente paso</h3>
+      <p style="font-size:.95rem;color:var(--ink)">Visita técnica a los 4 sitios para validar techos, subestaciones y curvas de carga con medición de intervalo — sin costo ni compromiso — y afinar el dimensionado con su equipo de energía.</p>
+      <p class="footnote" style="margin-top:.8rem"><strong style="color:var(--ink)">Jesús López Palacios</strong> · Newman Power Alliance<br><a href="mailto:jesus@newman.re">jesus@newman.re</a> · <a href="https://newman.re">newman.re</a></p>
+      <p class="footnote" style="margin-top:.5rem">Propuesta calculada con recibos CFE may-25 → abr-26; se recalcula ante nuevos recibos o medición de sitio.</p>
+    </div>
+    <div>
+      <div class="kpi-rail" id="kpi-cierre" style="margin-top:0;border-top:none;padding-top:0"></div>
+      <ul class="checks" style="grid-template-columns:1fr">
+        <li>Cero inversión de GEPP — Newman funda el 100 % del CAPEX.</li>
+        <li>Los 4 sitios caben en la superficie disponible — verificado en la página 06.</li>
+        <li>Convivencia con TALA y ENEL hasta 2032, y cobertura del salto de 2033.</li>
+        <li>Modelo editable entregado: supuestos abiertos, resultados trazables.</li>
+      </ul>
+    </div>
+  </div>
+  <div style="margin-top:3rem;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem">
+    <div style="display:flex;align-items:center;gap:1rem">
+      <svg viewBox="0 0 120 72" width="52" height="31" role="img" aria-label="Isotipo Newman Power Alliance"><g fill="url(#nwm-g1)"><rect x="0" y="42" width="16" height="30" rx="2"/><rect x="26" y="26" width="16" height="46" rx="2"/><rect x="52" y="10" width="16" height="62" rx="2"/><rect x="78" y="26" width="16" height="46" rx="2"/><rect x="104" y="42" width="16" height="30" rx="2"/></g></svg>
+      <div>
+        <div class="wordmark">NEWMAN<sup>®</sup></div>
+        <div class="wordmark-sub">Power Alliance</div>
+      </div>
+    </div>
+    <div style="text-align:right">
+      <p style="font-size:1.2rem;font-weight:300;color:var(--ink)">Gracias.</p>
+      <p class="footnote" style="margin-top:.2rem"><a href="https://newman.re">newman.re</a> · Prefactibilidad, sujeta a visita de sitio y validación de mediciones.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+const MODEL = __MODEL__;
+
+// ---------- metadata ----------
+const META = {
+  ixt:{name:"Ixtlahuacán", full:"GEPP Ixtlahuacán", tarifa:"DIST (Jalisco)", loc:"Ixtlahuacán de los Membrillos, Jal.", sup:25308, autoab:"TALA (bagazo de caña)"},
+  aca:{name:"Acapulco", full:"GEPP Acapulco", tarifa:"GDMTH (Centro Sur)", loc:"Acapulco de Juárez, Gro.", sup:7019, autoab:null},
+  can:{name:"Cancún", full:"GEPP Cancún", tarifa:"GDMTH (Peninsular)", loc:"Benito Juárez, Q.R.", sup:6828, autoab:null},
+  pro:{name:"Proplasa", full:"GEPP Proplasa — predio consolidado", tarifa:"GDMTH (V. de México Norte)", loc:"Cuautitlán Izcalli, Méx.", sup:15396, autoab:"ENEL", subs:["pr1","pr2","tap"]},
+  pr1:{name:"Preforma 1", full:"Proplasa · Preforma 1", tarifa:"GDMTH (V. de México Norte)", loc:"Cuautitlán Izcalli, Méx.", sup:null, autoab:"ENEL", parent:"pro"},
+  pr2:{name:"Preforma 2", full:"Proplasa · Preforma 2", tarifa:"GDMTH (V. de México Norte)", loc:"Cuautitlán Izcalli, Méx.", sup:null, autoab:"ENEL", parent:"pro"},
+  tap:{name:"Tapa", full:"Proplasa · Tapa", tarifa:"GDMTH (V. de México Norte)", loc:"Cuautitlán Izcalli, Méx.", sup:null, autoab:"ENEL", parent:"pro"}
+};
+const MAIN = ["ixt","aca","can","pro"];
+const S = MODEL.sites;
+const R4 = MODEL.resumen4, RP = MODEL.resumenP;
+
+// ---------- option state ----------
+let OP = 0; // 0 = Autoconsumo · 1 = GD Medición Neta
+const OPNAME = ["Opción 1 — Autoconsumo","Opción 2 — GD Medición Neta"];
+const RERENDER = [];
+
+// ---------- formatters ----------
+const fmt$ = new Intl.NumberFormat("es-MX",{style:"currency",currency:"MXN",maximumFractionDigits:0});
+const fmtN = new Intl.NumberFormat("es-MX",{maximumFractionDigits:0});
+const fmt1 = new Intl.NumberFormat("es-MX",{maximumFractionDigits:1});
+const pct = f=>(f*100).toLocaleString("es-MX",{minimumFractionDigits:1,maximumFractionDigits:1})+" %";
+const M$ = v=>"$"+(v/1e6).toLocaleString("es-MX",{maximumFractionDigits:1})+" M";
+const sysv = (k,label,op)=> (S[k].sys[label]||[null,null])[op==null?OP:op];
+const MESES = S.ixt.months.map(m=>m.split("-")[0]);
+const P = ()=> OP? R4.portfolio["Suma Opción 2"] : R4.portfolio["Suma Opción 1"];
+const projOf = k => OP? S[k].proj2 : S[k].proj1;
+
+// portfolio yearly aggregates for both options
+function aggProj(op){
+  const key = op? "proj2":"proj1";
+  return S.ixt[key].map((_,i)=>{
+    const r={yr:S.ixt[key][i].yr,pleno:0,real:0,neto:0,acum:0,autoab:0};
+    MAIN.forEach(k=>{const p=S[k][key][i];r.pleno+=p.pleno;r.real+=p.real;r.neto+=p.neto;r.acum+=p.acum;r.autoab+=p.autoab;});
+    r.pct=r.real?r.neto/r.real:0;
+    return r;
+  });
+}
+const PROJ_ALL = [aggProj(0), aggProj(1)];
+
+// ---------- tooltip ----------
+const tt = document.getElementById("tt");
+document.addEventListener("mousemove",e=>{
+  if(tt.style.opacity!=="1")return;
+  const w=tt.offsetWidth,h=tt.offsetHeight;
+  tt.style.left=Math.min(e.clientX+14,innerWidth-w-8)+"px";
+  tt.style.top=Math.max(e.clientY-h-12,8)+"px";
+});
+function bindTips(el){
+  el.querySelectorAll("[data-tip]").forEach(n=>{
+    n.addEventListener("mouseenter",()=>{tt.innerHTML=n.dataset.tip;tt.style.opacity="1";});
+    n.addEventListener("mouseleave",()=>{tt.style.opacity="0";});
+  });
+}
+
+// ---------- site tabs with Proplasa sub-chips; registers for option re-render ----------
+function makeSiteTabs(tabsId, subId, render, opts){
+  opts = opts||{};
+  const c=document.getElementById(tabsId), sub=subId?document.getElementById(subId):null;
+  const keys=[...MAIN]; if(opts.portfolio) keys.push("all");
+  const names=keys.map(k=>k==="all"?"Portafolio":META[k].name);
+  let cur=keys[opts.start||0];
+  c.innerHTML=keys.map((k,i)=>`<button role="tab" data-k="${k}" class="${i===(opts.start||0)?"on":""}">${names[i]}</button>`).join("");
+  function drawSubs(active){
+    if(!sub)return;
+    if(!active){sub.hidden=true;sub.innerHTML="";return;}
+    sub.hidden=false;
+    const sk=["pro","pr1","pr2","tap"];
+    sub.innerHTML=sk.map(k=>`<button data-k="${k}" class="${k===active?"on":""}">${k==="pro"?"Predio consolidado":META[k].name}</button>`).join("");
+  }
+  c.addEventListener("click",e=>{
+    const b=e.target.closest("button");if(!b)return;
+    c.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+    const k=b.dataset.k;
+    cur=k;
+    if(k==="pro"){drawSubs("pro");render("pro");}
+    else{drawSubs(null);render(k);}
+  });
+  if(sub)sub.addEventListener("click",e=>{
+    const b=e.target.closest("button");if(!b)return;
+    sub.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+    cur=b.dataset.k;
+    render(cur);
+  });
+  RERENDER.push(()=>render(cur));
+  if(cur==="pro")drawSubs("pro");
+  render(cur);
+}
+
+// ---------- SVG helpers ----------
+function axisY(min,max,W,H,mL,mR,mT,mB,fmt,steps){
+  steps=steps||4;let g="",l="";
+  for(let i=0;i<=steps;i++){
+    const v=min+(max-min)*i/steps, y=mT+(H-mT-mB)*(1-(v-min)/(max-min));
+    g+=`<line x1="${mL}" y1="${y}" x2="${W-mR}" y2="${y}" stroke="rgba(34,26,51,.08)"/>`;
+    l+=`<text x="${mL-8}" y="${y+4}" text-anchor="end" font-size="10" fill="rgba(34,26,51,.5)">${fmt(v)}</text>`;
+  }
+  return g+l;
+}
+const fMM = v=>(v/1e6).toLocaleString("es-MX",{maximumFractionDigits:1})+" M";
+const fk = v=>v>=1e6?(v/1e6).toLocaleString("es-MX",{maximumFractionDigits:1})+" M":(v/1e3).toFixed(0)+" k";
+
+// ---------- STATIC ONCE: problemática (cifras del diseño de referencia Op1) ----------
+const PROB = [
+ {k:"ixt", desc:"Contrato de autoabasto con Tala Energy (bagazo de caña) por ≈50 % de su consumo, vigente hasta 2032 — pero solo abastece la mitad del año.",
+  q:"“Nos gustaría poder combinar el autoabasto con generación en sitio con paneles solares.”",
+  r:`<b>Eso es exactamente lo que proponemos.</b> El sistema se dimensionó sobre su gasto real neto de TALA: <b>4.55 MWp + BESS 3.7 MW / 7.4 MWh</b> conviven con el autoabasto, ahorran <b>${fmt$.format(sysv("ixt","AHORRO NETO GEPP año 1 ($)",0))} netos en el año 1 (${pct(sysv("ixt","% ahorro neto (vs gasto real hoy)",0))})</b> y quedan como cobertura cuando TALA venza en 2032.`},
+ {k:"aca", desc:"Planta con consumo 100 % a CFE (GDMTH Centro Sur).",
+  q:"“Nos gustaría explorar un PPA o la posibilidad de Abasto Aislado.”",
+  r:`<b>PPA en sitio, hoy.</b> Energía solar a <b>$${sysv("aca","Precio PPA (MXN/kWh, año 1)",0).toFixed(2)}/kWh</b> — muy por debajo de su costo medio CFE — con <b>1.62 MWp + BESS 1.65 MW / 3.3 MWh</b>: ahorro neto de <b>${fmt$.format(sysv("aca","AHORRO NETO GEPP año 1 ($)",0))} (${pct(sysv("aca","% ahorro neto (vs gasto real hoy)",0))})</b> sin inversión. El abasto aislado queda como fase 2 si se desea profundizar.`},
+ {k:"can", desc:"Planta con consumo 100 % a CFE (GDMTH Peninsular).",
+  q:"“Nos gustaría explorar un PPA o la posibilidad de Abasto Aislado.”",
+  r:`<b>PPA en sitio, hoy.</b> Solar a <b>$${sysv("can","Precio PPA (MXN/kWh, año 1)",0).toFixed(2)}/kWh</b> frente a la tarifa peninsular, con <b>1.10 MWp + BESS 0.98 MW / 1.96 MWh</b>: ahorro neto de <b>${fmt$.format(sysv("can","AHORRO NETO GEPP año 1 ($)",0))} (${pct(sysv("can","% ahorro neto (vs gasto real hoy)",0))})</b> desde el año 1.`},
+ {k:"pro", desc:"Autoabasto con ENEL por ≈60 % del consumo, vigente hasta 2032. Es la planta consumidora más grande de GEPP; opera con tres medidores (Preforma 1, Preforma 2 y Tapa) en el mismo predio.",
+  q:"“Nos gustaría poder combinar el autoabasto con generación en sitio con paneles solares.”",
+  r:`<b>Modelado en sus dos realidades:</b> como predio consolidado y medidor por medidor. <b>3.85 MWp + BESS 11.8 MW / 23.6 MWh</b> conviven con ENEL y generan <b>${fmt$.format(sysv("pro","AHORRO NETO GEPP año 1 ($)",0))} de ahorro neto (${pct(sysv("pro","% ahorro neto (vs gasto real hoy)",0))})</b> — el mayor del portafolio — además del hedge para 2033.`}
+];
+document.getElementById("prob-cards").innerHTML = PROB.map(p=>`
+ <div class="card">
+   <div class="tag">${META[p.k].name} · ${META[p.k].tarifa}</div>
+   <p style="font-size:.85rem;color:var(--ink-60)">${p.desc}</p>
+   <blockquote>${p.q}</blockquote>
+   <p class="resp">${p.r}</p>
+   <div class="verdict">✓ Respondida en esta propuesta</div>
+ </div>`).join("");
+
+// esquemas static numbers (both cards always show both options)
+const _P1=R4.portfolio["Suma Opción 1"], _P2=R4.portfolio["Suma Opción 2"];
+document.getElementById("op1-kwp").textContent = fmt1.format(_P1.kwp/1000)+" MWp";
+document.getElementById("op2-kwp").textContent = fmt1.format(_P2.kwp/1000)+" MWp";
+document.getElementById("op1-neto").textContent = fmt$.format(_P1.neto)+" · "+pct(_P1.neto/_P1.gasto);
+document.getElementById("op2-neto").textContent = fmt$.format(_P2.neto)+" · "+pct(_P2.neto/_P2.gasto);
+
+// ---------- OPTION-DYNAMIC STATICS ----------
+function renderStatics(){
+  const p=P();
+  document.getElementById("hero-line").innerHTML =
+   `<strong>Ahorro neto de ${fmt$.format(p.neto)} en el año 1 — ${pct(p.neto/p.gasto)} de su gasto eléctrico — con $0 de inversión.</strong> ${fmt1.format(p.kwp/1000)} MWp solares y ${fmt1.format(p.bkwh/1000)} MWh de baterías que conviven con su autoabasto y cubren el salto de 2033.`;
+  document.getElementById("kpi-portfolio").innerHTML = [
+    [fmt$.format(p.gasto),"Gasto eléctrico actual · año"],
+    [fmt$.format(p.neto),"Ahorro neto GEPP · año 1"],
+    [pct(p.neto/p.gasto),"Ahorro neto % del gasto"],
+    [fmt1.format(p.kwp/1000)+" MWp","Capacidad solar"],
+    [fmt1.format(p.bkw/1000)+" MW / "+fmt1.format(p.bkwh/1000)+" MWh","Almacenamiento BESS"],
+    [fmt1.format(p.gen/1e6)+" GWh","Generación solar · año"]
+  ].map(([v,l])=>`<div class="kpi"><span class="v">${v}</span><span class="l">${l}</span></div>`).join("");
+  const projA=PROJ_ALL[OP];
+  document.getElementById("kpi-cierre").innerHTML = [
+    [fmt$.format(projA[projA.length-1].acum),"Ahorro neto acumulado · 20 años"],
+    [fmt$.format(p.neto),"Ahorro neto · año 1"],
+    ["$0","Inversión de GEPP"],
+    ["2033","Su autoabasto vence — el hedge ya opera"]
+  ].map(([v,l])=>`<div class="kpi"><span class="v">${v}</span><span class="l">${l}</span></div>`).join("");
+  document.getElementById("esq-card-0").classList.toggle("rec",OP===0);
+  document.getElementById("esq-card-1").classList.toggle("rec",OP===1);
+  renderResumenTable();
+  renderCum();
+  renderSup();
+}
+
+// ---------- RESUMEN TABLE (expandable Proplasa) ----------
+function renderResumenTable(){
+  const pref = OP? "Op2":"Op1";
+  const rows4 = R4.rows.filter(r=>r.op.startsWith(pref)), rowsP = RP.rows.filter(r=>r.op.startsWith(pref));
+  const km = {"Ixtlahuacán":"ixt","Acapulco":"aca","Cancún":"can","Proplasa":"pro"};
+  const tr = (r,cls,label)=>`<tr class="${cls||""}" ${cls&&cls.includes("expand")?'id="row-pro"':""}>
+    <td>${label}</td><td>${fmtN.format(r.kwp)} kWp</td><td>${fmtN.format(r.bkw)} kW / ${fmtN.format(r.bkwh)} kWh</td>
+    <td>${fmt$.format(r.gasto)}</td><td>${fmt$.format(r.neto)}</td><td>${pct(r.pctn!=null?r.pctn:r.neto/r.gasto)}</td>
+    <td>$${r.ppakwh!=null?r.ppakwh.toFixed(4):"—"}</td></tr>`;
+  let html = `<table><thead><tr><th>Sitio · ${OPNAME[OP]}</th><th>Solar</th><th>BESS</th><th>Gasto actual / año</th><th>Ahorro neto año 1</th><th>% neto</th><th>PPA MXN/kWh</th></tr></thead><tbody>`;
+  rows4.forEach(r=>{
+    const k = km[r.site];
+    if(k==="pro"){
+      html += tr(r,"expand","Proplasa · predio consolidado (3 medidores)");
+      rowsP.forEach(rp=>{ html += tr(rp,"sub pro-sub","· "+rp.site.replace("Proplasa · ","")); });
+    } else html += tr(r,"",META[k].name+" — "+META[k].loc);
+  });
+  const p=P();
+  html += `<tr class="total"><td>Portafolio · ${OPNAME[OP].split(" — ")[0]}</td><td>${fmtN.format(p.kwp)} kWp</td><td>${fmtN.format(p.bkw)} kW / ${fmtN.format(p.bkwh)} kWh</td><td>${fmt$.format(p.gasto)}</td><td>${fmt$.format(p.neto)}</td><td>${pct(p.neto/p.gasto)}</td><td>—</td></tr></tbody></table>`;
+  const el=document.getElementById("tabla-resumen");
+  el.innerHTML=html;
+  el.querySelectorAll(".pro-sub").forEach(n=>n.style.display="none");
+  const exp=el.querySelector("#row-pro");
+  if(exp)exp.addEventListener("click",()=>{
+    exp.classList.toggle("open");
+    el.querySelectorAll(".pro-sub").forEach(n=>n.style.display=exp.classList.contains("open")?"":"none");
+  });
+}
+
+// ---------- CHART: portfolio cumulative op1 vs op2 (selected emphasized) ----------
+function renderCum(){
+  const c1=PROJ_ALL[0].slice(1).map(p=>p.acum), c2=PROJ_ALL[1].slice(1).map(p=>p.acum);
+  const sel=OP?c2:c1, oth=OP?c1:c2;
+  const W=560,H=300,mL=64,mR=16,mT=16,mB=30;
+  const max=Math.max(...c1,...c2)*1.04, min=0;
+  const x=i=>mL+(W-mL-mR)*i/(c1.length-1), y=v=>mT+(H-mT-mB)*(1-(v-min)/(max-min));
+  let hover="";
+  c1.forEach((v,i)=>{
+    hover+=`<rect x="${x(i)-((W-mL-mR)/(c1.length-1))/2}" y="${mT}" width="${(W-mL-mR)/(c1.length-1)}" height="${H-mT-mB}" fill="transparent" data-tip="<b>${2026+i}</b><br>Opción 1: ${fmt$.format(c1[i])}<br>Opción 2: ${fmt$.format(c2[i])}"/>`;
+  });
+  const path=a=>a.map((v,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  let labels="";[2026,2031,2036,2041,2045].forEach(yr=>{labels+=`<text x="${x(yr-2026)}" y="${H-8}" text-anchor="middle" font-size="10" fill="rgba(34,26,51,.5)">${yr}</text>`;});
+  const el=document.getElementById("chart-cum");
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Ahorro neto acumulado 20 años, Opción 1 vs Opción 2">
+   ${axisY(min,max,W,H,mL,mR,mT,mB,fMM)}
+   <path d="${path(oth)}" fill="none" stroke="#621558" stroke-width="2" opacity=".35"/>
+   <path d="${path(sel)}" fill="none" stroke="#621558" stroke-width="2.5"/>
+   <circle cx="${x(sel.length-1)}" cy="${y(sel[sel.length-1])}" r="4" fill="#621558"/>
+   <text x="${x(sel.length-1)-8}" y="${y(sel[sel.length-1])+(sel[sel.length-1]>=oth[oth.length-1]?-8:16)}" text-anchor="end" font-size="11" font-weight="600" fill="#221A33">${fmt$.format(sel[sel.length-1])}</text>
+   ${labels}${hover}</svg>`;
+  document.getElementById("leg-cum").innerHTML =
+   `<span><i style="background:var(--accent)${OP?";opacity:.35":""}"></i>Opción 1 · Autoconsumo${OP?"":" — seleccionada"}</span>
+    <span><i style="background:var(--accent)${OP?"":";opacity:.35"}"></i>Opción 2 · GD Medición Neta${OP?" — seleccionada":""}</span>`;
+  bindTips(el);
+}
+
+// ---------- SUPERFICIE ----------
+function renderSup(){
+  const maxSup=Math.max(...MAIN.map(k=>META[k].sup));
+  const rows=[];
+  let allFit=true, extraTotal=0, fitCount=0;
+  MAIN.forEach(k=>{
+    const req=sysv(k,"Superficie requerida (m²)"), av=META[k].sup, kwp=sysv(k,"Potencia PV (kWp DC)");
+    const fits=req<=av; if(fits)fitCount++; else {allFit=false; extraTotal+=req-av;}
+    rows.push({k,label:META[k].name,req,av,kwp,fits,sub:false});
+    if(k==="pro"){
+      META.pro.subs.forEach(sk=>{
+        rows.push({k:sk,label:META[sk].name,req:sysv(sk,"Superficie requerida (m²)"),av,kwp:sysv(sk,"Potencia PV (kWp DC)"),fits:true,sub:true});
+      });
+    }
+  });
+  document.getElementById("sup-headline").innerHTML = allFit
+    ? "Sí: los 4 sitios caben<br>en la superficie disponible."
+    : "Tres verdades por sitio:<br>qué cabe, cuánto y qué falta.";
+  document.getElementById("sup-body").innerHTML = rows.map(r=>{
+    const trackW=(r.av/maxSup*100).toFixed(1);
+    const usePct=Math.min(r.req/r.av,1)*100;
+    const util=r.req/r.av;
+    const nearLimit=util>0.985&&util<=1;
+    let chip, meta;
+    if(r.fits){
+      chip=nearLimit?`<span class="chip warn">Al límite del predio</span>`:`<span class="chip ok">Instalable</span>`;
+      meta=`<b>${fmtN.format(r.req)}</b> / ${fmtN.format(r.av)} m² · <b>${pct(util)}</b>${nearLimit?"":" · holgura "+fmtN.format(r.av-r.req)+" m²"}`;
+    }else{
+      const fitPct=r.av/r.req, fitKwp=r.av/4;
+      chip=`<span class="chip bad">No cabe completo</span>`;
+      meta=`<b>${fmtN.format(r.req)}</b> / ${fmtN.format(r.av)} m² · caben <b>${pct(fitPct)}</b> (≈${fmtN.format(fitKwp)} kWp) · faltan <b>${fmtN.format(r.req-r.av)} m²</b>`;
+    }
+    const overW=r.fits?0:Math.min((r.req-r.av)/r.av,0.35)*100;
+    return `<div class="supbar${r.sub?" subrow":""}">
+      <div class="supname">${r.sub?"· ":""}${r.label}<small>${r.sub?"comparte el predio Proplasa":fmtN.format(r.av)+" m² disponibles"} · ${fmtN.format(r.kwp)} kWp</small></div>
+      <div class="suptrack" style="width:${r.sub?trackW:trackW}%" data-tip="<b>${r.label}</b><br>Requiere ${fmtN.format(r.req)} m² de ${fmtN.format(r.av)} m²<br>${pct(util)} de la superficie disponible">
+        <div class="supfill${nearLimit?" limit":""}" style="width:${usePct}%"></div>
+        ${overW?`<div class="supover" style="left:100%;width:${overW}%"></div>`:""}
+      </div>
+      <div class="supmeta">${chip} ${meta}</div>
+    </div>`;
+  }).join("");
+  const totReq=MAIN.reduce((a,k)=>a+sysv(k,"Superficie requerida (m²)"),0);
+  const totAv=MAIN.reduce((a,k)=>a+META[k].sup,0);
+  document.getElementById("kpi-sup").innerHTML=[
+    [fitCount+" / 4","Sitios instalables · "+OPNAME[OP].split(" — ")[0]],
+    [allFit?"0 m²":fmtN.format(extraTotal)+" m²","Superficie adicional requerida"],
+    [pct(totReq/totAv),"Utilización del techo disponible"],
+    [fmt1.format(totAv/4/1000)+" MWp","Techo máximo teórico del portafolio"]
+  ].map(([v,l])=>`<div class="kpi"><span class="v">${v}</span><span class="l">${l}</span></div>`).join("");
+  document.getElementById("foot-sup").textContent =
+   (OP===0
+    ? "Opción 1: Proplasa se diseñó exactamente al límite de su predio (15,396 m²) — la visita técnica valida obstáculos de azotea (equipos, andadores, sombras) que puedan requerir ajuste fino. Cancún e Ixtlahuacán quedan limitados por carga, no por techo: hay superficie de sobra para crecer."
+    : "Opción 2: el tope legal de 839.45 kWp por medidor requiere solo 3,357.8 m² por servicio — cabe con holgura en los 4 sitios (Proplasa: 3 medidores × 3,357.8 m² = 10,073 m² de 15,396 m² disponibles).")+
+   " Densidad 4.0 m²/kWp del módulo Tongwei 715 Wp.";
+  bindTips(document.getElementById("sup-body"));
+}
+
+// ---------- SECTION 7: CONSUMO (option-independent) ----------
+function renderConsumo(k){
+  const s=S[k], m=META[k];
+  document.getElementById("terms-consumo").innerHTML=[
+    [m.tarifa.split(" ")[0],"Tarifa · "+m.tarifa.replace(/^\S+\s*/,"").replace(/[()]/g,"")],
+    [fmt1.format(s.ctotal_tot/1e6)+" GWh","Consumo · 12 meses"],
+    [fmt$.format(s.gasto_tot),"Gasto facturado · 12 meses"],
+    [fmtN.format(Math.max(...s.dpunta))+" kW","Demanda máx. en punta"],
+    ["$"+(s.gasto_tot/s.ctotal_tot).toFixed(2)+"/kWh","Costo medio todo incluido"]
+  ].map(([v,l])=>`<div><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+  const W=560,H=250,mL=52,mR=8,mT=14,mB=26,n=12;
+  const totmax=Math.max(...s.ctotal);
+  const gap=(W-mL-mR)/n, bw=gap*0.62;
+  const y=v=>mT+(H-mT-mB)*(1-v/totmax);
+  const C={b:"#D9BBD3",i:"#A9679B",p:"#621558"};
+  let bars="",lab="";
+  for(let i=0;i<n;i++){
+    const cx=mL+gap*i+gap*0.19;
+    let acc=0;
+    [["b",s.cbase[i],"Base"],["i",s.cint[i],"Intermedia"],["p",s.cpunta[i],"Punta"]].forEach(([c,v,nm],si)=>{
+      const y1=y(acc+v), y0=y(acc);
+      bars+=`<rect x="${cx.toFixed(1)}" y="${(y1+(si?1:0)).toFixed(1)}" width="${bw.toFixed(1)}" height="${Math.max(0,y0-y1-(si?1:0)).toFixed(1)}" fill="${C[c]}" data-tip="<b>${MESES[i]} · ${nm}</b><br>${fmtN.format(v)} kWh (${pct(v/s.ctotal[i])})<br>Total mes: ${fmtN.format(s.ctotal[i])} kWh · ${fmt$.format(s.gasto[i])}"/>`;
+      acc+=v;
+    });
+    lab+=`<text x="${(cx+bw/2).toFixed(1)}" y="${H-8}" text-anchor="middle" font-size="9" fill="rgba(34,26,51,.5)">${MESES[i]}</text>`;
+  }
+  document.getElementById("chart-consumo").innerHTML=
+   `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Consumo mensual por periodo horario">${axisY(0,totmax,W,H,mL,mR,mT,mB,fk,3)}${bars}${lab}</svg>`;
+  document.getElementById("leg-consumo").innerHTML=
+   `<span><i class="sq" style="background:${C.b}"></i>Base</span><span><i class="sq" style="background:${C.i}"></i>Intermedia</span><span><i class="sq" style="background:${C.p}"></i>Punta — la energía más cara</span>`;
+  let rows="";
+  for(let i=0;i<12;i++)rows+=`<tr><td>${s.months[i]}</td><td>${fmtN.format(s.ctotal[i])}</td><td>${fmtN.format(s.cpunta[i])}</td><td>${fmtN.format(s.dpunta[i])}</td><td>${fmt$.format(s.gasto[i])}</td></tr>`;
+  rows+=`<tr class="total"><td>Total 12 meses</td><td>${fmtN.format(s.ctotal_tot)}</td><td>${fmtN.format(s.cpunta_tot)}</td><td>${fmtN.format(Math.max(...s.dpunta))} máx</td><td>${fmt$.format(s.gasto_tot)}</td></tr>`;
+  document.getElementById("tabla-consumo").innerHTML=`<table><thead><tr><th>Mes</th><th>kWh totales</th><th>kWh punta</th><th>Dem. punta kW</th><th>Facturado</th></tr></thead><tbody>${rows}</tbody></table>`;
+  document.getElementById("foot-consumo").textContent =
+   (m.autoab?`El gasto mostrado es el real de sus recibos, ya neto del beneficio de autoabasto ${m.autoab}. `:"")+
+   `${m.full} · ${m.loc}${m.sup?` · superficie disponible ${fmtN.format(m.sup)} m²`:""}. Montos MXN sin IVA.`;
+  bindTips(document.getElementById("chart-consumo"));
+}
+makeSiteTabs("tabs-consumo","sub-consumo",renderConsumo);
+
+// ---------- SECTION 8: SOLUCIÓN + CASCADA ----------
+function renderSol(k){
+  const g=sysv(k,"Gasto real hoy (con autoabasto) ($/año)"), apv=sysv(k,"Ahorro bruto PV año 1 ($)"),
+        ab=sysv(k,"Ahorro bruto BESS año 1 c/merma ($)"), ppa=sysv(k,"Pago PPA año 1 ($)"),
+        part=sysv(k,"Pago participación BESS ($)"), neto=sysv(k,"AHORRO NETO GEPP año 1 ($)");
+  const fin=g-neto;
+  document.getElementById("terms-sol").innerHTML=[
+    [fmtN.format(sysv(k,"Potencia PV (kWp DC)"))+" kWp","Solar · "+OPNAME[OP].split(" — ")[0]],
+    [fmtN.format(sysv(k,"BESS potencia (kW)"))+" kW / "+fmtN.format(sysv(k,"BESS capacidad (kWh)"))+" kWh","BESS"],
+    ["$"+sysv(k,"Precio PPA (MXN/kWh, año 1)").toFixed(4),"PPA MXN/kWh · año 1"],
+    [fmt$.format(neto),"Ahorro neto GEPP · año 1"],
+    [pct(sysv(k,"% ahorro neto (vs gasto real hoy)")),"Del gasto actual"]
+  ].map(([v,l])=>`<div><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+  const steps=[
+    {l:"Gasto hoy", v:g, type:"abs", c:"rgba(34,26,51,.32)", tip:"Gasto eléctrico actual (12 meses reales)"},
+    {l:"− Ahorro solar", v:-apv, type:"delta", c:"#8F3A81", tip:"Energía solar que deja de comprarse a CFE"},
+    {l:"− Ahorro BESS", v:-ab, type:"delta", c:"#8F3A81", tip:"Demanda facturable y arbitraje de punta"},
+    {l:"+ Pago PPA", v:ppa, type:"delta", c:"#B8741A", tip:"Pago por la energía solar generada"},
+    {l:"+ Particip. BESS", v:part, type:"delta", c:"#B8741A", tip:"50 % del ahorro BESS al inversionista"},
+    {l:"Gasto con Newman", v:fin, type:"abs", c:"#621558", tip:"Factura CFE remanente + pagos a Newman"}
+  ];
+  const W=560,H=280,mL=64,mR=10,mT=30,mB=40,n=steps.length;
+  const max=g*1.04;
+  const y=v=>mT+(H-mT-mB)*(1-v/max);
+  const gap=(W-mL-mR)/n, bw=gap*0.6;
+  let run=0,bars="",lbl="";
+  steps.forEach((st,i)=>{
+    const cx=mL+gap*i+gap*0.2;
+    let y0,y1,v0;
+    if(st.type==="abs"){v0=st.v;y0=y(0);y1=y(st.v);run=st.v;}
+    else{const prev=run;run=prev+st.v;y0=y(prev);y1=y(run);v0=Math.abs(st.v);}
+    const top=Math.min(y0,y1), hh=Math.abs(y0-y1);
+    bars+=`<rect x="${cx.toFixed(1)}" y="${top.toFixed(1)}" width="${bw.toFixed(1)}" height="${Math.max(hh,2).toFixed(1)}" rx="2" fill="${st.c}" data-tip="<b>${st.l}</b><br>${fmt$.format(v0)}<br>${st.tip}"/>`;
+    if(i<n-1)bars+=`<line x1="${(cx+bw).toFixed(1)}" y1="${y(run).toFixed(1)}" x2="${(cx+gap).toFixed(1)}" y2="${y(run).toFixed(1)}" stroke="rgba(34,26,51,.3)" stroke-dasharray="3 3"/>`;
+    lbl+=`<text x="${(cx+bw/2).toFixed(1)}" y="${top-6}" text-anchor="middle" font-size="10" font-weight="600" fill="#221A33">${M$(v0)}</text>`;
+    lbl+=`<text x="${(cx+bw/2).toFixed(1)}" y="${H-24}" text-anchor="middle" font-size="9" fill="rgba(34,26,51,.55)">${st.l.split(" ").slice(0,2).join(" ")}</text>`;
+    lbl+=`<text x="${(cx+bw/2).toFixed(1)}" y="${H-13}" text-anchor="middle" font-size="9" fill="rgba(34,26,51,.55)">${st.l.split(" ").slice(2).join(" ")}</text>`;
+  });
+  const el=document.getElementById("chart-cascada");
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cascada de ahorro año 1">${axisY(0,max,W,H,mL,mR,mT,mB,fMM,3)}${bars}${lbl}</svg>`;
+  bindTips(el);
+  const esq1 = k==="pro" ? "2 × GD exenta + autoconsumo" : "Autoconsumo interconectado";
+  document.getElementById("sol-dual").innerHTML=`<div class="dual">
+    <div class="card ${OP===0?"rec":""}">
+      <div class="sub" style="color:var(--accent)">Opción 1 · ${esq1}${OP===0?" — seleccionada":""}</div>
+      <div class="big">${fmt$.format(sysv(k,"AHORRO NETO GEPP año 1 ($)",0))}<span style="font-size:.85rem;color:var(--ink-60)"> ahorro neto / año 1</span></div>
+      <div class="row"><span>Solar</span><b>${fmtN.format(sysv(k,"Potencia PV (kWp DC)",0))} kWp</b></div>
+      <div class="row"><span>PPA año 1</span><b>$${sysv(k,"Precio PPA (MXN/kWh, año 1)",0).toFixed(4)}/kWh</b></div>
+      <div class="row" style="border:none"><span>% del gasto</span><b>${pct(sysv(k,"% ahorro neto (vs gasto real hoy)",0))}</b></div>
+    </div>
+    <div class="card ${OP===1?"rec":""}">
+      <div class="sub">Opción 2 · GD Medición Neta (&lt;0.7 MW)${OP===1?" — seleccionada":""}</div>
+      <div class="big">${fmt$.format(sysv(k,"AHORRO NETO GEPP año 1 ($)",1))}<span style="font-size:.85rem;color:var(--ink-60)"> ahorro neto / año 1</span></div>
+      <div class="row"><span>Solar</span><b>${fmtN.format(sysv(k,"Potencia PV (kWp DC)",1))} kWp</b></div>
+      <div class="row"><span>PPA año 1</span><b>$${sysv(k,"Precio PPA (MXN/kWh, año 1)",1).toFixed(4)}/kWh</b></div>
+      <div class="row" style="border:none"><span>% del gasto</span><b>${pct(sysv(k,"% ahorro neto (vs gasto real hoy)",1))}</b></div>
+    </div>
+  </div>`;
+  document.getElementById("foot-sol").textContent =
+   `Cascada del año 1, ${OPNAME[OP]}. El “gasto final con Newman” incluye la factura CFE remanente más los pagos a Newman; la diferencia contra el gasto actual es el ahorro neto de GEPP. Montos MXN sin IVA.`;
+}
+makeSiteTabs("tabs-sol","sub-sol",renderSol);
+
+// ---------- SECTION 9: DESPACHO ----------
+let despSeason="inv", despSite="ixt";
+function drawSeason(){
+  const c=document.getElementById("season-desp");
+  c.innerHTML=[["inv","Día de invierno · punta 18–22 h"],["ver","Día de verano · punta 20–22 h"]]
+   .map(([k,n])=>`<button data-s="${k}" class="${k===despSeason?"on":""}">${n}</button>`).join("");
+}
+document.getElementById("season-desp").addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  despSeason=b.dataset.s;drawSeason();renderDesp(despSite);
+});
+function renderDesp(k){
+  despSite=k;
+  const s=S[k], d=s[despSeason];
+  const ratio = OP? sysv(k,"Potencia PV (kWp DC)",1)/sysv(k,"Potencia PV (kWp DC)",0) : 1;
+  const prof = d.prof.map(p=>{
+    const pv=p.pv*ratio;
+    return {...p, pv, neta: p.carga - pv - p.chg - p.dis};
+  });
+  // demanda punta antes/después desde el perfil (exacto para ambas opciones)
+  const punta=prof.filter(p=>p.per==="Punta");
+  const antes=Math.max(...punta.map(p=>p.carga-p.pv)), despues=Math.max(...punta.map(p=>p.neta));
+  document.getElementById("terms-desp").innerHTML=[
+    [fmtN.format(antes)+" kW","Pico en punta · sin BESS"],
+    [fmtN.format(Math.max(0,despues))+" kW","Pico en punta · con BESS"],
+    ["−"+fmtN.format(antes-Math.max(0,despues))+" kW","Demanda facturable que desaparece"],
+    [fmtN.format(sysv(k,"Energía útil BESS (kWh)"))+" kWh","Energía útil del BESS"]
+  ].map(([v,l])=>`<div><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+  const W=560,H=270,mL=52,mR=10,mT=14,mB=26;
+  const max=Math.max(...prof.map(p=>Math.max(p.carga,p.neta,p.pv)))*1.06;
+  const x=i=>mL+(W-mL-mR)*i/23, y=v=>mT+(H-mT-mB)*(1-Math.max(v,0)/max);
+  let shade="";
+  prof.forEach((p,i)=>{ if(p.per==="Punta"){ const x0=i?x(i-0.5):x(i), x1=i<23?x(i+0.5):x(i);
+    shade+=`<rect x="${x0.toFixed(1)}" y="${mT}" width="${(x1-x0).toFixed(1)}" height="${H-mT-mB}" fill="rgba(98,21,88,.08)"/>`;}});
+  const path=(fld)=>prof.map((p,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(p[fld]).toFixed(1)}`).join(" ");
+  const area=`M${x(0)},${y(0)} `+prof.map((p,i)=>`L${x(i).toFixed(1)},${y(p.pv).toFixed(1)}`).join(" ")+` L${x(23)},${y(0)} Z`;
+  let hover="";
+  prof.forEach((p,i)=>{
+    hover+=`<rect x="${(x(i)-((W-mL-mR)/23)/2).toFixed(1)}" y="${mT}" width="${((W-mL-mR)/23).toFixed(1)}" height="${H-mT-mB}" fill="transparent" data-tip="<b>${p.h}:00 h · ${p.per}</b><br>Carga: ${fmtN.format(p.carga)} kW<br>Solar: ${fmtN.format(p.pv)} kW<br>BESS: ${p.dis>0?"descarga "+fmtN.format(p.dis)+" kW":(p.chg<0?"carga "+fmtN.format(-p.chg)+" kW":"en espera")}<br><b>Carga neta: ${fmtN.format(p.neta)} kW</b>"/>`;
+  });
+  let lab="";[0,4,8,12,16,20,23].forEach(h=>{lab+=`<text x="${x(h).toFixed(1)}" y="${H-8}" text-anchor="middle" font-size="9" fill="rgba(34,26,51,.5)">${h} h</text>`;});
+  const el=document.getElementById("chart-desp");
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Despacho de un día típico">
+   ${shade}${axisY(0,max,W,H,mL,mR,mT,mB,v=>fmtN.format(v),3)}
+   <path d="${area}" fill="#B8741A" opacity=".28" stroke="none"/>
+   <path d="${path("pv")}" fill="none" stroke="#B8741A" stroke-width="1.6"/>
+   <path d="${path("carga")}" fill="none" stroke="rgba(34,26,51,.4)" stroke-width="2"/>
+   <path d="${path("neta")}" fill="none" stroke="#4356A5" stroke-width="2.5"/>
+   ${lab}${hover}</svg>`;
+  bindTips(el);
+  document.getElementById("foot-desp").textContent =
+   `${META[k].full}. Perfil sintético calibrado al recibo; rasurado plano del BESS. `+
+   (OP?`Curva solar escalada al tamaño GD (${fmtN.format(sysv(k,"Potencia PV (kWp DC)",1))} kWp); el BESS y su rasurado de diseño son idénticos en ambas opciones. `:"")+
+   (despSeason==="inv"
+    ? "En invierno la punta dura 4 horas (18–22 h): el BESS la recorta parcialmente hasta el nivel plano de diseño."
+    : "En verano la punta dura 2 horas (20–22 h): el BESS la cubre casi por completo — la demanda facturable en punta se aproxima a cero.");
+}
+drawSeason();
+makeSiteTabs("tabs-desp","sub-desp",renderDesp);
+
+// ---------- SECTION 10: PROYECCIÓN 20 AÑOS ----------
+function renderVeinte(k){
+  const isAll=k==="all";
+  const rows=(isAll?PROJ_ALL[OP]:projOf(k)).filter(r=>r.yr!=="Año 0");
+  const con=rows.map(r=>r.real-r.neto);
+  const W=560,H=290,mL=64,mR=12,mT=16,mB=30;
+  const max=Math.max(...rows.map(r=>r.pleno))*1.04;
+  const x=i=>mL+(W-mL-mR)*i/(rows.length-1), y=v=>mT+(H-mT-mB)*(1-v/max);
+  const path=a=>a.map((v,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  const cliffIdx=rows.findIndex(r=>r.autoab===0&&rows[0].autoab>0);
+  let cliff="";
+  if(cliffIdx>0){
+    cliff=`<line x1="${x(cliffIdx)}" y1="${mT}" x2="${x(cliffIdx)}" y2="${H-mB}" stroke="#B8741A" stroke-width="1.4" stroke-dasharray="5 4"/>
+     <text x="${x(cliffIdx)+5}" y="${mT+12}" font-size="10" font-weight="600" fill="#B8741A">2033 · vence autoabasto</text>`;
+  }
+  let hover="";
+  rows.forEach((r,i)=>{
+    hover+=`<rect x="${(x(i)-((W-mL-mR)/(rows.length-1))/2).toFixed(1)}" y="${mT}" width="${((W-mL-mR)/(rows.length-1)).toFixed(1)}" height="${H-mT-mB}" fill="transparent" data-tip="<b>${r.yr}</b><br>Gasto sin sistema: ${fmt$.format(r.real)}<br>Gasto con Newman: ${fmt$.format(con[i])}<br>Ahorro neto: ${fmt$.format(r.neto)} (${pct(r.pct)})<br>Acumulado: ${fmt$.format(r.acum)}"/>`;
+  });
+  let lab="";[0,4,9,14,19].forEach(i=>{lab+=`<text x="${x(i).toFixed(1)}" y="${H-8}" text-anchor="middle" font-size="10" fill="rgba(34,26,51,.5)">${rows[i].yr}</text>`;});
+  const el=document.getElementById("chart-veinte");
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Proyección 20 años">
+   ${axisY(0,max,W,H,mL,mR,mT,mB,fMM)}
+   <path d="${path(rows.map(r=>r.pleno))}" fill="none" stroke="rgba(34,26,51,.3)" stroke-width="1.5" stroke-dasharray="5 4"/>
+   <path d="${path(rows.map(r=>r.real))}" fill="none" stroke="rgba(34,26,51,.4)" stroke-width="2"/>
+   <path d="${path(con)}" fill="none" stroke="#621558" stroke-width="2.5"/>
+   ${cliff}${lab}${hover}</svg>`;
+  bindTips(el);
+  const last=rows[rows.length-1];
+  document.getElementById("kpi-veinte").innerHTML=[
+    [fmt$.format(last.acum),"Ahorro neto acumulado · 20 años"],
+    [pct(rows[0].pct),"Ahorro año 1 · % del gasto"],
+    [fmt$.format(rows.reduce((a,r)=>a+r.neto,0)/20),"Ahorro neto promedio / año"],
+    ["Año 16+","El PPA termina → 100 % del ahorro para GEPP"]
+  ].map(([v,l])=>`<div class="kpi"><span class="v" style="font-size:1.3rem">${v}</span><span class="l">${l}</span></div>`).join("");
+  let t="";
+  rows.forEach((r,i)=>{
+    const isCliff=i===cliffIdx;
+    t+=`<tr class="${isCliff?"jump":""}"><td>${r.yr}</td><td>${fmt$.format(r.real)}</td><td>${fmt$.format(con[i])}</td><td>${fmt$.format(r.neto)}</td><td>${pct(r.pct)}</td><td>${fmt$.format(r.acum)}</td></tr>`;
+  });
+  t+=`<tr class="total"><td>20 años</td><td>${fmt$.format(rows.reduce((a,r)=>a+r.real,0))}</td><td>${fmt$.format(con.reduce((a,v)=>a+v,0))}</td><td>${fmt$.format(rows.reduce((a,r)=>a+r.neto,0))}</td><td>—</td><td>${fmt$.format(last.acum)}</td></tr>`;
+  document.getElementById("tabla-veinte").innerHTML=`<table><thead><tr><th>Año</th><th>Gasto sin sistema</th><th>Gasto con Newman</th><th>Ahorro neto</th><th>%</th><th>Acumulado</th></tr></thead><tbody>${t}</tbody></table>`;
+  document.getElementById("foot-veinte").textContent =
+   (isAll?`Portafolio: suma de los cuatro sitios (Proplasa consolidado), ${OPNAME[OP]}. `:`${OPNAME[OP]}. `)+
+   "El “gasto sin sistema” salta en 2033 al vencer el autoabasto (la brecha contra la línea punteada de gasto CFE pleno se cierra). El ahorro Newman —a precio PPA fijo pactado— no depende de ese contrato: es la cobertura que amortigua el salto. A partir del año 16, sin pagos de PPA ni participación, el ahorro completo queda en GEPP.";
+}
+makeSiteTabs("tabs-veinte","sub-veinte",renderVeinte,{portfolio:true,start:0});
+
+// ---------- option switch wiring ----------
+function setOp(op){
+  OP=op;
+  document.querySelectorAll("#opswitch button").forEach(b=>b.classList.toggle("on",+b.dataset.op===op));
+  document.querySelectorAll(".opname").forEach(n=>n.textContent=OPNAME[op]);
+  renderStatics();
+  RERENDER.forEach(f=>f());
+}
+document.getElementById("opswitch").addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  setOp(+b.dataset.op);
+});
+setOp(0);
+</script>
+</body>
+</html>
