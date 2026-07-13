@@ -124,6 +124,7 @@ tr.expand.open td:first-child::before{content:"▾ "}
   .tabs,.subtabs,#tt,#opswitch{display:none}
   a{color:var(--ink)}
 }
+#despacho .footnote{max-width:720px;padding-bottom:3.4rem}
 </style>
 </head>
 <body>
@@ -155,9 +156,9 @@ tr.expand.open td:first-child::before{content:"▾ "}
   <div class="eyebrow">Quiénes somos</div>
   <h2>Energía que impulsa<br>a quienes construyen.</h2>
   <div class="cols2" style="margin-top:1rem">
-    <p style="margin-bottom:1rem">En <strong>Newman Power Alliance</strong> creemos que la energía no debe ser un costo que se padece, sino una ventaja que se diseña. Desarrollamos, financiamos y operamos activos de generación distribuida —solar fotovoltaica y almacenamiento en baterías— para que sus plantas paguen menos por cada kilowatt-hora desde el primer día, <strong>sin invertir un peso</strong>.</p>
-    <p style="margin-bottom:1rem">Cada sitio se dimensiona a la medida de su techo, su curva de carga y su realidad contractual: donde hay autoabasto vigente, el sistema <strong>convive con él</strong> y se convierte en la cobertura natural para cuando venza. Donde el suministro es 100 % CFE, el PPA en sitio fija un precio por kWh menor al de la red.</p>
-    <p>Esta propuesta parte de datos reales: sus recibos CFE de los últimos 12 meses, sus perfiles de consumo por periodo horario y las tarifas vigentes, modelados sitio por sitio con un motor determinista para que cada número sea trazable y defendible.</p>
+    <p style="margin-bottom:1rem"><em>“Es un tiempo nuevo, tiempo de cambios, tiempo de adaptarse e innovar, tiempo de atreverse a crear la nueva era del hombre.”</em></p>
+    <p style="margin-bottom:1rem"><strong>Newman Power Alliance</strong> te invita a ser parte de la nueva era y a sumar tu voluntad para transformar el presente en un mejor futuro.</p>
+    <p>Reunimos años de conocimiento y el trabajo de grandes instituciones internacionales para detonar el verdadero potencial de cambio en México y América Latina, con el objetivo de invertir en un portafolio de infraestructura de generación y almacenamiento energético — creando la red de empresas y organizaciones más grande del sector.</p>
   </div>
   <div class="quote">“What we do today becomes tomorrow’s past, let’s light it up.”</div>
 </section>
@@ -304,10 +305,8 @@ tr.expand.open td:first-child::before{content:"▾ "}
     <div>
       <div class="chart" id="chart-desp"></div>
       <div class="legend">
-        <span><i style="background:var(--ink-30)"></i>Carga del sitio</span>
-        <span><i class="sq" style="background:var(--s-amber);opacity:.55"></i>Generación solar</span>
-        <span><i style="background:var(--s-navy)"></i>Carga neta con PV + BESS</span>
-        <span><i class="sq" style="background:rgba(98,21,88,.10)"></i>Horario punta</span>
+        <span><i class="sq" style="background:#8F3A81;opacity:.4"></i>Generación solar</span>
+        <span><i style="background:var(--s-navy)"></i>Carga neta con PV + BESS <em style="font-style:normal;color:rgba(98,21,88,.85)">(ciruela en punta)</em></span>
       </div>
       <p class="footnote" id="foot-desp"></p>
     </div>
@@ -829,26 +828,123 @@ function renderDesp(k){
     ["−"+fmtN.format(antes-Math.max(0,despues))+" kW","Demanda facturable que desaparece"],
     [fmtN.format(sysv(k,"Energía útil BESS (kWh)"))+" kWh","Energía útil del BESS"]
   ].map(([v,l])=>`<div><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
-  const W=560,H=270,mL=52,mR=10,mT=14,mB=26;
-  const max=Math.max(...prof.map(p=>Math.max(p.carga,p.neta,p.pv)))*1.06;
+  const W=560,H=282,mL=64,mR=10,mT=16,mB=44;
+  const rawmax=Math.max(...prof.map(p=>Math.max(p.carga,p.neta,p.pv)));
+  const max=rawmax*1.06;
   const x=i=>mL+(W-mL-mR)*i/23, y=v=>mT+(H-mT-mB)*(1-Math.max(v,0)/max);
-  let shade="";
-  prof.forEach((p,i)=>{ if(p.per==="Punta"){ const x0=i?x(i-0.5):x(i), x1=i<23?x(i+0.5):x(i);
-    shade+=`<rect x="${x0.toFixed(1)}" y="${mT}" width="${(x1-x0).toFixed(1)}" height="${H-mT-mB}" fill="rgba(98,21,88,.08)"/>`;}});
-  const path=(fld)=>prof.map((p,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(p[fld]).toFixed(1)}`).join(" ");
-  const area=`M${x(0)},${y(0)} `+prof.map((p,i)=>`L${x(i).toFixed(1)},${y(p.pv).toFixed(1)}`).join(" ")+` L${x(23)},${y(0)} Z`;
+  const pw=(W-mL-mR)/23;
+  // eje Y: ticks redondos con unidad en el tick superior
+  const step=[200,250,500,1000,2000,2500,5000,10000].find(s=>rawmax/s<=4.2)||10000;
+  let axis="";
+  for(let v=0;v<=rawmax;v+=step){
+    const ty=y(v);
+    axis+=`<line x1="${mL}" y1="${ty.toFixed(1)}" x2="${W-mR}" y2="${ty.toFixed(1)}" stroke="rgba(34,26,51,.07)"/>`;
+    const last=v+step>rawmax;
+    axis+=`<text x="${mL-8}" y="${(ty+4).toFixed(1)}" text-anchor="end" font-size="10" fill="rgba(34,26,51,.5)">${fmtN.format(v)}${last?" kW":""}</text>`;
+  }
+  // ventana punta (contigua): una sola capa + rótulo sin caja, acotado al área de trazado
+  const ph=prof.map((p,i)=>p.per==="Punta"?i:null).filter(v=>v!==null);
+  let shade="",badge="",shave="";
+  if(ph.length){
+    const x0=x(ph[0])-pw/2, x1=x(ph[ph.length-1])+pw/2;
+    const cx=Math.min((x0+x1)/2, W-mR-34);
+    shade=`<rect x="${x0.toFixed(1)}" y="${mT}" width="${(x1-x0).toFixed(1)}" height="${H-mT-mB}" fill="rgba(98,21,88,.06)"/>`;
+    badge=`<text class="fadein" x="${cx.toFixed(1)}" y="${mT+13}" text-anchor="middle" font-size="10" letter-spacing="2.5" font-weight="700" fill="rgba(98,21,88,.7)">PUNTA</text>`;
+    const lvl=Math.max(0,despues), ylv=y(lvl);
+    shave=`<g class="fadein"><line x1="${x0.toFixed(1)}" y1="${ylv.toFixed(1)}" x2="${x1.toFixed(1)}" y2="${ylv.toFixed(1)}" stroke="#621558" stroke-width="1" stroke-dasharray="3 3"/>
+     <text x="${((x0+x1)/2).toFixed(1)}" y="${(ylv-6).toFixed(1)}" text-anchor="middle" font-size="7.5" letter-spacing=".5" fill="rgba(98,21,88,.85)" stroke="#F6F4F9" stroke-width="3" paint-order="stroke" stroke-linejoin="round">recorte a ${fmtN.format(lvl)} kW</text></g>`;
+  }
+  // curvas: monótonas (Fritsch–Carlson) para series de datos — sin artefactos de spline;
+  // la campana solar conserva catmull-rom acotado (área ilustrativa)
+  const yb=H-mB;
+  const mono=pts=>{
+    const n=pts.length,dx=[],m=[],t=[];
+    for(let i=0;i<n-1;i++){dx[i]=pts[i+1][0]-pts[i][0];m[i]=(pts[i+1][1]-pts[i][1])/dx[i];}
+    t[0]=m[0];t[n-1]=m[n-2];
+    for(let i=1;i<n-1;i++)t[i]=(m[i-1]*m[i]<=0)?0:(m[i-1]+m[i])/2;
+    for(let i=0;i<n-1;i++){
+      if(m[i]===0){t[i]=0;t[i+1]=0;}
+      else{const a=t[i]/m[i],b=t[i+1]/m[i],s=a*a+b*b;
+        if(s>9){const f=3/Math.sqrt(s);t[i]=f*a*m[i];t[i+1]=f*b*m[i];}}
+    }
+    let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+    for(let i=0;i<n-1;i++){const h=dx[i];
+      d+=`C${(pts[i][0]+h/3).toFixed(1)},${(pts[i][1]+t[i]*h/3).toFixed(1)} ${(pts[i+1][0]-h/3).toFixed(1)},${(pts[i+1][1]-t[i+1]*h/3).toFixed(1)} ${pts[i+1][0].toFixed(1)},${pts[i+1][1].toFixed(1)}`;}
+    return d;
+  };
+  const smooth=pts=>pts.map((p,i,a)=>{if(!i)return`M${p[0].toFixed(1)},${p[1].toFixed(1)}`;const pm=a[i-2]||a[i-1],p0=a[i-1],p2=a[i+1]||p;
+    return`C${(p0[0]+(p[0]-pm[0])/6).toFixed(1)},${Math.min(yb,p0[1]+(p[1]-pm[1])/6).toFixed(1)} ${(p[0]-(p2[0]-p0[0])/6).toFixed(1)},${Math.min(yb,p[1]-(p2[1]-p0[1])/6).toFixed(1)} ${p[0].toFixed(1)},${p[1].toFixed(1)}`;}).join(" ");
+  const pts=fld=>prof.map((p,i)=>[x(i),y(p[fld])]);
+  const pvPath=smooth(pts("pv"));
+  const area=pvPath+` L${x(23).toFixed(1)},${y(0).toFixed(1)} L${x(0).toFixed(1)},${y(0).toFixed(1)} Z`;
+  const cargaPath=mono(pts("carga")), netaPath=mono(pts("neta"));
   let hover="";
   prof.forEach((p,i)=>{
-    hover+=`<rect x="${(x(i)-((W-mL-mR)/23)/2).toFixed(1)}" y="${mT}" width="${((W-mL-mR)/23).toFixed(1)}" height="${H-mT-mB}" fill="transparent" data-tip="<b>${p.h}:00 h · ${p.per}</b><br>Carga: ${fmtN.format(p.carga)} kW<br>Solar: ${fmtN.format(p.pv)} kW<br>BESS: ${p.dis>0?"descarga "+fmtN.format(p.dis)+" kW":(p.chg<0?"carga "+fmtN.format(-p.chg)+" kW":"en espera")}<br><b>Carga neta: ${fmtN.format(p.neta)} kW</b>"/>`;
+    hover+=`<rect x="${(x(i)-pw/2).toFixed(1)}" y="${mT}" width="${pw.toFixed(1)}" height="${H-mT-mB}" fill="transparent" data-tip="<b>${p.h}:00 h · ${p.per}</b><br>Carga: ${fmtN.format(p.carga)} kW<br>Solar: ${fmtN.format(p.pv)} kW<br>BESS: ${p.dis>0?"descarga "+fmtN.format(p.dis)+" kW":(p.chg<0?"carga "+fmtN.format(-p.chg)+" kW":"en espera")}<br><b>Carga neta: ${fmtN.format(p.neta)} kW</b>"/>`;
   });
   let lab="";[0,4,8,12,16,20,23].forEach(h=>{lab+=`<text x="${x(h).toFixed(1)}" y="${H-8}" text-anchor="middle" font-size="9" fill="rgba(34,26,51,.5)">${h} h</text>`;});
   const el=document.getElementById("chart-desp");
+  // carril BESS: cápsulas continuas con micro-rótulos carga / descarga
+  const runs=[];let cur=null;
+  prof.forEach((p,i)=>{const t=p.chg<0?"c":(p.dis>0?"d":null);
+    if(t&&cur&&cur.t===t&&cur.e===i-1){cur.e=i;}
+    else if(t){cur={t,s:i,e:i};runs.push(cur);}
+    else cur=null;});
+  const yl=H-mB+10;
+  let bess=`<rect x="${mL}" y="${yl}" width="${W-mL-mR}" height="6" rx="3" fill="rgba(34,26,51,.06)"/>
+   <text x="${mL-8}" y="${yl+6}" text-anchor="end" font-size="7" letter-spacing="1.2" fill="rgba(34,26,51,.45)">BESS</text>`;
+  runs.forEach(r=>{
+    const rx0=x(r.s)-pw*0.34, rx1=x(r.e)+pw*0.34, w=rx1-rx0, mid=(rx0+rx1)/2;
+    bess+=`<rect class="fadein" x="${rx0.toFixed(1)}" y="${yl}" width="${w.toFixed(1)}" height="6" rx="3" fill="${r.t==="c"?"url(#gchg)":"url(#gdis)"}"/>`;
+    const tag=r.t==="c"?"carga":"descarga";
+    const tcol=r.t==="c"?"rgba(67,86,165,.85)":"rgba(98,21,88,.85)";
+    bess+=w>=42
+      ?`<text class="fadein" x="${mid.toFixed(1)}" y="${yl+5}" text-anchor="middle" font-size="5.5" letter-spacing="1" fill="#F6F4F9" font-weight="600">${tag.toUpperCase()}</text>`
+      :(rx1+44<W-mR
+        ?`<text class="fadein" x="${(rx1+4).toFixed(1)}" y="${yl+5}" text-anchor="start" font-size="5.5" letter-spacing="1" font-weight="600" fill="${tcol}">${tag.toUpperCase()}</text>`
+        :`<text class="fadein" x="${(rx0-4).toFixed(1)}" y="${yl+5}" text-anchor="end" font-size="5.5" letter-spacing="1" font-weight="600" fill="${tcol}">${tag.toUpperCase()}</text>`);
+  });
+  // relleno explicativo: banda navy tenue entre carga del sitio y carga neta durante la carga nocturna
+  let chgfill="",chglabel="";
+  const crun=runs.filter(r=>r.t==="c").sort((a,b)=>(b.e-b.s)-(a.e-a.s))[0];
+  if(crun){
+    let up="",down="";
+    for(let i=crun.s;i<=crun.e;i++)up+=`${i===crun.s?"M":"L"}${x(i).toFixed(1)},${y(prof[i].neta).toFixed(1)}`;
+    for(let i=crun.e;i>=crun.s;i--)down+=`L${x(i).toFixed(1)},${y(prof[i].carga).toFixed(1)}`;
+    chgfill=`<path class="fadein" d="${up}${down}Z" fill="rgba(67,86,165,.1)" stroke="none"/>`;
+    const mi=Math.round((crun.s+crun.e)/2);
+    const gy=(y(prof[mi].neta)+y(prof[mi].carga))/2;
+    const gap=Math.abs(y(prof[mi].carga)-y(prof[mi].neta));
+    const ly=gap>=15?gy+2.5:y(prof[mi].neta)-6;
+    chglabel=`<text class="fadein" x="${x(mi).toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="middle" font-size="7.5" letter-spacing=".5" fill="rgba(67,86,165,.9)" stroke="#F6F4F9" stroke-width="3" paint-order="stroke" stroke-linejoin="round">BESS cargando · horario base</text>`;
+  }
+  // rótulo directo de la carga del sitio en su extremo izquierdo
+  const cargaLbl=`<text x="${(mL+4).toFixed(1)}" y="${(y(prof[0].carga)+(prof[0].neta>prof[0].carga?14:-7)).toFixed(1)}" font-size="7.5" letter-spacing=".5" fill="rgba(34,26,51,.55)" stroke="#F6F4F9" stroke-width="3" paint-order="stroke" stroke-linejoin="round">Carga del sitio</text>`;
+  // la carga neta es navy y vira a ciruela EXACTAMENTE dentro de la ventana punta
+  let netaStops=`<stop offset="0" stop-color="#4356A5"/><stop offset="1" stop-color="#4356A5"/>`;
+  if(ph.length){
+    const t0=Math.max(0,(x(ph[0])-pw/2-mL)/(W-mL-mR)).toFixed(4);
+    const t1=Math.min(1,(x(ph[ph.length-1])+pw/2-mL)/(W-mL-mR)).toFixed(4);
+    netaStops=`<stop offset="0" stop-color="#4356A5"/><stop offset="${t0}" stop-color="#4356A5"/><stop offset="${t0}" stop-color="#621558"/><stop offset="${t1}" stop-color="#621558"/><stop offset="${t1}" stop-color="#4356A5"/><stop offset="1" stop-color="#4356A5"/>`;
+  }
   el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Despacho de un día típico">
-   ${shade}${axisY(0,max,W,H,mL,mR,mT,mB,v=>fmtN.format(v),3)}
-   <path d="${area}" fill="#B8741A" opacity=".28" stroke="none"/>
-   <path d="${path("pv")}" fill="none" stroke="#B8741A" stroke-width="1.6"/>
-   <path d="${path("carga")}" fill="none" stroke="rgba(34,26,51,.4)" stroke-width="2"/>
-   <path d="${path("neta")}" fill="none" stroke="#4356A5" stroke-width="2.5"/>
+   <defs>
+    <linearGradient id="pvgrad" x1="0" y1="0" x2="0" y2="1">
+     <stop offset="0" stop-color="#9E4C90" stop-opacity=".45"/>
+     <stop offset=".45" stop-color="#8F3A81" stop-opacity=".16"/>
+     <stop offset="1" stop-color="#8F3A81" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="netagrad" gradientUnits="userSpaceOnUse" x1="${mL}" y1="0" x2="${W-mR}" y2="0">${netaStops}</linearGradient>
+    <linearGradient id="gchg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4356A5" stop-opacity=".75"/><stop offset="1" stop-color="#4356A5" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="gdis" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#621558" stop-opacity=".85"/><stop offset="1" stop-color="#621558" stop-opacity=".55"/></linearGradient>
+   </defs>
+   ${shade}${axis}${chgfill}
+   <path class="fadein" d="${area}" fill="url(#pvgrad)" stroke="none"/>
+   <path class="anim pvline" d="${pvPath}" fill="none" stroke="#8F3A81" stroke-width="1.3" opacity=".6"/>
+   <path d="${cargaPath}" fill="none" stroke="rgba(34,26,51,.35)" stroke-width="1.4" stroke-linecap="butt"/>
+   <path d="${netaPath}" fill="none" stroke="#F6F4F9" stroke-width="4.5" stroke-linecap="butt"/>
+   <path class="anim" d="${netaPath}" fill="none" stroke="url(#netagrad)" stroke-width="2.4" stroke-linecap="butt"/>
+   ${shave}${badge}${chglabel}${cargaLbl}${bess}
    ${lab}${hover}</svg>`;
   bindTips(el);
   document.getElementById("foot-desp").textContent =

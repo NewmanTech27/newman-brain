@@ -46,7 +46,16 @@ Reference implementations (GEPP, jul-2026) live in `assets/`.
 4. **Build the HTML** from `assets/template_gepp_v2.html`: replace `__MODEL__` with
    the JSON; adapt copy (client name, problemática cards quoting the client's own
    words + answer with proposal numbers, autoabasto/cliff story only if applicable),
-   and the META/site keys. Keep the design system EXACTLY:
+   and the META/site keys.
+   **Manifiesto (Quiénes somos) is STANDARD copy — do not rewrite per client** (user-
+   approved 2026-07-13, already in the template): opener «Es un tiempo nuevo, tiempo
+   de cambios, tiempo de adaptarse e innovar, tiempo de atreverse a crear la nueva era
+   del hombre.» → invitation «Newman Power Alliance te invita a ser parte de la nueva
+   era…» → «Reunimos años de conocimiento y el trabajo de grandes instituciones
+   internacionales… la red de empresas y organizaciones más grande del sector.» and
+   the closing quote in ENGLISH: “What we do today becomes tomorrow's past, let's
+   light it up.” (replaced the old «La energía más rentable…» quote).
+   Keep the design system EXACTLY:
    - tokens: canvas `#F6F4F9`, ink `#221A33`, accent `#621558`; chart series
      `#8F3A81` (purple), `#B8741A` (amber), `#4356A5` (navy) — palette already
      validated with the dataviz skill validator against `#F6F4F9`.
@@ -57,11 +66,18 @@ Reference implementations (GEPP, jul-2026) live in `assets/`.
      sites expand via sub-chips (and an expandable row in the resumen table), hover
      tooltips (`data-tip` + `bindTips`), invierno/verano toggle in despacho.
    - charts (inline SVG, no libraries): stacked Base/Int/Punta consumption, cascada
-     waterfall (gasto → −ahorros → +pagos → gasto final), despacho día típico (carga
-     gray / PV amber area / neta navy, punta shaded; for the non-simulated option
-     scale the PV curve by kWp ratio and recompute `neta = carga − pv − chg − dis`,
-     footnote it), 20-year projection (pleno dashed / real / con Newman, cliff year
-     marked amber), portfolio cumulative op1 vs op2 (selected emphasized).
+     waterfall (gasto → −ahorros → +pagos → gasto final), despacho día típico — use
+     the REVIEWED v5 design (see gepp_v5 renderDesp in ~/CFE Brain/work/gepp-deck/
+     build_v5.py): monochrome violet PV area #8F3A81 (NO amber — user called it
+     tacky), monotone Fritsch–Carlson interpolation for data series, neta line
+     navy→plum hard-snapped to the punta band, single-layer punta band + unboxed
+     PUNTA label, night-charge fill + «BESS cargando · horario base», direct-labeled
+     «Carga del sitio», BESS lane with labeled CARGA/DESCARGA capsules, round kW
+     ticks, «recorte a X kW» haloed in-band, 2-item legend, NO sun animation;
+     for the non-simulated option scale the PV curve by kWp ratio and recompute
+     `neta = carga − pv − chg − dis`, footnote it; 20-year projection (pleno dashed /
+     real / con Newman, cliff year marked amber), portfolio cumulative op1 vs op2
+     (selected emphasized).
 5. **Quality gates** (all required before upload):
    - `node`: extract the `<script>` and `new Function(src)` for syntax;
    - DOM-stub runtime test (see the stub in this skill's provenance session or
