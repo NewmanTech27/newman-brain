@@ -1,0 +1,1577 @@
+{
+ "board": {
+  "id": "18403229975",
+  "name": "Reporte Ops",
+  "state": "active",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "12151996",
+   "name": "Newman CRM"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numeric_mm19yftj",
+   "title": ".",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "En sitio",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":0,\"1\":2,\"2\":1,\"5\":3},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "color_mm19t9n6",
+   "title": "Instalacion",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "color_mm19fg3t",
+   "title": "Validado",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "color_mm19cr24",
+   "title": "Estado",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "timerange_mm19d2pk",
+   "title": "Cronograma",
+   "type": "timeline",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Hilaturas"
+  },
+  {
+   "id": "group_title",
+   "title": "Group Title"
+  }
+ ],
+ "items": [
+  {
+   "id": "11465110488",
+   "name": "Diseño",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": "Done",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-09T23:35:32.729Z\"}",
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "2026-03-05 - 2026-03-11",
+     "value": "{\"to\":\"2026-03-11\",\"from\":\"2026-03-05\",\"changed_at\":\"2026-03-09T23:35:21.265Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465110559",
+   "name": "Memoria de calculo",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": "Done",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-03-01T17:28:23.178Z\"}",
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465105215",
+   "name": "Diagrama Unifilar",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465113396",
+   "name": "Izaje",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465115391",
+   "name": "Montaje",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "20",
+     "value": "\"20\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465115488",
+   "name": "Torque",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465105985",
+   "name": "Canalizacion DC",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465124977",
+   "name": "Cableado DC",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "12",
+     "value": "\"12\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465124847",
+   "name": "Tierras DC",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465124484",
+   "name": "Rck/ Nicho Inversores",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465128456",
+   "name": "Instalacion Inversores",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465128373",
+   "name": "Torque Inversores",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465128692",
+   "name": "Canalizacion AC",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465128668",
+   "name": "Cableado AC",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "6",
+     "value": "\"6\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465124769",
+   "name": "Torque ITM AC",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465125534",
+   "name": "Tableros AC",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "6",
+     "value": "\"6\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465113667",
+   "name": "Paso de gato",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465124826",
+   "name": "Comunicaciones",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465123699",
+   "name": "Hot Comissioning",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465132104",
+   "name": "Cold Comissioning",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465136864",
+   "name": "Etiquetado",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465148440",
+   "name": "Interconexion",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465136553",
+   "name": "UVIIE",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465136762",
+   "name": "UIIE",
+   "group": {
+    "id": "topics",
+    "title": "Hilaturas"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465102453",
+   "name": "Item 4",
+   "group": {
+    "id": "group_title",
+    "title": "Group Title"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11465102665",
+   "name": "Item 5",
+   "group": {
+    "id": "group_title",
+    "title": "Group Title"
+   },
+   "column_values": [
+    {
+     "id": "numeric_mm19yftj",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "."
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "En sitio"
+     }
+    },
+    {
+     "id": "color_mm19t9n6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Instalacion"
+     }
+    },
+    {
+     "id": "color_mm19fg3t",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Validado"
+     }
+    },
+    {
+     "id": "color_mm19cr24",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timerange_mm19d2pk",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  }
+ ]
+}

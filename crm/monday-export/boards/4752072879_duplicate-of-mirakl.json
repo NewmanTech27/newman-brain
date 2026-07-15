@@ -1,0 +1,4769 @@
+{
+ "board": {
+  "id": "4752072879",
+  "name": "Duplicate of MIRAKL",
+  "state": "archived",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subtasks",
+   "title": "Subelementos",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[4752072944]}"
+  },
+  {
+   "id": "text",
+   "title": "Nombre del proyecto",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "location",
+   "title": "Ubicación",
+   "type": "location",
+   "settings_str": "{}"
+  },
+  {
+   "id": "color",
+   "title": "Tárifa",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":108,\"1\":16,\"2\":3,\"3\":153,\"4\":107,\"6\":106,\"7\":158,\"11\":7,\"16\":1,\"106\":6,\"107\":2,\"108\":0,\"153\":4,\"158\":11},\"labels\":{\"0\":\"1E\",\"1\":\"1F\",\"2\":\"PBDT\",\"3\":\"GMDTH\",\"4\":\"GMDTO\",\"5\":\"N/A\",\"6\":\"DAC\",\"7\":\"1D\",\"11\":\"GBDT\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":2,\"3\":4,\"4\":5,\"5\":6,\"6\":7,\"7\":8,\"11\":3},\"labels_colors\":{\"0\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"1\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"2\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"3\":{\"color\":\"#216edf\",\"border\":\"#216edf\",\"var_name\":\"sky\"},\"4\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#74afcc\",\"border\":\"#74afcc\",\"var_name\":\"river\"},\"7\":{\"color\":\"#a1e3f6\",\"border\":\"#a1e3f6\",\"var_name\":\"sail\"},\"11\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+  },
+  {
+   "id": "text5",
+   "title": "Potencia",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Estatus del proyecto",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":3,\"1\":12,\"2\":107,\"3\":14,\"4\":110,\"6\":6,\"7\":19,\"8\":11,\"9\":7,\"10\":1,\"11\":153,\"12\":101,\"14\":0,\"19\":2,\"101\":8,\"104\":4,\"107\":10,\"109\":160,\"110\":104,\"153\":9,\"160\":109},\"labels\":{\"0\":\"En instalación\",\"1\":\"Verificación\",\"2\":\"Instalado\",\"3\":\"Interconexión\",\"4\":\"Inspección\",\"5\":\"N/A\",\"6\":\"CRM\",\"7\":\"Estropeado\",\"8\":\"Desconectado\",\"9\":\"Por instalar\",\"10\":\"OK\",\"11\":\"Interconectado\",\"12\":\"Baja producción\"},\"labels_positions_v2\":{\"0\":0,\"1\":2,\"2\":1,\"3\":4,\"4\":5,\"5\":3,\"6\":6,\"7\":7,\"8\":8,\"9\":9,\"10\":11,\"11\":10,\"12\":12},\"labels_colors\":{\"0\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"1\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"2\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"3\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"},\"4\":{\"color\":\"#401694\",\"border\":\"#401694\",\"var_name\":\"dark_indigo\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"8\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"9\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"10\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"11\":{\"color\":\"#216edf\",\"border\":\"#216edf\",\"var_name\":\"sky\"},\"12\":{\"color\":\"#ff7575\",\"border\":\"#ff7575\",\"var_name\":\"sunset\"}}}"
+  },
+  {
+   "id": "boolean3",
+   "title": "VT",
+   "type": "checkbox",
+   "settings_str": "{}"
+  },
+  {
+   "id": "date",
+   "title": "Fecha de Interconexión",
+   "type": "date",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "date5",
+   "title": "Seguimiento CRM",
+   "type": "date",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "phone",
+   "title": "Contacto",
+   "type": "phone",
+   "settings_str": "{}"
+  },
+  {
+   "id": "email",
+   "title": "Correo electrónico",
+   "type": "email",
+   "settings_str": "{}"
+  },
+  {
+   "id": "f_rmula",
+   "title": "Fórmula",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"IF()\"}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Responsabilidad Operativa"
+  },
+  {
+   "id": "grupo_nuevo56279",
+   "title": "Customer Relationship Management"
+  }
+ ],
+ "items": [
+  {
+   "id": "4752073915",
+   "name": "ANTONIO AlEJANDRO ROJAS SAAVEDRA",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "ALTATEC",
+     "value": "\"ALTATEC\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Guadalajara, Jalisco, México",
+     "value": "{\"lat\":\"20.6596988\",\"lng\":\"-103.3496092\",\"city\":{\"long_name\":\"Guadalajara\",\"short_name\":\"Guadalajara\"},\"street\":null,\"address\":\"Guadalajara, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJm9MvtYyxKIQRUFeGvwKTPdY\",\"changed_at\":\"2023-01-23T22:49:06.874Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T18:47:30.588Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-01-23T18:52:35.118Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T18:47:44.719Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073923",
+   "name": "ARTURO CASTILLA GONZALEZ",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "MULTY CLC FRIO",
+     "value": "\"MULTY CLC FRIO\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:49:11.379Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T18:56:20.277Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Por instalar",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2023-01-23T19:02:13.538Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T18:56:24.230Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073991",
+   "name": "RAMON GONZALEZ FIGUEROA",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "CONSEJO REGULADOR DEL TEQUILA",
+     "value": "\"CONSEJO REGULADOR DEL TEQUILA\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Guadalajara, Jalisco, México",
+     "value": "{\"lat\":\"20.6596988\",\"lng\":\"-103.3496092\",\"city\":{\"long_name\":\"Guadalajara\",\"short_name\":\"Guadalajara\"},\"street\":null,\"address\":\"Guadalajara, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJm9MvtYyxKIQRUFeGvwKTPdY\",\"changed_at\":\"2023-01-23T22:49:15.495Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T19:00:22.442Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-01-23T19:00:25.518Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T19:00:28.877Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074005",
+   "name": "LETICIA CANO BARRAZA",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "DBS LOS MOCHIS",
+     "value": "\"DBS LOS MOCHIS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Los Mochis, Sinaloa, México",
+     "value": "{\"lat\":\"25.7904657\",\"lng\":\"-108.985882\",\"city\":{\"long_name\":\"Los Mochis\",\"short_name\":\"Los Mochis\"},\"street\":null,\"address\":\"Los Mochis, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJw-o1tkIvuoYRCIgyUkfDJLY\",\"changed_at\":\"2023-01-23T22:49:23.909Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T22:27:42.445Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "12.96 kW",
+     "value": "\"12.96 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Inspección",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-01-23T22:30:03.408Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:28:42.258Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526677582933",
+     "value": "{\"phone\":\"526677582933\",\"changed_at\":\"2023-01-23T22:29:28.259Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "bzazueta@dblaboratorios.com",
+     "value": "{\"text\":\"bzazueta@dblaboratorios.com\",\"email\":\"bzazueta@dblaboratorios.com\",\"changed_at\":\"2023-01-23T22:29:44.213Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074045",
+   "name": "OBRIENS CASTRO LEON",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "OBRIENS CASTRO LEON",
+     "value": "\"OBRIENS CASTRO LEON\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Sinaloa de Leyva, Sinaloa, México",
+     "value": "{\"lat\":\"25.8226854\",\"lng\":\"-108.2216704\",\"city\":{\"long_name\":\"Sinaloa de Leyva\",\"short_name\":\"Sinaloa de Leyva\"},\"street\":null,\"address\":\"Sinaloa de Leyva, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJd3Kwy6T6u4YReeT92R3wfaQ\",\"changed_at\":\"2023-01-23T22:49:40.039Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "1E",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-01-23T22:34:54.428Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "6.06 kW",
+     "value": "\"6.06 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Instalado",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-01-23T22:34:58.824Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:35:12.550Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526671297885",
+     "value": "{\"phone\":\"526671297885\",\"changed_at\":\"2023-01-23T22:36:14.154Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Frankalvarezmercado@gmail.com",
+     "value": "{\"text\":\"Frankalvarezmercado@gmail.com\",\"email\":\"Frankalvarezmercado@gmail.com\",\"changed_at\":\"2023-01-23T22:36:46.609Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074055",
+   "name": "LETICIA CANO BARRAZA",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "DBS SANTA FE",
+     "value": "\"DBS SANTA FE\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:49:47.191Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "N/A",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-01-23T22:44:54.494Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "N/A",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-05-25T14:52:39.995Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:45:02.957Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526677582933",
+     "value": "{\"phone\":\"526677582933\",\"changed_at\":\"2023-01-23T22:45:24.411Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "bzazueta@dblaboratorios.com",
+     "value": "{\"text\":\"bzazueta@dblaboratorios.com\",\"email\":\"bzazueta@dblaboratorios.com\",\"changed_at\":\"2023-01-23T22:45:32.838Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074063",
+   "name": "ESTEBAN ADRIAN PEREZ CEBREROS",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "ESTEBAN ADRIAN PEREZ CEBREROS",
+     "value": "\"ESTEBAN ADRIAN PEREZ CEBREROS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Francisco Zarco (Valle de Guadalupe), Baja California, México",
+     "value": "{\"lat\":\"32.0956281\",\"lng\":\"-116.572572\",\"city\":{\"long_name\":\"Francisco Zarco (Valle de Guadalupe)\",\"short_name\":\"Francisco Zarco (Valle de Guadalupe)\"},\"street\":null,\"address\":\"Francisco Zarco (Valle de Guadalupe), Baja California, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJv2lc5tDv2IARIt3xbs0LIao\",\"changed_at\":\"2023-01-23T22:53:00.222Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "DAC",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2023-01-23T22:51:44.960Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Por instalar",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2023-01-23T22:53:06.259Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:53:07.761Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526674739059",
+     "value": "{\"phone\":\"526674739059\",\"changed_at\":\"2023-01-23T22:59:03.142Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "eapc@hotmail.com",
+     "value": "{\"text\":\"eapc@hotmail.com\",\"email\":\"eapc@hotmail.com\",\"changed_at\":\"2023-01-23T22:58:50.077Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074071",
+   "name": "LETICIA CANO BARRAZA",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "DBS PLAZA OASIS",
+     "value": "\"DBS PLAZA OASIS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-31T19:29:49.426Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-01-31T19:29:51.512Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Por instalar",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2023-01-31T19:29:55.204Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-31T19:29:57.722Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526677582933",
+     "value": "{\"phone\":\"526677582933\",\"changed_at\":\"2023-01-31T19:30:18.852Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "bzazueta@dblaboratorios.com",
+     "value": "{\"text\":\"bzazueta@dblaboratorios.com\",\"email\":\"bzazueta@dblaboratorios.com\",\"changed_at\":\"2023-01-31T19:30:22.169Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074185",
+   "name": "JORGE ABEL MEDINA VELARDE",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Balneario El Paraiso",
+     "value": "\"Balneario El Paraiso\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "El Fuerte, Sinaloa, México",
+     "value": "{\"lat\":\"26.417632\",\"lng\":\"-108.6145938\",\"city\":{\"long_name\":\"El Fuerte\",\"short_name\":\"El Fuerte\"},\"street\":null,\"address\":\"El Fuerte, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJrxqdvR0OuYYRykAmVkVL3Xw\",\"changed_at\":\"2023-02-17T18:27:55.450Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTO",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-02-17T18:27:13.434Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "7.26 kW",
+     "value": "\"7.26 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Instalado",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-02-17T18:27:08.516Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-02-17T18:28:14.947Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526681620300",
+     "value": "{\"phone\":\"526681620300\",\"changed_at\":\"2023-02-17T18:28:53.124Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Jorge.Abel.medina@gmail.com",
+     "value": "{\"text\":\"Jorge.Abel.medina@gmail.com\",\"email\":\"Jorge.Abel.medina@gmail.com\",\"changed_at\":\"2023-02-17T18:28:32.555Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074374",
+   "name": "OCTAVIO CARLOS SÁNCHEZ CUNEO",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "192-Chedraui Durango Francisco Villa",
+     "value": "\"192-Chedraui Durango Francisco Villa\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Durango, Durango, México",
+     "value": "{\"lat\":\"24.0277202\",\"lng\":\"-104.6531759\",\"city\":{\"long_name\":\"Victoria de Durango\",\"short_name\":\"Victoria de Durango\"},\"street\":null,\"address\":\"Durango, Durango, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJc9-8GKW3m4YR1EpsOqaO3b8\",\"changed_at\":\"2023-01-24T00:06:34.527Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-24T00:06:39.949Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "413.65 kW",
+     "value": "\"413.65 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-05-25T14:51:25.450Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-05-25T14:52:09.536Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "525554526936",
+     "value": "{\"phone\":\"525554526936\",\"changed_at\":\"2023-01-24T00:09:41.690Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "adesentis@chedraui.com.mx",
+     "value": "{\"text\":\"adesentis@chedraui.com.mx\",\"email\":\"adesentis@chedraui.com.mx\",\"changed_at\":\"2023-01-24T00:10:26.532Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074211",
+   "name": "OCTAVIO CARLOS SÁNCHEZ CUNEO",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "103-Chedraui Durango Nazas",
+     "value": "\"103-Chedraui Durango Nazas\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Durango, Durango, México",
+     "value": "{\"lat\":\"24.0277202\",\"lng\":\"-104.6531759\",\"city\":{\"long_name\":\"Victoria de Durango\",\"short_name\":\"Victoria de Durango\"},\"street\":null,\"address\":\"Durango, Durango, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJc9-8GKW3m4YR1EpsOqaO3b8\",\"changed_at\":\"2023-01-24T00:07:21.466Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-24T00:07:23.784Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "344.99 kW",
+     "value": "\"344.99 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-05-25T14:51:08.001Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-05-25T14:52:10.101Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "525554526936",
+     "value": "{\"phone\":\"525554526936\",\"changed_at\":\"2023-01-24T00:09:48.441Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "adesentis@chedraui.com.mx",
+     "value": "{\"text\":\"adesentis@chedraui.com.mx\",\"email\":\"adesentis@chedraui.com.mx\",\"changed_at\":\"2023-01-24T00:10:28.717Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074246",
+   "name": "OCTAVIO CARLOS SÁNCHEZ CUNEO",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "200-Chedraui Guanajuato",
+     "value": "\"200-Chedraui Guanajuato\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Guanajuato, México",
+     "value": "{\"lat\":\"20.9170187\",\"lng\":\"-101.1617356\",\"city\":null,\"street\":null,\"address\":\"Guanajuato, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJf3-bUI9bK4QRoEO-gRmmjuc\",\"changed_at\":\"2023-01-24T00:11:03.201Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-24T00:10:55.608Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "321.55 kW",
+     "value": "\"321.55 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-05-25T14:51:13.007Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-05-25T14:52:10.542Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "525554526936",
+     "value": "{\"phone\":\"525554526936\",\"changed_at\":\"2023-01-24T00:13:01.778Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "adesentis@chedraui.com.mx",
+     "value": "{\"text\":\"adesentis@chedraui.com.mx\",\"email\":\"adesentis@chedraui.com.mx\",\"changed_at\":\"2023-01-24T00:13:13.980Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074308",
+   "name": "OCTAVIO CARLOS SÁNCHEZ CUNEO",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "264-Chedraui Puerto Vallarta",
+     "value": "\"264-Chedraui Puerto Vallarta\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Puerto Vallarta, Jalisco, México",
+     "value": "{\"lat\":\"20.653407\",\"lng\":\"-105.2253316\",\"city\":{\"long_name\":\"Puerto Vallarta\",\"short_name\":\"Puerto Vallarta\"},\"street\":null,\"address\":\"Puerto Vallarta, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJf8hjUGNFIYQRdFK_hZm_z3k\",\"changed_at\":\"2023-01-24T00:11:33.202Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-24T00:11:36.210Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "498.85 kW",
+     "value": "\"498.85 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-05-25T14:51:31.417Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-05-25T14:52:11.029Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "525554526936",
+     "value": "{\"phone\":\"525554526936\",\"changed_at\":\"2023-01-24T00:13:03.116Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "adesentis@chedraui.com.mx",
+     "value": "{\"text\":\"adesentis@chedraui.com.mx\",\"email\":\"adesentis@chedraui.com.mx\",\"changed_at\":\"2023-01-24T00:13:16.080Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074409",
+   "name": "OCTAVIO CARLOS SÁNCHEZ CUNEO",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "262- Chedraui Selecto Guadalajara plaza mexico",
+     "value": "\"262- Chedraui Selecto Guadalajara plaza mexico\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Guadalajara, Jalisco, México",
+     "value": "{\"lat\":\"20.6596988\",\"lng\":\"-103.3496092\",\"city\":{\"long_name\":\"Guadalajara\",\"short_name\":\"Guadalajara\"},\"street\":null,\"address\":\"Guadalajara, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJm9MvtYyxKIQRUFeGvwKTPdY\",\"changed_at\":\"2023-01-24T00:12:38.784Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-24T00:12:40.323Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "498.85 kW",
+     "value": "\"498.85 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-05-25T14:51:48.787Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-05-25T14:52:11.488Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "525554526936",
+     "value": "{\"phone\":\"525554526936\",\"changed_at\":\"2023-01-24T00:13:05.885Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "adesentis@chedraui.com.mx",
+     "value": "{\"text\":\"adesentis@chedraui.com.mx\",\"email\":\"adesentis@chedraui.com.mx\",\"changed_at\":\"2023-01-24T00:13:19.566Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074439",
+   "name": "RAFAEL HARARI TUSSIE",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "GICSA CULIACAN 7150",
+     "value": "\"GICSA CULIACAN 7150\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:48:16.354Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T17:39:34.935Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "275.77 kW",
+     "value": "\"275.77 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Por instalar",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2023-01-23T19:02:09.706Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T18:43:37.625Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074509",
+   "name": "RAFAEL HARARI TUSSIE",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "GICSA CULIACAN 7191",
+     "value": "\"GICSA CULIACAN 7191\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:48:22.343Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTO",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-01-23T18:07:25.772Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "15.26 kW",
+     "value": "\"15.26 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-03-03T00:19:18.898Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T18:43:39.622Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074537",
+   "name": "RAFAEL HARARI TUSSIE",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "GICSA CULIACAN 1491",
+     "value": "\"GICSA CULIACAN 1491\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:48:24.752Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T18:14:14.102Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "499.76 kW",
+     "value": "\"499.76 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Por instalar",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2023-01-23T19:02:11.783Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T18:43:40.063Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074586",
+   "name": "RAFAEL HARARI TUSSIE",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "GICSA INTERLOMAS 1426",
+     "value": "\"GICSA INTERLOMAS 1426\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Ciudad de México, CDMX, México",
+     "value": "{\"lat\":\"19.4326077\",\"lng\":\"-99.133208\",\"city\":{\"long_name\":\"Ciudad de México\",\"short_name\":\"México D.F.\"},\"street\":null,\"address\":\"Ciudad de México, CDMX, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJB3UJ2yYAzoURQeheJnYQBlQ\",\"changed_at\":\"2023-01-24T22:27:44.234Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T18:14:14.102Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "499.76 kW",
+     "value": "\"499.76 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Por instalar",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2023-01-23T19:02:11.783Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-24T22:44:30.206Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074651",
+   "name": "RAFAEL HARARI TUSSIE",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "GICSA INTERLOMAS 4373",
+     "value": "\"GICSA INTERLOMAS 4373\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Ciudad de México, CDMX, México",
+     "value": "{\"lat\":\"19.4326077\",\"lng\":\"-99.133208\",\"city\":{\"long_name\":\"Ciudad de México\",\"short_name\":\"México D.F.\"},\"street\":null,\"address\":\"Ciudad de México, CDMX, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJB3UJ2yYAzoURQeheJnYQBlQ\",\"changed_at\":\"2023-01-24T22:27:44.234Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T18:14:14.102Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "499.76 kW",
+     "value": "\"499.76 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Por instalar",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2023-01-23T19:02:11.783Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-24T22:44:30.541Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073820",
+   "name": "DANIEL EDUARDO MACIAS LÓPEZ",
+   "group": {
+    "id": "topics",
+    "title": "Responsabilidad Operativa"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "COPPEL CULIACAN (783)",
+     "value": "\"COPPEL CULIACAN (783)\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-04-10T16:07:55.179Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTO",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-04-10T16:08:15.291Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "En instalación",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-04-10T16:08:25.948Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-04-10T16:08:28.392Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073147",
+   "name": "MARIO RODRIGUEZ",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "BONUM COOLERS",
+     "value": "\"BONUM COOLERS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Zamora, Michoacán, México",
+     "value": "{\"lat\":\"19.9901766\",\"lng\":\"-102.2834075\",\"city\":{\"long_name\":\"Zamora de Hidalgo\",\"short_name\":\"Zamora de Hidalgo\"},\"street\":null,\"address\":\"Zamora, Michoacán, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJDc6O2K2ILoQRKz8GfoKXiKU\",\"changed_at\":\"2023-01-23T22:50:06.204Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T19:05:30.098Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "127.92 kW",
+     "value": "\"127.92 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-04-10T17:31:03.477Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T19:05:57.179Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-03-07",
+     "value": "{\"date\":\"2023-03-07\",\"changed_at\":\"2023-03-07T17:52:27.212Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "523511182137",
+     "value": "{\"phone\":\"523511182137\",\"changed_at\":\"2023-03-07T17:50:32.055Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "gerencia.bonum@gmail.com",
+     "value": "{\"text\":\"gerencia.bonum@gmail.com\",\"email\":\"gerencia.bonum@gmail.com\",\"changed_at\":\"2023-03-07T17:49:40.231Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073048",
+   "name": "ANTONIO FLORES HUARACHA",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "INDUMA",
+     "value": "\"INDUMA\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Ocotlán, Jalisco, México",
+     "value": "{\"lat\":\"20.3417485\",\"lng\":\"-102.7652326\",\"city\":{\"long_name\":\"Ocotlán\",\"short_name\":\"Ocotlán\"},\"street\":null,\"address\":\"Ocotlán, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJ72_Ex9rYLoQRfy4rbS4GEgM\",\"changed_at\":\"2023-01-24T17:02:06.605Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T19:24:52.773Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "88.11 kW",
+     "value": "\"88.11 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-01-23T19:24:59.685Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T19:25:00.887Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073099",
+   "name": "MIGUEL ANGEL PLASCENCIA HERRERA",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "FARMERS HAND",
+     "value": "\"FARMERS HAND\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Colima, México",
+     "value": "{\"lat\":\"19.2452342\",\"lng\":\"-103.7240868\",\"city\":{\"long_name\":\"Colima\",\"short_name\":\"Colima\"},\"street\":null,\"address\":\"Colima, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJF6JVNFJFJYQR5lX1WvyXtLY\",\"changed_at\":\"2023-01-23T22:50:21.485Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTO",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-01-23T19:29:04.713Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "105.02 kW",
+     "value": "\"105.02 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-01-23T19:29:07.648Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T19:29:08.373Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073129",
+   "name": "MARITZA LOAIZA TIRADO",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "MARITZA LOAIZA TIRADO",
+     "value": "\"MARITZA LOAIZA TIRADO\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:50:26.961Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-01-23T22:17:08.090Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "4.95 kW",
+     "value": "\"4.95 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-01-25T16:40:41.593Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:17:21.909Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526671582474",
+     "value": "{\"phone\":\"526671582474\",\"changed_at\":\"2023-01-23T22:19:22.277Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073343",
+   "name": "LETICIA CANO BARRAZA",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "DBS EL DORADO",
+     "value": "\"DBS EL DORADO\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "El Dorado, Sinaloa, México",
+     "value": "{\"lat\":\"24.3240714\",\"lng\":\"-107.3584174\",\"city\":{\"long_name\":\"Eldorado\",\"short_name\":\"Eldorado\"},\"street\":null,\"address\":\"El Dorado, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJv33Pqm0ho4YRUQ45wKAluZ4\",\"changed_at\":\"2023-01-23T22:50:46.847Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-01-23T22:23:24.675Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "5.55 kW",
+     "value": "\"5.55 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:42.617Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:24:37.640Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:41.215Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526677582933",
+     "value": "{\"phone\":\"526677582933\",\"changed_at\":\"2023-01-23T22:25:39.463Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "bzazueta@dblaboratorios.com",
+     "value": "{\"text\":\"bzazueta@dblaboratorios.com\",\"email\":\"bzazueta@dblaboratorios.com\",\"changed_at\":\"2023-01-23T22:25:04.870Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073396",
+   "name": "ESTEBAN ADRIAN PEREZ CEBREROS",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "ESTEBAN ADRIAN PEREZ CEBREROS",
+     "value": "\"ESTEBAN ADRIAN PEREZ CEBREROS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:53:38.058Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "1F",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-01-23T22:53:39.798Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "6.48 kW",
+     "value": "\"6.48 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:41.321Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:54:26.035Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:40.582Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526674739059",
+     "value": "{\"phone\":\"526674739059\",\"changed_at\":\"2023-01-23T22:57:14.873Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "eapc@hotmail.com",
+     "value": "{\"text\":\"eapc@hotmail.com\",\"email\":\"eapc@hotmail.com\",\"changed_at\":\"2023-02-22T20:03:40.616Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073447",
+   "name": "OMAR ENRIQUE LOPEZ JIMENEZ",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "OMAR ENRIQUE LOPEZ JIMENEZ",
+     "value": "\"OMAR ENRIQUE LOPEZ JIMENEZ\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Higuera de Zaragoza, Sinaloa, México",
+     "value": "{\"lat\":\"25.9662569\",\"lng\":\"-109.3017419\",\"city\":{\"long_name\":\"Higuera de Zaragoza\",\"short_name\":\"Higuera de Zaragoza\"},\"street\":null,\"address\":\"Higuera de Zaragoza, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJ_xPHrGvxuYYRLMB9sDRbuxU\",\"changed_at\":\"2023-01-23T23:00:03.257Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-01-23T23:00:19.526Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "14.21 kW",
+     "value": "\"14.21 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:40.048Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T23:01:12.691Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:38.625Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526688827647",
+     "value": "{\"phone\":\"526688827647\",\"changed_at\":\"2023-01-23T23:01:51.726Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "ferreteros1@hotmail.com",
+     "value": "{\"text\":\"ferreteros1@hotmail.com\",\"email\":\"ferreteros1@hotmail.com\",\"changed_at\":\"2023-01-23T23:02:10.542Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073134",
+   "name": "LEONARDA AMARILLAS TERAN",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "PLAZA LAS QUINTAS",
+     "value": "\"PLAZA LAS QUINTAS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T23:04:25.775Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T23:08:24.361Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "59.38 kW",
+     "value": "\"59.38 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-02-22T19:55:25.627Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T23:07:24.694Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526671875929",
+     "value": "{\"phone\":\"526671875929\",\"changed_at\":\"2023-01-23T23:05:47.479Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "ramses.urias91@gmail.com  - ramses.urias91@gmail.com",
+     "value": "{\"text\":\"ramses.urias91@gmail.com \",\"email\":\"ramses.urias91@gmail.com\",\"changed_at\":\"2023-01-25T16:28:20.766Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073502",
+   "name": "JESUS GLODUALDO AMARILLAS PEÑUELAS",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Rancho Medina Manjarrez",
+     "value": "\"Rancho Medina Manjarrez\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T23:04:25.775Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTO",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-01-25T16:31:06.897Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "24.84 kW",
+     "value": "\"24.84 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:38.299Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T23:07:24.694Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:36.630Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526671875929",
+     "value": "{\"phone\":\"526671875929\",\"changed_at\":\"2023-01-23T23:05:47.479Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "ramses.urias91@gmail.com  - ramses.urias91@gmail.com",
+     "value": "{\"text\":\"ramses.urias91@gmail.com \",\"email\":\"ramses.urias91@gmail.com\",\"changed_at\":\"2023-01-25T16:28:20.766Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073222",
+   "name": "EDGAR EDUARDO SOLIS QUEZADA",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "TMIS",
+     "value": "\"TMIS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Ocotlán, Jalisco, México",
+     "value": "{\"lat\":\"20.3417485\",\"lng\":\"-102.7652326\",\"city\":{\"long_name\":\"Ocotlán\",\"short_name\":\"Ocotlán\"},\"street\":null,\"address\":\"Ocotlán, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJ72_Ex9rYLoQRfy4rbS4GEgM\",\"changed_at\":\"2023-01-23T23:13:19.444Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTO",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-01-23T23:12:57.055Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "37,83 kW",
+     "value": "\"37,83 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-01-23T23:15:25.208Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T23:13:01.545Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "523929410454",
+     "value": "{\"phone\":\"523929410454\",\"changed_at\":\"2023-01-23T23:14:08.773Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "tmis.admon@hotmail.com",
+     "value": "{\"text\":\"tmis.admon@hotmail.com\",\"email\":\"tmis.admon@hotmail.com\",\"changed_at\":\"2023-01-23T23:15:17.264Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073258",
+   "name": "MIGUEL ALVAREZ ALFARO",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "WICHI FARMS",
+     "value": "\"WICHI FARMS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Jocotepec, Jalisco, México",
+     "value": "{\"lat\":\"20.2830067\",\"lng\":\"-103.4251691\",\"city\":{\"long_name\":\"Jocotepec\",\"short_name\":\"Jocotepec\"},\"street\":null,\"address\":\"Jocotepec, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJJQXgnAtcL4QR_WyIg2kBIRs\",\"changed_at\":\"2023-01-24T21:48:10.620Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-24T21:48:35.203Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "68.04 kW",
+     "value": "\"68.04 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-01-24T21:48:36.851Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-24T21:49:03.920Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "523328354541",
+     "value": "{\"phone\":\"523328354541\",\"changed_at\":\"2023-01-24T21:49:35.836Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "miguel@wichifarms.com",
+     "value": "{\"text\":\"miguel@wichifarms.com\",\"email\":\"miguel@wichifarms.com\",\"changed_at\":\"2023-01-24T21:50:04.602Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073464",
+   "name": "SERGIO BOLAÑOS GALLEGOS",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "SERGIO BOLAÑOS GALLEGOS",
+     "value": "\"SERGIO BOLAÑOS GALLEGOS\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Sahuayo, Michoacán, México",
+     "value": "{\"lat\":\"20.0587903\",\"lng\":\"-102.7162354\",\"city\":{\"long_name\":\"Sahuayo de Morelos\",\"short_name\":\"Sahuayo de Morelos\"},\"street\":null,\"address\":\"Sahuayo, Michoacán, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJvxBryVLjLoQRHPLvBIleytI\",\"changed_at\":\"2023-01-25T16:15:02.630Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "1F",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-01-25T16:14:48.513Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "4.18 kW",
+     "value": "\"4.18 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:36.393Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-25T16:16:34.246Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:34.654Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "523531037937",
+     "value": "{\"phone\":\"523531037937\",\"changed_at\":\"2023-01-25T16:17:01.645Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "angy_tafo@hotmail.com",
+     "value": "{\"text\":\"angy_tafo@hotmail.com\",\"email\":\"angy_tafo@hotmail.com\",\"changed_at\":\"2023-02-22T19:58:10.323Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073520",
+   "name": "EPIFANIO ESPINOZA ROMO",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "EPIFANIO ESPINOZA ROMO",
+     "value": "\"EPIFANIO ESPINOZA ROMO\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Guasave, Sinaloa, México",
+     "value": "{\"lat\":\"25.5666987\",\"lng\":\"-108.4673051\",\"city\":{\"long_name\":\"Guasave\",\"short_name\":\"Guasave\"},\"street\":null,\"address\":\"Guasave, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJczjs56O_u4YR2V5OIG49B0U\",\"changed_at\":\"2023-01-30T16:12:59.846Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "1D",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-01-30T16:13:30.368Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "4.95 kW",
+     "value": "\"4.95 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:35.546Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-30T16:14:20.254Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:33.712Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526672229066",
+     "value": "{\"phone\":\"526672229066\",\"changed_at\":\"2023-01-30T16:14:41.779Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Epifanio_xvania@hotmail.com",
+     "value": "{\"text\":\"Epifanio_xvania@hotmail.com\",\"email\":\"Epifanio_xvania@hotmail.com\",\"changed_at\":\"2023-01-30T16:14:51.607Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073558",
+   "name": "YOLANDA GUADALUE VALDEZ SOLANO",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "MOTEL YAUCO SA DE CV",
+     "value": "\"MOTEL YAUCO SA DE CV\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "El Rosario, Sinaloa, México",
+     "value": "{\"lat\":\"22.9914716\",\"lng\":\"-105.8613233\",\"city\":{\"long_name\":\"El Rosario\",\"short_name\":\"El Rosario\"},\"street\":null,\"address\":\"El Rosario, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJwQcBoJohn4YRXpcZbInp780\",\"changed_at\":\"2023-02-03T18:17:35.867Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTO",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2023-02-03T18:18:20.964Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "56.76 kW",
+     "value": "\"56.76 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Desconectado",
+     "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2023-02-03T22:09:34.566Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-02-03T18:18:56.270Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526941198475",
+     "value": "{\"phone\":\"526941198475\",\"changed_at\":\"2023-02-08T17:40:54.217Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "yaucofacturas@hotmail.com",
+     "value": "{\"text\":\"yaucofacturas@hotmail.com\",\"email\":\"yaucofacturas@hotmail.com\",\"changed_at\":\"2023-02-08T17:40:31.496Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073382",
+   "name": "JAIME MAURICIO JIMÉNEZ LÓPEZ",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "ACOSTA PORTILLO MARTHA ESTHER",
+     "value": "\"ACOSTA PORTILLO MARTHA ESTHER\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-02-08T17:37:17.224Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "1F",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-02-08T17:37:28.152Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "9.31 kW",
+     "value": "\"9.31 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-02-22T19:59:03.768Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-02-08T17:37:52.231Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526673507191",
+     "value": "{\"phone\":\"526673507191\",\"changed_at\":\"2023-02-08T17:41:19.688Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "jaimejimenez38@gmail.com",
+     "value": "{\"text\":\"jaimejimenez38@gmail.com\",\"email\":\"jaimejimenez38@gmail.com\",\"changed_at\":\"2023-02-08T17:41:31.445Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073597",
+   "name": "OSCAR MANUEL VILLA ARMENTA",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "OSCAR MANUEL VILLA ARMENTA",
+     "value": "\"OSCAR MANUEL VILLA ARMENTA\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Angostura, Sinaloa, México",
+     "value": "{\"lat\":\"25.3679709\",\"lng\":\"-108.1591316\",\"city\":{\"long_name\":\"Angostura\",\"short_name\":\"Angostura\"},\"street\":null,\"address\":\"Angostura, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJiUdwO4CBu4YRUjswyl_oOV4\",\"changed_at\":\"2023-02-08T17:51:42.081Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "1E",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-02-08T17:51:58.532Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "4.44 kW",
+     "value": "\"4.44 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:33.426Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-02-08T17:52:26.507Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:34.446Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526977295699",
+     "value": "{\"phone\":\"526977295699\",\"changed_at\":\"2023-02-08T17:52:47.929Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073611",
+   "name": "ALEJANDRO CUNILLE SHADDI",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "EMPLEA RH",
+     "value": "\"EMPLEA RH\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Guadalajara, Jalisco, México",
+     "value": "{\"lat\":\"20.6596988\",\"lng\":\"-103.3496092\",\"city\":{\"long_name\":\"Guadalajara\",\"short_name\":\"Guadalajara\"},\"street\":null,\"address\":\"Guadalajara, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJm9MvtYyxKIQRUFeGvwKTPdY\",\"changed_at\":\"2023-02-17T17:19:00.346Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-02-17T17:21:55.471Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "4.5 kW",
+     "value": "\"4.5 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Desconectado",
+     "value": "{\"index\":8,\"post_id\":null,\"changed_at\":\"2023-02-17T19:43:33.901Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-02-17T17:20:42.318Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "523310116505",
+     "value": "{\"phone\":\"523310116505\",\"changed_at\":\"2023-02-17T17:20:47.931Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "direccion@smartpeople.mx",
+     "value": "{\"text\":\"direccion@smartpeople.mx\",\"email\":\"direccion@smartpeople.mx\",\"changed_at\":\"2023-02-17T17:21:10.889Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074111",
+   "name": "VIDAL GONZALEZ GUTIERREZ",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "CARNICERIA GONZALEZ",
+     "value": "\"CARNICERIA GONZALEZ\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Tlaquepaque, Jalisco, México",
+     "value": "{\"lat\":\"20.6243088\",\"lng\":\"-103.3212248\",\"city\":{\"long_name\":\"San Pedro Tlaquepaque\",\"short_name\":\"San Pedro Tlaquepaque\"},\"street\":null,\"address\":\"Tlaquepaque, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJA0pBpoezKIQREKq-cByLC14\",\"changed_at\":\"2023-02-17T19:40:52.503Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-02-17T19:41:00.928Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "3.92 kW",
+     "value": "\"3.92 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Estropeado",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-02-17T19:43:32.405Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-02-17T19:41:41.660Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "523317210172",
+     "value": "{\"phone\":\"523317210172\",\"changed_at\":\"2023-02-17T19:42:31.759Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "alex.gonal@icloud.com",
+     "value": "{\"text\":\"alex.gonal@icloud.com\",\"email\":\"alex.gonal@icloud.com\",\"changed_at\":\"2023-02-17T19:43:20.100Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073629",
+   "name": "MARIZA IZAR",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Carniceria Parques del Bosque",
+     "value": "\"Carniceria Parques del Bosque\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Tlaquepaque, Jalisco, México",
+     "value": "{\"lat\":\"20.6243088\",\"lng\":\"-103.3212248\",\"city\":{\"long_name\":\"San Pedro Tlaquepaque\",\"short_name\":\"San Pedro Tlaquepaque\"},\"street\":null,\"address\":\"Tlaquepaque, Jalisco, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJA0pBpoezKIQREKq-cByLC14\",\"changed_at\":\"2023-03-06T17:01:38.385Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-06T17:00:49.536Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "6.66 kW",
+     "value": "\"6.66 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:28.339Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-03-06T16:59:51.736Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:26.761Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "523339685214",
+     "value": "{\"phone\":\"523339685214\",\"changed_at\":\"2023-03-06T16:59:41.568Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "felixflores6040@gmail.com",
+     "value": "{\"text\":\"felixflores6040@gmail.com\",\"email\":\"felixflores6040@gmail.com\",\"changed_at\":\"2023-03-06T16:58:06.007Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073670",
+   "name": "EPIFANIO ESPINOZA ROMO",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "EPIFANIO ESPINOZA ROMO",
+     "value": "\"EPIFANIO ESPINOZA ROMO\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "San Pedro navolato Sinaloa, San Pedro, Sinaloa, México",
+     "value": "{\"lat\":\"24.769158\",\"lng\":\"-107.553234\",\"city\":{\"long_name\":\"San Pedro\",\"short_name\":\"San Pedro\"},\"street\":null,\"address\":\"San Pedro navolato Sinaloa, San Pedro, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJrVAyWT7PvIYRuXeeuwOHR3w\",\"changed_at\":\"2023-03-07T00:01:08.228Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "1D",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2023-03-07T00:01:43.017Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "4.95 kW",
+     "value": "\"4.95 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:25.511Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-03-07T17:00:50.141Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:24.355Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526672229066",
+     "value": "{\"phone\":\"526672229066\",\"changed_at\":\"2023-03-07T17:01:05.631Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Epifanio_xvania@hotmail.com",
+     "value": "{\"text\":\"Epifanio_xvania@hotmail.com\",\"email\":\"Epifanio_xvania@hotmail.com\",\"changed_at\":\"2023-03-07T17:09:38.910Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073726",
+   "name": "MOISES LIZARRAGA",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "BATERIAS LIZARRAGA",
+     "value": "\"BATERIAS LIZARRAGA\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-03-07T16:59:17.640Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-07T16:59:20.542Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "37.24 kW",
+     "value": "\"37.24 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-04-13T15:56:21.379Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-03-07T17:00:04.207Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-04-13",
+     "value": "{\"date\":\"2023-04-13\",\"changed_at\":\"2023-04-13T15:56:20.645Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526671540174",
+     "value": "{\"phone\":\"526671540174\",\"changed_at\":\"2023-03-07T17:00:23.919Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "baterias_lizarraga@hotmail.com",
+     "value": "{\"text\":\"baterias_lizarraga@hotmail.com\",\"email\":\"baterias_lizarraga@hotmail.com\",\"changed_at\":\"2023-03-07T17:00:10.697Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073930",
+   "name": "ARISTEO ALEJANDRO  CANELOS  GUILLEN",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "IGP VICTORIA",
+     "value": "\"IGP VICTORIA\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Villa Juarez, INFONAVIT Abc, Licenciado Benito Juárez, Sinaloa, México",
+     "value": "{\"lat\":\"24.662821\",\"lng\":\"-107.5485941\",\"city\":{\"long_name\":\"Licenciado Benito Juárez\",\"short_name\":\"Lic Benito Juárez\"},\"street\":{\"long_name\":\"Carretera Villa Benito Juárez\",\"short_name\":\"Carr. Villa Benito Juárez\"},\"address\":\"Villa Juarez, INFONAVIT Abc, Licenciado Benito Juárez, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ElFDYXJyLiBWaWxsYSBCZW5pdG8gSnXDoXJleiwgSU5GT05BVklUIEFiYywgODAzNzggTGljIEJlbml0byBKdcOhcmV6LCBTaW4uLCBNZXhpY28iLiosChQKEglxnd8sWcy8hhHG6sMB3aPL-RIUChIJY_K4Fl7MvIYRqFODgdiAnc8\",\"changed_at\":\"2023-01-23T22:48:59.229Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T18:48:04.363Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "499.76 kW",
+     "value": "\"499.76 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-05-04T17:56:01.526Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T18:44:48.581Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2023-02-17",
+     "value": "{\"date\":\"2023-02-17\",\"changed_at\":\"2023-02-22T19:50:58.655Z\"}",
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-05-04",
+     "value": "{\"date\":\"2023-05-04\",\"changed_at\":\"2023-05-04T17:56:00.557Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "6728545558",
+     "value": "{\"phone\":\"6728545558\",\"changed_at\":\"2023-05-04T17:54:50.703Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "jcramirezboj@gmail.com",
+     "value": "{\"text\":\"jcramirezboj@gmail.com\",\"email\":\"jcramirezboj@gmail.com\",\"changed_at\":\"2023-05-04T17:54:33.633Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752073859",
+   "name": "ARISTEO ALEJANDRO  CANELOS  GUILLEN",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "IGP LORENIA",
+     "value": "\"IGP LORENIA\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Villa Juarez, INFONAVIT Abc, Licenciado Benito Juárez, Sinaloa, México",
+     "value": "{\"lat\":\"24.662821\",\"lng\":\"-107.5485941\",\"city\":{\"long_name\":\"Licenciado Benito Juárez\",\"short_name\":\"Lic Benito Juárez\"},\"street\":{\"long_name\":\"Carretera Villa Benito Juárez\",\"short_name\":\"Carr. Villa Benito Juárez\"},\"address\":\"Villa Juarez, INFONAVIT Abc, Licenciado Benito Juárez, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ElFDYXJyLiBWaWxsYSBCZW5pdG8gSnXDoXJleiwgSU5GT05BVklUIEFiYywgODAzNzggTGljIEJlbml0byBKdcOhcmV6LCBTaW4uLCBNZXhpY28iLiosChQKEglxnd8sWcy8hhHG6sMB3aPL-RIUChIJY_K4Fl7MvIYRqFODgdiAnc8\",\"changed_at\":\"2023-01-23T22:48:54.250Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "GMDTH",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-01-23T18:48:02.291Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "499.76 kW",
+     "value": "\"499.76 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-05-04T17:56:03.754Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T18:43:58.944Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2023-02-17",
+     "value": "{\"date\":\"2023-02-17\",\"changed_at\":\"2023-02-22T19:51:01.558Z\"}",
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-05-04",
+     "value": "{\"date\":\"2023-05-04\",\"changed_at\":\"2023-05-04T17:56:01.082Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "6728545558",
+     "value": "{\"phone\":\"6728545558\",\"changed_at\":\"2023-05-04T17:54:53.910Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "jcramirezboj@gmail.com",
+     "value": "{\"text\":\"jcramirezboj@gmail.com\",\"email\":\"jcramirezboj@gmail.com\",\"changed_at\":\"2023-05-04T17:54:36.147Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074132",
+   "name": "ALEXI DE JESUS MENDEZ COYANTES",
+   "group": {
+    "id": "grupo_nuevo56279",
+    "title": "Customer Relationship Management"
+   },
+   "column_values": [
+    {
+     "id": "subtasks",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "text",
+     "text": "NUTRIRICA",
+     "value": "\"NUTRIRICA\"",
+     "column": {
+      "title": "Nombre del proyecto"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Culiacán, Sinaloa, México",
+     "value": "{\"lat\":\"24.8090649\",\"lng\":\"-107.3940117\",\"city\":{\"long_name\":\"Culiacán\",\"short_name\":\"Culiacán\"},\"street\":null,\"address\":\"Culiacán, Sinaloa, México\",\"country\":{\"long_name\":\"México\",\"short_name\":\"MX\"},\"placeId\":\"ChIJj_lHd8fWvIYRzCMt6_Dr2Y0\",\"changed_at\":\"2023-01-23T22:49:28.238Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Ubicación"
+     }
+    },
+    {
+     "id": "color",
+     "text": "PBDT",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-01-23T22:33:35.237Z\"}",
+     "column": {
+      "title": "Tárifa"
+     }
+    },
+    {
+     "id": "text5",
+     "text": "23.65 kW",
+     "value": "\"23.65 kW\"",
+     "column": {
+      "title": "Potencia"
+     }
+    },
+    {
+     "id": "status",
+     "text": "OK",
+     "value": "{\"index\":10,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2023-05-25T15:49:42.828Z\"}",
+     "column": {
+      "title": "Estatus del proyecto"
+     }
+    },
+    {
+     "id": "boolean3",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2023-01-23T22:32:44.509Z\"}",
+     "column": {
+      "title": "VT"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2023-04-03",
+     "value": "{\"date\":\"2023-04-03\",\"changed_at\":\"2023-04-10T17:49:28.069Z\"}",
+     "column": {
+      "title": "Fecha de Interconexión"
+     }
+    },
+    {
+     "id": "date5",
+     "text": "2023-05-25",
+     "value": "{\"date\":\"2023-05-25\",\"changed_at\":\"2023-05-25T15:49:27.752Z\"}",
+     "column": {
+      "title": "Seguimiento CRM"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "526671944501",
+     "value": "{\"phone\":\"526671944501\",\"changed_at\":\"2023-01-23T22:32:49.607Z\",\"countryShortName\":\"MX\"}",
+     "column": {
+      "title": "Contacto"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Dariel_mendez@aquavida.info",
+     "value": "{\"text\":\"Dariel_mendez@aquavida.info\",\"email\":\"Dariel_mendez@aquavida.info\",\"changed_at\":\"2023-04-10T16:39:12.377Z\"}",
+     "column": {
+      "title": "Correo electrónico"
+     }
+    },
+    {
+     "id": "f_rmula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fórmula"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1191 @@
+{
+ "board": {
+  "id": "9913323235",
+  "name": "Contacts",
+  "state": "active",
+  "board_kind": "share",
+  "description": "Welcome to your contacts board! Here you can store and manage all of your contacts",
+  "workspace": {
+   "id": "12151996",
+   "name": "Newman CRM"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subtasks_mkv92s0e",
+   "title": "Subitems",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[9932488404]}"
+  },
+  {
+   "id": "custom_mkrm9y8c",
+   "title": "Activities timeline",
+   "type": "unsupported",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Type",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[],\"hide_footer\":true,\"color_mapping\":{\"0\":11,\"1\":108,\"2\":104,\"3\":107,\"4\":6,\"6\":110,\"7\":4,\"9\":13,\"11\":2,\"12\":3,\"13\":14,\"14\":1,\"15\":9,\"16\":106,\"104\":12,\"105\":16,\"106\":7,\"107\":105,\"108\":15,\"109\":0,\"110\":109},\"labels\":{\"0\":\"Lead\",\"1\":\"Cliente\",\"2\":\"Vendedor\",\"3\":\"Vendor plus\",\"5\":\"\",\"6\":\"Gerente Regional\",\"13\":\"Partner\"},\"labels_positions_v2\":{\"0\":0,\"1\":5,\"2\":1,\"3\":2,\"5\":6,\"6\":3,\"13\":4},\"labels_colors\":{\"0\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"1\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"2\":{\"color\":\"#7e3b8a\",\"border\":\"#7e3b8a\",\"var_name\":\"berry\"},\"3\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#401694\",\"border\":\"#401694\",\"var_name\":\"dark_indigo\"},\"13\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"}}}"
+  },
+  {
+   "id": "lookup_mkvxv7qp",
+   "title": "Mirror 1",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"contact_deal\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9913323254\":[\"deal_stage\"],\"18402258431\":[\"deal_stage\"],\"18402262283\":[\"deal_stage\"]}}"
+  },
+  {
+   "id": "lookup_mkvwf9ep",
+   "title": "EPC",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"contact_deal\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9913323254\":[\"formula_mkvdwwdp\"],\"18402258431\":[\"formula_mkvdwwdp\"],\"18402262283\":[\"formula_mkvdwwdp\"]}}"
+  },
+  {
+   "id": "contact_phone",
+   "title": "Phone",
+   "type": "phone",
+   "settings_str": "{}"
+  },
+  {
+   "id": "contact_email",
+   "title": "Email",
+   "type": "email",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text4",
+   "title": "Comments",
+   "type": "long_text",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Active Contacts"
+  },
+  {
+   "id": "new_group95562",
+   "title": "Inactive Contacts"
+  }
+ ],
+ "items": [
+  {
+   "id": "9913324729",
+   "name": "Jonathan Zuniga",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Partner",
+     "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2025-08-27T19:21:04.290Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "jonathan@newman.re",
+     "value": "{\"text\":\"jonathan@newman.re\",\"email\":\"jonathan@newman.re\",\"changed_at\":\"2025-08-27T19:24:50.481Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9913324819",
+   "name": "Natan Herrera",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Vendedor",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-12-17T19:24:49.860Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "natan@newman.re",
+     "value": "{\"text\":\"natan@newman.re\",\"email\":\"natan@newman.re\",\"changed_at\":\"2025-08-27T19:24:33.227Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": "{\"text\":\"\",\"changed_at\":\"2025-08-28T18:32:37.841Z\"}",
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9913324850",
+   "name": "Carlos Ballman",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Partner",
+     "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2024-01-25T10:31:00.250Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "c@newman.re",
+     "value": "{\"text\":\"c@newman.re\",\"email\":\"c@newman.re\",\"changed_at\":\"2025-08-27T19:24:41.395Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": "{\"text\":\"\",\"changed_at\":\"2025-08-28T18:32:46.855Z\"}",
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9914201344",
+   "name": "Arturo Perez",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Gerente Regional",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2025-08-29T21:01:50.766Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "arturo@newman.re",
+     "value": "{\"text\":\"arturo@newman.re\",\"email\":\"arturo@newman.re\",\"changed_at\":\"2025-08-27T19:24:59.408Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9914365585",
+   "name": "Fauro",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Vendedor",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-08-28T18:33:52.540Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "fauro@newman.re",
+     "value": "{\"text\":\"fauro@newman.re\",\"email\":\"fauro@newman.re\",\"changed_at\":\"2025-08-27T19:25:06.554Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9930036719",
+   "name": "Santiago",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Vendedor",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-08-29T17:10:07.540Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "santiago@newman.re",
+     "value": "{\"text\":\"santiago@newman.re\",\"email\":\"santiago@newman.re\",\"changed_at\":\"2026-04-23T15:36:37.250Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9930207629",
+   "name": "Chandel Chan",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Partner",
+     "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2025-08-29T17:10:56.482Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "Chandel@newman.re",
+     "value": "{\"text\":\"Chandel@newman.re\",\"email\":\"Chandel@newman.re\",\"changed_at\":\"2025-08-29T16:09:31.567Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9930290370",
+   "name": "Adrian Miranda",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Vendor plus",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-08-29T17:11:10.690Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9930962519",
+   "name": "Juan Godinez",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Partner",
+     "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2025-12-17T19:24:43.710Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9932710566",
+   "name": "Vendedor norte 2",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Vendedor",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-08-29T21:00:41.324Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9932711170",
+   "name": "Vendedor Noroeste 1",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Vendedor",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2025-08-29T21:00:41.324Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "18068414911",
+   "name": "Luis Zuñiga",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11405418991",
+   "name": "José Luis",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11494139906",
+   "name": "Jesús López",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11495301798",
+   "name": "Angie",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkv92s0e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "custom_mkrm9y8c",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "lookup_mkvxv7qp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror 1"
+     }
+    },
+    {
+     "id": "lookup_mkvwf9ep",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "EPC"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "contact_email",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  }
+ ]
+}

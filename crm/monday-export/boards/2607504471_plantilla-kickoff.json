@@ -1,0 +1,53 @@
+{
+ "board": {
+  "id": "2607504471",
+  "name": "Plantilla KickOff",
+  "state": "archived",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "448904",
+   "name": "Operaciones"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "files",
+   "title": "Files",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Group Title"
+  }
+ ],
+ "items": [
+  {
+   "id": "2607504507",
+   "name": "Doc Comments",
+   "group": {
+    "id": "topics",
+    "title": "Group Title"
+   },
+   "column_values": [
+    {
+     "id": "files",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Files"
+     }
+    }
+   ]
+  }
+ ]
+}

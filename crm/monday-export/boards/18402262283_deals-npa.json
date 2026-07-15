@@ -1,0 +1,1613 @@
+{
+ "board": {
+  "id": "18402262283",
+  "name": "Deals NPA",
+  "state": "active",
+  "board_kind": "share",
+  "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+  "workspace": {
+   "id": "12151996",
+   "name": "Newman CRM"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subitems",
+   "title": "Tasks",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[18402262284]}"
+  },
+  {
+   "id": "lookup_mkxmkdhd",
+   "title": "Flujos Contratos",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"subitems\":true},\"displayed_column\":{\"formula_mkv7prwn\":true},\"displayed_linked_columns\":{\"18402262284\":[\"formula_mkv7prwn\"]}}"
+  },
+  {
+   "id": "lookup_mkvxd6ah",
+   "title": "Subitems PM",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"subitems\":true},\"displayed_column\":{\"color_mkvn28r1\":true},\"displayed_linked_columns\":{\"18402262284\":[\"color_mkvn28r1\"]}}"
+  },
+  {
+   "id": "deal_stage",
+   "title": "Stage",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":7,\"3\":109,\"4\":6,\"6\":0,\"7\":152,\"9\":3,\"14\":15,\"15\":14,\"16\":9,\"104\":16,\"107\":108,\"108\":110,\"109\":4,\"110\":104,\"152\":158,\"158\":107},\"labels\":{\"0\":\"Docs\",\"1\":\"Closed\",\"2\":\"Perdido\",\"3\":\"Forwards\",\"4\":\"In signing\",\"5\":\"\",\"6\":\"Stand by\",\"7\":\"Lead\",\"15\":\"Earlies\"},\"labels_positions_v2\":{\"0\":3,\"1\":5,\"2\":6,\"3\":2,\"4\":4,\"5\":8,\"6\":7,\"7\":0,\"15\":1},\"labels_colors\":{\"0\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#5559df\",\"border\":\"#5559df\",\"var_name\":\"indigo\"},\"4\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"7\":{\"color\":\"#bda8f9\",\"border\":\"#bda8f9\",\"var_name\":\"light_magic\"},\"15\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"}}}"
+  },
+  {
+   "id": "lookup_mkv7dmfb",
+   "title": "Subitems kWp",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"subitems\":true},\"displayed_column\":{\"numeric_mkv7ty3\":true},\"displayed_linked_columns\":{\"18402262284\":[\"numeric_mkv7ty3\"]},\"function\":\"sum\"}"
+  },
+  {
+   "id": "lookup_mkv7cghp",
+   "title": "Subitems EPC value",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"subitems\":true},\"displayed_column\":{\"formula_mkv7wrs8\":true},\"displayed_linked_columns\":{\"18402262284\":[\"formula_mkv7wrs8\"]}}"
+  },
+  {
+   "id": "formula_mkv96weq",
+   "title": "Lead",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"IF({deal_stage}=\\\"Lead\\\",{lookup_mkv7cghp},0)\"}"
+  },
+  {
+   "id": "formula_mkvc1j2a",
+   "title": "Earlies",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"IF({deal_stage}=\\\"Earlies\\\",{lookup_mkv7cghp},0)\"}"
+  },
+  {
+   "id": "formula_mkv9rc7y",
+   "title": "Forwards",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"IF({deal_stage}=\\\"Forwards\\\",{lookup_mkv7cghp},0)\\r\\n\"}"
+  },
+  {
+   "id": "formula_mkv961z8",
+   "title": "Docs",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"IF({deal_stage}=\\\"Docs\\\",{lookup_mkv7cghp},0)\"}"
+  },
+  {
+   "id": "formula_mkwx6mr1",
+   "title": "In signing",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"IF(OR({deal_stage}=\\\"In signing\\\", {deal_stage}=\\\"Closed\\\"),{lookup_mkv7cghp},0)\"}"
+  },
+  {
+   "id": "lookup_mkv7tfae",
+   "title": "VPN contrato",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"subitems\":true},\"displayed_column\":{\"formula_mkv7jtac\":true},\"displayed_linked_columns\":{\"18402262284\":[\"formula_mkv7jtac\"]}}"
+  },
+  {
+   "id": "formula_mkv7yh2r",
+   "title": "VPN Contrato",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{lookup_mkv7tfae}\"}"
+  },
+  {
+   "id": "formula_mkv74mn6",
+   "title": "kWp",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{lookup_mkv7dmfb}\"}"
+  },
+  {
+   "id": "custom_mkrmrgz6",
+   "title": "CRM",
+   "type": "unsupported",
+   "settings_str": "{}"
+  },
+  {
+   "id": "lookup_mkvwznt6",
+   "title": "Mirror",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"deal_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"9913323235\":[\"status\"]}}"
+  },
+  {
+   "id": "date__1",
+   "title": "Next Step",
+   "type": "date",
+   "settings_str": "{\"show_add_icon\":true}"
+  },
+  {
+   "id": "pulse_updated_mkv8e1zx",
+   "title": "Last updated",
+   "type": "last_updated",
+   "settings_str": "{}"
+  },
+  {
+   "id": "board_relation_mkv96y72",
+   "title": "Cuenta",
+   "type": "board_relation",
+   "settings_str": "{\"allowCreateReflectionColumn\":true,\"boardIds\":[],\"boardId\":null}"
+  },
+  {
+   "id": "date_mkvcs5cx",
+   "title": "Close date",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "formula_mkvdwwdp",
+   "title": "EPC total",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{lookup_mkv7cghp}\"}"
+  },
+  {
+   "id": "deal_creation_date",
+   "title": "Deal creation date",
+   "type": "date",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "custom_mkvnqs8v",
+   "title": "Enrolled sequences",
+   "type": "unsupported",
+   "settings_str": "{}"
+  },
+  {
+   "id": "date_mkw8wx8t",
+   "title": "Won date",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "date_mkwxpbzs",
+   "title": "Cambio status",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text_mkw8da56",
+   "title": "Status",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "integration_mkw8z70n",
+   "title": "Google Calendar event",
+   "type": "integration",
+   "settings_str": "{\"app\":\"googleCalendar\",\"entity_type\":\"event\"}"
+  },
+  {
+   "id": "formula_mkxmak6d",
+   "title": "Formula",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{lookup_mkxmkdhd}\"}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Active Deals"
+  },
+  {
+   "id": "closed",
+   "title": "Closed"
+  },
+  {
+   "id": "group_mkv8km2b",
+   "title": "Stand by"
+  },
+  {
+   "id": "group_mkv9h896",
+   "title": "Lost and found objects"
+  }
+ ],
+ "items": [
+  {
+   "id": "11342902723",
+   "name": "Kuehne &  Nagel",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "lookup_mkxmkdhd",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "lookup_mkvxd6ah",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems PM"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Lead",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2026-02-23T16:57:48.338Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "lookup_mkv7dmfb",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems kWp"
+     }
+    },
+    {
+     "id": "lookup_mkv7cghp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems EPC value"
+     }
+    },
+    {
+     "id": "formula_mkv96weq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Lead"
+     }
+    },
+    {
+     "id": "formula_mkvc1j2a",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Earlies"
+     }
+    },
+    {
+     "id": "formula_mkv9rc7y",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forwards"
+     }
+    },
+    {
+     "id": "formula_mkv961z8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Docs"
+     }
+    },
+    {
+     "id": "formula_mkwx6mr1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "In signing"
+     }
+    },
+    {
+     "id": "lookup_mkv7tfae",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7yh2r",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN Contrato"
+     }
+    },
+    {
+     "id": "formula_mkv74mn6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "CRM"
+     }
+    },
+    {
+     "id": "lookup_mkvwznt6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "2026-04-16",
+     "value": "{\"date\":\"2026-04-16\",\"changed_at\":\"2026-04-15T18:18:00.755Z\"}",
+     "column": {
+      "title": "Next Step"
+     }
+    },
+    {
+     "id": "pulse_updated_mkv8e1zx",
+     "text": "2026-04-15 18:18:00 UTC",
+     "value": "{\"updated_at\":\"2026-04-15T18:18:00Z\",\"updater_id\":\"100493605\"}",
+     "column": {
+      "title": "Last updated"
+     }
+    },
+    {
+     "id": "board_relation_mkv96y72",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cuenta"
+     }
+    },
+    {
+     "id": "date_mkvcs5cx",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close date"
+     }
+    },
+    {
+     "id": "formula_mkvdwwdp",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC total"
+     }
+    },
+    {
+     "id": "deal_creation_date",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2026-02-23T16:57:47.391Z\"}",
+     "column": {
+      "title": "Deal creation date"
+     }
+    },
+    {
+     "id": "custom_mkvnqs8v",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Enrolled sequences"
+     }
+    },
+    {
+     "id": "date_mkw8wx8t",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Won date"
+     }
+    },
+    {
+     "id": "date_mkwxpbzs",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2026-02-23T16:57:51.468Z\"}",
+     "column": {
+      "title": "Cambio status"
+     }
+    },
+    {
+     "id": "long_text_mkw8da56",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "integration_mkw8z70n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Google Calendar event"
+     }
+    },
+    {
+     "id": "formula_mkxmak6d",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11342890337",
+   "name": "Fibra Shop - La Puerta Victoria",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "lookup_mkxmkdhd",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "lookup_mkvxd6ah",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems PM"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Lead",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2026-02-23T16:58:44.839Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "lookup_mkv7dmfb",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems kWp"
+     }
+    },
+    {
+     "id": "lookup_mkv7cghp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems EPC value"
+     }
+    },
+    {
+     "id": "formula_mkv96weq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Lead"
+     }
+    },
+    {
+     "id": "formula_mkvc1j2a",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Earlies"
+     }
+    },
+    {
+     "id": "formula_mkv9rc7y",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forwards"
+     }
+    },
+    {
+     "id": "formula_mkv961z8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Docs"
+     }
+    },
+    {
+     "id": "formula_mkwx6mr1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "In signing"
+     }
+    },
+    {
+     "id": "lookup_mkv7tfae",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7yh2r",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN Contrato"
+     }
+    },
+    {
+     "id": "formula_mkv74mn6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "CRM"
+     }
+    },
+    {
+     "id": "lookup_mkvwznt6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Next Step"
+     }
+    },
+    {
+     "id": "pulse_updated_mkv8e1zx",
+     "text": "2026-03-02 19:22:33 UTC",
+     "value": "{\"updated_at\":\"2026-03-02T19:22:33Z\",\"updater_id\":\"100493605\"}",
+     "column": {
+      "title": "Last updated"
+     }
+    },
+    {
+     "id": "board_relation_mkv96y72",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cuenta"
+     }
+    },
+    {
+     "id": "date_mkvcs5cx",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close date"
+     }
+    },
+    {
+     "id": "formula_mkvdwwdp",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC total"
+     }
+    },
+    {
+     "id": "deal_creation_date",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2026-02-23T16:58:12.008Z\"}",
+     "column": {
+      "title": "Deal creation date"
+     }
+    },
+    {
+     "id": "custom_mkvnqs8v",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Enrolled sequences"
+     }
+    },
+    {
+     "id": "date_mkw8wx8t",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Won date"
+     }
+    },
+    {
+     "id": "date_mkwxpbzs",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2026-02-23T16:58:48.057Z\"}",
+     "column": {
+      "title": "Cambio status"
+     }
+    },
+    {
+     "id": "long_text_mkw8da56",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "integration_mkw8z70n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Google Calendar event"
+     }
+    },
+    {
+     "id": "formula_mkxmak6d",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11475756998",
+   "name": "Hotel Royal Pedregal",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "lookup_mkxmkdhd",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "lookup_mkvxd6ah",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems PM"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Stand by",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2026-03-13T20:53:59.890Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "lookup_mkv7dmfb",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems kWp"
+     }
+    },
+    {
+     "id": "lookup_mkv7cghp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems EPC value"
+     }
+    },
+    {
+     "id": "formula_mkv96weq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Lead"
+     }
+    },
+    {
+     "id": "formula_mkvc1j2a",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Earlies"
+     }
+    },
+    {
+     "id": "formula_mkv9rc7y",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forwards"
+     }
+    },
+    {
+     "id": "formula_mkv961z8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Docs"
+     }
+    },
+    {
+     "id": "formula_mkwx6mr1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "In signing"
+     }
+    },
+    {
+     "id": "lookup_mkv7tfae",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7yh2r",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN Contrato"
+     }
+    },
+    {
+     "id": "formula_mkv74mn6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "CRM"
+     }
+    },
+    {
+     "id": "lookup_mkvwznt6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Next Step"
+     }
+    },
+    {
+     "id": "pulse_updated_mkv8e1zx",
+     "text": "2026-03-13 20:54:03 UTC",
+     "value": "{\"updated_at\":\"2026-03-13T20:54:03Z\",\"updater_id\":\"16103085\"}",
+     "column": {
+      "title": "Last updated"
+     }
+    },
+    {
+     "id": "board_relation_mkv96y72",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cuenta"
+     }
+    },
+    {
+     "id": "date_mkvcs5cx",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close date"
+     }
+    },
+    {
+     "id": "formula_mkvdwwdp",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC total"
+     }
+    },
+    {
+     "id": "deal_creation_date",
+     "text": "2026-03-10",
+     "value": "{\"date\":\"2026-03-10\",\"changed_at\":\"2026-03-10T22:29:12.552Z\"}",
+     "column": {
+      "title": "Deal creation date"
+     }
+    },
+    {
+     "id": "custom_mkvnqs8v",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Enrolled sequences"
+     }
+    },
+    {
+     "id": "date_mkw8wx8t",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Won date"
+     }
+    },
+    {
+     "id": "date_mkwxpbzs",
+     "text": "2026-03-13",
+     "value": "{\"date\":\"2026-03-13\",\"changed_at\":\"2026-03-13T20:54:02.757Z\"}",
+     "column": {
+      "title": "Cambio status"
+     }
+    },
+    {
+     "id": "long_text_mkw8da56",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "integration_mkw8z70n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Google Calendar event"
+     }
+    },
+    {
+     "id": "formula_mkxmak6d",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11505398394",
+   "name": "Deal Cleinte etapa 2",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "lookup_mkxmkdhd",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "lookup_mkvxd6ah",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems PM"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "lookup_mkv7dmfb",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems kWp"
+     }
+    },
+    {
+     "id": "lookup_mkv7cghp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems EPC value"
+     }
+    },
+    {
+     "id": "formula_mkv96weq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Lead"
+     }
+    },
+    {
+     "id": "formula_mkvc1j2a",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Earlies"
+     }
+    },
+    {
+     "id": "formula_mkv9rc7y",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forwards"
+     }
+    },
+    {
+     "id": "formula_mkv961z8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Docs"
+     }
+    },
+    {
+     "id": "formula_mkwx6mr1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "In signing"
+     }
+    },
+    {
+     "id": "lookup_mkv7tfae",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7yh2r",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN Contrato"
+     }
+    },
+    {
+     "id": "formula_mkv74mn6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "CRM"
+     }
+    },
+    {
+     "id": "lookup_mkvwznt6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Next Step"
+     }
+    },
+    {
+     "id": "pulse_updated_mkv8e1zx",
+     "text": "2026-03-13 20:53:51 UTC",
+     "value": "{\"updated_at\":\"2026-03-13T20:53:51Z\",\"updater_id\":\"16103085\"}",
+     "column": {
+      "title": "Last updated"
+     }
+    },
+    {
+     "id": "board_relation_mkv96y72",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cuenta"
+     }
+    },
+    {
+     "id": "date_mkvcs5cx",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close date"
+     }
+    },
+    {
+     "id": "formula_mkvdwwdp",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC total"
+     }
+    },
+    {
+     "id": "deal_creation_date",
+     "text": "2026-03-13",
+     "value": "{\"date\":\"2026-03-13\",\"changed_at\":\"2026-03-13T20:36:34.312Z\"}",
+     "column": {
+      "title": "Deal creation date"
+     }
+    },
+    {
+     "id": "custom_mkvnqs8v",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Enrolled sequences"
+     }
+    },
+    {
+     "id": "date_mkw8wx8t",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Won date"
+     }
+    },
+    {
+     "id": "date_mkwxpbzs",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cambio status"
+     }
+    },
+    {
+     "id": "long_text_mkw8da56",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "integration_mkw8z70n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Google Calendar event"
+     }
+    },
+    {
+     "id": "formula_mkxmak6d",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018637462",
+   "name": "Yazaki México — Portafolio Solar + BESS",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "lookup_mkxmkdhd",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "lookup_mkvxd6ah",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems PM"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Lead",
+     "value": "{\"index\":7}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "lookup_mkv7dmfb",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems kWp"
+     }
+    },
+    {
+     "id": "lookup_mkv7cghp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems EPC value"
+     }
+    },
+    {
+     "id": "formula_mkv96weq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Lead"
+     }
+    },
+    {
+     "id": "formula_mkvc1j2a",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Earlies"
+     }
+    },
+    {
+     "id": "formula_mkv9rc7y",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forwards"
+     }
+    },
+    {
+     "id": "formula_mkv961z8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Docs"
+     }
+    },
+    {
+     "id": "formula_mkwx6mr1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "In signing"
+     }
+    },
+    {
+     "id": "lookup_mkv7tfae",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7yh2r",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN Contrato"
+     }
+    },
+    {
+     "id": "formula_mkv74mn6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "CRM"
+     }
+    },
+    {
+     "id": "lookup_mkvwznt6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "2026-05-22",
+     "value": "{\"date\":\"2026-05-22\"}",
+     "column": {
+      "title": "Next Step"
+     }
+    },
+    {
+     "id": "pulse_updated_mkv8e1zx",
+     "text": "2026-05-15 03:53:25 UTC",
+     "value": "{\"updated_at\":\"2026-05-15T03:53:25Z\",\"updater_id\":\"100603085\"}",
+     "column": {
+      "title": "Last updated"
+     }
+    },
+    {
+     "id": "board_relation_mkv96y72",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cuenta"
+     }
+    },
+    {
+     "id": "date_mkvcs5cx",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close date"
+     }
+    },
+    {
+     "id": "formula_mkvdwwdp",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC total"
+     }
+    },
+    {
+     "id": "deal_creation_date",
+     "text": "2026-05-14",
+     "value": "{\"date\":\"2026-05-14\",\"changed_at\":\"2026-05-15T03:43:50.287Z\"}",
+     "column": {
+      "title": "Deal creation date"
+     }
+    },
+    {
+     "id": "custom_mkvnqs8v",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Enrolled sequences"
+     }
+    },
+    {
+     "id": "date_mkw8wx8t",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Won date"
+     }
+    },
+    {
+     "id": "date_mkwxpbzs",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cambio status"
+     }
+    },
+    {
+     "id": "long_text_mkw8da56",
+     "text": "Análisis preliminar (v1) del portafolio de cuentas CFE de Yazaki México. Socio: Newman.re. Contacto: Mario Vidaña Amarillas (mario@newman.re).\n\nCifras del portafolio (55 sitios candidatos de 77 analizados):\n- Solar recomendado: 48.0 MWp\n- BESS: 32.7 MWh\n- Capex estimado: $1,069 M MXN (estimado de mercado, por revisar con cotizaciones reales Newman)\n- Ahorro anual año 1: $214 M MXN\n- Payback portafolio: 5.0 años\n- VPN @ 12%, 10 años: +$121 M MXN\n- CO2 evitado: 33,442 ton/año\n\nComposición del ahorro (separación kW vs kWh): energía 57% (solar) | demanda 38% (BESS) | arbitraje punta 4%.\n\nHallazgo estratégico: priorizar solar; BESS selectivo donde el cargo de demanda lo justifique. El arbitraje de punta aporta solo 4% al capex actual.\n\nSitios prioritarios (top 8 por payback): YCC P1 MFG (2.4a/43% TIR), Tuxtla DC, YCC P2 MFG, Madera, Obregón P2, Tecomán, Obregón P1, Saltillo P2 (todos <4.5 años).\n\nMetodología: 77 recibos CFE digitalizados y reconciliados 77/77; rates efectivos por sitio separando $/kWh y $/kW; irradiación real por coordenada (NASA POWER); área de techo de Google Solar API en 9 sitios confiables, resto estimado por carga.\n\nEntregables: workbook Excel 7 hojas + resumen ejecutivo en español, enviados a Mario el 2026-05-15 (ZIP 82 KB).\n\nPendientes para afinar oferta:\n1. Coordenadas exactas de las plantas Yazaki (la geocodificación de las direcciones de los recibos llega solo a nivel colonia).\n2. Capex real con cotizaciones Newman para sustituir estimados.\n3. Recibos de 5 sitios faltantes del apéndice.\n4. Validar contratos de suministro calificado (Buenaventura ya compra a uno).\n5. Confirmar tasa de descuento / horizonte estándar Newman.",
+     "value": "{\"text\":\"Análisis preliminar (v1) del portafolio de cuentas CFE de Yazaki México. Socio: Newman.re. Contacto: Mario Vidaña Amarillas (mario@newman.re).\\n\\nCifras del portafolio (55 sitios candidatos de 77 analizados):\\n- Solar recomendado: 48.0 MWp\\n- BESS: 32.7 MWh\\n- Capex estimado: $1,069 M MXN (estimado de mercado, por revisar con cotizaciones reales Newman)\\n- Ahorro anual año 1: $214 M MXN\\n- Payback portafolio: 5.0 años\\n- VPN @ 12%, 10 años: +$121 M MXN\\n- CO2 evitado: 33,442 ton/año\\n\\nComposición del ahorro (separación kW vs kWh): energía 57% (solar) | demanda 38% (BESS) | arbitraje punta 4%.\\n\\nHallazgo estratégico: priorizar solar; BESS selectivo donde el cargo de demanda lo justifique. El arbitraje de punta aporta solo 4% al capex actual.\\n\\nSitios prioritarios (top 8 por payback): YCC P1 MFG (2.4a/43% TIR), Tuxtla DC, YCC P2 MFG, Madera, Obregón P2, Tecomán, Obregón P1, Saltillo P2 (todos <4.5 años).\\n\\nMetodología: 77 recibos CFE digitalizados y reconciliados 77/77; rates efectivos por sitio separando $/kWh y $/kW; irradiación real por coordenada (NASA POWER); área de techo de Google Solar API en 9 sitios confiables, resto estimado por carga.\\n\\nEntregables: workbook Excel 7 hojas + resumen ejecutivo en español, enviados a Mario el 2026-05-15 (ZIP 82 KB).\\n\\nPendientes para afinar oferta:\\n1. Coordenadas exactas de las plantas Yazaki (la geocodificación de las direcciones de los recibos llega solo a nivel colonia).\\n2. Capex real con cotizaciones Newman para sustituir estimados.\\n3. Recibos de 5 sitios faltantes del apéndice.\\n4. Validar contratos de suministro calificado (Buenaventura ya compra a uno).\\n5. Confirmar tasa de descuento / horizonte estándar Newman.\",\"changed_at\":\"2026-05-15T03:43:48.259Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "integration_mkw8z70n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Google Calendar event"
+     }
+    },
+    {
+     "id": "formula_mkxmak6d",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11505396304",
+   "name": "DEAL Cliente",
+   "group": {
+    "id": "closed",
+    "title": "Closed"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "lookup_mkxmkdhd",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "lookup_mkvxd6ah",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems PM"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Closed",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-13T20:51:39.124Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "lookup_mkv7dmfb",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems kWp"
+     }
+    },
+    {
+     "id": "lookup_mkv7cghp",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems EPC value"
+     }
+    },
+    {
+     "id": "formula_mkv96weq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Lead"
+     }
+    },
+    {
+     "id": "formula_mkvc1j2a",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Earlies"
+     }
+    },
+    {
+     "id": "formula_mkv9rc7y",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forwards"
+     }
+    },
+    {
+     "id": "formula_mkv961z8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Docs"
+     }
+    },
+    {
+     "id": "formula_mkwx6mr1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "In signing"
+     }
+    },
+    {
+     "id": "lookup_mkv7tfae",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7yh2r",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN Contrato"
+     }
+    },
+    {
+     "id": "formula_mkv74mn6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "CRM"
+     }
+    },
+    {
+     "id": "lookup_mkvwznt6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Mirror"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Next Step"
+     }
+    },
+    {
+     "id": "pulse_updated_mkv8e1zx",
+     "text": "2026-03-13 20:51:43 UTC",
+     "value": "{\"updated_at\":\"2026-03-13T20:51:43Z\",\"updater_id\":\"16103085\"}",
+     "column": {
+      "title": "Last updated"
+     }
+    },
+    {
+     "id": "board_relation_mkv96y72",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cuenta"
+     }
+    },
+    {
+     "id": "date_mkvcs5cx",
+     "text": "2026-03-13",
+     "value": "{\"date\":\"2026-03-13\",\"changed_at\":\"2026-03-13T20:51:43.597Z\"}",
+     "column": {
+      "title": "Close date"
+     }
+    },
+    {
+     "id": "formula_mkvdwwdp",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC total"
+     }
+    },
+    {
+     "id": "deal_creation_date",
+     "text": "2026-03-13",
+     "value": "{\"date\":\"2026-03-13\",\"changed_at\":\"2026-03-13T20:35:29.554Z\"}",
+     "column": {
+      "title": "Deal creation date"
+     }
+    },
+    {
+     "id": "custom_mkvnqs8v",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Enrolled sequences"
+     }
+    },
+    {
+     "id": "date_mkw8wx8t",
+     "text": "2026-03-13",
+     "value": "{\"date\":\"2026-03-13\",\"changed_at\":\"2026-03-13T20:47:04.488Z\"}",
+     "column": {
+      "title": "Won date"
+     }
+    },
+    {
+     "id": "date_mkwxpbzs",
+     "text": "2026-03-13",
+     "value": "{\"date\":\"2026-03-13\",\"changed_at\":\"2026-03-13T20:46:39.689Z\"}",
+     "column": {
+      "title": "Cambio status"
+     }
+    },
+    {
+     "id": "long_text_mkw8da56",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "integration_mkw8z70n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Google Calendar event"
+     }
+    },
+    {
+     "id": "formula_mkxmak6d",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    }
+   ]
+  }
+ ]
+}

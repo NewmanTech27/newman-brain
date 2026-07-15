@@ -1,0 +1,329 @@
+{
+ "board": {
+  "id": "8062624686",
+  "name": "Accounts",
+  "state": "active",
+  "board_kind": "public",
+  "description": "",
+  "workspace": {
+   "id": "9174044",
+   "name": "Not workspace"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "company_domain",
+   "title": "Domain",
+   "type": "link",
+   "settings_str": "{}"
+  },
+  {
+   "id": "account_contact",
+   "title": "Contacts",
+   "type": "board_relation",
+   "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[8062624681],\"boardId\":8062624681,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"8062624681\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+  },
+  {
+   "id": "account_deal",
+   "title": "Deals",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"account_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"8062624681\":[\"contact_deal\"]}}"
+  },
+  {
+   "id": "status5",
+   "title": "Priority",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"4\":6,\"6\":7,\"7\":19,\"19\":4},\"labels\":{\"6\":\"Medium\",\"7\":\"High\",\"108\":\"Low\"},\"labels_positions_v2\":{\"5\":3,\"6\":1,\"7\":0,\"108\":2},\"labels_colors\":{\"6\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"7\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"108\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"}}}"
+  },
+  {
+   "id": "industry",
+   "title": "Industry",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"id\":2,\"name\":\"Financial Services\"},{\"id\":3,\"name\":\"Lending and Investments\"},{\"id\":4,\"name\":\"Software\"},{\"id\":5,\"name\":\"Administrative Services\"},{\"id\":6,\"name\":\"Advertising\"},{\"id\":7,\"name\":\"Agriculture and Farming\"},{\"id\":8,\"name\":\"Apps\"},{\"id\":9,\"name\":\"Artificial Intelligence\"},{\"id\":10,\"name\":\"Biotechnology\"},{\"id\":11,\"name\":\"Clothing and Apparel\"},{\"id\":12,\"name\":\"Commerce and Shopping\"},{\"id\":13,\"name\":\"Community and Lifestyle\"},{\"id\":14,\"name\":\"Consumer Electronics\"},{\"id\":15,\"name\":\"Consumer Goods\"},{\"id\":16,\"name\":\"Content and Publishing\"},{\"id\":17,\"name\":\"Data and Analytics\"},{\"id\":18,\"name\":\"Design\"},{\"id\":19,\"name\":\"Education\"},{\"id\":20,\"name\":\"Energy\"},{\"id\":21,\"name\":\"Events\"},{\"id\":22,\"name\":\"Food and Beverage\"},{\"id\":23,\"name\":\"Gaming\"},{\"id\":24,\"name\":\"Government and Military\"},{\"id\":25,\"name\":\"Hardware\"},{\"id\":26,\"name\":\"Health Care\"},{\"id\":27,\"name\":\"Information Technology\"},{\"id\":28,\"name\":\"Internet Services\"},{\"id\":29,\"name\":\"Manufacturing\"},{\"id\":30,\"name\":\"Media and Entertainment\"},{\"id\":31,\"name\":\"Messaging and Telecommunications\"},{\"id\":32,\"name\":\"Mobile\"},{\"id\":33,\"name\":\"Music and Audio\"},{\"id\":34,\"name\":\"Natural Resources\"},{\"id\":35,\"name\":\"Navigation and Mapping\"},{\"id\":36,\"name\":\"Other\"},{\"id\":37,\"name\":\"Payments\"},{\"id\":38,\"name\":\"Platforms\"},{\"id\":39,\"name\":\"Privacy and Security\"},{\"id\":40,\"name\":\"Professional Services\"},{\"id\":41,\"name\":\"Real Estate\"},{\"id\":42,\"name\":\"Sales and Marketing\"},{\"id\":43,\"name\":\"Science and Engineering\"},{\"id\":44,\"name\":\"Sports\"},{\"id\":45,\"name\":\"Sustainability\"},{\"id\":46,\"name\":\"Transportation\"},{\"id\":47,\"name\":\"Travel and Tourism\"},{\"id\":48,\"name\":\"Video\"}]}"
+  },
+  {
+   "id": "company_description",
+   "title": "Description",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "employee_count",
+   "title": "No. of employees",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "headquarters_loc",
+   "title": "Headquarters location",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "company_profile",
+   "title": "Company profile",
+   "type": "link",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Companies"
+  }
+ ],
+ "items": [
+  {
+   "id": "8062625579",
+   "name": "Bindeer Inc.",
+   "group": {
+    "id": "topics",
+    "title": "Companies"
+   },
+   "column_values": [
+    {
+     "id": "company_domain",
+     "text": "bindeer.com - https://bindeer.com/",
+     "value": "{\"url\":\"https://bindeer.com/\",\"text\":\"bindeer.com\",\"changed_at\":null}",
+     "column": {
+      "title": "Domain"
+     }
+    },
+    {
+     "id": "account_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "account_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "Medium",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2023-09-26T11:21:03.974Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "industry",
+     "text": "Financial Services",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Industry"
+     }
+    },
+    {
+     "id": "company_description",
+     "text": "Bindeer Inc. is a financial services company that provides a wide range of banking and investing services to individuals and businesses.",
+     "value": "{\"text\":\"Bindeer Inc. is a financial services company that provides a wide range of banking and investing services to individuals and businesses.\",\"changed_at\":\"2023-09-26T11:15:56.931Z\"}",
+     "column": {
+      "title": "Description"
+     }
+    },
+    {
+     "id": "employee_count",
+     "text": "1001-5000",
+     "value": "\"1001-5000\"",
+     "column": {
+      "title": "No. of employees"
+     }
+    },
+    {
+     "id": "headquarters_loc",
+     "text": "Singapore",
+     "value": "\"Singapore\"",
+     "column": {
+      "title": "Headquarters location"
+     }
+    },
+    {
+     "id": "company_profile",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Company profile"
+     }
+    }
+   ]
+  },
+  {
+   "id": "8062625564",
+   "name": "Pear inc",
+   "group": {
+    "id": "topics",
+    "title": "Companies"
+   },
+   "column_values": [
+    {
+     "id": "company_domain",
+     "text": "pear.inc - https://pear.inc/",
+     "value": "{\"url\":\"https://pear.inc/\",\"text\":\"pear.inc\",\"changed_at\":null}",
+     "column": {
+      "title": "Domain"
+     }
+    },
+    {
+     "id": "account_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "account_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "Low",
+     "value": "{\"index\":108,\"post_id\":null,\"changed_at\":\"2023-09-26T11:21:06.155Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "industry",
+     "text": "Software",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Industry"
+     }
+    },
+    {
+     "id": "company_description",
+     "text": "A creative and innovative software company that builds solutions to help people connect virtually with each other.",
+     "value": "{\"text\":\"A creative and innovative software company that builds solutions to help people connect virtually with each other.\",\"changed_at\":\"2023-09-26T11:16:15.546Z\"}",
+     "column": {
+      "title": "Description"
+     }
+    },
+    {
+     "id": "employee_count",
+     "text": "501-1000",
+     "value": "\"501-1000\"",
+     "column": {
+      "title": "No. of employees"
+     }
+    },
+    {
+     "id": "headquarters_loc",
+     "text": "California, USA",
+     "value": "\"California, USA\"",
+     "column": {
+      "title": "Headquarters location"
+     }
+    },
+    {
+     "id": "company_profile",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Company profile"
+     }
+    }
+   ]
+  },
+  {
+   "id": "8062625545",
+   "name": "HSBF",
+   "group": {
+    "id": "topics",
+    "title": "Companies"
+   },
+   "column_values": [
+    {
+     "id": "company_domain",
+     "text": "hsbf.co - https://hsbf.co/",
+     "value": "{\"url\":\"https://hsbf.co/\",\"text\":\"hsbf.co\",\"changed_at\":null}",
+     "column": {
+      "title": "Domain"
+     }
+    },
+    {
+     "id": "account_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "account_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "High",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2021-09-01T14:22:21.502Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "industry",
+     "text": "Lending and Investments",
+     "value": "{\"ids\":[3]}",
+     "column": {
+      "title": "Industry"
+     }
+    },
+    {
+     "id": "company_description",
+     "text": "HSBF is committed to providing its customers with the best possible experience, and offers a variety of ways to bank, including online, mobile, and in-branch.",
+     "value": "{\"text\":\"HSBF is committed to providing its customers with the best possible experience, and offers a variety of ways to bank, including online, mobile, and in-branch.\",\"changed_at\":\"2023-09-26T11:16:07.726Z\"}",
+     "column": {
+      "title": "Description"
+     }
+    },
+    {
+     "id": "employee_count",
+     "text": "10001+",
+     "value": "\"10001+\"",
+     "column": {
+      "title": "No. of employees"
+     }
+    },
+    {
+     "id": "headquarters_loc",
+     "text": "London, UK",
+     "value": "\"London, UK\"",
+     "column": {
+      "title": "Headquarters location"
+     }
+    },
+    {
+     "id": "company_profile",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Company profile"
+     }
+    }
+   ]
+  }
+ ]
+}

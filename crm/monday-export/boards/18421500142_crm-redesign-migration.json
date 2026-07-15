@@ -1,0 +1,2003 @@
+{
+ "board": {
+  "id": "18421500142",
+  "name": "CRM Redesign — Migration",
+  "state": "active",
+  "board_kind": "public",
+  "description": "Execution tracker for the Newman CRM restructure: audit → canonical model → migration/dedupe → client-facing replica workspace → automations → cutover. Groups = phases. Each item is a migration issue with acceptance criteria, owner, estimate.",
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "color_mm55mw11",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "color_mm55dc0p",
+   "title": "Priority",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\",\"3\":\"Medium\",\"4\":\"Critical\",\"6\":\"High\",\"7\":\"Low\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+  },
+  {
+   "id": "multiple_person_mm55csat",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numeric_mm559hdk",
+   "title": "Estimate (days)",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text_mm55t4ts",
+   "title": "Acceptance Criteria",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "text_mm557dzb",
+   "title": "Dependencies",
+   "type": "text",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Group Title"
+  },
+  {
+   "id": "group_mm55yd5q",
+   "title": "P5 · Cutover & Governance"
+  },
+  {
+   "id": "group_mm555zy",
+   "title": "P4 · Automations & Sync"
+  },
+  {
+   "id": "group_mm556q70",
+   "title": "P3 · Replica Workspace & Access"
+  },
+  {
+   "id": "group_mm55281c",
+   "title": "P2 · Migration & Dedupe"
+  },
+  {
+   "id": "group_mm55131w",
+   "title": "P1 · Canonical Model"
+  },
+  {
+   "id": "group_mm55sjmz",
+   "title": "P0 · Audit & Freeze"
+  }
+ ],
+ "items": [
+  {
+   "id": "12505828962",
+   "name": "Governance doc (SSOT map, naming, automation inventory, access matrix)",
+   "group": {
+    "id": "group_mm55yd5q",
+    "title": "P5 · Cutover & Governance"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Single Monday governance doc linked from this board; owners assigned per section.",
+     "value": "{\"text\":\"Single Monday governance doc linked from this board; owners assigned per section.\",\"changed_at\":\"2026-07-11T01:09:04.392Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#11,#26",
+     "value": "\"#11,#26\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505968821",
+   "name": "30-day post-migration review + guest access audit",
+   "group": {
+    "id": "group_mm55yd5q",
+    "title": "P5 · Cutover & Governance"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Low",
+     "value": "{\"index\":7}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "0.5",
+     "value": "\"0.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Review scheduled; guest permissions re-verified; open issues logged back to this board.",
+     "value": "{\"text\":\"Review scheduled; guest permissions re-verified; open issues logged back to this board.\",\"changed_at\":\"2026-07-11T01:09:04.407Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#31 cutover",
+     "value": "\"#31 cutover\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926674",
+   "name": "Cutover: switch users to canonical boards; archive all legacy/dup boards",
+   "group": {
+    "id": "group_mm55yd5q",
+    "title": "P5 · Cutover & Governance"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Legacy/dup boards archived (8062624689, 18402258888, 8062624667, New Balance Archivo, misplaced Accounts); all users & automations on canonical; rollback snapshot retained.",
+     "value": "{\"text\":\"Legacy/dup boards archived (8062624689, 18402258888, 8062624667, New Balance Archivo, misplaced Accounts); all users & automations on canonical; rollback snapshot retained.\",\"changed_at\":\"2026-07-11T01:09:04.393Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "all P2 + P4",
+     "value": "\"all P2 + P4\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505829131",
+   "name": "Build one-way sync master -> replica (safe fields only, no reverse writes)",
+   "group": {
+    "id": "group_mm555zy",
+    "title": "P4 · Automations & Sync"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Item create/status change in master upserts the mirror row in replica within sync window; deletes handled; replica cannot write back to master.",
+     "value": "{\"text\":\"Item create/status change in master upserts the mirror row in replica within sync window; deletes handled; replica cannot write back to master.\",\"changed_at\":\"2026-07-11T01:09:04.402Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#23 replica boards",
+     "value": "\"#23 replica boards\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505969303",
+   "name": "Rebuild required legacy automations on canonical boards (per #3 inventory)",
+   "group": {
+    "id": "group_mm555zy",
+    "title": "P4 · Automations & Sync"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1.5",
+     "value": "\"1.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Kept automations (stage->group moves, date stamps, activity links, Move-to-Contacts) recreated on canonical boards; retired ones turned off.",
+     "value": "{\"text\":\"Kept automations (stage->group moves, date stamps, activity links, Move-to-Contacts) recreated on canonical boards; retired ones turned off.\",\"changed_at\":\"2026-07-11T01:09:04.413Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#3,#16",
+     "value": "\"#3,#16\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505968822",
+   "name": "Sync validation harness (reconcile master vs replica; alert on drift/leakage)",
+   "group": {
+    "id": "group_mm555zy",
+    "title": "P4 · Automations & Sync"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Scheduled check reports count/field mismatches; any internal-field appearing in replica = FAIL alert.",
+     "value": "{\"text\":\"Scheduled check reports count/field mismatches; any internal-field appearing in replica = FAIL alert.\",\"changed_at\":\"2026-07-11T01:09:04.427Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#27 sync",
+     "value": "\"#27 sync\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505828425",
+   "name": "Data-quality guards (block blank stage, require owner, dedupe contact on create)",
+   "group": {
+    "id": "group_mm555zy",
+    "title": "P4 · Automations & Sync"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Automations/validation prevent blank stage and missing owner on new deals; flag duplicate contact on create.",
+     "value": "{\"text\":\"Automations/validation prevent blank stage and missing owner on new deals; flag duplicate contact on create.\",\"changed_at\":\"2026-07-11T01:09:04.476Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#7,#10",
+     "value": "\"#7,#10\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505970036",
+   "name": "Configure salesman row-level permissions (see only their own rows)",
+   "group": {
+    "id": "group_mm556q70",
+    "title": "P3 · Replica Workspace & Access"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Guest salesmen (santiago@, natan@, Mario Vidana) see only rows where they are the Owner; verified with a test guest login.",
+     "value": "{\"text\":\"Guest salesmen (santiago@, natan@, Mario Vidana) see only rows where they are the Owner; verified with a test guest login.\",\"changed_at\":\"2026-07-11T01:09:04.376Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#23,#10",
+     "value": "\"#23,#10\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505829130",
+   "name": "Build replica mirror boards with client-safe columns only (no internal economics)",
+   "group": {
+    "id": "group_mm556q70",
+    "title": "P3 · Replica Workspace & Access"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Replica Deals/Quotes/Projects boards expose only client-safe fields; internal financials (VPN, EPC value, margins, kWp economics) excluded; column list reviewed & signed off.",
+     "value": "{\"text\":\"Replica Deals/Quotes/Projects boards expose only client-safe fields; internal financials (VPN, EPC value, margins, kWp economics) excluded; column list reviewed & signed off.\",\"changed_at\":\"2026-07-11T01:09:04.445Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#22,#6",
+     "value": "\"#22,#6\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505969909",
+   "name": "Create client-facing replica workspace (isolated from master)",
+   "group": {
+    "id": "group_mm556q70",
+    "title": "P3 · Replica Workspace & Access"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "0.5",
+     "value": "\"0.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "New workspace created; master Newman CRM workspace (12151996) is NOT shared to any guest.",
+     "value": "{\"text\":\"New workspace created; master Newman CRM workspace (12151996) is NOT shared to any guest.\",\"changed_at\":\"2026-07-11T01:09:04.443Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "none",
+     "value": "\"none\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505970046",
+   "name": "Access matrix doc (member vs salesman vs client -> board/column/row visibility)",
+   "group": {
+    "id": "group_mm556q70",
+    "title": "P3 · Replica Workspace & Access"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "0.5",
+     "value": "\"0.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Matrix approved; maps 4 members + 9 guests to access level and visible fields.",
+     "value": "{\"text\":\"Matrix approved; maps 4 members + 9 guests to access level and visible fields.\",\"changed_at\":\"2026-07-11T01:09:04.526Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#24,#25",
+     "value": "\"#24,#25\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926755",
+   "name": "Configure client guest access (each client sees only their own project/deal)",
+   "group": {
+    "id": "group_mm556q70",
+    "title": "P3 · Replica Workspace & Access"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Client guest sees only own item(s); cross-client leakage tested negative.",
+     "value": "{\"text\":\"Client guest sees only own item(s); cross-client leakage tested negative.\",\"changed_at\":\"2026-07-11T01:09:04.409Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#23 replica boards",
+     "value": "\"#23 replica boards\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505968880",
+   "name": "Merge stock Deals dup 18402258888 (5 items) into canonical, then archive",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "5 items migrated; board archived.",
+     "value": "{\"text\":\"5 items migrated; board archived.\",\"changed_at\":\"2026-07-11T01:08:28.894Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#13 mapping",
+     "value": "\"#13 mapping\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926717",
+   "name": "Merge stock Deals dup 8062624689 (4 items) into canonical, then archive",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "4 items migrated with stage mapping (New/Discovery/Proposal/Negotiation/Won/Lost -> canonical); board archived.",
+     "value": "{\"text\":\"4 items migrated with stage mapping (New/Discovery/Proposal/Negotiation/Won/Lost -> canonical); board archived.\",\"changed_at\":\"2026-07-11T01:08:28.965Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#13 mapping",
+     "value": "\"#13 mapping\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505844039",
+   "name": "Build staging board + field-mapping sheet (legacy col -> canonical col)",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1.5",
+     "value": "\"1.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Mapping sheet covers all source Deals boards; per-field transforms + stage remaps noted.",
+     "value": "{\"text\":\"Mapping sheet covers all source Deals boards; per-field transforms + stage remaps noted.\",\"changed_at\":\"2026-07-11T01:08:29.063Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6,#7",
+     "value": "\"#6,#7\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505844040",
+   "name": "Relocate/rebuild Accounts into Newman CRM workspace; repoint to canonical Contacts",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Accounts (currently in wrong workspace 14528481, linked to wrong Contacts 18402258886) moved to workspace 12151996 and repointed to canonical Contacts 9913323235; 3 items migrated.",
+     "value": "{\"text\":\"Accounts (currently in wrong workspace 14528481, linked to wrong Contacts 18402258886) moved to workspace 12151996 and repointed to canonical Contacts 9913323235; 3 items migrated.\",\"changed_at\":\"2026-07-11T01:08:29.170Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6 model",
+     "value": "\"#6 model\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505968868",
+   "name": "Reconcile Deals NPA 18402262283 (solar schema) with canonical",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "NPA items + solar schema reconciled into canonical per #1 decision; no orphan solar/EPC data left behind.",
+     "value": "{\"text\":\"NPA items + solar schema reconciled into canonical per #1 decision; no orphan solar/EPC data left behind.\",\"changed_at\":\"2026-07-11T01:08:29.059Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#1,#13",
+     "value": "\"#1,#13\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926511",
+   "name": "Dedupe Contacts (15 items) + enforce email/phone uniqueness",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "No duplicate people; unique email; merge log retained.",
+     "value": "{\"text\":\"No duplicate people; unique email; merge log retained.\",\"changed_at\":\"2026-07-11T01:08:29.389Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6 model",
+     "value": "\"#6 model\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505828091",
+   "name": "Fix broken relations: Quotes bill_to + Deals subitem 'Client Projects'",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "0.5",
+     "value": "\"0.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Both dangling relations (bill_to -> no board; subitem board_relation_mkvn7pfz -> empty boardIds) point to valid boards or are removed.",
+     "value": "{\"text\":\"Both dangling relations (bill_to -> no board; subitem board_relation_mkvn7pfz -> empty boardIds) point to valid boards or are removed.\",\"changed_at\":\"2026-07-11T01:08:29.504Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#12 quotes schema",
+     "value": "\"#12 quotes schema\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505970029",
+   "name": "Merge Leads dup 8062624667 (1 item) into canonical Leads; rewire 'Move to Contacts' button",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Low",
+     "value": "{\"index\":7}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "0.5",
+     "value": "\"0.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "1 lead migrated; button targets canonical Contacts; dup board archived.",
+     "value": "{\"text\":\"1 lead migrated; button targets canonical Contacts; dup board archived.\",\"changed_at\":\"2026-07-11T01:08:29.538Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#13 mapping",
+     "value": "\"#13 mapping\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926354",
+   "name": "Backfill Owner/Salesman on migrated Deals + Leads from historical data",
+   "group": {
+    "id": "group_mm55281c",
+    "title": "P2 · Migration & Dedupe"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Every active deal/lead has an owner set; unknowns flagged for owner review.",
+     "value": "{\"text\":\"Every active deal/lead has an owner set; unknowns flagged for owner review.\",\"changed_at\":\"2026-07-11T01:09:04.428Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#10,#16",
+     "value": "\"#10,#16\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505828104",
+   "name": "Fix Contacts 'Type' overloaded status (split contact-type vs role/tier)",
+   "group": {
+    "id": "group_mm55131w",
+    "title": "P1 · Canonical Model"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Type = contact types only (Lead/Cliente); role/tier (Vendedor/Gerente Regional/Partner) moved to a separate column; blank label removed; language unified.",
+     "value": "{\"text\":\"Type = contact types only (Lead/Cliente); role/tier (Vendedor/Gerente Regional/Partner) moved to a separate column; blank label removed; language unified.\",\"changed_at\":\"2026-07-11T01:08:28.114Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6 model",
+     "value": "\"#6 model\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505970028",
+   "name": "Design Quotes & Invoices schema (connect bill_to; quote->deal relation)",
+   "group": {
+    "id": "group_mm55131w",
+    "title": "P1 · Canonical Model"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "bill_to points to canonical Contacts/Accounts; quote linked to deal; type/status sets confirmed. (bill_to currently targets no board.)",
+     "value": "{\"text\":\"bill_to points to canonical Contacts/Accounts; quote linked to deal; type/status sets confirmed. (bill_to currently targets no board.)\",\"changed_at\":\"2026-07-11T01:08:28.553Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6 model",
+     "value": "\"#6 model\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505969901",
+   "name": "Define canonical entity model + ER diagram (Accounts-Contacts-Leads-Deals-Quotes)",
+   "group": {
+    "id": "group_mm55131w",
+    "title": "P1 · Canonical Model"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "ER diagram + board_relation direction documented; exactly one board per entity named.",
+     "value": "{\"text\":\"ER diagram + board_relation direction documented; exactly one board per entity named.\",\"changed_at\":\"2026-07-11T01:08:28.733Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#1 canonical Deals",
+     "value": "\"#1 canonical Deals\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505968879",
+   "name": "Define naming convention + single-source-of-truth per entity",
+   "group": {
+    "id": "group_mm55131w",
+    "title": "P1 · Canonical Model"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "0.5",
+     "value": "\"0.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Naming doc for boards/columns; SSOT table entity -> authoritative board id.",
+     "value": "{\"text\":\"Naming doc for boards/columns; SSOT table entity -> authoritative board id.\",\"changed_at\":\"2026-07-11T01:08:28.754Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6 model",
+     "value": "\"#6 model\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926510",
+   "name": "Add Owner/Salesman People column to canonical Leads + Deals",
+   "group": {
+    "id": "group_mm55131w",
+    "title": "P1 · Canonical Model"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "People column exists on canonical Leads & Deals (none exists today). Prereq for salesman row-level scoping. Backfill plan defined.",
+     "value": "{\"text\":\"People column exists on canonical Leads & Deals (none exists today). Prereq for salesman row-level scoping. Backfill plan defined.\",\"changed_at\":\"2026-07-11T01:08:28.860Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6 model",
+     "value": "\"#6 model\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926716",
+   "name": "Standardize Deals Stage status (single language, remove blank label)",
+   "group": {
+    "id": "group_mm55131w",
+    "title": "P1 · Canonical Model"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Agreed stage list (e.g. Lead->Earlies->Forwards->Docs->In signing->Closed/Perdido/Stand by); no blank option; EN-or-ES decided.",
+     "value": "{\"text\":\"Agreed stage list (e.g. Lead->Earlies->Forwards->Docs->In signing->Closed/Perdido/Stand by); no blank option; EN-or-ES decided.\",\"changed_at\":\"2026-07-11T01:08:29.004Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#6 model",
+     "value": "\"#6 model\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505844001",
+   "name": "De-duplicate Deals solar columns (kWp x2, VPN x2, EPC) + rename unnamed Formula/Mirror",
+   "group": {
+    "id": "group_mm55131w",
+    "title": "P1 · Canonical Model"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1.5",
+     "value": "\"1.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "One column per metric; every column named; redundant formula/mirror columns removed.",
+     "value": "{\"text\":\"One column per metric; every column named; redundant formula/mirror columns removed.\",\"changed_at\":\"2026-07-11T01:08:29.211Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "#2 col export",
+     "value": "\"#2 col export\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505969900",
+   "name": "Resolve canonical Deals board (9913323254 vs NPA 18402262283 vs 18402258431)",
+   "group": {
+    "id": "group_mm55sjmz",
+    "title": "P0 · Audit & Freeze"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "2",
+     "value": "\"2\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "One board chosen as authoritative Deals with written rationale (169-item 9913323254 has data; NPA has richest solar schema). Other two flagged merge/archive. Contacts mirrors' target board agreed.",
+     "value": "{\"text\":\"One board chosen as authoritative Deals with written rationale (169-item 9913323254 has data; NPA has richest solar schema). Other two flagged merge/archive. Contacts mirrors' target board agreed.\",\"changed_at\":\"2026-07-11T01:08:28.437Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "none",
+     "value": "\"none\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505926457",
+   "name": "Inventory all Deals (16) + Leads (6) automations; tag keep/rebuild/retire",
+   "group": {
+    "id": "group_mm55sjmz",
+    "title": "P0 · Audit & Freeze"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Automation inventory doc: each trigger->action mapped; tagged keep / rebuild-on-canonical / retire.",
+     "value": "{\"text\":\"Automation inventory doc: each trigger->action mapped; tagged keep / rebuild-on-canonical / retire.\",\"changed_at\":\"2026-07-11T01:08:28.725Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "none",
+     "value": "\"none\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505843813",
+   "name": "Full column-level export of Deals 9913323254 via GraphQL",
+   "group": {
+    "id": "group_mm55sjmz",
+    "title": "P0 · Audit & Freeze"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "High",
+     "value": "{\"index\":6}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "get_board_info truncates ~27 of 50+ cols. Export complete column list (ids/types/settings incl deal_owner, deal_account, deal_close_probability) to a doc.",
+     "value": "{\"text\":\"get_board_info truncates ~27 of 50+ cols. Export complete column list (ids/types/settings incl deal_owner, deal_account, deal_close_probability) to a doc.\",\"changed_at\":\"2026-07-11T01:08:28.776Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "none",
+     "value": "\"none\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505844000",
+   "name": "Freeze schema/automation changes on legacy boards during migration",
+   "group": {
+    "id": "group_mm55sjmz",
+    "title": "P0 · Audit & Freeze"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Medium",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "0.5",
+     "value": "\"0.5\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Owners (Jonathan/Mario/Chandel) notified; no new columns/automations on legacy boards until cutover.",
+     "value": "{\"text\":\"Owners (Jonathan/Mario/Chandel) notified; no new columns/automations on legacy boards until cutover.\",\"changed_at\":\"2026-07-11T01:08:28.828Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "none",
+     "value": "\"none\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12505828930",
+   "name": "Snapshot/backup all CRM boards before any change",
+   "group": {
+    "id": "group_mm55sjmz",
+    "title": "P0 · Audit & Freeze"
+   },
+   "column_values": [
+    {
+     "id": "color_mm55mw11",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "color_mm55dc0p",
+     "text": "Critical",
+     "value": "{\"index\":4}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "multiple_person_mm55csat",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "numeric_mm559hdk",
+     "text": "1",
+     "value": "\"1\"",
+     "column": {
+      "title": "Estimate (days)"
+     }
+    },
+    {
+     "id": "long_text_mm55t4ts",
+     "text": "Duplicate copies or CSV exports of Deals/Contacts/Accounts/Leads stored; documented restore path.",
+     "value": "{\"text\":\"Duplicate copies or CSV exports of Deals/Contacts/Accounts/Leads stored; documented restore path.\",\"changed_at\":\"2026-07-11T01:08:28.851Z\"}",
+     "column": {
+      "title": "Acceptance Criteria"
+     }
+    },
+    {
+     "id": "text_mm557dzb",
+     "text": "none",
+     "value": "\"none\"",
+     "column": {
+      "title": "Dependencies"
+     }
+    }
+   ]
+  }
+ ]
+}

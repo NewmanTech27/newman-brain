@@ -1,0 +1,551 @@
+{
+ "board": {
+  "id": "1256760031",
+  "name": "High Level Marketing Plan & Budget",
+  "state": "archived",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "333637",
+   "name": "Comercial"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subitems",
+   "title": "Subitems",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[1256760064]}"
+  },
+  {
+   "id": "person",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "text",
+   "title": "Goal",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status6",
+   "title": "Priority",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":8,\"2\":12,\"7\":106,\"8\":0,\"12\":2,\"106\":7},\"labels\":{\"0\":\"Medium\",\"2\":\"High\",\"7\":\"Low\"},\"labels_positions_v2\":{\"0\":1,\"2\":0,\"5\":3,\"7\":2},\"labels_colors\":{\"0\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"},\"2\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"7\":{\"color\":\"#74afcc\",\"border\":\"#74afcc\",\"var_name\":\"river\"}}}"
+  },
+  {
+   "id": "status",
+   "title": "Type",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":107,\"1\":106,\"2\":108,\"3\":152,\"106\":1,\"107\":0,\"108\":2,\"152\":3},\"labels\":{\"0\":\"Paid Ads\",\"1\":\"Social Campaign\",\"2\":\"Email Campaign\",\"3\":\"Virtual Event\",\"6\":\"Event\",\"101\":\"Brand\",\"103\":\"Content\",\"155\":\"Creative\"},\"labels_positions_v2\":{\"0\":0,\"1\":2,\"2\":1,\"3\":3,\"5\":8,\"6\":5,\"101\":7,\"103\":4,\"155\":6},\"labels_colors\":{\"0\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"1\":{\"color\":\"#74afcc\",\"border\":\"#74afcc\",\"var_name\":\"river\"},\"2\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"3\":{\"color\":\"#bda8f9\",\"border\":\"#bda8f9\",\"var_name\":\"light_magic\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"101\":{\"color\":\"#ff7575\",\"border\":\"#ff7575\",\"var_name\":\"sunset\"},\"103\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"},\"155\":{\"color\":\"#e484bd\",\"border\":\"#e484bd\",\"var_name\":\"kids\"}}}"
+  },
+  {
+   "id": "numbers",
+   "title": "Budget",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numbers_1",
+   "title": "Actual",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "formula",
+   "title": "Remaining Budget",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{numbers}-{numbers_1} \"}"
+  },
+  {
+   "id": "status0",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Completed\",\"2\":\"Stuck\",\"15\":\"Running/Live\"},\"labels_positions_v2\":{\"0\":2,\"1\":1,\"2\":3,\"5\":4,\"15\":0},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"15\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+  },
+  {
+   "id": "timeline",
+   "title": "Timeline",
+   "type": "timeline",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Q1"
+  },
+  {
+   "id": "group_title",
+   "title": "Q2"
+  },
+  {
+   "id": "new_group",
+   "title": "Q3"
+  },
+  {
+   "id": "new_group14125",
+   "title": "Q4"
+  }
+ ],
+ "items": [
+  {
+   "id": "1256760143",
+   "name": "Hi there!   👋   Click here to read about this template  →",
+   "group": {
+    "id": "topics",
+    "title": "Q1"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "text",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Goal"
+     }
+    },
+    {
+     "id": "status6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Budget"
+     }
+    },
+    {
+     "id": "numbers_1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Remaining Budget"
+     }
+    },
+    {
+     "id": "status0",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Timeline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760126",
+   "name": "Winter Clearance Sale",
+   "group": {
+    "id": "topics",
+    "title": "Q1"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Reach monthly target",
+     "value": "\"Reach monthly target\"",
+     "column": {
+      "title": "Goal"
+     }
+    },
+    {
+     "id": "status6",
+     "text": "High",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2021-02-25T13:27:07.676Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Email Campaign",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2021-02-25T09:37:32.832Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "175",
+     "value": "\"175\"",
+     "column": {
+      "title": "Budget"
+     }
+    },
+    {
+     "id": "numbers_1",
+     "text": "54",
+     "value": "\"54\"",
+     "column": {
+      "title": "Actual"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Remaining Budget"
+     }
+    },
+    {
+     "id": "status0",
+     "text": "Running/Live",
+     "value": "{\"index\":15,\"post_id\":null,\"changed_at\":\"2021-02-25T13:36:33.436Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-02-01 - 2021-02-28",
+     "value": "{\"to\":\"2021-02-28\",\"from\":\"2021-02-01\",\"changed_at\":\"2021-02-25T09:32:48.512Z\"}",
+     "column": {
+      "title": "Timeline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760134",
+   "name": "Marketing Best Practices Summit",
+   "group": {
+    "id": "topics",
+    "title": "Q1"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Lead Generation",
+     "value": "\"Lead Generation\"",
+     "column": {
+      "title": "Goal"
+     }
+    },
+    {
+     "id": "status6",
+     "text": "Medium",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-02-25T09:35:32.007Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Event",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2021-02-25T09:37:34.743Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "5000",
+     "value": "\"5000\"",
+     "column": {
+      "title": "Budget"
+     }
+    },
+    {
+     "id": "numbers_1",
+     "text": "5200",
+     "value": "\"5200\"",
+     "column": {
+      "title": "Actual"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Remaining Budget"
+     }
+    },
+    {
+     "id": "status0",
+     "text": "Completed",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2021-02-25T09:35:00.457Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-01-02 - 2021-02-01",
+     "value": "{\"to\":\"2021-02-01\",\"from\":\"2021-01-02\",\"changed_at\":\"2021-02-25T13:45:47.177Z\"}",
+     "column": {
+      "title": "Timeline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760121",
+   "name": "Summer is here campaign",
+   "group": {
+    "id": "group_title",
+    "title": "Q2"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "text",
+     "text": "increase website visits",
+     "value": "\"increase website visits\"",
+     "column": {
+      "title": "Goal"
+     }
+    },
+    {
+     "id": "status6",
+     "text": "Medium",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-02-25T13:36:10.966Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Brand",
+     "value": "{\"index\":101,\"post_id\":null,\"changed_at\":\"2021-02-25T13:35:54.103Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "1000",
+     "value": "\"1000\"",
+     "column": {
+      "title": "Budget"
+     }
+    },
+    {
+     "id": "numbers_1",
+     "text": "1550",
+     "value": "\"1550\"",
+     "column": {
+      "title": "Actual"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Remaining Budget"
+     }
+    },
+    {
+     "id": "status0",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-02-25T13:36:25.488Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-06-01 - 2021-06-30",
+     "value": "{\"to\":\"2021-06-30\",\"from\":\"2021-06-01\",\"changed_at\":\"2021-02-25T09:58:57.417Z\"}",
+     "column": {
+      "title": "Timeline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760138",
+   "name": "30% Summer madness discount",
+   "group": {
+    "id": "group_title",
+    "title": "Q2"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Increase purchases of summer line",
+     "value": "\"Increase purchases of summer line\"",
+     "column": {
+      "title": "Goal"
+     }
+    },
+    {
+     "id": "status6",
+     "text": "Low",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2021-02-25T13:27:17.721Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Paid Ads",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2019-03-01T17:24:57.321Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "500",
+     "value": "\"500\"",
+     "column": {
+      "title": "Budget"
+     }
+    },
+    {
+     "id": "numbers_1",
+     "text": "350",
+     "value": "\"350\"",
+     "column": {
+      "title": "Actual"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Remaining Budget"
+     }
+    },
+    {
+     "id": "status0",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-02-25T13:36:28.261Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-06-01 - 2021-06-30",
+     "value": "{\"to\":\"2021-06-30\",\"from\":\"2021-06-01\",\"changed_at\":\"2021-02-25T09:58:57.417Z\"}",
+     "column": {
+      "title": "Timeline"
+     }
+    }
+   ]
+  }
+ ]
+}

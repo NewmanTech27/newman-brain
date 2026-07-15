@@ -1,0 +1,299 @@
+{
+ "board": {
+  "id": "1567819095",
+  "name": "Contacts",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "Welcome to your contacts board! Here you can store and manage all of your contacts",
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "text",
+   "title": "Company",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "text0",
+   "title": "Title",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Type",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":15,\"1\":4,\"2\":107,\"3\":109,\"4\":7,\"7\":16,\"9\":13,\"13\":0,\"15\":9,\"16\":2,\"107\":3,\"109\":1},\"labels\":{\"0\":\"Lead\",\"1\":\"Customer\",\"2\":\"Vendor\",\"5\":\"\",\"13\":\"Partner\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":3,\"5\":4,\"13\":2},\"labels_colors\":{\"0\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"},\"1\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"2\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"13\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"}}}"
+  },
+  {
+   "id": "status5",
+   "title": "Priority",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"4\":6,\"6\":7,\"7\":19,\"19\":4},\"labels\":{\"6\":\"Medium\",\"7\":\"High\",\"108\":\"Low\"},\"labels_positions_v2\":{\"5\":0,\"6\":2,\"7\":1,\"108\":3},\"labels_colors\":{\"6\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"7\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"108\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"}}}"
+  },
+  {
+   "id": "link_to_deals___leads",
+   "title": "link to Deals",
+   "type": "board_relation",
+   "settings_str": "{\"boardIds\":[],\"boardId\":1567818984}"
+  },
+  {
+   "id": "phone",
+   "title": "Phone",
+   "type": "phone",
+   "settings_str": "{}"
+  },
+  {
+   "id": "email",
+   "title": "Email",
+   "type": "email",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text4",
+   "title": "Notes",
+   "type": "long_text",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Contacts"
+  }
+ ],
+ "items": [
+  {
+   "id": "1567819492",
+   "name": "Phoenix Levy",
+   "group": {
+    "id": "topics",
+    "title": "Contacts"
+   },
+   "column_values": [
+    {
+     "id": "text",
+     "text": "Pear Inc.",
+     "value": "\"Pear Inc.\"",
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "text0",
+     "text": "COO",
+     "value": "\"COO\"",
+     "column": {
+      "title": "Title"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Lead",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "High",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-09-09T14:21:34.017Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "link_to_deals___leads",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Deals"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "13254785698",
+     "value": "{\"phone\":\"13254785698\",\"changed_at\":\"2020-06-04T11:21:09.859Z\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Phoenix@email.com",
+     "value": "{\"text\":\"Phoenix@email.com\",\"email\":\"Phoenix@email.com\",\"changed_at\":\"2021-01-21T09:58:11.675Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Notes"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819486",
+   "name": "Madison Doyle",
+   "group": {
+    "id": "topics",
+    "title": "Contacts"
+   },
+   "column_values": [
+    {
+     "id": "text",
+     "text": "HSBF Corp",
+     "value": "\"HSBF Corp\"",
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "text0",
+     "text": "CEO",
+     "value": "\"CEO\"",
+     "column": {
+      "title": "Title"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Lead",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-10-04T06:12:27.896Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "High",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-09-09T14:21:07.989Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "link_to_deals___leads",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Deals"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "18547220499",
+     "value": "{\"phone\":\"18547220499\",\"changed_at\":\"2020-06-04T11:20:56.137Z\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Madison@email.com",
+     "value": "{\"text\":\"Madison@email.com\",\"email\":\"Madison@email.com\",\"changed_at\":\"2021-01-21T09:58:28.296Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Notes"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819502",
+   "name": "Leilani Krause",
+   "group": {
+    "id": "topics",
+    "title": "Contacts"
+   },
+   "column_values": [
+    {
+     "id": "text",
+     "text": "Moon Inc.",
+     "value": "\"Moon Inc.\"",
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "text0",
+     "text": "CIO",
+     "value": "\"CIO\"",
+     "column": {
+      "title": "Title"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Lead",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-10-04T06:12:29.375Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "Medium",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2020-09-09T14:21:35.590Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "link_to_deals___leads",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Deals"
+     }
+    },
+    {
+     "id": "phone",
+     "text": "13125632541",
+     "value": "{\"phone\":\"13125632541\",\"changed_at\":\"2020-06-07T11:56:05.171Z\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Leilani@email.com",
+     "value": "{\"text\":\"Leilani@email.com\",\"email\":\"Leilani@email.com\",\"changed_at\":\"2021-01-21T09:58:35.350Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Notes"
+     }
+    }
+   ]
+  }
+ ]
+}

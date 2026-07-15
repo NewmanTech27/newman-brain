@@ -1,0 +1,53 @@
+{
+ "board": {
+  "id": "18406603793",
+  "name": "MCP getting started",
+  "state": "active",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "12151996",
+   "name": "Newman CRM"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "files",
+   "title": "Files",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Group Title"
+  }
+ ],
+ "items": [
+  {
+   "id": "11641030528",
+   "name": "Doc Comments",
+   "group": {
+    "id": "topics",
+    "title": "Group Title"
+   },
+   "column_values": [
+    {
+     "id": "files",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/2868311652/image-from-clipboard.png",
+     "value": "{\"files\":[{\"name\":\"image-from-clipboard.png\",\"assetId\":2868311652,\"isImage\":\"true\",\"fileType\":\"ASSET\",\"createdAt\":1747754520081,\"createdBy\":\"30506958\"}]}",
+     "column": {
+      "title": "Files"
+     }
+    }
+   ]
+  }
+ ]
+}

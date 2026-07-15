@@ -1,0 +1,9931 @@
+{
+ "board": {
+  "id": "2734666183",
+  "name": "Proyectos Chedraui",
+  "state": "archived",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subelementos",
+   "title": "Subelementos",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[2734680085]}"
+  },
+  {
+   "id": "nombre",
+   "title": "NOMBRE",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "potencia",
+   "title": "POTENCIA",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "n_meros",
+   "title": "kWP",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "estado",
+   "title": "ESTADO",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":153,\"108\":110,\"109\":108,\"110\":0,\"153\":155,\"155\":109},\"labels\":{\"0\":\"Jalisco\",\"1\":\"Durango\",\"2\":\"Nayarit\",\"3\":\"Zacatecas\",\"4\":\"Michoacan\",\"5\":\"\",\"6\":\"Guanajuato\",\"7\":\"Aguascalientes\",\"8\":\"San Luis Potosi\",\"9\":\"Queretaro\",\"10\":\"CDMX\",\"11\":\"CDMX\",\"12\":\"Estado de Mexico\",\"13\":\"Guerrero\",\"14\":\"Nuevo Leon\",\"15\":\"Tamaulipas\"},\"labels_colors\":{\"0\":{\"color\":\"#216edf\",\"border\":\"#216edf\",\"var_name\":\"sky\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"8\":{\"color\":\"#cab641\",\"border\":\"#c0ab31\",\"var_name\":\"mustered\"},\"9\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"10\":{\"color\":\"#333333\",\"border\":\"#000\",\"var_name\":\"soft-black\"},\"11\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"13\":{\"color\":\"#ff5ac4\",\"border\":\"#e04fac\",\"var_name\":\"light-pink\"},\"14\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"},\"15\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+  },
+  {
+   "id": "rpu",
+   "title": "RPU",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "personas",
+   "title": "Personas",
+   "type": "people",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "estado0",
+   "title": "Proyecto",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"2\":11,\"3\":7,\"7\":160,\"11\":2,\"12\":106,\"106\":3,\"160\":12},\"labels\":{\"0\":\"En Ejecución\",\"1\":\"Terminado\",\"2\":\"Stuck\",\"3\":\"Programado\",\"5\":\"\",\"19\":\"\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":3,\"3\":5,\"5\":4,\"19\":2},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"3\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"19\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"}}}"
+  },
+  {
+   "id": "progreso",
+   "title": "Progreso",
+   "type": "progress",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Bloque I"
+  },
+  {
+   "id": "grupo_nuevo",
+   "title": "Bloque II"
+  },
+  {
+   "id": "grupo_nuevo29621",
+   "title": "Bloque III"
+  }
+ ],
+ "items": [
+  {
+   "id": "2734666199",
+   "name": "JAL76",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI TLAJOMULCO",
+     "value": "\"CHEDRAUI TLAJOMULCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "435111007434",
+     "value": "\"435111007434\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "Programado",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2022-05-30T14:46:42.312Z\"}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666210",
+   "name": "JAL77",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Tlajomulco",
+     "value": "\"Tlajomulco\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "435120712981",
+     "value": "\"435120712981\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "En Ejecución",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2022-05-30T19:14:46.912Z\"}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666222",
+   "name": "JAL78",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI GUADALAJARA FEDERALISMO",
+     "value": "\"CHEDRAUI GUADALAJARA FEDERALISMO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "506100806593",
+     "value": "\"506100806593\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "Terminado",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2022-05-30T19:14:48.152Z\"}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666232",
+   "name": "JAL79",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI GUADALAJARA LOMAS TONALA",
+     "value": "\"CHEDRAUI GUADALAJARA LOMAS TONALA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "437951007535",
+     "value": "\"437951007535\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2022-05-30T21:14:30.144Z\"}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666244",
+   "name": "JAL80",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Guadalajara Avila Camacho",
+     "value": "\"Guadalajara Avila Camacho\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "441120904007",
+     "value": "\"441120904007\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "Stuck",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2022-05-30T19:14:52.373Z\"}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666252",
+   "name": "JAL81",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO GDL ACUEDUCTO",
+     "value": "\"CHEDRAUI SELECTO GDL ACUEDUCTO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "153.36",
+     "value": "\"153.36\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "441950808558",
+     "value": "\"441950808558\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666373",
+   "name": "JAL82",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "GUADALAJARA",
+     "value": "\"GUADALAJARA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "153.36",
+     "value": "\"153.36\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "507130505748",
+     "value": "\"507130505748\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666380",
+   "name": "JAL83",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Guadalajara Lomas",
+     "value": "\"Guadalajara Lomas\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "153.36",
+     "value": "\"153.36\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "437951104158",
+     "value": "\"437951104158\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666385",
+   "name": "JAL84",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI GUADALAJARA COLON",
+     "value": "\"CHEDRAUI GUADALAJARA COLON\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "328.86",
+     "value": "\"328.86\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "508120903598",
+     "value": "\"508120903598\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666391",
+   "name": "JAL85",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI PUERTO VALLARTA",
+     "value": "\"CHEDRAUI PUERTO VALLARTA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "494200803640",
+     "value": "\"494200803640\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666397",
+   "name": "JAL86",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO GDL PLAZA MÉXICO",
+     "value": "\"CHEDRAUI SELECTO GDL PLAZA MÉXICO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Jalisco",
+     "value": "{\"index\":0,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "504190706549",
+     "value": "\"504190706549\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666400",
+   "name": "AGS01",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI DURANGO FRANCISCO VILLA",
+     "value": "\"CHEDRAUI DURANGO FRANCISCO VILLA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Durango",
+     "value": "{\"index\":1,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "626181201033",
+     "value": "\"626181201033\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666404",
+   "name": "AGS02",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI DURANGO NAZAS",
+     "value": "\"CHEDRAUI DURANGO NAZAS\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Durango",
+     "value": "{\"index\":1,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "626170903664",
+     "value": "\"626170903664\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666410",
+   "name": "AGS03",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Durango",
+     "value": "\"Durango\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "32.4",
+     "value": "\"32.4\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Durango",
+     "value": "{\"index\":1,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "645141105486",
+     "value": "\"645141105486\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666418",
+   "name": "AGS04",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI DURANGO EL REFUGIO",
+     "value": "\"CHEDRAUI DURANGO EL REFUGIO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "153.36",
+     "value": "\"153.36\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Durango",
+     "value": "{\"index\":1,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "624110200203",
+     "value": "\"624110200203\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666421",
+   "name": "CDMX05",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI BUCERIAS",
+     "value": "\"CHEDRAUI BUCERIAS\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Nayarit",
+     "value": "{\"index\":2,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "510160702280",
+     "value": "\"510160702280\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666426",
+   "name": "CDMX06",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI NUEVO VALLARTA",
+     "value": "\"CHEDRAUI NUEVO VALLARTA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "153.36",
+     "value": "\"153.36\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Nayarit",
+     "value": "{\"index\":2,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "510111102757",
+     "value": "\"510111102757\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666430",
+   "name": "CDMX07",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Tepic",
+     "value": "\"Tepic\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "10.8",
+     "value": "\"10.8\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Nayarit",
+     "value": "{\"index\":2,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "487191004929",
+     "value": "\"487191004929\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666434",
+   "name": "CDMX08",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI TEPIC NAYARIT",
+     "value": "\"CHEDRAUI TEPIC NAYARIT\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Nayarit",
+     "value": "{\"index\":2,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "487100901583",
+     "value": "\"487100901583\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666437",
+   "name": "CDMX09",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI FRESNILLO PLATEROS",
+     "value": "\"CHEDRAUI FRESNILLO PLATEROS\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Zacatecas",
+     "value": "{\"index\":3,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "112111103367",
+     "value": "\"112111103367\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666201",
+   "name": "CDMX10",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Aguasc Colosio",
+     "value": "\"Aguasc Colosio\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Aguascalientes",
+     "value": "{\"index\":7,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "098201157013",
+     "value": "\"098201157013\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666219",
+   "name": "CDMX11",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Aguascalientes",
+     "value": "\"Aguascalientes\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Aguascalientes",
+     "value": "{\"index\":7,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "096120203638",
+     "value": "\"096120203638\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666228",
+   "name": "CDMX12",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI AGUASCALIENTES ASUNCIÓN",
+     "value": "\"CHEDRAUI AGUASCALIENTES ASUNCIÓN\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Aguascalientes",
+     "value": "{\"index\":7,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "096030454011",
+     "value": "\"096030454011\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666241",
+   "name": "CDMX13",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO AGUASCALIENTES COLOSIO",
+     "value": "\"CHEDRAUI SELECTO AGUASCALIENTES COLOSIO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Aguascalientes",
+     "value": "{\"index\":7,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "098200755600",
+     "value": "\"098200755600\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666262",
+   "name": "CDMX14",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MORELIA CENTRO",
+     "value": "\"CHEDRAUI MORELIA CENTRO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Michoacan",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "155010701892",
+     "value": "\"155010701892\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666271",
+   "name": "CDMX15",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MORELIA LA HUERTA",
+     "value": "\"CHEDRAUI MORELIA LA HUERTA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "372.60",
+     "value": "\"372.60\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Michoacan",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "156120800108",
+     "value": "\"156120800108\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666289",
+   "name": "CDMX16",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHE ZITACUARO",
+     "value": "\"SUPER CHE ZITACUARO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Michoacan",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "161150103332",
+     "value": "\"161150103332\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666294",
+   "name": "CDMX17",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "MORELIA ALTOZANO",
+     "value": "\"MORELIA ALTOZANO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Michoacan",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "202201002348",
+     "value": "\"202201002348\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666304",
+   "name": "CDMX18",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI CELAYA",
+     "value": "\"CHEDRAUI CELAYA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "065090706050",
+     "value": "\"065090706050\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666317",
+   "name": "CDMX19",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI GUANAJUATO",
+     "value": "\"CHEDRAUI GUANAJUATO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "056190851350",
+     "value": "\"056190851350\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666324",
+   "name": "CDMX20",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI LEON CAMPESTRE",
+     "value": "\"CHEDRAUI LEON CAMPESTRE\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "062950258174",
+     "value": "\"062950258174\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666333",
+   "name": "CDMX21",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI LEON SAN JUAN BOSCO",
+     "value": "\"CHEDRAUI LEON SAN JUAN BOSCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "063110805511",
+     "value": "\"063110805511\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666342",
+   "name": "CDMX22",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI LEON TORRES",
+     "value": "\"CHEDRAUI LEON TORRES\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "061991153062",
+     "value": "\"061991153062\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666360",
+   "name": "CDMX23",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Leon Torres Landa",
+     "value": "\"Leon Torres Landa\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "061991153071",
+     "value": "\"061991153071\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666369",
+   "name": "CDMX24",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI SAN LUIS DE LA PAZ",
+     "value": "\"SUPER CHEDRAUI SAN LUIS DE LA PAZ\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "083100900273",
+     "value": "\"083100900273\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666376",
+   "name": "CDMX25",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Leon Poliforum",
+     "value": "\"Leon Poliforum\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guanajuato",
+     "value": "{\"index\":6,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "061040855342",
+     "value": "\"061040855342\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666384",
+   "name": "CDMX26",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Cd Valles",
+     "value": "\"Cd Valles\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "15.12",
+     "value": "\"15.12\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "San Luis Potosi",
+     "value": "{\"index\":8,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "940950504342",
+     "value": "\"940950504342\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666390",
+   "name": "CDMX27",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI CIUDAD VALLES CUAUHTEMOC",
+     "value": "\"CHEDRAUI CIUDAD VALLES CUAUHTEMOC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "262.98",
+     "value": "\"262.98\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "San Luis Potosi",
+     "value": "{\"index\":8,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "963941002491",
+     "value": "\"963941002491\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666408",
+   "name": "CDMX28",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI S.L.P. SOLEDAD DE GRACIANO",
+     "value": "\"CHEDRAUI S.L.P. SOLEDAD DE GRACIANO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "306.72",
+     "value": "\"306.72\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "San Luis Potosi",
+     "value": "{\"index\":8,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "930150901763",
+     "value": "\"930150901763\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666416",
+   "name": "CDMX29",
+   "group": {
+    "id": "topics",
+    "title": "Bloque I"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SAN LUIS POTOSI EL DORADO",
+     "value": "\"CHEDRAUI SAN LUIS POTOSI EL DORADO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "153.36",
+     "value": "\"153.36\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "San Luis Potosi",
+     "value": "{\"index\":8,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "961970400371",
+     "value": "\"961970400371\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666200",
+   "name": "CDMX30",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI QRO. BERNARDO QUINTANA",
+     "value": "\"CHEDRAUI QRO. BERNARDO QUINTANA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "077030901706",
+     "value": "\"077030901706\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666208",
+   "name": "CDMX31",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI QUERETARO CANDILES",
+     "value": "\"CHEDRAUI QUERETARO CANDILES\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "080071203470",
+     "value": "\"080071203470\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666217",
+   "name": "CDMX32",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SAN JUAN DEL RIO CENTRO",
+     "value": "\"CHEDRAUI SAN JUAN DEL RIO CENTRO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "044071006783",
+     "value": "\"044071006783\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666239",
+   "name": "CDMX33",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO JURIQUILLA",
+     "value": "\"CHEDRAUI SELECTO JURIQUILLA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "081181158131",
+     "value": "\"081181158131\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666251",
+   "name": "DGO34",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "San Juan del Rio",
+     "value": "\"San Juan del Rio\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "25.92",
+     "value": "\"25.92\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "044071007551",
+     "value": "\"044071007551\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666374",
+   "name": "DGO35",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "QUERÉTARO CENTRO SUR",
+     "value": "\"QUERÉTARO CENTRO SUR\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "80211002542",
+     "value": "\"80211002542\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666382",
+   "name": "DGO36",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Queretaro 1",
+     "value": "\"Queretaro 1\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "38.88",
+     "value": "\"38.88\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "080211003280",
+     "value": "\"080211003280\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666389",
+   "name": "DGO37",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI PASEO QUERÉTARO",
+     "value": "\"CHEDRAUI PASEO QUERÉTARO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Queretaro",
+     "value": "{\"index\":9,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "081180860011",
+     "value": "\"081180860011\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666405",
+   "name": "EMX38",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO AJUSCO",
+     "value": "\"CHEDRAUI MEXICO AJUSCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "965070605037",
+     "value": "\"965070605037\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666412",
+   "name": "EMX39",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MÉXICO ARAGÓN NORTE",
+     "value": "\"CHEDRAUI MÉXICO ARAGÓN NORTE\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "574201201515",
+     "value": "\"574201201515\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666419",
+   "name": "EMX40",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO CHURUBUSCO",
+     "value": "\"CHEDRAUI MEXICO CHURUBUSCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "986130701127",
+     "value": "\"986130701127\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666424",
+   "name": "EMX41",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO COPILCO",
+     "value": "\"CHEDRAUI MEXICO COPILCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "306.72",
+     "value": "\"306.72\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "965121003061",
+     "value": "\"965121003061\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666427",
+   "name": "EMX42",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO CUAJIMALPA FRONDOSO",
+     "value": "\"CHEDRAUI MEXICO CUAJIMALPA FRONDOSO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "197.10",
+     "value": "\"197.10\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "335170100095",
+     "value": "\"335170100095\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666432",
+   "name": "EMX43",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO PLAZA AMERICAS",
+     "value": "\"CHEDRAUI MEXICO PLAZA AMERICAS\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "197.10",
+     "value": "\"197.10\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "298120900969",
+     "value": "\"298120900969\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666436",
+   "name": "EMX44",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO TENAYUCA",
+     "value": "\"CHEDRAUI MEXICO TENAYUCA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "576070604000",
+     "value": "\"576070604000\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666440",
+   "name": "EMX45",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO TULYEHUALCO",
+     "value": "\"CHEDRAUI MEXICO TULYEHUALCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "197.10",
+     "value": "\"197.10\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "996151201243",
+     "value": "\"996151201243\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666444",
+   "name": "EMX46",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO XOCHIMILCO",
+     "value": "\"CHEDRAUI MEXICO XOCHIMILCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "306.72",
+     "value": "\"306.72\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "142131201558",
+     "value": "\"142131201558\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666447",
+   "name": "EMX47",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO ZARAGOZA",
+     "value": "\"CHEDRAUI MEXICO ZARAGOZA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "262.98",
+     "value": "\"262.98\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "991131001076",
+     "value": "\"991131001076\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666451",
+   "name": "EMX48",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO MEXICO POLANCO",
+     "value": "\"CHEDRAUI SELECTO MEXICO POLANCO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "974070603653",
+     "value": "\"974070603653\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666455",
+   "name": "EMX49",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO MEXICO SANTA FE",
+     "value": "\"CHEDRAUI SELECTO MEXICO SANTA FE\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "372.60",
+     "value": "\"372.60\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "141131102235",
+     "value": "\"141131102235\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666204",
+   "name": "EMX50",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO MEXICO TOREO",
+     "value": "\"CHEDRAUI SELECTO MEXICO TOREO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "328.86",
+     "value": "\"328.86\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "300150601618",
+     "value": "\"300150601618\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666212",
+   "name": "EMX51",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Coapa",
+     "value": "\"Coapa\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "965971004431",
+     "value": "\"965971004431\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666221",
+   "name": "EMX52",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Polanco",
+     "value": "\"Polanco\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "974990200828",
+     "value": "\"974990200828\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666234",
+   "name": "EMX53",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHE MEX. REFORMA PERALVILLO",
+     "value": "\"SUPER CHE MEX. REFORMA PERALVILLO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "",
+     "value": "\"\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666243",
+   "name": "EMX54",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHE MEXICO CUAUTEPEC",
+     "value": "\"SUPER CHE MEXICO CUAUTEPEC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "574131201695",
+     "value": "\"574131201695\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666253",
+   "name": "EMX55",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI AGRICOLA ORIENTAL",
+     "value": "\"SUPER CHEDRAUI AGRICOLA ORIENTAL\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "990160603691",
+     "value": "\"990160603691\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666286",
+   "name": "GTO56",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Universidad",
+     "value": "\"Universidad\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "968010702857",
+     "value": "\"968010702857\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666309",
+   "name": "GTO57",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO MEXICO FORTUNA",
+     "value": "\"CHEDRAUI SELECTO MEXICO FORTUNA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "573181100052",
+     "value": "\"573181100052\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666316",
+   "name": "GTO58",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO VISTA NORTE",
+     "value": "\"CHEDRAUI MEXICO VISTA NORTE\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "982180701351",
+     "value": "\"982180701351\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666322",
+   "name": "GTO59",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO TEZONTLE IZTAPALAPA",
+     "value": "\"SUPERCITO TEZONTLE IZTAPALAPA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "137180731135",
+     "value": "\"137180731135\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666330",
+   "name": "GTO60",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO MEXICO EJE 4 NORTE",
+     "value": "\"SUPERCITO MEXICO EJE 4 NORTE\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "995171200727",
+     "value": "\"995171200727\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666346",
+   "name": "GTO61",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO MEXICO MANUEL SALAZAR",
+     "value": "\"SUPERCITO MEXICO MANUEL SALAZAR\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "571190405220",
+     "value": "\"571190405220\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666353",
+   "name": "GTO62",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO MORELOS VENUSTIANO CARRANZA",
+     "value": "\"SUPERCITO MORELOS VENUSTIANO CARRANZA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "980190700016",
+     "value": "\"980190700016\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666363",
+   "name": "GTO63",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO MÉXICO LA PRADERA",
+     "value": "\"SUPERCITO MÉXICO LA PRADERA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "574181200681",
+     "value": "\"574181200681\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666371",
+   "name": "GRO64",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO IZTAPALAPA",
+     "value": "\"CHEDRAUI MEXICO IZTAPALAPA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "147081005177",
+     "value": "\"147081005177\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666378",
+   "name": "GRO65",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO TEPEYAC",
+     "value": "\"CHEDRAUI MEXICO TEPEYAC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "973171001127",
+     "value": "\"973171001127\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666387",
+   "name": "GRO66",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO MÉXICO NICOLÁS SAN JUAN",
+     "value": "\"SUPERCITO MÉXICO NICOLÁS SAN JUAN\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "23.76",
+     "value": "\"23.76\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "CDMX",
+     "value": "{\"index\":10,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "969180901036",
+     "value": "\"969180901036\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666392",
+   "name": "GRO67",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO MUNDO E",
+     "value": "\"CHEDRAUI MEXICO MUNDO E\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "23.76",
+     "value": "\"23.76\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "965070604952",
+     "value": "\"965070604952\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666396",
+   "name": "GRO68",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO NEZA ESTADIO",
+     "value": "\"CHEDRAUI MEXICO NEZA ESTADIO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "19.44",
+     "value": "\"19.44\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "147070604982",
+     "value": "\"147070604982\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666402",
+   "name": "GRO69",
+   "group": {
+    "id": "grupo_nuevo",
+    "title": "Bloque II"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO NICOLAS ROMERO",
+     "value": "\"CHEDRAUI MEXICO NICOLAS ROMERO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "567091101351",
+     "value": "\"567091101351\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666202",
+   "name": "GRO70",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MEXICO OJO DE AGUA",
+     "value": "\"CHEDRAUI MEXICO OJO DE AGUA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "511090103398",
+     "value": "\"511090103398\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666214",
+   "name": "GRO71",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Neza II",
+     "value": "\"Neza II\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "34.56",
+     "value": "\"34.56\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "985111000286",
+     "value": "\"985111000286\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666225",
+   "name": "GRO72",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHE CAPULHUAC",
+     "value": "\"SUPER CHE CAPULHUAC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "219.24",
+     "value": "\"219.24\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "339190402603",
+     "value": "\"339190402603\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666236",
+   "name": "GRO73",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI MEXICO NAUCALPAN",
+     "value": "\"SUPER CHEDRAUI MEXICO NAUCALPAN\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "219.24",
+     "value": "\"219.24\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "571200904289",
+     "value": "\"571200904289\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666246",
+   "name": "GRO74",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI SELECTO INTERLOMAS HILLS",
+     "value": "\"SUPER CHEDRAUI SELECTO INTERLOMAS HILLS\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "300190800907",
+     "value": "\"300190800907\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666266",
+   "name": "GRO75",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO JUVENTINO ROSAS",
+     "value": "\"SUPERCITO JUVENTINO ROSAS\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "573180203567",
+     "value": "\"573180203567\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666274",
+   "name": "MICH87",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO LA PRESA TLALNEPANTLA",
+     "value": "\"SUPERCITO LA PRESA TLALNEPANTLA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "573200302516",
+     "value": "\"573200302516\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666280",
+   "name": "MICH88",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO MEXICO VILLA DE LAS FLORES",
+     "value": "\"SUPERCITO MEXICO VILLA DE LAS FLORES\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "518181006136",
+     "value": "\"518181006136\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666285",
+   "name": "MICH89",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI TOLUCA METEPEC",
+     "value": "\"CHEDRAUI TOLUCA METEPEC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "337070600026",
+     "value": "\"337070600026\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666291",
+   "name": "MICH90",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "MEXICO",
+     "value": "\"MEXICO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "517071201883",
+     "value": "\"517071201883\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666296",
+   "name": "NAY91",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO VALLE DEL JUCAR",
+     "value": "\"SUPERCITO VALLE DEL JUCAR\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "575170401690",
+     "value": "\"575170401690\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666303",
+   "name": "NAY92",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO VALLE ALTO",
+     "value": "\"SUPERCITO VALLE ALTO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "574170700852",
+     "value": "\"574170700852\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666313",
+   "name": "NAY93",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO HANK GONZALEZ ECATEPEC",
+     "value": "\"SUPERCITO HANK GONZALEZ ECATEPEC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "515170800061",
+     "value": "\"515170800061\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666320",
+   "name": "NAY94",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPERCITO MÉXICO JUAREZ NEZA",
+     "value": "\"SUPERCITO MÉXICO JUAREZ NEZA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "991190601052",
+     "value": "\"991190601052\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666327",
+   "name": "NL95",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHE ENCUENTRO TLALNEPANTLA",
+     "value": "\"SUPER CHE ENCUENTRO TLALNEPANTLA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "219.24",
+     "value": "\"219.24\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Estado de Mexico",
+     "value": "{\"index\":12,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "573181201045",
+     "value": "\"573181201045\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666336",
+   "name": "QRO96",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Acapulco Pie de la Cuesta",
+     "value": "\"Acapulco Pie de la Cuesta\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "262.98",
+     "value": "\"262.98\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\":13,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "329031200301",
+     "value": "\"329031200301\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666343",
+   "name": "QRO97",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI ACAPULCO COSTERA",
+     "value": "\"CHEDRAUI ACAPULCO COSTERA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\":13,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "320210456508",
+     "value": "\"320210456508\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666350",
+   "name": "QRO98",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI ACAPULCO PIE DE LA CUESTA",
+     "value": "\"CHEDRAUI ACAPULCO PIE DE LA CUESTA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "219.24",
+     "value": "\"219.24\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\":13,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "329031100579",
+     "value": "\"329031100579\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666359",
+   "name": "QRO99",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI SELECTO ACAPULCO DIAMANTE",
+     "value": "\"CHEDRAUI SELECTO ACAPULCO DIAMANTE\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\":13,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "320110803308",
+     "value": "\"320110803308\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666367",
+   "name": "QRO100",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHE ACAPULCO CENTRO",
+     "value": "\"SUPER CHE ACAPULCO CENTRO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "153.36",
+     "value": "\"153.36\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\":13,\"post_id\":null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "320031200703",
+     "value": "\"320031200703\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666203",
+   "name": "QRO101",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI ATOYAC",
+     "value": "\"SUPER CHEDRAUI ATOYAC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\": 13, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "323080600848",
+     "value": "\"323080600848\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666209",
+   "name": "QRO102",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI CHILAPA",
+     "value": "\"SUPER CHEDRAUI CHILAPA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\": 13, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "277080711737",
+     "value": "\"277080711737\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666218",
+   "name": "SLP103",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI OMETEPEC",
+     "value": "\"SUPER CHEDRAUI OMETEPEC\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\": 13, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "328081101561",
+     "value": "\"328081101561\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666227",
+   "name": "SLP104",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI TAXCO GUERRERO",
+     "value": "\"SUPER CHEDRAUI TAXCO GUERRERO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\": 13, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "293070179609",
+     "value": "\"293070179609\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666238",
+   "name": "SLP105",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI TELOLOAPAN",
+     "value": "\"SUPER CHEDRAUI TELOLOAPAN\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "87.48",
+     "value": "\"87.48\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\": 13, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "284080300059",
+     "value": "\"284080300059\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666249",
+   "name": "SLP106",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHEDRAUI TLAPA DE COMONFORT",
+     "value": "\"SUPER CHEDRAUI TLAPA DE COMONFORT\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\": 13, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "280080810426",
+     "value": "\"280080810426\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666258",
+   "name": "TAM107",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI ACAPULCO CAYACO",
+     "value": "\"CHEDRAUI ACAPULCO CAYACO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "109.62",
+     "value": "\"109.62\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Guerrero",
+     "value": "{\"index\": 13, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "320110701394",
+     "value": "\"320110701394\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666263",
+   "name": "TAM108",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "MONTERREY",
+     "value": "\"MONTERREY\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "38.88",
+     "value": "\"38.88\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Nuevo Leon",
+     "value": "{\"index\": 14, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "407031002748",
+     "value": "\"407031002748\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666270",
+   "name": "TAM109",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MATAMOROS DEL NIÑO",
+     "value": "\"CHEDRAUI MATAMOROS DEL NIÑO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "404021007432",
+     "value": "\"404021007432\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666279",
+   "name": "TAM110",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI MATAMOROS SEXTA",
+     "value": "\"CHEDRAUI MATAMOROS SEXTA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "328.86",
+     "value": "\"328.86\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "404980404921",
+     "value": "\"404980404921\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666283",
+   "name": "TAM111",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI NUEVO LAREDO AQUILES SERD",
+     "value": "\"CHEDRAUI NUEVO LAREDO AQUILES SERD\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "372.60",
+     "value": "\"372.60\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "384030800390",
+     "value": "\"384030800390\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666288",
+   "name": "TAM112",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI NUEVO LAREDO HIPODROMO",
+     "value": "\"CHEDRAUI NUEVO LAREDO HIPODROMO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "372.6",
+     "value": "\"372.6\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "384100703532",
+     "value": "\"384100703532\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666292",
+   "name": "TAM113",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI TAMPICO ALTAMIRA",
+     "value": "\"CHEDRAUI TAMPICO ALTAMIRA\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "482.22",
+     "value": "\"482.22\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "956130904269",
+     "value": "\"956130904269\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666300",
+   "name": "TAM114",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI TAMPICO ANDONEGUI",
+     "value": "\"CHEDRAUI TAMPICO ANDONEGUI\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "306.72",
+     "value": "\"306.72\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "957980400037",
+     "value": "\"957980400037\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666308",
+   "name": "TAM115",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI TAMPICO CRYSTAL",
+     "value": "\"CHEDRAUI TAMPICO CRYSTAL\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "262.98",
+     "value": "\"262.98\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "957920400011",
+     "value": "\"957920400011\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666315",
+   "name": "TAM116",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "CHEDRAUI TAMPICO MADERO",
+     "value": "\"CHEDRAUI TAMPICO MADERO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "262.98",
+     "value": "\"262.98\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "957960700026",
+     "value": "\"957960700026\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666321",
+   "name": "TAM117",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Matamoros",
+     "value": "\"Matamoros\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "404020609129",
+     "value": "\"404020609129\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666329",
+   "name": "TAM118",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "SUPER CHE TAMPICO CENTRO",
+     "value": "\"SUPER CHE TAMPICO CENTRO\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "197.1",
+     "value": "\"197.1\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "956150102754",
+     "value": "\"956150102754\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666335",
+   "name": "ZAC119",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Tampico",
+     "value": "\"Tampico\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "957890813332",
+     "value": "\"957890813332\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2734666341",
+   "name": "QRO103",
+   "group": {
+    "id": "grupo_nuevo29621",
+    "title": "Bloque III"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "nombre",
+     "text": "Tampico A",
+     "value": "\"Tampico A\"",
+     "column": {
+      "title": "NOMBRE"
+     }
+    },
+    {
+     "id": "potencia",
+     "text": "43.74",
+     "value": "\"43.74\"",
+     "column": {
+      "title": "POTENCIA"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWP"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Tamaulipas",
+     "value": "{\"index\": 15, \"post_id\": null}",
+     "column": {
+      "title": "ESTADO"
+     }
+    },
+    {
+     "id": "rpu",
+     "text": "957070200204",
+     "value": "\"957070200204\"",
+     "column": {
+      "title": "RPU"
+     }
+    },
+    {
+     "id": "personas",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Personas"
+     }
+    },
+    {
+     "id": "estado0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,335 @@
+{
+ "board": {
+  "id": "2734680085",
+  "name": "Subelementos de Proyectos Chedraui",
+  "state": "archived",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "person",
+   "title": "Lider Proyecto",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "date0",
+   "title": "Visita Tecnica",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Visita Tecnica",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "calculo",
+   "title": "Calculo",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Programado\",\"1\":\"Done\"},\"labels_positions_v2\":{\"0\":2,\"1\":0,\"5\":1},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"}}}"
+  },
+  {
+   "id": "estado",
+   "title": "Estado",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":19,\"9\":9,\"15\":0,\"19\":15},\"labels\":{\"0\":\"En modificación\",\"1\":\"Listo\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "progreso",
+   "title": "Progreso",
+   "type": "progress",
+   "settings_str": "{}"
+  },
+  {
+   "id": "archivo",
+   "title": "KickOff-Post VT",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "casilla_de_verificaci_n",
+   "title": "Planos",
+   "type": "checkbox",
+   "settings_str": "{}"
+  },
+  {
+   "id": "casilla_de_verificaci_n7",
+   "title": "Ingenierias",
+   "type": "checkbox",
+   "settings_str": "{}"
+  },
+  {
+   "id": "casilla_de_verificaci_n1",
+   "title": "Cotizacion",
+   "type": "checkbox",
+   "settings_str": "{}"
+  },
+  {
+   "id": "archivo8",
+   "title": "KickOff-Post Work",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "fecha",
+   "title": "Fecha Incio de Proyecto",
+   "type": "date",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "fecha2",
+   "title": "Fecha Fin de Proyecto",
+   "type": "date",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Subitems"
+  }
+ ],
+ "items": [
+  {
+   "id": "2734680095",
+   "name": "Preliminar centro de carga",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Tiara Kiabeth Valle Gonzalez",
+     "value": "{\"changed_at\":\"2022-05-29T19:53:02.995Z\",\"personsAndTeams\":[{\"id\":11318011,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Lider Proyecto"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2022-06-01",
+     "value": "{\"date\":\"2022-06-01\",\"changed_at\":\"2022-05-30T21:07:46.458Z\"}",
+     "column": {
+      "title": "Visita Tecnica"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Done",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2022-05-30T19:15:02.943Z\"}",
+     "column": {
+      "title": "Visita Tecnica"
+     }
+    },
+    {
+     "id": "calculo",
+     "text": "Programado",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2022-05-30T21:13:37.178Z\"}",
+     "column": {
+      "title": "Calculo"
+     }
+    },
+    {
+     "id": "estado",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2022-05-30T21:13:28.811Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "KickOff-Post VT"
+     }
+    },
+    {
+     "id": "casilla_de_verificaci_n",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2022-05-29T20:00:08.398Z\"}",
+     "column": {
+      "title": "Planos"
+     }
+    },
+    {
+     "id": "casilla_de_verificaci_n7",
+     "text": "v",
+     "value": "{\"checked\":true,\"changed_at\":\"2022-05-30T20:59:59.128Z\"}",
+     "column": {
+      "title": "Ingenierias"
+     }
+    },
+    {
+     "id": "casilla_de_verificaci_n1",
+     "text": "",
+     "value": "{\"checked\":false}",
+     "column": {
+      "title": "Cotizacion"
+     }
+    },
+    {
+     "id": "archivo8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "KickOff-Post Work"
+     }
+    },
+    {
+     "id": "fecha",
+     "text": "2022-05-29",
+     "value": "{\"date\":\"2022-05-29\",\"changed_at\":\"2022-05-29T19:59:17.758Z\"}",
+     "column": {
+      "title": "Fecha Incio de Proyecto"
+     }
+    },
+    {
+     "id": "fecha2",
+     "text": "2022-06-18",
+     "value": "{\"date\":\"2022-06-18\",\"changed_at\":\"2022-05-29T20:00:00.574Z\"}",
+     "column": {
+      "title": "Fecha Fin de Proyecto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2738955209",
+   "name": "Subelemento",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Lider Proyecto"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Visita Tecnica"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Visita Tecnica"
+     }
+    },
+    {
+     "id": "calculo",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Calculo"
+     }
+    },
+    {
+     "id": "estado",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "progreso",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Progreso"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "KickOff-Post VT"
+     }
+    },
+    {
+     "id": "casilla_de_verificaci_n",
+     "text": "",
+     "value": "{\"checked\":false}",
+     "column": {
+      "title": "Planos"
+     }
+    },
+    {
+     "id": "casilla_de_verificaci_n7",
+     "text": "",
+     "value": "{\"checked\":false}",
+     "column": {
+      "title": "Ingenierias"
+     }
+    },
+    {
+     "id": "casilla_de_verificaci_n1",
+     "text": "",
+     "value": "{\"checked\":false}",
+     "column": {
+      "title": "Cotizacion"
+     }
+    },
+    {
+     "id": "archivo8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "KickOff-Post Work"
+     }
+    },
+    {
+     "id": "fecha",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha Incio de Proyecto"
+     }
+    },
+    {
+     "id": "fecha2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha Fin de Proyecto"
+     }
+    }
+   ]
+  }
+ ]
+}

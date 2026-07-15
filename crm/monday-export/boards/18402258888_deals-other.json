@@ -1,0 +1,635 @@
+{
+ "board": {
+  "id": "18402258888",
+  "name": "Deals",
+  "state": "active",
+  "board_kind": "public",
+  "description": "Learn how to use monday CRM: https://youtu.be/QjKcGGVPLVE",
+  "workspace": {
+   "id": "14528481",
+   "name": "other"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subitems",
+   "title": "Tasks",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[18402258900]}"
+  },
+  {
+   "id": "custom_mkrmrgz6",
+   "title": "Activities timeline",
+   "type": "unsupported",
+   "settings_str": "{}"
+  },
+  {
+   "id": "deal_stage",
+   "title": "Stage",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":108,\"3\":16,\"4\":109,\"6\":9,\"7\":6,\"9\":3,\"14\":15,\"15\":7,\"16\":4,\"108\":14,\"109\":0},\"labels\":{\"0\":\"Negotiation\",\"1\":\"Won\",\"2\":\"Lost\",\"3\":\"Proposal\",\"4\":\"New\",\"5\":\"\",\"15\":\"Discovery\"},\"labels_positions_v2\":{\"0\":3,\"1\":4,\"2\":5,\"3\":2,\"4\":0,\"5\":6,\"15\":1},\"labels_colors\":{\"0\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"4\":{\"color\":\"#5559df\",\"border\":\"#5559df\",\"var_name\":\"indigo\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"15\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+  },
+  {
+   "id": "deal_owner",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "deal_value",
+   "title": "Deal Value",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"direction\":\"left\"},\"function\":\"sum\"}"
+  },
+  {
+   "id": "deal_contact",
+   "title": "Contacts",
+   "type": "board_relation",
+   "settings_str": "{\"boardIds\":[18402258886],\"boardId\":18402258886,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"18402258886\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+  },
+  {
+   "id": "deal_account",
+   "title": "Accounts",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"deal_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"18402258886\":[\"contact_account\"]}}"
+  },
+  {
+   "id": "deal_expected_close_date",
+   "title": "Expected Close Date",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "deal_close_probability",
+   "title": "Close Probability",
+   "type": "numbers",
+   "settings_str": "{\"hide_footer\":true,\"function\":\"average\",\"unit\":{\"symbol\":\"%\",\"custom_unit\":\"\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "deal_forecast_value",
+   "title": "Forecast Value",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{deal_value}*{deal_close_probability}\",\"hide_footer\":true}"
+  },
+  {
+   "id": "date__1",
+   "title": "Last interaction",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "custom_mknwwj0z",
+   "title": "Quotes & Invoices",
+   "type": "unsupported",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Active Deals"
+  },
+  {
+   "id": "closed",
+   "title": "Closed Won"
+  }
+ ],
+ "items": [
+  {
+   "id": "11408128894",
+   "name": "Google deal",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Discovery",
+     "value": "{\"index\":15,\"post_id\":null,\"changed_at\":\"2022-05-11T13:19:53.240Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "deal_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "deal_value",
+     "text": "70000",
+     "value": "\"70000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "deal_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "deal_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "deal_expected_close_date",
+     "text": "2026-03-24",
+     "value": "{\"date\":\"2026-03-24\",\"changed_at\":\"2025-10-01T17:59:25.556Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "deal_close_probability",
+     "text": "90",
+     "value": "\"90\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "deal_forecast_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast Value"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "2026-03-02",
+     "value": "{\"date\":\"2026-03-02\",\"changed_at\":\"2025-10-01T17:59:42.925Z\"}",
+     "column": {
+      "title": "Last interaction"
+     }
+    },
+    {
+     "id": "custom_mknwwj0z",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Quotes & Invoices"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408143475",
+   "name": "Apple deal",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Discovery",
+     "value": "{\"index\":15,\"post_id\":null,\"changed_at\":\"2025-01-21T14:43:54.678Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "deal_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "deal_value",
+     "text": "55000",
+     "value": "\"55000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "deal_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "deal_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "deal_expected_close_date",
+     "text": "2026-03-26",
+     "value": "{\"date\":\"2026-03-26\",\"changed_at\":\"2025-10-01T17:59:29.047Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "deal_close_probability",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "deal_forecast_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast Value"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2025-10-01T17:59:48.062Z\"}",
+     "column": {
+      "title": "Last interaction"
+     }
+    },
+    {
+     "id": "custom_mknwwj0z",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Quotes & Invoices"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408157213",
+   "name": "Amazon deal",
+   "group": {
+    "id": "topics",
+    "title": "Active Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Proposal",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2022-05-11T13:19:54.823Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "deal_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "deal_value",
+     "text": "100000",
+     "value": "\"100000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "deal_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "deal_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "deal_expected_close_date",
+     "text": "2026-03-16",
+     "value": "{\"date\":\"2026-03-16\",\"changed_at\":\"2025-10-01T17:59:35.015Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "deal_close_probability",
+     "text": "70",
+     "value": "\"70\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "deal_forecast_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast Value"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "2026-03-01",
+     "value": "{\"date\":\"2026-03-01\",\"changed_at\":\"2025-10-01T17:59:52.342Z\"}",
+     "column": {
+      "title": "Last interaction"
+     }
+    },
+    {
+     "id": "custom_mknwwj0z",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Quotes & Invoices"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408134251",
+   "name": "Amazon deal",
+   "group": {
+    "id": "closed",
+    "title": "Closed Won"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Won",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2024-04-01T13:56:01.757Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "deal_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "deal_value",
+     "text": "55000",
+     "value": "\"55000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "deal_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "deal_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "deal_expected_close_date",
+     "text": "2026-01-19",
+     "value": "{\"date\":\"2026-01-19\",\"changed_at\":\"2025-10-01T17:59:59.043Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "deal_close_probability",
+     "text": "100",
+     "value": "\"100\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "deal_forecast_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast Value"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Last interaction"
+     }
+    },
+    {
+     "id": "custom_mknwwj0z",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Quotes & Invoices"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408157212",
+   "name": "Apple deal",
+   "group": {
+    "id": "closed",
+    "title": "Closed Won"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "custom_mkrmrgz6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    },
+    {
+     "id": "deal_stage",
+     "text": "Won",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-01-21T14:42:07.302Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "deal_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "deal_value",
+     "text": "30000",
+     "value": "\"30000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "deal_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "deal_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "deal_expected_close_date",
+     "text": "2026-02-24",
+     "value": "{\"date\":\"2026-02-24\",\"changed_at\":\"2025-10-01T18:00:04.281Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "deal_close_probability",
+     "text": "100",
+     "value": "\"100\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "deal_forecast_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast Value"
+     }
+    },
+    {
+     "id": "date__1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Last interaction"
+     }
+    },
+    {
+     "id": "custom_mknwwj0z",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Quotes & Invoices"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,333 @@
+{
+ "board": {
+  "id": "8062624681",
+  "name": "Contacts",
+  "state": "active",
+  "board_kind": "public",
+  "description": "Welcome to your contacts board! Here you can store and manage all of your contacts",
+  "workspace": {
+   "id": "9174044",
+   "name": "Not workspace"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "contact_email",
+   "title": "Email",
+   "type": "email",
+   "settings_str": "{}"
+  },
+  {
+   "id": "contact_account",
+   "title": "Accounts",
+   "type": "board_relation",
+   "settings_str": "{\"boardIds\":[8062624686],\"boardId\":null,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"8062624686\":{\"description\":{\"refId\":\"status\"},\"name\":{\"refId\":\"name\"}}},\"staticImage\":\"accounts\"}"
+  },
+  {
+   "id": "contact_deal",
+   "title": "Deals",
+   "type": "board_relation",
+   "settings_str": "{\"boardIds\":[8062624689],\"boardId\":null,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"8062624689\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"deal_account\"}}},\"staticImage\":\"opportunities\"}"
+  },
+  {
+   "id": "mirror2",
+   "title": "Deals value",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"contact_deal\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"8062624689\":[\"deal_value\"]}}"
+  },
+  {
+   "id": "contact_phone",
+   "title": "Phone",
+   "type": "phone",
+   "settings_str": "{}"
+  },
+  {
+   "id": "title5",
+   "title": "Title",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"name\":\"CEO\",\"id\":1},{\"name\":\"COO\",\"id\":2},{\"name\":\"CIO\",\"id\":3}]}"
+  },
+  {
+   "id": "status",
+   "title": "Type",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":7,\"1\":16,\"2\":107,\"3\":109,\"4\":15,\"7\":4,\"9\":13,\"13\":0,\"15\":9,\"16\":2,\"107\":3,\"109\":1},\"labels\":{\"0\":\"Lead\",\"1\":\"Customer\",\"2\":\"Vendor\",\"5\":\"\",\"6\":\"Qualified Lead\",\"13\":\"Partner\"},\"labels_positions_v2\":{\"0\":0,\"1\":2,\"2\":4,\"5\":5,\"6\":1,\"13\":3},\"labels_colors\":{\"0\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"1\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"2\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"13\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"}}}"
+  },
+  {
+   "id": "status5",
+   "title": "Priority",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"4\":6,\"6\":7,\"7\":19,\"19\":4},\"labels\":{\"6\":\"Medium\",\"7\":\"High\",\"108\":\"Low\"},\"labels_positions_v2\":{\"5\":0,\"6\":2,\"7\":1,\"108\":3},\"labels_colors\":{\"6\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"7\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"},\"108\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"}}}"
+  },
+  {
+   "id": "long_text4",
+   "title": "Comments",
+   "type": "long_text",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Active Contacts"
+  },
+  {
+   "id": "new_group95562",
+   "title": "Inactive Contacts"
+  }
+ ],
+ "items": [
+  {
+   "id": "8062625618",
+   "name": "Phoenix Levy",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "contact_email",
+     "text": "Phoenix@email.com",
+     "value": "{\"text\":\"Phoenix@email.com\",\"email\":\"Phoenix@email.com\",\"changed_at\":\"2023-10-22T13:16:49.896Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "contact_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "contact_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "mirror2",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals value"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "13254785698",
+     "value": "{\"phone\":\"13254785698\",\"changed_at\":\"2023-10-22T13:16:02.827Z\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "title5",
+     "text": "COO",
+     "value": "{\"ids\":[2],\"changed_at\":\"2022-02-22T14:35:23.938Z\"}",
+     "column": {
+      "title": "Title"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Customer",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2021-09-01T15:23:37.722Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "High",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-09-09T14:21:34.017Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "8062625607",
+   "name": "Alex Green",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "contact_email",
+     "text": "Madison@email.com",
+     "value": "{\"text\":\"Madison@email.com\",\"email\":\"Madison@email.com\",\"changed_at\":\"2022-05-11T14:16:17.214Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "contact_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "contact_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "mirror2",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals value"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "18547220499",
+     "value": "{\"phone\":\"18547220499\",\"changed_at\":\"2023-10-22T13:16:19.163Z\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "title5",
+     "text": "CEO",
+     "value": "{\"ids\":[1],\"changed_at\":\"2022-02-22T14:35:23.589Z\"}",
+     "column": {
+      "title": "Title"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Partner",
+     "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2024-01-25T10:31:00.250Z\"}",
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "status5",
+     "text": "High",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-09-09T14:21:07.989Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "8062625538",
+   "name": "Lead 1",
+   "group": {
+    "id": "topics",
+    "title": "Active Contacts"
+   },
+   "column_values": [
+    {
+     "id": "contact_email",
+     "text": "name@company.com",
+     "value": "{\"text\":\"name@company.com\",\"email\":\"name@company.com\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "contact_account",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Accounts"
+     }
+    },
+    {
+     "id": "contact_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "mirror2",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals value"
+     }
+    },
+    {
+     "id": "contact_phone",
+     "text": "12027953213",
+     "value": "{\"phone\":\"12027953213\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "title5",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Title"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Type"
+     }
+    },
+    {
+     "id": "status5",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,329 @@
+{
+ "board": {
+  "id": "18402258887",
+  "name": "Accounts",
+  "state": "active",
+  "board_kind": "public",
+  "description": "",
+  "workspace": {
+   "id": "14528481",
+   "name": "other"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "company_domain",
+   "title": "Domain",
+   "type": "link",
+   "settings_str": "{}"
+  },
+  {
+   "id": "account_contact",
+   "title": "Contacts",
+   "type": "board_relation",
+   "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[18402258886],\"boardId\":18402258886,\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"18402258886\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+  },
+  {
+   "id": "account_deal",
+   "title": "Deals",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"account_contact\":true},\"displayed_column\":{},\"displayed_linked_columns\":{\"18402258886\":[\"contact_deal\"]}}"
+  },
+  {
+   "id": "industry",
+   "title": "Industry",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"id\":2,\"name\":\"Financial Services\"},{\"id\":3,\"name\":\"Lending and Investments\"},{\"id\":4,\"name\":\"Software\"},{\"id\":5,\"name\":\"Administrative Services\"},{\"id\":6,\"name\":\"Advertising\"},{\"id\":7,\"name\":\"Agriculture and Farming\"},{\"id\":8,\"name\":\"Apps\"},{\"id\":9,\"name\":\"Artificial Intelligence\"},{\"id\":10,\"name\":\"Biotechnology\"},{\"id\":11,\"name\":\"Clothing and Apparel\"},{\"id\":12,\"name\":\"Commerce and Shopping\"},{\"id\":13,\"name\":\"Community and Lifestyle\"},{\"id\":14,\"name\":\"Consumer Electronics\"},{\"id\":15,\"name\":\"Consumer Goods\"},{\"id\":16,\"name\":\"Content and Publishing\"},{\"id\":17,\"name\":\"Data and Analytics\"},{\"id\":18,\"name\":\"Design\"},{\"id\":19,\"name\":\"Education\"},{\"id\":20,\"name\":\"Energy\"},{\"id\":21,\"name\":\"Events\"},{\"id\":22,\"name\":\"Food and Beverage\"},{\"id\":23,\"name\":\"Gaming\"},{\"id\":24,\"name\":\"Government and Military\"},{\"id\":25,\"name\":\"Hardware\"},{\"id\":26,\"name\":\"Health Care\"},{\"id\":27,\"name\":\"Information Technology\"},{\"id\":28,\"name\":\"Internet Services\"},{\"id\":29,\"name\":\"Manufacturing\"},{\"id\":30,\"name\":\"Media and Entertainment\"},{\"id\":31,\"name\":\"Messaging and Telecommunications\"},{\"id\":32,\"name\":\"Mobile\"},{\"id\":33,\"name\":\"Music and Audio\"},{\"id\":34,\"name\":\"Natural Resources\"},{\"id\":35,\"name\":\"Navigation and Mapping\"},{\"id\":36,\"name\":\"Other\"},{\"id\":37,\"name\":\"Payments\"},{\"id\":38,\"name\":\"Platforms\"},{\"id\":39,\"name\":\"Privacy and Security\"},{\"id\":40,\"name\":\"Professional Services\"},{\"id\":41,\"name\":\"Real Estate\"},{\"id\":42,\"name\":\"Sales and Marketing\"},{\"id\":43,\"name\":\"Science and Engineering\"},{\"id\":44,\"name\":\"Sports\"},{\"id\":45,\"name\":\"Sustainability\"},{\"id\":46,\"name\":\"Transportation\"},{\"id\":47,\"name\":\"Travel and Tourism\"},{\"id\":48,\"name\":\"Video\"}]}"
+  },
+  {
+   "id": "company_description",
+   "title": "Description",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "employee_count",
+   "title": "No. of employees",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "headquarters_loc",
+   "title": "Headquarters location",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "company_profile",
+   "title": "Company profile",
+   "type": "link",
+   "settings_str": "{}"
+  },
+  {
+   "id": "custom_mkrm3gkw",
+   "title": "Activities timeline",
+   "type": "unsupported",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Companies"
+  }
+ ],
+ "items": [
+  {
+   "id": "11408135651",
+   "name": "Google",
+   "group": {
+    "id": "topics",
+    "title": "Companies"
+   },
+   "column_values": [
+    {
+     "id": "company_domain",
+     "text": "https://google.com/",
+     "value": "{\"url\":\"https://google.com/\",\"text\":\"https://google.com/\",\"changed_at\":\"2024-11-20T09:39:46.077Z\"}",
+     "column": {
+      "title": "Domain"
+     }
+    },
+    {
+     "id": "account_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "account_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "industry",
+     "text": "Software, Data and Analytics, Internet Services, Sales and Marketing, Science and Engineering",
+     "value": "{\"ids\":[4,17,28,42,43],\"changed_at\":\"2024-11-20T09:39:48.549Z\",\"override_all_ids\":\"true\"}",
+     "column": {
+      "title": "Industry"
+     }
+    },
+    {
+     "id": "company_description",
+     "text": "Google is a multinational corporation that specializes in Internet-related services and products.",
+     "value": "{\"text\":\"Google is a multinational corporation that specializes in Internet-related services and products.\",\"changed_at\":\"2024-11-20T09:39:48.547Z\"}",
+     "column": {
+      "title": "Description"
+     }
+    },
+    {
+     "id": "employee_count",
+     "text": "10000+",
+     "value": "\"10000+\"",
+     "column": {
+      "title": "No. of employees"
+     }
+    },
+    {
+     "id": "headquarters_loc",
+     "text": "Mountain View CA USA",
+     "value": "\"Mountain View CA USA\"",
+     "column": {
+      "title": "Headquarters location"
+     }
+    },
+    {
+     "id": "company_profile",
+     "text": "Company profile - https://www.crunchbase.com/organization/google",
+     "value": "{\"url\":\"https://www.crunchbase.com/organization/google\",\"text\":\"Company profile\",\"changed_at\":\"2024-11-20T09:39:05.180Z\"}",
+     "column": {
+      "title": "Company profile"
+     }
+    },
+    {
+     "id": "custom_mkrm3gkw",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408129997",
+   "name": "Apple",
+   "group": {
+    "id": "topics",
+    "title": "Companies"
+   },
+   "column_values": [
+    {
+     "id": "company_domain",
+     "text": "https://apple.com - https://apple.com/",
+     "value": "{\"url\":\"https://apple.com/\",\"text\":\"https://apple.com\",\"changed_at\":\"2024-12-03T11:07:38.869Z\"}",
+     "column": {
+      "title": "Domain"
+     }
+    },
+    {
+     "id": "account_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "account_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "industry",
+     "text": "Internet Services, Media and Entertainment, Music and Audio, Other",
+     "value": "{\"ids\":[28,30,33,36],\"changed_at\":\"2024-11-20T09:40:01.774Z\",\"override_all_ids\":\"true\"}",
+     "column": {
+      "title": "Industry"
+     }
+    },
+    {
+     "id": "company_description",
+     "text": "Apple Inc. est une multinationale américaine spécialisée qui a révolutionné le secteur technologique grâce aux innovations qu'elle a développées au niveau des logiciels informatiques, des ordinateurs personnels, des tablettes mobiles, des smartphones et des périphériques d'ordinateur.",
+     "value": "{\"text\":\"Apple Inc. est une multinationale américaine spécialisée qui a révolutionné le secteur technologique grâce aux innovations qu'elle a développées au niveau des logiciels informatiques, des ordinateurs personnels, des tablettes mobiles, des smartphones et des périphériques d'ordinateur.\",\"changed_at\":\"2024-12-03T11:11:27.472Z\"}",
+     "column": {
+      "title": "Description"
+     }
+    },
+    {
+     "id": "employee_count",
+     "text": "1001-5000",
+     "value": "\"1001-5000\"",
+     "column": {
+      "title": "No. of employees"
+     }
+    },
+    {
+     "id": "headquarters_loc",
+     "text": "California, USA",
+     "value": "\"California, USA\"",
+     "column": {
+      "title": "Headquarters location"
+     }
+    },
+    {
+     "id": "company_profile",
+     "text": "Company profile - https://www.crunchbase.com/organization/graye-digital",
+     "value": "{\"url\":\"https://www.crunchbase.com/organization/graye-digital\",\"text\":\"Company profile\",\"changed_at\":\"2024-11-20T09:40:01.775Z\"}",
+     "column": {
+      "title": "Company profile"
+     }
+    },
+    {
+     "id": "custom_mkrm3gkw",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408129828",
+   "name": "Amazon",
+   "group": {
+    "id": "topics",
+    "title": "Companies"
+   },
+   "column_values": [
+    {
+     "id": "company_domain",
+     "text": "https://amazon.com - https://amazon.com/",
+     "value": "{\"url\":\"https://amazon.com/\",\"text\":\"https://amazon.com\",\"changed_at\":\"2024-12-03T11:07:44.617Z\"}",
+     "column": {
+      "title": "Domain"
+     }
+    },
+    {
+     "id": "account_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "account_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deals"
+     }
+    },
+    {
+     "id": "industry",
+     "text": "Administrative Services, Commerce and Shopping, Other",
+     "value": "{\"ids\":[5,12,36],\"changed_at\":\"2024-11-20T09:40:10.619Z\",\"override_all_ids\":\"true\"}",
+     "column": {
+      "title": "Industry"
+     }
+    },
+    {
+     "id": "company_description",
+     "text": "Amazon est une entreprise technologique internationale spécialisée dans le commerce électronique, l'informatique en cloud, le streaming en ligne et l'intelligence artificielle.",
+     "value": "{\"text\":\"Amazon est une entreprise technologique internationale spécialisée dans le commerce électronique, l'informatique en cloud, le streaming en ligne et l'intelligence artificielle.\",\"changed_at\":\"2024-12-03T11:13:24.516Z\"}",
+     "column": {
+      "title": "Description"
+     }
+    },
+    {
+     "id": "employee_count",
+     "text": "10000+",
+     "value": "\"10000+\"",
+     "column": {
+      "title": "No. of employees"
+     }
+    },
+    {
+     "id": "headquarters_loc",
+     "text": "Seattle, État de Washington, États-Unis",
+     "value": "\"Seattle, État de Washington, États-Unis\"",
+     "column": {
+      "title": "Headquarters location"
+     }
+    },
+    {
+     "id": "company_profile",
+     "text": "Company profile - https://www.crunchbase.com/organization/amazon",
+     "value": "{\"url\":\"https://www.crunchbase.com/organization/amazon\",\"text\":\"Company profile\",\"changed_at\":\"2024-11-20T09:40:10.620Z\"}",
+     "column": {
+      "title": "Company profile"
+     }
+    },
+    {
+     "id": "custom_mkrm3gkw",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Activities timeline"
+     }
+    }
+   ]
+  }
+ ]
+}

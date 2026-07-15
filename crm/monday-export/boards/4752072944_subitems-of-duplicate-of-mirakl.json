@@ -1,0 +1,3109 @@
+{
+ "board": {
+  "id": "4752072944",
+  "name": "Subitems of Duplicate of MIRAKL",
+  "state": "archived",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "file94",
+   "title": "Recibo de CFE",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file",
+   "title": "Solicitud de interconexión (Anexo 2)",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file51",
+   "title": "Carta Poder",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file5",
+   "title": "Ortorgante",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file90",
+   "title": "Apoderado Legal y testigos",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file74",
+   "title": "RFC",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file32",
+   "title": "Acta constitutiva",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file7",
+   "title": "Ubicación del proyecto",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file9",
+   "title": "Diagrama Unifilar",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file3",
+   "title": "Módulos",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file95",
+   "title": "Inversor",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file6",
+   "title": "Verificación",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file21",
+   "title": "Interconexión",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "file0",
+   "title": "Inspección",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "dup__of_inspecci_n",
+   "title": "Carta de entrega",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Subitems"
+  }
+ ],
+ "items": [
+  {
+   "id": "4752074833",
+   "name": "Documentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074838",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074844",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074851",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074855",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074762",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074872",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105896/48eaa0c1-085c-4d64-9b77-9ecc01a0347c.pdf",
+     "value": "{\"files\":[{\"name\":\"48eaa0c1-085c-4d64-9b77-9ecc01a0347c.pdf\",\"assetId\":943105896,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1676051111914,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074769",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074779",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074788",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074796",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074918",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106136/546190112911.pdf",
+     "value": "{\"files\":[{\"name\":\"546190112911.pdf\",\"assetId\":943106136,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677713935177,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106143/Anexo%202%20Solicitud%20de%20interconexion%20Nutririca.xlsx",
+     "value": "{\"files\":[{\"name\":\"Anexo 2 Solicitud de interconexion Nutririca.xlsx\",\"assetId\":943106143,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677713942674,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106148/CARTA%20PODER%20MENDEZ%20COYANTES%20ALEXIS%20DE%20JESUS%20BUCKET.docx",
+     "value": "{\"files\":[{\"name\":\"CARTA PODER MENDEZ COYANTES ALEXIS DE JESUS BUCKET.docx\",\"assetId\":943106148,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677713949132,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106154/REGISTRO%20FEDERAL%20DE%20ELECTORES.pdf",
+     "value": "{\"files\":[{\"name\":\"REGISTRO FEDERAL DE ELECTORES.pdf\",\"assetId\":943106154,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677713959443,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106160/INE%20JESUS%20ANTONIO%20RODRIGUEZ%20CHAIDEZ.PDF, https://newman-re.monday.com/protected_static/1169566/resources/943106163/TESTIGO%20(ARLEI%20SIDNEY%20AGUIRRE%20WARD).PDF",
+     "value": "{\"files\":[{\"name\":\"INE JESUS ANTONIO RODRIGUEZ CHAIDEZ.PDF\",\"assetId\":943106160,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677713978984,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (ARLEI SIDNEY AGUIRRE WARD).PDF\",\"assetId\":943106163,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677713978990,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106167/rfcALEXIS%20MENDEZ.pdf",
+     "value": "{\"files\":[{\"name\":\"rfcALEXIS MENDEZ.pdf\",\"assetId\":943106167,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677713988234,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106175/Ubi%20Nutririca.pdf",
+     "value": "{\"files\":[{\"name\":\"Ubi Nutririca.pdf\",\"assetId\":943106175,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677714000418,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106178/DU-NUTRIRICA%20(43%20modulos%20550w)-Modelo.pdf",
+     "value": "{\"files\":[{\"name\":\"DU-NUTRIRICA (43 modulos 550w)-Modelo.pdf\",\"assetId\":943106178,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677714018440,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106185/JA-M72S30-5452FMR%201500_FichaTecnica.pdf",
+     "value": "{\"files\":[{\"name\":\"JA-M72S30-5452FMR 1500_FichaTecnica.pdf\",\"assetId\":943106185,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677714029182,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106188/CRT-MS-IGR-10000MTLPUS.pdf%20CERTIFICADO.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106190/GROWATT-MIN8k-10k.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106193/Growatt%20Shine%20WiFi-X.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106192/Manual%20ShineWiFi-X.pdf",
+     "value": "{\"files\":[{\"name\":\"CRT-MS-IGR-10000MTLPUS.pdf CERTIFICADO.pdf\",\"assetId\":943106188,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677714042134,\"createdBy\":\"37726431\"},{\"name\":\"GROWATT-MIN8k-10k.pdf\",\"assetId\":943106190,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1681149006705,\"createdBy\":\"37726431\"},{\"name\":\"Growatt Shine WiFi-X.pdf\",\"assetId\":943106193,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1681149034012,\"createdBy\":\"37726431\"},{\"name\":\"Manual ShineWiFi-X.pdf\",\"assetId\":943106192,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1681149034022,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106196/CARTA%20ENTREGA%20MENDEZ%20COYANTES%20ALEXIS%20DE%20JESUS%20BUCKET.docx",
+     "value": "{\"files\":[{\"name\":\"CARTA ENTREGA MENDEZ COYANTES ALEXIS DE JESUS BUCKET.docx\",\"assetId\":943106196,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1681148939353,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074805",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074811",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074818",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074903",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106010/4faa0541496d47558930d996b1a04cef.pdf%20CFE%20RECIBO.pdf",
+     "value": "{\"files\":[{\"name\":\"4faa0541496d47558930d996b1a04cef.pdf CFE RECIBO.pdf\",\"assetId\":943106010,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677797708942,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106013/Anexo%202%20Solicitud%20de%20interconexion%20192%20Durango%20Francisco%20Villa.xlsx",
+     "value": "{\"files\":[{\"name\":\"Anexo 2 Solicitud de interconexion 192 Durango Francisco Villa.xlsx\",\"assetId\":943106013,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677797718818,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106016/Carta%20Poder%20192%20Durango%20Francisco%20Villa%20Bucket%20Energy.docx",
+     "value": "{\"files\":[{\"name\":\"Carta Poder 192 Durango Francisco Villa Bucket Energy.docx\",\"assetId\":943106016,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677797728480,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106018/Pasaporte%202020%20Identificacion.pdf",
+     "value": "{\"files\":[{\"name\":\"Pasaporte 2020 Identificacion.pdf\",\"assetId\":943106018,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677797736928,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106021/TESTIGO%20(ARLEI%20SIDNEY%20AGUIRRE%20WARD).PDF, https://newman-re.monday.com/protected_static/1169566/resources/943106020/TESTIGO%20(CHANDEL%20CHAN%20CASTRO).PDF, https://newman-re.monday.com/protected_static/1169566/resources/943106022/INE%20JESUS%20ANTONIO%20RODRIGUEZ%20CHAIDEZ.PDF",
+     "value": "{\"files\":[{\"name\":\"TESTIGO (ARLEI SIDNEY AGUIRRE WARD).PDF\",\"assetId\":943106021,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800397856,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (CHANDEL CHAN CASTRO).PDF\",\"assetId\":943106020,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800397862,\"createdBy\":\"37726431\"},{\"name\":\"INE JESUS ANTONIO RODRIGUEZ CHAIDEZ.PDF\",\"assetId\":943106022,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800410727,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106026/Constancia%20de%20Situaci%C3%B3n%20fiscal%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"Constancia de Situación fiscal Chedraui.pdf\",\"assetId\":943106026,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677798090702,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106028/903%20TCH%20Poder.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106029/Acta%20constitutiva%20de%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"903 TCH Poder.pdf\",\"assetId\":943106028,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677798101120,\"createdBy\":\"37726431\"},{\"name\":\"Acta constitutiva de Chedraui.pdf\",\"assetId\":943106029,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677798101127,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106037/Ubicaci%C3%B3n%20CHEDRAUI%20192%20DURANGO%20FRANCISCO%20VILLA.docx",
+     "value": "{\"files\":[{\"name\":\"Ubicación CHEDRAUI 192 DURANGO FRANCISCO VILLA.docx\",\"assetId\":943106037,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677798112428,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074883",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105902/626170903664.pdf",
+     "value": "{\"files\":[{\"name\":\"626170903664.pdf\",\"assetId\":943105902,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800097056,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105910/Anexo%202%20Solicitud%20de%20interconexion%20103%20Durango%20Nazas.xlsx",
+     "value": "{\"files\":[{\"name\":\"Anexo 2 Solicitud de interconexion 103 Durango Nazas.xlsx\",\"assetId\":943105910,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800114513,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105915/103%20Durango%20Nazas%20Bucket%20Energy.docx",
+     "value": "{\"files\":[{\"name\":\"103 Durango Nazas Bucket Energy.docx\",\"assetId\":943105915,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800139852,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105919/Pasaporte%202020%20Identificacion.pdf",
+     "value": "{\"files\":[{\"name\":\"Pasaporte 2020 Identificacion.pdf\",\"assetId\":943105919,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800148437,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105921/TESTIGO%20(ARLEI%20SIDNEY%20AGUIRRE%20WARD).PDF, https://newman-re.monday.com/protected_static/1169566/resources/943105922/TESTIGO%20(CHANDEL%20CHAN%20CASTRO).PDF, https://newman-re.monday.com/protected_static/1169566/resources/943105924/INE%20JESUS%20ANTONIO%20RODRIGUEZ%20CHAIDEZ.PDF",
+     "value": "{\"files\":[{\"name\":\"TESTIGO (ARLEI SIDNEY AGUIRRE WARD).PDF\",\"assetId\":943105921,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800186489,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (CHANDEL CHAN CASTRO).PDF\",\"assetId\":943105922,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800186496,\"createdBy\":\"37726431\"},{\"name\":\"INE JESUS ANTONIO RODRIGUEZ CHAIDEZ.PDF\",\"assetId\":943105924,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800198456,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105926/Constancia%20de%20Situaci%C3%B3n%20fiscal%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"Constancia de Situación fiscal Chedraui.pdf\",\"assetId\":943105926,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800240070,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105934/903%20TCH%20Poder.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943105932/Acta%20constitutiva%20de%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"903 TCH Poder.pdf\",\"assetId\":943105934,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800328528,\"createdBy\":\"37726431\"},{\"name\":\"Acta constitutiva de Chedraui.pdf\",\"assetId\":943105932,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800328534,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105937/Ubicaci%C3%B3n%20CHEDRAUI%20103%20DURANGO%20NAZAS.docx",
+     "value": "{\"files\":[{\"name\":\"Ubicación CHEDRAUI 103 DURANGO NAZAS.docx\",\"assetId\":943105937,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800342612,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074887",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105939/056190851350.pdf",
+     "value": "{\"files\":[{\"name\":\"056190851350.pdf\",\"assetId\":943105939,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800444595,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105948/Anexo%202%20Solicitud%20de%20interconexion%20200%20Guanajuato.xlsx",
+     "value": "{\"files\":[{\"name\":\"Anexo 2 Solicitud de interconexion 200 Guanajuato.xlsx\",\"assetId\":943105948,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800460147,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105949/Carta%20Poder%20200%20Guanajuato%20Bucket%20Energy.docx",
+     "value": "{\"files\":[{\"name\":\"Carta Poder 200 Guanajuato Bucket Energy.docx\",\"assetId\":943105949,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800503944,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105954/Pasaporte%202020%20Identificacion.pdf",
+     "value": "{\"files\":[{\"name\":\"Pasaporte 2020 Identificacion.pdf\",\"assetId\":943105954,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800517000,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105958/TESTIGO%20(CHANDEL%20CHAN%20CASTRO).pdf, https://newman-re.monday.com/protected_static/1169566/resources/943105957/INE%20JESUS%20ANTONIO%20RODRIGUEZ%20CHAIDEZ.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943105960/TESTIGO%20(ARLEI%20SIDNEY%20AGUIRRE%20WARD).pdf",
+     "value": "{\"files\":[{\"name\":\"TESTIGO (CHANDEL CHAN CASTRO).pdf\",\"assetId\":943105958,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800589642,\"createdBy\":\"37726431\"},{\"name\":\"INE JESUS ANTONIO RODRIGUEZ CHAIDEZ.pdf\",\"assetId\":943105957,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800589636,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (ARLEI SIDNEY AGUIRRE WARD).pdf\",\"assetId\":943105960,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800589645,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105963/Constancia%20de%20Situaci%C3%B3n%20fiscal%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"Constancia de Situación fiscal Chedraui.pdf\",\"assetId\":943105963,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800612137,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105968/903%20TCH%20Poder.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943105965/Acta%20constitutiva%20de%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"903 TCH Poder.pdf\",\"assetId\":943105968,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800644478,\"createdBy\":\"37726431\"},{\"name\":\"Acta constitutiva de Chedraui.pdf\",\"assetId\":943105965,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800644484,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105975/Ubicaci%C3%B3n%20CHEDRAUI%20200%20GUANAJUATO.docx",
+     "value": "{\"files\":[{\"name\":\"Ubicación CHEDRAUI 200 GUANAJUATO.docx\",\"assetId\":943105975,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800656821,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074895",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105977/494200803640.pdf",
+     "value": "{\"files\":[{\"name\":\"494200803640.pdf\",\"assetId\":943105977,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800691335,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105980/Anexo%202%20Solicitud%20de%20interconexion%20264%20Puerto%20Vallarta.xlsx",
+     "value": "{\"files\":[{\"name\":\"Anexo 2 Solicitud de interconexion 264 Puerto Vallarta.xlsx\",\"assetId\":943105980,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800698241,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105982/Carta%20Poder%20264%20Puerto%20Vallarta%20Bucket%20Energy.docx",
+     "value": "{\"files\":[{\"name\":\"Carta Poder 264 Puerto Vallarta Bucket Energy.docx\",\"assetId\":943105982,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800705308,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105986/Pasaporte%202020%20Identificacion.pdf",
+     "value": "{\"files\":[{\"name\":\"Pasaporte 2020 Identificacion.pdf\",\"assetId\":943105986,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800713516,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105991/INE%20JESUS%20ANTONIO%20RODRIGUEZ%20CHAIDEZ.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943105995/TESTIGO%20(CHANDEL%20CHAN%20CASTRO).pdf, https://newman-re.monday.com/protected_static/1169566/resources/943105989/TESTIGO%20(ARLEI%20SIDNEY%20AGUIRRE%20WARD).pdf",
+     "value": "{\"files\":[{\"name\":\"INE JESUS ANTONIO RODRIGUEZ CHAIDEZ.pdf\",\"assetId\":943105991,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800718588,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (CHANDEL CHAN CASTRO).pdf\",\"assetId\":943105995,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800718595,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (ARLEI SIDNEY AGUIRRE WARD).pdf\",\"assetId\":943105989,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800718598,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105998/Constancia%20de%20Situaci%C3%B3n%20fiscal%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"Constancia de Situación fiscal Chedraui.pdf\",\"assetId\":943105998,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800763255,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106005/903%20TCH%20Poder.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106003/Acta%20constitutiva%20de%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"903 TCH Poder.pdf\",\"assetId\":943106005,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800772350,\"createdBy\":\"37726431\"},{\"name\":\"Acta constitutiva de Chedraui.pdf\",\"assetId\":943106003,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800772356,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106009/Ubicaci%C3%B3n%20CHEDRAUI%20264%20PUERTO%20VALLARTA.docx",
+     "value": "{\"files\":[{\"name\":\"Ubicación CHEDRAUI 264 PUERTO VALLARTA.docx\",\"assetId\":943106009,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800784062,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074908",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106043/504190706549.pdf",
+     "value": "{\"files\":[{\"name\":\"504190706549.pdf\",\"assetId\":943106043,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800807915,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106047/Anexo%202%20Solicitud%20de%20interconexion%20262%20Selecto%20Guadalajara%20Plaza%20Mexico.xlsx",
+     "value": "{\"files\":[{\"name\":\"Anexo 2 Solicitud de interconexion 262 Selecto Guadalajara Plaza Mexico.xlsx\",\"assetId\":943106047,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800814356,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106051/Carta%20Poder%20262%20Selecto%20Guadalajara%20Plaza%20Mexico%20Bucket%20Energy.docx",
+     "value": "{\"files\":[{\"name\":\"Carta Poder 262 Selecto Guadalajara Plaza Mexico Bucket Energy.docx\",\"assetId\":943106051,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800824865,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106052/Pasaporte%202020%20Identificacion.pdf",
+     "value": "{\"files\":[{\"name\":\"Pasaporte 2020 Identificacion.pdf\",\"assetId\":943106052,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800835054,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106056/INE%20JESUS%20ANTONIO%20RODRIGUEZ%20CHAIDEZ.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106057/TESTIGO%20(CHANDEL%20CHAN%20CASTRO).pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106058/TESTIGO%20(ARLEI%20SIDNEY%20AGUIRRE%20WARD).pdf",
+     "value": "{\"files\":[{\"name\":\"INE JESUS ANTONIO RODRIGUEZ CHAIDEZ.pdf\",\"assetId\":943106056,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800841517,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (CHANDEL CHAN CASTRO).pdf\",\"assetId\":943106057,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800841524,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (ARLEI SIDNEY AGUIRRE WARD).pdf\",\"assetId\":943106058,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800841527,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106068/Constancia%20de%20Situaci%C3%B3n%20fiscal%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"Constancia de Situación fiscal Chedraui.pdf\",\"assetId\":943106068,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800862099,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106072/903%20TCH%20Poder.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106073/Acta%20constitutiva%20de%20Chedraui.pdf",
+     "value": "{\"files\":[{\"name\":\"903 TCH Poder.pdf\",\"assetId\":943106072,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800868587,\"createdBy\":\"37726431\"},{\"name\":\"Acta constitutiva de Chedraui.pdf\",\"assetId\":943106073,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800868593,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106075/Ubicaci%C3%B3n%20CHEDRAUI%20262%20SELECTO%20GUADALAJARA%20PLAZA%20M%C3%89XICO.docx",
+     "value": "{\"files\":[{\"name\":\"Ubicación CHEDRAUI 262 SELECTO GUADALAJARA PLAZA MÉXICO.docx\",\"assetId\":943106075,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677800877322,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074864",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943105894/BJ-000050711741.pdf",
+     "value": "{\"files\":[{\"name\":\"BJ-000050711741.pdf\",\"assetId\":943105894,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1675271844267,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074912",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106079/538070805791.pdf",
+     "value": "{\"files\":[{\"name\":\"538070805791.pdf\",\"assetId\":943106079,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1678216616580,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106082/Anexo%202%20Solicitud%20de%20interconexion%20JORGE%20ABEL.xlsx",
+     "value": "{\"files\":[{\"name\":\"Anexo 2 Solicitud de interconexion JORGE ABEL.xlsx\",\"assetId\":943106082,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1678216520125,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106088/CARTA%20PODER%20JORGE%20ABEL%20MEDINA%20BUCKET.docx",
+     "value": "{\"files\":[{\"name\":\"CARTA PODER JORGE ABEL MEDINA BUCKET.docx\",\"assetId\":943106088,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265357438,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106091/INE%20JORGE%20ABEL%20MEDINA.pdf",
+     "value": "{\"files\":[{\"name\":\"INE JORGE ABEL MEDINA.pdf\",\"assetId\":943106091,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265363713,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106095/TESTIGO%20(ARLEI%20SIDNEY%20AGUIRRE%20WARD).PDF, https://newman-re.monday.com/protected_static/1169566/resources/943106099/INE%20JESUS%20ANTONIO%20RODRIGUEZ%20CHAIDEZ.PDF, https://newman-re.monday.com/protected_static/1169566/resources/943106094/TESTIGO%20(CHANDEL%20CHAN%20CASTRO).PDF",
+     "value": "{\"files\":[{\"name\":\"TESTIGO (ARLEI SIDNEY AGUIRRE WARD).PDF\",\"assetId\":943106095,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265377780,\"createdBy\":\"37726431\"},{\"name\":\"INE JESUS ANTONIO RODRIGUEZ CHAIDEZ.PDF\",\"assetId\":943106099,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265377773,\"createdBy\":\"37726431\"},{\"name\":\"TESTIGO (CHANDEL CHAN CASTRO).PDF\",\"assetId\":943106094,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265377784,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106101/RFC%20MARIA%20DEL%20CARMEN%20RIVERA.pdf",
+     "value": "{\"files\":[{\"name\":\"RFC MARIA DEL CARMEN RIVERA.pdf\",\"assetId\":943106101,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265389281,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106105/Ubi%20JORGE%20ABEL.docx",
+     "value": "{\"files\":[{\"name\":\"Ubi JORGE ABEL.docx\",\"assetId\":943106105,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265400075,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106109/DU%20JORGE%20ABEL.pdf",
+     "value": "{\"files\":[{\"name\":\"DU JORGE ABEL.pdf\",\"assetId\":943106109,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265407693,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106116/Panel%20solar%20%20JA%20SOLAR%20330W%20monocristalino%20ficha%20t%C3%A9cnica.pdf",
+     "value": "{\"files\":[{\"name\":\"Panel solar  JA SOLAR 330W monocristalino ficha técnica.pdf\",\"assetId\":943106116,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265413535,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/943106128/APS-QS1A-1500-220_FichaTecnica%20MICRO.pdf, https://newman-re.monday.com/protected_static/1169566/resources/943106126/certificado%20micros.pdf",
+     "value": "{\"files\":[{\"name\":\"APS-QS1A-1500-220_FichaTecnica MICRO.pdf\",\"assetId\":943106128,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265437354,\"createdBy\":\"37726431\"},{\"name\":\"certificado micros.pdf\",\"assetId\":943106126,\"isImage\":\"false\",\"fileType\":\"ASSET\",\"createdAt\":1677265437363,\"createdBy\":\"37726431\"}]}",
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  },
+  {
+   "id": "4752074822",
+   "name": "Dcumentación de interconexión",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "file94",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Recibo de CFE"
+     }
+    },
+    {
+     "id": "file",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Solicitud de interconexión (Anexo 2)"
+     }
+    },
+    {
+     "id": "file51",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta Poder"
+     }
+    },
+    {
+     "id": "file5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ortorgante"
+     }
+    },
+    {
+     "id": "file90",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Apoderado Legal y testigos"
+     }
+    },
+    {
+     "id": "file74",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "RFC"
+     }
+    },
+    {
+     "id": "file32",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Acta constitutiva"
+     }
+    },
+    {
+     "id": "file7",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Ubicación del proyecto"
+     }
+    },
+    {
+     "id": "file9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Diagrama Unifilar"
+     }
+    },
+    {
+     "id": "file3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Módulos"
+     }
+    },
+    {
+     "id": "file95",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inversor"
+     }
+    },
+    {
+     "id": "file6",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Verificación"
+     }
+    },
+    {
+     "id": "file21",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Interconexión"
+     }
+    },
+    {
+     "id": "file0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Inspección"
+     }
+    },
+    {
+     "id": "dup__of_inspecci_n",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Carta de entrega"
+     }
+    }
+   ]
+  }
+ ]
+}

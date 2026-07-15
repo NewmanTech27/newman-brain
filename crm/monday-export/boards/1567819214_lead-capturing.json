@@ -1,0 +1,203 @@
+{
+ "board": {
+  "id": "1567819214",
+  "name": "Lead Capturing",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "How to use this board: https://youtu.be/55jYiMs2HwE",
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "people",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"14\":19,\"19\":14},\"labels\":{\"1\":\"Done\",\"5\":\"New Lead\",\"11\":\"Stuck\",\"14\":\"Contacted\"},\"labels_positions_v2\":{\"1\":0,\"5\":3,\"11\":2,\"14\":1},\"labels_colors\":{\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"11\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"14\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"}}}"
+  },
+  {
+   "id": "email",
+   "title": "Email",
+   "type": "email",
+   "settings_str": "{}"
+  },
+  {
+   "id": "text0",
+   "title": "Company",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "phone_1",
+   "title": "Phone",
+   "type": "phone",
+   "settings_str": "{}"
+  },
+  {
+   "id": "location",
+   "title": "Location",
+   "type": "location",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text",
+   "title": "Comments",
+   "type": "long_text",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "New Leads"
+  }
+ ],
+ "items": [
+  {
+   "id": "1567819495",
+   "name": "Elian Warren",
+   "group": {
+    "id": "topics",
+    "title": "New Leads"
+   },
+   "column_values": [
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": "New Lead",
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Elian@company.com",
+     "value": "{\"text\":\"Elian@company.com\",\"email\":\"Elian@company.com\",\"changed_at\":\"2021-01-21T10:01:06.620Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "text0",
+     "text": "Agently Inc.",
+     "value": "\"Agently Inc.\"",
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "phone_1",
+     "text": "12027953213",
+     "value": "{\"phone\":\"12027953213\",\"changed_at\":\"2020-09-09T16:49:54.325Z\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Colosseum",
+     "value": "{\"lat\":\"33.868328\",\"lng\":\"-118.2350616\",\"address\":\"Colosseum\",\"placeId\":\"ChIJKUtqxjDLwoAR7r4TW3NehzI\",\"changed_at\":\"2020-09-09T16:50:17.010Z\"}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "Please contact me\n",
+     "value": "{\"text\":\"Please contact me\\n\",\"changed_at\":\"2020-07-28T06:56:05.110Z\"}",
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819505",
+   "name": "Jamal Ayers",
+   "group": {
+    "id": "topics",
+    "title": "New Leads"
+   },
+   "column_values": [
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": "New Lead",
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "email",
+     "text": "Jamal@company.com",
+     "value": "{\"text\":\"Jamal@company.com\",\"email\":\"Jamal@company.com\",\"changed_at\":\"2021-01-21T10:01:12.048Z\"}",
+     "column": {
+      "title": "Email"
+     }
+    },
+    {
+     "id": "text0",
+     "text": "Bindeer Inc.",
+     "value": "\"Bindeer Inc.\"",
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "phone_1",
+     "text": "12027954637",
+     "value": "{\"phone\":\"12027954637\",\"changed_at\":\"2020-09-09T16:49:57.817Z\",\"countryShortName\":\"US\"}",
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Machu Picchu",
+     "value": "{\"lat\":\"-13.1631412\",\"lng\":\"-72.5449629\",\"address\":\"Machu Picchu\",\"placeId\":\"ChIJVVVViV-abZERJxqgpA43EDo\",\"changed_at\":\"2020-09-09T16:50:18.598Z\"}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "I'll be happy to start\n",
+     "value": "{\"text\":\"I'll be happy to start\\n\",\"changed_at\":\"2020-07-28T06:56:13.087Z\"}",
+     "column": {
+      "title": "Comments"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+ "board": {
+  "id": "9913323238",
+  "name": "Activities",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "The activities board shows all the activities that are added using the Emails & Activities in the page.\nEvery time you add an activity through Emails & Activities, a new activity will be added to this board.",
+  "workspace": {
+   "id": "12151996",
+   "name": "Newman CRM"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_type",
+   "title": "Activity Type",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"7\":153,\"153\":7},\"labels\":{\"0\":\"Call summary\",\"1\":\"Seguimiento\",\"107\":\"Meeting\",\"153\":\"Phone call\"},\"labels_positions_v2\":{\"0\":2,\"5\":3,\"107\":0,\"153\":1},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"107\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"153\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+  },
+  {
+   "id": "activity_owner",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_start_time",
+   "title": "Start time",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_end_time",
+   "title": "End time",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[4],\"color_mapping\":{\"0\":102,\"1\":14,\"4\":15,\"6\":4,\"14\":1,\"15\":6,\"102\":0},\"labels\":{\"3\":\"Open\",\"4\":\"Done\"},\"labels_positions_v2\":{\"3\":0,\"4\":1,\"5\":2},\"labels_colors\":{\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+  },
+  {
+   "id": "activity_item",
+   "title": "Related item",
+   "type": "board_relation",
+   "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[],\"boardId\":9913323235}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Account Activities"
+  }
+ ],
+ "items": [
+  {
+   "id": "9944773086",
+   "name": "Llamada de seguimiento con Arturo, tras reunión con los dueños.",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_type",
+     "text": "Call summary",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-09-01T18:18:33.244Z\"}",
+     "column": {
+      "title": "Activity Type"
+     }
+    },
+    {
+     "id": "activity_owner",
+     "text": "Chandel Chan",
+     "value": "{\"personsAndTeams\":[{\"id\":21740086,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2025-09-08 20:12",
+     "value": "{\"date\":\"2025-09-08\",\"time\":\"18:12:00\",\"changed_at\":\"2025-09-01T18:19:45.704Z\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Open",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2025-09-01T18:19:58.676Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Related item"
+     }
+    }
+   ]
+  },
+  {
+   "id": "9944820619",
+   "name": "Armas Mendoza  -  Seguimiento",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_type",
+     "text": "Seguimiento",
+     "value": "{\"index\":1}",
+     "column": {
+      "title": "Activity Type"
+     }
+    },
+    {
+     "id": "activity_owner",
+     "text": "Jonathan Zuniga",
+     "value": "{\"personsAndTeams\":[{\"id\":2611048,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2025-09-30 20:26",
+     "value": "{\"date\":\"2025-09-30\",\"time\":\"18:26:00\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "2025-09-30 20:56",
+     "value": "{\"date\":\"2025-09-30\",\"time\":\"18:56:00\"}",
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Open",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Related item"
+     }
+    }
+   ]
+  },
+  {
+   "id": "18071380104",
+   "name": "Rompope Coronado  -  Meeting",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_type",
+     "text": "Meeting",
+     "value": "{\"index\":107}",
+     "column": {
+      "title": "Activity Type"
+     }
+    },
+    {
+     "id": "activity_owner",
+     "text": "Chandel Chan",
+     "value": "{\"personsAndTeams\":[{\"id\":21740086,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2025-09-30 20:00",
+     "value": "{\"date\":\"2025-09-30\",\"time\":\"18:00:00\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "2025-09-30 20:30",
+     "value": "{\"date\":\"2025-09-30\",\"time\":\"18:30:00\"}",
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Open",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Related item"
+     }
+    }
+   ]
+  },
+  {
+   "id": "10757529632",
+   "name": "Bemis Packaging  -  Meeting",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_type",
+     "text": "Meeting",
+     "value": "{\"index\":107}",
+     "column": {
+      "title": "Activity Type"
+     }
+    },
+    {
+     "id": "activity_owner",
+     "text": "Chandel Chan",
+     "value": "{\"personsAndTeams\":[{\"id\":21740086,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2025-12-11 20:00",
+     "value": "{\"date\":\"2025-12-11\",\"time\":\"19:00:00\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "2025-12-11 20:30",
+     "value": "{\"date\":\"2025-12-11\",\"time\":\"19:30:00\"}",
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Open",
+     "value": "{\"index\":3}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Related item"
+     }
+    }
+   ]
+  }
+ ]
+}
