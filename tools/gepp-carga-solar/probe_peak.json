@@ -1,0 +1,3249 @@
+{
+ "sites": {
+  "ixt": {
+   "site": "ixt",
+   "kwp_nr": 5430.0,
+   "kwp_rev4": 5170.0,
+   "ceiling": {
+    "daytime_load_kwh": 11544261.0,
+    "punta_N_kwh": 1829374.0,
+    "punta_N_max_kwh": 2150783.0,
+    "punta_total_kwh": 2188696.0,
+    "addressable_total_kwh": 13373635.0
+   },
+   "saturacion_at_opt": {
+    "kwp": 5430.0,
+    "self_kwh": 8501741.0,
+    "self_vs_daytime_ceiling_pct": 73.6,
+    "carga_solar_kwh": 803335.0,
+    "charge_energy_kwh": 1905598.0,
+    "sat_bess_pct": 42.2,
+    "remanente_kwh": 379220.0,
+    "gen_kwh": 9684296.0
+   },
+   "curve": [
+    {
+     "kwp": 2750.0,
+     "ahorro_cliente_anio1": 8530325.0,
+     "k_std": 0.92939,
+     "price": 1.1941,
+     "gen": 4904570.0,
+     "self": 4904570.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0
+    },
+    {
+     "kwp": 2900.0,
+     "ahorro_cliente_anio1": 8715835.0,
+     "k_std": 0.92409,
+     "price": 1.1873,
+     "gen": 5172092.0,
+     "self": 5171925.0,
+     "carga_solar": 0.0,
+     "remanente": 167.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.999,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.001,
+      "d_ahorro_per_kwp": 1237.0
+     }
+    },
+    {
+     "kwp": 3050.0,
+     "ahorro_cliente_anio1": 8900292.0,
+     "k_std": 0.91946,
+     "price": 1.1813,
+     "gen": 5439614.0,
+     "self": 5438301.0,
+     "carga_solar": 0.0,
+     "remanente": 1313.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.996,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.004,
+      "d_ahorro_per_kwp": 1230.0
+     }
+    },
+    {
+     "kwp": 3200.0,
+     "ahorro_cliente_anio1": 9083823.0,
+     "k_std": 0.91538,
+     "price": 1.1761,
+     "gen": 5707136.0,
+     "self": 5703846.0,
+     "carga_solar": 0.0,
+     "remanente": 3290.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.993,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.007,
+      "d_ahorro_per_kwp": 1224.0
+     }
+    },
+    {
+     "kwp": 3350.0,
+     "ahorro_cliente_anio1": 9263949.0,
+     "k_std": 0.91205,
+     "price": 1.1718,
+     "gen": 5974658.0,
+     "self": 5966640.0,
+     "carga_solar": 0.0,
+     "remanente": 8018.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.982,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.018,
+      "d_ahorro_per_kwp": 1201.0
+     }
+    },
+    {
+     "kwp": 3500.0,
+     "ahorro_cliente_anio1": 9439649.0,
+     "k_std": 0.9095,
+     "price": 1.1685,
+     "gen": 6242180.0,
+     "self": 6224725.0,
+     "carga_solar": 3254.0,
+     "remanente": 14201.0,
+     "sat_bess_pct": 0.2,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.965,
+      "b_solarchg_frac": 0.012,
+      "c_remanente_frac": 0.023,
+      "d_ahorro_per_kwp": 1171.0
+     }
+    },
+    {
+     "kwp": 3650.0,
+     "ahorro_cliente_anio1": 9610930.0,
+     "k_std": 0.90759,
+     "price": 1.1661,
+     "gen": 6509702.0,
+     "self": 6478014.0,
+     "carga_solar": 10411.0,
+     "remanente": 21277.0,
+     "sat_bess_pct": 0.5,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.947,
+      "b_solarchg_frac": 0.027,
+      "c_remanente_frac": 0.026,
+      "d_ahorro_per_kwp": 1142.0
+     }
+    },
+    {
+     "kwp": 3800.0,
+     "ahorro_cliente_anio1": 9772966.0,
+     "k_std": 0.90675,
+     "price": 1.165,
+     "gen": 6777224.0,
+     "self": 6722801.0,
+     "carga_solar": 21463.0,
+     "remanente": 32961.0,
+     "sat_bess_pct": 1.1,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.915,
+      "b_solarchg_frac": 0.041,
+      "c_remanente_frac": 0.044,
+      "d_ahorro_per_kwp": 1080.0
+     }
+    },
+    {
+     "kwp": 3950.0,
+     "ahorro_cliente_anio1": 9922333.0,
+     "k_std": 0.90725,
+     "price": 1.1657,
+     "gen": 7044746.0,
+     "self": 6954147.0,
+     "carga_solar": 41584.0,
+     "remanente": 49015.0,
+     "sat_bess_pct": 2.2,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.865,
+      "b_solarchg_frac": 0.075,
+      "c_remanente_frac": 0.06,
+      "d_ahorro_per_kwp": 996.0
+     }
+    },
+    {
+     "kwp": 4100.0,
+     "ahorro_cliente_anio1": 10062584.0,
+     "k_std": 0.90853,
+     "price": 1.1673,
+     "gen": 7312268.0,
+     "self": 7176224.0,
+     "carga_solar": 68709.0,
+     "remanente": 67335.0,
+     "sat_bess_pct": 3.6,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.83,
+      "b_solarchg_frac": 0.101,
+      "c_remanente_frac": 0.068,
+      "d_ahorro_per_kwp": 935.0
+     }
+    },
+    {
+     "kwp": 4250.0,
+     "ahorro_cliente_anio1": 10193471.0,
+     "k_std": 0.91048,
+     "price": 1.1698,
+     "gen": 7579790.0,
+     "self": 7391316.0,
+     "carga_solar": 98201.0,
+     "remanente": 90273.0,
+     "sat_bess_pct": 5.2,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.804,
+      "b_solarchg_frac": 0.11,
+      "c_remanente_frac": 0.086,
+      "d_ahorro_per_kwp": 873.0
+     }
+    },
+    {
+     "kwp": 4400.0,
+     "ahorro_cliente_anio1": 10304160.0,
+     "k_std": 0.91393,
+     "price": 1.1742,
+     "gen": 7847312.0,
+     "self": 7588371.0,
+     "carga_solar": 139059.0,
+     "remanente": 119882.0,
+     "sat_bess_pct": 7.3,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.737,
+      "b_solarchg_frac": 0.153,
+      "c_remanente_frac": 0.111,
+      "d_ahorro_per_kwp": 738.0
+     }
+    },
+    {
+     "kwp": 4550.0,
+     "ahorro_cliente_anio1": 10390544.0,
+     "k_std": 0.91913,
+     "price": 1.1809,
+     "gen": 8114834.0,
+     "self": 7760135.0,
+     "carga_solar": 202131.0,
+     "remanente": 152568.0,
+     "sat_bess_pct": 10.6,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.642,
+      "b_solarchg_frac": 0.236,
+      "c_remanente_frac": 0.122,
+      "d_ahorro_per_kwp": 576.0
+     }
+    },
+    {
+     "kwp": 4700.0,
+     "ahorro_cliente_anio1": 10461190.0,
+     "k_std": 0.92526,
+     "price": 1.1888,
+     "gen": 8382356.0,
+     "self": 7916028.0,
+     "carga_solar": 280090.0,
+     "remanente": 186238.0,
+     "sat_bess_pct": 14.7,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.583,
+      "b_solarchg_frac": 0.291,
+      "c_remanente_frac": 0.126,
+      "d_ahorro_per_kwp": 471.0
+     }
+    },
+    {
+     "kwp": 4850.0,
+     "ahorro_cliente_anio1": 10520756.0,
+     "k_std": 0.93191,
+     "price": 1.1973,
+     "gen": 8649878.0,
+     "self": 8062745.0,
+     "carga_solar": 364580.0,
+     "remanente": 222553.0,
+     "sat_bess_pct": 19.1,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.548,
+      "b_solarchg_frac": 0.316,
+      "c_remanente_frac": 0.136,
+      "d_ahorro_per_kwp": 397.0
+     }
+    },
+    {
+     "kwp": 5000.0,
+     "ahorro_cliente_anio1": 10568138.0,
+     "k_std": 0.93922,
+     "price": 1.2067,
+     "gen": 8917400.0,
+     "self": 8198631.0,
+     "carga_solar": 456927.0,
+     "remanente": 261842.0,
+     "sat_bess_pct": 24.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.508,
+      "b_solarchg_frac": 0.345,
+      "c_remanente_frac": 0.147,
+      "d_ahorro_per_kwp": 316.0
+     }
+    },
+    {
+     "kwp": 5150.0,
+     "ahorro_cliente_anio1": 10598998.0,
+     "k_std": 0.9475,
+     "price": 1.2174,
+     "gen": 9184922.0,
+     "self": 8317372.0,
+     "carga_solar": 565741.0,
+     "remanente": 301809.0,
+     "sat_bess_pct": 29.7,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.444,
+      "b_solarchg_frac": 0.407,
+      "c_remanente_frac": 0.149,
+      "d_ahorro_per_kwp": 206.0
+     }
+    },
+    {
+     "kwp": 5170.0,
+     "ahorro_cliente_anio1": 10601749.0,
+     "k_std": 0.9487,
+     "price": 1.2189,
+     "gen": 9220592.0,
+     "self": 8331668.0,
+     "carga_solar": 581755.0,
+     "remanente": 307168.0,
+     "sat_bess_pct": 30.5,
+     "marg": {
+      "dGen_kwh": 35670.0,
+      "a_self_frac": 0.401,
+      "b_solarchg_frac": 0.449,
+      "c_remanente_frac": 0.15,
+      "d_ahorro_per_kwp": 138.0
+     }
+    },
+    {
+     "kwp": 5300.0,
+     "ahorro_cliente_anio1": 10613632.0,
+     "k_std": 0.95685,
+     "price": 1.2294,
+     "gen": 9452444.0,
+     "self": 8418271.0,
+     "carga_solar": 691448.0,
+     "remanente": 342725.0,
+     "sat_bess_pct": 36.3,
+     "marg": {
+      "dGen_kwh": 231852.0,
+      "a_self_frac": 0.374,
+      "b_solarchg_frac": 0.473,
+      "c_remanente_frac": 0.153,
+      "d_ahorro_per_kwp": 91.0
+     }
+    },
+    {
+     "kwp": 5430.0,
+     "ahorro_cliente_anio1": 10622366.0,
+     "k_std": 0.96509,
+     "price": 1.24,
+     "gen": 9684296.0,
+     "self": 8501741.0,
+     "carga_solar": 803335.0,
+     "remanente": 379220.0,
+     "sat_bess_pct": 42.2,
+     "marg": {
+      "dGen_kwh": 231852.0,
+      "a_self_frac": 0.36,
+      "b_solarchg_frac": 0.483,
+      "c_remanente_frac": 0.157,
+      "d_ahorro_per_kwp": 67.0
+     }
+    },
+    {
+     "kwp": 5450.0,
+     "ahorro_cliente_anio1": 10622828.0,
+     "k_std": 0.9664,
+     "price": 1.2416,
+     "gen": 9719966.0,
+     "self": 8514184.0,
+     "carga_solar": 820346.0,
+     "remanente": 385436.0,
+     "sat_bess_pct": 43.0,
+     "marg": {
+      "dGen_kwh": 35670.0,
+      "a_self_frac": 0.349,
+      "b_solarchg_frac": 0.477,
+      "c_remanente_frac": 0.174,
+      "d_ahorro_per_kwp": 23.0
+     }
+    },
+    {
+     "kwp": 5600.0,
+     "ahorro_cliente_anio1": 10614644.0,
+     "k_std": 0.97664,
+     "price": 1.2548,
+     "gen": 9987488.0,
+     "self": 8605824.0,
+     "carga_solar": 937871.0,
+     "remanente": 443792.0,
+     "sat_bess_pct": 49.2,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.343,
+      "b_solarchg_frac": 0.439,
+      "c_remanente_frac": 0.218,
+      "d_ahorro_per_kwp": -55.0
+     }
+    },
+    {
+     "kwp": 5750.0,
+     "ahorro_cliente_anio1": 10603625.0,
+     "k_std": 0.98684,
+     "price": 1.2679,
+     "gen": 10255010.0,
+     "self": 8696582.0,
+     "carga_solar": 1053826.0,
+     "remanente": 504603.0,
+     "sat_bess_pct": 55.3,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.339,
+      "b_solarchg_frac": 0.433,
+      "c_remanente_frac": 0.227,
+      "d_ahorro_per_kwp": -73.0
+     }
+    },
+    {
+     "kwp": 5900.0,
+     "ahorro_cliente_anio1": 10557796.0,
+     "k_std": 0.99857,
+     "price": 1.283,
+     "gen": 10522532.0,
+     "self": 8779270.0,
+     "carga_solar": 1146847.0,
+     "remanente": 596415.0,
+     "sat_bess_pct": 60.2,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.309,
+      "b_solarchg_frac": 0.348,
+      "c_remanente_frac": 0.343,
+      "d_ahorro_per_kwp": -306.0
+     }
+    },
+    {
+     "kwp": 6050.0,
+     "ahorro_cliente_anio1": 10505210.0,
+     "k_std": 1.01051,
+     "price": 1.2983,
+     "gen": 10790054.0,
+     "self": 8858043.0,
+     "carga_solar": 1240049.0,
+     "remanente": 691962.0,
+     "sat_bess_pct": 65.1,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.294,
+      "b_solarchg_frac": 0.348,
+      "c_remanente_frac": 0.357,
+      "d_ahorro_per_kwp": -351.0
+     }
+    },
+    {
+     "kwp": 6200.0,
+     "ahorro_cliente_anio1": 10444384.0,
+     "k_std": 1.02291,
+     "price": 1.3143,
+     "gen": 11057576.0,
+     "self": 8928023.0,
+     "carga_solar": 1341623.0,
+     "remanente": 787931.0,
+     "sat_bess_pct": 70.4,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.262,
+      "b_solarchg_frac": 0.38,
+      "c_remanente_frac": 0.359,
+      "d_ahorro_per_kwp": -406.0
+     }
+    },
+    {
+     "kwp": 6350.0,
+     "ahorro_cliente_anio1": 10368202.0,
+     "k_std": 1.03604,
+     "price": 1.3311,
+     "gen": 11325098.0,
+     "self": 8990057.0,
+     "carga_solar": 1442447.0,
+     "remanente": 892593.0,
+     "sat_bess_pct": 75.7,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.232,
+      "b_solarchg_frac": 0.377,
+      "c_remanente_frac": 0.391,
+      "d_ahorro_per_kwp": -508.0
+     }
+    },
+    {
+     "kwp": 6500.0,
+     "ahorro_cliente_anio1": 10277706.0,
+     "k_std": 1.04967,
+     "price": 1.3486,
+     "gen": 11592620.0,
+     "self": 9049583.0,
+     "carga_solar": 1533197.0,
+     "remanente": 1009839.0,
+     "sat_bess_pct": 80.5,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.223,
+      "b_solarchg_frac": 0.339,
+      "c_remanente_frac": 0.438,
+      "d_ahorro_per_kwp": -603.0
+     }
+    },
+    {
+     "kwp": 6650.0,
+     "ahorro_cliente_anio1": 10175255.0,
+     "k_std": 1.06369,
+     "price": 1.3667,
+     "gen": 11860142.0,
+     "self": 9107336.0,
+     "carga_solar": 1614680.0,
+     "remanente": 1138126.0,
+     "sat_bess_pct": 84.7,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.216,
+      "b_solarchg_frac": 0.305,
+      "c_remanente_frac": 0.48,
+      "d_ahorro_per_kwp": -683.0
+     }
+    },
+    {
+     "kwp": 6800.0,
+     "ahorro_cliente_anio1": 10058198.0,
+     "k_std": 1.07821,
+     "price": 1.3853,
+     "gen": 12127664.0,
+     "self": 9163162.0,
+     "carga_solar": 1684292.0,
+     "remanente": 1280210.0,
+     "sat_bess_pct": 88.4,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.209,
+      "b_solarchg_frac": 0.26,
+      "c_remanente_frac": 0.531,
+      "d_ahorro_per_kwp": -780.0
+     }
+    },
+    {
+     "kwp": 6950.0,
+     "ahorro_cliente_anio1": 9915240.0,
+     "k_std": 1.09367,
+     "price": 1.4052,
+     "gen": 12395186.0,
+     "self": 9217829.0,
+     "carga_solar": 1727838.0,
+     "remanente": 1449519.0,
+     "sat_bess_pct": 90.7,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.204,
+      "b_solarchg_frac": 0.163,
+      "c_remanente_frac": 0.633,
+      "d_ahorro_per_kwp": -953.0
+     }
+    },
+    {
+     "kwp": 7100.0,
+     "ahorro_cliente_anio1": 9761975.0,
+     "k_std": 1.10944,
+     "price": 1.4254,
+     "gen": 12662708.0,
+     "self": 9270444.0,
+     "carga_solar": 1764694.0,
+     "remanente": 1627570.0,
+     "sat_bess_pct": 92.6,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.197,
+      "b_solarchg_frac": 0.138,
+      "c_remanente_frac": 0.666,
+      "d_ahorro_per_kwp": -1022.0
+     }
+    },
+    {
+     "kwp": 7250.0,
+     "ahorro_cliente_anio1": 9601039.0,
+     "k_std": 1.12552,
+     "price": 1.4461,
+     "gen": 12930230.0,
+     "self": 9319219.0,
+     "carga_solar": 1801022.0,
+     "remanente": 1809988.0,
+     "sat_bess_pct": 94.5,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.182,
+      "b_solarchg_frac": 0.136,
+      "c_remanente_frac": 0.682,
+      "d_ahorro_per_kwp": -1073.0
+     }
+    },
+    {
+     "kwp": 7400.0,
+     "ahorro_cliente_anio1": 9433727.0,
+     "k_std": 1.14187,
+     "price": 1.4671,
+     "gen": 13197752.0,
+     "self": 9364859.0,
+     "carga_solar": 1835844.0,
+     "remanente": 1997049.0,
+     "sat_bess_pct": 96.3,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.171,
+      "b_solarchg_frac": 0.13,
+      "c_remanente_frac": 0.699,
+      "d_ahorro_per_kwp": -1115.0
+     }
+    },
+    {
+     "kwp": 7550.0,
+     "ahorro_cliente_anio1": 9254513.0,
+     "k_std": 1.15866,
+     "price": 1.4887,
+     "gen": 13465274.0,
+     "self": 9408627.0,
+     "carga_solar": 1861019.0,
+     "remanente": 2195629.0,
+     "sat_bess_pct": 97.7,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.164,
+      "b_solarchg_frac": 0.094,
+      "c_remanente_frac": 0.742,
+      "d_ahorro_per_kwp": -1195.0
+     }
+    },
+    {
+     "kwp": 7700.0,
+     "ahorro_cliente_anio1": 9073473.0,
+     "k_std": 1.17544,
+     "price": 1.5102,
+     "gen": 13732796.0,
+     "self": 9451236.0,
+     "carga_solar": 1886193.0,
+     "remanente": 2395366.0,
+     "sat_bess_pct": 99.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.159,
+      "b_solarchg_frac": 0.094,
+      "c_remanente_frac": 0.747,
+      "d_ahorro_per_kwp": -1207.0
+     }
+    },
+    {
+     "kwp": 7850.0,
+     "ahorro_cliente_anio1": 8881442.0,
+     "k_std": 1.19261,
+     "price": 1.5323,
+     "gen": 14000318.0,
+     "self": 9491838.0,
+     "carga_solar": 1902884.0,
+     "remanente": 2605596.0,
+     "sat_bess_pct": 99.9,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.152,
+      "b_solarchg_frac": 0.062,
+      "c_remanente_frac": 0.786,
+      "d_ahorro_per_kwp": -1280.0
+     }
+    },
+    {
+     "kwp": 8000.0,
+     "ahorro_cliente_anio1": 8676212.0,
+     "k_std": 1.21017,
+     "price": 1.5549,
+     "gen": 14267840.0,
+     "self": 9532365.0,
+     "carga_solar": 1905598.0,
+     "remanente": 2829877.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.151,
+      "b_solarchg_frac": 0.01,
+      "c_remanente_frac": 0.838,
+      "d_ahorro_per_kwp": -1368.0
+     }
+    },
+    {
+     "kwp": 8150.0,
+     "ahorro_cliente_anio1": 8467412.0,
+     "k_std": 1.22775,
+     "price": 1.5774,
+     "gen": 14535362.0,
+     "self": 9572363.0,
+     "carga_solar": 1905598.0,
+     "remanente": 3057401.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.15,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.85,
+      "d_ahorro_per_kwp": -1392.0
+     }
+    },
+    {
+     "kwp": 8300.0,
+     "ahorro_cliente_anio1": 8256798.0,
+     "k_std": 1.24531,
+     "price": 1.6,
+     "gen": 14802884.0,
+     "self": 9611409.0,
+     "carga_solar": 1905598.0,
+     "remanente": 3285877.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.146,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.854,
+      "d_ahorro_per_kwp": -1404.0
+     }
+    },
+    {
+     "kwp": 8450.0,
+     "ahorro_cliente_anio1": 8044066.0,
+     "k_std": 1.26287,
+     "price": 1.6226,
+     "gen": 15070406.0,
+     "self": 9649332.0,
+     "carga_solar": 1905598.0,
+     "remanente": 3515476.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.142,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.858,
+      "d_ahorro_per_kwp": -1418.0
+     }
+    },
+    {
+     "kwp": 8600.0,
+     "ahorro_cliente_anio1": 7825684.0,
+     "k_std": 1.28074,
+     "price": 1.6455,
+     "gen": 15337928.0,
+     "self": 9683892.0,
+     "carga_solar": 1905598.0,
+     "remanente": 3748438.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 267522.0,
+      "a_self_frac": 0.129,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.871,
+      "d_ahorro_per_kwp": -1456.0
+     }
+    }
+   ]
+  },
+  "aca": {
+   "site": "aca",
+   "kwp_nr": 2270.0,
+   "kwp_rev4": 1748.0,
+   "ceiling": {
+    "daytime_load_kwh": 4354310.0,
+    "punta_N_kwh": 759294.0,
+    "punta_N_max_kwh": 857678.0,
+    "punta_total_kwh": 857678.0,
+    "addressable_total_kwh": 5113604.0
+   },
+   "saturacion_at_opt": {
+    "kwp": 2270.0,
+    "self_kwh": 3379797.0,
+    "self_vs_daytime_ceiling_pct": 77.6,
+    "carga_solar_kwh": 603263.0,
+    "charge_energy_kwh": 790931.0,
+    "sat_bess_pct": 76.3,
+    "remanente_kwh": 260588.0,
+    "gen_kwh": 4243647.0
+   },
+   "curve": [
+    {
+     "kwp": 950.0,
+     "ahorro_cliente_anio1": 2954267.0,
+     "k_std": 1.15621,
+     "price": 1.4173,
+     "gen": 1775976.0,
+     "self": 1775976.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0
+    },
+    {
+     "kwp": 1000.0,
+     "ahorro_cliente_anio1": 3035995.0,
+     "k_std": 1.14013,
+     "price": 1.3976,
+     "gen": 1869448.0,
+     "self": 1869448.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1635.0
+     }
+    },
+    {
+     "kwp": 1050.0,
+     "ahorro_cliente_anio1": 3117722.0,
+     "k_std": 1.12552,
+     "price": 1.3797,
+     "gen": 1962920.0,
+     "self": 1962920.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1635.0
+     }
+    },
+    {
+     "kwp": 1100.0,
+     "ahorro_cliente_anio1": 3199329.0,
+     "k_std": 1.11226,
+     "price": 1.3634,
+     "gen": 2056393.0,
+     "self": 2056268.0,
+     "carga_solar": 0.0,
+     "remanente": 125.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.999,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.001,
+      "d_ahorro_per_kwp": 1632.0
+     }
+    },
+    {
+     "kwp": 1150.0,
+     "ahorro_cliente_anio1": 3280237.0,
+     "k_std": 1.10048,
+     "price": 1.349,
+     "gen": 2149865.0,
+     "self": 2148892.0,
+     "carga_solar": 0.0,
+     "remanente": 973.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.991,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.009,
+      "d_ahorro_per_kwp": 1618.0
+     }
+    },
+    {
+     "kwp": 1200.0,
+     "ahorro_cliente_anio1": 3360510.0,
+     "k_std": 1.08994,
+     "price": 1.3361,
+     "gen": 2243338.0,
+     "self": 2240882.0,
+     "carga_solar": 0.0,
+     "remanente": 2455.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.984,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.016,
+      "d_ahorro_per_kwp": 1605.0
+     }
+    },
+    {
+     "kwp": 1250.0,
+     "ahorro_cliente_anio1": 3439786.0,
+     "k_std": 1.08058,
+     "price": 1.3246,
+     "gen": 2336810.0,
+     "self": 2332061.0,
+     "carga_solar": 0.0,
+     "remanente": 4749.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.975,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.025,
+      "d_ahorro_per_kwp": 1586.0
+     }
+    },
+    {
+     "kwp": 1300.0,
+     "ahorro_cliente_anio1": 3516645.0,
+     "k_std": 1.07276,
+     "price": 1.315,
+     "gen": 2430282.0,
+     "self": 2420934.0,
+     "carga_solar": 1021.0,
+     "remanente": 8326.0,
+     "sat_bess_pct": 0.1,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.951,
+      "b_solarchg_frac": 0.011,
+      "c_remanente_frac": 0.038,
+      "d_ahorro_per_kwp": 1537.0
+     }
+    },
+    {
+     "kwp": 1350.0,
+     "ahorro_cliente_anio1": 3590280.0,
+     "k_std": 1.06661,
+     "price": 1.3075,
+     "gen": 2523755.0,
+     "self": 2506209.0,
+     "carga_solar": 4941.0,
+     "remanente": 12605.0,
+     "sat_bess_pct": 0.6,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.912,
+      "b_solarchg_frac": 0.042,
+      "c_remanente_frac": 0.046,
+      "d_ahorro_per_kwp": 1473.0
+     }
+    },
+    {
+     "kwp": 1400.0,
+     "ahorro_cliente_anio1": 3660817.0,
+     "k_std": 1.06187,
+     "price": 1.3016,
+     "gen": 2617227.0,
+     "self": 2588214.0,
+     "carga_solar": 11405.0,
+     "remanente": 17609.0,
+     "sat_bess_pct": 1.4,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.877,
+      "b_solarchg_frac": 0.069,
+      "c_remanente_frac": 0.054,
+      "d_ahorro_per_kwp": 1411.0
+     }
+    },
+    {
+     "kwp": 1450.0,
+     "ahorro_cliente_anio1": 3727900.0,
+     "k_std": 1.05839,
+     "price": 1.2974,
+     "gen": 2710700.0,
+     "self": 2666974.0,
+     "carga_solar": 20106.0,
+     "remanente": 23619.0,
+     "sat_bess_pct": 2.5,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.843,
+      "b_solarchg_frac": 0.093,
+      "c_remanente_frac": 0.064,
+      "d_ahorro_per_kwp": 1342.0
+     }
+    },
+    {
+     "kwp": 1500.0,
+     "ahorro_cliente_anio1": 3790323.0,
+     "k_std": 1.05641,
+     "price": 1.2949,
+     "gen": 2804172.0,
+     "self": 2741173.0,
+     "carga_solar": 32377.0,
+     "remanente": 30622.0,
+     "sat_bess_pct": 4.1,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.794,
+      "b_solarchg_frac": 0.131,
+      "c_remanente_frac": 0.075,
+      "d_ahorro_per_kwp": 1248.0
+     }
+    },
+    {
+     "kwp": 1550.0,
+     "ahorro_cliente_anio1": 3846885.0,
+     "k_std": 1.05623,
+     "price": 1.2947,
+     "gen": 2897644.0,
+     "self": 2809378.0,
+     "carga_solar": 49137.0,
+     "remanente": 39129.0,
+     "sat_bess_pct": 6.2,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.73,
+      "b_solarchg_frac": 0.179,
+      "c_remanente_frac": 0.091,
+      "d_ahorro_per_kwp": 1131.0
+     }
+    },
+    {
+     "kwp": 1600.0,
+     "ahorro_cliente_anio1": 3899241.0,
+     "k_std": 1.05725,
+     "price": 1.296,
+     "gen": 2991117.0,
+     "self": 2873169.0,
+     "carga_solar": 69355.0,
+     "remanente": 48593.0,
+     "sat_bess_pct": 8.8,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.682,
+      "b_solarchg_frac": 0.216,
+      "c_remanente_frac": 0.101,
+      "d_ahorro_per_kwp": 1047.0
+     }
+    },
+    {
+     "kwp": 1618.0,
+     "ahorro_cliente_anio1": 3917112.0,
+     "k_std": 1.05785,
+     "price": 1.2967,
+     "gen": 3024767.0,
+     "self": 2895252.0,
+     "carga_solar": 77271.0,
+     "remanente": 52243.0,
+     "sat_bess_pct": 9.8,
+     "marg": {
+      "dGen_kwh": 33650.0,
+      "a_self_frac": 0.656,
+      "b_solarchg_frac": 0.235,
+      "c_remanente_frac": 0.108,
+      "d_ahorro_per_kwp": 993.0
+     }
+    },
+    {
+     "kwp": 1650.0,
+     "ahorro_cliente_anio1": 3947670.0,
+     "k_std": 1.05918,
+     "price": 1.2983,
+     "gen": 3084589.0,
+     "self": 2933431.0,
+     "carga_solar": 92157.0,
+     "remanente": 59001.0,
+     "sat_bess_pct": 11.7,
+     "marg": {
+      "dGen_kwh": 59822.0,
+      "a_self_frac": 0.638,
+      "b_solarchg_frac": 0.249,
+      "c_remanente_frac": 0.113,
+      "d_ahorro_per_kwp": 955.0
+     }
+    },
+    {
+     "kwp": 1700.0,
+     "ahorro_cliente_anio1": 3991616.0,
+     "k_std": 1.06206,
+     "price": 1.3019,
+     "gen": 3178062.0,
+     "self": 2989831.0,
+     "carga_solar": 117731.0,
+     "remanente": 70500.0,
+     "sat_bess_pct": 14.9,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.603,
+      "b_solarchg_frac": 0.274,
+      "c_remanente_frac": 0.123,
+      "d_ahorro_per_kwp": 879.0
+     }
+    },
+    {
+     "kwp": 1748.0,
+     "ahorro_cliente_anio1": 4028945.0,
+     "k_std": 1.06586,
+     "price": 1.3065,
+     "gen": 3267795.0,
+     "self": 3039820.0,
+     "carga_solar": 145024.0,
+     "remanente": 82950.0,
+     "sat_bess_pct": 18.3,
+     "marg": {
+      "dGen_kwh": 89734.0,
+      "a_self_frac": 0.557,
+      "b_solarchg_frac": 0.304,
+      "c_remanente_frac": 0.139,
+      "d_ahorro_per_kwp": 778.0
+     }
+    },
+    {
+     "kwp": 1750.0,
+     "ahorro_cliente_anio1": 4030388.0,
+     "k_std": 1.06605,
+     "price": 1.3068,
+     "gen": 3271534.0,
+     "self": 3041801.0,
+     "carga_solar": 146221.0,
+     "remanente": 83512.0,
+     "sat_bess_pct": 18.5,
+     "marg": {
+      "dGen_kwh": 3739.0,
+      "a_self_frac": 0.53,
+      "b_solarchg_frac": 0.32,
+      "c_remanente_frac": 0.15,
+      "d_ahorro_per_kwp": 721.0
+     }
+    },
+    {
+     "kwp": 1800.0,
+     "ahorro_cliente_anio1": 4063394.0,
+     "k_std": 1.07131,
+     "price": 1.3132,
+     "gen": 3365006.0,
+     "self": 3088077.0,
+     "carga_solar": 179541.0,
+     "remanente": 97389.0,
+     "sat_bess_pct": 22.7,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.495,
+      "b_solarchg_frac": 0.356,
+      "c_remanente_frac": 0.148,
+      "d_ahorro_per_kwp": 660.0
+     }
+    },
+    {
+     "kwp": 1850.0,
+     "ahorro_cliente_anio1": 4091862.0,
+     "k_std": 1.07755,
+     "price": 1.3209,
+     "gen": 3458479.0,
+     "self": 3129590.0,
+     "carga_solar": 217553.0,
+     "remanente": 111337.0,
+     "sat_bess_pct": 27.5,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.444,
+      "b_solarchg_frac": 0.407,
+      "c_remanente_frac": 0.149,
+      "d_ahorro_per_kwp": 569.0
+     }
+    },
+    {
+     "kwp": 1900.0,
+     "ahorro_cliente_anio1": 4116651.0,
+     "k_std": 1.08454,
+     "price": 1.3294,
+     "gen": 3551951.0,
+     "self": 3167211.0,
+     "carga_solar": 259348.0,
+     "remanente": 125392.0,
+     "sat_bess_pct": 32.8,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.402,
+      "b_solarchg_frac": 0.447,
+      "c_remanente_frac": 0.15,
+      "d_ahorro_per_kwp": 496.0
+     }
+    },
+    {
+     "kwp": 1950.0,
+     "ahorro_cliente_anio1": 4139370.0,
+     "k_std": 1.09184,
+     "price": 1.3384,
+     "gen": 3645424.0,
+     "self": 3202926.0,
+     "carga_solar": 302768.0,
+     "remanente": 139730.0,
+     "sat_bess_pct": 38.3,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.382,
+      "b_solarchg_frac": 0.465,
+      "c_remanente_frac": 0.153,
+      "d_ahorro_per_kwp": 454.0
+     }
+    },
+    {
+     "kwp": 2000.0,
+     "ahorro_cliente_anio1": 4159423.0,
+     "k_std": 1.09958,
+     "price": 1.3479,
+     "gen": 3738896.0,
+     "self": 3236459.0,
+     "carga_solar": 347569.0,
+     "remanente": 154868.0,
+     "sat_bess_pct": 43.9,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.359,
+      "b_solarchg_frac": 0.479,
+      "c_remanente_frac": 0.162,
+      "d_ahorro_per_kwp": 401.0
+     }
+    },
+    {
+     "kwp": 2050.0,
+     "ahorro_cliente_anio1": 4177102.0,
+     "k_std": 1.10768,
+     "price": 1.3578,
+     "gen": 3832368.0,
+     "self": 3267707.0,
+     "carga_solar": 394566.0,
+     "remanente": 170095.0,
+     "sat_bess_pct": 49.9,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.334,
+      "b_solarchg_frac": 0.503,
+      "c_remanente_frac": 0.163,
+      "d_ahorro_per_kwp": 354.0
+     }
+    },
+    {
+     "kwp": 2100.0,
+     "ahorro_cliente_anio1": 4190995.0,
+     "k_std": 1.11662,
+     "price": 1.3687,
+     "gen": 3925841.0,
+     "self": 3294866.0,
+     "carga_solar": 445488.0,
+     "remanente": 185487.0,
+     "sat_bess_pct": 56.3,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.291,
+      "b_solarchg_frac": 0.545,
+      "c_remanente_frac": 0.165,
+      "d_ahorro_per_kwp": 278.0
+     }
+    },
+    {
+     "kwp": 2150.0,
+     "ahorro_cliente_anio1": 4204053.0,
+     "k_std": 1.12564,
+     "price": 1.3798,
+     "gen": 4019313.0,
+     "self": 3321181.0,
+     "carga_solar": 496926.0,
+     "remanente": 201207.0,
+     "sat_bess_pct": 62.8,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.282,
+      "b_solarchg_frac": 0.55,
+      "c_remanente_frac": 0.168,
+      "d_ahorro_per_kwp": 261.0
+     }
+    },
+    {
+     "kwp": 2200.0,
+     "ahorro_cliente_anio1": 4212303.0,
+     "k_std": 1.13527,
+     "price": 1.3916,
+     "gen": 4112786.0,
+     "self": 3346235.0,
+     "carga_solar": 544739.0,
+     "remanente": 221811.0,
+     "sat_bess_pct": 68.9,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.268,
+      "b_solarchg_frac": 0.512,
+      "c_remanente_frac": 0.22,
+      "d_ahorro_per_kwp": 165.0
+     }
+    },
+    {
+     "kwp": 2250.0,
+     "ahorro_cliente_anio1": 4214043.0,
+     "k_std": 1.14566,
+     "price": 1.4044,
+     "gen": 4206258.0,
+     "self": 3370208.0,
+     "carga_solar": 586541.0,
+     "remanente": 249509.0,
+     "sat_bess_pct": 74.2,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.256,
+      "b_solarchg_frac": 0.447,
+      "c_remanente_frac": 0.296,
+      "d_ahorro_per_kwp": 35.0
+     }
+    },
+    {
+     "kwp": 2270.0,
+     "ahorro_cliente_anio1": 4214740.0,
+     "k_std": 1.14978,
+     "price": 1.4094,
+     "gen": 4243647.0,
+     "self": 3379797.0,
+     "carga_solar": 603263.0,
+     "remanente": 260588.0,
+     "sat_bess_pct": 76.3,
+     "marg": {
+      "dGen_kwh": 37389.0,
+      "a_self_frac": 0.256,
+      "b_solarchg_frac": 0.447,
+      "c_remanente_frac": 0.296,
+      "d_ahorro_per_kwp": 35.0
+     }
+    },
+    {
+     "kwp": 2300.0,
+     "ahorro_cliente_anio1": 4212220.0,
+     "k_std": 1.15636,
+     "price": 1.4175,
+     "gen": 4299730.0,
+     "self": 3393945.0,
+     "carga_solar": 624505.0,
+     "remanente": 281281.0,
+     "sat_bess_pct": 79.0,
+     "marg": {
+      "dGen_kwh": 56083.0,
+      "a_self_frac": 0.252,
+      "b_solarchg_frac": 0.379,
+      "c_remanente_frac": 0.369,
+      "d_ahorro_per_kwp": -84.0
+     }
+    },
+    {
+     "kwp": 2350.0,
+     "ahorro_cliente_anio1": 4200694.0,
+     "k_std": 1.1682,
+     "price": 1.432,
+     "gen": 4393203.0,
+     "self": 3416307.0,
+     "carga_solar": 653684.0,
+     "remanente": 323211.0,
+     "sat_bess_pct": 82.6,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.239,
+      "b_solarchg_frac": 0.312,
+      "c_remanente_frac": 0.449,
+      "d_ahorro_per_kwp": -231.0
+     }
+    },
+    {
+     "kwp": 2400.0,
+     "ahorro_cliente_anio1": 4184073.0,
+     "k_std": 1.1805,
+     "price": 1.4471,
+     "gen": 4486675.0,
+     "self": 3438409.0,
+     "carga_solar": 677123.0,
+     "remanente": 371143.0,
+     "sat_bess_pct": 85.6,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.236,
+      "b_solarchg_frac": 0.251,
+      "c_remanente_frac": 0.513,
+      "d_ahorro_per_kwp": -332.0
+     }
+    },
+    {
+     "kwp": 2450.0,
+     "ahorro_cliente_anio1": 4165621.0,
+     "k_std": 1.19306,
+     "price": 1.4625,
+     "gen": 4580148.0,
+     "self": 3458948.0,
+     "carga_solar": 701716.0,
+     "remanente": 419484.0,
+     "sat_bess_pct": 88.7,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.22,
+      "b_solarchg_frac": 0.263,
+      "c_remanente_frac": 0.517,
+      "d_ahorro_per_kwp": -369.0
+     }
+    },
+    {
+     "kwp": 2500.0,
+     "ahorro_cliente_anio1": 4146184.0,
+     "k_std": 1.20573,
+     "price": 1.478,
+     "gen": 4673620.0,
+     "self": 3478580.0,
+     "carga_solar": 726973.0,
+     "remanente": 468066.0,
+     "sat_bess_pct": 91.9,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.21,
+      "b_solarchg_frac": 0.27,
+      "c_remanente_frac": 0.52,
+      "d_ahorro_per_kwp": -389.0
+     }
+    },
+    {
+     "kwp": 2550.0,
+     "ahorro_cliente_anio1": 4117555.0,
+     "k_std": 1.21965,
+     "price": 1.495,
+     "gen": 4767092.0,
+     "self": 3495722.0,
+     "carga_solar": 746655.0,
+     "remanente": 524716.0,
+     "sat_bess_pct": 94.4,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.183,
+      "b_solarchg_frac": 0.211,
+      "c_remanente_frac": 0.606,
+      "d_ahorro_per_kwp": -573.0
+     }
+    },
+    {
+     "kwp": 2600.0,
+     "ahorro_cliente_anio1": 4081615.0,
+     "k_std": 1.23437,
+     "price": 1.5131,
+     "gen": 4860565.0,
+     "self": 3512097.0,
+     "carga_solar": 759185.0,
+     "remanente": 589283.0,
+     "sat_bess_pct": 96.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.175,
+      "b_solarchg_frac": 0.134,
+      "c_remanente_frac": 0.691,
+      "d_ahorro_per_kwp": -719.0
+     }
+    },
+    {
+     "kwp": 2650.0,
+     "ahorro_cliente_anio1": 4041560.0,
+     "k_std": 1.24956,
+     "price": 1.5317,
+     "gen": 4954037.0,
+     "self": 3527685.0,
+     "carga_solar": 768336.0,
+     "remanente": 658017.0,
+     "sat_bess_pct": 97.1,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.167,
+      "b_solarchg_frac": 0.098,
+      "c_remanente_frac": 0.735,
+      "d_ahorro_per_kwp": -801.0
+     }
+    },
+    {
+     "kwp": 2700.0,
+     "ahorro_cliente_anio1": 3998154.0,
+     "k_std": 1.26501,
+     "price": 1.5506,
+     "gen": 5047510.0,
+     "self": 3543169.0,
+     "carga_solar": 773728.0,
+     "remanente": 730613.0,
+     "sat_bess_pct": 97.8,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.166,
+      "b_solarchg_frac": 0.058,
+      "c_remanente_frac": 0.777,
+      "d_ahorro_per_kwp": -868.0
+     }
+    },
+    {
+     "kwp": 2750.0,
+     "ahorro_cliente_anio1": 3953263.0,
+     "k_std": 1.28062,
+     "price": 1.5698,
+     "gen": 5140982.0,
+     "self": 3557821.0,
+     "carga_solar": 779068.0,
+     "remanente": 804093.0,
+     "sat_bess_pct": 98.5,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.157,
+      "b_solarchg_frac": 0.057,
+      "c_remanente_frac": 0.786,
+      "d_ahorro_per_kwp": -898.0
+     }
+    },
+    {
+     "kwp": 2800.0,
+     "ahorro_cliente_anio1": 3908023.0,
+     "k_std": 1.2962,
+     "price": 1.5889,
+     "gen": 5234454.0,
+     "self": 3572223.0,
+     "carga_solar": 784409.0,
+     "remanente": 877822.0,
+     "sat_bess_pct": 99.2,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.154,
+      "b_solarchg_frac": 0.057,
+      "c_remanente_frac": 0.789,
+      "d_ahorro_per_kwp": -905.0
+     }
+    },
+    {
+     "kwp": 2850.0,
+     "ahorro_cliente_anio1": 3862462.0,
+     "k_std": 1.31172,
+     "price": 1.6079,
+     "gen": 5327927.0,
+     "self": 3586446.0,
+     "carga_solar": 789750.0,
+     "remanente": 951730.0,
+     "sat_bess_pct": 99.9,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.152,
+      "b_solarchg_frac": 0.057,
+      "c_remanente_frac": 0.791,
+      "d_ahorro_per_kwp": -911.0
+     }
+    },
+    {
+     "kwp": 2900.0,
+     "ahorro_cliente_anio1": 3812168.0,
+     "k_std": 1.32776,
+     "price": 1.6276,
+     "gen": 5421399.0,
+     "self": 3599925.0,
+     "carga_solar": 790931.0,
+     "remanente": 1030543.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.144,
+      "b_solarchg_frac": 0.013,
+      "c_remanente_frac": 0.843,
+      "d_ahorro_per_kwp": -1006.0
+     }
+    },
+    {
+     "kwp": 2950.0,
+     "ahorro_cliente_anio1": 3759243.0,
+     "k_std": 1.34416,
+     "price": 1.6477,
+     "gen": 5514872.0,
+     "self": 3612340.0,
+     "carga_solar": 790931.0,
+     "remanente": 1111600.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.133,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.867,
+      "d_ahorro_per_kwp": -1058.0
+     }
+    },
+    {
+     "kwp": 3000.0,
+     "ahorro_cliente_anio1": 3705968.0,
+     "k_std": 1.36054,
+     "price": 1.6678,
+     "gen": 5608344.0,
+     "self": 3624540.0,
+     "carga_solar": 790931.0,
+     "remanente": 1192873.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.131,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.869,
+      "d_ahorro_per_kwp": -1066.0
+     }
+    },
+    {
+     "kwp": 3050.0,
+     "ahorro_cliente_anio1": 3651597.0,
+     "k_std": 1.37708,
+     "price": 1.688,
+     "gen": 5701816.0,
+     "self": 3636020.0,
+     "carga_solar": 790931.0,
+     "remanente": 1274865.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.123,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.877,
+      "d_ahorro_per_kwp": -1087.0
+     }
+    },
+    {
+     "kwp": 3100.0,
+     "ahorro_cliente_anio1": 3596592.0,
+     "k_std": 1.39366,
+     "price": 1.7083,
+     "gen": 5795289.0,
+     "self": 3647123.0,
+     "carga_solar": 790931.0,
+     "remanente": 1357235.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.119,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.881,
+      "d_ahorro_per_kwp": -1100.0
+     }
+    },
+    {
+     "kwp": 3150.0,
+     "ahorro_cliente_anio1": 3540290.0,
+     "k_std": 1.4104,
+     "price": 1.7289,
+     "gen": 5888761.0,
+     "self": 3657529.0,
+     "carga_solar": 790931.0,
+     "remanente": 1440301.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.111,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.889,
+      "d_ahorro_per_kwp": -1126.0
+     }
+    },
+    {
+     "kwp": 3200.0,
+     "ahorro_cliente_anio1": 3483988.0,
+     "k_std": 1.42705,
+     "price": 1.7493,
+     "gen": 5982234.0,
+     "self": 3667936.0,
+     "carga_solar": 790931.0,
+     "remanente": 1523367.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.111,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.889,
+      "d_ahorro_per_kwp": -1126.0
+     }
+    },
+    {
+     "kwp": 3250.0,
+     "ahorro_cliente_anio1": 3427365.0,
+     "k_std": 1.44367,
+     "price": 1.7696,
+     "gen": 6075706.0,
+     "self": 3678172.0,
+     "carga_solar": 790931.0,
+     "remanente": 1606603.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.11,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.89,
+      "d_ahorro_per_kwp": -1132.0
+     }
+    },
+    {
+     "kwp": 3300.0,
+     "ahorro_cliente_anio1": 3369166.0,
+     "k_std": 1.46052,
+     "price": 1.7903,
+     "gen": 6169178.0,
+     "self": 3687572.0,
+     "carga_solar": 790931.0,
+     "remanente": 1690675.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.101,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.899,
+      "d_ahorro_per_kwp": -1164.0
+     }
+    },
+    {
+     "kwp": 3350.0,
+     "ahorro_cliente_anio1": 3310917.0,
+     "k_std": 1.47731,
+     "price": 1.8109,
+     "gen": 6262651.0,
+     "self": 3696946.0,
+     "carga_solar": 790931.0,
+     "remanente": 1774774.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.1,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.9,
+      "d_ahorro_per_kwp": -1165.0
+     }
+    },
+    {
+     "kwp": 3400.0,
+     "ahorro_cliente_anio1": 3252271.0,
+     "k_std": 1.49409,
+     "price": 1.8315,
+     "gen": 6356123.0,
+     "self": 3706098.0,
+     "carga_solar": 790931.0,
+     "remanente": 1859094.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.098,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.902,
+      "d_ahorro_per_kwp": -1173.0
+     }
+    },
+    {
+     "kwp": 3450.0,
+     "ahorro_cliente_anio1": 3192025.0,
+     "k_std": 1.51114,
+     "price": 1.8524,
+     "gen": 6449596.0,
+     "self": 3714396.0,
+     "carga_solar": 790931.0,
+     "remanente": 1944268.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.089,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.911,
+      "d_ahorro_per_kwp": -1205.0
+     }
+    },
+    {
+     "kwp": 3500.0,
+     "ahorro_cliente_anio1": 3130896.0,
+     "k_std": 1.5283,
+     "price": 1.8734,
+     "gen": 6543068.0,
+     "self": 3722224.0,
+     "carga_solar": 790931.0,
+     "remanente": 2029913.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.084,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.916,
+      "d_ahorro_per_kwp": -1223.0
+     }
+    },
+    {
+     "kwp": 3550.0,
+     "ahorro_cliente_anio1": 3069329.0,
+     "k_std": 1.54549,
+     "price": 1.8945,
+     "gen": 6636540.0,
+     "self": 3729811.0,
+     "carga_solar": 790931.0,
+     "remanente": 2115798.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.081,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.919,
+      "d_ahorro_per_kwp": -1231.0
+     }
+    },
+    {
+     "kwp": 3600.0,
+     "ahorro_cliente_anio1": 3005623.0,
+     "k_std": 1.5631,
+     "price": 1.916,
+     "gen": 6730013.0,
+     "self": 3736195.0,
+     "carga_solar": 790931.0,
+     "remanente": 2202887.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 93472.0,
+      "a_self_frac": 0.068,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.932,
+      "d_ahorro_per_kwp": -1274.0
+     }
+    }
+   ]
+  },
+  "can": {
+   "site": "can",
+   "kwp_nr": 1410.0,
+   "kwp_rev4": 1270.0,
+   "ceiling": {
+    "daytime_load_kwh": 2343634.0,
+    "punta_N_kwh": 452699.0,
+    "punta_N_max_kwh": 494180.0,
+    "punta_total_kwh": 494180.0,
+    "addressable_total_kwh": 2796333.0
+   },
+   "saturacion_at_opt": {
+    "kwp": 1410.0,
+    "self_kwh": 1777476.0,
+    "self_vs_daytime_ceiling_pct": 75.8,
+    "carga_solar_kwh": 219930.0,
+    "charge_energy_kwh": 471561.0,
+    "sat_bess_pct": 46.6,
+    "remanente_kwh": 117300.0,
+    "gen_kwh": 2114707.0
+   },
+   "curve": [
+    {
+     "kwp": 650.0,
+     "ahorro_cliente_anio1": 1981799.0,
+     "k_std": 1.02918,
+     "price": 1.5724,
+     "gen": 974865.0,
+     "self": 974865.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0
+    },
+    {
+     "kwp": 700.0,
+     "ahorro_cliente_anio1": 2049737.0,
+     "k_std": 1.01501,
+     "price": 1.5507,
+     "gen": 1049854.0,
+     "self": 1049782.0,
+     "carga_solar": 0.0,
+     "remanente": 72.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.999,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.001,
+      "d_ahorro_per_kwp": 1359.0
+     }
+    },
+    {
+     "kwp": 750.0,
+     "ahorro_cliente_anio1": 2117318.0,
+     "k_std": 1.00292,
+     "price": 1.5322,
+     "gen": 1124844.0,
+     "self": 1124412.0,
+     "carga_solar": 0.0,
+     "remanente": 432.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.995,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.005,
+      "d_ahorro_per_kwp": 1352.0
+     }
+    },
+    {
+     "kwp": 800.0,
+     "ahorro_cliente_anio1": 2184155.0,
+     "k_std": 0.99265,
+     "price": 1.5165,
+     "gen": 1199834.0,
+     "self": 1198566.0,
+     "carga_solar": 94.0,
+     "remanente": 1173.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.989,
+      "b_solarchg_frac": 0.001,
+      "c_remanente_frac": 0.01,
+      "d_ahorro_per_kwp": 1337.0
+     }
+    },
+    {
+     "kwp": 850.0,
+     "ahorro_cliente_anio1": 2248564.0,
+     "k_std": 0.98476,
+     "price": 1.5045,
+     "gen": 1274823.0,
+     "self": 1270636.0,
+     "carga_solar": 1583.0,
+     "remanente": 2604.0,
+     "sat_bess_pct": 0.3,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.961,
+      "b_solarchg_frac": 0.02,
+      "c_remanente_frac": 0.019,
+      "d_ahorro_per_kwp": 1288.0
+     }
+    },
+    {
+     "kwp": 900.0,
+     "ahorro_cliente_anio1": 2310800.0,
+     "k_std": 0.97872,
+     "price": 1.4953,
+     "gen": 1349813.0,
+     "self": 1341050.0,
+     "carga_solar": 3653.0,
+     "remanente": 5110.0,
+     "sat_bess_pct": 0.8,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.939,
+      "b_solarchg_frac": 0.028,
+      "c_remanente_frac": 0.033,
+      "d_ahorro_per_kwp": 1245.0
+     }
+    },
+    {
+     "kwp": 950.0,
+     "ahorro_cliente_anio1": 2368727.0,
+     "k_std": 0.97525,
+     "price": 1.49,
+     "gen": 1424802.0,
+     "self": 1408008.0,
+     "carga_solar": 7291.0,
+     "remanente": 9503.0,
+     "sat_bess_pct": 1.5,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.893,
+      "b_solarchg_frac": 0.049,
+      "c_remanente_frac": 0.059,
+      "d_ahorro_per_kwp": 1159.0
+     }
+    },
+    {
+     "kwp": 1000.0,
+     "ahorro_cliente_anio1": 2422230.0,
+     "k_std": 0.97388,
+     "price": 1.4879,
+     "gen": 1499792.0,
+     "self": 1471438.0,
+     "carga_solar": 13171.0,
+     "remanente": 15183.0,
+     "sat_bess_pct": 2.8,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.846,
+      "b_solarchg_frac": 0.078,
+      "c_remanente_frac": 0.076,
+      "d_ahorro_per_kwp": 1070.0
+     }
+    },
+    {
+     "kwp": 1050.0,
+     "ahorro_cliente_anio1": 2467910.0,
+     "k_std": 0.97547,
+     "price": 1.4903,
+     "gen": 1574782.0,
+     "self": 1529047.0,
+     "carga_solar": 22500.0,
+     "remanente": 23234.0,
+     "sat_bess_pct": 4.8,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.768,
+      "b_solarchg_frac": 0.124,
+      "c_remanente_frac": 0.107,
+      "d_ahorro_per_kwp": 914.0
+     }
+    },
+    {
+     "kwp": 1100.0,
+     "ahorro_cliente_anio1": 2504517.0,
+     "k_std": 0.98023,
+     "price": 1.4976,
+     "gen": 1649771.0,
+     "self": 1578686.0,
+     "carga_solar": 39125.0,
+     "remanente": 31960.0,
+     "sat_bess_pct": 8.3,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.662,
+      "b_solarchg_frac": 0.222,
+      "c_remanente_frac": 0.116,
+      "d_ahorro_per_kwp": 732.0
+     }
+    },
+    {
+     "kwp": 1150.0,
+     "ahorro_cliente_anio1": 2534267.0,
+     "k_std": 0.98698,
+     "price": 1.5079,
+     "gen": 1724761.0,
+     "self": 1623044.0,
+     "carga_solar": 59916.0,
+     "remanente": 41801.0,
+     "sat_bess_pct": 12.7,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.592,
+      "b_solarchg_frac": 0.277,
+      "c_remanente_frac": 0.131,
+      "d_ahorro_per_kwp": 595.0
+     }
+    },
+    {
+     "kwp": 1200.0,
+     "ahorro_cliente_anio1": 2555931.0,
+     "k_std": 0.99605,
+     "price": 1.5217,
+     "gen": 1799750.0,
+     "self": 1661126.0,
+     "carga_solar": 85672.0,
+     "remanente": 52952.0,
+     "sat_bess_pct": 18.2,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.508,
+      "b_solarchg_frac": 0.343,
+      "c_remanente_frac": 0.149,
+      "d_ahorro_per_kwp": 433.0
+     }
+    },
+    {
+     "kwp": 1250.0,
+     "ahorro_cliente_anio1": 2570219.0,
+     "k_std": 1.00731,
+     "price": 1.5389,
+     "gen": 1874740.0,
+     "self": 1692510.0,
+     "carga_solar": 118014.0,
+     "remanente": 64216.0,
+     "sat_bess_pct": 25.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.419,
+      "b_solarchg_frac": 0.431,
+      "c_remanente_frac": 0.15,
+      "d_ahorro_per_kwp": 286.0
+     }
+    },
+    {
+     "kwp": 1270.0,
+     "ahorro_cliente_anio1": 2574059.0,
+     "k_std": 1.01219,
+     "price": 1.5464,
+     "gen": 1904736.0,
+     "self": 1704369.0,
+     "carga_solar": 130445.0,
+     "remanente": 69921.0,
+     "sat_bess_pct": 27.7,
+     "marg": {
+      "dGen_kwh": 29996.0,
+      "a_self_frac": 0.395,
+      "b_solarchg_frac": 0.414,
+      "c_remanente_frac": 0.19,
+      "d_ahorro_per_kwp": 192.0
+     }
+    },
+    {
+     "kwp": 1300.0,
+     "ahorro_cliente_anio1": 2577869.0,
+     "k_std": 1.01987,
+     "price": 1.5581,
+     "gen": 1949730.0,
+     "self": 1721571.0,
+     "carga_solar": 148268.0,
+     "remanente": 79891.0,
+     "sat_bess_pct": 31.4,
+     "marg": {
+      "dGen_kwh": 44994.0,
+      "a_self_frac": 0.382,
+      "b_solarchg_frac": 0.396,
+      "c_remanente_frac": 0.222,
+      "d_ahorro_per_kwp": 127.0
+     }
+    },
+    {
+     "kwp": 1350.0,
+     "ahorro_cliente_anio1": 2582271.0,
+     "k_std": 1.033,
+     "price": 1.5782,
+     "gen": 2024719.0,
+     "self": 1748649.0,
+     "carga_solar": 179426.0,
+     "remanente": 96644.0,
+     "sat_bess_pct": 38.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.361,
+      "b_solarchg_frac": 0.416,
+      "c_remanente_frac": 0.223,
+      "d_ahorro_per_kwp": 88.0
+     }
+    },
+    {
+     "kwp": 1400.0,
+     "ahorro_cliente_anio1": 2583236.0,
+     "k_std": 1.0469,
+     "price": 1.5994,
+     "gen": 2099709.0,
+     "self": 1772945.0,
+     "carga_solar": 212951.0,
+     "remanente": 113813.0,
+     "sat_bess_pct": 45.2,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.324,
+      "b_solarchg_frac": 0.447,
+      "c_remanente_frac": 0.229,
+      "d_ahorro_per_kwp": 19.0
+     }
+    },
+    {
+     "kwp": 1410.0,
+     "ahorro_cliente_anio1": 2583045.0,
+     "k_std": 1.04977,
+     "price": 1.6038,
+     "gen": 2114707.0,
+     "self": 1777476.0,
+     "carga_solar": 219930.0,
+     "remanente": 117300.0,
+     "sat_bess_pct": 46.6,
+     "marg": {
+      "dGen_kwh": 14998.0,
+      "a_self_frac": 0.302,
+      "b_solarchg_frac": 0.465,
+      "c_remanente_frac": 0.233,
+      "d_ahorro_per_kwp": -19.0
+     }
+    },
+    {
+     "kwp": 1450.0,
+     "ahorro_cliente_anio1": 2580775.0,
+     "k_std": 1.06162,
+     "price": 1.6219,
+     "gen": 2174698.0,
+     "self": 1794456.0,
+     "carga_solar": 248705.0,
+     "remanente": 131537.0,
+     "sat_bess_pct": 52.7,
+     "marg": {
+      "dGen_kwh": 59992.0,
+      "a_self_frac": 0.283,
+      "b_solarchg_frac": 0.48,
+      "c_remanente_frac": 0.237,
+      "d_ahorro_per_kwp": -57.0
+     }
+    },
+    {
+     "kwp": 1500.0,
+     "ahorro_cliente_anio1": 2576083.0,
+     "k_std": 1.0768,
+     "price": 1.6451,
+     "gen": 2249688.0,
+     "self": 1813921.0,
+     "carga_solar": 286566.0,
+     "remanente": 149201.0,
+     "sat_bess_pct": 60.8,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.26,
+      "b_solarchg_frac": 0.505,
+      "c_remanente_frac": 0.236,
+      "d_ahorro_per_kwp": -94.0
+     }
+    },
+    {
+     "kwp": 1550.0,
+     "ahorro_cliente_anio1": 2569251.0,
+     "k_std": 1.09241,
+     "price": 1.669,
+     "gen": 2324678.0,
+     "self": 1831501.0,
+     "carga_solar": 326331.0,
+     "remanente": 166845.0,
+     "sat_bess_pct": 69.2,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.234,
+      "b_solarchg_frac": 0.53,
+      "c_remanente_frac": 0.235,
+      "d_ahorro_per_kwp": -137.0
+     }
+    },
+    {
+     "kwp": 1600.0,
+     "ahorro_cliente_anio1": 2557364.0,
+     "k_std": 1.10878,
+     "price": 1.694,
+     "gen": 2399667.0,
+     "self": 1848330.0,
+     "carga_solar": 362712.0,
+     "remanente": 188625.0,
+     "sat_bess_pct": 76.9,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.224,
+      "b_solarchg_frac": 0.485,
+      "c_remanente_frac": 0.29,
+      "d_ahorro_per_kwp": -238.0
+     }
+    },
+    {
+     "kwp": 1650.0,
+     "ahorro_cliente_anio1": 2535337.0,
+     "k_std": 1.12684,
+     "price": 1.7216,
+     "gen": 2474657.0,
+     "self": 1863973.0,
+     "carga_solar": 391932.0,
+     "remanente": 218752.0,
+     "sat_bess_pct": 83.1,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.209,
+      "b_solarchg_frac": 0.39,
+      "c_remanente_frac": 0.402,
+      "d_ahorro_per_kwp": -441.0
+     }
+    },
+    {
+     "kwp": 1700.0,
+     "ahorro_cliente_anio1": 2505638.0,
+     "k_std": 1.14627,
+     "price": 1.7512,
+     "gen": 2549646.0,
+     "self": 1877972.0,
+     "carga_solar": 417458.0,
+     "remanente": 254216.0,
+     "sat_bess_pct": 88.5,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.187,
+      "b_solarchg_frac": 0.34,
+      "c_remanente_frac": 0.473,
+      "d_ahorro_per_kwp": -594.0
+     }
+    },
+    {
+     "kwp": 1750.0,
+     "ahorro_cliente_anio1": 2471783.0,
+     "k_std": 1.16628,
+     "price": 1.7818,
+     "gen": 2624636.0,
+     "self": 1891439.0,
+     "carga_solar": 440080.0,
+     "remanente": 293117.0,
+     "sat_bess_pct": 93.3,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.18,
+      "b_solarchg_frac": 0.302,
+      "c_remanente_frac": 0.519,
+      "d_ahorro_per_kwp": -677.0
+     }
+    },
+    {
+     "kwp": 1800.0,
+     "ahorro_cliente_anio1": 2428491.0,
+     "k_std": 1.18769,
+     "price": 1.8145,
+     "gen": 2699626.0,
+     "self": 1904572.0,
+     "carga_solar": 454460.0,
+     "remanente": 340594.0,
+     "sat_bess_pct": 96.4,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.175,
+      "b_solarchg_frac": 0.192,
+      "c_remanente_frac": 0.633,
+      "d_ahorro_per_kwp": -866.0
+     }
+    },
+    {
+     "kwp": 1850.0,
+     "ahorro_cliente_anio1": 2373352.0,
+     "k_std": 1.21095,
+     "price": 1.8501,
+     "gen": 2774615.0,
+     "self": 1917122.0,
+     "carga_solar": 458383.0,
+     "remanente": 399110.0,
+     "sat_bess_pct": 97.2,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.167,
+      "b_solarchg_frac": 0.052,
+      "c_remanente_frac": 0.78,
+      "d_ahorro_per_kwp": -1103.0
+     }
+    },
+    {
+     "kwp": 1900.0,
+     "ahorro_cliente_anio1": 2317300.0,
+     "k_std": 1.23419,
+     "price": 1.8856,
+     "gen": 2849605.0,
+     "self": 1929243.0,
+     "carga_solar": 462307.0,
+     "remanente": 458055.0,
+     "sat_bess_pct": 98.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.162,
+      "b_solarchg_frac": 0.052,
+      "c_remanente_frac": 0.786,
+      "d_ahorro_per_kwp": -1121.0
+     }
+    },
+    {
+     "kwp": 1950.0,
+     "ahorro_cliente_anio1": 2260765.0,
+     "k_std": 1.25728,
+     "price": 1.9209,
+     "gen": 2924594.0,
+     "self": 1941142.0,
+     "carga_solar": 466231.0,
+     "remanente": 517221.0,
+     "sat_bess_pct": 98.9,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.159,
+      "b_solarchg_frac": 0.052,
+      "c_remanente_frac": 0.789,
+      "d_ahorro_per_kwp": -1131.0
+     }
+    },
+    {
+     "kwp": 2000.0,
+     "ahorro_cliente_anio1": 2202427.0,
+     "k_std": 1.28067,
+     "price": 1.9566,
+     "gen": 2999584.0,
+     "self": 1952154.0,
+     "carga_solar": 470154.0,
+     "remanente": 577276.0,
+     "sat_bess_pct": 99.7,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.147,
+      "b_solarchg_frac": 0.052,
+      "c_remanente_frac": 0.801,
+      "d_ahorro_per_kwp": -1167.0
+     }
+    },
+    {
+     "kwp": 2050.0,
+     "ahorro_cliente_anio1": 2138432.0,
+     "k_std": 1.30517,
+     "price": 1.994,
+     "gen": 3074574.0,
+     "self": 1961698.0,
+     "carga_solar": 471561.0,
+     "remanente": 641314.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.127,
+      "b_solarchg_frac": 0.019,
+      "c_remanente_frac": 0.854,
+      "d_ahorro_per_kwp": -1280.0
+     }
+    },
+    {
+     "kwp": 2100.0,
+     "ahorro_cliente_anio1": 2071239.0,
+     "k_std": 1.3302,
+     "price": 2.0322,
+     "gen": 3149563.0,
+     "self": 1970458.0,
+     "carga_solar": 471561.0,
+     "remanente": 707544.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.117,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.883,
+      "d_ahorro_per_kwp": -1344.0
+     }
+    },
+    {
+     "kwp": 2150.0,
+     "ahorro_cliente_anio1": 2000728.0,
+     "k_std": 1.35601,
+     "price": 2.0717,
+     "gen": 3224553.0,
+     "self": 1977718.0,
+     "carga_solar": 471561.0,
+     "remanente": 775273.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.097,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.903,
+      "d_ahorro_per_kwp": -1410.0
+     }
+    },
+    {
+     "kwp": 2200.0,
+     "ahorro_cliente_anio1": 1929791.0,
+     "k_std": 1.38176,
+     "price": 2.111,
+     "gen": 3299542.0,
+     "self": 1984793.0,
+     "carga_solar": 471561.0,
+     "remanente": 843188.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.094,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.906,
+      "d_ahorro_per_kwp": -1419.0
+     }
+    },
+    {
+     "kwp": 2250.0,
+     "ahorro_cliente_anio1": 1858334.0,
+     "k_std": 1.4075,
+     "price": 2.1503,
+     "gen": 3374532.0,
+     "self": 1991638.0,
+     "carga_solar": 471561.0,
+     "remanente": 911332.0,
+     "sat_bess_pct": 100.0,
+     "marg": {
+      "dGen_kwh": 74990.0,
+      "a_self_frac": 0.091,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.909,
+      "d_ahorro_per_kwp": -1429.0
+     }
+    }
+   ]
+  },
+  "pro": {
+   "site": "pro",
+   "kwp_nr": 20000.0,
+   "kwp_rev4": 3848.9,
+   "ceiling": {
+    "daytime_load_kwh": 46362533.0,
+    "punta_N_kwh": 6173297.0,
+    "punta_N_max_kwh": 7891185.0,
+    "punta_total_kwh": 7891185.0,
+    "addressable_total_kwh": 52535830.0
+   },
+   "saturacion_at_opt": {
+    "kwp": 20000.0,
+    "self_kwh": 31485777.0,
+    "self_vs_daytime_ceiling_pct": 67.9,
+    "carga_solar_kwh": 1048313.0,
+    "charge_energy_kwh": 6430518.0,
+    "sat_bess_pct": 16.3,
+    "remanente_kwh": 669270.0,
+    "gen_kwh": 33203360.0
+   },
+   "curve": [
+    {
+     "kwp": 2300.0,
+     "ahorro_cliente_anio1": 20038253.0,
+     "k_std": 1.21012,
+     "price": 1.6369,
+     "gen": 3818386.0,
+     "self": 3818386.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0
+    },
+    {
+     "kwp": 2750.0,
+     "ahorro_cliente_anio1": 20585883.0,
+     "k_std": 1.14946,
+     "price": 1.5548,
+     "gen": 4565462.0,
+     "self": 4565462.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 3200.0,
+     "ahorro_cliente_anio1": 21133512.0,
+     "k_std": 1.10586,
+     "price": 1.4959,
+     "gen": 5312538.0,
+     "self": 5312538.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 3650.0,
+     "ahorro_cliente_anio1": 21681142.0,
+     "k_std": 1.07301,
+     "price": 1.4514,
+     "gen": 6059613.0,
+     "self": 6059613.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 3849.0,
+     "ahorro_cliente_anio1": 21923194.0,
+     "k_std": 1.06094,
+     "price": 1.4351,
+     "gen": 6389821.0,
+     "self": 6389821.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 330207.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 4100.0,
+     "ahorro_cliente_anio1": 22228772.0,
+     "k_std": 1.04738,
+     "price": 1.4168,
+     "gen": 6806689.0,
+     "self": 6806689.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 416868.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 4550.0,
+     "ahorro_cliente_anio1": 22776402.0,
+     "k_std": 1.02681,
+     "price": 1.3889,
+     "gen": 7553764.0,
+     "self": 7553764.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 5000.0,
+     "ahorro_cliente_anio1": 23324031.0,
+     "k_std": 1.00995,
+     "price": 1.3661,
+     "gen": 8300840.0,
+     "self": 8300840.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 5450.0,
+     "ahorro_cliente_anio1": 23871661.0,
+     "k_std": 0.99587,
+     "price": 1.3471,
+     "gen": 9047916.0,
+     "self": 9047916.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 5900.0,
+     "ahorro_cliente_anio1": 24419291.0,
+     "k_std": 0.98394,
+     "price": 1.3309,
+     "gen": 9794991.0,
+     "self": 9794991.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 6350.0,
+     "ahorro_cliente_anio1": 24966920.0,
+     "k_std": 0.9737,
+     "price": 1.3171,
+     "gen": 10542067.0,
+     "self": 10542067.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 6800.0,
+     "ahorro_cliente_anio1": 25514550.0,
+     "k_std": 0.96481,
+     "price": 1.3051,
+     "gen": 11289142.0,
+     "self": 11289142.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 7250.0,
+     "ahorro_cliente_anio1": 26062180.0,
+     "k_std": 0.95703,
+     "price": 1.2945,
+     "gen": 12036218.0,
+     "self": 12036218.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 7700.0,
+     "ahorro_cliente_anio1": 26609810.0,
+     "k_std": 0.95016,
+     "price": 1.2852,
+     "gen": 12783294.0,
+     "self": 12783294.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 8150.0,
+     "ahorro_cliente_anio1": 27157439.0,
+     "k_std": 0.94404,
+     "price": 1.277,
+     "gen": 13530369.0,
+     "self": 13530369.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 8600.0,
+     "ahorro_cliente_anio1": 27705069.0,
+     "k_std": 0.93857,
+     "price": 1.2696,
+     "gen": 14277445.0,
+     "self": 14277445.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 9050.0,
+     "ahorro_cliente_anio1": 28252699.0,
+     "k_std": 0.93364,
+     "price": 1.2629,
+     "gen": 15024520.0,
+     "self": 15024520.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 9500.0,
+     "ahorro_cliente_anio1": 28800328.0,
+     "k_std": 0.92918,
+     "price": 1.2569,
+     "gen": 15771596.0,
+     "self": 15771596.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 9950.0,
+     "ahorro_cliente_anio1": 29347958.0,
+     "k_std": 0.92512,
+     "price": 1.2514,
+     "gen": 16518672.0,
+     "self": 16518672.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 10400.0,
+     "ahorro_cliente_anio1": 29895588.0,
+     "k_std": 0.92141,
+     "price": 1.2464,
+     "gen": 17265747.0,
+     "self": 17265747.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 10850.0,
+     "ahorro_cliente_anio1": 30443218.0,
+     "k_std": 0.91801,
+     "price": 1.2418,
+     "gen": 18012823.0,
+     "self": 18012823.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 11300.0,
+     "ahorro_cliente_anio1": 30990847.0,
+     "k_std": 0.91488,
+     "price": 1.2375,
+     "gen": 18759898.0,
+     "self": 18759898.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 11750.0,
+     "ahorro_cliente_anio1": 31538477.0,
+     "k_std": 0.91199,
+     "price": 1.2336,
+     "gen": 19506974.0,
+     "self": 19506974.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 12200.0,
+     "ahorro_cliente_anio1": 32086107.0,
+     "k_std": 0.90932,
+     "price": 1.23,
+     "gen": 20254050.0,
+     "self": 20254050.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 12650.0,
+     "ahorro_cliente_anio1": 32633737.0,
+     "k_std": 0.90683,
+     "price": 1.2266,
+     "gen": 21001125.0,
+     "self": 21001125.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 13100.0,
+     "ahorro_cliente_anio1": 33181366.0,
+     "k_std": 0.90451,
+     "price": 1.2235,
+     "gen": 21748201.0,
+     "self": 21748201.0,
+     "carga_solar": 0.0,
+     "remanente": 0.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 1.0,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.0,
+      "d_ahorro_per_kwp": 1217.0
+     }
+    },
+    {
+     "kwp": 13550.0,
+     "ahorro_cliente_anio1": 33728500.0,
+     "k_std": 0.90237,
+     "price": 1.2206,
+     "gen": 22495276.0,
+     "self": 22494829.0,
+     "carga_solar": 0.0,
+     "remanente": 448.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.999,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.001,
+      "d_ahorro_per_kwp": 1216.0
+     }
+    },
+    {
+     "kwp": 14000.0,
+     "ahorro_cliente_anio1": 34273239.0,
+     "k_std": 0.90045,
+     "price": 1.218,
+     "gen": 23242352.0,
+     "self": 23239293.0,
+     "carga_solar": 0.0,
+     "remanente": 3059.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.997,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.003,
+      "d_ahorro_per_kwp": 1211.0
+     }
+    },
+    {
+     "kwp": 14450.0,
+     "ahorro_cliente_anio1": 34811934.0,
+     "k_std": 0.89885,
+     "price": 1.2158,
+     "gen": 23989428.0,
+     "self": 23978300.0,
+     "carga_solar": 0.0,
+     "remanente": 11128.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.989,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.011,
+      "d_ahorro_per_kwp": 1197.0
+     }
+    },
+    {
+     "kwp": 14900.0,
+     "ahorro_cliente_anio1": 35342889.0,
+     "k_std": 0.8976,
+     "price": 1.2141,
+     "gen": 24736503.0,
+     "self": 24710438.0,
+     "carga_solar": 0.0,
+     "remanente": 26066.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.98,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.02,
+      "d_ahorro_per_kwp": 1180.0
+     }
+    },
+    {
+     "kwp": 15350.0,
+     "ahorro_cliente_anio1": 35863756.0,
+     "k_std": 0.89671,
+     "price": 1.2129,
+     "gen": 25483579.0,
+     "self": 25434302.0,
+     "carga_solar": 0.0,
+     "remanente": 49277.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.969,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.031,
+      "d_ahorro_per_kwp": 1157.0
+     }
+    },
+    {
+     "kwp": 15800.0,
+     "ahorro_cliente_anio1": 36372730.0,
+     "k_std": 0.89618,
+     "price": 1.2122,
+     "gen": 26230654.0,
+     "self": 26149006.0,
+     "carga_solar": 0.0,
+     "remanente": 81649.0,
+     "sat_bess_pct": 0.0,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.957,
+      "b_solarchg_frac": 0.0,
+      "c_remanente_frac": 0.043,
+      "d_ahorro_per_kwp": 1131.0
+     }
+    },
+    {
+     "kwp": 16250.0,
+     "ahorro_cliente_anio1": 36864198.0,
+     "k_std": 0.89611,
+     "price": 1.2121,
+     "gen": 26977730.0,
+     "self": 26848122.0,
+     "carga_solar": 8084.0,
+     "remanente": 121524.0,
+     "sat_bess_pct": 0.1,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.936,
+      "b_solarchg_frac": 0.011,
+      "c_remanente_frac": 0.053,
+      "d_ahorro_per_kwp": 1092.0
+     }
+    },
+    {
+     "kwp": 16700.0,
+     "ahorro_cliente_anio1": 37328597.0,
+     "k_std": 0.89665,
+     "price": 1.2129,
+     "gen": 27724806.0,
+     "self": 27522116.0,
+     "carga_solar": 33046.0,
+     "remanente": 169644.0,
+     "sat_bess_pct": 0.5,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.902,
+      "b_solarchg_frac": 0.033,
+      "c_remanente_frac": 0.064,
+      "d_ahorro_per_kwp": 1032.0
+     }
+    },
+    {
+     "kwp": 17150.0,
+     "ahorro_cliente_anio1": 37764839.0,
+     "k_std": 0.89778,
+     "price": 1.2144,
+     "gen": 28471881.0,
+     "self": 28169914.0,
+     "carga_solar": 76858.0,
+     "remanente": 225110.0,
+     "sat_bess_pct": 1.2,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.867,
+      "b_solarchg_frac": 0.059,
+      "c_remanente_frac": 0.074,
+      "d_ahorro_per_kwp": 969.0
+     }
+    },
+    {
+     "kwp": 17600.0,
+     "ahorro_cliente_anio1": 38164672.0,
+     "k_std": 0.89965,
+     "price": 1.2169,
+     "gen": 29218957.0,
+     "self": 28779224.0,
+     "carga_solar": 156098.0,
+     "remanente": 283634.0,
+     "sat_bess_pct": 2.4,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.816,
+      "b_solarchg_frac": 0.106,
+      "c_remanente_frac": 0.078,
+      "d_ahorro_per_kwp": 889.0
+     }
+    },
+    {
+     "kwp": 18050.0,
+     "ahorro_cliente_anio1": 38530525.0,
+     "k_std": 0.90218,
+     "price": 1.2203,
+     "gen": 29966032.0,
+     "self": 29352845.0,
+     "carga_solar": 266959.0,
+     "remanente": 346228.0,
+     "sat_bess_pct": 4.2,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.768,
+      "b_solarchg_frac": 0.148,
+      "c_remanente_frac": 0.084,
+      "d_ahorro_per_kwp": 813.0
+     }
+    },
+    {
+     "kwp": 18500.0,
+     "ahorro_cliente_anio1": 38862431.0,
+     "k_std": 0.90531,
+     "price": 1.2246,
+     "gen": 30713108.0,
+     "self": 29892291.0,
+     "carga_solar": 407223.0,
+     "remanente": 413594.0,
+     "sat_bess_pct": 6.3,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.722,
+      "b_solarchg_frac": 0.188,
+      "c_remanente_frac": 0.09,
+      "d_ahorro_per_kwp": 738.0
+     }
+    },
+    {
+     "kwp": 18950.0,
+     "ahorro_cliente_anio1": 39161685.0,
+     "k_std": 0.90898,
+     "price": 1.2295,
+     "gen": 31460184.0,
+     "self": 30400141.0,
+     "carga_solar": 573807.0,
+     "remanente": 486236.0,
+     "sat_bess_pct": 8.9,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.68,
+      "b_solarchg_frac": 0.223,
+      "c_remanente_frac": 0.097,
+      "d_ahorro_per_kwp": 665.0
+     }
+    },
+    {
+     "kwp": 19400.0,
+     "ahorro_cliente_anio1": 39432460.0,
+     "k_std": 0.91309,
+     "price": 1.2351,
+     "gen": 32207259.0,
+     "self": 30879228.0,
+     "carga_solar": 765452.0,
+     "remanente": 562579.0,
+     "sat_bess_pct": 11.9,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.641,
+      "b_solarchg_frac": 0.257,
+      "c_remanente_frac": 0.102,
+      "d_ahorro_per_kwp": 602.0
+     }
+    },
+    {
+     "kwp": 19850.0,
+     "ahorro_cliente_anio1": 39683986.0,
+     "k_std": 0.91747,
+     "price": 1.241,
+     "gen": 32954335.0,
+     "self": 31338974.0,
+     "carga_solar": 973895.0,
+     "remanente": 641465.0,
+     "sat_bess_pct": 15.1,
+     "marg": {
+      "dGen_kwh": 747076.0,
+      "a_self_frac": 0.615,
+      "b_solarchg_frac": 0.279,
+      "c_remanente_frac": 0.106,
+      "d_ahorro_per_kwp": 559.0
+     }
+    },
+    {
+     "kwp": 20000.0,
+     "ahorro_cliente_anio1": 39761140.0,
+     "k_std": 0.91904,
+     "price": 1.2432,
+     "gen": 33203360.0,
+     "self": 31485777.0,
+     "carga_solar": 1048313.0,
+     "remanente": 669270.0,
+     "sat_bess_pct": 16.3,
+     "marg": {
+      "dGen_kwh": 249025.0,
+      "a_self_frac": 0.59,
+      "b_solarchg_frac": 0.299,
+      "c_remanente_frac": 0.112,
+      "d_ahorro_per_kwp": 514.0
+     }
+    }
+   ]
+  }
+ },
+ "meta": {
+  "note": "Q1 marginal decomposition; standalone k re-solved per point (TIR 14%); buckets a/b/c partition marginal generation exactly.",
+  "kwp_nr": {
+   "ixt": 5430.0,
+   "aca": 2270.0,
+   "can": 1410.0,
+   "pro": 20000.0
+  }
+ }
+}

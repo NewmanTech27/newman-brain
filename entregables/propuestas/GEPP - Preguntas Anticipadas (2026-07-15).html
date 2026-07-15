@@ -1,0 +1,236 @@
+<title>GEPP — Preguntas Anticipadas (2026-07-15)</title>
+<style>
+:root{
+  --bg:#ffffff; --fg:#1a1f2b; --muted:#5b6472; --line:#e2e6ec; --soft:#f6f8fa;
+  --accent:#0f5c4c; --accent2:#0b4a7a;
+  --motor-bg:#e6f0ff; --motor-fg:#0b4a7a;
+  --fuente-bg:#e7f5ec; --fuente-fg:#12603f;
+  --sup-bg:#fdf1e3; --sup-fg:#9a5a12;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#12151b; --fg:#e6e9ee; --muted:#9aa4b2; --line:#2a3038; --soft:#1a1e26;
+    --accent:#4fd1b3; --accent2:#7db8e8;
+    --motor-bg:#12283f; --motor-fg:#9ecbff;
+    --fuente-bg:#123328; --fuente-fg:#8fe3b8;
+    --sup-bg:#3a2a12; --sup-fg:#f0c489;
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.62; font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:860px; margin:0 auto; padding:56px 28px 96px;}
+h1{font-size:30px; line-height:1.2; margin:0 0 6px; letter-spacing:-0.02em;}
+h2{font-size:22px; margin:52px 0 14px; padding-top:14px; border-top:2px solid var(--line); letter-spacing:-0.01em;}
+h3{font-size:18px; margin:34px 0 10px; color:var(--fg);}
+h2:first-of-type{border-top:none;}
+p{margin:12px 0;}
+strong{font-weight:650;}
+code{background:var(--soft); border:1px solid var(--line); border-radius:4px; padding:1px 5px; font-size:0.86em; font-family:"SF Mono",Menlo,Consolas,monospace;}
+hr{border:none; border-top:1px solid var(--line); margin:34px 0;}
+ul{margin:12px 0; padding-left:22px;}
+li{margin:6px 0;}
+blockquote{margin:14px 0; padding:10px 16px; border-left:3px solid var(--accent); background:var(--soft); color:var(--muted); border-radius:0 6px 6px 0;}
+a{color:var(--accent2); text-decoration:none;}
+a:hover{text-decoration:underline;}
+.badge{display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.02em;
+  padding:1px 7px; border-radius:20px; vertical-align:baseline; white-space:nowrap;}
+.b-motor{background:var(--motor-bg); color:var(--motor-fg);}
+.b-fuente{background:var(--fuente-bg); color:var(--fuente-fg);}
+.b-sup{background:var(--sup-bg); color:var(--sup-fg);}
+.b-flag{background:#fce8e8; color:#9a2020;}
+@media (prefers-color-scheme: dark){.b-flag{background:#3a1616; color:#f0a0a0;}}
+.tw{overflow-x:auto; margin:16px 0; border:1px solid var(--line); border-radius:8px;}
+table{border-collapse:collapse; width:100%; font-size:14px;}
+th,td{text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+th{background:var(--soft); font-weight:650; white-space:nowrap;}
+tr:last-child td{border-bottom:none;}
+.doc-meta{color:var(--muted); font-size:14px; margin-bottom:8px;}
+.legend{display:flex; gap:14px; flex-wrap:wrap; margin:18px 0; padding:14px 16px; background:var(--soft); border:1px solid var(--line); border-radius:8px; font-size:13px;}
+.legend div{display:flex; align-items:center; gap:7px;}
+.toc{background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:20px 24px; margin:24px 0;}
+.toc h2{border:none; margin:0 0 10px; padding:0; font-size:16px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted);}
+.toc ul{margin:6px 0; padding-left:20px;}
+.toc a{color:var(--fg);}
+@media print{
+  body{font-size:11.5pt;}
+  .wrap{max-width:none; padding:0 8mm;}
+  h2{page-break-after:avoid;}
+  h3{page-break-after:avoid; page-break-inside:avoid;}
+  .tw,table{page-break-inside:auto;}
+  tr{page-break-inside:avoid;}
+  a{color:var(--fg); text-decoration:none;}
+  .toc{page-break-inside:avoid;}
+}
+</style>
+<div class="wrap">
+<h1>GEPP — Preguntas Anticipadas</h1>
+<p><strong>Documento interno de preparación · Newman · 2026-07-15</strong></p>
+<p>Insumo para la reunión con el equipo de energía de GEPP. Reúne las preguntas que un cliente industrial sofisticado con equipo técnico propio podría hacernos sobre los modelos PV+BESS, cada una con la respuesta más fuerte y honesta que podemos dar. Uso interno — franco sobre supuestos y huecos.</p>
+<p><strong>Convención de etiquetas (fact-tier):</strong></p>
+<ul>
+<li><strong><span class="badge b-motor">motor</span></strong> — cifra derivada del motor (<code>dispatch_cs.py</code> / <code>calc_core.py</code> / libros rev4/NR), golden-anclada y verificada.</li>
+<li><strong><span class="badge b-fuente">fuente</span></strong> — dato duro del workbook del cliente, contrato, o regla regulatoria con fuente primaria.</li>
+<li><strong><span class="badge b-sup">supuesto</span></strong> — convención editable de Newman (financiera, de sizing o de forma de carga). No es dato del cliente ni salida cruda del motor.</li>
+</ul>
+<p><strong>Números de referencia (config vigente):</strong> el diseño <strong>entregado</strong> es <strong>rev4 &quot;BESS Carga Solar&quot;</strong> (Op1 Autoconsumo, portafolio 4 sitios: ahorro cliente año 1 <strong>$39.13M</strong>, VAN 20a <strong>$411.7M</strong>). El escenario <strong>&quot;Autoconsumo Max&quot; (NR, sin restricción de superficie)</strong> es la cota superior teórica (ahorro año 1 <strong>$57.18M</strong>, VAN 20a <strong>$617.2M</strong>, CAPEX Newman <strong>$510.1M</strong>). Cuando una cifra tiene historia, se usa la vigente y se dice a qué revisión pertenece.</p>
+<hr>
+<h2 id="índice">Índice</h2>
+<p><strong>Las 5 preguntas clave</strong></p>
+<ul class="num">
+<li><a href="#1--por-qué-esta-configuración-es-la-más-eficiente">¿Por qué esta configuración es la más eficiente?</a></li>
+<li><a href="#1--por-qué-esta-configuración-es-la-más-eficiente">¿Por qué esta configuración y no otra?</a></li>
+<li><a href="#3--cómo-tomaron-los-valores-de-enel-y-tala">¿Cómo tomaron los valores de ENEL y TALA?</a></li>
+<li><a href="#4--en-ixtlahuacán-sólo-tomaron-cfe-como-referencia--se-afecta-el-ahorro-cuando-tala-salga">En Ixtlahuacán sólo tomaron CFE como referencia — ¿se afecta cuando TALA salga?</a></li>
+<li><a href="#5--cómo-justifican-que-sus-supuestos-son-correctos">¿Cómo justifican que sus supuestos son correctos?</a></li>
+</ul>
+<p><strong>A · Metodología y motor</strong> — A1–A9</p>
+<p><strong>B · Umbral energético y demanda</strong> — B1–B3</p>
+<p><strong>C · BESS</strong> — C1–C7</p>
+<p><strong>D · Regulatorio</strong> — D1–D6</p>
+<p><strong>E · Comercial y contractual</strong> — E1–E8</p>
+<p><strong>F · Datos y validación</strong> — F1–F4</p>
+<p><strong>G · Proplasa específico</strong> — G1–G3</p>
+<p><strong>H · Escenario Autoconsumo Max (NR)</strong> — H1–H3</p>
+<hr>
+<h2 id="las-5-preguntas-clave">Las 5 preguntas clave</h2>
+<h3 id="1--por-qué-esta-configuración-es-la-más-eficiente">1 · ¿Por qué esta configuración es la más eficiente?</h3>
+<p><strong>Porque el óptimo es un punto interior demostrado por barrido, no una elección de catálogo.</strong> Cada kWh adicional de generación cae en tres cubetas excluyentes: <strong>(a)</strong> autoconsumo directo (desplaza energía intermedia CFE ≈ tarifa intermedia), <strong>(b)</strong> carga solar del BESS (desplaza carga de red que luego se descarga en punta), y <strong>(c)</strong> excedente remanente que se vende a CFE a nivel mayorista ≈ <strong>$0</strong> <span class="badge b-fuente">fuente, directiva &quot;cero contraprestación&quot; GEPP</span>. El techo direccionable es la suma de la carga diurna coincidente con el sol (asintótica) más la energía de carga del BESS <code>N/RTE</code> — <strong>no la superficie</strong> <span class="badge b-motor">motor</span>. La clave física: <strong>el requerimiento de carga del BESS es FIJO</strong> (lo fija el lado de descarga en punta, no el sol disponible), así que la cubeta (b) satura rápido; saturadas (a) autoconsumo diurno y (b) carga-solar, cada kWp extra cae en (c) a $0, mientras su CAPEX acarreado a TIR-14% <strong>sube el multiplicador <code>k</code></strong> del PPA (que se paga sobre TODOS los kWh autoconsumidos). El valor marginal para el cliente cruza a negativo → ahí está el pico <span class="badge b-motor">motor</span>.</p>
+<p><strong>Evidencia del barrido (Ixtlahuacán, <span class="badge b-motor">motor</span>):</strong> en el óptimo (~5,430 kWp) el BESS está sólo 42% saturado y el autoconsumo diurno cubre 74% de su techo; el $/kWp marginal voltea de <strong>+$67 a −$55</strong> entre 5,450 y 5,600 kWp, cuando la fracción de remanente@$0 sube de 0.17 a 0.22. Acapulco y Cancún hacen pico por saturación de ambas cubetas de valor (la carga-solar del BESS llega al 100%); pasado el óptimo el $/kWp marginal es de <strong>−$900 a −$1,420</strong> <span class="badge b-motor">motor</span>. En los tres sitios el óptimo es interior, verificable, y no depende de una restricción externa.</p>
+<h3 id="2--por-qué-esta-configuración-y-no-otra">2 · ¿Por qué esta configuración y no otra?</h3>
+<p>Cada alternativa se probó explícitamente y pierde valor <span class="badge b-motor">motor</span>:</p>
+<ul>
+<li><strong>Más PV:</strong> más allá del óptimo el kWh cae en remanente@$0 mientras sube el <code>k</code>; el ahorro cliente baja (ver P1). El pico es interior en Ixt/Aca/Can.</li>
+<li><strong>Menos PV:</strong> deja autoconsumo diurno sobre la mesa — el $/kWp marginal antes del óptimo sigue siendo <strong>+$1,000 a +$1,600</strong> <span class="badge b-motor">motor</span>, valor que se perdería.</li>
+<li><strong>Más BESS:</strong> escalando la batería ×1.5/×2/×3 el óptimo kWp <strong>no se mueve</strong> (Δ ≤ +50 kWp) y el ahorro cliente <strong>cae monótonamente</strong>; a ×3 el negocio se vuelve <strong>negativo</strong> en los tres sitios chicos (Ixt −$1.80M, Aca −$1.36M, Can −$0.75M) <span class="badge b-motor">motor</span>. La capacidad <code>Q</code> ya está saturada al 100%: más energía de BESS agrega <strong>cero</strong> ahorro de capacidad.</li>
+<li><strong>Sin BESS (PV-only):</strong> bajo la contabilidad carga-solar el híbrido gana en VAN en <strong>los 4 sitios</strong>; sin BESS se pierden <strong>−$268.2M de VAN de portafolio</strong> (VAN sin-BESS $349.0M vs con-BESS $617.2M en el escenario NR) <span class="badge b-motor">motor</span>. El BESS es la única palanca que toca la punta; el PV no la toca (PV ⊥ punta, invariante del dominio).</li>
+<li><strong>BESS-only:</strong> no aprovecha el techo de autoconsumo diurno, la mayor fuente de valor; sólo tendría sentido si no hubiera carga diurna coincidente, que no es el caso.</li>
+<li><strong>GD Medición Neta (Op2) vs Autoconsumo (Op1) por sitio:</strong> Op2 está <strong>topada regulatoriamente a 0.7 MW AC (≈839 kWp DC)</strong> por punto de interconexión, así que en sitios de consumo grande (Ixtlahuacán, Proplasa) Op1 captura mucho más ahorro; en sitios chicos con buena economía de crédito neto (Cancún, Acapulco) Op2 puede dar mejor ROI. Por eso la recomendación es <strong>por sitio</strong>, no uniforme: Op1 en Ixtlahuacán, Op2 en Cancún/Acapulco, Op2 en Proplasa (3 puntos = 3 plantas GD) <span class="badge b-motor">motor</span>.</li>
+</ul>
+<h3 id="3--cómo-tomaron-los-valores-de-enel-y-tala">3 · ¿Cómo tomaron los valores de ENEL y TALA?</h3>
+<p><strong>No los metimos dentro del ahorro del proyecto — los tratamos como una línea aparte y editable.</strong> La línea base de ahorro (&quot;Tarifa Actual&quot;) en todos los libros GEPP es <strong>la carga total del sitio valuada a tarifas CFE GDMTH plenas, sin ningún descuento de autoabasto</strong> <span class="badge b-fuente">fuente, <code>meta.json</code> de cada sitio importado</span>. El beneficio actual de Tala (<strong>10% de descuento ≈ $2.68M/año en Ixtlahuacán 2025</strong>) y de ENEL (precio <strong>$1.78–1.92/kWh</strong>, 69.6% del predio Proplasa en 2025) se muestra en una columna separada — &quot;Beneficio autoabasto (→2032)&quot; — que se resta del CFE bruto para llegar al costo que GEPP paga hoy, pero <strong>nunca se mezcla con el ahorro PV+BESS</strong> <span class="badge b-fuente">fuente</span>. Motivo doble: (1) <strong>técnico</strong> — 0/12 meses de la reconstrucción cuadran contra el recibo impreso en los sitios con autoabasto (divergen exactamente por el descuento), así que el CFE pleno es la única base comparable y defendible para dimensionar; (2) <strong>de negocio</strong> — ambos contratos vencen en 2032, y los libros modelan un &quot;cliff&quot; donde el gasto de GEPP salta a CFE pleno; el proyecto ya está dimensionado y valuado contra ese escenario. Los valores de Tala/ENEL provienen del workbook <code>Perfil de Consumo GEPP 2025-26</code> del propio cliente <span class="badge b-fuente">fuente</span>; no tenemos los contratos, así que volúmenes take-or-pay y cláusulas de salida quedan como preguntas abiertas hacia GEPP.</p>
+<h3 id="4--en-ixtlahuacán-sólo-tomaron-cfe-como-referencia--se-afecta-el-ahorro-cuando-tala-salga">4 · En Ixtlahuacán sólo tomaron CFE como referencia — ¿se afecta el ahorro cuando TALA salga?</h3>
+<p><strong>No, y es por diseño, no por descuido.</strong> El ahorro PV+BESS de Ixtlahuacán (<strong>$10.80M/año año 1 en NR; $9.94M en rev4</strong>) <span class="badge b-motor">motor</span> es <strong>el mismo con o sin Tala</strong>, porque el baseline nunca asumió a Tala: ya está construido sobre CFE pleno, que es exactamente el escenario &quot;Tala ya no está&quot;. Lo único que cambia cuando Tala se retira es que GEPP deja de disfrutar el descuento de <strong>~$2.68M/año</strong> — un efecto <strong>externo y anterior</strong> al proyecto solar, que en el libro vive en la línea separada &quot;Beneficio autoabasto&quot; y simplemente desaparece a su vencimiento (2032, o antes si Tala sale temprano). El ahorro reportado del proyecto <strong>no se re-trabaja</strong>. La misma lógica aplica simétricamente a Proplasa/ENEL. Narrativa de venta: el PPA fijo del proyecto solar <strong>amortigua</strong> el salto de gasto de 2032 justo cuando ocurre — es un hedge contra la salida del autoabasto, no una víctima de ella.</p>
+<h3 id="5--cómo-justifican-que-sus-supuestos-son-correctos">5 · ¿Cómo justifican que sus supuestos son correctos?</h3>
+<p>Con honestidad sobre el grado: <strong>esto es prefactibilidad, no un modelo bancable — y lo decimos de frente.</strong> Cada supuesto tiene fuente, sensibilidad conocida, y una ruta de validación que lo cierra:</p>
+<div class="tw"><table>
+<thead><tr><th>Supuesto</th><th>Valor</th><th>Cómo se sostiene / qué lo cerraría</th></tr></thead>
+<tbody>
+<tr><td>Yield solar</td><td>Índice geográfico municipal (Ixt 1,783 · Aca 1,869 · Can 1,500 · Pro 1,660 kWh/kWp·año)</td><td>Validado vs Global Solar Atlas (Cancún ~5–10% conservador). Upgrade a bancable = <strong>HelioScope</strong> por sitio.</td></tr>
+<tr><td>Forma de carga intradía</td><td>Curva de giro &quot;Industrial 24/7&quot; escalada a los kWh B/I/P facturados</td><td>Reproduce exacto el mensual; lo que falta es la forma real → <strong>datos 15-min HM</strong> de un día típico verano/invierno por medidor.</td></tr>
+<tr><td>Yield/PPA/economía</td><td>k resuelto por bisección a TIR 14%</td><td>Verificado peso-exacto vs <code>NUMBERS_NR.md</code> (desviación 0.0000%).</td></tr>
+<tr><td>Escaladores CFE/PPA</td><td>4% / 4% flat (vigente)</td><td>Editable en Supuestos; sensibilidad directa en la proyección 20a.</td></tr>
+<tr><td>Degradación PV</td><td>0.5%/año</td><td>Default de motor; sensibilidad baja en VAN.</td></tr>
+<tr><td>RTE / DoD / merma BESS</td><td>0.96 / 0.96 / 2 meses/año</td><td>Defaults de casa; se ajustan con la ficha técnica del BESS elegido.</td></tr>
+<tr><td>Superficie (4.0 m²/kWp)</td><td>Estándar de casa</td><td>Se cierra con <strong>visita técnica</strong> (techo, estructura, sombreado, punto de interconexión).</td></tr>
+</tbody></table></div>
+<p><strong>Lo que honestamente aún NO tenemos:</strong> recibos CFE validados peso-exacto en los sitios 100%-CFE, medición 15-min, visita técnica, y confirmación regulatoria de la coexistencia porteo-autoabasto + autoconsumo. Ninguno <strong>invalida</strong> las cifras — las mueven dentro de un rango de prefactibilidad — y la ruta para cerrar cada uno está identificada. Es la conversación honesta que preferimos tener antes de la ingeniería de detalle.</p>
+<hr>
+<h2 id="a--metodología-y-motor">A · Metodología y motor</h2>
+<h3 id="a1--cómo-calculan-el-ahorro-exactamente">A1 · ¿Cómo calculan el ahorro exactamente?</h3>
+<p>Por sitio y por mes, con un motor determinista <span class="badge b-motor">motor</span>. El <strong>ahorro PV</strong> es <code>aprov = min(generación × pct_ac, kWh_intermedio del mes)</code>: el PV sólo desplaza energía del <strong>periodo intermedio</strong> (PV ⊥ punta, invariante del dominio CFE-SIN); el excedente no autoconsumido se valora a <code>texc ≈ $0</code> en Autoconsumo o a la tarifa del periodo en Medición Neta. El <strong>ahorro BESS</strong> es arbitraje de demanda y energía: descarga en punta valuada a tarifa punta, menos el costo de recargar. El <strong>ahorro por factor de potencia</strong> (capacitores) es una palanca <strong>separada</strong>, nunca mezclada. Todo se ancla peso-exacto: la corrida reproduce el ahorro NR por sitio con desviación <strong>0.0000%</strong> vs <code>NUMBERS_NR.md</code> <span class="badge b-motor">motor</span>.</p>
+<h3 id="a2--qué-es-selfbasis-y-por-qué-el-ppa-se-factura-sobre-el-autoconsumo-y-no-sobre-toda-la-generación">A2 · ¿Qué es &quot;self-basis&quot; y por qué el PPA se factura sobre el autoconsumo y no sobre toda la generación?</h3>
+<p>El PPA se cobra únicamente sobre los kWh <strong>efectivamente autoconsumidos</strong> (Op1) o generados-acreditados (Op2), no sobre la generación bruta <span class="badge b-motor">motor, convención self-basis, continuidad desde rev3</span>. Esto protege a GEPP: no paga por electrones que se van a la red a $0. Existe una base alternativa (PPA sobre generación total) reservada para formalización post-aprobación, pero <strong>los libros entregados usan self-basis</strong> por ser la más favorable y transparente para el cliente.</p>
+<h3 id="a3--por-qué-tir-inversionista-14-y-no-otra">A3 · ¿Por qué TIR inversionista 14% y no otra?</h3>
+<p>Es una <strong>concesión deliberada a GEPP</strong>: el estándar de casa Newman es 18%; para este portafolio se bajó a <strong>14.000%</strong> exacto <span class="badge b-motor">supuesto comercial + motor</span>. Bajar la TIR objetivo baja el precio del PPA, así que es directamente ahorro trasladado a GEPP. El 14% se logra resolviendo el multiplicador <code>k</code> del PPA por bisección hasta alcanzar esa TIR combinada de portafolio, verificada a 14.00000% en ambas opciones <span class="badge b-motor">motor</span>.</p>
+<h3 id="a4--el-precio-del-ppa-kwh-lo-asumieron-o-lo-calcularon">A4 · El precio del PPA ($/kWh), ¿lo asumieron o lo calcularon?</h3>
+<p><strong>Se calcula, no se asume.</strong> El multiplicador <code>k</code> se resuelve por bisección sobre el flujo de caja exacto del inversionista para alcanzar la TIR objetivo de 14% <span class="badge b-motor">motor</span>. En el diseño rev4 los PPA resultantes son: Ixt <strong>$1.2971</strong>, Aca $1.2375, Can $1.5423, Proplasa $1.3656 /kWh; en el escenario NR (más base PV) <strong>bajan</strong> a Ixt $1.2200, Aca $1.1639, Can $1.4507, Pro $1.2844 — porque una base de generación mayor reparte el retorno del inversionista sobre más kWh (<code>k</code> cae de 1.0095 a 0.9495) <span class="badge b-motor">motor</span>. GEPP gana por doble vía: más kWh propios y PPA más barato.</p>
+<h3 id="a5--por-qué-escalación-4-cfe-y-4-ppa">A5 · ¿Por qué escalación 4% CFE y 4% PPA?</h3>
+<p>Es un supuesto editable en Supuestos; la versión <strong>vigente (rev3/rev4/NR) usa 4% flat parejo para CFE y PPA</strong> <span class="badge b-sup">supuesto</span>. <strong>Nota interna importante:</strong> hubo tres valores en la historia del proyecto (inicial 6% CFE / 5% PPA → corregido 5% CFE → vigente 4%/4%). Antes de la reunión conviene confirmar <strong>cuál escalador vio GEPP en la última interacción</strong>, para no defender un número que ya cambió. El 4% parejo es conservador vs la inflación tarifaria histórica de CFE y neutro entre las partes (mismo escalador ambos lados).</p>
+<h3 id="a6--por-qué-degradación-pv-de-05año">A6 · ¿Por qué degradación PV de 0.5%/año?</h3>
+<p>Es el default del motor <span class="badge b-sup">supuesto</span>. <strong>Nota interna:</strong> el estándar de casa Newman evolucionó después (jul-2026, cliente AFC) a un split <strong>1.0% año 1 + 0.4% años siguientes</strong>; los libros GEPP vigentes <strong>siguen en 0.5% plano</strong>. No es un error — el 0.5% plano es defendible y en 20 años da un resultado similar — pero si GEPP compara notas con otra propuesta Newman más reciente podría notar la diferencia; hay que estar listos para homologar o explicar.</p>
+<h3 id="a7--cómo-modelan-disponibilidad--paros-del-bess">A7 · ¿Cómo modelan disponibilidad / paros del BESS?</h3>
+<p>Con una <strong>merma de 2 meses/año sin ahorro de arbitraje</strong> → factor 10/12 (0.833) sobre el ahorro BESS <span class="badge b-sup">supuesto</span>. Es un supuesto conservador de disponibilidad (mantenimiento, indisponibilidad), no física; se afina con la garantía de disponibilidad del proveedor del BESS.</p>
+<h3 id="a8--qué-rte-y-dod-usan">A8 · ¿Qué RTE y DoD usan?</h3>
+<p>RTE (eficiencia de ida y vuelta) <strong>0.96</strong> y DoD (profundidad de descarga usable) <strong>0.96</strong>, con <code>E_útil = kWh × DoD × √RTE</code> <span class="badge b-sup">supuesto, defaults de casa</span>. Son valores de LFP moderno; se reemplazan por la ficha técnica del equipo específico en ingeniería de detalle. La carga se dimensiona como <code>carga = descarga / RTE</code>.</p>
+<h3 id="a9--horizonte-de-20-años--qué-pasa-con-el-ahorro-después-del-ppa">A9 · Horizonte de 20 años — ¿qué pasa con el ahorro después del PPA?</h3>
+<p>El PPA corre <strong>15 años</strong> (editable, independiente del plazo BESS); la proyección es a <strong>20 años</strong>. Tras la transferencia del activo, <strong>GEPP conserva el 100% del ahorro PV en los años 16–20</strong> <span class="badge b-sup">supuesto comercial</span>. Ese cambio de estructura es parte del VAN 20a reportado ($411.7M rev4 / $617.2M NR).</p>
+<hr>
+<h2 id="b--umbral-energético-y-demanda">B · Umbral energético y demanda</h2>
+<h3 id="b1--si-meto-más-pv-no-colapsa-el-umbral-y-mata-el-ahorro-de-demanda-del-bess">B1 · Si meto más PV, ¿no colapsa el umbral y mata el ahorro de demanda del BESS?</h3>
+<p>Es la pregunta correcta y la auditamos <span class="badge b-motor">motor</span>. Sí existe el efecto: más PV baja <code>kWh_red</code>, colapsa el umbral <code>= kWh_red/(d·0.57·24)</code>, baja la base de demanda facturable y <strong>canibaliza</strong> parte del ahorro de demanda del BESS. La magnitud rev4→NR es <strong>modesta</strong>: <code>dem_bess</code> cae Ixt −1.9%, <strong>Aca −10%</strong> (peor caso), Can −4.7%, Proplasa −9.5% <span class="badge b-motor">motor</span>. Es real (no-aditividad PV-BESS), pero <strong>no cambia el orden de magnitud</strong> ni el veredicto CON BESS.</p>
+<h3 id="b2--entonces-el-libro-sobrestima-o-subestima-la-demanda">B2 · Entonces, ¿el libro sobrestima o subestima la demanda?</h3>
+<p><strong>Subestima levemente — el libro es conservador.</strong> El escalado lineal + <code>Q</code> fija del deck da una demanda total <strong>−3.0% por debajo</strong> de la mecánica verdadera de <code>calc_core</code> con umbral golden (<strong>−$1.8M/año de portafolio</strong>), por sitio de −1.4% a −3.4% <span class="badge b-motor">motor</span>. La única excepción es Preforma 1 (Proplasa), donde el libro sobreestima +5.6%. El acierto viene de una compensación: al subir la penetración PV, la componente de distribución sube mientras la de capacidad baja, y el método captura la suma dentro de ±3%. En resumen: si el número tuviera un sesgo, es <strong>a favor de GEPP</strong> (subestima el ahorro de demanda).</p>
+<h3 id="b3--y-los-picos-de-demanda-anómalos-de-ixtlahuacán">B3 · ¿Y los picos de demanda anómalos de Ixtlahuacán?</h3>
+<p>Ixtlahuacán mostró picos de <strong>5,872–7,310 kW en Abr/May/Dic-2025</strong>, por encima de los 5,000 kW contratados <span class="badge b-fuente">fuente, workbook</span>. No lo hemos verificado contra recibo CFE real; puede ser evento operativo (arranques simultáneos), artefacto de medición, o exposición a penalización por demanda. Es una pregunta abierta hacia GEPP: si es corregible o es penalización real, el BESS gana meses adicionales de valor. No lo dimos por sentado en el modelo.</p>
+<hr>
+<h2 id="c--bess">C · BESS</h2>
+<h3 id="c1--por-qué-ese-tamaño-de-bess-y-no-más-grande">C1 · ¿Por qué ese tamaño de BESS y no más grande?</h3>
+<p>Porque su capacidad <code>Q</code> ya está <strong>saturada al 100%</strong> en los 4 sitios: más energía de BESS agrega <strong>cero</strong> ahorro de capacidad <span class="badge b-motor">motor</span>. Escalando ×1.5/×2/×3 el óptimo kWp no se mueve y el ahorro cliente cae monótonamente hasta volverse negativo a ×3. El BESS está dimensionado para <strong>rasurar la punta</strong> (el <code>N</code> anual que descarga), y ese <code>N</code> está limitado por la energía de punta a desplazar, no por cuánta batería se instale. El BESS entregado es, si acaso, ligeramente generoso — no corto.</p>
+<h3 id="c2--por-qué-cargan-el-bess-con-solar-y-no-de-la-red">C2 · ¿Por qué cargan el BESS con solar y no de la red?</h3>
+<p>Es el cambio central de rev4 <span class="badge b-motor">motor</span>. El BESS se carga <strong>primero con excedente solar de mediodía</strong> (limitado por la potencia del inversor y por el excedente real del día), y sólo el faltante se toma de la red en horario base (0–5h). Beneficio: bajo carga solar el ciclo del BESS es <strong>casi gratis</strong> (el excedente valía $0), así que el arbitraje punta-base ya no compite contra un costo de carga. Ese bono es lo que <strong>revierte</strong> el veredicto anterior (donde sin-BESS ganaba en 3 sitios) a <strong>CON BESS en los 4</strong>.</p>
+<h3 id="c3--qué-porcentaje-de-la-carga-del-bess-es-realmente-solar">C3 · ¿Qué porcentaje de la carga del BESS es realmente solar?</h3>
+<p>Honestamente, <strong>una fracción, no el 100%</strong>: Ixt 30.5%, Aca 18.3%, Can 27.7%, Proplasa 0% (sin headroom de techo) <span class="badge b-motor">motor</span>. El bono de carga solar entregado (rev4) es <strong>+$954,437/año de portafolio</strong> — importante: un análisis preliminar (14-jul) estimó hasta <strong>+$3.08M/año</strong> asumiendo carga solar del 100%; <strong>ese techo no es real</strong>, el motor de despacho entrega la cifra menor. Si GEPP escuchó la cifra preliminar en alguna llamada, hay que corregir a $954k. En el escenario NR (más PV) el bono sube a ~$2.97M/año <span class="badge b-motor">motor</span>.</p>
+<h3 id="c4--ciclos-degradación-y-garantía-del-bess">C4 · Ciclos, degradación y garantía del BESS</h3>
+<p>Degradación modelada <strong>1.25%/año</strong> <span class="badge b-sup">supuesto, default</span>; el BESS hace un ciclo diario de rasurado de punta. La garantía específica (ciclos, retención de capacidad, disponibilidad) se ata a la ficha técnica del equipo elegido en ingeniería de detalle — el modelo usa defaults conservadores que se reemplazan por los términos reales del proveedor. La merma de 2 meses/año (P-A7) ya castiga la disponibilidad.</p>
+<h3 id="c5--qué-pasa-en-invierno-cuando-hay-menos-sol">C5 · ¿Qué pasa en invierno, cuando hay menos sol?</h3>
+<p>El motor modela <strong>día típico de invierno y de verano por separado</strong> <span class="badge b-motor">motor</span>, así que la estacionalidad ya está en las cifras. En invierno el excedente solar disponible para cargar el BESS baja (por eso la carga-solar es una fracción, no el 100%), y el faltante se cubre de red en horario base — el BESS sigue rasurando punta. El horario de punta en invierno (18:00–22:00 SIN) también cambia vs verano (20:00–22:00), y el motor lo respeta. La estacionalidad de Tala (zafra Dic–May) es de suministro, no afecta el despacho del proyecto solar.</p>
+<h3 id="c6--para-más-de-07-mw-intermitente-la-regulación-exige-respaldo-el-bess-cumple">C6 · Para más de 0.7 MW intermitente, la regulación exige respaldo. ¿El BESS cumple?</h3>
+<p>El BESS es precisamente la respuesta a ese mandato <span class="badge b-fuente">fuente, DACG autoconsumo Núm. 4.5</span>: un generador intermitente ≥0.7 MW bajo autoconsumo debe contratar <strong>SAE (almacenamiento) o respaldo CFE</strong>. El BESS del proyecto sirve como ese almacenamiento <strong>y</strong> genera arbitraje. <strong>Caveat honesto:</strong> no hemos modelado el costo de la alternativa (respaldo CFE contratado); un análisis del 15-jul encontró que si sólo se contara arbitraje puro con carga de red, en 3 de 6 sitios el mejor VAN sería sin BESS — pero bajo carga solar (rev4), CON BESS gana en los 4, y ese costo de respaldo evitado lo refuerza aún más.</p>
+<h3 id="c7--por-qué-la-batería-rinde-menos-que-su-tir-estándar">C7 · ¿Por qué la batería rinde menos que su TIR estándar?</h3>
+<p>Respuesta honesta: con el <strong>split de participación BESS 50/50</strong> (inversionista/cliente) que estamos usando, la TIR del BESS aislado queda en <strong>8.1%–13.5% según sitio</strong>, por debajo del estándar de 16% del financiador <span class="badge b-motor">motor/supuesto</span>. Es un hallazgo abierto, no resuelto automáticamente: para llevar el BESS a su TIR estándar habría que renegociar el split (57–72% a favor del inversionista) o repreciar. Lo mencionamos porque un CFO agudo lo va a ver; la respuesta correcta es que el BESS se justifica por su contribución al <strong>VAN combinado del portafolio</strong> (+$268M vs sin BESS), no como activo aislado.</p>
+<hr>
+<h2 id="d--regulatorio">D · Regulatorio</h2>
+<h3 id="d1--07-mw-gd-exento-vs-autoconsumo--cuál-aplica-a-cada-sitio">D1 · 0.7 MW GD exento vs autoconsumo — ¿cuál aplica a cada sitio?</h3>
+<p>Debajo de <strong>0.7 MW AC (≈839 kWp DC)</strong> por punto de interconexión, el sitio es <strong>generador exento</strong> en medición neta, sin permiso (Op2) <span class="badge b-fuente">fuente, LSE 2025, DOF 18-mar-2025</span>. Arriba de 0.7 MW entra la figura de <strong>autoconsumo</strong>: permiso simplificado CNE (0.7–20 MW), excedentes vendidos sólo a CFE, y respaldo/almacenamiento obligatorio si es intermitente (Op1) <span class="badge b-fuente">fuente, DACG CNE, DOF 12-dic-2025</span>. Por eso Op2 está capada a 839 kWp y Op1 puede crecer hasta la economía o el techo de 20 MW.</p>
+<h3 id="d2--y-el-tope-de-20-mw">D2 · ¿Y el tope de 20 MW?</h3>
+<p>Es el <strong>techo regulatorio duro</strong> por sitio: más allá de 20 MW se requiere permiso ordinario <span class="badge b-fuente">fuente</span>. Sólo liga en el escenario NR de Proplasa, donde el óptimo económico estaría <strong>por encima</strong> de 20 MW — ahí el &quot;pico&quot; es el tope regulatorio, no economía (la curva de ahorro aún subía) <span class="badge b-motor">motor</span>. En los demás sitios liga antes la economía o la superficie.</p>
+<h3 id="d3--un-porteo-de-autoabasto-legado-puede-coexistir-con-autoconsumomedición-neta-en-el-mismo-medidor">D3 · ¿Un porteo de autoabasto legado puede coexistir con autoconsumo/medición neta en el mismo medidor?</h3>
+<p><strong>Honestamente, sin precedente confirmado.</strong> Es el hueco regulatorio más repetido del proyecto GEPP y afecta por igual a Ixtlahuacán (Tala) y Proplasa (ENEL) <span class="badge b-flag">flagged, no asumido</span>. Ya está formulada como pregunta explícita hacia GEPP: si su área legal/regulatoria tiene postura o precedente dentro del grupo. No lo dimos por resuelto en el modelo; es un tema a cerrar antes de comprometerse.</p>
+<h3 id="d4--permisos-e-interconexión--tiempos">D4 · Permisos e interconexión — ¿tiempos?</h3>
+<p>El proceso &lt;0.7 MW es solicitud → estudio → contrato → inspección → sincronización, con clases BT/MT1/MT2 y la <strong>regla de hosting del 80% del transformador</strong> <span class="badge b-fuente">fuente</span>. Los tiempos dependen de CFE/CNE por sitio y no los hemos comprometido; para autoconsumo (&gt;0.7 MW) se suma el permiso CNE simplificado. La <strong>capacidad de transformador</strong> por servicio no está verificada — cualquier kWp adicional puede requerir revisión del punto de interconexión. Es parte del alcance de la visita técnica.</p>
+<h3 id="d5--en-proplasa-el-techo-de-07-mw-se-lee-por-medidor-o-por-predio">D5 · En Proplasa, ¿el techo de 0.7 MW se lee por medidor o por predio?</h3>
+<p><strong>No confirmado — lo tenemos flagged.</strong> El modelo asume &quot;3× exento&quot; (0.7 MW por cada uno de los 3 medidores, tratados como 3 plantas GD) <span class="badge b-sup">supuesto</span>, lo que sostiene la recomendación Op2 en Proplasa. Pero si CNE/CFE lo leen <strong>por centro de carga</strong> (un predio = un tope de 0.7 MW), la estrategia cambia. Es una pregunta explícita hacia el área regulatoria de GEPP; no está resuelta.</p>
+<h3 id="d6--la-directiva-de-cero-contraprestación-por-excedentes-es-real-o-conservadora">D6 · La directiva de &quot;cero contraprestación&quot; por excedentes, ¿es real o conservadora?</h3>
+<p>La tratamos como restricción real por directiva de GEPP: el excedente en Autoconsumo se valora a <strong>≈$0</strong> (venta a CFE a nivel mayorista/PML) <span class="badge b-fuente">fuente, directiva del cliente</span>. <strong>Pero es una palanca:</strong> si GEPP aceptara el mecanismo de excedentes con CFE, se podría crecer el PV por encima del autoconsumo instantáneo y mejorar la economía. Está formulado como pregunta hacia ellos — si &quot;cero contraprestación&quot; es política firme o supuesto conservador de planeación.</p>
+<hr>
+<h2 id="e--comercial-y-contractual">E · Comercial y contractual</h2>
+<h3 id="e1--cuál-es-el-plazo-del-contrato">E1 · ¿Cuál es el plazo del contrato?</h3>
+<p>PPA de <strong>15 años</strong> (editable en Supuestos), con proyección y beneficio a <strong>20 años</strong> <span class="badge b-sup">supuesto comercial</span>. El plazo del BESS es independiente y también editable. Tras el PPA, GEPP conserva el 100% del ahorro PV (años 16–20).</p>
+<h3 id="e2--quién-es-dueño-del-activo">E2 · ¿Quién es dueño del activo?</h3>
+<p>Depende de la estructura que GEPP prefiera — es una pregunta abierta hacia ellos: <strong>ser dueño</strong> (CAPEX propio, mejor TIR, activo en balance) o <strong>ahorro-como-servicio / PPA</strong> (fuera de balance, Newman/inversionista es dueño y transfiere el activo al final). El modelo vigente asume la estructura PPA con transferencia. La &quot;Inversión estimada Newman&quot; (CAPEX) es <strong>$510.1M</strong> en el escenario NR <span class="badge b-motor">motor</span>.</p>
+<h3 id="e3--qué-pasa-en-el-año-21">E3 · ¿Qué pasa en el año 21?</h3>
+<p>El activo ya fue transferido a GEPP (en el modelo PPA) y sigue generando; GEPP conserva el 100% del ahorro. La vida útil del PV excede 20 años (con degradación 0.5%/año, retiene &gt;90% de capacidad), así que hay cola de valor post-modelo que no se cuenta en el VAN reportado — es upside conservador.</p>
+<h3 id="e4--hay-opción-de-compra-anticipada-buyout">E4 · ¿Hay opción de compra anticipada (buyout)?</h3>
+<p>Es un término a estructurar con GEPP, no fijado en el modelo actual. En una estructura PPA típica se ofrece un calendario de buyout; no está cuantificado en los libros entregados. Punto a definir en la mesa comercial.</p>
+<h3 id="e5--om-y-garantías-quién-los-cubre">E5 · O&amp;M y garantías, ¿quién los cubre?</h3>
+<p>En la estructura PPA, el inversionista/Newman cubre O&amp;M durante el plazo (está en el flujo del inversionista que fija el PPA). Las garantías de equipo (PV, inversores, BESS) son las del fabricante y se atan en ingeniería de detalle. El costo de fianza del PPA (13.9%) está en el modelo <span class="badge b-sup">supuesto</span>.</p>
+<h3 id="e6--qué-pasa-si-mi-consumo-cambia--crece-o-baja">E6 · ¿Qué pasa si mi consumo cambia — crece o baja?</h3>
+<p>Es una sensibilidad clave y honesta. El dimensionamiento está atado al <strong>autoconsumo diurno coincidente</strong>: si el consumo diurno <strong>crece</strong>, sube el techo de autoconsumo y el proyecto puede crecer (más valor); si <strong>baja</strong>, más generación cae en excedente@$0 y el ahorro por kWh baja. Bajo self-basis GEPP no paga PPA sobre kWh que no autoconsume, así que está parcialmente protegido a la baja. Con datos 15-min reales y el perfil de crecimiento de GEPP se afina el sizing para que sea robusto a su plan de negocio. Es exactamente por qué pedimos su perfil de operación.</p>
+<h3 id="e7--qué-pasa-si-cfe-cambia-las-tarifas">E7 · ¿Qué pasa si CFE cambia las tarifas?</h3>
+<p>El baseline y el ahorro se recalculan con las tarifas vigentes; el modelo usa escalación CFE de 4%/año <span class="badge b-sup">supuesto</span>, conservadora vs la inflación tarifaria histórica. Un alza de CFE <strong>aumenta</strong> el valor del proyecto (más ahorro desplazado); una baja lo reduce. El PPA fijo con escalador propio (4%) da a GEPP visibilidad y cobertura contra la volatilidad tarifaria de CFE — es parte del valor del hedge, especialmente frente al cliff de autoabasto 2032.</p>
+<h3 id="e8--quién-asume-el-riesgo-de-curtailment-o-falla-del-sistema">E8 · ¿Quién asume el riesgo de curtailment o falla del sistema?</h3>
+<p>En la estructura PPA (self-basis), GEPP paga sobre kWh <strong>efectivamente autoconsumidos</strong>: si el sistema no genera (falla, curtailment), no hay kWh que cobrar, así que el riesgo de generación recae en el inversionista/Newman, no en GEPP. La disponibilidad del BESS ya está castigada (merma 2 meses/año). Las garantías de disponibilidad y penalizaciones específicas se fijan en el contrato.</p>
+<hr>
+<h2 id="f--datos-y-validación">F · Datos y validación</h2>
+<h3 id="f1--por-qué-12-meses-de-recibos-es-suficiente">F1 · ¿Por qué 12 meses de recibos es suficiente?</h3>
+<p>12 meses capturan el ciclo estacional completo (zafra de Tala, temporada de bebida, verano/invierno tarifario) <span class="badge b-fuente">fuente</span>. Es suficiente para <strong>dimensionar a grado prefactibilidad</strong> con confianza en los kWh mensuales B/I/P. Lo que <strong>no</strong> capturan es la forma intradía (para eso hacen falta datos 15-min) ni la validación peso-exacta contra recibo CFE impreso en los sitios 100%-CFE. Por eso el entregable es explícitamente prefactibilidad, no bancable.</p>
+<h3 id="f2--qué-cambiaría-con-datos-de-intervalo-de-15-minutos-hm">F2 · ¿Qué cambiaría con datos de intervalo de 15 minutos (HM)?</h3>
+<p>Volvería el dimensionamiento <strong>bancable</strong>. Hoy la forma intradía (el <code>pct_ac</code> de autoconsumo, el reparto carga-solar/carga-base del BESS, el techo diurno) es una curva de giro genérica &quot;Industrial 24/7&quot; escalada a los kWh facturados, no la curva real del sitio <span class="badge b-sup">supuesto</span>. Con 15-min HM — aunque sea un día típico de verano y uno de invierno por medidor — se reemplaza el supuesto por dato real y se afina el tamaño de PV y BESS. Es la brecha de bancabilidad más citada en todos los análisis GEPP.</p>
+<h3 id="f3--qué-incluye-la-visita-técnica">F3 · ¿Qué incluye la visita técnica?</h3>
+<p>Confirmar los supuestos de sitio que hoy son estándar de casa: área de techo/terreno disponible y su capacidad estructural (hoy 4.0 m²/kWp), sombreado real, capacidad del transformador y del punto de interconexión (regla de hosting 80%), y si los inmuebles son propios o arrendados (plazo de arrendamiento vs vida de activo 20a). Cierra los huecos de superficie e interconexión — críticos en Acapulco y Proplasa (ver H2).</p>
+<h3 id="f4--por-qué-llaman-a-esto-prefactibilidad-y-no-un-modelo-final">F4 · ¿Por qué llaman a esto &quot;prefactibilidad&quot; y no un modelo final?</h3>
+<p>Por disciplina y honestidad. Prefactibilidad = datos mensuales del cliente + curvas sintéticas + supuestos de casa, sin medición horaria ni visita técnica. Es suficiente para decidir <strong>si vale la pena</strong> y para dimensionar de forma defendible, pero antes de comprometer ingeniería y capital se cierran las tres brechas (15-min, visita, coexistencia regulatoria). Preferimos nombrarlo así que sobre-vender un número como bancable cuando no lo es.</p>
+<hr>
+<h2 id="g--proplasa-específico">G · Proplasa específico</h2>
+<h3 id="g1--los-20-mw-de-proplasa-en-el-escenario-max--es-real">G1 · Los 20 MW de Proplasa en el escenario Max — ¿es real?</h3>
+<p><strong>No, es explícitamente una cota teórica y así hay que presentarlo.</strong> El consumo del complejo Proplasa es tan grande que su óptimo económico standalone quedaría por encima de 20 MW; el modelo <strong>trunca en el tope regulatorio de 20 MW</strong>, y aun ahí la curva de ahorro seguía subiendo <span class="badge b-motor">motor</span>. Requeriría <strong>64,604 m² adicionales</strong> de superficie que el predio no tiene. El framing correcto: &quot;<strong>potencial adicional si existiera la superficie</strong>&quot;, no un diseño ejecutable. El diseño ejecutable rev4 de Proplasa es 3,849 kWp (100% del techo disponible usado).</p>
+<h3 id="g2--enel-colapsó-de-90-a-16-en-2026--qué-implica-para-el-modelo">G2 · ENEL colapsó de ~90% a ~16% en 2026 — ¿qué implica para el modelo?</h3>
+<p>El colapso de cobertura ENEL (de ~55% Ene–Feb a ~16% Mar–Abr 2026, escalonado por medidor) es real pero de <strong>causa desconocida</strong> <span class="badge b-fuente">fuente, flagged</span>. Es una pregunta explícita hacia GEPP: ¿incumplimiento estructural del suministrador o decisión estratégica de GEPP? Determina si el PV en Proplasa desplaza energía cara (CFE, ya ocurriendo) o barata (ENEL, escenario pasado). El ahorro reportado del proyecto <strong>no depende</strong> de la respuesta, porque el baseline es CFE pleno (ver P3/P4), pero la respuesta afina la narrativa comercial.</p>
+<h3 id="g3--por-qué-modelan-proplasa-de-dos-formas-permedidor-y-consolidado">G3 · ¿Por qué modelan Proplasa de dos formas (per-medidor y consolidado)?</h3>
+<p>Porque es un predio con <strong>3 medidores/RPU</strong> (Preforma 1, Preforma 2, Tapa), y el régimen regulatorio depende de si el techo de 0.7 MW se lee por medidor o por predio (ver D5). El portafolio suma <strong>sólo la vista consolidada</strong> (<code>pro</code>) para no doble-contar; las pestañas per-medidor son ilustrativas de cómo se reparte por punto de interconexión y usan el mismo <code>k</code> de precio. Los 3 puntos de interconexión son lo que permite, bajo la lectura per-medidor, desplegar 3 plantas GD Op2.</p>
+<hr>
+<h2 id="h--escenario-autoconsumo-max-nr">H · Escenario Autoconsumo Max (NR)</h2>
+<h3 id="h1--qué-es-el-escenario-sin-restricción-de-superficie">H1 · ¿Qué es el escenario &quot;sin restricción de superficie&quot;?</h3>
+<p>Es la variante de Op1 donde la superficie de techo <strong>no es la restricción</strong>: cada sitio se dimensiona a su óptimo económico standalone (o al tope regulatorio de 20 MW) <span class="badge b-motor">motor</span>. Muestra el <strong>potencial</strong> del portafolio si hubiera techo/terreno: ahorro cliente año 1 <strong>$57.18M</strong> (vs $39.13M rev4), VAN 20a <strong>$617.2M</strong> (vs $411.7M), cobertura 39.3% del consumo (vs 16.6%), CAPEX Newman <strong>$510.1M</strong>. Es cota superior, no propuesta ejecutable — sirve para enmarcar cuánto valor deja sobre la mesa la falta de superficie.</p>
+<h3 id="h2--dónde-falta-superficie-y-cuánta">H2 · ¿Dónde falta superficie y cuánta?</h3>
+<p>Sólo dos sitios topan superficie en el escenario Max <span class="badge b-motor">motor</span>: <strong>Acapulco</strong> necesita <strong>2,061 m² adicionales</strong> (óptimo 2,270 kWp vs 7,019 m² disponibles) y <strong>Proplasa</strong> necesita <strong>64,604 m²</strong> adicionales (masivamente inviable en el predio). Ixtlahuacán (25,308 m² disponibles) y Cancún (6,828 m²) <strong>sí alcanzan</strong> su óptimo con el techo actual. Por eso el diseño ejecutable (rev4) capa Acapulco y Proplasa a su superficie real, y el escenario Max sólo ilustra el upside.</p>
+<h3 id="h3--cómo-se-validaría-el-escenario-max">H3 · ¿Cómo se validaría el escenario Max?</h3>
+<p>Con la <strong>visita técnica</strong> (F3): confirmar techo/terreno realmente disponible, estructura, y punto de interconexión para el kWp ampliado, más la revisión de capacidad de transformador. Para Acapulco, ver si hay ~2,061 m² adicionales (piso, carport, terreno anexo); para Proplasa, el escenario 20 MW simplemente no cabe en el predio y no debe presentarse como ejecutable. Cualquier kWp por encima del diseño rev4 requiere esa validación antes de comprometerse.</p>
+<hr>
+<p><em>Documento interno de preparación — Newman · 2026-07-15. Cifras vigentes: diseño entregado rev4 &quot;BESS Carga Solar&quot; y escenario Autoconsumo Max (NR). Grado prefactibilidad. No distribuir al cliente.</em></p>
+</div>

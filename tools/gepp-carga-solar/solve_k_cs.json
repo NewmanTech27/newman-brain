@@ -1,0 +1,31 @@
+{
+  "op1": {
+    "k_selfbasis": 1.0095269828344826,
+    "irr_oldk_selfbasis": 0.13893620966663572,
+    "irr_newk_selfbasis": 0.1400000000000019,
+    "proplasa_combined_irr_selfbasis": 0.1361952772395269,
+    "basis_gen": {
+      "k": 0.9602580008932777,
+      "irr_oldk": 0.14463473219913242,
+      "irr_newk": 0.1400000000000019,
+      "proplasa_combined_irr": 0.13253432727513365
+    }
+  },
+  "op2": {
+    "k_selfbasis": 1.0000287276767563,
+    "irr_oldk_selfbasis": 0.13999776798883318,
+    "irr_newk_selfbasis": 0.1400000000000019,
+    "proplasa_combined_irr_selfbasis": 0.14082272642973975,
+    "basis_gen": {
+      "k": 1.0000297723244398,
+      "irr_oldk": 0.13999768682660496,
+      "irr_newk": 0.1400000000000019,
+      "proplasa_combined_irr": 0.1408227925274101
+    }
+  },
+  "meta": {
+    "primary": "self-basis (k_selfbasis): rev3 continuity \u2014 PPA billed on SELF-CONSUMED K72, like the rev3 book (K72<C72, C46=K72*C31). basis_gen retained (Option B, PPA on total generation) for post-approval engine formalization.",
+    "target_irr": 0.14,
+    "portfolio": "4-Sitios book combined (ixt,aca,can,pro)"
+  }
+}

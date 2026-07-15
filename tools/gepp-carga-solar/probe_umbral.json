@@ -1,0 +1,211 @@
+{
+ "sites": {
+  "ixt": {
+   "site": "ixt",
+   "slug": "gepp-ixtlahuacan",
+   "kwp_rev4": 5170.0,
+   "kwp_nr": 5430.0,
+   "rev4": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 11749925,
+    "book_demand_total": 11749925,
+    "cc_dem_pv": 5245476,
+    "cc_dem_bess": 6717182,
+    "cc_demand_total": 11962659,
+    "cc_pct_ac": 0.898
+   },
+   "nr": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 11749925,
+    "book_demand_total": 11749925,
+    "cc_dem_pv": 5405109,
+    "cc_dem_bess": 6591516,
+    "cc_demand_total": 11996625,
+    "cc_pct_ac": 0.873,
+    "cc_exced": 1234032
+   },
+   "delta_demand_nr": -246700,
+   "delta_demand_nr_pct": -2.1,
+   "dem_bess_collapse_rev4_to_nr": -125666,
+   "dem_bess_rev4": 6717182,
+   "dem_bess_nr": 6591516
+  },
+  "aca": {
+   "site": "aca",
+   "slug": "gepp-acapulco",
+   "kwp_rev4": 1748.0,
+   "kwp_nr": 2270.0,
+   "rev4": {
+    "book_distrib_linear": 681365,
+    "book_Q_capacidad": 4276904,
+    "book_demand_total": 4958269,
+    "cc_dem_pv": 1866092,
+    "cc_dem_bess": 3367350,
+    "cc_demand_total": 5233442,
+    "cc_pct_ac": 0.959
+   },
+   "nr": {
+    "book_distrib_linear": 884838,
+    "book_Q_capacidad": 4276904,
+    "book_demand_total": 5161742,
+    "cc_dem_pv": 2204200,
+    "cc_dem_bess": 3029242,
+    "cc_demand_total": 5233442,
+    "cc_pct_ac": 0.829,
+    "cc_exced": 725512
+   },
+   "delta_demand_nr": -71699,
+   "delta_demand_nr_pct": -1.4,
+   "dem_bess_collapse_rev4_to_nr": -338109,
+   "dem_bess_rev4": 3367350,
+   "dem_bess_nr": 3029242
+  },
+  "can": {
+   "site": "can",
+   "slug": "gepp-cancun",
+   "kwp_rev4": 1270.0,
+   "kwp_nr": 1410.0,
+   "rev4": {
+    "book_distrib_linear": 206089,
+    "book_Q_capacidad": 2799362,
+    "book_demand_total": 3005451,
+    "cc_dem_pv": 1582127,
+    "cc_dem_bess": 1543672,
+    "cc_demand_total": 3125799,
+    "cc_pct_ac": 0.921
+   },
+   "nr": {
+    "book_distrib_linear": 228807,
+    "book_Q_capacidad": 2799362,
+    "book_demand_total": 3028169,
+    "cc_dem_pv": 1657914,
+    "cc_dem_bess": 1471027,
+    "cc_demand_total": 3128942,
+    "cc_pct_ac": 0.868,
+    "cc_exced": 280063
+   },
+   "delta_demand_nr": -100773,
+   "delta_demand_nr_pct": -3.2,
+   "dem_bess_collapse_rev4_to_nr": -72645,
+   "dem_bess_rev4": 1543672,
+   "dem_bess_nr": 1471027
+  },
+  "pr1": {
+   "site": "pr1",
+   "slug": "gepp-proplasa-pr1",
+   "kwp_rev4": 681.2,
+   "kwp_nr": 4210.0,
+   "rev4": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 6960238,
+    "book_demand_total": 6960238,
+    "cc_dem_pv": 0,
+    "cc_dem_bess": 6590452,
+    "cc_demand_total": 6590452,
+    "cc_pct_ac": 1.0
+   },
+   "nr": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 6960238,
+    "book_demand_total": 6960238,
+    "cc_dem_pv": 360193,
+    "cc_dem_bess": 6230258,
+    "cc_demand_total": 6590452,
+    "cc_pct_ac": 0.884,
+    "cc_exced": 809608
+   },
+   "delta_demand_nr": 369786,
+   "delta_demand_nr_pct": 5.6,
+   "dem_bess_collapse_rev4_to_nr": -360193,
+   "dem_bess_rev4": 6590452,
+   "dem_bess_nr": 6230258
+  },
+  "pr2": {
+   "site": "pr2",
+   "slug": "gepp-proplasa-pr2",
+   "kwp_rev4": 1912,
+   "kwp_nr": 11950.0,
+   "rev4": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 19537112,
+    "book_demand_total": 19537112,
+    "cc_dem_pv": 0,
+    "cc_dem_bess": 20561483,
+    "cc_demand_total": 20561483,
+    "cc_pct_ac": 1.0
+   },
+   "nr": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 19537112,
+    "book_demand_total": 19537112,
+    "cc_dem_pv": 2311672,
+    "cc_dem_bess": 18249811,
+    "cc_demand_total": 20561483,
+    "cc_pct_ac": 0.878,
+    "cc_exced": 2428516
+   },
+   "delta_demand_nr": -1024371,
+   "delta_demand_nr_pct": -5.0,
+   "dem_bess_collapse_rev4_to_nr": -2311672,
+   "dem_bess_rev4": 20561483,
+   "dem_bess_nr": 18249811
+  },
+  "tap": {
+   "site": "tap",
+   "slug": "gepp-proplasa-tap",
+   "kwp_rev4": 1255.7,
+   "kwp_nr": 7700.0,
+   "rev4": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 12954228,
+    "book_demand_total": 12954228,
+    "cc_dem_pv": 0,
+    "cc_dem_bess": 13697374,
+    "cc_demand_total": 13697374,
+    "cc_pct_ac": 1.0
+   },
+   "nr": {
+    "book_distrib_linear": 0,
+    "book_Q_capacidad": 12954228,
+    "book_demand_total": 12954228,
+    "cc_dem_pv": 1213088,
+    "cc_dem_bess": 12484286,
+    "cc_demand_total": 13697374,
+    "cc_pct_ac": 0.889,
+    "cc_exced": 1413754
+   },
+   "delta_demand_nr": -743146,
+   "delta_demand_nr_pct": -5.4,
+   "dem_bess_collapse_rev4_to_nr": -1213088,
+   "dem_bess_rev4": 13697374,
+   "dem_bess_nr": 12484286
+  }
+ },
+ "meta": {
+  "note": "Q3 umbral audit. Book demand = linear distribución (sumL*kwp/M_div) + fixed capacidad Q (min(1,C30/Qdiv)=1). calc_core demand = dem_pv+dem_bess_h (golden umbral). pro = per-meter proxy (pr1+pr2+tap): consolidated pro has no imported bills.",
+  "kwp_nr": {
+   "ixt": 5430.0,
+   "aca": 2270.0,
+   "can": 1410.0,
+   "pr1": 4210.0,
+   "pr2": 11950.0,
+   "tap": 7700.0
+  },
+  "kwp_rev4": {
+   "ixt": 5170.0,
+   "aca": 1748.0,
+   "can": 1270.0,
+   "pr1": 681.2,
+   "pr2": 1912,
+   "tap": 1255.7
+  }
+ },
+ "proplasa_per_meter_sum": {
+  "book_demand_total_nr": 39451578,
+  "calc_demand_total_nr": 40849309,
+  "delta": -1397731,
+  "dem_bess_rev4": 40849309,
+  "dem_bess_nr": 36964355,
+  "dem_bess_collapse": -3884954
+ }
+}

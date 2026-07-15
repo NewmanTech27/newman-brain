@@ -1,0 +1,93 @@
+{
+ "sites": {
+  "ixt": {
+   "site": "ixt",
+   "kwp_nr": 5430,
+   "k_con": 0.96509,
+   "price_con": 1.24,
+   "k_pv": 0.91634,
+   "price_pv": 1.1773,
+   "con_bess_ahorro_a1": 10622366,
+   "sin_bess_ahorro_a1": 5116323,
+   "con_bess_van": 115053920,
+   "sin_bess_van": 59691309,
+   "delta_van_con_minus_sin": 55362611,
+   "delta_a1_con_minus_sin": 5506043,
+   "bono_solar_charge": 893114,
+   "ahorro_bess_bruto": 12101136,
+   "veredicto_van": "CON BESS",
+   "veredicto_ahorro_a1": "CON BESS"
+  },
+  "aca": {
+   "site": "aca",
+   "kwp_nr": 2270,
+   "k_con": 1.14978,
+   "price_con": 1.4094,
+   "k_pv": 1.0122,
+   "price_pv": 1.2408,
+   "con_bess_ahorro_a1": 4214740,
+   "sin_bess_ahorro_a1": 2454111,
+   "con_bess_van": 46301055,
+   "sin_bess_van": 27893583,
+   "delta_van_con_minus_sin": 18407472,
+   "delta_a1_con_minus_sin": 1760628,
+   "bono_solar_charge": 605097,
+   "ahorro_bess_bruto": 4684537,
+   "veredicto_van": "CON BESS",
+   "veredicto_ahorro_a1": "CON BESS"
+  },
+  "can": {
+   "site": "can",
+   "kwp_nr": 1410,
+   "k_con": 1.04977,
+   "price_con": 1.6038,
+   "k_pv": 0.95818,
+   "price_pv": 1.4639,
+   "con_bess_ahorro_a1": 2583045,
+   "sin_bess_ahorro_a1": 1346948,
+   "con_bess_van": 28328224,
+   "sin_bess_van": 15671537,
+   "delta_van_con_minus_sin": 12656686,
+   "delta_a1_con_minus_sin": 1236097,
+   "bono_solar_charge": 283437,
+   "ahorro_bess_bruto": 2980295,
+   "veredicto_van": "CON BESS",
+   "veredicto_ahorro_a1": "CON BESS"
+  },
+  "pro": {
+   "site": "pro",
+   "kwp_nr": 20000,
+   "k_con": 0.91904,
+   "price_con": 1.2432,
+   "k_pv": 0.88522,
+   "price_pv": 1.1974,
+   "con_bess_ahorro_a1": 39761140,
+   "sin_bess_ahorro_a1": 21619809,
+   "con_bess_van": 427533805,
+   "sin_bess_van": 245736829,
+   "delta_van_con_minus_sin": 181796976,
+   "delta_a1_con_minus_sin": 18141331,
+   "bono_solar_charge": 1184247,
+   "ahorro_bess_bruto": 39162954,
+   "veredicto_van": "CON BESS",
+   "veredicto_ahorro_a1": "CON BESS"
+  }
+ },
+ "meta": {
+  "note": "Q4 BESS vs no-BESS at kWp_NR, solar-charge accounting, standalone k re-solved per config (both investor TIR 14%). SIN BESS ignores the mandatory CFE-backup contract cost (not modeled) for PV>=0.7MW intermitente.",
+  "kwp_nr": {
+   "ixt": 5430,
+   "aca": 2270,
+   "can": 1410,
+   "pro": 20000
+  }
+ },
+ "portfolio": {
+  "con_bess_ahorro_a1": 57181291,
+  "sin_bess_ahorro_a1": 30537191,
+  "con_bess_van": 617217004,
+  "sin_bess_van": 348993258,
+  "delta_van": 268223746,
+  "veredicto_van": "CON BESS"
+ }
+}

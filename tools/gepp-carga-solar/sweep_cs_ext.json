@@ -1,0 +1,3182 @@
+{
+ "meta": {
+  "note": "EXTENDED sweep — SUPERSEDES motor_cs.json sites.<k>.sweep_superficie (that one is range-capped at 3x rev3 and flags opt_at_range_cap). Range extends until the client-savings curve peaks, hard stop 20,000 kWp DC (~20 MW autoconsumo CNE permiso simplificado). Methodology identical: self-basis, k re-solved per point (union-7, combined investor TIR 14.0%), BESS fixed; 200-kWp coarse grid, 50-kWp refinement near the peak. opt_at_regulatory_cap=true means still rising at 20 MW. CAVEAT (union artifact): under the union-7 re-solve an oversized site is cross-subsidized by the other sites PPA (k rises for the whole portfolio), so its own client curve can keep rising to the cap (aca, pro). Each site therefore also carries a \"standalone\" block — k solved on the site ALONE at TIR 14% — the defensible bound for the deck section \"m2 para el maximo ahorro posible\".",
+  "kwp_cap": 20000.0,
+  "generated_by": "sweep_cs_ext.py"
+ },
+ "sites": {
+  "ixt": {
+   "site": "ixt",
+   "basis": "self (PPA on self-consumed; k re-solved per point, union-7, TIR 14%)",
+   "kwp_rev3": 4550.0,
+   "kwp_design": 5170.0,
+   "kwp_cap_regulatorio": 20000.0,
+   "kwp_opt": 6730.0,
+   "kwp_opt_van": 6930.0,
+   "opt_at_regulatory_cap": false,
+   "m2_opt": 26920.0,
+   "m2_disponibles": 25308.0,
+   "m2_faltantes": 1612.0,
+   "design_point": {
+    "kwp": 5170.0,
+    "m2": 20680.0,
+    "k_solved": 1.022392,
+    "price": 1.3136,
+    "ahorro_cliente_anio1_mxn": 9794684.0,
+    "van_20a_mxn": 107765219.0,
+    "exceso_remanente_kwh": 307168.0
+   },
+   "opt_point": {
+    "kwp": 6730.0,
+    "m2": 26920.0,
+    "k_solved": 1.061374,
+    "price": 1.3637,
+    "ahorro_cliente_anio1_mxn": 10235024.0,
+    "van_20a_mxn": 113941294.0,
+    "exceso_remanente_kwh": 1210994.0
+   },
+   "opt_point_van": {
+    "kwp": 6930.0,
+    "m2": 27720.0,
+    "k_solved": 1.068242,
+    "price": 1.3725,
+    "ahorro_cliente_anio1_mxn": 10216702.0,
+    "van_20a_mxn": 114002221.0,
+    "exceso_remanente_kwh": 1426892.0
+   },
+   "delta_ahorro_anio1_opt_vs_design": 440340.0,
+   "delta_van_opt_vs_design": 6237002.0,
+   "standalone": {
+    "kwp_opt": 5430.0,
+    "m2_opt": 21720.0,
+    "m2_faltantes": 0.0,
+    "opt_at_regulatory_cap": false,
+    "opt_point": {
+     "kwp": 5430.0,
+     "m2": 21720.0,
+     "k_solved": 0.965089,
+     "price": 1.24,
+     "ahorro_cliente_anio1_mxn": 10622366.0
+    },
+    "design_point": {
+     "kwp": 5170.0,
+     "m2": 20680.0,
+     "k_solved": 0.948701,
+     "price": 1.2189,
+     "ahorro_cliente_anio1_mxn": 10601749.0
+    },
+    "delta_ahorro_anio1_opt_vs_design": 20617.0
+   },
+   "curve": [
+    {
+     "kwp": 2730.0,
+     "m2": 10920.0,
+     "k_solved": 1.029237,
+     "price": 1.3224,
+     "ahorro_cliente_anio1_mxn": 7861135.0,
+     "van_20a_mxn": 84312784.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 3330.0,
+     "m2": 13320.0,
+     "k_solved": 1.020559,
+     "price": 1.3112,
+     "ahorro_cliente_anio1_mxn": 8389535.0,
+     "van_20a_mxn": 90805356.0,
+     "exceso_remanente_kwh": 7220.0
+    },
+    {
+     "kwp": 3930.0,
+     "m2": 15720.0,
+     "k_solved": 1.014897,
+     "price": 1.304,
+     "ahorro_cliente_anio1_mxn": 8917620.0,
+     "van_20a_mxn": 97201278.0,
+     "exceso_remanente_kwh": 46796.0
+    },
+    {
+     "kwp": 4530.0,
+     "m2": 18120.0,
+     "k_solved": 1.014941,
+     "price": 1.304,
+     "ahorro_cliente_anio1_mxn": 9396107.0,
+     "van_20a_mxn": 102946282.0,
+     "exceso_remanente_kwh": 148188.0
+    },
+    {
+     "kwp": 5130.0,
+     "m2": 20520.0,
+     "k_solved": 1.021737,
+     "price": 1.3128,
+     "ahorro_cliente_anio1_mxn": 9772932.0,
+     "van_20a_mxn": 107500597.0,
+     "exceso_remanente_kwh": 296386.0
+    },
+    {
+     "kwp": 5170.0,
+     "m2": 20680.0,
+     "k_solved": 1.022392,
+     "price": 1.3136,
+     "ahorro_cliente_anio1_mxn": 9794684.0,
+     "van_20a_mxn": 107765219.0,
+     "exceso_remanente_kwh": 307168.0
+    },
+    {
+     "kwp": 5530.0,
+     "m2": 22120.0,
+     "k_solved": 1.029213,
+     "price": 1.3224,
+     "ahorro_cliente_anio1_mxn": 9973652.0,
+     "van_20a_mxn": 109958729.0,
+     "exceso_remanente_kwh": 416444.0
+    },
+    {
+     "kwp": 6130.0,
+     "m2": 24520.0,
+     "k_solved": 1.043418,
+     "price": 1.3406,
+     "ahorro_cliente_anio1_mxn": 10166111.0,
+     "van_20a_mxn": 112571891.0,
+     "exceso_remanente_kwh": 743225.0
+    },
+    {
+     "kwp": 6330.0,
+     "m2": 25320.0,
+     "k_solved": 1.049033,
+     "price": 1.3478,
+     "ahorro_cliente_anio1_mxn": 10205078.0,
+     "van_20a_mxn": 113183448.0,
+     "exceso_remanente_kwh": 877906.0
+    },
+    {
+     "kwp": 6530.0,
+     "m2": 26120.0,
+     "k_solved": 1.055055,
+     "price": 1.3556,
+     "ahorro_cliente_anio1_mxn": 10227183.0,
+     "van_20a_mxn": 113630626.0,
+     "exceso_remanente_kwh": 1034490.0
+    },
+    {
+     "kwp": 6580.0,
+     "m2": 26320.0,
+     "k_solved": 1.056595,
+     "price": 1.3575,
+     "ahorro_cliente_anio1_mxn": 10231217.0,
+     "van_20a_mxn": 113727932.0,
+     "exceso_remanente_kwh": 1075597.0
+    },
+    {
+     "kwp": 6630.0,
+     "m2": 26520.0,
+     "k_solved": 1.058177,
+     "price": 1.3596,
+     "ahorro_cliente_anio1_mxn": 10233031.0,
+     "van_20a_mxn": 113804304.0,
+     "exceso_remanente_kwh": 1120037.0
+    },
+    {
+     "kwp": 6680.0,
+     "m2": 26720.0,
+     "k_solved": 1.059767,
+     "price": 1.3616,
+     "ahorro_cliente_anio1_mxn": 10234284.0,
+     "van_20a_mxn": 113875435.0,
+     "exceso_remanente_kwh": 1165260.0
+    },
+    {
+     "kwp": 6730.0,
+     "m2": 26920.0,
+     "k_solved": 1.061374,
+     "price": 1.3637,
+     "ahorro_cliente_anio1_mxn": 10235024.0,
+     "van_20a_mxn": 113941294.0,
+     "exceso_remanente_kwh": 1210994.0
+    },
+    {
+     "kwp": 6780.0,
+     "m2": 27120.0,
+     "k_solved": 1.063019,
+     "price": 1.3658,
+     "ahorro_cliente_anio1_mxn": 10234243.0,
+     "van_20a_mxn": 113992370.0,
+     "exceso_remanente_kwh": 1258937.0
+    },
+    {
+     "kwp": 6830.0,
+     "m2": 27320.0,
+     "k_solved": 1.064751,
+     "price": 1.368,
+     "ahorro_cliente_anio1_mxn": 10228999.0,
+     "van_20a_mxn": 114001290.0,
+     "exceso_remanente_kwh": 1314057.0
+    },
+    {
+     "kwp": 6880.0,
+     "m2": 27520.0,
+     "k_solved": 1.066497,
+     "price": 1.3703,
+     "ahorro_cliente_anio1_mxn": 10222882.0,
+     "van_20a_mxn": 114002023.0,
+     "exceso_remanente_kwh": 1370470.0
+    },
+    {
+     "kwp": 6930.0,
+     "m2": 27720.0,
+     "k_solved": 1.068242,
+     "price": 1.3725,
+     "ahorro_cliente_anio1_mxn": 10216702.0,
+     "van_20a_mxn": 114002221.0,
+     "exceso_remanente_kwh": 1426892.0
+    },
+    {
+     "kwp": 6980.0,
+     "m2": 27920.0,
+     "k_solved": 1.06999,
+     "price": 1.3747,
+     "ahorro_cliente_anio1_mxn": 10210345.0,
+     "van_20a_mxn": 114000673.0,
+     "exceso_remanente_kwh": 1483458.0
+    },
+    {
+     "kwp": 7030.0,
+     "m2": 28120.0,
+     "k_solved": 1.071768,
+     "price": 1.377,
+     "ahorro_cliente_anio1_mxn": 10202304.0,
+     "van_20a_mxn": 113983272.0,
+     "exceso_remanente_kwh": 1542530.0
+    },
+    {
+     "kwp": 7080.0,
+     "m2": 28320.0,
+     "k_solved": 1.073591,
+     "price": 1.3794,
+     "ahorro_cliente_anio1_mxn": 10192805.0,
+     "van_20a_mxn": 113951235.0,
+     "exceso_remanente_kwh": 1603284.0
+    },
+    {
+     "kwp": 7130.0,
+     "m2": 28520.0,
+     "k_solved": 1.075432,
+     "price": 1.3817,
+     "ahorro_cliente_anio1_mxn": 10182986.0,
+     "van_20a_mxn": 113915517.0,
+     "exceso_remanente_kwh": 1664000.0
+    },
+    {
+     "kwp": 7330.0,
+     "m2": 29320.0,
+     "k_solved": 1.082834,
+     "price": 1.3913,
+     "ahorro_cliente_anio1_mxn": 10142369.0,
+     "van_20a_mxn": 113759019.0,
+     "exceso_remanente_kwh": 1908460.0
+    },
+    {
+     "kwp": 7930.0,
+     "m2": 31720.0,
+     "k_solved": 1.106471,
+     "price": 1.4216,
+     "ahorro_cliente_anio1_mxn": 9963827.0,
+     "van_20a_mxn": 112737513.0,
+     "exceso_remanente_kwh": 2723946.0
+    },
+    {
+     "kwp": 8530.0,
+     "m2": 34120.0,
+     "k_solved": 1.13148,
+     "price": 1.4538,
+     "ahorro_cliente_anio1_mxn": 9713200.0,
+     "van_20a_mxn": 111028623.0,
+     "exceso_remanente_kwh": 3639276.0
+    },
+    {
+     "kwp": 9130.0,
+     "m2": 36520.0,
+     "k_solved": 1.1581,
+     "price": 1.488,
+     "ahorro_cliente_anio1_mxn": 9415223.0,
+     "van_20a_mxn": 108833364.0,
+     "exceso_remanente_kwh": 4600972.0
+    },
+    {
+     "kwp": 9730.0,
+     "m2": 38920.0,
+     "k_solved": 1.185302,
+     "price": 1.5229,
+     "ahorro_cliente_anio1_mxn": 9094478.0,
+     "van_20a_mxn": 106409615.0,
+     "exceso_remanente_kwh": 5581543.0
+    },
+    {
+     "kwp": 10330.0,
+     "m2": 41320.0,
+     "k_solved": 1.212782,
+     "price": 1.5582,
+     "ahorro_cliente_anio1_mxn": 8760437.0,
+     "van_20a_mxn": 103854148.0,
+     "exceso_remanente_kwh": 6572698.0
+    },
+    {
+     "kwp": 10930.0,
+     "m2": 43720.0,
+     "k_solved": 1.240371,
+     "price": 1.5937,
+     "ahorro_cliente_anio1_mxn": 8417631.0,
+     "van_20a_mxn": 101213928.0,
+     "exceso_remanente_kwh": 7569861.0
+    },
+    {
+     "kwp": 11530.0,
+     "m2": 46120.0,
+     "k_solved": 1.267859,
+     "price": 1.629,
+     "ahorro_cliente_anio1_mxn": 8071164.0,
+     "van_20a_mxn": 98542346.0,
+     "exceso_remanente_kwh": 8567923.0
+    },
+    {
+     "kwp": 12130.0,
+     "m2": 48520.0,
+     "k_solved": 1.295233,
+     "price": 1.6641,
+     "ahorro_cliente_anio1_mxn": 7721249.0,
+     "van_20a_mxn": 95841796.0,
+     "exceso_remanente_kwh": 9566501.0
+    },
+    {
+     "kwp": 12730.0,
+     "m2": 50920.0,
+     "k_solved": 1.322558,
+     "price": 1.6993,
+     "ahorro_cliente_anio1_mxn": 7367361.0,
+     "van_20a_mxn": 93105544.0,
+     "exceso_remanente_kwh": 10566970.0
+    },
+    {
+     "kwp": 13330.0,
+     "m2": 53320.0,
+     "k_solved": 1.34991,
+     "price": 1.7344,
+     "ahorro_cliente_anio1_mxn": 7008167.0,
+     "van_20a_mxn": 90319090.0,
+     "exceso_remanente_kwh": 11570824.0
+    },
+    {
+     "kwp": 13930.0,
+     "m2": 55720.0,
+     "k_solved": 1.377255,
+     "price": 1.7695,
+     "ahorro_cliente_anio1_mxn": 6644208.0,
+     "van_20a_mxn": 87488367.0,
+     "exceso_remanente_kwh": 12577176.0
+    },
+    {
+     "kwp": 14530.0,
+     "m2": 58120.0,
+     "k_solved": 1.40485,
+     "price": 1.805,
+     "ahorro_cliente_anio1_mxn": 6273520.0,
+     "van_20a_mxn": 84587952.0,
+     "exceso_remanente_kwh": 13591184.0
+    },
+    {
+     "kwp": 15130.0,
+     "m2": 60520.0,
+     "k_solved": 1.432693,
+     "price": 1.8408,
+     "ahorro_cliente_anio1_mxn": 5897180.0,
+     "van_20a_mxn": 81627929.0,
+     "exceso_remanente_kwh": 14612403.0
+    },
+    {
+     "kwp": 15730.0,
+     "m2": 62920.0,
+     "k_solved": 1.460603,
+     "price": 1.8766,
+     "ahorro_cliente_anio1_mxn": 5517100.0,
+     "van_20a_mxn": 78631189.0,
+     "exceso_remanente_kwh": 15636806.0
+    },
+    {
+     "kwp": 16330.0,
+     "m2": 65320.0,
+     "k_solved": 1.488616,
+     "price": 1.9126,
+     "ahorro_cliente_anio1_mxn": 5132383.0,
+     "van_20a_mxn": 75588337.0,
+     "exceso_remanente_kwh": 16664956.0
+    },
+    {
+     "kwp": 16930.0,
+     "m2": 67720.0,
+     "k_solved": 1.517245,
+     "price": 1.9494,
+     "ahorro_cliente_anio1_mxn": 4737300.0,
+     "van_20a_mxn": 72431655.0,
+     "exceso_remanente_kwh": 17706562.0
+    },
+    {
+     "kwp": 17530.0,
+     "m2": 70120.0,
+     "k_solved": 1.546588,
+     "price": 1.9871,
+     "ahorro_cliente_anio1_mxn": 4330616.0,
+     "van_20a_mxn": 69146971.0,
+     "exceso_remanente_kwh": 18762723.0
+    },
+    {
+     "kwp": 18130.0,
+     "m2": 72520.0,
+     "k_solved": 1.576143,
+     "price": 2.0251,
+     "ahorro_cliente_anio1_mxn": 3920274.0,
+     "van_20a_mxn": 65822250.0,
+     "exceso_remanente_kwh": 19823359.0
+    },
+    {
+     "kwp": 18730.0,
+     "m2": 74920.0,
+     "k_solved": 1.605752,
+     "price": 2.0631,
+     "ahorro_cliente_anio1_mxn": 3508701.0,
+     "van_20a_mxn": 62484586.0,
+     "exceso_remanente_kwh": 20885307.0
+    },
+    {
+     "kwp": 19330.0,
+     "m2": 77320.0,
+     "k_solved": 1.635415,
+     "price": 2.1012,
+     "ahorro_cliente_anio1_mxn": 3095943.0,
+     "van_20a_mxn": 59134348.0,
+     "exceso_remanente_kwh": 21948532.0
+    },
+    {
+     "kwp": 19930.0,
+     "m2": 79720.0,
+     "k_solved": 1.665454,
+     "price": 2.1398,
+     "ahorro_cliente_anio1_mxn": 2678618.0,
+     "van_20a_mxn": 55731063.0,
+     "exceso_remanente_kwh": 23018620.0
+    },
+    {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 1.668958,
+     "price": 2.1443,
+     "ahorro_cliente_anio1_mxn": 2629930.0,
+     "van_20a_mxn": 55334013.0,
+     "exceso_remanente_kwh": 23143463.0
+    }
+   ]
+  },
+  "aca": {
+   "site": "aca",
+   "basis": "self (PPA on self-consumed; k re-solved per point, union-7, TIR 14%)",
+   "kwp_rev3": 1618.0,
+   "kwp_design": 1748.0,
+   "kwp_cap_regulatorio": 20000.0,
+   "kwp_opt": 20000.0,
+   "kwp_opt_van": 20000.0,
+   "opt_at_regulatory_cap": true,
+   "m2_opt": 80000.0,
+   "m2_disponibles": 7019.0,
+   "m2_faltantes": 72981.0,
+   "design_point": {
+    "kwp": 1748.0,
+    "m2": 6992.0,
+    "k_solved": 1.022392,
+    "price": 1.2532,
+    "ahorro_cliente_anio1_mxn": 4194598.0,
+    "van_20a_mxn": 44876788.0,
+    "exceso_remanente_kwh": 82950.0
+   },
+   "opt_point": {
+    "kwp": 20000.0,
+    "m2": 80000.0,
+    "k_solved": 1.939871,
+    "price": 2.3779,
+    "ahorro_cliente_anio1_mxn": 7477288.0,
+    "van_20a_mxn": 82421809.0,
+    "exceso_remanente_kwh": 32592127.0
+   },
+   "opt_point_van": {
+    "kwp": 20000.0,
+    "m2": 80000.0,
+    "k_solved": 1.939871,
+    "price": 2.3779,
+    "ahorro_cliente_anio1_mxn": 7477288.0,
+    "van_20a_mxn": 82421809.0,
+    "exceso_remanente_kwh": 32592127.0
+   },
+   "delta_ahorro_anio1_opt_vs_design": 3282690.0,
+   "delta_van_opt_vs_design": 37545021.0,
+   "standalone": {
+    "kwp_opt": 2270.0,
+    "m2_opt": 9080.0,
+    "m2_faltantes": 2061.0,
+    "opt_at_regulatory_cap": false,
+    "opt_point": {
+     "kwp": 2270.0,
+     "m2": 9080.0,
+     "k_solved": 1.149781,
+     "price": 1.4094,
+     "ahorro_cliente_anio1_mxn": 4214740.0
+    },
+    "design_point": {
+     "kwp": 1748.0,
+     "m2": 6992.0,
+     "k_solved": 1.065861,
+     "price": 1.3065,
+     "ahorro_cliente_anio1_mxn": 4028945.0
+    },
+    "delta_ahorro_anio1_opt_vs_design": 185795.0
+   },
+   "curve": [
+    {
+     "kwp": 970.0,
+     "m2": 3880.0,
+     "k_solved": 1.026242,
+     "price": 1.258,
+     "ahorro_cliente_anio1_mxn": 3271564.0,
+     "van_20a_mxn": 34447326.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 1570.0,
+     "m2": 6280.0,
+     "k_solved": 1.021111,
+     "price": 1.2517,
+     "ahorro_cliente_anio1_mxn": 3994291.0,
+     "van_20a_mxn": 42683188.0,
+     "exceso_remanente_kwh": 42849.0
+    },
+    {
+     "kwp": 1748.0,
+     "m2": 6992.0,
+     "k_solved": 1.022392,
+     "price": 1.2532,
+     "ahorro_cliente_anio1_mxn": 4194598.0,
+     "van_20a_mxn": 44876788.0,
+     "exceso_remanente_kwh": 82950.0
+    },
+    {
+     "kwp": 1970.0,
+     "m2": 7880.0,
+     "k_solved": 1.026007,
+     "price": 1.2577,
+     "ahorro_cliente_anio1_mxn": 4425124.0,
+     "van_20a_mxn": 47343978.0,
+     "exceso_remanente_kwh": 145791.0
+    },
+    {
+     "kwp": 2570.0,
+     "m2": 10280.0,
+     "k_solved": 1.042888,
+     "price": 1.2784,
+     "ahorro_cliente_anio1_mxn": 4903352.0,
+     "van_20a_mxn": 52413009.0,
+     "exceso_remanente_kwh": 549275.0
+    },
+    {
+     "kwp": 3170.0,
+     "m2": 12680.0,
+     "k_solved": 1.068602,
+     "price": 1.3099,
+     "ahorro_cliente_anio1_mxn": 5111341.0,
+     "van_20a_mxn": 54737382.0,
+     "exceso_remanente_kwh": 1473527.0
+    },
+    {
+     "kwp": 3770.0,
+     "m2": 15080.0,
+     "k_solved": 1.096841,
+     "price": 1.3445,
+     "ahorro_cliente_anio1_mxn": 5255129.0,
+     "van_20a_mxn": 56380713.0,
+     "exceso_remanente_kwh": 2499035.0
+    },
+    {
+     "kwp": 4370.0,
+     "m2": 17480.0,
+     "k_solved": 1.125686,
+     "price": 1.3799,
+     "ahorro_cliente_anio1_mxn": 5380669.0,
+     "van_20a_mxn": 57831993.0,
+     "exceso_remanente_kwh": 3545025.0
+    },
+    {
+     "kwp": 4970.0,
+     "m2": 19880.0,
+     "k_solved": 1.154591,
+     "price": 1.4153,
+     "ahorro_cliente_anio1_mxn": 5500426.0,
+     "van_20a_mxn": 59227125.0,
+     "exceso_remanente_kwh": 4596345.0
+    },
+    {
+     "kwp": 5570.0,
+     "m2": 22280.0,
+     "k_solved": 1.184077,
+     "price": 1.4514,
+     "ahorro_cliente_anio1_mxn": 5608224.0,
+     "van_20a_mxn": 60489754.0,
+     "exceso_remanente_kwh": 5665438.0
+    },
+    {
+     "kwp": 6170.0,
+     "m2": 24680.0,
+     "k_solved": 1.214325,
+     "price": 1.4885,
+     "ahorro_cliente_anio1_mxn": 5704043.0,
+     "van_20a_mxn": 61613115.0,
+     "exceso_remanente_kwh": 6755459.0
+    },
+    {
+     "kwp": 6770.0,
+     "m2": 27080.0,
+     "k_solved": 1.245143,
+     "price": 1.5263,
+     "ahorro_cliente_anio1_mxn": 5790117.0,
+     "van_20a_mxn": 62624984.0,
+     "exceso_remanente_kwh": 7860433.0
+    },
+    {
+     "kwp": 7370.0,
+     "m2": 29480.0,
+     "k_solved": 1.276605,
+     "price": 1.5649,
+     "ahorro_cliente_anio1_mxn": 5867191.0,
+     "van_20a_mxn": 63529624.0,
+     "exceso_remanente_kwh": 8980999.0
+    },
+    {
+     "kwp": 7970.0,
+     "m2": 31880.0,
+     "k_solved": 1.308114,
+     "price": 1.6035,
+     "ahorro_cliente_anio1_mxn": 5943680.0,
+     "van_20a_mxn": 64427115.0,
+     "exceso_remanente_kwh": 10102668.0
+    },
+    {
+     "kwp": 8570.0,
+     "m2": 34280.0,
+     "k_solved": 1.339623,
+     "price": 1.6421,
+     "ahorro_cliente_anio1_mxn": 6020169.0,
+     "van_20a_mxn": 65324606.0,
+     "exceso_remanente_kwh": 11224337.0
+    },
+    {
+     "kwp": 9170.0,
+     "m2": 36680.0,
+     "k_solved": 1.371132,
+     "price": 1.6807,
+     "ahorro_cliente_anio1_mxn": 6096658.0,
+     "van_20a_mxn": 66222097.0,
+     "exceso_remanente_kwh": 12346006.0
+    },
+    {
+     "kwp": 9770.0,
+     "m2": 39080.0,
+     "k_solved": 1.402641,
+     "price": 1.7194,
+     "ahorro_cliente_anio1_mxn": 6173148.0,
+     "van_20a_mxn": 67119588.0,
+     "exceso_remanente_kwh": 13467674.0
+    },
+    {
+     "kwp": 10370.0,
+     "m2": 41480.0,
+     "k_solved": 1.43415,
+     "price": 1.758,
+     "ahorro_cliente_anio1_mxn": 6249637.0,
+     "van_20a_mxn": 68017079.0,
+     "exceso_remanente_kwh": 14589343.0
+    },
+    {
+     "kwp": 10970.0,
+     "m2": 43880.0,
+     "k_solved": 1.46566,
+     "price": 1.7966,
+     "ahorro_cliente_anio1_mxn": 6326126.0,
+     "van_20a_mxn": 68914570.0,
+     "exceso_remanente_kwh": 15711012.0
+    },
+    {
+     "kwp": 11570.0,
+     "m2": 46280.0,
+     "k_solved": 1.497169,
+     "price": 1.8352,
+     "ahorro_cliente_anio1_mxn": 6402615.0,
+     "van_20a_mxn": 69812061.0,
+     "exceso_remanente_kwh": 16832681.0
+    },
+    {
+     "kwp": 12170.0,
+     "m2": 48680.0,
+     "k_solved": 1.528678,
+     "price": 1.8739,
+     "ahorro_cliente_anio1_mxn": 6479104.0,
+     "van_20a_mxn": 70709552.0,
+     "exceso_remanente_kwh": 17954350.0
+    },
+    {
+     "kwp": 12770.0,
+     "m2": 51080.0,
+     "k_solved": 1.560187,
+     "price": 1.9125,
+     "ahorro_cliente_anio1_mxn": 6555594.0,
+     "van_20a_mxn": 71607043.0,
+     "exceso_remanente_kwh": 19076018.0
+    },
+    {
+     "kwp": 13370.0,
+     "m2": 53480.0,
+     "k_solved": 1.591696,
+     "price": 1.9511,
+     "ahorro_cliente_anio1_mxn": 6632083.0,
+     "van_20a_mxn": 72504534.0,
+     "exceso_remanente_kwh": 20197687.0
+    },
+    {
+     "kwp": 13970.0,
+     "m2": 55880.0,
+     "k_solved": 1.623205,
+     "price": 1.9897,
+     "ahorro_cliente_anio1_mxn": 6708572.0,
+     "van_20a_mxn": 73402025.0,
+     "exceso_remanente_kwh": 21319356.0
+    },
+    {
+     "kwp": 14570.0,
+     "m2": 58280.0,
+     "k_solved": 1.654714,
+     "price": 2.0283,
+     "ahorro_cliente_anio1_mxn": 6785061.0,
+     "van_20a_mxn": 74299516.0,
+     "exceso_remanente_kwh": 22441025.0
+    },
+    {
+     "kwp": 15170.0,
+     "m2": 60680.0,
+     "k_solved": 1.686223,
+     "price": 2.067,
+     "ahorro_cliente_anio1_mxn": 6861550.0,
+     "van_20a_mxn": 75197007.0,
+     "exceso_remanente_kwh": 23562694.0
+    },
+    {
+     "kwp": 15770.0,
+     "m2": 63080.0,
+     "k_solved": 1.717732,
+     "price": 2.1056,
+     "ahorro_cliente_anio1_mxn": 6938040.0,
+     "van_20a_mxn": 76094498.0,
+     "exceso_remanente_kwh": 24684362.0
+    },
+    {
+     "kwp": 16370.0,
+     "m2": 65480.0,
+     "k_solved": 1.749241,
+     "price": 2.1442,
+     "ahorro_cliente_anio1_mxn": 7014529.0,
+     "van_20a_mxn": 76991989.0,
+     "exceso_remanente_kwh": 25806031.0
+    },
+    {
+     "kwp": 16970.0,
+     "m2": 67880.0,
+     "k_solved": 1.780751,
+     "price": 2.1828,
+     "ahorro_cliente_anio1_mxn": 7091018.0,
+     "van_20a_mxn": 77889480.0,
+     "exceso_remanente_kwh": 26927700.0
+    },
+    {
+     "kwp": 17570.0,
+     "m2": 70280.0,
+     "k_solved": 1.81226,
+     "price": 2.2215,
+     "ahorro_cliente_anio1_mxn": 7167507.0,
+     "van_20a_mxn": 78786971.0,
+     "exceso_remanente_kwh": 28049369.0
+    },
+    {
+     "kwp": 18170.0,
+     "m2": 72680.0,
+     "k_solved": 1.843769,
+     "price": 2.2601,
+     "ahorro_cliente_anio1_mxn": 7243996.0,
+     "van_20a_mxn": 79684462.0,
+     "exceso_remanente_kwh": 29171038.0
+    },
+    {
+     "kwp": 18770.0,
+     "m2": 75080.0,
+     "k_solved": 1.875278,
+     "price": 2.2987,
+     "ahorro_cliente_anio1_mxn": 7320485.0,
+     "van_20a_mxn": 80581953.0,
+     "exceso_remanente_kwh": 30292706.0
+    },
+    {
+     "kwp": 19370.0,
+     "m2": 77480.0,
+     "k_solved": 1.906787,
+     "price": 2.3373,
+     "ahorro_cliente_anio1_mxn": 7396975.0,
+     "van_20a_mxn": 81479444.0,
+     "exceso_remanente_kwh": 31414375.0
+    },
+    {
+     "kwp": 19770.0,
+     "m2": 79080.0,
+     "k_solved": 1.927793,
+     "price": 2.3631,
+     "ahorro_cliente_anio1_mxn": 7447967.0,
+     "van_20a_mxn": 82077771.0,
+     "exceso_remanente_kwh": 32162154.0
+    },
+    {
+     "kwp": 19970.0,
+     "m2": 79880.0,
+     "k_solved": 1.938296,
+     "price": 2.376,
+     "ahorro_cliente_anio1_mxn": 7473464.0,
+     "van_20a_mxn": 82376935.0,
+     "exceso_remanente_kwh": 32536044.0
+    },
+    {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 1.939871,
+     "price": 2.3779,
+     "ahorro_cliente_anio1_mxn": 7477288.0,
+     "van_20a_mxn": 82421809.0,
+     "exceso_remanente_kwh": 32592127.0
+    }
+   ]
+  },
+  "can": {
+   "site": "can",
+   "basis": "self (PPA on self-consumed; k re-solved per point, union-7, TIR 14%)",
+   "kwp_rev3": 1100.0,
+   "kwp_design": 1270.0,
+   "kwp_cap_regulatorio": 20000.0,
+   "kwp_opt": 4110.0,
+   "kwp_opt_van": 20000.0,
+   "opt_at_regulatory_cap": false,
+   "m2_opt": 16440.0,
+   "m2_disponibles": 6828.0,
+   "m2_faltantes": 9612.0,
+   "design_point": {
+    "kwp": 1270.0,
+    "m2": 5080.0,
+    "k_solved": 1.022392,
+    "price": 1.562,
+    "ahorro_cliente_anio1_mxn": 2546887.0,
+    "van_20a_mxn": 27741443.0,
+    "exceso_remanente_kwh": 69921.0
+   },
+   "opt_point": {
+    "kwp": 4110.0,
+    "m2": 16440.0,
+    "k_solved": 1.149027,
+    "price": 1.7555,
+    "ahorro_cliente_anio1_mxn": 3024960.0,
+    "van_20a_mxn": 33610858.0,
+    "exceso_remanente_kwh": 3543495.0
+   },
+   "opt_point_van": {
+    "kwp": 20000.0,
+    "m2": 80000.0,
+    "k_solved": 1.994791,
+    "price": 3.0476,
+    "ahorro_cliente_anio1_mxn": 2771759.0,
+    "van_20a_mxn": 34582471.0,
+    "exceso_remanente_kwh": 27368172.0
+   },
+   "delta_ahorro_anio1_opt_vs_design": 478073.0,
+   "delta_van_opt_vs_design": 6841028.0,
+   "standalone": {
+    "kwp_opt": 1410.0,
+    "m2_opt": 5640.0,
+    "m2_faltantes": 0.0,
+    "opt_at_regulatory_cap": false,
+    "opt_point": {
+     "kwp": 1410.0,
+     "m2": 5640.0,
+     "k_solved": 1.049767,
+     "price": 1.6038,
+     "ahorro_cliente_anio1_mxn": 2583045.0
+    },
+    "design_point": {
+     "kwp": 1270.0,
+     "m2": 5080.0,
+     "k_solved": 1.012186,
+     "price": 1.5464,
+     "ahorro_cliente_anio1_mxn": 2574059.0
+    },
+    "delta_ahorro_anio1_opt_vs_design": 8986.0
+   },
+   "curve": [
+    {
+     "kwp": 660.0,
+     "m2": 2640.0,
+     "k_solved": 1.023377,
+     "price": 1.5635,
+     "ahorro_cliente_anio1_mxn": 1999785.0,
+     "van_20a_mxn": 21296259.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 1260.0,
+     "m2": 5040.0,
+     "k_solved": 1.022202,
+     "price": 1.5617,
+     "ahorro_cliente_anio1_mxn": 2539295.0,
+     "van_20a_mxn": 27657523.0,
+     "exceso_remanente_kwh": 66681.0
+    },
+    {
+     "kwp": 1270.0,
+     "m2": 5080.0,
+     "k_solved": 1.022392,
+     "price": 1.562,
+     "ahorro_cliente_anio1_mxn": 2546887.0,
+     "van_20a_mxn": 27741443.0,
+     "exceso_remanente_kwh": 69921.0
+    },
+    {
+     "kwp": 1660.0,
+     "m2": 6640.0,
+     "k_solved": 1.032173,
+     "price": 1.5769,
+     "ahorro_cliente_anio1_mxn": 2816753.0,
+     "van_20a_mxn": 30669451.0,
+     "exceso_remanente_kwh": 224981.0
+    },
+    {
+     "kwp": 2260.0,
+     "m2": 9040.0,
+     "k_solved": 1.057615,
+     "price": 1.6158,
+     "ahorro_cliente_anio1_mxn": 2945705.0,
+     "van_20a_mxn": 32219073.0,
+     "exceso_remanente_kwh": 924975.0
+    },
+    {
+     "kwp": 2860.0,
+     "m2": 11440.0,
+     "k_solved": 1.08681,
+     "price": 1.6604,
+     "ahorro_cliente_anio1_mxn": 2981655.0,
+     "van_20a_mxn": 32782950.0,
+     "exceso_remanente_kwh": 1761764.0
+    },
+    {
+     "kwp": 3460.0,
+     "m2": 13840.0,
+     "k_solved": 1.11623,
+     "price": 1.7054,
+     "ahorro_cliente_anio1_mxn": 3009194.0,
+     "van_20a_mxn": 33259979.0,
+     "exceso_remanente_kwh": 2606500.0
+    },
+    {
+     "kwp": 3860.0,
+     "m2": 15440.0,
+     "k_solved": 1.136178,
+     "price": 1.7358,
+     "ahorro_cliente_anio1_mxn": 3022321.0,
+     "van_20a_mxn": 33516641.0,
+     "exceso_remanente_kwh": 3178074.0
+    },
+    {
+     "kwp": 3910.0,
+     "m2": 15640.0,
+     "k_solved": 1.138726,
+     "price": 1.7397,
+     "ahorro_cliente_anio1_mxn": 3023191.0,
+     "van_20a_mxn": 33539516.0,
+     "exceso_remanente_kwh": 3250683.0
+    },
+    {
+     "kwp": 3960.0,
+     "m2": 15840.0,
+     "k_solved": 1.141279,
+     "price": 1.7436,
+     "ahorro_cliente_anio1_mxn": 3023957.0,
+     "van_20a_mxn": 33561180.0,
+     "exceso_remanente_kwh": 3323437.0
+    },
+    {
+     "kwp": 4010.0,
+     "m2": 16040.0,
+     "k_solved": 1.143847,
+     "price": 1.7475,
+     "ahorro_cliente_anio1_mxn": 3024509.0,
+     "van_20a_mxn": 33580347.0,
+     "exceso_remanente_kwh": 3396472.0
+    },
+    {
+     "kwp": 4060.0,
+     "m2": 16240.0,
+     "k_solved": 1.146421,
+     "price": 1.7515,
+     "ahorro_cliente_anio1_mxn": 3024958.0,
+     "van_20a_mxn": 33598295.0,
+     "exceso_remanente_kwh": 3469652.0
+    },
+    {
+     "kwp": 4110.0,
+     "m2": 16440.0,
+     "k_solved": 1.149027,
+     "price": 1.7555,
+     "ahorro_cliente_anio1_mxn": 3024960.0,
+     "van_20a_mxn": 33610858.0,
+     "exceso_remanente_kwh": 3543495.0
+    },
+    {
+     "kwp": 4160.0,
+     "m2": 16640.0,
+     "k_solved": 1.151639,
+     "price": 1.7594,
+     "ahorro_cliente_anio1_mxn": 3024875.0,
+     "van_20a_mxn": 33622411.0,
+     "exceso_remanente_kwh": 3617448.0
+    },
+    {
+     "kwp": 4210.0,
+     "m2": 16840.0,
+     "k_solved": 1.15425,
+     "price": 1.7634,
+     "ahorro_cliente_anio1_mxn": 3024782.0,
+     "van_20a_mxn": 33633903.0,
+     "exceso_remanente_kwh": 3691402.0
+    },
+    {
+     "kwp": 4260.0,
+     "m2": 17040.0,
+     "k_solved": 1.156865,
+     "price": 1.7674,
+     "ahorro_cliente_anio1_mxn": 3024639.0,
+     "van_20a_mxn": 33644820.0,
+     "exceso_remanente_kwh": 3765418.0
+    },
+    {
+     "kwp": 4460.0,
+     "m2": 17840.0,
+     "k_solved": 1.167342,
+     "price": 1.7834,
+     "ahorro_cliente_anio1_mxn": 3023728.0,
+     "van_20a_mxn": 33684580.0,
+     "exceso_remanente_kwh": 4061914.0
+    },
+    {
+     "kwp": 4660.0,
+     "m2": 18640.0,
+     "k_solved": 1.177965,
+     "price": 1.7997,
+     "ahorro_cliente_anio1_mxn": 3020806.0,
+     "van_20a_mxn": 33700075.0,
+     "exceso_remanente_kwh": 4361362.0
+    },
+    {
+     "kwp": 5260.0,
+     "m2": 21040.0,
+     "k_solved": 1.209914,
+     "price": 1.8485,
+     "ahorro_cliente_anio1_mxn": 3011065.0,
+     "van_20a_mxn": 33734588.0,
+     "exceso_remanente_kwh": 5261238.0
+    },
+    {
+     "kwp": 5860.0,
+     "m2": 23440.0,
+     "k_solved": 1.241863,
+     "price": 1.8973,
+     "ahorro_cliente_anio1_mxn": 3001323.0,
+     "van_20a_mxn": 33769102.0,
+     "exceso_remanente_kwh": 6161113.0
+    },
+    {
+     "kwp": 6460.0,
+     "m2": 25840.0,
+     "k_solved": 1.273812,
+     "price": 1.9461,
+     "ahorro_cliente_anio1_mxn": 2991582.0,
+     "van_20a_mxn": 33803615.0,
+     "exceso_remanente_kwh": 7060988.0
+    },
+    {
+     "kwp": 7060.0,
+     "m2": 28240.0,
+     "k_solved": 1.305761,
+     "price": 1.9949,
+     "ahorro_cliente_anio1_mxn": 2981841.0,
+     "van_20a_mxn": 33838129.0,
+     "exceso_remanente_kwh": 7960863.0
+    },
+    {
+     "kwp": 7660.0,
+     "m2": 30640.0,
+     "k_solved": 1.33771,
+     "price": 2.0437,
+     "ahorro_cliente_anio1_mxn": 2972100.0,
+     "van_20a_mxn": 33872643.0,
+     "exceso_remanente_kwh": 8860738.0
+    },
+    {
+     "kwp": 8260.0,
+     "m2": 33040.0,
+     "k_solved": 1.369659,
+     "price": 2.0925,
+     "ahorro_cliente_anio1_mxn": 2962359.0,
+     "van_20a_mxn": 33907156.0,
+     "exceso_remanente_kwh": 9760614.0
+    },
+    {
+     "kwp": 8860.0,
+     "m2": 35440.0,
+     "k_solved": 1.401607,
+     "price": 2.1413,
+     "ahorro_cliente_anio1_mxn": 2952618.0,
+     "van_20a_mxn": 33941670.0,
+     "exceso_remanente_kwh": 10660489.0
+    },
+    {
+     "kwp": 9460.0,
+     "m2": 37840.0,
+     "k_solved": 1.433556,
+     "price": 2.1902,
+     "ahorro_cliente_anio1_mxn": 2942877.0,
+     "van_20a_mxn": 33976183.0,
+     "exceso_remanente_kwh": 11560364.0
+    },
+    {
+     "kwp": 10060.0,
+     "m2": 40240.0,
+     "k_solved": 1.465505,
+     "price": 2.239,
+     "ahorro_cliente_anio1_mxn": 2933136.0,
+     "van_20a_mxn": 34010697.0,
+     "exceso_remanente_kwh": 12460239.0
+    },
+    {
+     "kwp": 10660.0,
+     "m2": 42640.0,
+     "k_solved": 1.497454,
+     "price": 2.2878,
+     "ahorro_cliente_anio1_mxn": 2923395.0,
+     "van_20a_mxn": 34045210.0,
+     "exceso_remanente_kwh": 13360114.0
+    },
+    {
+     "kwp": 11260.0,
+     "m2": 45040.0,
+     "k_solved": 1.529403,
+     "price": 2.3366,
+     "ahorro_cliente_anio1_mxn": 2913654.0,
+     "van_20a_mxn": 34079724.0,
+     "exceso_remanente_kwh": 14259990.0
+    },
+    {
+     "kwp": 11860.0,
+     "m2": 47440.0,
+     "k_solved": 1.561352,
+     "price": 2.3854,
+     "ahorro_cliente_anio1_mxn": 2903913.0,
+     "van_20a_mxn": 34114237.0,
+     "exceso_remanente_kwh": 15159865.0
+    },
+    {
+     "kwp": 12460.0,
+     "m2": 49840.0,
+     "k_solved": 1.5933,
+     "price": 2.4342,
+     "ahorro_cliente_anio1_mxn": 2894172.0,
+     "van_20a_mxn": 34148751.0,
+     "exceso_remanente_kwh": 16059740.0
+    },
+    {
+     "kwp": 13060.0,
+     "m2": 52240.0,
+     "k_solved": 1.625249,
+     "price": 2.483,
+     "ahorro_cliente_anio1_mxn": 2884431.0,
+     "van_20a_mxn": 34183265.0,
+     "exceso_remanente_kwh": 16959615.0
+    },
+    {
+     "kwp": 13660.0,
+     "m2": 54640.0,
+     "k_solved": 1.657198,
+     "price": 2.5318,
+     "ahorro_cliente_anio1_mxn": 2874690.0,
+     "van_20a_mxn": 34217778.0,
+     "exceso_remanente_kwh": 17859490.0
+    },
+    {
+     "kwp": 14260.0,
+     "m2": 57040.0,
+     "k_solved": 1.689147,
+     "price": 2.5806,
+     "ahorro_cliente_anio1_mxn": 2864949.0,
+     "van_20a_mxn": 34252292.0,
+     "exceso_remanente_kwh": 18759366.0
+    },
+    {
+     "kwp": 14860.0,
+     "m2": 59440.0,
+     "k_solved": 1.721096,
+     "price": 2.6295,
+     "ahorro_cliente_anio1_mxn": 2855208.0,
+     "van_20a_mxn": 34286805.0,
+     "exceso_remanente_kwh": 19659241.0
+    },
+    {
+     "kwp": 15460.0,
+     "m2": 61840.0,
+     "k_solved": 1.753045,
+     "price": 2.6783,
+     "ahorro_cliente_anio1_mxn": 2845467.0,
+     "van_20a_mxn": 34321319.0,
+     "exceso_remanente_kwh": 20559116.0
+    },
+    {
+     "kwp": 16060.0,
+     "m2": 64240.0,
+     "k_solved": 1.784993,
+     "price": 2.7271,
+     "ahorro_cliente_anio1_mxn": 2835726.0,
+     "van_20a_mxn": 34355832.0,
+     "exceso_remanente_kwh": 21458991.0
+    },
+    {
+     "kwp": 16660.0,
+     "m2": 66640.0,
+     "k_solved": 1.816942,
+     "price": 2.7759,
+     "ahorro_cliente_anio1_mxn": 2825984.0,
+     "van_20a_mxn": 34390346.0,
+     "exceso_remanente_kwh": 22358866.0
+    },
+    {
+     "kwp": 17260.0,
+     "m2": 69040.0,
+     "k_solved": 1.848891,
+     "price": 2.8247,
+     "ahorro_cliente_anio1_mxn": 2816243.0,
+     "van_20a_mxn": 34424859.0,
+     "exceso_remanente_kwh": 23258742.0
+    },
+    {
+     "kwp": 17860.0,
+     "m2": 71440.0,
+     "k_solved": 1.88084,
+     "price": 2.8735,
+     "ahorro_cliente_anio1_mxn": 2806502.0,
+     "van_20a_mxn": 34459373.0,
+     "exceso_remanente_kwh": 24158617.0
+    },
+    {
+     "kwp": 18460.0,
+     "m2": 73840.0,
+     "k_solved": 1.912789,
+     "price": 2.9223,
+     "ahorro_cliente_anio1_mxn": 2796761.0,
+     "van_20a_mxn": 34493887.0,
+     "exceso_remanente_kwh": 25058492.0
+    },
+    {
+     "kwp": 19060.0,
+     "m2": 76240.0,
+     "k_solved": 1.944738,
+     "price": 2.9711,
+     "ahorro_cliente_anio1_mxn": 2787020.0,
+     "van_20a_mxn": 34528400.0,
+     "exceso_remanente_kwh": 25958367.0
+    },
+    {
+     "kwp": 19660.0,
+     "m2": 78640.0,
+     "k_solved": 1.976686,
+     "price": 3.0199,
+     "ahorro_cliente_anio1_mxn": 2777279.0,
+     "van_20a_mxn": 34562914.0,
+     "exceso_remanente_kwh": 26858242.0
+    },
+    {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 1.994791,
+     "price": 3.0476,
+     "ahorro_cliente_anio1_mxn": 2771759.0,
+     "van_20a_mxn": 34582471.0,
+     "exceso_remanente_kwh": 27368172.0
+    }
+   ]
+  },
+  "pro": {
+   "site": "pro",
+   "basis": "self (PPA on self-consumed; k re-solved per point, union-7, TIR 14%)",
+   "kwp_rev3": 3848.9,
+   "kwp_design": 3848.9,
+   "kwp_cap_regulatorio": 20000.0,
+   "kwp_opt": 20000.0,
+   "kwp_opt_van": 20000.0,
+   "opt_at_regulatory_cap": true,
+   "m2_opt": 80000.0,
+   "m2_disponibles": 15396.0,
+   "m2_faltantes": 64604.0,
+   "design_point": {
+    "kwp": 3848.9,
+    "m2": 15396.0,
+    "k_solved": 1.022392,
+    "price": 1.383,
+    "ahorro_cliente_anio1_mxn": 22256406.0,
+    "van_20a_mxn": 228552717.0,
+    "exceso_remanente_kwh": 0.0
+   },
+   "opt_point": {
+    "kwp": 20000.0,
+    "m2": 80000.0,
+    "k_solved": 0.953427,
+    "price": 1.2897,
+    "ahorro_cliente_anio1_mxn": 38296558.0,
+    "van_20a_mxn": 415590136.0,
+    "exceso_remanente_kwh": 669270.0
+   },
+   "opt_point_van": {
+    "kwp": 20000.0,
+    "m2": 80000.0,
+    "k_solved": 0.953427,
+    "price": 1.2897,
+    "ahorro_cliente_anio1_mxn": 38296558.0,
+    "van_20a_mxn": 415590136.0,
+    "exceso_remanente_kwh": 669270.0
+   },
+   "delta_ahorro_anio1_opt_vs_design": 16040152.0,
+   "delta_van_opt_vs_design": 187037419.0,
+   "standalone": {
+    "kwp_opt": 20000.0,
+    "m2_opt": 80000.0,
+    "m2_faltantes": 64604.0,
+    "opt_at_regulatory_cap": true,
+    "opt_point": {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 0.919039,
+     "price": 1.2432,
+     "ahorro_cliente_anio1_mxn": 39761140.0
+    },
+    "design_point": {
+     "kwp": 3848.9,
+     "m2": 15396.0,
+     "k_solved": 1.060944,
+     "price": 1.4351,
+     "ahorro_cliente_anio1_mxn": 21923194.0
+    },
+    "delta_ahorro_anio1_opt_vs_design": 17837946.0
+   },
+   "curve": [
+    {
+     "kwp": 2310.0,
+     "m2": 9240.0,
+     "k_solved": 1.042621,
+     "price": 1.4103,
+     "ahorro_cliente_anio1_mxn": 20910973.0,
+     "van_20a_mxn": 211993748.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 2910.0,
+     "m2": 11640.0,
+     "k_solved": 1.034224,
+     "price": 1.399,
+     "ahorro_cliente_anio1_mxn": 21422246.0,
+     "van_20a_mxn": 218341474.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 3510.0,
+     "m2": 14040.0,
+     "k_solved": 1.026493,
+     "price": 1.3885,
+     "ahorro_cliente_anio1_mxn": 21950894.0,
+     "van_20a_mxn": 224830893.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 3848.9,
+     "m2": 15396.0,
+     "k_solved": 1.022392,
+     "price": 1.383,
+     "ahorro_cliente_anio1_mxn": 22256406.0,
+     "van_20a_mxn": 228552717.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 3910.0,
+     "m2": 15640.0,
+     "k_solved": 1.021672,
+     "price": 1.382,
+     "ahorro_cliente_anio1_mxn": 22311983.0,
+     "van_20a_mxn": 229227774.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 4510.0,
+     "m2": 18040.0,
+     "k_solved": 1.014888,
+     "price": 1.3728,
+     "ahorro_cliente_anio1_mxn": 22865314.0,
+     "van_20a_mxn": 235918485.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 5110.0,
+     "m2": 20440.0,
+     "k_solved": 1.008591,
+     "price": 1.3643,
+     "ahorro_cliente_anio1_mxn": 23431339.0,
+     "van_20a_mxn": 242712710.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 5710.0,
+     "m2": 22840.0,
+     "k_solved": 1.002731,
+     "price": 1.3564,
+     "ahorro_cliente_anio1_mxn": 24008738.0,
+     "van_20a_mxn": 249599690.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 6310.0,
+     "m2": 25240.0,
+     "k_solved": 0.997263,
+     "price": 1.349,
+     "ahorro_cliente_anio1_mxn": 24596367.0,
+     "van_20a_mxn": 256570107.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 6910.0,
+     "m2": 27640.0,
+     "k_solved": 0.992149,
+     "price": 1.342,
+     "ahorro_cliente_anio1_mxn": 25193234.0,
+     "van_20a_mxn": 263615850.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 7510.0,
+     "m2": 30040.0,
+     "k_solved": 0.987356,
+     "price": 1.3356,
+     "ahorro_cliente_anio1_mxn": 25798468.0,
+     "van_20a_mxn": 270729828.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 8110.0,
+     "m2": 32440.0,
+     "k_solved": 0.982855,
+     "price": 1.3295,
+     "ahorro_cliente_anio1_mxn": 26411306.0,
+     "van_20a_mxn": 277905813.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 8710.0,
+     "m2": 34840.0,
+     "k_solved": 0.97862,
+     "price": 1.3237,
+     "ahorro_cliente_anio1_mxn": 27031073.0,
+     "van_20a_mxn": 285138309.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 9310.0,
+     "m2": 37240.0,
+     "k_solved": 0.974627,
+     "price": 1.3183,
+     "ahorro_cliente_anio1_mxn": 27657174.0,
+     "van_20a_mxn": 292422456.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 9910.0,
+     "m2": 39640.0,
+     "k_solved": 0.970858,
+     "price": 1.3132,
+     "ahorro_cliente_anio1_mxn": 28289078.0,
+     "van_20a_mxn": 299753932.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 10510.0,
+     "m2": 42040.0,
+     "k_solved": 0.967293,
+     "price": 1.3084,
+     "ahorro_cliente_anio1_mxn": 28926314.0,
+     "van_20a_mxn": 307128886.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 11110.0,
+     "m2": 44440.0,
+     "k_solved": 0.963916,
+     "price": 1.3039,
+     "ahorro_cliente_anio1_mxn": 29568459.0,
+     "van_20a_mxn": 314543873.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 11710.0,
+     "m2": 46840.0,
+     "k_solved": 0.960713,
+     "price": 1.2995,
+     "ahorro_cliente_anio1_mxn": 30215134.0,
+     "van_20a_mxn": 321995802.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 12310.0,
+     "m2": 49240.0,
+     "k_solved": 0.95767,
+     "price": 1.2954,
+     "ahorro_cliente_anio1_mxn": 30865998.0,
+     "van_20a_mxn": 329481894.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 12910.0,
+     "m2": 51640.0,
+     "k_solved": 0.954777,
+     "price": 1.2915,
+     "ahorro_cliente_anio1_mxn": 31520744.0,
+     "van_20a_mxn": 336999641.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 13510.0,
+     "m2": 54040.0,
+     "k_solved": 0.952028,
+     "price": 1.2878,
+     "ahorro_cliente_anio1_mxn": 32178952.0,
+     "van_20a_mxn": 344545273.0,
+     "exceso_remanente_kwh": 274.0
+    },
+    {
+     "kwp": 14110.0,
+     "m2": 56440.0,
+     "k_solved": 0.949501,
+     "price": 1.2844,
+     "ahorro_cliente_anio1_mxn": 32838284.0,
+     "van_20a_mxn": 352094609.0,
+     "exceso_remanente_kwh": 4758.0
+    },
+    {
+     "kwp": 14710.0,
+     "m2": 58840.0,
+     "k_solved": 0.947303,
+     "price": 1.2814,
+     "ahorro_cliente_anio1_mxn": 33495163.0,
+     "van_20a_mxn": 359611019.0,
+     "exceso_remanente_kwh": 19144.0
+    },
+    {
+     "kwp": 15310.0,
+     "m2": 61240.0,
+     "k_solved": 0.945487,
+     "price": 1.2789,
+     "ahorro_cliente_anio1_mxn": 34146164.0,
+     "van_20a_mxn": 367060967.0,
+     "exceso_remanente_kwh": 47001.0
+    },
+    {
+     "kwp": 15910.0,
+     "m2": 63640.0,
+     "k_solved": 0.944105,
+     "price": 1.2771,
+     "ahorro_cliente_anio1_mxn": 34786076.0,
+     "van_20a_mxn": 374393830.0,
+     "exceso_remanente_kwh": 90974.0
+    },
+    {
+     "kwp": 16510.0,
+     "m2": 66040.0,
+     "k_solved": 0.943272,
+     "price": 1.2759,
+     "ahorro_cliente_anio1_mxn": 35406489.0,
+     "van_20a_mxn": 381524321.0,
+     "exceso_remanente_kwh": 149769.0
+    },
+    {
+     "kwp": 17110.0,
+     "m2": 68440.0,
+     "k_solved": 0.943184,
+     "price": 1.2758,
+     "ahorro_cliente_anio1_mxn": 35995807.0,
+     "van_20a_mxn": 388332411.0,
+     "exceso_remanente_kwh": 220430.0
+    },
+    {
+     "kwp": 17710.0,
+     "m2": 70840.0,
+     "k_solved": 0.943953,
+     "price": 1.2769,
+     "ahorro_cliente_anio1_mxn": 36545940.0,
+     "van_20a_mxn": 394734010.0,
+     "exceso_remanente_kwh": 298273.0
+    },
+    {
+     "kwp": 18310.0,
+     "m2": 73240.0,
+     "k_solved": 0.945524,
+     "price": 1.279,
+     "ahorro_cliente_anio1_mxn": 37056335.0,
+     "van_20a_mxn": 400726298.0,
+     "exceso_remanente_kwh": 385152.0
+    },
+    {
+     "kwp": 18910.0,
+     "m2": 75640.0,
+     "k_solved": 0.947845,
+     "price": 1.2821,
+     "ahorro_cliente_anio1_mxn": 37526200.0,
+     "van_20a_mxn": 406303275.0,
+     "exceso_remanente_kwh": 479534.0
+    },
+    {
+     "kwp": 19510.0,
+     "m2": 78040.0,
+     "k_solved": 0.95074,
+     "price": 1.286,
+     "ahorro_cliente_anio1_mxn": 37961289.0,
+     "van_20a_mxn": 411527363.0,
+     "exceso_remanente_kwh": 581743.0
+    },
+    {
+     "kwp": 19710.0,
+     "m2": 78840.0,
+     "k_solved": 0.951783,
+     "price": 1.2874,
+     "ahorro_cliente_anio1_mxn": 38101273.0,
+     "van_20a_mxn": 413217702.0,
+     "exceso_remanente_kwh": 617009.0
+    },
+    {
+     "kwp": 19910.0,
+     "m2": 79640.0,
+     "k_solved": 0.952899,
+     "price": 1.289,
+     "ahorro_cliente_anio1_mxn": 38237097.0,
+     "van_20a_mxn": 414865183.0,
+     "exceso_remanente_kwh": 652218.0
+    },
+    {
+     "kwp": 19960.0,
+     "m2": 79840.0,
+     "k_solved": 0.953189,
+     "price": 1.2893,
+     "ahorro_cliente_anio1_mxn": 38270298.0,
+     "van_20a_mxn": 415269597.0,
+     "exceso_remanente_kwh": 661503.0
+    },
+    {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 0.953427,
+     "price": 1.2897,
+     "ahorro_cliente_anio1_mxn": 38296558.0,
+     "van_20a_mxn": 415590136.0,
+     "exceso_remanente_kwh": 669270.0
+    }
+   ]
+  },
+  "pr1": {
+   "site": "pr1",
+   "basis": "self (PPA on self-consumed; k re-solved per point, union-7, TIR 14%)",
+   "kwp_rev3": 681.2,
+   "kwp_design": 681.2,
+   "kwp_cap_regulatorio": 20000.0,
+   "kwp_opt": 5110.0,
+   "kwp_opt_van": 5560.0,
+   "opt_at_regulatory_cap": false,
+   "m2_opt": 20440.0,
+   "m2_disponibles": null,
+   "m2_faltantes": null,
+   "design_point": {
+    "kwp": 681.2,
+    "m2": 2725.0,
+    "k_solved": 1.022392,
+    "price": 1.383,
+    "ahorro_cliente_anio1_mxn": 3848302.0,
+    "van_20a_mxn": 39598326.0,
+    "exceso_remanente_kwh": 0.0
+   },
+   "opt_point": {
+    "kwp": 5110.0,
+    "m2": 20440.0,
+    "k_solved": 1.029513,
+    "price": 1.3926,
+    "ahorro_cliente_anio1_mxn": 6658443.0,
+    "van_20a_mxn": 75011800.0,
+    "exceso_remanente_kwh": 834213.0
+   },
+   "opt_point_van": {
+    "kwp": 5560.0,
+    "m2": 22240.0,
+    "k_solved": 1.043589,
+    "price": 1.4116,
+    "ahorro_cliente_anio1_mxn": 6637699.0,
+    "van_20a_mxn": 75245106.0,
+    "exceso_remanente_kwh": 1355149.0
+   },
+   "delta_ahorro_anio1_opt_vs_design": 2810141.0,
+   "delta_van_opt_vs_design": 35646780.0,
+   "standalone": {
+    "kwp_opt": 4210.0,
+    "m2_opt": 16840.0,
+    "m2_faltantes": null,
+    "opt_at_regulatory_cap": false,
+    "opt_point": {
+     "kwp": 4210.0,
+     "m2": 16840.0,
+     "k_solved": 0.959594,
+     "price": 1.298,
+     "ahorro_cliente_anio1_mxn": 6807659.0
+    },
+    "design_point": {
+     "kwp": 681.2,
+     "m2": 2725.0,
+     "k_solved": 1.060051,
+     "price": 1.4339,
+     "ahorro_cliente_anio1_mxn": 3790694.0
+    },
+    "delta_ahorro_anio1_opt_vs_design": 3016965.0
+   },
+   "curve": [
+    {
+     "kwp": 410.0,
+     "m2": 1640.0,
+     "k_solved": 1.02566,
+     "price": 1.3874,
+     "ahorro_cliente_anio1_mxn": 3658661.0,
+     "van_20a_mxn": 37104646.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 681.2,
+     "m2": 2725.0,
+     "k_solved": 1.022392,
+     "price": 1.383,
+     "ahorro_cliente_anio1_mxn": 3848302.0,
+     "van_20a_mxn": 39598326.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 810.0,
+     "m2": 3240.0,
+     "k_solved": 1.02088,
+     "price": 1.3809,
+     "ahorro_cliente_anio1_mxn": 3939688.0,
+     "van_20a_mxn": 40793416.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 1410.0,
+     "m2": 5640.0,
+     "k_solved": 1.014154,
+     "price": 1.3718,
+     "ahorro_cliente_anio1_mxn": 4375926.0,
+     "van_20a_mxn": 46446423.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 2010.0,
+     "m2": 8040.0,
+     "k_solved": 1.007909,
+     "price": 1.3634,
+     "ahorro_cliente_anio1_mxn": 4828118.0,
+     "van_20a_mxn": 52229541.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 2610.0,
+     "m2": 10440.0,
+     "k_solved": 1.002137,
+     "price": 1.3556,
+     "ahorro_cliente_anio1_mxn": 5294647.0,
+     "van_20a_mxn": 58127958.0,
+     "exceso_remanente_kwh": 1225.0
+    },
+    {
+     "kwp": 3210.0,
+     "m2": 12840.0,
+     "k_solved": 0.998915,
+     "price": 1.3512,
+     "ahorro_cliente_anio1_mxn": 5762593.0,
+     "van_20a_mxn": 63933291.0,
+     "exceso_remanente_kwh": 49217.0
+    },
+    {
+     "kwp": 3810.0,
+     "m2": 15240.0,
+     "k_solved": 1.002628,
+     "price": 1.3562,
+     "ahorro_cliente_anio1_mxn": 6170121.0,
+     "van_20a_mxn": 68847553.0,
+     "exceso_remanente_kwh": 160656.0
+    },
+    {
+     "kwp": 4410.0,
+     "m2": 17640.0,
+     "k_solved": 1.011961,
+     "price": 1.3688,
+     "ahorro_cliente_anio1_mxn": 6498897.0,
+     "van_20a_mxn": 72757605.0,
+     "exceso_remanente_kwh": 325810.0
+    },
+    {
+     "kwp": 4810.0,
+     "m2": 19240.0,
+     "k_solved": 1.02103,
+     "price": 1.3811,
+     "ahorro_cliente_anio1_mxn": 6631156.0,
+     "van_20a_mxn": 74452249.0,
+     "exceso_remanente_kwh": 550066.0
+    },
+    {
+     "kwp": 5010.0,
+     "m2": 20040.0,
+     "k_solved": 1.02664,
+     "price": 1.3887,
+     "ahorro_cliente_anio1_mxn": 6651303.0,
+     "van_20a_mxn": 74844684.0,
+     "exceso_remanente_kwh": 736468.0
+    },
+    {
+     "kwp": 5060.0,
+     "m2": 20240.0,
+     "k_solved": 1.028063,
+     "price": 1.3906,
+     "ahorro_cliente_anio1_mxn": 6655557.0,
+     "van_20a_mxn": 74934851.0,
+     "exceso_remanente_kwh": 784192.0
+    },
+    {
+     "kwp": 5110.0,
+     "m2": 20440.0,
+     "k_solved": 1.029513,
+     "price": 1.3926,
+     "ahorro_cliente_anio1_mxn": 6658443.0,
+     "van_20a_mxn": 75011800.0,
+     "exceso_remanente_kwh": 834213.0
+    },
+    {
+     "kwp": 5160.0,
+     "m2": 20640.0,
+     "k_solved": 1.031032,
+     "price": 1.3946,
+     "ahorro_cliente_anio1_mxn": 6657883.0,
+     "van_20a_mxn": 75055500.0,
+     "exceso_remanente_kwh": 889972.0
+    },
+    {
+     "kwp": 5210.0,
+     "m2": 20840.0,
+     "k_solved": 1.032553,
+     "price": 1.3967,
+     "ahorro_cliente_anio1_mxn": 6657178.0,
+     "van_20a_mxn": 75097812.0,
+     "exceso_remanente_kwh": 945823.0
+    },
+    {
+     "kwp": 5260.0,
+     "m2": 21040.0,
+     "k_solved": 1.034088,
+     "price": 1.3988,
+     "ahorro_cliente_anio1_mxn": 6656255.0,
+     "van_20a_mxn": 75137309.0,
+     "exceso_remanente_kwh": 1001706.0
+    },
+    {
+     "kwp": 5310.0,
+     "m2": 21240.0,
+     "k_solved": 1.035633,
+     "price": 1.4009,
+     "ahorro_cliente_anio1_mxn": 6655070.0,
+     "van_20a_mxn": 75173915.0,
+     "exceso_remanente_kwh": 1057789.0
+    },
+    {
+     "kwp": 5360.0,
+     "m2": 21440.0,
+     "k_solved": 1.037181,
+     "price": 1.403,
+     "ahorro_cliente_anio1_mxn": 6653621.0,
+     "van_20a_mxn": 75208028.0,
+     "exceso_remanente_kwh": 1114207.0
+    },
+    {
+     "kwp": 5410.0,
+     "m2": 21640.0,
+     "k_solved": 1.038769,
+     "price": 1.4051,
+     "ahorro_cliente_anio1_mxn": 6649894.0,
+     "van_20a_mxn": 75220396.0,
+     "exceso_remanente_kwh": 1174383.0
+    },
+    {
+     "kwp": 5460.0,
+     "m2": 21840.0,
+     "k_solved": 1.040371,
+     "price": 1.4073,
+     "ahorro_cliente_anio1_mxn": 6645914.0,
+     "van_20a_mxn": 75229616.0,
+     "exceso_remanente_kwh": 1234523.0
+    },
+    {
+     "kwp": 5510.0,
+     "m2": 22040.0,
+     "k_solved": 1.041974,
+     "price": 1.4094,
+     "ahorro_cliente_anio1_mxn": 6641870.0,
+     "van_20a_mxn": 75238218.0,
+     "exceso_remanente_kwh": 1294710.0
+    },
+    {
+     "kwp": 5560.0,
+     "m2": 22240.0,
+     "k_solved": 1.043589,
+     "price": 1.4116,
+     "ahorro_cliente_anio1_mxn": 6637699.0,
+     "van_20a_mxn": 75245106.0,
+     "exceso_remanente_kwh": 1355149.0
+    },
+    {
+     "kwp": 5610.0,
+     "m2": 22440.0,
+     "k_solved": 1.045226,
+     "price": 1.4138,
+     "ahorro_cliente_anio1_mxn": 6632871.0,
+     "van_20a_mxn": 75244969.0,
+     "exceso_remanente_kwh": 1416333.0
+    },
+    {
+     "kwp": 6210.0,
+     "m2": 24840.0,
+     "k_solved": 1.066138,
+     "price": 1.4421,
+     "ahorro_cliente_anio1_mxn": 6518555.0,
+     "van_20a_mxn": 74687545.0,
+     "exceso_remanente_kwh": 2235152.0
+    },
+    {
+     "kwp": 6810.0,
+     "m2": 27240.0,
+     "k_solved": 1.088425,
+     "price": 1.4723,
+     "ahorro_cliente_anio1_mxn": 6361129.0,
+     "van_20a_mxn": 73677721.0,
+     "exceso_remanente_kwh": 3107408.0
+    },
+    {
+     "kwp": 7410.0,
+     "m2": 29640.0,
+     "k_solved": 1.111632,
+     "price": 1.5037,
+     "ahorro_cliente_anio1_mxn": 6175952.0,
+     "van_20a_mxn": 72373365.0,
+     "exceso_remanente_kwh": 4010892.0
+    },
+    {
+     "kwp": 8010.0,
+     "m2": 32040.0,
+     "k_solved": 1.135314,
+     "price": 1.5357,
+     "ahorro_cliente_anio1_mxn": 5972803.0,
+     "van_20a_mxn": 70882976.0,
+     "exceso_remanente_kwh": 4931453.0
+    },
+    {
+     "kwp": 8610.0,
+     "m2": 34440.0,
+     "k_solved": 1.159162,
+     "price": 1.568,
+     "ahorro_cliente_anio1_mxn": 5759795.0,
+     "van_20a_mxn": 69294183.0,
+     "exceso_remanente_kwh": 5859671.0
+    },
+    {
+     "kwp": 9210.0,
+     "m2": 36840.0,
+     "k_solved": 1.182909,
+     "price": 1.6001,
+     "ahorro_cliente_anio1_mxn": 5543418.0,
+     "van_20a_mxn": 67677922.0,
+     "exceso_remanente_kwh": 6787889.0
+    },
+    {
+     "kwp": 9810.0,
+     "m2": 39240.0,
+     "k_solved": 1.206571,
+     "price": 1.6321,
+     "ahorro_cliente_anio1_mxn": 5323604.0,
+     "van_20a_mxn": 66032885.0,
+     "exceso_remanente_kwh": 7716539.0
+    },
+    {
+     "kwp": 10410.0,
+     "m2": 41640.0,
+     "k_solved": 1.230256,
+     "price": 1.6641,
+     "ahorro_cliente_anio1_mxn": 5099832.0,
+     "van_20a_mxn": 64350049.0,
+     "exceso_remanente_kwh": 8648388.0
+    },
+    {
+     "kwp": 11010.0,
+     "m2": 44040.0,
+     "k_solved": 1.25394,
+     "price": 1.6962,
+     "ahorro_cliente_anio1_mxn": 4872528.0,
+     "van_20a_mxn": 62634350.0,
+     "exceso_remanente_kwh": 9582605.0
+    },
+    {
+     "kwp": 11610.0,
+     "m2": 46440.0,
+     "k_solved": 1.277837,
+     "price": 1.7285,
+     "ahorro_cliente_anio1_mxn": 4638957.0,
+     "van_20a_mxn": 60851914.0,
+     "exceso_remanente_kwh": 10524495.0
+    },
+    {
+     "kwp": 12210.0,
+     "m2": 48840.0,
+     "k_solved": 1.302197,
+     "price": 1.7614,
+     "ahorro_cliente_anio1_mxn": 4394218.0,
+     "van_20a_mxn": 58947328.0,
+     "exceso_remanente_kwh": 11479840.0
+    },
+    {
+     "kwp": 12810.0,
+     "m2": 51240.0,
+     "k_solved": 1.326899,
+     "price": 1.7948,
+     "ahorro_cliente_anio1_mxn": 4142644.0,
+     "van_20a_mxn": 56965767.0,
+     "exceso_remanente_kwh": 12444960.0
+    },
+    {
+     "kwp": 13410.0,
+     "m2": 53640.0,
+     "k_solved": 1.352092,
+     "price": 1.8289,
+     "ahorro_cliente_anio1_mxn": 3883444.0,
+     "van_20a_mxn": 54893973.0,
+     "exceso_remanente_kwh": 13422953.0
+    },
+    {
+     "kwp": 14010.0,
+     "m2": 56040.0,
+     "k_solved": 1.377493,
+     "price": 1.8633,
+     "ahorro_cliente_anio1_mxn": 3620259.0,
+     "van_20a_mxn": 52776977.0,
+     "exceso_remanente_kwh": 14406452.0
+    },
+    {
+     "kwp": 14610.0,
+     "m2": 58440.0,
+     "k_solved": 1.403022,
+     "price": 1.8978,
+     "ahorro_cliente_anio1_mxn": 3354660.0,
+     "van_20a_mxn": 50632502.0,
+     "exceso_remanente_kwh": 15393353.0
+    },
+    {
+     "kwp": 15210.0,
+     "m2": 60840.0,
+     "k_solved": 1.42876,
+     "price": 1.9326,
+     "ahorro_cliente_anio1_mxn": 3085982.0,
+     "van_20a_mxn": 48451185.0,
+     "exceso_remanente_kwh": 16385307.0
+    },
+    {
+     "kwp": 15810.0,
+     "m2": 63240.0,
+     "k_solved": 1.454678,
+     "price": 1.9677,
+     "ahorro_cliente_anio1_mxn": 2814952.0,
+     "van_20a_mxn": 46240940.0,
+     "exceso_remanente_kwh": 17381408.0
+    },
+    {
+     "kwp": 16410.0,
+     "m2": 65640.0,
+     "k_solved": 1.480596,
+     "price": 2.0027,
+     "ahorro_cliente_anio1_mxn": 2543923.0,
+     "van_20a_mxn": 44030696.0,
+     "exceso_remanente_kwh": 18377509.0
+    },
+    {
+     "kwp": 17010.0,
+     "m2": 68040.0,
+     "k_solved": 1.506514,
+     "price": 2.0378,
+     "ahorro_cliente_anio1_mxn": 2272894.0,
+     "van_20a_mxn": 41820452.0,
+     "exceso_remanente_kwh": 19373609.0
+    },
+    {
+     "kwp": 17610.0,
+     "m2": 70440.0,
+     "k_solved": 1.532432,
+     "price": 2.0729,
+     "ahorro_cliente_anio1_mxn": 2001864.0,
+     "van_20a_mxn": 39610208.0,
+     "exceso_remanente_kwh": 20369710.0
+    },
+    {
+     "kwp": 18210.0,
+     "m2": 72840.0,
+     "k_solved": 1.558351,
+     "price": 2.1079,
+     "ahorro_cliente_anio1_mxn": 1730835.0,
+     "van_20a_mxn": 37399963.0,
+     "exceso_remanente_kwh": 21365811.0
+    },
+    {
+     "kwp": 18810.0,
+     "m2": 75240.0,
+     "k_solved": 1.584269,
+     "price": 2.143,
+     "ahorro_cliente_anio1_mxn": 1459806.0,
+     "van_20a_mxn": 35189719.0,
+     "exceso_remanente_kwh": 22361912.0
+    },
+    {
+     "kwp": 19410.0,
+     "m2": 77640.0,
+     "k_solved": 1.610187,
+     "price": 2.178,
+     "ahorro_cliente_anio1_mxn": 1188776.0,
+     "van_20a_mxn": 32979475.0,
+     "exceso_remanente_kwh": 23358013.0
+    },
+    {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 1.635673,
+     "price": 2.2125,
+     "ahorro_cliente_anio1_mxn": 922264.0,
+     "van_20a_mxn": 30806068.0,
+     "exceso_remanente_kwh": 24337512.0
+    }
+   ]
+  },
+  "pr2": {
+   "site": "pr2",
+   "basis": "self (PPA on self-consumed; k re-solved per point, union-7, TIR 14%)",
+   "kwp_rev3": 1912,
+   "kwp_design": 1912,
+   "kwp_cap_regulatorio": 20000.0,
+   "kwp_opt": 13100.0,
+   "kwp_opt_van": 13500.0,
+   "opt_at_regulatory_cap": false,
+   "m2_opt": 52400.0,
+   "m2_disponibles": null,
+   "m2_faltantes": null,
+   "design_point": {
+    "kwp": 1912,
+    "m2": 7648.0,
+    "k_solved": 1.022392,
+    "price": 1.383,
+    "ahorro_cliente_anio1_mxn": 10801382.0,
+    "van_20a_mxn": 111144293.0,
+    "exceso_remanente_kwh": 0.0
+   },
+   "opt_point": {
+    "kwp": 13100.0,
+    "m2": 52400.0,
+    "k_solved": 1.011815,
+    "price": 1.3686,
+    "ahorro_cliente_anio1_mxn": 18681960.0,
+    "van_20a_mxn": 209004946.0,
+    "exceso_remanente_kwh": 1215572.0
+   },
+   "opt_point_van": {
+    "kwp": 13500.0,
+    "m2": 54000.0,
+    "k_solved": 1.019941,
+    "price": 1.3796,
+    "ahorro_cliente_anio1_mxn": 18642126.0,
+    "van_20a_mxn": 209181612.0,
+    "exceso_remanente_kwh": 1549464.0
+   },
+   "delta_ahorro_anio1_opt_vs_design": 7880578.0,
+   "delta_van_opt_vs_design": 98037319.0,
+   "standalone": {
+    "kwp_opt": 11950.0,
+    "m2_opt": 47800.0,
+    "m2_faltantes": null,
+    "opt_at_regulatory_cap": false,
+    "opt_point": {
+     "kwp": 11950.0,
+     "m2": 47800.0,
+     "k_solved": 0.964208,
+     "price": 1.3042,
+     "ahorro_cliente_anio1_mxn": 19103447.0
+    },
+    "design_point": {
+     "kwp": 1912,
+     "m2": 7648.0,
+     "k_solved": 1.060162,
+     "price": 1.434,
+     "ahorro_cliente_anio1_mxn": 10639211.0
+    },
+    "delta_ahorro_anio1_opt_vs_design": 8464236.0
+   },
+   "curve": [
+    {
+     "kwp": 1150.0,
+     "m2": 4600.0,
+     "k_solved": 1.031879,
+     "price": 1.3958,
+     "ahorro_cliente_anio1_mxn": 10252495.0,
+     "van_20a_mxn": 104006845.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 1750.0,
+     "m2": 7000.0,
+     "k_solved": 1.02433,
+     "price": 1.3856,
+     "ahorro_cliente_anio1_mxn": 10682283.0,
+     "van_20a_mxn": 109607256.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 1912,
+     "m2": 7648.0,
+     "k_solved": 1.022392,
+     "price": 1.383,
+     "ahorro_cliente_anio1_mxn": 10801382.0,
+     "van_20a_mxn": 111144293.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 2150.0,
+     "m2": 8600.0,
+     "k_solved": 1.019618,
+     "price": 1.3792,
+     "ahorro_cliente_anio1_mxn": 10978562.0,
+     "van_20a_mxn": 113420406.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 2750.0,
+     "m2": 11000.0,
+     "k_solved": 1.012983,
+     "price": 1.3702,
+     "ahorro_cliente_anio1_mxn": 11436175.0,
+     "van_20a_mxn": 119247729.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 3350.0,
+     "m2": 13400.0,
+     "k_solved": 1.00682,
+     "price": 1.3619,
+     "ahorro_cliente_anio1_mxn": 11908121.0,
+     "van_20a_mxn": 125191943.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 3950.0,
+     "m2": 15800.0,
+     "k_solved": 1.001079,
+     "price": 1.3541,
+     "ahorro_cliente_anio1_mxn": 12392927.0,
+     "van_20a_mxn": 131241021.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 4550.0,
+     "m2": 18200.0,
+     "k_solved": 0.99572,
+     "price": 1.3469,
+     "ahorro_cliente_anio1_mxn": 12889312.0,
+     "van_20a_mxn": 137384532.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 5150.0,
+     "m2": 20600.0,
+     "k_solved": 0.990704,
+     "price": 1.3401,
+     "ahorro_cliente_anio1_mxn": 13396162.0,
+     "van_20a_mxn": 143613384.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 5750.0,
+     "m2": 23000.0,
+     "k_solved": 0.986,
+     "price": 1.3337,
+     "ahorro_cliente_anio1_mxn": 13912501.0,
+     "van_20a_mxn": 149919615.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 6350.0,
+     "m2": 25400.0,
+     "k_solved": 0.98158,
+     "price": 1.3277,
+     "ahorro_cliente_anio1_mxn": 14437470.0,
+     "van_20a_mxn": 156296225.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 6950.0,
+     "m2": 27800.0,
+     "k_solved": 0.977429,
+     "price": 1.3221,
+     "ahorro_cliente_anio1_mxn": 14970225.0,
+     "van_20a_mxn": 162735865.0,
+     "exceso_remanente_kwh": 366.0
+    },
+    {
+     "kwp": 7550.0,
+     "m2": 30200.0,
+     "k_solved": 0.97376,
+     "price": 1.3172,
+     "ahorro_cliente_anio1_mxn": 15507647.0,
+     "van_20a_mxn": 169201846.0,
+     "exceso_remanente_kwh": 9591.0
+    },
+    {
+     "kwp": 8150.0,
+     "m2": 32600.0,
+     "k_solved": 0.971108,
+     "price": 1.3136,
+     "ahorro_cliente_anio1_mxn": 16039096.0,
+     "van_20a_mxn": 175575456.0,
+     "exceso_remanente_kwh": 47772.0
+    },
+    {
+     "kwp": 8750.0,
+     "m2": 35000.0,
+     "k_solved": 0.969901,
+     "price": 1.312,
+     "ahorro_cliente_anio1_mxn": 16544245.0,
+     "van_20a_mxn": 181643637.0,
+     "exceso_remanente_kwh": 114132.0
+    },
+    {
+     "kwp": 9350.0,
+     "m2": 37400.0,
+     "k_solved": 0.970973,
+     "price": 1.3134,
+     "ahorro_cliente_anio1_mxn": 16998015.0,
+     "van_20a_mxn": 187121846.0,
+     "exceso_remanente_kwh": 195382.0
+    },
+    {
+     "kwp": 9950.0,
+     "m2": 39800.0,
+     "k_solved": 0.973905,
+     "price": 1.3174,
+     "ahorro_cliente_anio1_mxn": 17400911.0,
+     "van_20a_mxn": 192036858.0,
+     "exceso_remanente_kwh": 296898.0
+    },
+    {
+     "kwp": 10550.0,
+     "m2": 42200.0,
+     "k_solved": 0.978385,
+     "price": 1.3234,
+     "ahorro_cliente_anio1_mxn": 17757489.0,
+     "van_20a_mxn": 196443148.0,
+     "exceso_remanente_kwh": 411723.0
+    },
+    {
+     "kwp": 11150.0,
+     "m2": 44600.0,
+     "k_solved": 0.984426,
+     "price": 1.3316,
+     "ahorro_cliente_anio1_mxn": 18060641.0,
+     "van_20a_mxn": 200277047.0,
+     "exceso_remanente_kwh": 550989.0
+    },
+    {
+     "kwp": 11750.0,
+     "m2": 47000.0,
+     "k_solved": 0.991457,
+     "price": 1.3411,
+     "ahorro_cliente_anio1_mxn": 18323676.0,
+     "van_20a_mxn": 203687581.0,
+     "exceso_remanente_kwh": 702858.0
+    },
+    {
+     "kwp": 12350.0,
+     "m2": 49400.0,
+     "k_solved": 0.999359,
+     "price": 1.3518,
+     "ahorro_cliente_anio1_mxn": 18548305.0,
+     "van_20a_mxn": 206695181.0,
+     "exceso_remanente_kwh": 863332.0
+    },
+    {
+     "kwp": 12750.0,
+     "m2": 51000.0,
+     "k_solved": 1.00571,
+     "price": 1.3604,
+     "ahorro_cliente_anio1_mxn": 18640575.0,
+     "van_20a_mxn": 208127499.0,
+     "exceso_remanente_kwh": 1023729.0
+    },
+    {
+     "kwp": 12950.0,
+     "m2": 51800.0,
+     "k_solved": 1.009054,
+     "price": 1.3649,
+     "ahorro_cliente_anio1_mxn": 18674133.0,
+     "van_20a_mxn": 208724063.0,
+     "exceso_remanente_kwh": 1121242.0
+    },
+    {
+     "kwp": 13000.0,
+     "m2": 52000.0,
+     "k_solved": 1.009936,
+     "price": 1.3661,
+     "ahorro_cliente_anio1_mxn": 18679959.0,
+     "van_20a_mxn": 208847795.0,
+     "exceso_remanente_kwh": 1148003.0
+    },
+    {
+     "kwp": 13050.0,
+     "m2": 52200.0,
+     "k_solved": 1.010876,
+     "price": 1.3674,
+     "ahorro_cliente_anio1_mxn": 18680975.0,
+     "van_20a_mxn": 208926496.0,
+     "exceso_remanente_kwh": 1181788.0
+    },
+    {
+     "kwp": 13100.0,
+     "m2": 52400.0,
+     "k_solved": 1.011815,
+     "price": 1.3686,
+     "ahorro_cliente_anio1_mxn": 18681960.0,
+     "van_20a_mxn": 209004946.0,
+     "exceso_remanente_kwh": 1215572.0
+    },
+    {
+     "kwp": 13150.0,
+     "m2": 52600.0,
+     "k_solved": 1.01279,
+     "price": 1.37,
+     "ahorro_cliente_anio1_mxn": 18679921.0,
+     "van_20a_mxn": 209055119.0,
+     "exceso_remanente_kwh": 1253736.0
+    },
+    {
+     "kwp": 13200.0,
+     "m2": 52800.0,
+     "k_solved": 1.0138,
+     "price": 1.3713,
+     "ahorro_cliente_anio1_mxn": 18674942.0,
+     "van_20a_mxn": 209077743.0,
+     "exceso_remanente_kwh": 1295991.0
+    },
+    {
+     "kwp": 13250.0,
+     "m2": 53000.0,
+     "k_solved": 1.014825,
+     "price": 1.3727,
+     "ahorro_cliente_anio1_mxn": 18669569.0,
+     "van_20a_mxn": 209095888.0,
+     "exceso_remanente_kwh": 1338201.0
+    },
+    {
+     "kwp": 13300.0,
+     "m2": 53200.0,
+     "k_solved": 1.015849,
+     "price": 1.3741,
+     "ahorro_cliente_anio1_mxn": 18664163.0,
+     "van_20a_mxn": 209113771.0,
+     "exceso_remanente_kwh": 1380411.0
+    },
+    {
+     "kwp": 13350.0,
+     "m2": 53400.0,
+     "k_solved": 1.016873,
+     "price": 1.3755,
+     "ahorro_cliente_anio1_mxn": 18658726.0,
+     "van_20a_mxn": 209131393.0,
+     "exceso_remanente_kwh": 1422621.0
+    },
+    {
+     "kwp": 13400.0,
+     "m2": 53600.0,
+     "k_solved": 1.017895,
+     "price": 1.3769,
+     "ahorro_cliente_anio1_mxn": 18653256.0,
+     "van_20a_mxn": 209148755.0,
+     "exceso_remanente_kwh": 1464831.0
+    },
+    {
+     "kwp": 13450.0,
+     "m2": 53800.0,
+     "k_solved": 1.018916,
+     "price": 1.3783,
+     "ahorro_cliente_anio1_mxn": 18647745.0,
+     "van_20a_mxn": 209165740.0,
+     "exceso_remanente_kwh": 1507064.0
+    },
+    {
+     "kwp": 13500.0,
+     "m2": 54000.0,
+     "k_solved": 1.019941,
+     "price": 1.3796,
+     "ahorro_cliente_anio1_mxn": 18642126.0,
+     "van_20a_mxn": 209181612.0,
+     "exceso_remanente_kwh": 1549464.0
+    },
+    {
+     "kwp": 13550.0,
+     "m2": 54200.0,
+     "k_solved": 1.020986,
+     "price": 1.3811,
+     "ahorro_cliente_anio1_mxn": 18634699.0,
+     "van_20a_mxn": 209180598.0,
+     "exceso_remanente_kwh": 1594320.0
+    },
+    {
+     "kwp": 14150.0,
+     "m2": 56600.0,
+     "k_solved": 1.034098,
+     "price": 1.3988,
+     "ahorro_cliente_anio1_mxn": 18493261.0,
+     "van_20a_mxn": 208679129.0,
+     "exceso_remanente_kwh": 2205695.0
+    },
+    {
+     "kwp": 14750.0,
+     "m2": 59000.0,
+     "k_solved": 1.047341,
+     "price": 1.4167,
+     "ahorro_cliente_anio1_mxn": 18336261.0,
+     "van_20a_mxn": 208027251.0,
+     "exceso_remanente_kwh": 2827325.0
+    },
+    {
+     "kwp": 15350.0,
+     "m2": 61400.0,
+     "k_solved": 1.061266,
+     "price": 1.4355,
+     "ahorro_cliente_anio1_mxn": 18133604.0,
+     "van_20a_mxn": 206932527.0,
+     "exceso_remanente_kwh": 3497822.0
+    },
+    {
+     "kwp": 15950.0,
+     "m2": 63800.0,
+     "k_solved": 1.076103,
+     "price": 1.4556,
+     "ahorro_cliente_anio1_mxn": 17856714.0,
+     "van_20a_mxn": 205133290.0,
+     "exceso_remanente_kwh": 4257614.0
+    },
+    {
+     "kwp": 16550.0,
+     "m2": 66200.0,
+     "k_solved": 1.091404,
+     "price": 1.4763,
+     "ahorro_cliente_anio1_mxn": 17545989.0,
+     "van_20a_mxn": 203006153.0,
+     "exceso_remanente_kwh": 5050226.0
+    },
+    {
+     "kwp": 17150.0,
+     "m2": 68600.0,
+     "k_solved": 1.107115,
+     "price": 1.4976,
+     "ahorro_cliente_anio1_mxn": 17198238.0,
+     "van_20a_mxn": 200527664.0,
+     "exceso_remanente_kwh": 5883233.0
+    },
+    {
+     "kwp": 17750.0,
+     "m2": 71000.0,
+     "k_solved": 1.123441,
+     "price": 1.5196,
+     "ahorro_cliente_anio1_mxn": 16817332.0,
+     "van_20a_mxn": 197718098.0,
+     "exceso_remanente_kwh": 6743829.0
+    },
+    {
+     "kwp": 18350.0,
+     "m2": 73400.0,
+     "k_solved": 1.140025,
+     "price": 1.5421,
+     "ahorro_cliente_anio1_mxn": 16420900.0,
+     "van_20a_mxn": 194754570.0,
+     "exceso_remanente_kwh": 7617833.0
+    },
+    {
+     "kwp": 18950.0,
+     "m2": 75800.0,
+     "k_solved": 1.156882,
+     "price": 1.5649,
+     "ahorro_cliente_anio1_mxn": 16008104.0,
+     "van_20a_mxn": 191628710.0,
+     "exceso_remanente_kwh": 8505330.0
+    },
+    {
+     "kwp": 19550.0,
+     "m2": 78200.0,
+     "k_solved": 1.173831,
+     "price": 1.5878,
+     "ahorro_cliente_anio1_mxn": 15587185.0,
+     "van_20a_mxn": 188423826.0,
+     "exceso_remanente_kwh": 9399262.0
+    },
+    {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 1.186511,
+     "price": 1.605,
+     "ahorro_cliente_anio1_mxn": 15269101.0,
+     "van_20a_mxn": 185998994.0,
+     "exceso_remanente_kwh": 10070463.0
+    }
+   ]
+  },
+  "tap": {
+   "site": "tap",
+   "basis": "self (PPA on self-consumed; k re-solved per point, union-7, TIR 14%)",
+   "kwp_rev3": 1255.7,
+   "kwp_design": 1255.7,
+   "kwp_cap_regulatorio": 20000.0,
+   "kwp_opt": 9050.0,
+   "kwp_opt_van": 9500.0,
+   "opt_at_regulatory_cap": false,
+   "m2_opt": 36200.0,
+   "m2_disponibles": null,
+   "m2_faltantes": null,
+   "design_point": {
+    "kwp": 1255.7,
+    "m2": 5023.0,
+    "k_solved": 1.022392,
+    "price": 1.383,
+    "ahorro_cliente_anio1_mxn": 7150610.0,
+    "van_20a_mxn": 73555433.0,
+    "exceso_remanente_kwh": 0.0
+   },
+   "opt_point": {
+    "kwp": 9050.0,
+    "m2": 36200.0,
+    "k_solved": 1.023937,
+    "price": 1.385,
+    "ahorro_cliente_anio1_mxn": 12316360.0,
+    "van_20a_mxn": 138360353.0,
+    "exceso_remanente_kwh": 1136418.0
+   },
+   "opt_point_van": {
+    "kwp": 9500.0,
+    "m2": 38000.0,
+    "k_solved": 1.035139,
+    "price": 1.4002,
+    "ahorro_cliente_anio1_mxn": 12280764.0,
+    "van_20a_mxn": 138563795.0,
+    "exceso_remanente_kwh": 1568527.0
+   },
+   "delta_ahorro_anio1_opt_vs_design": 5165750.0,
+   "delta_van_opt_vs_design": 65008362.0,
+   "standalone": {
+    "kwp_opt": 7700.0,
+    "m2_opt": 30800.0,
+    "m2_faltantes": null,
+    "opt_at_regulatory_cap": false,
+    "opt_point": {
+     "kwp": 7700.0,
+     "m2": 30800.0,
+     "k_solved": 0.956523,
+     "price": 1.2939,
+     "ahorro_cliente_anio1_mxn": 12604765.0
+    },
+    "design_point": {
+     "kwp": 1255.7,
+     "m2": 5023.0,
+     "k_solved": 1.063386,
+     "price": 1.4384,
+     "ahorro_cliente_anio1_mxn": 7035014.0
+    },
+    "delta_ahorro_anio1_opt_vs_design": 5569751.0
+   },
+   "curve": [
+    {
+     "kwp": 750.0,
+     "m2": 3000.0,
+     "k_solved": 1.02858,
+     "price": 1.3913,
+     "ahorro_cliente_anio1_mxn": 6792179.0,
+     "van_20a_mxn": 68866281.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 1255.7,
+     "m2": 5023.0,
+     "k_solved": 1.022392,
+     "price": 1.383,
+     "ahorro_cliente_anio1_mxn": 7150610.0,
+     "van_20a_mxn": 73555433.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 1750.0,
+     "m2": 7000.0,
+     "k_solved": 1.016723,
+     "price": 1.3753,
+     "ahorro_cliente_anio1_mxn": 7513054.0,
+     "van_20a_mxn": 78237496.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 2350.0,
+     "m2": 9400.0,
+     "k_solved": 1.010296,
+     "price": 1.3666,
+     "ahorro_cliente_anio1_mxn": 7967512.0,
+     "van_20a_mxn": 84039093.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 2950.0,
+     "m2": 11800.0,
+     "k_solved": 1.004319,
+     "price": 1.3585,
+     "ahorro_cliente_anio1_mxn": 8436311.0,
+     "van_20a_mxn": 89957633.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 3550.0,
+     "m2": 14200.0,
+     "k_solved": 0.998746,
+     "price": 1.351,
+     "ahorro_cliente_anio1_mxn": 8917995.0,
+     "van_20a_mxn": 95981259.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 4150.0,
+     "m2": 16600.0,
+     "k_solved": 0.993537,
+     "price": 1.3439,
+     "ahorro_cliente_anio1_mxn": 9411302.0,
+     "van_20a_mxn": 102099664.0,
+     "exceso_remanente_kwh": 0.0
+    },
+    {
+     "kwp": 4750.0,
+     "m2": 19000.0,
+     "k_solved": 0.98869,
+     "price": 1.3374,
+     "ahorro_cliente_anio1_mxn": 9914989.0,
+     "van_20a_mxn": 108301372.0,
+     "exceso_remanente_kwh": 1013.0
+    },
+    {
+     "kwp": 5350.0,
+     "m2": 21400.0,
+     "k_solved": 0.984839,
+     "price": 1.3322,
+     "ahorro_cliente_anio1_mxn": 10423370.0,
+     "van_20a_mxn": 114509662.0,
+     "exceso_remanente_kwh": 25070.0
+    },
+    {
+     "kwp": 5950.0,
+     "m2": 23800.0,
+     "k_solved": 0.983393,
+     "price": 1.3302,
+     "ahorro_cliente_anio1_mxn": 10908915.0,
+     "van_20a_mxn": 120402293.0,
+     "exceso_remanente_kwh": 91381.0
+    },
+    {
+     "kwp": 6550.0,
+     "m2": 26200.0,
+     "k_solved": 0.98559,
+     "price": 1.3332,
+     "ahorro_cliente_anio1_mxn": 11333201.0,
+     "van_20a_mxn": 125551646.0,
+     "exceso_remanente_kwh": 194396.0
+    },
+    {
+     "kwp": 7150.0,
+     "m2": 28600.0,
+     "k_solved": 0.99132,
+     "price": 1.3409,
+     "ahorro_cliente_anio1_mxn": 11685728.0,
+     "van_20a_mxn": 129859063.0,
+     "exceso_remanente_kwh": 326044.0
+    },
+    {
+     "kwp": 7750.0,
+     "m2": 31000.0,
+     "k_solved": 0.999254,
+     "price": 1.3517,
+     "ahorro_cliente_anio1_mxn": 11981924.0,
+     "van_20a_mxn": 133532681.0,
+     "exceso_remanente_kwh": 479318.0
+    },
+    {
+     "kwp": 8350.0,
+     "m2": 33400.0,
+     "k_solved": 1.009188,
+     "price": 1.3651,
+     "ahorro_cliente_anio1_mxn": 12212793.0,
+     "van_20a_mxn": 136511074.0,
+     "exceso_remanente_kwh": 683549.0
+    },
+    {
+     "kwp": 8750.0,
+     "m2": 35000.0,
+     "k_solved": 1.01711,
+     "price": 1.3758,
+     "ahorro_cliente_anio1_mxn": 12302930.0,
+     "van_20a_mxn": 137864925.0,
+     "exceso_remanente_kwh": 897828.0
+    },
+    {
+     "kwp": 8800.0,
+     "m2": 35200.0,
+     "k_solved": 1.01819,
+     "price": 1.3773,
+     "ahorro_cliente_anio1_mxn": 12309089.0,
+     "van_20a_mxn": 137984746.0,
+     "exceso_remanente_kwh": 931787.0
+    },
+    {
+     "kwp": 8850.0,
+     "m2": 35400.0,
+     "k_solved": 1.019307,
+     "price": 1.3788,
+     "ahorro_cliente_anio1_mxn": 12312616.0,
+     "van_20a_mxn": 138079715.0,
+     "exceso_remanente_kwh": 969718.0
+    },
+    {
+     "kwp": 8900.0,
+     "m2": 35600.0,
+     "k_solved": 1.020431,
+     "price": 1.3803,
+     "ahorro_cliente_anio1_mxn": 12315603.0,
+     "van_20a_mxn": 138169626.0,
+     "exceso_remanente_kwh": 1008463.0
+    },
+    {
+     "kwp": 8950.0,
+     "m2": 35800.0,
+     "k_solved": 1.021588,
+     "price": 1.3819,
+     "ahorro_cliente_anio1_mxn": 12316220.0,
+     "van_20a_mxn": 138237179.0,
+     "exceso_remanente_kwh": 1051017.0
+    },
+    {
+     "kwp": 9000.0,
+     "m2": 36000.0,
+     "k_solved": 1.022762,
+     "price": 1.3835,
+     "ahorro_cliente_anio1_mxn": 12316351.0,
+     "van_20a_mxn": 138299355.0,
+     "exceso_remanente_kwh": 1093686.0
+    },
+    {
+     "kwp": 9050.0,
+     "m2": 36200.0,
+     "k_solved": 1.023937,
+     "price": 1.385,
+     "ahorro_cliente_anio1_mxn": 12316360.0,
+     "van_20a_mxn": 138360353.0,
+     "exceso_remanente_kwh": 1136418.0
+    },
+    {
+     "kwp": 9100.0,
+     "m2": 36400.0,
+     "k_solved": 1.025112,
+     "price": 1.3866,
+     "ahorro_cliente_anio1_mxn": 12316258.0,
+     "van_20a_mxn": 138420287.0,
+     "exceso_remanente_kwh": 1179214.0
+    },
+    {
+     "kwp": 9150.0,
+     "m2": 36600.0,
+     "k_solved": 1.02629,
+     "price": 1.3882,
+     "ahorro_cliente_anio1_mxn": 12315964.0,
+     "van_20a_mxn": 138478355.0,
+     "exceso_remanente_kwh": 1222166.0
+    },
+    {
+     "kwp": 9200.0,
+     "m2": 36800.0,
+     "k_solved": 1.02752,
+     "price": 1.3899,
+     "ahorro_cliente_anio1_mxn": 12312953.0,
+     "van_20a_mxn": 138509932.0,
+     "exceso_remanente_kwh": 1268716.0
+    },
+    {
+     "kwp": 9250.0,
+     "m2": 37000.0,
+     "k_solved": 1.028761,
+     "price": 1.3916,
+     "ahorro_cliente_anio1_mxn": 12309213.0,
+     "van_20a_mxn": 138534598.0,
+     "exceso_remanente_kwh": 1316343.0
+    },
+    {
+     "kwp": 9300.0,
+     "m2": 37200.0,
+     "k_solved": 1.030035,
+     "price": 1.3933,
+     "ahorro_cliente_anio1_mxn": 12303692.0,
+     "van_20a_mxn": 138542162.0,
+     "exceso_remanente_kwh": 1366769.0
+    },
+    {
+     "kwp": 9350.0,
+     "m2": 37400.0,
+     "k_solved": 1.031307,
+     "price": 1.395,
+     "ahorro_cliente_anio1_mxn": 12298121.0,
+     "van_20a_mxn": 138549277.0,
+     "exceso_remanente_kwh": 1417222.0
+    },
+    {
+     "kwp": 9400.0,
+     "m2": 37600.0,
+     "k_solved": 1.032579,
+     "price": 1.3967,
+     "ahorro_cliente_anio1_mxn": 12292507.0,
+     "van_20a_mxn": 138556042.0,
+     "exceso_remanente_kwh": 1467675.0
+    },
+    {
+     "kwp": 9450.0,
+     "m2": 37800.0,
+     "k_solved": 1.033853,
+     "price": 1.3985,
+     "ahorro_cliente_anio1_mxn": 12286769.0,
+     "van_20a_mxn": 138561473.0,
+     "exceso_remanente_kwh": 1518117.0
+    },
+    {
+     "kwp": 9500.0,
+     "m2": 38000.0,
+     "k_solved": 1.035139,
+     "price": 1.4002,
+     "ahorro_cliente_anio1_mxn": 12280764.0,
+     "van_20a_mxn": 138563795.0,
+     "exceso_remanente_kwh": 1568527.0
+    },
+    {
+     "kwp": 9550.0,
+     "m2": 38200.0,
+     "k_solved": 1.036462,
+     "price": 1.402,
+     "ahorro_cliente_anio1_mxn": 12272131.0,
+     "van_20a_mxn": 138541330.0,
+     "exceso_remanente_kwh": 1623161.0
+    },
+    {
+     "kwp": 10150.0,
+     "m2": 40600.0,
+     "k_solved": 1.053198,
+     "price": 1.4246,
+     "ahorro_cliente_anio1_mxn": 12118163.0,
+     "van_20a_mxn": 137783294.0,
+     "exceso_remanente_kwh": 2344554.0
+    },
+    {
+     "kwp": 10750.0,
+     "m2": 43000.0,
+     "k_solved": 1.070695,
+     "price": 1.4483,
+     "ahorro_cliente_anio1_mxn": 11912446.0,
+     "van_20a_mxn": 136528658.0,
+     "exceso_remanente_kwh": 3131961.0
+    },
+    {
+     "kwp": 11350.0,
+     "m2": 45400.0,
+     "k_solved": 1.088846,
+     "price": 1.4728,
+     "ahorro_cliente_anio1_mxn": 11668848.0,
+     "van_20a_mxn": 134903237.0,
+     "exceso_remanente_kwh": 3963388.0
+    },
+    {
+     "kwp": 11950.0,
+     "m2": 47800.0,
+     "k_solved": 1.107589,
+     "price": 1.4982,
+     "ahorro_cliente_anio1_mxn": 11400243.0,
+     "van_20a_mxn": 133022570.0,
+     "exceso_remanente_kwh": 4819682.0
+    },
+    {
+     "kwp": 12550.0,
+     "m2": 50200.0,
+     "k_solved": 1.126973,
+     "price": 1.5244,
+     "ahorro_cliente_anio1_mxn": 11103941.0,
+     "van_20a_mxn": 130859684.0,
+     "exceso_remanente_kwh": 5701472.0
+    },
+    {
+     "kwp": 13150.0,
+     "m2": 52600.0,
+     "k_solved": 1.146727,
+     "price": 1.5511,
+     "ahorro_cliente_anio1_mxn": 10789595.0,
+     "van_20a_mxn": 128514678.0,
+     "exceso_remanente_kwh": 6599007.0
+    },
+    {
+     "kwp": 13750.0,
+     "m2": 55000.0,
+     "k_solved": 1.166881,
+     "price": 1.5784,
+     "ahorro_cliente_anio1_mxn": 10457404.0,
+     "van_20a_mxn": 125988370.0,
+     "exceso_remanente_kwh": 7512460.0
+    },
+    {
+     "kwp": 14350.0,
+     "m2": 57400.0,
+     "k_solved": 1.18725,
+     "price": 1.606,
+     "ahorro_cliente_anio1_mxn": 10113294.0,
+     "van_20a_mxn": 123342906.0,
+     "exceso_remanente_kwh": 8435391.0
+    },
+    {
+     "kwp": 14950.0,
+     "m2": 59800.0,
+     "k_solved": 1.20771,
+     "price": 1.6336,
+     "ahorro_cliente_anio1_mxn": 9761481.0,
+     "van_20a_mxn": 120622160.0,
+     "exceso_remanente_kwh": 9363609.0
+    },
+    {
+     "kwp": 15550.0,
+     "m2": 62200.0,
+     "k_solved": 1.228096,
+     "price": 1.6612,
+     "ahorro_cliente_anio1_mxn": 9407273.0,
+     "van_20a_mxn": 117881885.0,
+     "exceso_remanente_kwh": 10291827.0
+    },
+    {
+     "kwp": 16150.0,
+     "m2": 64600.0,
+     "k_solved": 1.248407,
+     "price": 1.6887,
+     "ahorro_cliente_anio1_mxn": 9050684.0,
+     "van_20a_mxn": 115122190.0,
+     "exceso_remanente_kwh": 11220045.0
+    },
+    {
+     "kwp": 16750.0,
+     "m2": 67000.0,
+     "k_solved": 1.268643,
+     "price": 1.716,
+     "ahorro_cliente_anio1_mxn": 8691727.0,
+     "van_20a_mxn": 112343180.0,
+     "exceso_remanente_kwh": 12148264.0
+    },
+    {
+     "kwp": 17350.0,
+     "m2": 69400.0,
+     "k_solved": 1.288806,
+     "price": 1.7433,
+     "ahorro_cliente_anio1_mxn": 8330414.0,
+     "van_20a_mxn": 109544962.0,
+     "exceso_remanente_kwh": 13076482.0
+    },
+    {
+     "kwp": 17950.0,
+     "m2": 71800.0,
+     "k_solved": 1.308909,
+     "price": 1.7705,
+     "ahorro_cliente_anio1_mxn": 7966618.0,
+     "van_20a_mxn": 106725840.0,
+     "exceso_remanente_kwh": 14005074.0
+    },
+    {
+     "kwp": 18550.0,
+     "m2": 74200.0,
+     "k_solved": 1.329013,
+     "price": 1.7977,
+     "ahorro_cliente_anio1_mxn": 7599718.0,
+     "van_20a_mxn": 103877716.0,
+     "exceso_remanente_kwh": 14935755.0
+    },
+    {
+     "kwp": 19150.0,
+     "m2": 76600.0,
+     "k_solved": 1.349091,
+     "price": 1.8249,
+     "ahorro_cliente_anio1_mxn": 7230171.0,
+     "van_20a_mxn": 101005891.0,
+     "exceso_remanente_kwh": 15867651.0
+    },
+    {
+     "kwp": 19750.0,
+     "m2": 79000.0,
+     "k_solved": 1.369136,
+     "price": 1.852,
+     "ahorro_cliente_anio1_mxn": 6858213.0,
+     "van_20a_mxn": 98112765.0,
+     "exceso_remanente_kwh": 16800560.0
+    },
+    {
+     "kwp": 20000.0,
+     "m2": 80000.0,
+     "k_solved": 1.377491,
+     "price": 1.8633,
+     "ahorro_cliente_anio1_mxn": 6702503.0,
+     "van_20a_mxn": 96900457.0,
+     "exceso_remanente_kwh": 17189862.0
+    }
+   ]
+  }
+ }
+}
