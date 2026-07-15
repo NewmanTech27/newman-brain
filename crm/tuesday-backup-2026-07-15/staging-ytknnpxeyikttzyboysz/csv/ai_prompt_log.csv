@@ -1,0 +1,1 @@
+id,actor,action,deal_id,model,channel,grounding_hash,prompt_chars,output_chars,latency_ms,est_cost_usd,ok,error,created_at

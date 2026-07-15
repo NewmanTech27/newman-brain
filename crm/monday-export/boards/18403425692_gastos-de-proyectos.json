@@ -1,0 +1,8539 @@
+{
+ "board": {
+  "id": "18403425692",
+  "name": "Gastos de proyectos",
+  "state": "active",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "12151996",
+   "name": "Newman CRM"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subtasks_mkxb6znr",
+   "title": "Subelementos",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[18403425694]}"
+  },
+  {
+   "id": "color_mkx89tdw",
+   "title": "Categoría",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"4\":105,\"9\":157,\"17\":4,\"103\":17,\"105\":9,\"106\":103,\"157\":106},\"labels\":{\"0\":\"Materiales\",\"1\":\"Ejecución\",\"2\":\"Otros\",\"3\":\"Gastos financieros\",\"4\":\"Proyectos\",\"5\":\"\",\"105\":\"Gastos fijos\",\"156\":\"Recursos humanos\"},\"labels_positions_v2\":{\"0\":4,\"1\":5,\"2\":6,\"3\":1,\"4\":7,\"5\":3,\"105\":0,\"156\":2},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9aadbd\",\"border\":\"#9aadbd\",\"var_name\":\"winter\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"105\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"156\":{\"color\":\"#9d99b9\",\"border\":\"#9d99b9\",\"var_name\":\"purple_gray\"}}}"
+  },
+  {
+   "id": "text_mkx8k8fw",
+   "title": "Descripción",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "date_mkx8n09t",
+   "title": "Fecha de solicitud",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "date_mkxd6htq",
+   "title": "Fecha programación pago",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numeric_mkx8s8rn",
+   "title": "MXN",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "numeric_mky0ak3m",
+   "title": "DLLS",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "numeric_mkx8wrc9",
+   "title": "Pagado MXN",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "numeric_mky0gg3q",
+   "title": "Pagado DLLS",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "formula_mkxdj8ga",
+   "title": "Saldo",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"({numeric_mkx8s8rn}+({numeric_mky0ak3m}*18.5))-{numeric_mkx8wrc9}-{numeric_mky0gg3q}*18.5\"}"
+  },
+  {
+   "id": "color_mkx8gyx8",
+   "title": "Estado",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"3\":105,\"105\":159,\"152\":3,\"159\":152},\"labels\":{\"0\":\"Stand by\",\"1\":\"Programado\",\"2\":\"Rechazado\",\"3\":\"\",\"4\":\"Pago parcial\",\"5\":\"Pagado\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":2,\"3\":5,\"4\":4,\"5\":3},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#9aadbd\",\"border\":\"#9aadbd\",\"var_name\":\"winter\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"}}}"
+  },
+  {
+   "id": "dropdown_mkxcfe00",
+   "title": "Proyecto-Etapa",
+   "type": "dropdown",
+   "settings_str": "{\"limit_select\":false,\"labels\":[{\"id\":1,\"name\":\"Mercury Aircraft-Preliminar\"},{\"id\":2,\"name\":\"Comercial PET-Preliminar\"},{\"id\":3,\"name\":\"Xentric Anahuac Suites\"},{\"id\":4,\"name\":\"Eugenio Sue-Bases\"},{\"id\":5,\"name\":\"Averanda 739-Bases\"},{\"id\":6,\"name\":\"El Camarón Dorado-Preliminar\"},{\"id\":7,\"name\":\"Frutos de Huerta del Real-Preliminar\"},{\"id\":8,\"name\":\"Magitierra del suroeste-Preliminar\"},{\"id\":9,\"name\":\"Luna Parc-Preliminar\"},{\"id\":10,\"name\":\"Lindavista-Preliminar\"},{\"id\":11,\"name\":\"Averanda 739-Preliminar\"},{\"id\":12,\"name\":\"GICSA\"},{\"id\":13,\"name\":\"TEX MEX-Entregables\"},{\"id\":14,\"name\":\"TEX M\"},{\"id\":15,\"name\":\"ASA-Preliminares\"},{\"id\":16,\"name\":\"Daisa-Modulos e inversores\"},{\"id\":17,\"name\":\"Aurum Ortus-Preliminar\"},{\"id\":18,\"name\":\"Mercury Aircraft-Modulos e inversores\"},{\"id\":19,\"name\":\"Lindavista-Modulos e inversores\"},{\"id\":20,\"name\":\"Averanda 739-Modulos e inversores\"},{\"id\":21,\"name\":\"Comercial PET-Modulos e inversores\"},{\"id\":22,\"name\":\"Luna Parc-Modulos e inversores\"},{\"id\":23,\"name\":\"El Camarón Dorado-Modulos e inversores\"},{\"id\":24,\"name\":\"Hilaturas Castilla-Modulos e inversores\"},{\"id\":25,\"name\":\"Casino Solaz Chihuahua-Preliminar\"},{\"id\":26,\"name\":\"Infiniti Merida-Modulos e Inversores\"},{\"id\":27,\"name\":\"IFOOD-Preliminar\"},{\"id\":28,\"name\":\"Pueblo Bonito-Preliminar\"}],\"deactivated_labels\":[7]}"
+  },
+  {
+   "id": "dropdown_mky1999r",
+   "title": "Proyecto",
+   "type": "dropdown",
+   "settings_str": "{\"limit_select\":false,\"labels\":[{\"id\":1,\"name\":\"Daisa\"},{\"id\":2,\"name\":\"Xentric Anahuac Suites\"},{\"id\":3,\"name\":\"Eugenio Sue\"},{\"id\":4,\"name\":\"Averanda 739\"},{\"id\":5,\"name\":\"El Camarón Dorado\"},{\"id\":6,\"name\":\"Frutos de Huerta del Real\"},{\"id\":7,\"name\":\"Magitierra del suroeste\"},{\"id\":8,\"name\":\"Luna Parc\"},{\"id\":9,\"name\":\"Lindavista\"},{\"id\":10,\"name\":\"TEX M\"},{\"id\":11,\"name\":\"Aurum Ortus\"},{\"id\":12,\"name\":\"Comercial PET\"},{\"id\":13,\"name\":\"Mercury Aircraft\"},{\"id\":14,\"name\":\"GICSA\"},{\"id\":15,\"name\":\"ASA\"},{\"id\":16,\"name\":\"General\"},{\"id\":17,\"name\":\"TAMEX\"},{\"id\":18,\"name\":\"Hilaturas Castilla\"},{\"id\":19,\"name\":\"Casino Solaz Chihuahua\"},{\"id\":20,\"name\":\"DAISA\"},{\"id\":21,\"name\":\"infini\"},{\"id\":22,\"name\":\"Infiniti Merida\"},{\"id\":23,\"name\":\"IFOOD\"},{\"id\":24,\"name\":\"Pueblo Bonito\"}],\"deactivated_labels\":[]}"
+  },
+  {
+   "id": "dropdown_mm0fy2yw",
+   "title": "Categoría 2",
+   "type": "dropdown",
+   "settings_str": "{\"limit_select\":false,\"labels\":[{\"id\":1,\"name\":\"Gastos administrativos\"},{\"id\":2,\"name\":\"Costos de obra\"},{\"id\":3,\"name\":\"Rentas\"},{\"id\":4,\"name\":\"Préstamos\"},{\"id\":5,\"name\":\"Servicios\"},{\"id\":6,\"name\":\"Nóminas\"},{\"id\":7,\"name\":\"Impuestos\"},{\"id\":8,\"name\":\"Mutuos\"},{\"id\":9,\"name\":\"Gastos de venta\"}],\"deactivated_labels\":[]}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Gastos"
+  },
+  {
+   "id": "group_mky0qax8",
+   "title": "Pagado"
+  },
+  {
+   "id": "group_mky1r7k7",
+   "title": "Rechazados"
+  }
+ ],
+ "items": [
+  {
+   "id": "11476578214",
+   "name": "Inversores Daisa",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-21T15:52:41.610Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Inversores",
+     "value": "\"Materiales-Inversores\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-21",
+     "value": "{\"date\":\"2025-11-21\",\"changed_at\":\"2025-11-21T15:53:05.311Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "15700",
+     "value": "\"15700\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-12-05T21:47:36.843Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572499",
+   "name": "Instalación de panel fotovoltaico, de materiales para estructuras, materiales de DC, materiales AC Averanda 2/2",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-25T16:39:27.028Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-01",
+     "value": "{\"date\":\"2025-11-01\",\"changed_at\":\"2025-11-25T16:39:35.516Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "4768352.76",
+     "value": "\"4768352.76\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Averanda 739-Bases",
+     "value": "{\"ids\":[5]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Averanda 739",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581844",
+   "name": "Visita de Camarón Dorado 2/2",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-25T16:44:47.429Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-05",
+     "value": "{\"date\":\"2025-11-05\",\"changed_at\":\"2025-11-25T16:44:56.723Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "3250",
+     "value": "\"3250\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T17:30:09.925Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "El Camarón Dorado-Preliminar",
+     "value": "{\"ids\":[6]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "El Camarón Dorado",
+     "value": "{\"ids\":[5]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572649",
+   "name": "Visita magitierra",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-05T17:55:19.349Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-05",
+     "value": "{\"date\":\"2025-11-05\",\"changed_at\":\"2025-11-05T17:55:39.132Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "2000",
+     "value": "\"2000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T17:34:55.288Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Frutos de Huerta del Real-Preliminar",
+     "value": "{\"ids\":[7]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Frutos de Huerta del Real",
+     "value": "{\"ids\":[6]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572562",
+   "name": "Visita frutos del huerto",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-05T17:56:29.511Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-05",
+     "value": "{\"date\":\"2025-11-05\",\"changed_at\":\"2025-11-05T17:56:37.937Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "2000",
+     "value": "\"2000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T17:35:04.126Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Magitierra del suroeste-Preliminar",
+     "value": "{\"ids\":[8]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Magitierra del suroeste",
+     "value": "{\"ids\":[7]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572718",
+   "name": "Dictamen estructural Luna Parc",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-05T19:19:08.187Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-05",
+     "value": "{\"date\":\"2025-11-05\",\"changed_at\":\"2025-11-05T19:21:13.501Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "49250",
+     "value": "\"49250\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T17:39:15.419Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Luna Parc-Preliminar",
+     "value": "{\"ids\":[9]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Luna Parc",
+     "value": "{\"ids\":[8]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572267",
+   "name": "Dictamen estructural Lindavista",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-05T19:19:09.674Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-05",
+     "value": "{\"date\":\"2025-11-05\",\"changed_at\":\"2025-11-05T19:21:15.858Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "49250",
+     "value": "\"49250\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Programado",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-11-14T21:02:02.367Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Lindavista-Preliminar",
+     "value": "{\"ids\":[10]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Lindavista",
+     "value": "{\"ids\":[9]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582092",
+   "name": "Dictamen estructural Averanda",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-05T19:19:11.954Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-05",
+     "value": "{\"date\":\"2025-11-05\",\"changed_at\":\"2025-11-05T19:21:18.310Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "35000",
+     "value": "\"35000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T17:39:26.204Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Averanda 739-Preliminar",
+     "value": "{\"ids\":[11]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Averanda 739",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476557403",
+   "name": "Crédito TAMEX parte 2",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T00:29:54.239Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Préstamos simples",
+     "value": "\"Préstamos simples\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T16:15:47.543Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-12-26",
+     "value": "{\"date\":\"2025-12-26\",\"changed_at\":\"2025-11-14T16:17:11.389Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "112262.52",
+     "value": "\"112262.52\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Programado",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-12-29T16:03:12.120Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "TAMEX",
+     "value": "{\"ids\":[17]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476564195",
+   "name": "Crédito TAMEX parte 3",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T00:29:56.240Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Préstamos simples",
+     "value": "\"Préstamos simples\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T16:15:50.174Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-01-30",
+     "value": "{\"date\":\"2026-01-30\",\"changed_at\":\"2025-11-14T16:17:19.845Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "112262.52",
+     "value": "\"112262.52\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-12-05T21:47:26.660Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "TAMEX",
+     "value": "{\"ids\":[17]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476580770",
+   "name": "Crédito TAMEX parte 4",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T00:29:58.041Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Préstamos simples",
+     "value": "\"Préstamos simples\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T16:15:52.624Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-27",
+     "value": "{\"date\":\"2026-02-27\",\"changed_at\":\"2025-11-14T16:17:29.888Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "112262.52",
+     "value": "\"112262.52\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-12-05T21:47:20.577Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "TAMEX",
+     "value": "{\"ids\":[17]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572523",
+   "name": "Pago IVA faltante WISDOM 2/2",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-25T16:46:45.976Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-10-27",
+     "value": "{\"date\":\"2025-10-27\",\"changed_at\":\"2025-11-25T16:46:57.479Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "4281.6",
+     "value": "\"4281.6\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T17:39:36.752Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "TEX M",
+     "value": "{\"ids\":[14]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "TEX M",
+     "value": "{\"ids\":[10]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578046",
+   "name": "90% Paneles TW-Mercury",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:50.079Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:45.961Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-18",
+     "value": "{\"date\":\"2026-03-18\",\"changed_at\":\"2026-02-21T00:19:16.436Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "71195.13",
+     "value": "\"71195.13\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Mercury Aircraft-Modulos e inversores",
+     "value": "{\"ids\":[18]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Mercury Aircraft",
+     "value": "{\"ids\":[13]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578741",
+   "name": "90% Paneles TW-Lindavista",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:52.381Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:48.961Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-18",
+     "value": "{\"date\":\"2026-03-18\",\"changed_at\":\"2026-02-21T00:19:20.869Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "13852.4",
+     "value": "\"13852.4\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Lindavista-Modulos e inversores",
+     "value": "{\"ids\":[19]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Lindavista",
+     "value": "{\"ids\":[9]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581954",
+   "name": "90% Paneles TW-Averanda 739",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:54.483Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:51.605Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-18",
+     "value": "{\"date\":\"2026-03-18\",\"changed_at\":\"2026-02-21T00:19:26.893Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "53654.17",
+     "value": "\"53654.17\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Averanda 739-Modulos e inversores",
+     "value": "{\"ids\":[20]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Averanda 739",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581955",
+   "name": "90% Paneles TW-Comercial PET",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:56.734Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:53.893Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-18",
+     "value": "{\"date\":\"2026-03-18\",\"changed_at\":\"2026-02-21T00:19:31.940Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "8828.01",
+     "value": "\"8828.01\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Comercial PET-Modulos e inversores",
+     "value": "{\"ids\":[21]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Comercial PET",
+     "value": "{\"ids\":[12]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582685",
+   "name": "90% Paneles TW-Luna Parc",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:21:01.324Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:56.277Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-18",
+     "value": "{\"date\":\"2026-03-18\",\"changed_at\":\"2026-02-21T00:19:36.236Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "26736.98",
+     "value": "\"26736.98\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Luna Parc-Modulos e inversores",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Luna Parc",
+     "value": "{\"ids\":[8]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581817",
+   "name": "90% Paneles TW-Camarón Dorado",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:58.897Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:58.913Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-18",
+     "value": "{\"date\":\"2026-03-18\",\"changed_at\":\"2026-02-21T00:19:40.691Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "29579.54",
+     "value": "\"29579.54\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "El Camarón Dorado-Modulos e inversores",
+     "value": "{\"ids\":[23]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "El Camarón Dorado",
+     "value": "{\"ids\":[5]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578084",
+   "name": "90% Paneles TW-Hilaturas Castilla",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:21:03.505Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:25:01.447Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-18",
+     "value": "{\"date\":\"2026-03-18\",\"changed_at\":\"2026-02-21T00:19:44.596Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "12741.61",
+     "value": "\"12741.61\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Hilaturas Castilla-Modulos e inversores",
+     "value": "{\"ids\":[24]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Hilaturas Castilla",
+     "value": "{\"ids\":[18]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582690",
+   "name": "Levantamiento de SFV Pueblo Bonito anticipo 70%",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-02-16T20:06:43.563Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-26",
+     "value": "{\"date\":\"2026-02-26\",\"changed_at\":\"2026-02-16T20:05:53.280Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-26",
+     "value": "{\"date\":\"2026-02-26\",\"changed_at\":\"2026-02-16T20:05:55.914Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "20706",
+     "value": "\"20706\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Programado",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-02-16T20:06:30.775Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Pueblo Bonito",
+     "value": "{\"ids\":[24]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578302",
+   "name": "Cableado, gabinete, interruptores",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-16T20:11:33.929Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales",
+     "value": "\"Materiales\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-16",
+     "value": "{\"date\":\"2026-02-16\",\"changed_at\":\"2026-02-16T20:09:52.986Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-26",
+     "value": "{\"date\":\"2026-03-26\",\"changed_at\":\"2026-02-16T20:12:57.912Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "531089.87",
+     "value": "\"531089.87\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "DAISA",
+     "value": "{\"ids\":[20]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572651",
+   "name": "Cableado polos positivos y negativos",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-16T20:13:24.899Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales",
+     "value": "\"Materiales\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-16",
+     "value": "{\"date\":\"2026-02-16\",\"changed_at\":\"2026-02-16T20:12:52.603Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-26",
+     "value": "{\"date\":\"2026-03-26\",\"changed_at\":\"2026-02-16T20:13:01.302Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "9286.96",
+     "value": "\"9286.96\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "DAISA",
+     "value": "{\"ids\":[20]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581967",
+   "name": "Instalación Infiniti finiquito",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2026-02-23T22:58:25.979Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2026-02-23T22:58:06.728Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-27",
+     "value": "{\"date\":\"2026-02-27\",\"changed_at\":\"2026-02-23T22:58:09.332Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "180923.5",
+     "value": "\"180923.5\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Infiniti Merida-Modulos e Inversores",
+     "value": "{\"ids\":[26]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Infiniti Merida",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476586323",
+   "name": "Finiquito visita técnica Calimax",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2026-03-09T17:04:07.926Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-03-05",
+     "value": "{\"date\":\"2026-03-05\",\"changed_at\":\"2026-03-05T21:39:31.615Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "5000",
+     "value": "\"5000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476569582",
+   "name": "Cambio de charola GAC Daisa",
+   "group": {
+    "id": "topics",
+    "title": "Gastos"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-03-09T17:04:18.913Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales",
+     "value": "\"Materiales\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-03-09",
+     "value": "{\"date\":\"2026-03-09\",\"changed_at\":\"2026-03-09T17:03:25.902Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-13",
+     "value": "{\"date\":\"2026-03-13\",\"changed_at\":\"2026-03-09T17:03:29.239Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "16132.1",
+     "value": "\"16132.1\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Stand by",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-31T18:13:13.594Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581982",
+   "name": "Análisis estructural Mercury",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-03T20:22:24.400Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-10-30",
+     "value": "{\"date\":\"2025-10-30\",\"changed_at\":\"2025-11-03T19:34:45.524Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-06",
+     "value": "{\"date\":\"2025-11-06\",\"changed_at\":\"2025-11-05T17:52:21.697Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "35000",
+     "value": "\"35000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "35000",
+     "value": "\"35000\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-12T21:28:03.497Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Mercury Aircraft-Preliminar",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Mercury Aircraft",
+     "value": "{\"ids\":[13]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578743",
+   "name": "Apoyo ing. Rauda en VT",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-14T21:14:25.231Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T21:16:29.425Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T21:05:15.066Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "600",
+     "value": "\"600\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "600",
+     "value": "\"600\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-19T00:28:48.856Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "ASA-Preliminares",
+     "value": "{\"ids\":[15]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "ASA",
+     "value": "{\"ids\":[15]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578212",
+   "name": "Instalación de panel fotovoltaico, de materiales para estructuras, materiales de DC, materiales AC Averanda 1/2",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-03T20:22:24.400Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-01",
+     "value": "{\"date\":\"2025-11-01\",\"changed_at\":\"2025-11-03T20:03:09.060Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-02",
+     "value": "{\"date\":\"2025-11-02\",\"changed_at\":\"2025-11-25T18:31:54.222Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "343303.24",
+     "value": "\"343303.24\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "343303.24",
+     "value": "\"343303.24\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-25T16:41:14.436Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Averanda 739-Bases",
+     "value": "{\"ids\":[5]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Averanda 739",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572561",
+   "name": "Visitas técnicas para sistema fotovoltáico 1/2",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-03T20:22:24.400Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-10-10",
+     "value": "{\"date\":\"2025-10-10\",\"changed_at\":\"2025-11-03T19:40:09.330Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T17:55:17.041Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "6902",
+     "value": "\"6902\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "6902",
+     "value": "\"6902\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-25T16:43:27.288Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Xentric Anahuac Suites",
+     "value": "{\"ids\":[3]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Xentric Anahuac Suites",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581846",
+   "name": "Visita de Camarón Dorado 1/2",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-05T16:46:27.729Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-05",
+     "value": "{\"date\":\"2025-11-05\",\"changed_at\":\"2025-11-05T16:47:11.999Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T17:55:03.028Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "3250",
+     "value": "\"3250\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "3250",
+     "value": "\"3250\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-25T16:45:47.426Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "El Camarón Dorado-Preliminar",
+     "value": "{\"ids\":[6]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "El Camarón Dorado",
+     "value": "{\"ids\":[5]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581819",
+   "name": "Pago IIVA faltante WISDOM 1/2",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-14T21:09:45.547Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-10-27",
+     "value": "{\"date\":\"2025-10-27\",\"changed_at\":\"2025-11-14T21:10:55.198Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T21:05:13.036Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "26760",
+     "value": "\"26760\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "26760",
+     "value": "\"26760\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-25T16:47:37.281Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "TEX M",
+     "value": "{\"ids\":[14]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "TEX M",
+     "value": "{\"ids\":[10]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582688",
+   "name": "Análisis estructural Comercial Pet",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-03T20:22:24.400Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-03",
+     "value": "{\"date\":\"2025-11-03\",\"changed_at\":\"2025-11-03T19:37:27.977Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T21:01:48.724Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "14250",
+     "value": "\"14250\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "14250",
+     "value": "\"14250\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-25T16:50:08.644Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Comercial PET-Preliminar",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Comercial PET",
+     "value": "{\"ids\":[12]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572671",
+   "name": "Anticipo 10% Paneles TW-Mercury",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:31.425Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:12.459Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-26",
+     "value": "{\"date\":\"2025-11-26\",\"changed_at\":\"2025-11-27T18:25:49.552Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "7910.57",
+     "value": "\"7910.57\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "7910.57",
+     "value": "\"7910.57\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-27T19:28:46.745Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Mercury Aircraft-Modulos e inversores",
+     "value": "{\"ids\":[18]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Mercury Aircraft",
+     "value": "{\"ids\":[13]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572623",
+   "name": "Anticipo 10% Paneles TW-Averanda 739",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:38.429Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:29.344Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-26",
+     "value": "{\"date\":\"2025-11-26\",\"changed_at\":\"2025-11-27T18:25:56.360Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "5961.57",
+     "value": "\"5961.57\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "5961.57",
+     "value": "\"5961.57\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-27T19:28:51.757Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Averanda 739-Modulos e inversores",
+     "value": "{\"ids\":[20]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Averanda 739",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581980",
+   "name": "Anticipo 10% Paneles TW-Lindavista",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:33.533Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:26.364Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-26",
+     "value": "{\"date\":\"2025-11-26\",\"changed_at\":\"2025-11-27T18:25:52.762Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "1539.16",
+     "value": "\"1539.16\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "1539.16",
+     "value": "\"1539.16\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-27T19:28:56.488Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Lindavista-Modulos e inversores",
+     "value": "{\"ids\":[19]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Lindavista",
+     "value": "{\"ids\":[9]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582564",
+   "name": "Anticipo 10% Paneles TW-Comercial PET",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:40.663Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:32.080Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-26",
+     "value": "{\"date\":\"2025-11-26\",\"changed_at\":\"2025-11-27T18:25:59.760Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "980.89",
+     "value": "\"980.89\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "980.89",
+     "value": "\"980.89\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-27T19:29:01.663Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Comercial PET-Modulos e inversores",
+     "value": "{\"ids\":[21]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Comercial PET",
+     "value": "{\"ids\":[12]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582566",
+   "name": "Anticipo 10% Paneles TW-Luna Parc",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:42.884Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:35.283Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-26",
+     "value": "{\"date\":\"2025-11-26\",\"changed_at\":\"2025-11-27T18:26:03.064Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "2970.78",
+     "value": "\"2970.78\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "2970.78",
+     "value": "\"2970.78\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-27T19:29:06.522Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Luna Parc-Modulos e inversores",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Luna Parc",
+     "value": "{\"ids\":[8]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581880",
+   "name": "Anticipo 10% Paneles TW-Camarón Dorado",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:45.290Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:38.913Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-26",
+     "value": "{\"date\":\"2025-11-26\",\"changed_at\":\"2025-11-27T18:26:05.868Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "3286.62",
+     "value": "\"3286.62\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "3286.62",
+     "value": "\"3286.62\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-27T19:29:12.240Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "El Camarón Dorado-Modulos e inversores",
+     "value": "{\"ids\":[23]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "El Camarón Dorado",
+     "value": "{\"ids\":[5]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572672",
+   "name": "Anticipo 10% Paneles TW-Hilaturas",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T18:20:47.699Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-19",
+     "value": "{\"date\":\"2025-11-19\",\"changed_at\":\"2025-11-27T18:24:41.771Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-26",
+     "value": "{\"date\":\"2025-11-26\",\"changed_at\":\"2025-11-27T18:26:08.964Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "1415.73",
+     "value": "\"1415.73\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "1415.73",
+     "value": "\"1415.73\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-27T19:29:17.712Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Hilaturas Castilla-Modulos e inversores",
+     "value": "{\"ids\":[24]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Hilaturas Castilla",
+     "value": "{\"ids\":[18]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572396",
+   "name": "Análisis estructural Comercial Pet",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-25T16:48:52.819Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-03",
+     "value": "{\"date\":\"2025-11-03\",\"changed_at\":\"2025-11-25T16:49:04.368Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-10-30",
+     "value": "{\"date\":\"2025-10-30\",\"changed_at\":\"2025-11-28T19:26:28.477Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "14250",
+     "value": "\"14250\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "14250",
+     "value": "\"14250\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-28T19:26:50.728Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Comercial PET-Preliminar",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Comercial PET",
+     "value": "{\"ids\":[12]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476559215",
+   "name": "Crédito TAMEX parte 1",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-11-27T00:29:51.492Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Préstamos simples",
+     "value": "\"Préstamos simples\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-14",
+     "value": "{\"date\":\"2025-11-14\",\"changed_at\":\"2025-11-14T16:15:45.185Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-11-28",
+     "value": "{\"date\":\"2025-11-28\",\"changed_at\":\"2025-11-14T16:17:01.421Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "112262.52",
+     "value": "\"112262.52\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "112262.52",
+     "value": "\"112262.52\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-11-28T21:19:16.595Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "TAMEX",
+     "value": "{\"ids\":[17]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578083",
+   "name": "Anticipo de visita técnica Casino Solaz",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-12-01T19:37:23.433Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-12-01",
+     "value": "{\"date\":\"2025-12-01\",\"changed_at\":\"2025-12-01T19:31:19.916Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-12-02",
+     "value": "{\"date\":\"2025-12-02\",\"changed_at\":\"2025-12-02T16:12:51.836Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "2500",
+     "value": "\"2500\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "2500",
+     "value": "\"2500\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-12-02T16:13:02.909Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Casino Solaz Chihuahua-Preliminar",
+     "value": "{\"ids\":[25]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Casino Solaz Chihuahua",
+     "value": "{\"ids\":[19]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581771",
+   "name": "Flete paneles Daisa",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-11-07T22:45:08.627Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Fletes-Módulos",
+     "value": "\"Fletes-Módulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-07",
+     "value": "{\"date\":\"2025-11-07\",\"changed_at\":\"2025-11-07T22:46:28.628Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-12-03",
+     "value": "{\"date\":\"2025-12-03\",\"changed_at\":\"2025-12-03T21:34:06.908Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "44080",
+     "value": "\"44080\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "44080",
+     "value": "\"44080\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-12-03T21:34:21.043Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578082",
+   "name": "Logística paneles Daisa",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2025-11-28T18:00:23.913Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Fletes-Módulos",
+     "value": "\"Fletes-Módulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-11-07",
+     "value": "{\"date\":\"2025-11-07\",\"changed_at\":\"2025-11-28T18:00:36.308Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-12-03",
+     "value": "{\"date\":\"2025-12-03\",\"changed_at\":\"2025-12-03T21:34:08.969Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "1430",
+     "value": "\"1430\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "1430",
+     "value": "\"1430\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-12-03T21:34:22.985Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582563",
+   "name": "Visitas técnicas para sistema fotovoltáico 2/2",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-25T16:41:52.111Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-10-10",
+     "value": "{\"date\":\"2025-10-10\",\"changed_at\":\"2025-11-25T16:42:06.100Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2025-12-05",
+     "value": "{\"date\":\"2025-12-05\",\"changed_at\":\"2025-12-05T21:46:36.253Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "2958",
+     "value": "\"2958\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "2958",
+     "value": "\"2958\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2025-12-05T21:46:59.468Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Xentric Anahuac Suites",
+     "value": "{\"ids\":[3]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Xentric Anahuac Suites",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578211",
+   "name": "Empalme con riel, clips de conexión, tbolt M8-KR18",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-03T19:05:55.778Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Montaje de rieles",
+     "value": "\"Materiales-Montaje de rieles\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-01-22",
+     "value": "{\"date\":\"2026-01-22\",\"changed_at\":\"2026-02-03T18:59:44.388Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-01-22",
+     "value": "{\"date\":\"2026-01-22\",\"changed_at\":\"2026-02-03T18:59:48.710Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "340.98",
+     "value": "\"340.98\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "340.98",
+     "value": "\"340.98\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-03T19:29:19.226Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578033",
+   "name": "Accesorio de anclaje, unión, abrazadera KR18",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-03T19:27:35.224Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Montaje de rieles",
+     "value": "\"Materiales-Montaje de rieles\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-01-30",
+     "value": "{\"date\":\"2026-01-30\",\"changed_at\":\"2026-02-03T19:26:54.569Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-01-30",
+     "value": "{\"date\":\"2026-01-30\",\"changed_at\":\"2026-02-03T19:27:01.716Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "8677.52",
+     "value": "\"8677.52\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "8677.52",
+     "value": "\"8677.52\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-03T19:29:45.425Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476578032",
+   "name": "Accesorio de anclaje, terminal de tierra, abrazadera de módulo, lámina trapezoidal (DAISA)",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-12T16:47:46.288Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Montaje de rieles",
+     "value": "\"Materiales-Montaje de rieles\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-07",
+     "value": "{\"date\":\"2026-02-07\",\"changed_at\":\"2026-02-09T17:47:52.554Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-07",
+     "value": "{\"date\":\"2026-02-07\",\"changed_at\":\"2026-02-09T17:47:54.779Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "968.75",
+     "value": "\"968.75\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "968.75",
+     "value": "\"968.75\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-09T17:51:44.919Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572648",
+   "name": "Tornillería, riel de montaje, accesorio de anclaje, accesorio de unión (lámina KR18 DAISA)",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-12T16:47:48.511Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Montaje de rieles",
+     "value": "\"Materiales-Montaje de rieles\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-07",
+     "value": "{\"date\":\"2026-02-07\",\"changed_at\":\"2026-02-09T17:49:40.574Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-07",
+     "value": "{\"date\":\"2026-02-07\",\"changed_at\":\"2026-02-09T17:49:43.605Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "2008.91",
+     "value": "\"2008.91\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "2008.91",
+     "value": "\"2008.91\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-09T17:51:48.105Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476569646",
+   "name": "Anticipo 10% paneles Infiniti Merida /Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T17:58:39.422Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-09",
+     "value": "{\"date\":\"2026-02-09\",\"changed_at\":\"2026-02-09T17:53:32.019Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-09",
+     "value": "{\"date\":\"2026-02-09\",\"changed_at\":\"2026-02-09T17:53:34.367Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "116999.38",
+     "value": "\"116999.38\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "116999.38",
+     "value": "\"116999.38\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-09T18:00:10.406Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Infiniti Merida-Modulos e Inversores",
+     "value": "{\"ids\":[26]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Infiniti Merida",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581818",
+   "name": "Riel de montaje, accesorio de anclaje, accesorio de unión, lfoot, tornillería (KR18 DAISA)",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T18:19:38.219Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Montaje de rieles",
+     "value": "\"Materiales-Montaje de rieles\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-09",
+     "value": "{\"date\":\"2026-02-09\",\"changed_at\":\"2026-02-09T18:18:47.484Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-09",
+     "value": "{\"date\":\"2026-02-09\",\"changed_at\":\"2026-02-09T18:18:49.571Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "2082.28",
+     "value": "\"2082.28\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "2082.28",
+     "value": "\"2082.28\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-09T18:55:43.935Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476586321",
+   "name": "Hormigón Daisa / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-09T18:35:22.024Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Montaje de rieles",
+     "value": "\"Materiales-Montaje de rieles\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-09",
+     "value": "{\"date\":\"2026-02-09\",\"changed_at\":\"2026-02-09T18:33:46.925Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-09",
+     "value": "{\"date\":\"2026-02-09\",\"changed_at\":\"2026-02-09T18:33:48.847Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "14700",
+     "value": "\"14700\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "14700",
+     "value": "\"14700\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-11T17:16:12.898Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476580705",
+   "name": "Segundo anticipo 10% paneles Infiniti Merida / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-16T19:13:43.082Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-10",
+     "value": "{\"date\":\"2026-02-10\",\"changed_at\":\"2026-02-16T19:11:30.044Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-10",
+     "value": "{\"date\":\"2026-02-10\",\"changed_at\":\"2026-02-16T19:11:32.903Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "116999.38",
+     "value": "\"116999.38\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "116999.38",
+     "value": "\"116999.38\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-16T19:14:36.278Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Infiniti Merida-Modulos e Inversores",
+     "value": "{\"ids\":[26]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Infiniti Merida",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476581009",
+   "name": "Servicios logísticos / Yeyo (Checo y Averanda) / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-16T19:24:24.663Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-11",
+     "value": "{\"date\":\"2026-02-11\",\"changed_at\":\"2026-02-16T19:23:36.247Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-11",
+     "value": "{\"date\":\"2026-02-11\",\"changed_at\":\"2026-02-16T19:23:39.713Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "235166.8",
+     "value": "\"235166.8\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "235166.8",
+     "value": "\"235166.8\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-16T19:37:34.500Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Averanda 739-Modulos e inversores",
+     "value": "{\"ids\":[20]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Averanda 739",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476564646",
+   "name": "Visita técnica IFOOD / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2026-02-10T19:41:47.769Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-09",
+     "value": "{\"date\":\"2026-02-09\",\"changed_at\":\"2026-02-10T19:41:11.389Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-13",
+     "value": "{\"date\":\"2026-02-13\",\"changed_at\":\"2026-02-10T19:41:14.668Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "1721.25",
+     "value": "\"1721.25\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "1721.25",
+     "value": "\"1721.25\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-16T19:46:28.700Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "IFOOD-Preliminar",
+     "value": "{\"ids\":[27]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "IFOOD",
+     "value": "{\"ids\":[23]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476564408",
+   "name": "Instalación de sistema fotovoltaico en Polanco / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2025-11-03T20:22:24.400Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2025-10-16",
+     "value": "{\"date\":\"2025-10-16\",\"changed_at\":\"2025-11-03T19:42:51.476Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-06",
+     "value": "{\"date\":\"2026-02-06\",\"changed_at\":\"2026-02-09T17:29:23.139Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "25427.2",
+     "value": "\"25427.2\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "25427.2",
+     "value": "\"25427.2\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-16T19:48:12.060Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Eugenio Sue-Bases",
+     "value": "{\"ids\":[4]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Eugenio Sue",
+     "value": "{\"ids\":[3]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476586256",
+   "name": "Complemento de pago 68 módulos Infiniti / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-16T19:52:28.518Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-13",
+     "value": "{\"date\":\"2026-02-13\",\"changed_at\":\"2026-02-16T19:52:01.893Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-13",
+     "value": "{\"date\":\"2026-02-13\",\"changed_at\":\"2026-02-16T19:52:04.131Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "15961.6",
+     "value": "\"15961.6\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "15961.6",
+     "value": "\"15961.6\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-16T19:53:42.611Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Infiniti Merida-Modulos e Inversores",
+     "value": "{\"ids\":[26]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Infiniti Merida",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476582020",
+   "name": "Levantamiento de SFV Pueblo Bonito anticipo 30%",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-02-16T19:56:25.001Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Estudios",
+     "value": "\"Ingeniería-Estudios\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-16",
+     "value": "{\"date\":\"2026-02-16\",\"changed_at\":\"2026-02-16T19:54:28.089Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-16",
+     "value": "{\"date\":\"2026-02-16\",\"changed_at\":\"2026-02-16T19:54:30.374Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "8874",
+     "value": "\"8874\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "8874",
+     "value": "\"8874\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-16T19:58:09.901Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Pueblo Bonito-Preliminar",
+     "value": "{\"ids\":[28]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Pueblo Bonito",
+     "value": "{\"ids\":[24]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476572676",
+   "name": "Material peso muerto Daisa",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-23T21:27:00.966Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Montaje de rieles",
+     "value": "\"Materiales-Montaje de rieles\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-01-28",
+     "value": "{\"date\":\"2026-01-28\",\"changed_at\":\"2026-02-23T21:27:31.334Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-01-28",
+     "value": "{\"date\":\"2026-01-28\",\"changed_at\":\"2026-02-23T21:26:30.057Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "1828.62",
+     "value": "\"1828.62\"",
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "1828.62",
+     "value": "\"1828.62\"",
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-23T21:26:45.545Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476559214",
+   "name": "Instalación Infiniti / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2026-02-23T22:35:10.353Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-19",
+     "value": "{\"date\":\"2026-02-19\",\"changed_at\":\"2026-02-23T22:34:54.530Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-19",
+     "value": "{\"date\":\"2026-02-19\",\"changed_at\":\"2026-02-23T22:34:57.267Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "50000",
+     "value": "\"50000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "50000",
+     "value": "\"50000\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-23T22:36:13.970Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Infiniti Merida-Modulos e Inversores",
+     "value": "{\"ids\":[26]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Infiniti Merida",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476557268",
+   "name": "Charola Getsa (Daisa) / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-02-23T22:42:38.110Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales",
+     "value": "\"Materiales\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2026-02-23T22:40:24.742Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-23",
+     "value": "{\"date\":\"2026-02-23\",\"changed_at\":\"2026-02-23T22:40:27.311Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "57236.12",
+     "value": "\"57236.12\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "57236.12",
+     "value": "\"57236.12\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-23T22:43:34.408Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476564311",
+   "name": "Finiquito VT TEXMEX y Teodoro / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2026-02-23T22:54:56.205Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-20",
+     "value": "{\"date\":\"2026-02-20\",\"changed_at\":\"2026-02-23T22:54:27.864Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-20",
+     "value": "{\"date\":\"2026-02-20\",\"changed_at\":\"2026-02-23T22:54:30.429Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "2500",
+     "value": "\"2500\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "2500",
+     "value": "\"2500\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-02-23T22:55:48.690Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476575688",
+   "name": "Estructura Infiniti / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Materiales",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2026-03-02T15:27:27.577Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Materiales-Modulos",
+     "value": "\"Materiales-Modulos\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-27",
+     "value": "{\"date\":\"2026-02-27\",\"changed_at\":\"2026-03-02T15:26:57.510Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-27",
+     "value": "{\"date\":\"2026-02-27\",\"changed_at\":\"2026-03-02T15:26:59.922Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "30000",
+     "value": "\"30000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "30000",
+     "value": "\"30000\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-03-02T15:27:20.239Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Infiniti Merida-Modulos e Inversores",
+     "value": "{\"ids\":[26]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Infiniti Merida",
+     "value": "{\"ids\":[22]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476564663",
+   "name": "3 servicios Daisa / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-02T15:30:31.867Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Maniobras",
+     "value": "\"Maniobras\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-27",
+     "value": "{\"date\":\"2026-02-27\",\"changed_at\":\"2026-03-02T15:29:57.769Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-27",
+     "value": "{\"date\":\"2026-02-27\",\"changed_at\":\"2026-03-02T15:30:00.909Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "4800",
+     "value": "\"4800\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "4800",
+     "value": "\"4800\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-03-02T15:30:16.673Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476586258",
+   "name": "Limpieza Daisa / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-06T22:15:14.029Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Otros",
+     "value": "\"Otros\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-06",
+     "value": "{\"date\":\"2026-02-06\",\"changed_at\":\"2026-03-06T22:14:15.604Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-06",
+     "value": "{\"date\":\"2026-02-06\",\"changed_at\":\"2026-03-06T22:14:22.842Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "13000",
+     "value": "\"13000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "13000",
+     "value": "\"13000\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-03-06T22:15:01.447Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Gastos administrativos",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476569610",
+   "name": "Instalación Daisa / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-06T22:27:52.694Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-06",
+     "value": "{\"date\":\"2026-02-06\",\"changed_at\":\"2026-03-06T22:27:25.630Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-06",
+     "value": "{\"date\":\"2026-02-06\",\"changed_at\":\"2026-03-06T22:27:30.224Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "67056",
+     "value": "\"67056\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "67056",
+     "value": "\"67056\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-03-06T22:27:41.299Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476580729",
+   "name": "Servicio de ingeniería Daisa /Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Ejecución",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-06T22:46:03.385Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-07",
+     "value": "{\"date\":\"2026-02-07\",\"changed_at\":\"2026-03-06T22:45:23.058Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-02-07",
+     "value": "{\"date\":\"2026-02-07\",\"changed_at\":\"2026-03-06T22:45:29.483Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "50000",
+     "value": "\"50000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "50000",
+     "value": "\"50000\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-03-06T22:45:55.366Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "Daisa",
+     "value": "{\"ids\":[1]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476564286",
+   "name": "Instalación Daisa / Klar",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2026-02-16T20:14:37.308Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Instalaciones",
+     "value": "\"Ingeniería-Instalaciones\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-02-16",
+     "value": "{\"date\":\"2026-02-16\",\"changed_at\":\"2026-02-16T20:14:14.915Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-02",
+     "value": "{\"date\":\"2026-03-02\",\"changed_at\":\"2026-03-09T19:58:52.665Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "42376",
+     "value": "\"42376\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "42376",
+     "value": "\"42376\"",
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-03-09T19:59:04.244Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": "Daisa-Modulos e inversores",
+     "value": "{\"ids\":[16]}",
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": "DAISA",
+     "value": "{\"ids\":[20]}",
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11476557435",
+   "name": "Visita técnica Calimax",
+   "group": {
+    "id": "group_mky0qax8",
+    "title": "Pagado"
+   },
+   "column_values": [
+    {
+     "id": "subtasks_mkxb6znr",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "color_mkx89tdw",
+     "text": "Proyectos",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2026-03-09T20:02:35.947Z\"}",
+     "column": {
+      "title": "Categoría"
+     }
+    },
+    {
+     "id": "text_mkx8k8fw",
+     "text": "Ingeniería-Visitas técnicas",
+     "value": "\"Ingeniería-Visitas técnicas\"",
+     "column": {
+      "title": "Descripción"
+     }
+    },
+    {
+     "id": "date_mkx8n09t",
+     "text": "2026-03-05",
+     "value": "{\"date\":\"2026-03-05\",\"changed_at\":\"2026-03-09T20:02:22.065Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "date_mkxd6htq",
+     "text": "2026-03-05",
+     "value": "{\"date\":\"2026-03-05\",\"changed_at\":\"2026-03-09T20:02:24.469Z\"}",
+     "column": {
+      "title": "Fecha programación pago"
+     }
+    },
+    {
+     "id": "numeric_mkx8s8rn",
+     "text": "15000",
+     "value": "\"15000\"",
+     "column": {
+      "title": "MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0ak3m",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "DLLS"
+     }
+    },
+    {
+     "id": "numeric_mkx8wrc9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado MXN"
+     }
+    },
+    {
+     "id": "numeric_mky0gg3q",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Pagado DLLS"
+     }
+    },
+    {
+     "id": "formula_mkxdj8ga",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Saldo"
+     }
+    },
+    {
+     "id": "color_mkx8gyx8",
+     "text": "Pagado",
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2026-03-09T20:02:47.192Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "dropdown_mkxcfe00",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto-Etapa"
+     }
+    },
+    {
+     "id": "dropdown_mky1999r",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Proyecto"
+     }
+    },
+    {
+     "id": "dropdown_mm0fy2yw",
+     "text": "Costos de obra",
+     "value": "{\"ids\":[2]}",
+     "column": {
+      "title": "Categoría 2"
+     }
+    }
+   ]
+  }
+ ]
+}

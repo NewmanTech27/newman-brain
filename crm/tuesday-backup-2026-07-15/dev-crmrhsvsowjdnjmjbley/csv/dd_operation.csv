@@ -1,0 +1,2 @@
+id,deal_id,counterparty_id,facility_id,tipo,monto_mxn,moneda,fecha,instrumento_monetario,uma_multiplo,aggregated_6m,threshold_flag,created_by,created_at
+4b0853c9-fe32-4391-92e1-a69895fec9a1,,,,mutuo,8000000,MXN,2026-06-28,,70000,,aviso,,2026-07-08 22:47:47.024019+00

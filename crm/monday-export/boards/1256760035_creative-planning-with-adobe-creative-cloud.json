@@ -1,0 +1,455 @@
+{
+ "board": {
+  "id": "1256760035",
+  "name": "Creative Planning with Adobe Creative Cloud",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "Work comfortably inside Adobe CC while collaborating seamlessly with your team, tracking progress, and reaching goals with this template. Stay on top of your creative plans in one central place.",
+  "workspace": {
+   "id": "333637",
+   "name": "Comercial"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subitems",
+   "title": "Subitems",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[1256760068]}"
+  },
+  {
+   "id": "person",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status_1",
+   "title": "Priority",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"1\":106,\"106\":1},\"labels\":{\"0\":\"Medium\",\"1\":\"Low\",\"12\":\"High\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"5\":3,\"12\":0},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#74afcc\",\"border\":\"#74afcc\",\"var_name\":\"river\"},\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"}}}"
+  },
+  {
+   "id": "status8",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"12\":107,\"107\":12},\"labels\":{\"0\":\"Working on it\",\"1\":\"Live\",\"2\":\"Stuck\",\"12\":\"Pending review\",\"102\":\"Create your own\"},\"labels_positions_v2\":{\"0\":1,\"1\":3,\"2\":0,\"5\":4,\"12\":2,\"102\":5},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"12\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"102\":{\"color\":\"#faa1f1\",\"border\":\"#faa1f1\",\"var_name\":\"bubble\"}}}"
+  },
+  {
+   "id": "date",
+   "title": "Due Date",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "files",
+   "title": "Adobe File",
+   "type": "file",
+   "settings_str": "{}"
+  },
+  {
+   "id": "channel",
+   "title": "Channel",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"name\":\"Youtube\",\"id\":3},{\"name\":\"Facebook\",\"id\":4},{\"name\":\"Adwords\",\"id\":7},{\"name\":\"Instagram\",\"id\":13},{\"name\":\"All Socials\",\"id\":16},{\"name\":\"Twitter\",\"id\":17},{\"name\":\"Create your own\",\"id\":102}]}"
+  },
+  {
+   "id": "text",
+   "title": "Brief",
+   "type": "text",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Upcoming Projects"
+  },
+  {
+   "id": "new_group",
+   "title": "Needs Approval"
+  },
+  {
+   "id": "group_title",
+   "title": "Active Projects"
+  }
+ ],
+ "items": [
+  {
+   "id": "1256760191",
+   "name": "Hi there!   👋     Read here first →",
+   "group": {
+    "id": "topics",
+    "title": "Upcoming Projects"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status8",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Due Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Adobe File"
+     }
+    },
+    {
+     "id": "channel",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "text",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Brief"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760122",
+   "name": "Product update post",
+   "group": {
+    "id": "topics",
+    "title": "Upcoming Projects"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "High",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2020-09-23T06:22:54.398Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-09-23T06:21:07.266Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-04-19 11:00",
+     "value": "{\"date\":\"2021-04-19\",\"time\":\"09:00:00\",\"changed_at\":\"2020-10-05T09:43:03.455Z\"}",
+     "column": {
+      "title": "Due Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/217405366/Screen%20Shot%202020-05-21%20at%2011.16.27.png",
+     "value": "{\"files\":[{\"name\":\"Screen Shot 2020-05-21 at 11.16.27.png\",\"assetId\":217405366,\"isImage\":\"true\",\"fileType\":\"ASSET\"}]}",
+     "column": {
+      "title": "Adobe File"
+     }
+    },
+    {
+     "id": "channel",
+     "text": "Facebook",
+     "value": "{\"ids\":[4],\"changed_at\":\"2020-09-23T06:27:15.776Z\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Update followers of product updates",
+     "value": "\"Update followers of product updates\"",
+     "column": {
+      "title": "Brief"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760170",
+   "name": "Welcome video - product 2",
+   "group": {
+    "id": "topics",
+    "title": "Upcoming Projects"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "Low",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-09-23T06:17:40.515Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Stuck",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2020-09-23T06:21:00.415Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-04-15 08:00",
+     "value": "{\"date\":\"2021-04-15\",\"time\":\"06:00:00\",\"changed_at\":\"2020-10-05T09:42:58.641Z\"}",
+     "column": {
+      "title": "Due Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/217405372/Group%202761.png",
+     "value": "{\"files\":[{\"name\":\"Group 2761.png\",\"assetId\":217405372,\"isImage\":\"true\",\"fileType\":\"ASSET\"}]}",
+     "column": {
+      "title": "Adobe File"
+     }
+    },
+    {
+     "id": "channel",
+     "text": "Youtube",
+     "value": "{\"ids\":[3],\"changed_at\":\"2020-09-23 06:16:13 UTC\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Intro tutorial",
+     "value": "\"Intro tutorial\"",
+     "column": {
+      "title": "Brief"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760222",
+   "name": "Working on the product's photos",
+   "group": {
+    "id": "new_group",
+    "title": "Needs Approval"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "High",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2020-09-23T06:21:16.280Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Pending review",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2020-09-23T06:22:45.194Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-04-22 14:00",
+     "value": "{\"date\":\"2021-04-22\",\"time\":\"12:00:00\",\"changed_at\":\"2020-10-05T09:42:36.323Z\"}",
+     "column": {
+      "title": "Due Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/217405391/Screen%20Shot%202020-05-21%20at%2011.16.27.png",
+     "value": "{\"files\":[{\"name\":\"Screen Shot 2020-05-21 at 11.16.27.png\",\"assetId\":217405391,\"isImage\":\"true\",\"fileType\":\"ASSET\"}]}",
+     "column": {
+      "title": "Adobe File"
+     }
+    },
+    {
+     "id": "channel",
+     "text": "Instagram",
+     "value": "{\"ids\":[13],\"changed_at\":\"2020-09-23T06:24:57.075Z\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Added filters to enhance product image",
+     "value": "\"Added filters to enhance product image\"",
+     "column": {
+      "title": "Brief"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760197",
+   "name": "Landing Page Designs",
+   "group": {
+    "id": "group_title",
+    "title": "Active Projects"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "Medium",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-09-23T06:22:56.048Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Live",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-09-23T06:22:06.271Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-04-19 08:00",
+     "value": "{\"date\":\"2021-04-19\",\"time\":\"06:00:00\",\"changed_at\":\"2020-10-05T09:42:28.943Z\"}",
+     "column": {
+      "title": "Due Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/217405379/Screen%20Shot%202020-05-21%20at%2011.16.27.png",
+     "value": "{\"files\":[{\"name\":\"Screen Shot 2020-05-21 at 11.16.27.png\",\"assetId\":217405379,\"isImage\":\"true\",\"fileType\":\"ASSET\"}]}",
+     "column": {
+      "title": "Adobe File"
+     }
+    },
+    {
+     "id": "channel",
+     "text": "All Socials",
+     "value": "{\"ids\":[16],\"changed_at\":\"2020-09-23T06:29:02.535Z\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "text",
+     "text": "Shared creatives for LPs",
+     "value": "\"Shared creatives for LPs\"",
+     "column": {
+      "title": "Brief"
+     }
+    }
+   ]
+  }
+ ]
+}

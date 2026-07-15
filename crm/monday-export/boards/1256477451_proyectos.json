@@ -1,0 +1,753 @@
+{
+ "board": {
+  "id": "1256477451",
+  "name": "Proyectos",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "",
+  "workspace": {
+   "id": "333637",
+   "name": "Comercial"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "people0",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{\"max_people_allowed\":\"0\"}"
+  },
+  {
+   "id": "subitems",
+   "title": "Subitems",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[1256477491]}"
+  },
+  {
+   "id": "status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"8\":11,\"11\":8},\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\",\"3\":\"Planned\",\"4\":\"Up Next\",\"6\":\"Ready for review\",\"7\":\"Future steps\",\"8\":\"At risk\",\"9\":\"On hold\",\"10\":\"Blocked\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":2,\"3\":4,\"4\":5,\"5\":10,\"6\":6,\"7\":3,\"8\":7,\"9\":8,\"10\":9},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"8\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"9\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"10\":{\"color\":\"#333333\",\"border\":\"#000\",\"var_name\":\"soft-black\"}}}"
+  },
+  {
+   "id": "timeline",
+   "title": "Timeline",
+   "type": "timeline",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "date_1",
+   "title": "Actual Date",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "formula2",
+   "title": "Working days",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"WORKDAYS({timeline#End},{timeline#Start})\"}"
+  },
+  {
+   "id": "numbers45",
+   "title": "Planned effort",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"custom\",\"custom_unit\":\" hours\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "numbers0",
+   "title": "Effort spent",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"custom\",\"custom_unit\":\"hours\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "formula",
+   "title": "Effort deficit",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{numbers45}-{numbers0}\"}"
+  },
+  {
+   "id": "labor_budget_spent",
+   "title": "Cost",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "dropdown4",
+   "title": "Cost type",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"id\":1,\"name\":\"Materials\"},{\"id\":2,\"name\":\"Transportation\"},{\"id\":3,\"name\":\"Legal\"},{\"id\":4,\"name\":\"Direct work\"},{\"id\":5,\"name\":\"Management\"}]}"
+  },
+  {
+   "id": "status_1",
+   "title": "Issue",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"2\":\"Yes\",\"5\":\"NO\"},\"labels_positions_v2\":{\"2\":1,\"5\":0},\"labels_colors\":{\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"}}}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "new_group",
+   "title": "Relaciones Publicas"
+  },
+  {
+   "id": "new_group29179",
+   "title": "Ventas"
+  },
+  {
+   "id": "new_group43041",
+   "title": "Marketing"
+  },
+  {
+   "id": "topics",
+   "title": "Business Intelligence"
+  },
+  {
+   "id": "duplicate_of_project_a",
+   "title": "Costumer Service"
+  }
+ ],
+ "items": [
+  {
+   "id": "1256707023",
+   "name": "Ventas por sucursal",
+   "group": {
+    "id": "new_group29179",
+    "title": "Ventas"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Timeline"
+     }
+    },
+    {
+     "id": "date_1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Date"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Working days"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Planned effort"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort spent"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort deficit"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cost"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cost type"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "NO",
+     "value": null,
+     "column": {
+      "title": "Issue"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256707341",
+   "name": "Ventas Coorporativas",
+   "group": {
+    "id": "new_group29179",
+    "title": "Ventas"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Timeline"
+     }
+    },
+    {
+     "id": "date_1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Date"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Working days"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Planned effort"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort spent"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort deficit"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cost"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cost type"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "NO",
+     "value": null,
+     "column": {
+      "title": "Issue"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256709098",
+   "name": "Medios Digitales e Imagen",
+   "group": {
+    "id": "new_group43041",
+    "title": "Marketing"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Timeline"
+     }
+    },
+    {
+     "id": "date_1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Date"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Working days"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Planned effort"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort spent"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort deficit"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cost"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cost type"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "NO",
+     "value": null,
+     "column": {
+      "title": "Issue"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256709301",
+   "name": "Estrategia Comercial",
+   "group": {
+    "id": "new_group43041",
+    "title": "Marketing"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Timeline"
+     }
+    },
+    {
+     "id": "date_1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Date"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Working days"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Planned effort"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort spent"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort deficit"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cost"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cost type"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "NO",
+     "value": null,
+     "column": {
+      "title": "Issue"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256717565",
+   "name": "Penetracion Panama",
+   "group": {
+    "id": "topics",
+    "title": "Business Intelligence"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Timeline"
+     }
+    },
+    {
+     "id": "date_1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Date"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Working days"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Planned effort"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort spent"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort deficit"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cost"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cost type"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "NO",
+     "value": null,
+     "column": {
+      "title": "Issue"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256719047",
+   "name": "Estudio Global",
+   "group": {
+    "id": "topics",
+    "title": "Business Intelligence"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Timeline"
+     }
+    },
+    {
+     "id": "date_1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Date"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Working days"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Planned effort"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort spent"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Effort deficit"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cost"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Cost type"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "NO",
+     "value": null,
+     "column": {
+      "title": "Issue"
+     }
+    }
+   ]
+  }
+ ]
+}

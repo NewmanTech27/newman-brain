@@ -1,0 +1,2767 @@
+{
+ "board": {
+  "id": "1452260149",
+  "name": "Tablero del proyecto",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "",
+  "workspace": {
+   "id": "583425",
+   "name": "Mejora Continua"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Nombre",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "people0",
+   "title": "Propietario",
+   "type": "people",
+   "settings_str": "{\"max_people_allowed\":\"0\"}"
+  },
+  {
+   "id": "status",
+   "title": "Estado",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Trabajando en ello\",\"1\":\"Listo\",\"2\":\"Interrumpido\",\"7\":\"Siguientes pasos\"},\"labels_positions_v2\":{\"0\":0,\"1\":1,\"2\":2,\"5\":4,\"7\":3},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+  },
+  {
+   "id": "timeline",
+   "title": "Cronograma planificado",
+   "type": "timeline",
+   "settings_str": "{}"
+  },
+  {
+   "id": "dependency",
+   "title": "Predecesor",
+   "type": "dependency",
+   "settings_str": "{\"boardIds\":[],\"dependency_mode\":null}"
+  },
+  {
+   "id": "labor_budget_spent",
+   "title": "Gastos",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "dropdown4",
+   "title": "Tipo de costo",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"id\":1,\"name\":\"Materials\"},{\"id\":2,\"name\":\"Transportation\"},{\"id\":3,\"name\":\"Legal\"},{\"id\":4,\"name\":\"Direct work\"},{\"id\":5,\"name\":\"Management\"}]}"
+  },
+  {
+   "id": "numbers45",
+   "title": "Esfuerzo planificado",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"custom\",\"custom_unit\":\" hour\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "numbers0",
+   "title": "Esfuerzo utilizado",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"custom\",\"custom_unit\":\"horas\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "date1",
+   "title": "Fecha real de finalización",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "formula2",
+   "title": "Días restantes/demora",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"ROUND(DAYS({timeline#End},{date1}),0)\"}"
+  },
+  {
+   "id": "formula5",
+   "title": "¿A tiempo?",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"if(days({date1},{timeline#End})>0,\\\"atrasado\\\",\\\"a tiempo\\\")\"}"
+  },
+  {
+   "id": "status_1",
+   "title": "Asunto",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"2\":\"Sí\",\"5\":\"No\"},\"labels_positions_v2\":{\"2\":1,\"5\":0},\"labels_colors\":{\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"}}}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "new_group29179",
+   "title": "Planificación"
+  },
+  {
+   "id": "new_group43041",
+   "title": "Ejecución"
+  },
+  {
+   "id": "topics",
+   "title": "Lanzamiento"
+  },
+  {
+   "id": "duplicate_of_project_a",
+   "title": "Cierre"
+  },
+  {
+   "id": "new_group",
+   "title": "Hitos"
+  }
+ ],
+ "items": [
+  {
+   "id": "1452260212",
+   "name": "Actividad 1",
+   "group": {
+    "id": "new_group29179",
+    "title": "Planificación"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-08-24T14:51:21.995Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-03-18 - 2020-03-20",
+     "value": "{\"to\":\"2020-03-20\",\"from\":\"2020-03-18\",\"changed_at\":\"2020-05-26T22:35:28.835Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "17000",
+     "value": "\"17000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Materials",
+     "value": "{\"ids\":[1],\"changed_at\":\"2020-01-20T17:16:53.816Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "15",
+     "value": "\"15\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "16",
+     "value": "\"16\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-03-18",
+     "value": "{\"date\":\"2020-03-18\",\"changed_at\":\"2020-05-26T22:42:27.297Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260239",
+   "name": "Actividad 2",
+   "group": {
+    "id": "new_group29179",
+    "title": "Planificación"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-08-24T14:38:56.786Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-03-21 - 2020-03-25",
+     "value": "{\"to\":\"2020-03-25\",\"from\":\"2020-03-21\",\"changed_at\":\"2020-05-26T22:36:55.668Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": "{\"ids\":[],\"changed_at\":\"2020-01-20T17:16:59.982Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "45",
+     "value": "\"45\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "47",
+     "value": "\"47\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-03-20",
+     "value": "{\"date\":\"2020-03-20\",\"changed_at\":\"2020-05-26T22:43:01.877Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260193",
+   "name": "Actividad 3",
+   "group": {
+    "id": "new_group29179",
+    "title": "Planificación"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-11-13T16:17:25.995Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-03-28 - 2020-03-30",
+     "value": "{\"to\":\"2020-03-30\",\"from\":\"2020-03-28\",\"changed_at\":\"2020-05-26T22:36:56.611Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "25000",
+     "value": "\"25000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Transportation",
+     "value": "{\"ids\":[2],\"changed_at\":\"2020-01-20T17:17:04.663Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "36",
+     "value": "\"36\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "52",
+     "value": "\"52\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-03-26",
+     "value": "{\"date\":\"2020-03-26\",\"changed_at\":\"2020-05-26T22:43:05.995Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260264",
+   "name": "Actividad 4",
+   "group": {
+    "id": "new_group29179",
+    "title": "Planificación"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-11-13T16:17:25.995Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-03-31 - 2020-04-05",
+     "value": "{\"to\":\"2020-04-05\",\"from\":\"2020-03-31\",\"changed_at\":\"2020-05-26T22:36:57.297Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "20",
+     "value": "\"20\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "25",
+     "value": "\"25\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-04-05",
+     "value": "{\"date\":\"2020-04-05\",\"changed_at\":\"2020-05-26T22:43:12.829Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260261",
+   "name": "Actividad 5",
+   "group": {
+    "id": "new_group29179",
+    "title": "Planificación"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-11-13T16:17:25.995Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-04-07 - 2020-04-12",
+     "value": "{\"to\":\"2020-04-12\",\"from\":\"2020-04-07\",\"changed_at\":\"2020-05-26T22:36:58.202Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "12500",
+     "value": "\"12500\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Direct work",
+     "value": "{\"ids\":[4],\"changed_at\":\"2020-01-20T17:17:08.811Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "38",
+     "value": "\"38\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "44",
+     "value": "\"44\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-04-18",
+     "value": "{\"date\":\"2020-04-18\",\"changed_at\":\"2020-05-26T22:43:18.701Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260230",
+   "name": "Etapa contractual: Planificación",
+   "group": {
+    "id": "new_group29179",
+    "title": "Planificación"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-04-22T13:14:57.449Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-04-13 - 2020-04-13",
+     "value": "{\"to\":\"2020-04-13\",\"from\":\"2020-04-13\",\"changed_at\":\"2021-03-15T16:04:05.165Z\",\"visualization_type\":\"milestone\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "6",
+     "value": "\"6\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-05-13",
+     "value": "{\"date\":\"2020-05-13\",\"changed_at\":\"2020-05-26T22:46:12.560Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260190",
+   "name": "Actividad 6",
+   "group": {
+    "id": "new_group43041",
+    "title": "Ejecución"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-08-24T15:28:42.075Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-04-14 - 2020-04-17",
+     "value": "{\"to\":\"2020-04-17\",\"from\":\"2020-04-14\",\"changed_at\":\"2020-05-26T22:37:20.824Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "23000",
+     "value": "\"23000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Transportation",
+     "value": "{\"ids\":[2],\"changed_at\":\"2020-01-20T17:17:15.510Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "30",
+     "value": "\"30\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "36",
+     "value": "\"36\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-04-28",
+     "value": "{\"date\":\"2020-04-28\",\"changed_at\":\"2020-05-26T22:43:29.605Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260246",
+   "name": "Actividad 7",
+   "group": {
+    "id": "new_group43041",
+    "title": "Ejecución"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-08-24T15:28:43.817Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-04-20 - 2020-04-22",
+     "value": "{\"to\":\"2020-04-22\",\"from\":\"2020-04-20\",\"changed_at\":\"2020-05-26T22:37:30.499Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "18000",
+     "value": "\"18000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Legal",
+     "value": "{\"ids\":[3],\"changed_at\":\"2020-01-20T17:17:18.620Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "9",
+     "value": "\"9\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "12",
+     "value": "\"12\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-05-01",
+     "value": "{\"date\":\"2020-05-01\",\"changed_at\":\"2020-05-26T22:43:52.158Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260256",
+   "name": "Actividad 8",
+   "group": {
+    "id": "new_group43041",
+    "title": "Ejecución"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2019-11-13T16:40:35.932Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-04-23 - 2020-04-29",
+     "value": "{\"to\":\"2020-04-29\",\"from\":\"2020-04-23\",\"changed_at\":\"2020-05-26T22:37:36.338Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "9000",
+     "value": "\"9000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Transportation",
+     "value": "{\"ids\":[2],\"changed_at\":\"2020-04-22T13:24:54.685Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "16",
+     "value": "\"16\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-05-08",
+     "value": "{\"date\":\"2020-05-08\",\"changed_at\":\"2020-05-26T22:44:32.246Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260244",
+   "name": "Actividad 9",
+   "group": {
+    "id": "new_group43041",
+    "title": "Ejecución"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-04-22T13:20:51.513Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-04-30 - 2020-05-13",
+     "value": "{\"to\":\"2020-05-13\",\"from\":\"2020-04-30\",\"changed_at\":\"2020-05-26T22:37:52.099Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "12000",
+     "value": "\"12000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Legal",
+     "value": "{\"ids\":[3],\"changed_at\":\"2020-04-22T13:24:55.969Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "20",
+     "value": "\"20\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "27",
+     "value": "\"27\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-05-22",
+     "value": "{\"date\":\"2020-05-22\",\"changed_at\":\"2020-05-26T22:44:40.267Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260249",
+   "name": "Actividad 10",
+   "group": {
+    "id": "new_group43041",
+    "title": "Ejecución"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-04-22T13:23:13.192Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-05-13 - 2020-05-14",
+     "value": "{\"to\":\"2020-05-14\",\"from\":\"2020-05-13\",\"changed_at\":\"2020-05-26T22:40:36.767Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "5000",
+     "value": "\"5000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Direct work",
+     "value": "{\"ids\":[4],\"changed_at\":\"2020-04-22T13:24:58.492Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "16",
+     "value": "\"16\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "20",
+     "value": "\"20\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-05-29",
+     "value": "{\"date\":\"2020-05-29\",\"changed_at\":\"2020-05-26T22:44:50.469Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260259",
+   "name": "Etapa contractual: Ejecución",
+   "group": {
+    "id": "new_group43041",
+    "title": "Ejecución"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-04-22T13:14:59.053Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-05-14 - 2020-05-14",
+     "value": "{\"to\":\"2020-05-14\",\"from\":\"2020-05-14\",\"changed_at\":\"2020-05-26T22:41:57.644Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "4",
+     "value": "\"4\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "15",
+     "value": "\"15\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-05-14",
+     "value": "{\"date\":\"2020-05-14\",\"changed_at\":\"2020-05-26T22:46:20.244Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260219",
+   "name": "Actividad 11",
+   "group": {
+    "id": "topics",
+    "title": "Lanzamiento"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Listo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-04-22T13:17:26.543Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-05-17 - 2020-05-22",
+     "value": "{\"to\":\"2020-05-22\",\"from\":\"2020-05-17\",\"changed_at\":\"2020-05-26T22:54:15.987Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "9000",
+     "value": "\"9000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Materials",
+     "value": "{\"ids\":[1],\"changed_at\":\"2020-04-22T13:25:01.546Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "5",
+     "value": "\"5\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "6",
+     "value": "\"6\"",
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "2020-06-02",
+     "value": "{\"date\":\"2020-06-02\",\"changed_at\":\"2020-05-26T22:45:00.540Z\"}",
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260226",
+   "name": "Actividad 12",
+   "group": {
+    "id": "topics",
+    "title": "Lanzamiento"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Trabajando en ello",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-05-26T22:45:02.633Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-05-24 - 2020-06-05",
+     "value": "{\"to\":\"2020-06-05\",\"from\":\"2020-05-24\",\"changed_at\":\"2020-05-26T22:54:16.921Z\",\"textual_value\":\"2020-05-09 - 2020-05-21\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "7000",
+     "value": "\"7000\"",
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": "Materials",
+     "value": "{\"ids\":[1],\"changed_at\":\"2020-04-22T13:25:02.614Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "6",
+     "value": "\"6\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260180",
+   "name": "Actividad 13",
+   "group": {
+    "id": "topics",
+    "title": "Lanzamiento"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Trabajando en ello",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-05-26T22:45:03.735Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-06-06 - 2020-06-12",
+     "value": "{\"to\":\"2020-06-12\",\"from\":\"2020-06-06\",\"changed_at\":\"2020-05-26T22:54:18.710Z\",\"textual_value\":\"2020-05-22 - 2020-05-28\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": "{\"ids\":[],\"changed_at\":\"2020-05-26T22:53:29.626Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "30",
+     "value": "\"30\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260247",
+   "name": "Actividad 14",
+   "group": {
+    "id": "topics",
+    "title": "Lanzamiento"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Trabajando en ello",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-05-26T22:45:05.463Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-06-12 - 2020-06-18",
+     "value": "{\"to\":\"2020-06-18\",\"from\":\"2020-06-12\",\"changed_at\":\"2020-05-26T22:54:08.149Z\",\"textual_value\":\"2020-05-30 - 2020-06-05\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": "{\"ids\":[],\"changed_at\":\"2020-05-26T22:53:32.707Z\"}",
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "8",
+     "value": "\"8\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260253",
+   "name": "Actividad 15",
+   "group": {
+    "id": "topics",
+    "title": "Lanzamiento"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Trabajando en ello",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-04-22T13:17:40.612Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-06-20 - 2020-06-27",
+     "value": "{\"to\":\"2020-06-27\",\"from\":\"2020-06-20\",\"changed_at\":\"2020-05-26T22:38:22.833Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "25",
+     "value": "\"25\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260234",
+   "name": "Etapa contractual: Lanzamiento",
+   "group": {
+    "id": "topics",
+    "title": "Lanzamiento"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2019-11-13T16:30:52.593Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-06-25 - 2020-06-25",
+     "value": "{\"to\":\"2020-06-25\",\"from\":\"2020-06-25\",\"changed_at\":\"2020-05-26T22:42:08.388Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "9",
+     "value": "\"9\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260242",
+   "name": "Actividad 16",
+   "group": {
+    "id": "duplicate_of_project_a",
+    "title": "Cierre"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2019-11-13T16:30:06.428Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-06-28 - 2020-07-03",
+     "value": "{\"to\":\"2020-07-03\",\"from\":\"2020-06-28\",\"changed_at\":\"2020-05-26T22:38:48.383Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "15",
+     "value": "\"15\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260265",
+   "name": "Actividad 17",
+   "group": {
+    "id": "duplicate_of_project_a",
+    "title": "Cierre"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2019-11-13T16:30:06.428Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-07-07 - 2020-07-16",
+     "value": "{\"to\":\"2020-07-16\",\"from\":\"2020-07-07\",\"changed_at\":\"2020-05-26T22:38:53.951Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "52",
+     "value": "\"52\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260184",
+   "name": "Actividad 18",
+   "group": {
+    "id": "duplicate_of_project_a",
+    "title": "Cierre"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2019-11-13T16:30:06.428Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-07-17 - 2020-07-21",
+     "value": "{\"to\":\"2020-07-21\",\"from\":\"2020-07-17\",\"changed_at\":\"2020-05-26T22:38:58.981Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "24",
+     "value": "\"24\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260240",
+   "name": "Actividad 19",
+   "group": {
+    "id": "duplicate_of_project_a",
+    "title": "Cierre"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2019-06-30T19:49:17.716Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-07-22 - 2020-07-24",
+     "value": "{\"to\":\"2020-07-24\",\"from\":\"2020-07-22\",\"changed_at\":\"2020-05-26T22:39:03.445Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "52",
+     "value": "\"52\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260208",
+   "name": "Actividad 20",
+   "group": {
+    "id": "duplicate_of_project_a",
+    "title": "Cierre"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-07-27 - 2020-08-13",
+     "value": "{\"to\":\"2020-08-13\",\"from\":\"2020-07-27\",\"changed_at\":\"2020-05-26T22:39:19.804Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "20",
+     "value": "\"20\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260201",
+   "name": "Actividad 21",
+   "group": {
+    "id": "duplicate_of_project_a",
+    "title": "Cierre"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-01-20T15:39:55.282Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-08-15 - 2020-08-18",
+     "value": "{\"to\":\"2020-08-18\",\"from\":\"2020-08-15\",\"changed_at\":\"2020-05-26T22:39:43.464Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "20",
+     "value": "\"20\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260197",
+   "name": "Etapa contractual: Cierre",
+   "group": {
+    "id": "duplicate_of_project_a",
+    "title": "Cierre"
+   },
+   "column_values": [
+    {
+     "id": "people0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Siguientes pasos",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2019-11-13T16:30:54.685Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-08-14 - 2020-08-14",
+     "value": "{\"to\":\"2020-08-14\",\"from\":\"2020-08-14\",\"changed_at\":\"2020-05-26T22:42:17.647Z\"}",
+     "column": {
+      "title": "Cronograma planificado"
+     }
+    },
+    {
+     "id": "dependency",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Predecesor"
+     }
+    },
+    {
+     "id": "labor_budget_spent",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gastos"
+     }
+    },
+    {
+     "id": "dropdown4",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo de costo"
+     }
+    },
+    {
+     "id": "numbers45",
+     "text": "5",
+     "value": "\"5\"",
+     "column": {
+      "title": "Esfuerzo planificado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Esfuerzo utilizado"
+     }
+    },
+    {
+     "id": "date1",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha real de finalización"
+     }
+    },
+    {
+     "id": "formula2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Días restantes/demora"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "¿A tiempo?"
+     }
+    },
+    {
+     "id": "status_1",
+     "text": "No",
+     "value": null,
+     "column": {
+      "title": "Asunto"
+     }
+    }
+   ]
+  }
+ ]
+}

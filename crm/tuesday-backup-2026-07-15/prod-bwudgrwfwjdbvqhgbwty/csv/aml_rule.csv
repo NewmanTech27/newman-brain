@@ -1,0 +1,7 @@
+code,category,description,weight,params,active,methodology_version
+ebr_alto,pep_activity,Contraparte de riesgo EBR alto con operaciones,0.30,{},t,1
+pep_activity,pep_activity,Beneficiario controlador PEP con operaciones,0.35,{},t,1
+profile_deviation,profile_deviation,Operaciones 6m exceden el perfil transaccional declarado,0.40,{},t,1
+fraccionamiento,fraccionamiento,Estructuración: múltiples operaciones bajo el umbral que agregan por encima,0.40,{},t,1
+atypical_prepayment,atypical_prepayment,Prepago atípico muy por encima del calendario,0.30,{},t,1
+geography,geography,Estado de alto riesgo LD/FT,0.20,{},t,1

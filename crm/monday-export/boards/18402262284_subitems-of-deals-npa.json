@@ -1,0 +1,8179 @@
+{
+ "board": {
+  "id": "18402262284",
+  "name": "Subitems of Deals NPA",
+  "state": "active",
+  "board_kind": "share",
+  "description": null,
+  "workspace": {
+   "id": "12151996",
+   "name": "Newman CRM"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "color_mkv7phrg",
+   "title": "Tipo",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":3,\"2\":11,\"3\":0,\"9\":19,\"11\":2,\"19\":9,\"159\":159},\"labels\":{\"0\":\"EPC\",\"1\":\"PPA\",\"2\":\"BESS\",\"3\":\"Arrendamiento\"},\"labels_positions_v2\":{\"0\":0,\"1\":2,\"2\":3,\"3\":1,\"5\":4},\"labels_colors\":{\"0\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"3\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"}}}"
+  },
+  {
+   "id": "numeric_mkv7ty3",
+   "title": "kWp",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numeric_mkv79ffc",
+   "title": "MXN kWh",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "numeric_mkv77r2w",
+   "title": "Periodo",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numeric_mkv7r5ja",
+   "title": "USc",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "formula_mkv7wrs8",
+   "title": "EPC value",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{numeric_mkv7ty3}*{numeric_mkv7r5ja}*1000\"}"
+  },
+  {
+   "id": "numeric_mkv7p8xv",
+   "title": "kWh annum",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "formula_mkv7jtac",
+   "title": "VPN contrato",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"IF({color_mkv7phrg}=\\\"PPA\\\",(({numeric_mkv79ffc}*{numeric_mkv7p8xv})/(1+0.1))+(({numeric_mkv79ffc}*{numeric_mkv7p8xv}*(1-0.01)*(1+0.05))/((1+0.1)^2))*IF(ABS((1+0.05)*(1-0.004)/(1+0.1)-1)<0.000000000001,({numeric_mkv77r2w}-1),(1-((1+0.05)*(1-0.004)/(1+0.1))^({numeric_mkv77r2w}-1))/(1-(1+0.05)*(1-0.004)/(1+0.1))),{color_mkv7phrg}=\\\"BEss\\\",0)\"}"
+  },
+  {
+   "id": "formula_mkv7prwn",
+   "title": "Flujos Contratos",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"({numeric_mkv79ffc}*{numeric_mkv7p8xv})+(({numeric_mkv79ffc}*{numeric_mkv7p8xv})*(1-0.01))*(1+0.05)*((1-((1+0.05)*(1-0.004))^({numeric_mkv77r2w}-1)))/((1-(1+0.05)*(1-0.004)))\"}"
+  },
+  {
+   "id": "formula_mkv7cf6b",
+   "title": "Yield",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{numeric_mkv7p8xv}/{numeric_mkv7ty3}\"}"
+  },
+  {
+   "id": "location_mkv9a3tf",
+   "title": "Location",
+   "type": "location",
+   "settings_str": "{}"
+  },
+  {
+   "id": "color_mkvn28r1",
+   "title": "PM",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"1\":\"Enviar\"},\"labels_colors\":{\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"}}}"
+  },
+  {
+   "id": "board_relation_mkvn7pfz",
+   "title": "link to Client Projects",
+   "type": "board_relation",
+   "settings_str": "{\"allowCreateReflectionColumn\":true,\"boardIds\":[],\"boardId\":null}"
+  },
+  {
+   "id": "formula_mkvnw5m4",
+   "title": "Formula",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{numeric_mkv7ty3}\"}"
+  },
+  {
+   "id": "color_mkxfte2e",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Subitems"
+  }
+ ],
+ "items": [
+  {
+   "id": "11342846482",
+   "name": "Kuehne & Nagel",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "BESS",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2026-02-23T16:57:58.689Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11342900984",
+   "name": "Proyecto",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "BESS",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2026-02-23T16:58:47.896Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11475734925",
+   "name": "5095",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2026-02-05T16:51:47.532Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "569.86",
+     "value": "\"569.86\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "1.66",
+     "value": "\"1.66\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11475749438",
+   "name": "Proyecto",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11505375894",
+   "name": "Proyecto 1",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "PPA",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-13T20:42:02.419Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "500",
+     "value": "\"500\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.9",
+     "value": "\"1.9\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "12",
+     "value": "\"12\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": ".8",
+     "value": "\".8\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "900000",
+     "value": "\"900000\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "Mazatlán, Sinaloa, Mexico",
+     "value": "{\"lat\":\"23.2494148\",\"lng\":\"-106.4111425\",\"city\":{\"long_name\":\"Mazatlán\",\"short_name\":\"Mazatlán\"},\"street\":null,\"address\":\"Mazatlán, Sinaloa, Mexico\",\"country\":{\"long_name\":\"Mexico\",\"short_name\":\"MX\"},\"placeId\":\"ChIJwTcYaEFTn4YRsnI88arEpGI\",\"changed_at\":\"2026-03-13T20:45:04.100Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11505387642",
+   "name": "Proyecto",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11505383565",
+   "name": "Proyecto 2",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11505483232",
+   "name": "proyecto 2",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "PPA",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2026-03-13T20:45:46.562Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "156",
+     "value": "\"156\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "2.3",
+     "value": "\"2.3\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "12",
+     "value": "\"12\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": ".7",
+     "value": "\".7\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "27123",
+     "value": "\"27123\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "Ciudad de México, CDMX, Mexico",
+     "value": "{\"lat\":\"19.4326077\",\"lng\":\"-99.133208\",\"city\":{\"long_name\":\"Mexico City\",\"short_name\":\"México D.F.\"},\"street\":null,\"address\":\"Ciudad de México, CDMX, Mexico\",\"country\":{\"long_name\":\"Mexico\",\"short_name\":\"MX\"},\"placeId\":\"ChIJB3UJ2yYAzoURQeheJnYQBlQ\",\"changed_at\":\"2026-03-13T20:46:12.270Z\",\"streetNumber\":null}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018684097",
+   "name": "Proyecto",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018645362",
+   "name": "YCC P1 MFG (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:00.493Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "138.4",
+     "value": "\"138.4\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5426",
+     "value": "\"1.5426\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "237494",
+     "value": "\"237494\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018646613",
+   "name": "Tuxtla DC (Chiapas)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:00.846Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "143.2",
+     "value": "\"143.2\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.917",
+     "value": "\"1.917\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "222533",
+     "value": "\"222533\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638208",
+   "name": "YCC P2 MFG (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:01.130Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "742",
+     "value": "\"742\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5407",
+     "value": "\"1.5407\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "1273272",
+     "value": "\"1273272\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638253",
+   "name": "Madera (Chihuahua) - 70kWp",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:01.419Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "70",
+     "value": "\"70\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.671",
+     "value": "\"1.671\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "120120",
+     "value": "\"120120\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656513",
+   "name": "Obregon P2 (Sonora)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:01.714Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "445",
+     "value": "\"445\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5159",
+     "value": "\"1.5159\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "772965",
+     "value": "\"772965\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638257",
+   "name": "Tecomán (Colima)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:02.003Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "865",
+     "value": "\"865\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.9059",
+     "value": "\"1.9059\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "1441955",
+     "value": "\"1441955\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656449",
+   "name": "Obregon P1 (Sonora) - 70kWp",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:02.275Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "70",
+     "value": "\"70\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6968",
+     "value": "\"1.6968\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "121590",
+     "value": "\"121590\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018652729",
+   "name": "Saltillo P2 (Coahuila)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:02.532Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "67.2",
+     "value": "\"67.2\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5647",
+     "value": "\"1.5647\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "106714",
+     "value": "\"106714\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018646620",
+   "name": "Nuevo Ideal (Durango)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:02.815Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "115",
+     "value": "\"115\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7598",
+     "value": "\"1.7598\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "196995",
+     "value": "\"196995\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656609",
+   "name": "Etchojoa (Sonora)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:03.082Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "135",
+     "value": "\"135\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.701",
+     "value": "\"1.701\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "232740",
+     "value": "\"232740\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638400",
+   "name": "Ascension (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:03.349Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "280",
+     "value": "\"280\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6995",
+     "value": "\"1.6995\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "483840",
+     "value": "\"483840\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018645507",
+   "name": "Aguascalientes FG",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:03.643Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "105",
+     "value": "\"105\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.9545",
+     "value": "\"1.9545\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "186165",
+     "value": "\"186165\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018652717",
+   "name": "Silao DC (Guanajuato)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:03.943Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "335",
+     "value": "\"335\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.8704",
+     "value": "\"1.8704\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "581560",
+     "value": "\"581560\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656634",
+   "name": "NCG (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:04.232Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "570",
+     "value": "\"570\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7067",
+     "value": "\"1.7067\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "977550",
+     "value": "\"977550\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018652772",
+   "name": "Juarez DC (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:04.543Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "515",
+     "value": "\"515\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6471",
+     "value": "\"1.6471\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "886830",
+     "value": "\"886830\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656599",
+   "name": "Benito Juarez (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:04.882Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "105",
+     "value": "\"105\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7093",
+     "value": "\"1.7093\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "178815",
+     "value": "\"178815\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018652874",
+   "name": "Tapachula 1 (Chiapas)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:05.177Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "865",
+     "value": "\"865\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6546",
+     "value": "\"1.6546\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "1454930",
+     "value": "\"1454930\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656690",
+   "name": "El Salto (Durango)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:05.466Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "260",
+     "value": "\"260\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5991",
+     "value": "\"1.5991\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "443040",
+     "value": "\"443040\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018657865",
+   "name": "Colima (Colima)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:05.750Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "525",
+     "value": "\"525\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "2.0419",
+     "value": "\"2.0419\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "879375",
+     "value": "\"879375\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018657987",
+   "name": "Leon (Guanajuato)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:06.027Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "1735",
+     "value": "\"1735\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7632",
+     "value": "\"1.7632\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "3011960",
+     "value": "\"3011960\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018665746",
+   "name": "Bacum (Sonora)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:06.325Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "145",
+     "value": "\"145\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6993",
+     "value": "\"1.6993\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "255635",
+     "value": "\"255635\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638493",
+   "name": "Poncitlan (Jalisco)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:06.604Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "1365",
+     "value": "\"1365\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7739",
+     "value": "\"1.7739\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "2369640",
+     "value": "\"2369640\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018646736",
+   "name": "Tapachula 2 (Chiapas)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:06.900Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "945",
+     "value": "\"945\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.8375",
+     "value": "\"1.8375\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "1589490",
+     "value": "\"1589490\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018653007",
+   "name": "Matachi 1 (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:07.185Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "55",
+     "value": "\"55\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "2.3508",
+     "value": "\"2.3508\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "93280",
+     "value": "\"93280\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018665841",
+   "name": "Lazaro Cardenas (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:07.460Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "540",
+     "value": "\"540\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6908",
+     "value": "\"1.6908\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "932580",
+     "value": "\"932580\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018647073",
+   "name": "Durango 2 (Durango)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:07.706Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "335",
+     "value": "\"335\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6788",
+     "value": "\"1.6788\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "585915",
+     "value": "\"585915\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018658173",
+   "name": "Obregón DC (Sonora)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:07.964Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "135",
+     "value": "\"135\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6448",
+     "value": "\"1.6448\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "234495",
+     "value": "\"234495\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018647000",
+   "name": "Durango DC (Durango)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:08.266Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "165",
+     "value": "\"165\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5791",
+     "value": "\"1.5791\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "288585",
+     "value": "\"288585\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018653106",
+   "name": "Charcas (San Luis Potosí)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:08.603Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "290",
+     "value": "\"290\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.695",
+     "value": "\"1.695\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "508950",
+     "value": "\"508950\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656838",
+   "name": "Juarez 1 (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:08.957Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "460",
+     "value": "\"460\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5542",
+     "value": "\"1.5542\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "792120",
+     "value": "\"792120\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018653035",
+   "name": "Juarez 3 (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:09.255Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "1300",
+     "value": "\"1300\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5837",
+     "value": "\"1.5837\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "2238600",
+     "value": "\"2238600\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018653216",
+   "name": "Obregon P1 (Sonora) - 475kWp",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:09.516Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "475",
+     "value": "\"475\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5331",
+     "value": "\"1.5331\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "825075",
+     "value": "\"825075\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656814",
+   "name": "YCC P3 MFG (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:09.798Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "742",
+     "value": "\"742\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5526",
+     "value": "\"1.5526\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "1273272",
+     "value": "\"1273272\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656908",
+   "name": "Saltillo DC (Coahuila)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:10.081Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "75",
+     "value": "\"75\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.4943",
+     "value": "\"1.4943\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "126300",
+     "value": "\"126300\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018656828",
+   "name": "La Laguna (Coahuila)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:10.354Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "1125",
+     "value": "\"1125\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6227",
+     "value": "\"1.6227\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "1989000",
+     "value": "\"1989000\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638644",
+   "name": "YED MFG (Durango)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:10.632Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "6320",
+     "value": "\"6320\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.5708",
+     "value": "\"1.5708\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "11053680",
+     "value": "\"11053680\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638935",
+   "name": "Huixtla (Chiapas)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:10.883Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "255",
+     "value": "\"255\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7625",
+     "value": "\"1.7625\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "390915",
+     "value": "\"390915\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018657033",
+   "name": "Juarez 5 (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:11.171Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "590",
+     "value": "\"590\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6833",
+     "value": "\"1.6833\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "1015980",
+     "value": "\"1015980\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018639484",
+   "name": "Monterrey P1 (Nuevo León) - 245kWp",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:11.455Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "245",
+     "value": "\"245\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7279",
+     "value": "\"1.7279\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "434140",
+     "value": "\"434140\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018639112",
+   "name": "Juarez 4 (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:11.734Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "1175",
+     "value": "\"1175\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.6018",
+     "value": "\"1.6018\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "2023350",
+     "value": "\"2023350\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018647404",
+   "name": "Tuxtla 2 (Chiapas)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:15.787Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "335",
+     "value": "\"335\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "0.1959",
+     "value": "\"0.1959\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "520590",
+     "value": "\"520590\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018665939",
+   "name": "Ciudad Valles (San Luis Potosí)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:12.001Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "280",
+     "value": "\"280\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.83",
+     "value": "\"1.83\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "410760",
+     "value": "\"410760\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018639489",
+   "name": "Leon YFG DC (Guanajuato)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:12.341Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "60",
+     "value": "\"60\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.7006",
+     "value": "\"1.7006\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "104820",
+     "value": "\"104820\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018653454",
+   "name": "SSDC (Coahuila)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:12.649Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "155",
+     "value": "\"155\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.531",
+     "value": "\"1.531\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "246140",
+     "value": "\"246140\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018658400",
+   "name": "Cables 1 (Nuevo León)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:12.935Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "12020",
+     "value": "\"12020\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.4364",
+     "value": "\"1.4364\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "19087760",
+     "value": "\"19087760\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638924",
+   "name": "Cables 2 (Nuevo León)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:13.225Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "3155",
+     "value": "\"3155\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.4375",
+     "value": "\"1.4375\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "5010140",
+     "value": "\"5010140\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638928",
+   "name": "Instrumentos Monterrey (Nuevo León)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:13.496Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "4095",
+     "value": "\"4095\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.4968",
+     "value": "\"1.4968\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "6502860",
+     "value": "\"6502860\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018638973",
+   "name": "SLRC (Sonora)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:13.796Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "2340",
+     "value": "\"2340\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.0375",
+     "value": "\"1.0375\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "3605940",
+     "value": "\"3605940\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018653416",
+   "name": "Venado (San Luis Potosí)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:14.095Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "60",
+     "value": "\"60\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.4689",
+     "value": "\"1.4689\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "104280",
+     "value": "\"104280\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018647355",
+   "name": "Moctezuma (San Luis Potosí)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:14.362Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "60",
+     "value": "\"60\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.4877",
+     "value": "\"1.4877\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "99600",
+     "value": "\"99600\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018669651",
+   "name": "Matachi 2 (Chihuahua)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:14.925Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "45",
+     "value": "\"45\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.3616",
+     "value": "\"1.3616\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "76590",
+     "value": "\"76590\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018647449",
+   "name": "Madera (Chihuahua) - 125kWp",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:15.195Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "125",
+     "value": "\"125\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.3619",
+     "value": "\"1.3619\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "212000",
+     "value": "\"212000\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  },
+  {
+   "id": "12018653421",
+   "name": "Villaflores (Chiapas)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "color_mkv7phrg",
+     "text": "Arrendamiento",
+     "value": "{\"index\":3,\"changed_at\":\"2026-05-15T03:57:15.499Z\"}",
+     "column": {
+      "title": "Tipo"
+     }
+    },
+    {
+     "id": "numeric_mkv7ty3",
+     "text": "145",
+     "value": "\"145\"",
+     "column": {
+      "title": "kWp"
+     }
+    },
+    {
+     "id": "numeric_mkv79ffc",
+     "text": "1.4025",
+     "value": "\"1.4025\"",
+     "column": {
+      "title": "MXN kWh"
+     }
+    },
+    {
+     "id": "numeric_mkv77r2w",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Periodo"
+     }
+    },
+    {
+     "id": "numeric_mkv7r5ja",
+     "text": "87.5",
+     "value": "\"87.5\"",
+     "column": {
+      "title": "USc"
+     }
+    },
+    {
+     "id": "formula_mkv7wrs8",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "EPC value"
+     }
+    },
+    {
+     "id": "numeric_mkv7p8xv",
+     "text": "225330",
+     "value": "\"225330\"",
+     "column": {
+      "title": "kWh annum"
+     }
+    },
+    {
+     "id": "formula_mkv7jtac",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "VPN contrato"
+     }
+    },
+    {
+     "id": "formula_mkv7prwn",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Flujos Contratos"
+     }
+    },
+    {
+     "id": "formula_mkv7cf6b",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Yield"
+     }
+    },
+    {
+     "id": "location_mkv9a3tf",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "color_mkvn28r1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "PM"
+     }
+    },
+    {
+     "id": "board_relation_mkvn7pfz",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "link to Client Projects"
+     }
+    },
+    {
+     "id": "formula_mkvnw5m4",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Formula"
+     }
+    },
+    {
+     "id": "color_mkxfte2e",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    }
+   ]
+  }
+ ]
+}

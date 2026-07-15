@@ -1,0 +1,4 @@
+id,list_name,version_tag,source_published_date,imported_at,row_count,sha,notes
+5be5303b-1d64-4fe9-9d1c-9859d8b3b59b,opensanctions,2026-07-baseline,,2026-07-08 22:25:30.776293+00,281606,,snapshot inicial it-37
+8987c115-a7b3-4c83-a31f-c6fdc56fb2c4,sat_69b_efos,2026-07-baseline,,2026-07-08 22:25:30.776293+00,12146,,snapshot inicial it-37
+5bdd9c20-7249-4d4f-a09e-57d50acbfb46,uif_lpb,2026-07-baseline,,2026-07-08 22:25:30.776293+00,0,,snapshot inicial it-37

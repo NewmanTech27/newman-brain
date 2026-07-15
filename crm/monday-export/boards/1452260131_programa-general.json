@@ -1,0 +1,355 @@
+{
+ "board": {
+  "id": "1452260131",
+  "name": "Programa general",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "",
+  "workspace": {
+   "id": "583425",
+   "name": "Mejora Continua"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Nombre",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "person",
+   "title": "Propietario",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Fase del proyecto",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"7\":13,\"13\":7},\"labels\":{\"1\":\"Completado\",\"3\":\"Lanzamiento\",\"4\":\"planificación\",\"5\":\"\",\"7\":\"Más adelante\",\"11\":\"Ejecución\",\"16\":\"Cierre\"},\"labels_positions_v2\":{\"1\":5,\"3\":3,\"4\":1,\"5\":6,\"7\":0,\"11\":2,\"16\":4},\"labels_colors\":{\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"5\":{\"color\":\"#c4c4c4\",\"border\":\"#b0b0b0\",\"var_name\":\"grey\"},\"7\":{\"color\":\"#ff5ac4\",\"border\":\"#e04fac\",\"var_name\":\"light-pink\"},\"11\":{\"color\":\"#bb3354\",\"border\":\"#a42d4a\",\"var_name\":\"dark-red\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"}}}"
+  },
+  {
+   "id": "numbers",
+   "title": "Presupuesto aprobado del proyecto (gasto de inversión)",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "timeline",
+   "title": "Cronograma del proyecto",
+   "type": "timeline",
+   "settings_str": "{\"hide_footer\":true}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Próximos proyectos"
+  },
+  {
+   "id": "group_title",
+   "title": "Proyectos actuales"
+  },
+  {
+   "id": "new_group",
+   "title": "Proyectos completados"
+  }
+ ],
+ "items": [
+  {
+   "id": "1452260211",
+   "name": "Proyecto India",
+   "group": {
+    "id": "topics",
+    "title": "Próximos proyectos"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Más adelante",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-05-26T22:13:21.418Z\"}",
+     "column": {
+      "title": "Fase del proyecto"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "240000",
+     "value": "\"240000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto (gasto de inversión)"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-03-15 - 2021-04-30",
+     "value": "{\"to\":\"2021-04-30\",\"from\":\"2021-03-15\",\"changed_at\":\"2021-03-15T10:33:30.940Z\"}",
+     "column": {
+      "title": "Cronograma del proyecto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260225",
+   "name": "Proyecto XYZ",
+   "group": {
+    "id": "topics",
+    "title": "Próximos proyectos"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Más adelante",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-05-31T14:28:54.354Z\"}",
+     "column": {
+      "title": "Fase del proyecto"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "150000",
+     "value": "\"150000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto (gasto de inversión)"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-04-01 - 2021-05-17",
+     "value": "{\"to\":\"2021-05-17\",\"from\":\"2021-04-01\",\"changed_at\":\"2021-03-15T10:34:02.314Z\"}",
+     "column": {
+      "title": "Cronograma del proyecto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260229",
+   "name": "Proyecto Fantastic",
+   "group": {
+    "id": "topics",
+    "title": "Próximos proyectos"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Más adelante",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-05-31T14:29:51.803Z\"}",
+     "column": {
+      "title": "Fase del proyecto"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "400000",
+     "value": "\"400000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto (gasto de inversión)"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-05-01 - 2021-07-31",
+     "value": "{\"to\":\"2021-07-31\",\"from\":\"2021-05-01\",\"changed_at\":\"2021-03-15T10:34:13.184Z\"}",
+     "column": {
+      "title": "Cronograma del proyecto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260215",
+   "name": "Proyecto Romeo",
+   "group": {
+    "id": "group_title",
+    "title": "Proyectos actuales"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "planificación",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2020-05-26T22:15:17.939Z\"}",
+     "column": {
+      "title": "Fase del proyecto"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "380000",
+     "value": "\"380000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto (gasto de inversión)"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-03-01 - 2021-08-29",
+     "value": "{\"to\":\"2021-08-29\",\"from\":\"2021-03-01\",\"changed_at\":\"2021-03-15T10:34:42.488Z\"}",
+     "column": {
+      "title": "Cronograma del proyecto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260221",
+   "name": "Proyecto Whisky",
+   "group": {
+    "id": "group_title",
+    "title": "Proyectos actuales"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Ejecución",
+     "value": "{\"index\":11,\"post_id\":null,\"changed_at\":\"2020-05-26T22:15:16.205Z\"}",
+     "column": {
+      "title": "Fase del proyecto"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "550000",
+     "value": "\"550000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto (gasto de inversión)"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-03-15 - 2021-06-20",
+     "value": "{\"to\":\"2021-06-20\",\"from\":\"2021-03-15\",\"changed_at\":\"2021-03-15T10:35:01.341Z\"}",
+     "column": {
+      "title": "Cronograma del proyecto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260204",
+   "name": "Proyecto Papa",
+   "group": {
+    "id": "new_group",
+    "title": "Proyectos completados"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Completado",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-01-20T14:28:35.623Z\"}",
+     "column": {
+      "title": "Fase del proyecto"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "450000",
+     "value": "\"450000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto (gasto de inversión)"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2019-12-06 - 2020-03-19",
+     "value": "{\"to\":\"2020-03-19\",\"from\":\"2019-12-06\",\"changed_at\":\"2020-05-26T22:16:22.895Z\"}",
+     "column": {
+      "title": "Cronograma del proyecto"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260232",
+   "name": "Proyecto Mano Vino",
+   "group": {
+    "id": "new_group",
+    "title": "Proyectos completados"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Propietario"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Más adelante",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-05-31T14:31:14.072Z\"}",
+     "column": {
+      "title": "Fase del proyecto"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "200000",
+     "value": "\"200000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto (gasto de inversión)"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2020-04-30 - 2020-05-31",
+     "value": "{\"to\":\"2020-05-31\",\"from\":\"2020-04-30\",\"changed_at\":\"2020-05-31T14:31:51.468Z\"}",
+     "column": {
+      "title": "Cronograma del proyecto"
+     }
+    }
+   ]
+  }
+ ]
+}

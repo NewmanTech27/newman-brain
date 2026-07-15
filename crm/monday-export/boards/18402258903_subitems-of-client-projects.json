@@ -1,0 +1,115 @@
+{
+ "board": {
+  "id": "18402258903",
+  "name": "Subitems of Client Projects",
+  "state": "active",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "14528481",
+   "name": "other"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "person",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "date0",
+   "title": "Date",
+   "type": "date",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "subitems_of_596368986",
+   "title": "Subitems"
+  }
+ ],
+ "items": [
+  {
+   "id": "11408137932",
+   "name": "Task 1",
+   "group": {
+    "id": "subitems_of_596368986",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2024-01-17",
+     "value": "{\"date\":\"2024-01-17\",\"changed_at\":\"2024-01-02T07:10:18.008Z\"}",
+     "column": {
+      "title": "Date"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408141553",
+   "name": "Task 2",
+   "group": {
+    "id": "subitems_of_596368986",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2024-01-31",
+     "value": "{\"date\":\"2024-01-31\",\"changed_at\":\"2024-01-02T07:10:21.049Z\"}",
+     "column": {
+      "title": "Date"
+     }
+    }
+   ]
+  }
+ ]
+}

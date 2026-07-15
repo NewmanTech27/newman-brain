@@ -1,0 +1,4769 @@
+{
+  "board": {
+    "id": "9913323267",
+    "name": "Accounts",
+    "state": "archived",
+    "board_kind": "public",
+    "description": "",
+    "workspace": {
+      "id": "12151996",
+      "name": "Newman CRM"
+    }
+  },
+  "columns": [
+    {
+      "id": "name",
+      "title": "Name",
+      "type": "name",
+      "settings_str": "{}"
+    },
+    {
+      "id": "subtasks_mkxfwxvm",
+      "title": "Subitems",
+      "type": "subtasks",
+      "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[18369644779]}"
+    },
+    {
+      "id": "account_contact",
+      "title": "Contacts",
+      "type": "board_relation",
+      "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[],\"displayType\":\"CUSTOM\",\"dataSourceLayoutConfigs\":{\"9913323235\":{\"name\":{\"refId\":\"name\"},\"description\":{\"refId\":\"contact_account\"}}},\"staticImage\":\"contacts\"}"
+    },
+    {
+      "id": "company_profile",
+      "title": "Company profile",
+      "type": "link",
+      "settings_str": "{}"
+    },
+    {
+      "id": "custom_mkrm3gkw",
+      "title": "Activities timeline",
+      "type": "unsupported",
+      "settings_str": "{}"
+    },
+    {
+      "id": "board_relation_mkv9ha57",
+      "title": "Deals",
+      "type": "board_relation",
+      "settings_str": "{\"boardIds\":[],\"allowCreateReflectionColumn\":true}"
+    },
+    {
+      "id": "lookup_mkvc8yqv",
+      "title": "Contacto",
+      "type": "mirror",
+      "settings_str": "{\"relation_column\":{\"board_relation_mkv9ha57\":true},\"displayed_column\":{},\"displayed_linked_columns\":{}}"
+    },
+    {
+      "id": "lookup_mkvcr79a",
+      "title": "Valor Cuenta",
+      "type": "mirror",
+      "settings_str": "{\"relation_column\":{\"board_relation_mkv9ha57\":true},\"displayed_column\":{},\"displayed_linked_columns\":{},\"function\":\"sum\"}"
+    },
+    {
+      "id": "dropdown_mkvcxme9",
+      "title": "Region",
+      "type": "dropdown",
+      "settings_str": "{\"limit_select\":false,\"labels\":[{\"name\":\"Occidente\",\"id\":1},{\"name\":\"Bajio\",\"id\":2},{\"name\":\"Centro\",\"id\":3},{\"name\":\"Norte\",\"id\":4},{\"name\":\"Noroeste\",\"id\":5},{\"name\":\"Baja\",\"id\":7},{\"name\":\"Peninsular\",\"id\":8}],\"deactivated_labels\":[]}"
+    },
+    {
+      "id": "lookup_mkv9wb0e",
+      "title": "Mirror",
+      "type": "mirror",
+      "settings_str": "{\"relation_column\":{\"board_relation_mkv9ha57\":true},\"displayed_column\":{},\"displayed_linked_columns\":{},\"function\":\"sum\"}"
+    },
+    {
+      "id": "dropdown_mkv9msb6",
+      "title": "Region",
+      "type": "dropdown",
+      "settings_str": "{}"
+    }
+  ],
+  "groups": [
+    {
+      "id": "topics",
+      "title": "Cuentas"
+    }
+  ],
+  "items": [
+    {
+      "id": "9931689512",
+      "name": "Ovq",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Bajio",
+          "value": "{\"ids\":[2],\"changed_at\":\"2025-09-01T17:22:06.491Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689509",
+      "name": "Uyeda Ind De Mexico Sa De Cv",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Occidente",
+          "value": "{\"ids\":[1],\"changed_at\":\"2025-09-01T17:22:06.019Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689591",
+      "name": "Blindajes Epel",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:06.842Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689624",
+      "name": "Alimentos Sello Rojo Sa De Cv",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Occidente",
+          "value": "{\"ids\":[1]}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689642",
+      "name": "Sa Automotive",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:07.396Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689682",
+      "name": "Grupo Amkie",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:07.767Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689699",
+      "name": "Bee Bags",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:08.056Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689744",
+      "name": "Grupo Cimarron",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Norte",
+          "value": "{\"ids\":[4],\"changed_at\":\"2025-09-01T17:22:11.864Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689758",
+      "name": "Operadora De Hotel Punto Coral",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Noroeste",
+          "value": "{\"ids\":[5],\"changed_at\":\"2025-09-01T17:22:11.616Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689807",
+      "name": "Casa Ley",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Noroeste",
+          "value": "{\"ids\":[5],\"changed_at\":\"2025-09-01T17:22:12.127Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689814",
+      "name": "Daisa",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Norte",
+          "value": "{\"ids\":[4],\"changed_at\":\"2025-09-01T17:22:12.361Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689857",
+      "name": "Cryopharma",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:12.598Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689862",
+      "name": "Gicsa",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3]}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689908",
+      "name": "Aurum Ortus",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Occidente",
+          "value": "{\"ids\":[1],\"changed_at\":\"2025-09-01T17:22:13.078Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689915",
+      "name": "Car One",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Norte",
+          "value": "{\"ids\":[4],\"changed_at\":\"2025-09-01T17:22:13.305Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689954",
+      "name": "Mercury Aircraft Mex Srl Cv",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Occidente",
+          "value": "{\"ids\":[1],\"changed_at\":\"2025-09-01T17:22:13.584Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931689959",
+      "name": "Los Encinos",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:13.829Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690004",
+      "name": "Grupo Irm Sa Decv",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Occidente",
+          "value": "{\"ids\":[1],\"changed_at\":\"2025-09-01T17:22:14.065Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690007",
+      "name": "Hilaturas Costilla",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:14.314Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690063",
+      "name": "Bemis Packaging",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Norte",
+          "value": "{\"ids\":[4],\"changed_at\":\"2025-09-01T17:22:14.557Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690069",
+      "name": "Rompope Coronado",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Bajio",
+          "value": "{\"ids\":[2],\"changed_at\":\"2025-09-01T17:22:14.805Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690110",
+      "name": "Agricola Zarattini Sa De Cv",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Bajio",
+          "value": "{\"ids\":[2],\"changed_at\":\"2025-09-01T17:22:15.029Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690114",
+      "name": "Calimax",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Baja",
+          "value": "{\"ids\":[7],\"changed_at\":\"2025-09-01T17:22:15.259Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690143",
+      "name": "Infinity Merida",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Peninsular",
+          "value": "{\"ids\":[8],\"changed_at\":\"2025-09-01T17:22:15.492Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690150",
+      "name": "Industrias D.K., S.A. De C.V.",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:15.732Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690188",
+      "name": "Eugenio Sue",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": "{\"ids\":[],\"changed_at\":\"2025-09-01T17:22:15.959Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690201",
+      "name": "Frutos De La Huerta Y Magitierra",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:16.176Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690255",
+      "name": "Real Clean",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:17.092Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690292",
+      "name": "Grupo Aceites Del Mayo Sa Cv",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Noroeste",
+          "value": "{\"ids\":[5],\"changed_at\":\"2025-09-01T17:22:06.129Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690347",
+      "name": "Galeria Del Chocolate",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:06.524Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690400",
+      "name": "Ind Diza Sa",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Norte",
+          "value": "{\"ids\":[4],\"changed_at\":\"2025-09-01T17:22:06.763Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690439",
+      "name": "Comercial Pet Sa De Cv",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:07.004Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690485",
+      "name": "Ifood",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Norte",
+          "value": "{\"ids\":[4],\"changed_at\":\"2025-09-01T17:22:07.321Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9931690540",
+      "name": "Armas Mendoza",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Centro",
+          "value": "{\"ids\":[3],\"changed_at\":\"2025-09-01T17:22:17.318Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9944183882",
+      "name": "Plaza Caracol",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": "Occidente",
+          "value": "{\"ids\":[1],\"changed_at\":\"2025-09-01T17:22:17.537Z\"}",
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955468930",
+      "name": "Centro comercial Huejutla",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955471436",
+      "name": "Hospital ABC",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955474723",
+      "name": "Grupo Acerero SA de CV",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955480014",
+      "name": "Comision Estatal de Agua Queretaro",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955482853",
+      "name": "Inova Textiles",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955485963",
+      "name": "Wolstrat",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955489640",
+      "name": "Plaza Lilas",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955492821",
+      "name": "Core Polymer Moulders",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955496162",
+      "name": "Industrias Zahori SA de CV",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955499574",
+      "name": "Grupo Bachoco",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955500736",
+      "name": "Universidad Anahuac",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955505375",
+      "name": "Convertidora de Polietileno",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955507280",
+      "name": "El Camarón Dorado SA de CV",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955509507",
+      "name": "Universidad de Durango",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9955512184",
+      "name": "Grupo Traxion",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "10012450600",
+      "name": "Prueba",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    },
+    {
+      "id": "10784015378",
+      "name": "Productos LDM",
+      "group": {
+        "id": "topics",
+        "title": "Cuentas"
+      },
+      "column_values": [
+        {
+          "id": "subtasks_mkxfwxvm",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Subitems"
+          }
+        },
+        {
+          "id": "account_contact",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacts"
+          }
+        },
+        {
+          "id": "company_profile",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Company profile"
+          }
+        },
+        {
+          "id": "custom_mkrm3gkw",
+          "text": "",
+          "value": null,
+          "column": {
+            "title": "Activities timeline"
+          }
+        },
+        {
+          "id": "board_relation_mkv9ha57",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Deals"
+          }
+        },
+        {
+          "id": "lookup_mkvc8yqv",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Contacto"
+          }
+        },
+        {
+          "id": "lookup_mkvcr79a",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Valor Cuenta"
+          }
+        },
+        {
+          "id": "dropdown_mkvcxme9",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        },
+        {
+          "id": "lookup_mkv9wb0e",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Mirror"
+          }
+        },
+        {
+          "id": "dropdown_mkv9msb6",
+          "text": null,
+          "value": null,
+          "column": {
+            "title": "Region"
+          }
+        }
+      ]
+    }
+  ]
+}

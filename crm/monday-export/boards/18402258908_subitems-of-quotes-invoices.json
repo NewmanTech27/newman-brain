@@ -1,0 +1,277 @@
+{
+ "board": {
+  "id": "18402258908",
+  "name": "Subitems of Quotes & Invoices",
+  "state": "active",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "14528481",
+   "name": "other"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_description",
+   "title": "Description",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_unit_price",
+   "title": "Unit price",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_quantity",
+   "title": "Quantity",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_total_multipliers",
+   "title": "Total multipliers",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_base_price",
+   "title": "Base price",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_adjustment_rate",
+   "title": "Discount rate",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"%\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "line_item_adjustment_value",
+   "title": "Discount value",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_fees_rate",
+   "title": "Fee rate",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"%\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "line_item_fees_value",
+   "title": "Fee value",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_tax_rate",
+   "title": "Tax rate",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"%\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "line_item_tax_value",
+   "title": "Tax value",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_final_price",
+   "title": "Total",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_currency",
+   "title": "Currency",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_product",
+   "title": "Product",
+   "type": "board_relation",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_deal",
+   "title": "Deal",
+   "type": "board_relation",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_contact",
+   "title": "Contact",
+   "type": "board_relation",
+   "settings_str": "{}"
+  },
+  {
+   "id": "line_item_id",
+   "title": "Id",
+   "type": "text",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Subitems"
+  }
+ ],
+ "items": [
+  {
+   "id": "11408147105",
+   "name": "Subitem",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "line_item_description",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Description"
+     }
+    },
+    {
+     "id": "line_item_unit_price",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Unit price"
+     }
+    },
+    {
+     "id": "line_item_quantity",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Quantity"
+     }
+    },
+    {
+     "id": "line_item_total_multipliers",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Total multipliers"
+     }
+    },
+    {
+     "id": "line_item_base_price",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Base price"
+     }
+    },
+    {
+     "id": "line_item_adjustment_rate",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Discount rate"
+     }
+    },
+    {
+     "id": "line_item_adjustment_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Discount value"
+     }
+    },
+    {
+     "id": "line_item_fees_rate",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fee rate"
+     }
+    },
+    {
+     "id": "line_item_fees_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fee value"
+     }
+    },
+    {
+     "id": "line_item_tax_rate",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Tax rate"
+     }
+    },
+    {
+     "id": "line_item_tax_value",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Tax value"
+     }
+    },
+    {
+     "id": "line_item_final_price",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Total"
+     }
+    },
+    {
+     "id": "line_item_currency",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Currency"
+     }
+    },
+    {
+     "id": "line_item_product",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Product"
+     }
+    },
+    {
+     "id": "line_item_deal",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Deal"
+     }
+    },
+    {
+     "id": "line_item_contact",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contact"
+     }
+    },
+    {
+     "id": "line_item_id",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Id"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+id,version,raroc_hurdle,cost_of_funds_rate,opex_rate,tax_rate,econ_capital_ratio,effective_date,approved_by,active,created_at
+d0ed64c4-8ac1-4914-b259-b6680a721496,v2026.1,0.15,0.10,0.010,0.30,0.12,2026-07-09,system:seed,t,2026-07-09 07:31:27.225603+00

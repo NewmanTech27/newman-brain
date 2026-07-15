@@ -1,0 +1,6609 @@
+{
+ "board": {
+  "id": "1492688712",
+  "name": "Subelementos de Mind Map",
+  "state": "archived",
+  "board_kind": "public",
+  "description": null,
+  "workspace": {
+   "id": "448222",
+   "name": "Direccion"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "person",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\",\"13\":\"\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8,\"13\":10},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"13\":{\"color\":\"#ff5ac4\",\"border\":\"#e04fac\",\"var_name\":\"light-pink\"}}}"
+  },
+  {
+   "id": "date0",
+   "title": "Date",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "n_meros",
+   "title": "Números",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "cronograma",
+   "title": "Cronograma",
+   "type": "timeline",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Subitems"
+  }
+ ],
+ "items": [
+  {
+   "id": "1499591085",
+   "name": "Almacenacenamiento en la nube",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1499592624",
+   "name": "Benitron 2000",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2021-09-22T15:49:23.911Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1499594556",
+   "name": "Software procesos",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1500935491",
+   "name": "Hot Spots",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2021-11-02T03:54:37.810Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713217702",
+   "name": "Juan Millán",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713223656",
+   "name": "Joel Hernández \"El niño\"",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713233758",
+   "name": "Jesús Hernandez",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713235376",
+   "name": "Manolo Ochoa",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713237766",
+   "name": "Juan Carlos Reyes (Magistrado)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713239026",
+   "name": "Chava Gallegos",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713243753",
+   "name": "Billy Barners",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713247551",
+   "name": "Javier Lizarraga",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713248792",
+   "name": "José Fernando Ramos",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713249934",
+   "name": "Juan José Arellano",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713263233",
+   "name": "Cristi Malvido",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713263562",
+   "name": "Jorge Cortez",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713264487",
+   "name": "Libertad Hernandez",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713267169",
+   "name": "Jack Beltrán",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713275210",
+   "name": "Lucia Huawei",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713276246",
+   "name": "Oscar Vázquez Montiel (Amigo Mario)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713276491",
+   "name": "Amigo Paool ?",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713278365",
+   "name": "Alma Rosa Plat",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713281595",
+   "name": "Jorge Duran",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713281934",
+   "name": "Daniel Duran",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713282568",
+   "name": "Luis Carlos Osuna",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713283139",
+   "name": "Carla Neuret",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713288362",
+   "name": "Tati (Director de CI Banco)",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713289513",
+   "name": "Sergio Tirado",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713292169",
+   "name": "David Alfaro",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713293542",
+   "name": "Zaid Nafinsa",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713293975",
+   "name": "Pedro Ventura",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713294855",
+   "name": "Uriel Silva",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713295384",
+   "name": "Jorge Ibarra",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713301868",
+   "name": "Vicente Chalita",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713304838",
+   "name": "Antonio Rodriguez",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713305384",
+   "name": "Armando De La Torre",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713306042",
+   "name": "Edgar Marin",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713306954",
+   "name": "Yusef Kanchi",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713316399",
+   "name": "Daniel Orozco",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713316953",
+   "name": "Francisco Malvido",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713322776",
+   "name": "José Fernando González",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713325060",
+   "name": "Elliot",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713325926",
+   "name": "Pablo Escalante",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713329485",
+   "name": "Elías Mercado",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713331495",
+   "name": "Jorge Huges",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713331914",
+   "name": "Luis Vega",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713332389",
+   "name": "Alfredo Aguilar",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713336631",
+   "name": "Víctor Ramírez",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713338961",
+   "name": "Andrés Canaya",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713339411",
+   "name": "Octavio Flores",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713340240",
+   "name": "Federico Cuevas",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713340851",
+   "name": "Rafael Dávila",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713341276",
+   "name": "Alfredo Solorio",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713345367",
+   "name": "Horacio",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713347285",
+   "name": "Arturo",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713347373",
+   "name": "Alfonso",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713369452",
+   "name": "Jesús Valdez",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713375408",
+   "name": "Barbas Espinoza",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713381394",
+   "name": "Dieter Lorenzen",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713387592",
+   "name": "Damián Arguelles",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713388236",
+   "name": "Antonio Astiazaran",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713393962",
+   "name": "Juan Vega",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713396092",
+   "name": "Oscar Molina",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713398228",
+   "name": "Arturo Zaval",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1758384671",
+   "name": "Joel Ayala",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2335047819",
+   "name": "Jorge Mondragon",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859376928",
+   "name": "Restaurante",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859377485",
+   "name": "Delivery",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859377822",
+   "name": "Muebleria",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859378118",
+   "name": "AHM store",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859378675",
+   "name": "Inversiones",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859378816",
+   "name": "Fondo de ahorro",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859379092",
+   "name": "Fibra E",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859379692",
+   "name": "Seguridad Bancaria",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859380264",
+   "name": "Sustentabilidad alimenticia",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859380722",
+   "name": "Diseño Indusrial",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859382497",
+   "name": "Consultoria",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859382655",
+   "name": "Marketing",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": "{\"index\":13,\"post_id\":null,\"changed_at\":\"2022-03-14T23:15:50.579Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859382947",
+   "name": "Educacion",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859382959",
+   "name": "Madres",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859396735",
+   "name": "Politicas",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859396837",
+   "name": "Data Room",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859398800",
+   "name": "Negociacion",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859522002",
+   "name": "Financieros",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1862461213",
+   "name": "Armando Villa Orduño",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1862473991",
+   "name": "Juan Carlos Pelayo",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1862474725",
+   "name": "Adrian Gonzalez",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1863530055",
+   "name": "Estados de cuenta mod",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-11-16",
+     "value": "{\"date\":\"2021-11-16\",\"changed_at\":\"2021-11-02T23:41:13.194Z\"}",
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1911265422",
+   "name": "Subelemento",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2186244775",
+   "name": "Benedetti",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2213566442",
+   "name": "Persianas ",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Alondra Pacheco",
+     "value": "{\"changed_at\":\"2022-03-07T21:57:45.263Z\",\"personsAndTeams\":[{\"id\":26916991,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-14 - 2022-03-14",
+     "value": "{\"to\":\"2022-03-14\",\"from\":\"2022-03-14\",\"changed_at\":\"2022-03-08T19:16:18.232Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2213568376",
+   "name": "Pintar",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Alondra Pacheco",
+     "value": "{\"changed_at\":\"2022-03-07T21:57:50.182Z\",\"personsAndTeams\":[{\"id\":26916991,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Done",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2022-04-01T19:07:39.592Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-14 - 2022-03-14",
+     "value": "{\"to\":\"2022-03-14\",\"from\":\"2022-03-14\",\"changed_at\":\"2022-03-08T19:16:04.696Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2335048853",
+   "name": "Julio Jauregui",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2335049082",
+   "name": "Salomon Zaga",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2335051525",
+   "name": "Carlos Ballesteros",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371272700",
+   "name": "Casa mamá Jonathan - infonavit",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Andrea Garnica",
+     "value": "{\"changed_at\":\"2022-03-04T00:36:08.581Z\",\"personsAndTeams\":[{\"id\":27007065,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371279630",
+   "name": "Casa Eidan",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Andrea Garnica",
+     "value": "{\"changed_at\":\"2022-03-04T00:36:12.086Z\",\"personsAndTeams\":[{\"id\":27007065,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371399141",
+   "name": "Convenio de accionistas",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371403926",
+   "name": "Carta de Intencion de inverionistas",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2386008421",
+   "name": "Contrato de promesa de sociedad",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371404780",
+   "name": "Operaciones",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-03 - 2022-03-09",
+     "value": "{\"to\": \"2022-03-09\", \"from\": \"2022-03-03\", \"changed_at\": \"2022-03-03T19:05:32.412Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371406212",
+   "name": "Comercial",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371406533",
+   "name": "Administracion",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371406613",
+   "name": "RH",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371409596",
+   "name": "Establecer Formato",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371410201",
+   "name": "Capacitacion lideres de area",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371410455",
+   "name": "Administracion",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371410754",
+   "name": "RH",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371410930",
+   "name": "Comercial",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371411197",
+   "name": "Operaciones",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371413047",
+   "name": "Identidad Grafica",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371417570",
+   "name": "Alta de razones sociales",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371420936",
+   "name": "Modelo de negocios SSM",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-22 - 2022-03-22",
+     "value": "{\"to\": \"2022-03-22\", \"from\": \"2022-03-22\", \"changed_at\": \"2022-03-17T21:23:34.101Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371421824",
+   "name": "Modelo de negocios de Seguros",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371426443",
+   "name": "Conciliacion con socios para multiplos",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371429540",
+   "name": "Casa de bolsa",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371428098",
+   "name": "Fondeo",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371437916",
+   "name": "Panama Pacifico",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371453847",
+   "name": "JV N Solar",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371454734",
+   "name": "Estudio de rentabilidad",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371455497",
+   "name": "Fideicomisos",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2372103543",
+   "name": "Presentación",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Done",
+     "value": "{\"index\": 1, \"post_id\": null, \"changed_at\": \"2022-03-07T17:10:23.365Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2372098982",
+   "name": "Registro de marca",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2372102017",
+   "name": "Prueba piloto",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2372348251",
+   "name": "Subelemento",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371396793",
+   "name": "Fideicomiso",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2390698999",
+   "name": "Aire acondicionado",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Alondra Pacheco",
+     "value": "{\"changed_at\": \"2022-03-22T23:57:41.108Z\", \"personsAndTeams\": [{\"id\": 26916991, \"kind\": \"person\"}]}",
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Done",
+     "value": "{\"index\": 1, \"post_id\": null, \"changed_at\": \"2022-04-04T21:45:17.370Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2413857026",
+   "name": "Puertas de acceso",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2541412202",
+   "name": "Saveiros",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2541426350",
+   "name": "Auto CDMX",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2541427237",
+   "name": "RAM Hillo",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    }
+   ]
+  }
+ ]
+}

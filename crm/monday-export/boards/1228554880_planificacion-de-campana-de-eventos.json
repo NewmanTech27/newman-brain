@@ -1,0 +1,685 @@
+{
+ "board": {
+  "id": "1228554880",
+  "name": "Planificación de campaña de eventos",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "Este tablero te ayudará a ti y a tu equipo a planificar, ejecutar y controlar el flujo de trabajo completo de la campaña en un espacio de trabajo.\nObtén más información sobre este paquete de plantillas aquí: https://www.youtube.com/watch?v=kzIn4Vk_Apw&feature=youtu.be",
+  "workspace": {
+   "id": "586363",
+   "name": "Proyección tipo de cambio"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Nombre",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subitems",
+   "title": "Subelementos",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[1228554893],\"boardId\":1092303174}"
+  },
+  {
+   "id": "subitems_status",
+   "title": "Estado de subelementos",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"subitems\":true},\"displayed_column\":{\"status\":true},\"displayed_linked_columns\":{\"1228554893\":[\"status\"]}}"
+  },
+  {
+   "id": "person",
+   "title": "Responsable de la campaña",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "platform_1",
+   "title": "Plataforma",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"0\":9,\"3\":7,\"4\":4,\"7\":3,\"9\":15,\"13\":0,\"15\":104,\"104\":13},\"labels\":{\"0\":\"Mailchimp\",\"2\":\"YouTube\",\"3\":\"Facebook\",\"4\":\"Instagram\",\"6\":\"Google\",\"9\":\"Correo electrónico de recordatorio\",\"103\":\"Pinterest\"},\"labels_positions_v2\":{\"0\":4,\"2\":5,\"3\":1,\"4\":2,\"5\":0,\"6\":3,\"9\":7,\"103\":6},\"labels_colors\":{\"0\":{\"color\":\"#ffcb00\",\"border\":\"#c0ab1b\",\"var_name\":\"yellow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"4\":{\"color\":\"#9d50dd\",\"border\":\"#9238af\",\"var_name\":\"purple\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"9\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"},\"103\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"}}}"
+  },
+  {
+   "id": "timeline",
+   "title": "Cronograma de campaña",
+   "type": "timeline",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numbers",
+   "title": "Presupuesto",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "budget",
+   "title": "Gasto real",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "status8",
+   "title": "Estado de la campaña",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1,14,0],\"hide_footer\":true,\"color_mapping\":{\"0\":15,\"14\":104,\"15\":0,\"103\":106,\"104\":14,\"106\":108,\"108\":103},\"labels\":{\"0\":\"Completado\",\"1\":\"En vivo\",\"2\":\"Interrumpido\",\"14\":\"Programado\",\"16\":\"Revisión pendiente\",\"108\":\"Trabajando en ello\"},\"labels_positions_v2\":{\"0\":1,\"1\":0,\"2\":4,\"5\":6,\"14\":5,\"16\":3,\"108\":2},\"labels_colors\":{\"0\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"14\":{\"color\":\"#7e3b8a\",\"border\":\"#7e3b8a\",\"var_name\":\"berry\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"108\":{\"color\":\"#ffadad\",\"border\":\"#ffadad\",\"var_name\":\"peach\"}}}"
+  },
+  {
+   "id": "dropdown1",
+   "title": "Público objetivo",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"id\":1,\"name\":\"Women 30-60\"},{\"id\":2,\"name\":\"Parents\"},{\"id\":3,\"name\":\"Men 30-60\"}]}"
+  },
+  {
+   "id": "link87",
+   "title": "Vínculo a campaña",
+   "type": "link",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numbers9",
+   "title": "Entregado",
+   "type": "numbers",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numbers0",
+   "title": "Abierto",
+   "type": "numbers",
+   "settings_str": "{\"function\":\"sum\",\"unit\":{\"symbol\":\"\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "numbers5",
+   "title": "Cliqueado",
+   "type": "numbers",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Campañas planificadas"
+  },
+  {
+   "id": "group_title",
+   "title": "Campañas en vivo"
+  },
+  {
+   "id": "new_group27578",
+   "title": "Completadas"
+  }
+ ],
+ "items": [
+  {
+   "id": "1228554908",
+   "name": "¡Hola!   👋 Haz clic aquí para leer sobre esta plantilla →",
+   "group": {
+    "id": "topics",
+    "title": "Campañas planificadas"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "subitems_status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado de subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Responsable de la campaña"
+     }
+    },
+    {
+     "id": "platform_1",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Plataforma"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma de campaña"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Presupuesto"
+     }
+    },
+    {
+     "id": "budget",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gasto real"
+     }
+    },
+    {
+     "id": "status8",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado de la campaña"
+     }
+    },
+    {
+     "id": "dropdown1",
+     "text": null,
+     "value": "{\"ids\":[],\"changed_at\":\"2020-06-14T10:56:46.123Z\"}",
+     "column": {
+      "title": "Público objetivo"
+     }
+    },
+    {
+     "id": "link87",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Vínculo a campaña"
+     }
+    },
+    {
+     "id": "numbers9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Entregado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Abierto"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cliqueado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1228554920",
+   "name": "Promoción de vacaciones de otoño",
+   "group": {
+    "id": "topics",
+    "title": "Campañas planificadas"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "subitems_status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado de subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Responsable de la campaña"
+     }
+    },
+    {
+     "id": "platform_1",
+     "text": "Instagram",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "Plataforma"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-02-01 - 2021-02-12",
+     "value": "{\"to\":\"2021-02-12\",\"from\":\"2021-02-01\",\"changed_at\":\"2021-02-04T10:01:44.003Z\"}",
+     "column": {
+      "title": "Cronograma de campaña"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "30",
+     "value": "\"30\"",
+     "column": {
+      "title": "Presupuesto"
+     }
+    },
+    {
+     "id": "budget",
+     "text": "30",
+     "value": "\"30\"",
+     "column": {
+      "title": "Gasto real"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Trabajando en ello",
+     "value": "{\"index\":108,\"post_id\":null,\"changed_at\":\"2021-02-15T17:28:32.792Z\"}",
+     "column": {
+      "title": "Estado de la campaña"
+     }
+    },
+    {
+     "id": "dropdown1",
+     "text": "Men 30-60",
+     "value": "{\"ids\":[3],\"changed_at\":\"2020-07-30T16:54:08.830Z\"}",
+     "column": {
+      "title": "Público objetivo"
+     }
+    },
+    {
+     "id": "link87",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Vínculo a campaña"
+     }
+    },
+    {
+     "id": "numbers9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Entregado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Abierto"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cliqueado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1228554918",
+   "name": "Recordatorio por correo electrónico a los solicitantes",
+   "group": {
+    "id": "topics",
+    "title": "Campañas planificadas"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "subitems_status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado de subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Responsable de la campaña"
+     }
+    },
+    {
+     "id": "platform_1",
+     "text": "Correo electrónico de recordatorio",
+     "value": "{\"index\":9,\"post_id\":null,\"changed_at\":\"2021-02-15T17:19:27.839Z\"}",
+     "column": {
+      "title": "Plataforma"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-02-04 - 2021-02-20",
+     "value": "{\"to\":\"2021-02-20\",\"from\":\"2021-02-04\",\"changed_at\":\"2021-02-04T10:01:53.913Z\"}",
+     "column": {
+      "title": "Cronograma de campaña"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "10",
+     "value": "\"10\"",
+     "column": {
+      "title": "Presupuesto"
+     }
+    },
+    {
+     "id": "budget",
+     "text": "15",
+     "value": "\"15\"",
+     "column": {
+      "title": "Gasto real"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Revisión pendiente",
+     "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2020-10-13T15:20:16.880Z\"}",
+     "column": {
+      "title": "Estado de la campaña"
+     }
+    },
+    {
+     "id": "dropdown1",
+     "text": "Men 30-60",
+     "value": "{\"ids\":[3],\"changed_at\":\"2020-07-09T20:20:41.135Z\"}",
+     "column": {
+      "title": "Público objetivo"
+     }
+    },
+    {
+     "id": "link87",
+     "text": "Post - http://post",
+     "value": "{\"url\":\"http://post\",\"text\":\"Post\",\"changed_at\":\"2020-07-09T20:36:33.872Z\"}",
+     "column": {
+      "title": "Vínculo a campaña"
+     }
+    },
+    {
+     "id": "numbers9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Entregado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Abierto"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cliqueado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1228554906",
+   "name": "Los 5 mejores senderos de ciclismo",
+   "group": {
+    "id": "group_title",
+    "title": "Campañas en vivo"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "subitems_status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado de subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Responsable de la campaña"
+     }
+    },
+    {
+     "id": "platform_1",
+     "text": "Instagram",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "Plataforma"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-02-10 - 2021-02-28",
+     "value": "{\"to\":\"2021-02-28\",\"from\":\"2021-02-10\",\"changed_at\":\"2021-02-04T10:02:00.088Z\"}",
+     "column": {
+      "title": "Cronograma de campaña"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "50",
+     "value": "\"50\"",
+     "column": {
+      "title": "Presupuesto"
+     }
+    },
+    {
+     "id": "budget",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gasto real"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "En vivo",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-10-06T09:08:44.923Z\"}",
+     "column": {
+      "title": "Estado de la campaña"
+     }
+    },
+    {
+     "id": "dropdown1",
+     "text": "Women 30-60",
+     "value": "{\"ids\":[1],\"changed_at\":\"2020-06-04T14:51:36.917Z\"}",
+     "column": {
+      "title": "Público objetivo"
+     }
+    },
+    {
+     "id": "link87",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Vínculo a campaña"
+     }
+    },
+    {
+     "id": "numbers9",
+     "text": "500",
+     "value": "\"500\"",
+     "column": {
+      "title": "Entregado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "250",
+     "value": "\"250\"",
+     "column": {
+      "title": "Abierto"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "75",
+     "value": "\"75\"",
+     "column": {
+      "title": "Cliqueado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1228554914",
+   "name": "Ofertas de mayo",
+   "group": {
+    "id": "new_group27578",
+    "title": "Completadas"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "subitems_status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado de subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Responsable de la campaña"
+     }
+    },
+    {
+     "id": "platform_1",
+     "text": "Google",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2020-10-01T00:32:32.360Z\"}",
+     "column": {
+      "title": "Plataforma"
+     }
+    },
+    {
+     "id": "timeline",
+     "text": "2021-01-01 - 2021-01-31",
+     "value": "{\"to\":\"2021-01-31\",\"from\":\"2021-01-01\",\"changed_at\":\"2021-02-04T10:02:07.289Z\"}",
+     "column": {
+      "title": "Cronograma de campaña"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "20",
+     "value": "\"20\"",
+     "column": {
+      "title": "Presupuesto"
+     }
+    },
+    {
+     "id": "budget",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gasto real"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Completado",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-10-06T09:08:56.851Z\"}",
+     "column": {
+      "title": "Estado de la campaña"
+     }
+    },
+    {
+     "id": "dropdown1",
+     "text": "Parents",
+     "value": "{\"ids\":[2],\"changed_at\":\"2020-06-04T14:51:50.458Z\"}",
+     "column": {
+      "title": "Público objetivo"
+     }
+    },
+    {
+     "id": "link87",
+     "text": "Post - http://post",
+     "value": "{\"url\":\"http://post\",\"text\":\"Post\",\"changed_at\":\"2020-06-24T07:19:55.193Z\"}",
+     "column": {
+      "title": "Vínculo a campaña"
+     }
+    },
+    {
+     "id": "numbers9",
+     "text": "500",
+     "value": "\"500\"",
+     "column": {
+      "title": "Entregado"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "350",
+     "value": "\"350\"",
+     "column": {
+      "title": "Abierto"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "100",
+     "value": "\"100\"",
+     "column": {
+      "title": "Cliqueado"
+     }
+    }
+   ]
+  }
+ ]
+}

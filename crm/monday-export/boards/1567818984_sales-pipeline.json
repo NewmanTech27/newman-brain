@@ -1,0 +1,957 @@
+{
+ "board": {
+  "id": "1567818984",
+  "name": "Sales Pipeline",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "Learn how to use this template: https://youtu.be/8fSyFMvlOh0",
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subitems",
+   "title": "Tasks",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[1567819370]}"
+  },
+  {
+   "id": "person",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "link_to_item3",
+   "title": "Contacts",
+   "type": "board_relation",
+   "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[],\"boardId\":1567819095}"
+  },
+  {
+   "id": "status",
+   "title": "Stage",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"0\":14,\"3\":6,\"4\":0,\"6\":9,\"7\":16,\"9\":7,\"14\":15,\"15\":3,\"16\":4},\"labels\":{\"0\":\"Negotiation\",\"1\":\"Won\",\"2\":\"Lost\",\"3\":\"Proposal\",\"15\":\"Lead\",\"101\":\"Contract Sent\"},\"labels_positions_v2\":{\"0\":2,\"1\":4,\"2\":5,\"3\":1,\"5\":6,\"15\":0,\"101\":3},\"labels_colors\":{\"0\":{\"color\":\"#784bd1\",\"border\":\"#8f4dc4\",\"var_name\":\"dark-purple\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"15\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"101\":{\"color\":\"#ff7575\",\"border\":\"#ff7575\",\"var_name\":\"sunset\"}}}"
+  },
+  {
+   "id": "status9",
+   "title": "Priority",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"0\":3,\"3\":15,\"15\":0},\"labels\":{\"3\":\"Medium\",\"16\":\"Low\",\"19\":\"High\"},\"labels_positions_v2\":{\"3\":1,\"5\":3,\"16\":2,\"19\":0},\"labels_colors\":{\"3\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"19\":{\"color\":\"#ff6d3b\",\"border\":\"#e05828\",\"var_name\":\"dark-orange\"}}}"
+  },
+  {
+   "id": "mirror6",
+   "title": "Company",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"link_to_item3\":true},\"displayed_column\":{\"text\":true},\"displayed_linked_columns\":{\"1567819095\":[\"text\"]}}"
+  },
+  {
+   "id": "formula",
+   "title": "Deal age",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"ROUND(DAYS(TODAY(),{creation_log#Date}),0)\"}"
+  },
+  {
+   "id": "numbers",
+   "title": "Deal Value",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "numbers0",
+   "title": "Close Probability",
+   "type": "numbers",
+   "settings_str": "{\"function\":\"average\",\"unit\":{\"symbol\":\"%\",\"custom_unit\":\"\",\"direction\":\"right\"}}"
+  },
+  {
+   "id": "formula5",
+   "title": "Forecast value",
+   "type": "formula",
+   "settings_str": "{\"formula\":\"{numbers}*{numbers0}\"}"
+  },
+  {
+   "id": "date",
+   "title": "Expected Close Date",
+   "type": "date",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "date9",
+   "title": "Close Date",
+   "type": "date",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "numbers5",
+   "title": "Actual Deal Value",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "mirror",
+   "title": "Phone",
+   "type": "mirror",
+   "settings_str": "{\"relation_column\":{\"link_to_item3\":true},\"displayed_column\":{\"phone\":true},\"displayed_linked_columns\":{\"1567819095\":[\"phone\"]}}"
+  },
+  {
+   "id": "location",
+   "title": "Location",
+   "type": "location",
+   "settings_str": "{}"
+  },
+  {
+   "id": "creation_log",
+   "title": "Creation Log",
+   "type": "creation_log",
+   "settings_str": "{\"mode\":\"dateOnly\"}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Deals"
+  },
+  {
+   "id": "closed",
+   "title": "Closed Won"
+  }
+ ],
+ "items": [
+  {
+   "id": "1567819487",
+   "name": "Deal name 1",
+   "group": {
+    "id": "topics",
+    "title": "Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "link_to_item3",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Lead",
+     "value": "{\"index\":15,\"post_id\":null,\"changed_at\":\"2020-10-04T06:16:44.729Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "High",
+     "value": "{\"index\":19,\"post_id\":null,\"changed_at\":\"2020-11-12T08:49:42.147Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "mirror6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Deal age"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "70000",
+     "value": "\"70000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "50",
+     "value": "\"50\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast value"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-08-14",
+     "value": "{\"date\":\"2021-08-14\",\"changed_at\":\"2021-05-09T09:27:40.251Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "date9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close Date"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Deal Value"
+     }
+    },
+    {
+     "id": "mirror",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "New York, NY, USA",
+     "value": "{\"lat\":\"40.7127753\",\"lng\":\"-74.0059728\",\"address\":\"New York, NY, USA\",\"placeId\":\"ChIJOwg_06VPwokRYv534QaPC8g\",\"changed_at\":\"2020-09-09T16:32:49.022Z\"}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "creation_log",
+     "text": "2021-08-11 18:30:17 UTC",
+     "value": "{\"created_at\":\"2021-08-11T18:30:17Z\",\"creator_id\":\"16103085\"}",
+     "column": {
+      "title": "Creation Log"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819496",
+   "name": "Deal name 2",
+   "group": {
+    "id": "topics",
+    "title": "Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "link_to_item3",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Proposal",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2021-05-07T10:28:13.685Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "High",
+     "value": "{\"index\":19,\"post_id\":null,\"changed_at\":\"2020-09-09T16:31:22.226Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "mirror6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Deal age"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "60000",
+     "value": "\"60000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "75",
+     "value": "\"75\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast value"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-07-30",
+     "value": "{\"date\":\"2021-07-30\",\"changed_at\":\"2021-05-07T10:26:55.031Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "date9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close Date"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Deal Value"
+     }
+    },
+    {
+     "id": "mirror",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "San Francisco, CA, USA",
+     "value": "{\"lat\":\"37.7749295\",\"lng\":\"-122.4194155\",\"address\":\"San Francisco, CA, USA\",\"placeId\":\"ChIJIQBpAG2ahYAR_6128GcTUEo\",\"changed_at\":\"2020-09-09T16:32:58.238Z\"}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "creation_log",
+     "text": "2021-08-11 18:30:17 UTC",
+     "value": "{\"created_at\":\"2021-08-11T18:30:17Z\",\"creator_id\":\"16103085\"}",
+     "column": {
+      "title": "Creation Log"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819513",
+   "name": "Deal name 3",
+   "group": {
+    "id": "topics",
+    "title": "Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "link_to_item3",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Negotiation",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-10-04T06:16:56.560Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "High",
+     "value": "{\"index\":19,\"post_id\":null,\"changed_at\":\"2020-10-04T06:17:00.448Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "mirror6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Deal age"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "78000",
+     "value": "\"78000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "15",
+     "value": "\"15\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast value"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-08-21",
+     "value": "{\"date\":\"2021-08-21\",\"changed_at\":\"2021-05-09T09:28:14.538Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "date9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close Date"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Deal Value"
+     }
+    },
+    {
+     "id": "mirror",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Chicago, IL, USA",
+     "value": "{\"lat\":\"41.8781136\",\"lng\":\"-87.6297982\",\"address\":\"Chicago, IL, USA\",\"placeId\":\"ChIJ7cv00DwsDogRAMDACa2m4K8\",\"changed_at\":\"2020-09-22T10:45:48.626Z\"}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "creation_log",
+     "text": "2021-08-11 18:30:17 UTC",
+     "value": "{\"created_at\":\"2021-08-11T18:30:17Z\",\"creator_id\":\"16103085\"}",
+     "column": {
+      "title": "Creation Log"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819529",
+   "name": "Add your own",
+   "group": {
+    "id": "topics",
+    "title": "Deals"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "link_to_item3",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "status9",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "mirror6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Deal age"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast value"
+     }
+    },
+    {
+     "id": "date",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "date9",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Close Date"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Actual Deal Value"
+     }
+    },
+    {
+     "id": "mirror",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "creation_log",
+     "text": "2021-08-11 18:30:17 UTC",
+     "value": "{\"created_at\":\"2021-08-11T18:30:17Z\",\"creator_id\":\"16103085\"}",
+     "column": {
+      "title": "Creation Log"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819508",
+   "name": "Deal name 4",
+   "group": {
+    "id": "closed",
+    "title": "Closed Won"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "link_to_item3",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Won",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-09-09T16:35:07.540Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "Low",
+     "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2020-11-12T08:49:44.210Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "mirror6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Deal age"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "150000",
+     "value": "\"150000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "100",
+     "value": "\"100\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast value"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-07-18",
+     "value": "{\"date\":\"2021-07-18\",\"changed_at\":\"2021-05-04T13:58:19.360Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "date9",
+     "text": "2021-07-18",
+     "value": "{\"date\":\"2021-07-18\",\"changed_at\":\"2021-05-04T13:58:26.859Z\"}",
+     "column": {
+      "title": "Close Date"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "50000",
+     "value": "\"50000\"",
+     "column": {
+      "title": "Actual Deal Value"
+     }
+    },
+    {
+     "id": "mirror",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Colosseum",
+     "value": "{\"lat\":\"33.868328\",\"lng\":\"-118.2350616\",\"address\":\"Colosseum\",\"placeId\":\"ChIJKUtqxjDLwoAR7r4TW3NehzI\",\"changed_at\":\"2020-09-09T16:35:49.986Z\"}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "creation_log",
+     "text": "2021-08-11 18:30:17 UTC",
+     "value": "{\"created_at\":\"2021-08-11T18:30:17Z\",\"creator_id\":\"16103085\"}",
+     "column": {
+      "title": "Creation Log"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1567819523",
+   "name": "Deal name 5",
+   "group": {
+    "id": "closed",
+    "title": "Closed Won"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Tasks"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "link_to_item3",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Contacts"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Won",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-09-09T16:35:07.540Z\"}",
+     "column": {
+      "title": "Stage"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "Low",
+     "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2020-11-12T08:49:44.210Z\"}",
+     "column": {
+      "title": "Priority"
+     }
+    },
+    {
+     "id": "mirror6",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Company"
+     }
+    },
+    {
+     "id": "formula",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Deal age"
+     }
+    },
+    {
+     "id": "numbers",
+     "text": "89000",
+     "value": "\"89000\"",
+     "column": {
+      "title": "Deal Value"
+     }
+    },
+    {
+     "id": "numbers0",
+     "text": "100",
+     "value": "\"100\"",
+     "column": {
+      "title": "Close Probability"
+     }
+    },
+    {
+     "id": "formula5",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Forecast value"
+     }
+    },
+    {
+     "id": "date",
+     "text": "2021-06-13",
+     "value": "{\"date\":\"2021-06-13\",\"changed_at\":\"2021-07-25T10:24:15.890Z\"}",
+     "column": {
+      "title": "Expected Close Date"
+     }
+    },
+    {
+     "id": "date9",
+     "text": "2021-07-18",
+     "value": "{\"date\":\"2021-07-18\",\"changed_at\":\"2021-05-04T13:58:26.859Z\"}",
+     "column": {
+      "title": "Close Date"
+     }
+    },
+    {
+     "id": "numbers5",
+     "text": "89000",
+     "value": "\"89000\"",
+     "column": {
+      "title": "Actual Deal Value"
+     }
+    },
+    {
+     "id": "mirror",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Phone"
+     }
+    },
+    {
+     "id": "location",
+     "text": "Colosseum",
+     "value": "{\"lat\":\"33.868328\",\"lng\":\"-118.2350616\",\"address\":\"Colosseum\",\"placeId\":\"ChIJKUtqxjDLwoAR7r4TW3NehzI\",\"changed_at\":\"2020-09-09T16:35:49.986Z\"}",
+     "column": {
+      "title": "Location"
+     }
+    },
+    {
+     "id": "creation_log",
+     "text": "2021-08-11 18:30:17 UTC",
+     "value": "{\"created_at\":\"2021-08-11T18:30:17Z\",\"creator_id\":\"16103085\"}",
+     "column": {
+      "title": "Creation Log"
+     }
+    }
+   ]
+  }
+ ]
+}

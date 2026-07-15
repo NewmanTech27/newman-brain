@@ -1,0 +1,2231 @@
+{
+ "board": {
+  "id": "1492686861",
+  "name": "Mind Map",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "",
+  "workspace": {
+   "id": "448222",
+   "name": "Direccion"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numeraci_n_autom_tica",
+   "title": "Fc",
+   "type": "auto_number",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subelementos",
+   "title": "Subelementos",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[1492688712]}"
+  },
+  {
+   "id": "person",
+   "title": "Persona",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Relevancia",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"labels\":{\"12\":\"\"},\"labels_positions_v2\":{\"5\":1,\"12\":0},\"labels_colors\":{\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"}}}"
+  },
+  {
+   "id": "cronograma",
+   "title": "Cronograma",
+   "type": "timeline",
+   "settings_str": "{\"hide_footer\":false}"
+  },
+  {
+   "id": "n_meros",
+   "title": "Números",
+   "type": "numbers",
+   "settings_str": "{}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "grupo_nuevo80922",
+   "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+  },
+  {
+   "id": "grupo_nuevo16418",
+   "title": "Top Issues"
+  },
+  {
+   "id": "grupo_nuevo33729",
+   "title": "Proyectos"
+  },
+  {
+   "id": "grupo_nuevo60437",
+   "title": "FUN"
+  },
+  {
+   "id": "grupo_nuevo21206",
+   "title": "VIP ⭐"
+  }
+ ],
+ "items": [
+  {
+   "id": "2353119498",
+   "name": "Agencia de viajes",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "Alondra Pacheco",
+     "value": "{\"changed_at\":\"2022-03-07T21:58:30.002Z\",\"personsAndTeams\":[{\"id\":26916991,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2391388825",
+   "name": "Coordinar reunión Alma Rosa - Rocha",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371640316",
+   "name": "Sierra",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "Alondra Pacheco",
+     "value": "{\"changed_at\":\"2022-03-17T18:54:18.367Z\",\"personsAndTeams\":[{\"id\":26916991,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859236092",
+   "name": "Operar al jonathan",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "Alondra Pacheco",
+     "value": "{\"changed_at\":\"2022-03-07T21:57:37.430Z\",\"personsAndTeams\":[{\"id\":26916991,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1863524344",
+   "name": "Rentar departamento CDMX",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2213566068",
+   "name": "Casa Isla",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "Alondra Pacheco",
+     "value": "{\"changed_at\":\"2022-03-07T22:09:16.080Z\",\"personsAndTeams\":[{\"id\":26916991,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371354085",
+   "name": "Privado direccion cerrar tablaroca",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-12 - 2022-03-12",
+     "value": "{\"to\":\"2022-03-12\",\"from\":\"2022-03-12\",\"changed_at\":\"2022-03-07T23:35:10.470Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371650442",
+   "name": "Compra de activos",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-14 - 2022-03-22",
+     "value": "{\"to\":\"2022-03-22\",\"from\":\"2022-03-14\",\"changed_at\":\"2022-03-14T23:09:17.840Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859236673",
+   "name": "Comprar Casa Mexicali",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2571808839",
+   "name": "Comprar libro \"Mide lo que importa\" en mayoreo",
+   "group": {
+    "id": "grupo_nuevo80922",
+    "title": "Pendientes.com.mx / Haganlosporfa·12451.12/"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1868595923",
+   "name": "Joint V Enermex",
+   "group": {
+    "id": "grupo_nuevo16418",
+    "title": "Top Issues"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2022-02-21T13:54:32.658Z\"}",
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2321771344",
+   "name": "Hermosillo",
+   "group": {
+    "id": "grupo_nuevo16418",
+    "title": "Top Issues"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2321772118",
+   "name": "Chedraui",
+   "group": {
+    "id": "grupo_nuevo16418",
+    "title": "Top Issues"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2321918780",
+   "name": "Fondo local",
+   "group": {
+    "id": "grupo_nuevo16418",
+    "title": "Top Issues"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859266859",
+   "name": "JV Panama - N Solar",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2022-03-24T16:32:56.575Z\"}",
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-04 - 2022-03-26",
+     "value": "{\"to\":\"2022-03-26\",\"from\":\"2022-03-04\",\"changed_at\":\"2022-03-03T19:00:29.079Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2320159292",
+   "name": "AV Web",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2022-03-23T00:46:46.110Z\"}",
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-04 - 2022-03-11",
+     "value": "{\"to\":\"2022-03-11\",\"from\":\"2022-03-04\",\"changed_at\":\"2022-03-03T19:01:25.957Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859267211",
+   "name": "JV Enermex",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2021-11-02T04:34:35.320Z\"}",
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1987208555",
+   "name": "JV Carso IEM Solar",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2021-12-06T18:27:16.497Z\"}",
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-14 - 2022-03-25",
+     "value": "{\"to\":\"2022-03-25\",\"from\":\"2022-03-14\",\"changed_at\":\"2022-03-14T23:06:43.024Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2322032515",
+   "name": "Matriz de riesgos",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-04 - 2022-03-18",
+     "value": "{\"to\":\"2022-03-18\",\"from\":\"2022-03-04\",\"changed_at\":\"2022-03-03T19:02:31.225Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2322026625",
+   "name": "iDEER",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-03 - 2022-03-18",
+     "value": "{\"to\":\"2022-03-18\",\"from\":\"2022-03-03\",\"changed_at\":\"2022-03-03T19:02:24.872Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2204805496",
+   "name": "Prive Equity Bucket",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": "",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2022-02-06T22:17:31.628Z\"}",
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-03 - 2022-03-25",
+     "value": "{\"to\":\"2022-03-25\",\"from\":\"2022-03-03\",\"changed_at\":\"2022-03-03T19:02:45.293Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2322330015",
+   "name": "Establecer sistemas de reportes",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-03 - 2022-03-11",
+     "value": "{\"to\":\"2022-03-11\",\"from\":\"2022-03-03\",\"changed_at\":\"2022-03-03T19:03:06.119Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2206556097",
+   "name": "Holding ei",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-03 - 2022-04-22",
+     "value": "{\"to\":\"2022-04-22\",\"from\":\"2022-03-03\",\"changed_at\":\"2022-03-03T19:03:18.375Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2320159368",
+   "name": "Ghost Grid",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-04 - 2022-03-25",
+     "value": "{\"to\":\"2022-03-25\",\"from\":\"2022-03-04\",\"changed_at\":\"2022-03-03T19:33:24.166Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2371426105",
+   "name": "Casa de bolsa JV San Ysidro",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "2022-03-03 - 2022-03-25",
+     "value": "{\"to\":\"2022-03-25\",\"from\":\"2022-03-03\",\"changed_at\":\"2022-03-03T19:33:36.071Z\"}",
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2536697830",
+   "name": "Playbook",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2536751396",
+   "name": "Valuacion",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "2536793149",
+   "name": "Revision de reportes",
+   "group": {
+    "id": "grupo_nuevo33729",
+    "title": "Proyectos"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1499575035",
+   "name": "AHM Software",
+   "group": {
+    "id": "grupo_nuevo60437",
+    "title": "FUN"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2022-02-21T13:54:22.141Z\"}",
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1522296894",
+   "name": "AHM ONG",
+   "group": {
+    "id": "grupo_nuevo60437",
+    "title": "FUN"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859376907",
+   "name": "AHM Food",
+   "group": {
+    "id": "grupo_nuevo60437",
+    "title": "FUN"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859377747",
+   "name": "AHM People",
+   "group": {
+    "id": "grupo_nuevo60437",
+    "title": "FUN"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859378651",
+   "name": "AHM financial Service",
+   "group": {
+    "id": "grupo_nuevo60437",
+    "title": "FUN"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859382468",
+   "name": "AHM BD",
+   "group": {
+    "id": "grupo_nuevo60437",
+    "title": "FUN"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1859235060",
+   "name": "Elemento nuevo",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713215572",
+   "name": "Culiacán",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713241277",
+   "name": "Mazatlán",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713273947",
+   "name": "Monterrey",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713278336",
+   "name": "Hermosillo",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713301724",
+   "name": "Guadalajara",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713322478",
+   "name": "Cdmx",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1713345326",
+   "name": "Merida",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1862473831",
+   "name": "Tijuana",
+   "group": {
+    "id": "grupo_nuevo21206",
+    "title": "VIP ⭐"
+   },
+   "column_values": [
+    {
+     "id": "subelementos",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subelementos"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Persona"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Relevancia"
+     }
+    },
+    {
+     "id": "cronograma",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Cronograma"
+     }
+    },
+    {
+     "id": "n_meros",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Números"
+     }
+    }
+   ]
+  }
+ ]
+}

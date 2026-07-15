@@ -1,0 +1,1 @@
+id,owner_email,imap_host,imap_port,smtp_host,smtp_port,username,secret_ref,from_address,display_name,last_uid_seen,sync_state,active,last_synced_at,created_by,created_at

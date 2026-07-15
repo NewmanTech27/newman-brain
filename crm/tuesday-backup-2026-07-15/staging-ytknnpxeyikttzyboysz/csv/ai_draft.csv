@@ -1,0 +1,7 @@
+id,deal_id,action,channel,title,body,status,model,grounding_hash,created_by,created_at,decided_by,decided_at
+3c1ba0a4-7852-4346-83f8-4dcaf8985bd4,057bafa7-f0d4-47a0-8425-4dbc6b9fffee,summary,,,"Aquí tienes un resumen del estado del deal ""GICSA 2.0"":
+
+*   **Etapa:** Earlies.
+*   **Señales recientes:** No hay actividades ni tareas abiertas registradas.
+*   **Riesgos:** No se identifican riesgos específicos en el contexto proporcionado.
+*   **Siguiente paso lógico:** Contactar al cliente para iniciar el proceso.",draft,google/gemini-2.5-flash,len219,jesus@newman.re,2026-07-11 17:57:58.486516+00,,

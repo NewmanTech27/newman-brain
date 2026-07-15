@@ -1,0 +1,9 @@
+id,code,name,line_of_defense,owner_role,frequency,automated,system_ref,active,created_at
+7b8765b4-1164-46b8-b761-a8e94801d2d9,C-IDENT,Identificacion y expediente del cliente (KYC/KYB),1,sales,por-operacion,t,crm_web_request_clearance,t,2026-07-09 00:06:07.920334+00
+3afde82e-7403-477b-99e7-d8cc342c3352,C-SCREEN,Cotejo listas (69-B/OFAC/PEP/LPB),2,compliance,por-operacion,t,crm.sanctions_pep,t,2026-07-09 00:06:07.920334+00
+6622b8d5-b240-4699-824f-7dd616ce6cc8,C-RESCREEN,Recotejo periodico de cartera,2,compliance,semanal,t,crm.rescreen,t,2026-07-09 00:06:07.920334+00
+be7d9201-1299-442c-92fc-e0832b16a9f4,C-EBR,Evaluacion de riesgo (EBR) y nivel de DD,2,compliance,por-operacion,t,crm_web_compute_ebr,t,2026-07-09 00:06:07.920334+00
+7f70b837-cc02-400d-91bd-066462ec033d,C-AVISO,Presentacion de avisos (Art.17),2,compliance,mensual,t,crm_web_generate_aviso_xml,t,2026-07-09 00:06:07.920334+00
+33241d0e-5ecb-44f8-b815-ca3244a8d76e,C-STR,Deteccion y reporte de operaciones inusuales,2,compliance,diaria,t,crm.scan_aml_alerts,t,2026-07-09 00:06:07.920334+00
+0c3bd105-79a0-43e5-a984-449139fd7daa,C-4EYES,Maker-checker en disposiciones sensibles,2,compliance,por-operacion,t,four_eyes,t,2026-07-09 00:06:07.920334+00
+a1ec4e0f-9854-4065-9030-8a584c045b6b,C-AUDIT,Auditoria independiente del programa,3,audit,anual,f,,t,2026-07-09 00:06:07.920334+00

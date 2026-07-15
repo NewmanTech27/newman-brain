@@ -1,0 +1,7 @@
+{
+  "exported": "2026-07-15",
+  "source": "docker container n8n on mac mini (docker.n8n.io/n8nio/n8n:latest, 127.0.0.1:5678)",
+  "workflows": [],
+  "credentials": [],
+  "note": "n8n export:workflow --all and export:credentials --all both returned 'No ... found with specified filters' — the instance was empty at decommission time. Data volume n8n_n8n_data preserved on disk (/var/lib/docker/volumes/n8n_n8n_data/_data)."
+}

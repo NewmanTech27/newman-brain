@@ -1,0 +1,4 @@
+tier,seq,min_amount,max_amount,label,requires_approver,requires_quorum
+officer,1,0,5000000,Oficial de crédito (≤5M),t,1
+committee2,2,5000000,30000000,Comité de 2 (5–30M),t,2
+committee_full,3,30000000,,Comité pleno (>30M),t,3

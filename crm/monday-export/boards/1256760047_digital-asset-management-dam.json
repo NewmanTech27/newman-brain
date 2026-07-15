@@ -1,0 +1,475 @@
+{
+ "board": {
+  "id": "1256760047",
+  "name": "Digital asset management (DAM)",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "In this board, you can manage all your digital assets with your team in one central place. You can use different views and filters to get the specific information you need at any given moment. Feel free to customize this board based on your team's needs and workflow.",
+  "workspace": {
+   "id": "333637",
+   "name": "Comercial"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "subitems",
+   "title": "Subitems",
+   "type": "subtasks",
+   "settings_str": "{\"allowMultipleItems\":true,\"itemTypeName\":\"column.subtasks.title\",\"displayType\":\"BOARD_INLINE\",\"boardIds\":[1256760078]}"
+  },
+  {
+   "id": "person",
+   "title": "Designer",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"2\":\"Stuck\",\"6\":\"Final version\",\"16\":\"2nd draft\",\"102\":\"1st draft\",\"104\":\"Waiting for approval\",\"108\":\"Create your own\"},\"labels_positions_v2\":{\"0\":0,\"2\":1,\"5\":2,\"6\":7,\"16\":5,\"102\":3,\"104\":4,\"108\":6},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"6\":{\"color\":\"#037f4c\",\"border\":\"#006b38\",\"var_name\":\"grass-green\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"102\":{\"color\":\"#faa1f1\",\"border\":\"#faa1f1\",\"var_name\":\"bubble\"},\"104\":{\"color\":\"#7e3b8a\",\"border\":\"#7e3b8a\",\"var_name\":\"berry\"},\"108\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"}}}"
+  },
+  {
+   "id": "files",
+   "title": "Final version attachment",
+   "type": "file",
+   "settings_str": "{}"
+  },
+  {
+   "id": "link",
+   "title": "Final version link",
+   "type": "link",
+   "settings_str": "{}"
+  },
+  {
+   "id": "text",
+   "title": "Asset details",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "dropdown",
+   "title": "Used for",
+   "type": "dropdown",
+   "settings_str": "{\"labels\":[{\"id\":1,\"name\":\"Free for use\"},{\"id\":2,\"name\":\"Website\"},{\"id\":3,\"name\":\"Social media\"}]}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Logos"
+  },
+  {
+   "id": "group_title",
+   "title": "Videos"
+  },
+  {
+   "id": "new_group89026",
+   "title": "Images"
+  }
+ ],
+ "items": [
+  {
+   "id": "1256760229",
+   "name": "Hi there!   👋  Click here for more information  →",
+   "group": {
+    "id": "topics",
+    "title": "Logos"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Designer"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Final version attachment"
+     }
+    },
+    {
+     "id": "link",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Final version link"
+     }
+    },
+    {
+     "id": "text",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Asset details"
+     }
+    },
+    {
+     "id": "dropdown",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Used for"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760184",
+   "name": "Company logo",
+   "group": {
+    "id": "topics",
+    "title": "Logos"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Designer"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Final version",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2020-08-25T10:49:47.636Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "files",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/217405376/01.jpg",
+     "value": "{\"files\":[{\"name\":\"01.jpg\",\"assetId\":217405376,\"isImage\":\"true\",\"fileType\":\"ASSET\",\"createdAt\":1618238483929,\"createdBy\":\"14293831\"}]}",
+     "column": {
+      "title": "Final version attachment"
+     }
+    },
+    {
+     "id": "link",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Final version link"
+     }
+    },
+    {
+     "id": "text",
+     "text": "16x16",
+     "value": "\"16x16\"",
+     "column": {
+      "title": "Asset details"
+     }
+    },
+    {
+     "id": "dropdown",
+     "text": "Website, Social media",
+     "value": "{\"ids\":[2,3],\"changed_at\":\"2020-08-25T10:44:15.465Z\"}",
+     "column": {
+      "title": "Used for"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760216",
+   "name": "Welcome video",
+   "group": {
+    "id": "group_title",
+    "title": "Videos"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Designer"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Waiting for approval",
+     "value": "{\"index\":104,\"post_id\":null,\"changed_at\":\"2020-08-26T15:48:25.512Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": "{\"files\":null}",
+     "column": {
+      "title": "Final version attachment"
+     }
+    },
+    {
+     "id": "link",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Final version link"
+     }
+    },
+    {
+     "id": "text",
+     "text": "HD",
+     "value": "\"HD\"",
+     "column": {
+      "title": "Asset details"
+     }
+    },
+    {
+     "id": "dropdown",
+     "text": "Free for use",
+     "value": "{\"ids\":[1],\"changed_at\":\"2020-08-25T10:45:57.287Z\"}",
+     "column": {
+      "title": "Used for"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760218",
+   "name": "Product launch video",
+   "group": {
+    "id": "group_title",
+    "title": "Videos"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Designer"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Final version",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2020-08-25T10:49:49.624Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "files",
+     "text": "https://newman-re.monday.com/protected_static/1169566/resources/217405386/Screen%20Shot%202020-05-21%20at%2011.16.27.png",
+     "value": "{\"files\":[{\"name\":\"Screen Shot 2020-05-21 at 11.16.27.png\",\"assetId\":217405386,\"isImage\":\"true\",\"fileType\":\"ASSET\",\"createdAt\":1618238508970,\"createdBy\":\"14293831\"}]}",
+     "column": {
+      "title": "Final version attachment"
+     }
+    },
+    {
+     "id": "link",
+     "text": "http://www.youtube.com",
+     "value": "{\"url\":\"http://www.youtube.com\",\"text\":\"http://www.youtube.com\",\"changed_at\":\"2020-08-25T10:46:31.195Z\"}",
+     "column": {
+      "title": "Final version link"
+     }
+    },
+    {
+     "id": "text",
+     "text": "360 view",
+     "value": "\"360 view\"",
+     "column": {
+      "title": "Asset details"
+     }
+    },
+    {
+     "id": "dropdown",
+     "text": "Social media",
+     "value": "{\"ids\":[3],\"changed_at\":\"2020-08-25T10:46:35.603Z\"}",
+     "column": {
+      "title": "Used for"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760227",
+   "name": "Team members",
+   "group": {
+    "id": "new_group89026",
+    "title": "Images"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Designer"
+     }
+    },
+    {
+     "id": "status",
+     "text": "2nd draft",
+     "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2020-08-25T10:49:59.456Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Final version attachment"
+     }
+    },
+    {
+     "id": "link",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Final version link"
+     }
+    },
+    {
+     "id": "text",
+     "text": "32x16",
+     "value": "\"32x16\"",
+     "column": {
+      "title": "Asset details"
+     }
+    },
+    {
+     "id": "dropdown",
+     "text": "Website",
+     "value": "{\"ids\":[2],\"changed_at\":\"2020-08-25T10:48:32.420Z\"}",
+     "column": {
+      "title": "Used for"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1256760232",
+   "name": "Our office",
+   "group": {
+    "id": "new_group89026",
+    "title": "Images"
+   },
+   "column_values": [
+    {
+     "id": "subitems",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Subitems"
+     }
+    },
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Designer"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Final version",
+     "value": "{\"index\":6,\"post_id\":null,\"changed_at\":\"2020-08-25T10:55:51.525Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": "{\"files\":null}",
+     "column": {
+      "title": "Final version attachment"
+     }
+    },
+    {
+     "id": "link",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Final version link"
+     }
+    },
+    {
+     "id": "text",
+     "text": "46x40",
+     "value": "\"46x40\"",
+     "column": {
+      "title": "Asset details"
+     }
+    },
+    {
+     "id": "dropdown",
+     "text": "Free for use",
+     "value": "{\"ids\":[1],\"changed_at\":\"2020-08-25T12:45:26.316Z\"}",
+     "column": {
+      "title": "Used for"
+     }
+    }
+   ]
+  }
+ ]
+}

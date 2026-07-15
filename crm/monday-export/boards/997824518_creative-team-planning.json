@@ -1,0 +1,321 @@
+{
+ "board": {
+  "id": "997824518",
+  "name": "Creative team planning",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "This board will help you collaborate with your team, track progress, and reach goals. Here you can assign team members to tasks and update task statuses in order to stay on top of your creative plans in one central place.",
+  "workspace": {
+   "id": "333511",
+   "name": "Marketing"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "person",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status9",
+   "title": "Channel",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"6\":108,\"12\":12,\"14\":109,\"101\":101,\"108\":6,\"109\":14},\"labels\":{\"2\":\"Youtube\",\"3\":\"Facebook\",\"6\":\"Adwords\",\"12\":\"Instagram\",\"16\":\"Twitter\",\"101\":\"Create your own\"},\"labels_positions_v2\":{\"2\":4,\"3\":5,\"5\":0,\"6\":3,\"12\":2,\"16\":1,\"101\":6},\"labels_colors\":{\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"6\":{\"color\":\"#4eccc6\",\"border\":\"#4eccc6\",\"var_name\":\"australia\"},\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"16\":{\"color\":\"#66ccff\",\"border\":\"#5ab3e0\",\"var_name\":\"turquoise\"},\"101\":{\"color\":\"#ff7575\",\"border\":\"#ff7575\",\"var_name\":\"sunset\"}}}"
+  },
+  {
+   "id": "status8",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Live\",\"2\":\"Stuck\",\"12\":\"Pending review\",\"102\":\"Create your own\"},\"labels_positions_v2\":{\"0\":1,\"1\":3,\"2\":0,\"5\":4,\"12\":2,\"102\":5},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"12\":{\"color\":\"#ff007f\",\"border\":\"#e01279\",\"var_name\":\"dark-pink\"},\"102\":{\"color\":\"#faa1f1\",\"border\":\"#faa1f1\",\"var_name\":\"bubble\"}}}"
+  },
+  {
+   "id": "date2",
+   "title": "Date",
+   "type": "timeline",
+   "settings_str": "{}"
+  },
+  {
+   "id": "files",
+   "title": "Files",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "new_group23685",
+   "title": "Few tips to help you make the most of this template :)"
+  },
+  {
+   "id": "topics",
+   "title": "This week"
+  },
+  {
+   "id": "group_title",
+   "title": "Next week"
+  },
+  {
+   "id": "new_group",
+   "title": "Backlog"
+  }
+ ],
+ "items": [
+  {
+   "id": "997824557",
+   "name": "Hi there!   👋  Click here for more information  →",
+   "group": {
+    "id": "new_group23685",
+    "title": "Few tips to help you make the most of this template :)"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status9",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "status8",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Files"
+     }
+    }
+   ]
+  },
+  {
+   "id": "997824542",
+   "name": "Creating short post - product 1",
+   "group": {
+    "id": "topics",
+    "title": "This week"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "Twitter",
+     "value": "{\"index\":16,\"post_id\":null,\"changed_at\":\"2020-08-16T13:02:18.896Z\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Live",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2020-08-16T13:04:56.534Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date2",
+     "text": "2020-09-07 - 2020-09-11",
+     "value": "{\"to\":\"2020-09-11\",\"from\":\"2020-09-07\",\"changed_at\":\"2020-09-09T07:29:38.502Z\"}",
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": "{\"files\":null}",
+     "column": {
+      "title": "Files"
+     }
+    }
+   ]
+  },
+  {
+   "id": "997824546",
+   "name": "Welcome video - product 2",
+   "group": {
+    "id": "topics",
+    "title": "This week"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "Facebook",
+     "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2020-08-16T13:04:32.535Z\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Stuck",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2020-07-30T15:49:34.056Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date2",
+     "text": "2020-09-08 - 2020-09-12",
+     "value": "{\"to\":\"2020-09-12\",\"from\":\"2020-09-08\",\"changed_at\":\"2020-09-09T07:29:52.657Z\"}",
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": "{\"files\":null}",
+     "column": {
+      "title": "Files"
+     }
+    }
+   ]
+  },
+  {
+   "id": "997824551",
+   "name": "Working on the product's photos",
+   "group": {
+    "id": "group_title",
+    "title": "Next week"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "Instagram",
+     "value": "{\"index\":12,\"post_id\":null,\"changed_at\":\"2020-08-16T13:00:08.102Z\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "status8",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-09-09T07:30:10.813Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date2",
+     "text": "2020-09-16 - 2020-09-19",
+     "value": "{\"to\":\"2020-09-19\",\"from\":\"2020-09-16\",\"changed_at\":\"2020-09-09T07:30:01.399Z\"}",
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Files"
+     }
+    }
+   ]
+  },
+  {
+   "id": "997824554",
+   "name": "Here you can add future tasks and ideas",
+   "group": {
+    "id": "new_group",
+    "title": "Backlog"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "status9",
+     "text": "Youtube",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2020-08-16T13:00:09.631Z\"}",
+     "column": {
+      "title": "Channel"
+     }
+    },
+    {
+     "id": "status8",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "date2",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Date"
+     }
+    },
+    {
+     "id": "files",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Files"
+     }
+    }
+   ]
+  }
+ ]
+}

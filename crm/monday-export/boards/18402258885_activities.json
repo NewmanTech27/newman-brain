@@ -1,0 +1,239 @@
+{
+ "board": {
+  "id": "18402258885",
+  "name": "Activities",
+  "state": "active",
+  "board_kind": "public",
+  "description": "The activities board shows all the activities that are added using the Emails & Activities in the page.\nEvery time you add an activity through Emails & Activities, a new activity will be added to this board.",
+  "workspace": {
+   "id": "14528481",
+   "name": "other"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_owner",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_type",
+   "title": "Activity Type",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"7\":153,\"153\":7},\"labels\":{\"0\":\"Call summary\",\"107\":\"Meeting\"},\"labels_positions_v2\":{\"0\":1,\"5\":2,\"107\":0},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"107\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"}}}"
+  },
+  {
+   "id": "activity_start_time",
+   "title": "Start time",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_end_time",
+   "title": "End time",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[4],\"color_mapping\":{\"0\":102,\"1\":14,\"4\":15,\"6\":4,\"14\":1,\"15\":6,\"102\":0},\"labels\":{\"3\":\"Open\",\"4\":\"Done\"},\"labels_positions_v2\":{\"3\":0,\"4\":1,\"5\":2},\"labels_colors\":{\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+  },
+  {
+   "id": "activity_item",
+   "title": "Related item",
+   "type": "board_relation",
+   "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[18402258886,18402258888,18402258884,18402258887,18402258885],\"boardId\":18402258886}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Account Activities"
+  }
+ ],
+ "items": [
+  {
+   "id": "11408140675",
+   "name": "Phone call with Robert",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_type",
+     "text": "Call summary",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2025-10-01T17:56:03.171Z\"}",
+     "column": {
+      "title": "Activity Type"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2026-02-16 16:00",
+     "value": "{\"date\":\"2026-02-16\",\"time\":\"15:00:00\",\"changed_at\":\"2025-10-01T18:02:50.950Z\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "2026-02-16 16:30",
+     "value": "{\"date\":\"2026-02-16\",\"time\":\"15:30:00\",\"changed_at\":\"2025-10-01T18:03:03.608Z\"}",
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Done",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2022-05-11T14:47:26.929Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Related item"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408134887",
+   "name": "Meeting with Steven",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_type",
+     "text": "Meeting",
+     "value": "{\"index\":107,\"post_id\":null}",
+     "column": {
+      "title": "Activity Type"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2026-02-26 19:00",
+     "value": "{\"date\":\"2026-02-26\",\"time\":\"18:00:00\",\"changed_at\":\"2025-10-01T18:03:14.079Z\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "2026-02-26 19:30",
+     "value": "{\"date\":\"2026-02-26\",\"time\":\"18:30:00\",\"changed_at\":\"2025-10-01T18:03:21.786Z\"}",
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Done",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Related item"
+     }
+    }
+   ]
+  },
+  {
+   "id": "11408134879",
+   "name": "Meeting with Robert",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_type",
+     "text": "Meeting",
+     "value": "{\"index\":107,\"post_id\":null,\"changed_at\":\"2024-11-20T09:41:23.472Z\"}",
+     "column": {
+      "title": "Activity Type"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2026-03-10 18:00",
+     "value": "{\"date\":\"2026-03-10\",\"time\":\"17:00:00\",\"changed_at\":\"2025-10-01T18:03:41.006Z\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "2026-03-10 19:00",
+     "value": "{\"date\":\"2026-03-10\",\"time\":\"18:00:00\",\"changed_at\":\"2025-10-01T18:03:47.514Z\"}",
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Done",
+     "value": "{\"index\":4,\"invalid\":false,\"post_id\":null,\"changed_at\":\"2025-10-09T09:15:23.930Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Related item"
+     }
+    }
+   ]
+  }
+ ]
+}

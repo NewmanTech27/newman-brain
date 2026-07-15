@@ -1,0 +1,1293 @@
+{
+ "board": {
+  "id": "953405671",
+  "name": "Subelementos de Minutas Reuniones",
+  "state": "archived",
+  "board_kind": "share",
+  "description": null,
+  "workspace": {
+   "id": "6041775",
+   "name": "Espacio de trabajo principal"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "person",
+   "title": "Equipo",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "status",
+   "title": "Estado",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"labels\":{\"0\":\"Working on it\",\"1\":\"Done\",\"2\":\"Stuck\"},\"labels_positions_v2\":{\"0\":1,\"1\":2,\"2\":0,\"3\":3,\"4\":4,\"5\":9,\"6\":5,\"8\":6,\"9\":7,\"10\":8},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"1\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"}}}"
+  },
+  {
+   "id": "date0",
+   "title": "Fecha",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "archivo",
+   "title": "Evidencia",
+   "type": "file",
+   "settings_str": "{\"hide_footer\":false}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "subitems_of_979343000",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_979342104",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_979332764",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_979331038",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_979276028",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_979274002",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_972240020",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_964763300",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_962788919",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_962740456",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_962710820",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_962703590",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_962688054",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_962670954",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_962595159",
+   "title": "Subitems"
+  },
+  {
+   "id": "subitems_of_943384403",
+   "title": "Subitems"
+  },
+  {
+   "id": "topics",
+   "title": "Subitems"
+  }
+ ],
+ "items": [
+  {
+   "id": "979343099",
+   "name": "Cuantificación de materiales",
+   "group": {
+    "id": "subitems_of_979343000",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-20",
+     "value": "{\"date\":\"2021-01-20\",\"changed_at\":\"2021-01-18T19:01:20.176Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979348355",
+   "name": "Conseguir instalador",
+   "group": {
+    "id": "subitems_of_979343000",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Mónica L García",
+     "value": "{\"changed_at\":\"2021-01-18T19:03:17.299Z\",\"personsAndTeams\":[{\"id\":11617543,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979342141",
+   "name": "Definir sembrado",
+   "group": {
+    "id": "subitems_of_979342104",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-19",
+     "value": "{\"date\":\"2021-01-19\",\"changed_at\":\"2021-01-18T19:00:50.300Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979332938",
+   "name": "Viáticos",
+   "group": {
+    "id": "subitems_of_979332764",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-19",
+     "value": "{\"date\":\"2021-01-19\",\"changed_at\":\"2021-01-18T18:58:02.571Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979333916",
+   "name": "Terminar planeación",
+   "group": {
+    "id": "subitems_of_979332764",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-20",
+     "value": "{\"date\":\"2021-01-20\",\"changed_at\":\"2021-01-18T18:58:09.899Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979356662",
+   "name": "Conseguir ayudantes de instalación (2)",
+   "group": {
+    "id": "subitems_of_979332764",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Mónica L García",
+     "value": "{\"changed_at\":\"2021-01-18T19:05:52.824Z\",\"personsAndTeams\":[{\"id\":11617543,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-20",
+     "value": "{\"date\":\"2021-01-20\",\"changed_at\":\"2021-01-18T19:06:16.962Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979331086",
+   "name": "Cotización de Verificación e inspección",
+   "group": {
+    "id": "subitems_of_979331038",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-19",
+     "value": "{\"date\":\"2021-01-19\",\"changed_at\":\"2021-01-18T18:58:44.643Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979339537",
+   "name": "Cuantificación de materiales",
+   "group": {
+    "id": "subitems_of_979331038",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-22",
+     "value": "{\"date\":\"2021-01-22\",\"changed_at\":\"2021-01-18T19:00:19.546Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979360415",
+   "name": "Personal (2 ayudantes)",
+   "group": {
+    "id": "subitems_of_979331038",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Mónica L García",
+     "value": "{\"changed_at\":\"2021-01-18T19:07:23.581Z\",\"personsAndTeams\":[{\"id\":11617543,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979276184",
+   "name": "Manual de usuario",
+   "group": {
+    "id": "subitems_of_979276028",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Angel Peña",
+     "value": "{\"changed_at\":\"2021-01-18T18:39:59.116Z\",\"personsAndTeams\":[{\"id\":11273352,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979277467",
+   "name": "Acta de entrega",
+   "group": {
+    "id": "subitems_of_979276028",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Customer Service",
+     "value": "{\"changed_at\":\"2021-01-18T18:40:39.342Z\",\"personsAndTeams\":[{\"id\":18041139,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979277626",
+   "name": "Encuestas de satisfacción",
+   "group": {
+    "id": "subitems_of_979276028",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Pavel Romero, Krist Gustavo Vega",
+     "value": "{\"changed_at\":\"2021-01-18T18:40:32.562Z\",\"personsAndTeams\":[{\"id\":6966678,\"kind\":\"person\"},{\"id\":15739011,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979278538",
+   "name": "Hoja de servicio",
+   "group": {
+    "id": "subitems_of_979276028",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Customer Service",
+     "value": "{\"changed_at\":\"2021-01-18T18:40:43.567Z\",\"personsAndTeams\":[{\"id\":18041139,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979274121",
+   "name": "Hotel el yauco",
+   "group": {
+    "id": "subitems_of_979274002",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "979282931",
+   "name": "Proacua",
+   "group": {
+    "id": "subitems_of_979274002",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "974805038",
+   "name": "Subelemento",
+   "group": {
+    "id": "subitems_of_972240020",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "969185400",
+   "name": "Área administrativa",
+   "group": {
+    "id": "subitems_of_964763300",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "969186073",
+   "name": "Área Jurídica",
+   "group": {
+    "id": "subitems_of_964763300",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "969186163",
+   "name": "Área RRHH",
+   "group": {
+    "id": "subitems_of_964763300",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "969186215",
+   "name": "Área Comercial",
+   "group": {
+    "id": "subitems_of_964763300",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "969186323",
+   "name": "Área operativa",
+   "group": {
+    "id": "subitems_of_964763300",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "962743982",
+   "name": "solicitar RFC de las sociedades",
+   "group": {
+    "id": "subitems_of_962740456",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "962711643",
+   "name": "Elegir denominación",
+   "group": {
+    "id": "subitems_of_962710820",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Jair Ricardo Vega Rodríguez",
+     "value": "{\"changed_at\":\"2021-01-11T23:18:39.787Z\",\"personsAndTeams\":[{\"id\":17128728,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-01-12T17:37:29.490Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-12",
+     "value": "{\"date\":\"2021-01-12\",\"changed_at\":\"2021-01-11T23:19:29.034Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "962713662",
+   "name": "Solicitar autorización ante SE",
+   "group": {
+    "id": "subitems_of_962710820",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Jair Ricardo Vega Rodríguez",
+     "value": "{\"changed_at\":\"2021-01-11T23:18:45.773Z\",\"personsAndTeams\":[{\"id\":17128728,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-01-12T17:37:29.490Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-12",
+     "value": "{\"date\":\"2021-01-12\",\"changed_at\":\"2021-01-11T23:19:33.610Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "962714502",
+   "name": "Acta constitutiva",
+   "group": {
+    "id": "subitems_of_962710820",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Jair Ricardo Vega Rodríguez",
+     "value": "{\"changed_at\":\"2021-01-11T23:18:57.605Z\",\"personsAndTeams\":[{\"id\":17128728,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-01-12T17:37:29.490Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "962746395",
+   "name": "inscripción en RPP y RC",
+   "group": {
+    "id": "subitems_of_962710820",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Working on it",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2021-01-12T17:37:32.029Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "962704205",
+   "name": "Solicitud de altas y bajas de ADN",
+   "group": {
+    "id": "subitems_of_962703590",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "Mónica L García",
+     "value": "{\"changed_at\":\"2021-01-13T22:55:26.324Z\",\"personsAndTeams\":[{\"id\":11617543,\"kind\":\"person\"}]}",
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Done",
+     "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2021-01-13T22:55:28.263Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "2021-01-13",
+     "value": "{\"date\":\"2021-01-13\",\"changed_at\":\"2021-01-13T22:55:30.978Z\"}",
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1039839946",
+   "name": "Subitem",
+   "group": {
+    "id": "topics",
+    "title": "Subitems"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Equipo"
+     }
+    },
+    {
+     "id": "status",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Estado"
+     }
+    },
+    {
+     "id": "date0",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Fecha"
+     }
+    },
+    {
+     "id": "archivo",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Evidencia"
+     }
+    }
+   ]
+  }
+ ]
+}

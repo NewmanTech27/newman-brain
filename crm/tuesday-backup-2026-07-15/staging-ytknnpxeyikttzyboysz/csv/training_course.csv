@@ -1,0 +1,3 @@
+id,topic,name,valid_months,mandatory_for
+08af3e7e-d614-44c0-94a2-bbb379251efe,lfpiorpi_basico,Prevencion de LD/FT — LFPIORPI basico,12,"{admin,compliance}"
+70bc6cd0-899a-4e74-b2b5-14cb0358929a,pld_ft_anual,Actualizacion PLD/FT anual,12,{compliance}

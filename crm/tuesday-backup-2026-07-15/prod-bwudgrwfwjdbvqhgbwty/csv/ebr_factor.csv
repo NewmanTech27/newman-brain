@@ -1,0 +1,8 @@
+code,label,weight,seq
+geography,Geografía / estado,0.15,1
+sector,Sector económico,0.15,2
+pep,Exposición PEP,0.20,3
+ownership,Complejidad de propiedad,0.15,4
+cash,Intensidad de efectivo,0.10,5
+size,Tamaño de operación (UMA),0.15,6
+nationality,Nacionalidad / PIC,0.10,7

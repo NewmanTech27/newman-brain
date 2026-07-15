@@ -1,0 +1,793 @@
+{
+ "board": {
+  "id": "1452260123",
+  "name": "Proceso de aprobación de proyectos",
+  "state": "archived",
+  "board_kind": "public",
+  "description": "",
+  "workspace": {
+   "id": "583425",
+   "name": "Mejora Continua"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Nombre",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "person",
+   "title": "Iniciador",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "date4",
+   "title": "Fecha de solicitud",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text",
+   "title": "Resumen ejecutivo",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text4",
+   "title": "Asunto",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text9",
+   "title": "Resultados previstos",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "anticipated_outcomes",
+   "title": "Recomendación",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "long_text93",
+   "title": "Justificación",
+   "type": "long_text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "bca_board_link",
+   "title": "Enlace del tablero de BCA",
+   "type": "text",
+   "settings_str": "{}"
+  },
+  {
+   "id": "people",
+   "title": "Gestor del proyecto",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "numbers3",
+   "title": "Presupuesto aprobado del proyecto",
+   "type": "numbers",
+   "settings_str": "{\"unit\":{\"symbol\":\"$\",\"custom_unit\":\"\",\"direction\":\"left\"}}"
+  },
+  {
+   "id": "status",
+   "title": "Estado",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"hide_footer\":true,\"color_mapping\":{\"1\":14,\"14\":1},\"labels\":{\"0\":\"en consideración\",\"2\":\"Rechazado\",\"7\":\"Solicitud nueva\",\"14\":\"Aprobado\"},\"labels_positions_v2\":{\"0\":1,\"2\":3,\"5\":4,\"7\":0,\"14\":2},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"2\":{\"color\":\"#df2f4a\",\"border\":\"#ce3048\",\"var_name\":\"red-shadow\"},\"7\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"},\"14\":{\"color\":\"#00c875\",\"border\":\"#00b461\",\"var_name\":\"green-shadow\"}}}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Solicitudes nuevas"
+  },
+  {
+   "id": "new_group",
+   "title": "En consideración"
+  },
+  {
+   "id": "new_group99699",
+   "title": "Aprobado"
+  },
+  {
+   "id": "new_group55269",
+   "title": "Rechazado"
+  }
+ ],
+ "items": [
+  {
+   "id": "1452260205",
+   "name": "Proyecto Golf",
+   "group": {
+    "id": "topics",
+    "title": "Solicitudes nuevas"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Iniciador"
+     }
+    },
+    {
+     "id": "date4",
+     "text": "2020-05-30",
+     "value": "{\"date\":\"2020-05-30\",\"changed_at\":\"2020-05-26T21:58:09.698Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "El estudio de viabilidad también analiza en detalle los objetivos del proyecto, las medidas de rendimiento, los supuestos, las limitaciones y las opciones alternativas.\n",
+     "value": "{\"text\":\"El estudio de viabilidad también analiza en detalle los objetivos del proyecto, las medidas de rendimiento, los supuestos, las limitaciones y las opciones alternativas.\\n\",\"changed_at\":\"2021-04-29T14:26:06.008Z\"}",
+     "column": {
+      "title": "Resumen ejecutivo"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "A medida que seguimos prestando apoyo a más clientes en más lugares, la administración de nuestra plantilla se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como la elaboración de informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\n\n",
+     "value": "{\"text\":\"A medida que seguimos prestando apoyo a más clientes en más lugares, la administración de nuestra plantilla se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como la elaboración de informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\\n\\n\",\"changed_at\":\"2021-04-29T14:55:14.541Z\"}",
+     "column": {
+      "title": "Asunto"
+     }
+    },
+    {
+     "id": "long_text9",
+     "text": " Esta migración tecnológica reducirá los costes generales asociados a la gran cantidad de personal que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\n\n\n",
+     "value": "{\"text\":\" Esta migración tecnológica reducirá los costes generales asociados a la gran cantidad de personal que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\\n\\n\\n\",\"changed_at\":\"2021-04-29T14:56:04.697Z\"}",
+     "column": {
+      "title": "Resultados previstos"
+     }
+    },
+    {
+     "id": "anticipated_outcomes",
+     "text": "Los datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los gestores y del personal de formación.\n\n\n\nLos empleados podrán introducir y editar los datos de sus hojas de tiempo en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\n\n\n\n\n",
+     "value": "{\"text\":\"Los datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos\\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los gestores y del personal de formación.\\n\\n\\n\\nLos empleados podrán introducir y editar los datos de sus hojas de tiempo en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\\n\\n\\n\\n\\n\",\"changed_at\":\"2021-04-29T14:56:50.173Z\"}",
+     "column": {
+      "title": "Recomendación"
+     }
+    },
+    {
+     "id": "long_text93",
+     "text": "Aunque se analizaron otras alternativas y el status quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\n",
+     "value": "{\"text\":\"Aunque se analizaron otras alternativas y el status quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\\n\",\"changed_at\":\"2021-04-29T14:57:42.080Z\"}",
+     "column": {
+      "title": "Justificación"
+     }
+    },
+    {
+     "id": "bca_board_link",
+     "text": "https://mondaypm.monday.com/boards/578299444/views/8307737",
+     "value": "\"https://mondaypm.monday.com/boards/578299444/views/8307737\"",
+     "column": {
+      "title": "Enlace del tablero de BCA"
+     }
+    },
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gestor del proyecto"
+     }
+    },
+    {
+     "id": "numbers3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Presupuesto aprobado del proyecto"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Solicitud nueva",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-05-26T21:48:04.102Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260199",
+   "name": "Proyecto Zulu",
+   "group": {
+    "id": "topics",
+    "title": "Solicitudes nuevas"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Iniciador"
+     }
+    },
+    {
+     "id": "date4",
+     "text": "2020-05-28",
+     "value": "{\"date\":\"2020-05-28\",\"changed_at\":\"2020-05-26T21:58:02.630Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "Este caso de negocio describe cómo el proyecto de plataforma web (WP) abordará las preocupaciones actuales de la empresa, los beneficios del proyecto, y las recomendaciones y la justificación del proyecto. El caso de negocio también discute los objetivos detallados del proyecto, las medidas de rendimiento, las suposiciones, las limitaciones y las opciones alternativas.\n",
+     "value": "{\"text\":\"Este caso de negocio describe cómo el proyecto de plataforma web (WP) abordará las preocupaciones actuales de la empresa, los beneficios del proyecto, y las recomendaciones y la justificación del proyecto. El caso de negocio también discute los objetivos detallados del proyecto, las medidas de rendimiento, las suposiciones, las limitaciones y las opciones alternativas.\\n\",\"changed_at\":\"2021-04-29T14:54:13.161Z\"}",
+     "column": {
+      "title": "Resumen ejecutivo"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "Debido a una base de clientes en expansión, Smith Consulting ha pasado a un modelo de negocio descentralizado en los últimos 2 años. A medida que seguimos prestando apoyo a más clientes en más lugares, la administración de nuestra plantilla se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como la elaboración de informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\n\n\n\n",
+     "value": "{\"text\":\"Debido a una base de clientes en expansión, Smith Consulting ha pasado a un modelo de negocio descentralizado en los últimos 2 años. A medida que seguimos prestando apoyo a más clientes en más lugares, la administración de nuestra plantilla se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como la elaboración de informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\\n\\n\\n\\n\",\"changed_at\":\"2021-04-29T14:55:40.909Z\"}",
+     "column": {
+      "title": "Asunto"
+     }
+    },
+    {
+     "id": "long_text9",
+     "text": "El cambio a una plataforma administrativa centralizada basada en la web permitirá a Smith Consulting gestionar los sistemas de nóminas de sus empleados y las funciones administrativas de una manera fluida y consolidada. Esta migración tecnológica reducirá los costes generales asociados a la gran cantidad de personal que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\n",
+     "value": "{\"text\":\"El cambio a una plataforma administrativa centralizada basada en la web permitirá a Smith Consulting gestionar los sistemas de nóminas de sus empleados y las funciones administrativas de una manera fluida y consolidada. Esta migración tecnológica reducirá los costes generales asociados a la gran cantidad de personal que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\\n\",\"changed_at\":\"2021-04-29T14:56:23.707Z\"}",
+     "column": {
+      "title": "Resultados previstos"
+     }
+    },
+    {
+     "id": "anticipated_outcomes",
+     "text": "Se analizaron varias opciones y alternativas para determinar la mejor manera de aprovechar la tecnología para mejorar los procesos empresariales y reducir los gastos generales dentro de Smith Consulting. El enfoque descrito en este documento nos permite cumplir nuestros objetivos corporativos de mejorar continuamente la eficiencia, reducir los costes y capitalizar la tecnología. El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web con el fin de preservar la integridad de los datos y permitir un tiempo adecuado para formar a todos los empleados y gerentes en sus responsabilidades y respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son\n",
+     "value": "{\"text\":\"Se analizaron varias opciones y alternativas para determinar la mejor manera de aprovechar la tecnología para mejorar los procesos empresariales y reducir los gastos generales dentro de Smith Consulting. El enfoque descrito en este documento nos permite cumplir nuestros objetivos corporativos de mejorar continuamente la eficiencia, reducir los costes y capitalizar la tecnología. El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web con el fin de preservar la integridad de los datos y permitir un tiempo adecuado para formar a todos los empleados y gerentes en sus responsabilidades y respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son\\n\",\"changed_at\":\"2021-04-29T14:57:08.070Z\"}",
+     "column": {
+      "title": "Recomendación"
+     }
+    },
+    {
+     "id": "long_text93",
+     "text": "La migración de las nóminas y otras funciones administrativas del sistema central heredado a la plataforma basada en la web dará lugar a una mayor eficiencia en lo que respecta a los recursos y los procesos empresariales de la empresa. El proyecto WP también está alineado con la estrategia y los objetivos corporativos, ya que utiliza la tecnología para mejorar la forma de hacer negocios. Aunque se analizaron otras alternativas y el statu quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\n",
+     "value": "{\"text\":\"La migración de las nóminas y otras funciones administrativas del sistema central heredado a la plataforma basada en la web dará lugar a una mayor eficiencia en lo que respecta a los recursos y los procesos empresariales de la empresa. El proyecto WP también está alineado con la estrategia y los objetivos corporativos, ya que utiliza la tecnología para mejorar la forma de hacer negocios. Aunque se analizaron otras alternativas y el statu quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\\n\",\"changed_at\":\"2021-04-29T14:57:55.932Z\"}",
+     "column": {
+      "title": "Justificación"
+     }
+    },
+    {
+     "id": "bca_board_link",
+     "text": "https://mondaypm.monday.com/boards/578299444/views/8307737",
+     "value": "\"https://mondaypm.monday.com/boards/578299444/views/8307737\"",
+     "column": {
+      "title": "Enlace del tablero de BCA"
+     }
+    },
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gestor del proyecto"
+     }
+    },
+    {
+     "id": "numbers3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Presupuesto aprobado del proyecto"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Solicitud nueva",
+     "value": "{\"index\":7,\"post_id\":null,\"changed_at\":\"2020-05-26T21:57:33.684Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260181",
+   "name": "Proyecto Julieta",
+   "group": {
+    "id": "new_group",
+    "title": "En consideración"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Iniciador"
+     }
+    },
+    {
+     "id": "date4",
+     "text": "2020-05-21",
+     "value": "{\"date\":\"2020-05-21\",\"changed_at\":\"2020-05-26T21:58:17.321Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "Este proyecto permitirá a los miembros de nuestra ciudad moverse libremente y disfrutar de todas las zonas que ofrece la ciudad sin tener en cuenta la delincuencia ",
+     "value": "{\"text\":\"Este proyecto permitirá a los miembros de nuestra ciudad moverse libremente y disfrutar de todas las zonas que ofrece la ciudad sin tener en cuenta la delincuencia \",\"changed_at\":\"2021-04-29T14:58:29.679Z\"}",
+     "column": {
+      "title": "Resumen ejecutivo"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "Hay zonas de la ciudad que no son atractivas para vivir o trabajar debido a los altos índices de delincuencia ",
+     "value": "{\"text\":\"Hay zonas de la ciudad que no son atractivas para vivir o trabajar debido a los altos índices de delincuencia \",\"changed_at\":\"2021-04-29T14:58:40.412Z\"}",
+     "column": {
+      "title": "Asunto"
+     }
+    },
+    {
+     "id": "long_text9",
+     "text": "Eliminar la delincuencia, abrir más zonas para vivir y aumentar las oportunidades de trabajo ",
+     "value": "{\"text\":\"Eliminar la delincuencia, abrir más zonas para vivir y aumentar las oportunidades de trabajo \",\"changed_at\":\"2021-04-29T14:58:53.911Z\"}",
+     "column": {
+      "title": "Resultados previstos"
+     }
+    },
+    {
+     "id": "anticipated_outcomes",
+     "text": " El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web, con el fin de preservar la integridad de los datos y dar el tiempo necesario para formar a todos los empleados y directivos sobre sus responsabilidades y sus respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son:\n\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de tener que llamar por teléfono a su director regional para que los introduzca en el sistema central.\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.",
+     "value": "{\"text\":\" El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web, con el fin de preservar la integridad de los datos y dar el tiempo necesario para formar a todos los empleados y directivos sobre sus responsabilidades y sus respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son:\\n\\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de tener que llamar por teléfono a su director regional para que los introduzca en el sistema central.\\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\",\"changed_at\":\"2021-04-29T14:59:46.055Z\"}",
+     "column": {
+      "title": "Recomendación"
+     }
+    },
+    {
+     "id": "long_text93",
+     "text": "Los datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos\nLos empleados podrán inscribirse en la formación, lo que reducirá la carga de los gestores y del personal de formación.",
+     "value": "{\"text\":\"Los datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos\\nLos empleados podrán inscribirse en la formación, lo que reducirá la carga de los gestores y del personal de formación.\",\"changed_at\":\"2021-04-29T15:00:17.489Z\"}",
+     "column": {
+      "title": "Justificación"
+     }
+    },
+    {
+     "id": "bca_board_link",
+     "text": "https://mondaypm.monday.com/boards/578299444/views/8307737",
+     "value": "\"https://mondaypm.monday.com/boards/578299444/views/8307737\"",
+     "column": {
+      "title": "Enlace del tablero de BCA"
+     }
+    },
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gestor del proyecto"
+     }
+    },
+    {
+     "id": "numbers3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Presupuesto aprobado del proyecto"
+     }
+    },
+    {
+     "id": "status",
+     "text": "en consideración",
+     "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2020-04-23T14:43:50.616Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260192",
+   "name": "Proyecto Whisky",
+   "group": {
+    "id": "new_group99699",
+    "title": "Aprobado"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Iniciador"
+     }
+    },
+    {
+     "id": "date4",
+     "text": "2020-01-29",
+     "value": "{\"date\":\"2020-01-29\",\"changed_at\":\"2020-05-26T21:58:48.783Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "El estudio de viabilidad también analiza en detalle los objetivos del proyecto, las medidas de rendimiento, las hipótesis, las limitaciones y las opciones alternativas.\n",
+     "value": "{\"text\":\"El estudio de viabilidad también analiza en detalle los objetivos del proyecto, las medidas de rendimiento, las hipótesis, las limitaciones y las opciones alternativas.\\n\",\"changed_at\":\"2021-04-29T15:01:18.211Z\"}",
+     "column": {
+      "title": "Resumen ejecutivo"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "A medida que seguimos prestando apoyo a más clientes en más lugares, la administración de nuestra plantilla se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como la elaboración de informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\n\n",
+     "value": "{\"text\":\"A medida que seguimos prestando apoyo a más clientes en más lugares, la administración de nuestra plantilla se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como la elaboración de informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\\n\\n\",\"changed_at\":\"2021-04-29T15:04:51.652Z\"}",
+     "column": {
+      "title": "Asunto"
+     }
+    },
+    {
+     "id": "long_text9",
+     "text": " Esta migración tecnológica reducirá los costes generales asociados a la gran cantidad de personal que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\n\n",
+     "value": "{\"text\":\" Esta migración tecnológica reducirá los costes generales asociados a la gran cantidad de personal que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\\n\\n\",\"changed_at\":\"2021-04-29T15:04:59.494Z\"}",
+     "column": {
+      "title": "Resultados previstos"
+     }
+    },
+    {
+     "id": "anticipated_outcomes",
+     "text": "El enfoque aquí descrito nos permite cumplir nuestros objetivos corporativos de mejora continua de la eficiencia, reducción de costes y aprovechamiento de la tecnología. El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web, con el fin de preservar la integridad de los datos y dar tiempo suficiente para formar a todos los empleados y directivos en sus responsabilidades y respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son:\n\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de tener que llamar por teléfono a su director regional para que los introduzca en el sistema central.\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\nLos empleados podrán inscribirse en cursos de formación, lo que reducirá la carga de los gestores y del personal de formación.\n\n\n\nLos empleados podrán introducir y editar los datos de sus hojas de tiempo en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.",
+     "value": "{\"text\":\"El enfoque aquí descrito nos permite cumplir nuestros objetivos corporativos de mejora continua de la eficiencia, reducción de costes y aprovechamiento de la tecnología. El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web, con el fin de preservar la integridad de los datos y dar tiempo suficiente para formar a todos los empleados y directivos en sus responsabilidades y respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son:\\n\\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de tener que llamar por teléfono a su director regional para que los introduzca en el sistema central.\\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\\nLos empleados podrán inscribirse en cursos de formación, lo que reducirá la carga de los gestores y del personal de formación.\\n\\n\\n\\nLos empleados podrán introducir y editar los datos de sus hojas de tiempo en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\\nLos datos de las hojas de tiempo y de las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\",\"changed_at\":\"2021-04-29T15:05:06.249Z\"}",
+     "column": {
+      "title": "Recomendación"
+     }
+    },
+    {
+     "id": "long_text93",
+     "text": "El proyecto WP también está en consonancia con la estrategia y los objetivos corporativos, ya que utiliza la tecnología para mejorar la forma de hacer negocios. Aunque se analizaron otras alternativas y el status quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\n\nLas estimaciones iniciales del proyecto WP son\n\nReducción del 15% de los gastos generales en los primeros 12 meses\nReducción del 10% de la rotación de personal en los primeros 12 meses\nReducción inmediata del 50% en el tiempo de generación de informes financieros semanales y mensuales\nReducción inmediata del 25% del tiempo necesario para resolver los problemas de las nóminas\n\n\n\nLas estimaciones iniciales para el proyecto WP son\n\nReducción del 15% de los gastos generales en los primeros 12 meses\nReducción del 10% de la rotación de personal en los primeros 12 meses\nReducción inmediata del 50% del tiempo necesario para generar informes financieros semanales y mensuales\nReducción inmediata del 25% del tiempo necesario para resolver los problemas de las nóminas\n\n\n",
+     "value": "{\"text\":\"El proyecto WP también está en consonancia con la estrategia y los objetivos corporativos, ya que utiliza la tecnología para mejorar la forma de hacer negocios. Aunque se analizaron otras alternativas y el status quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\\n\\nLas estimaciones iniciales del proyecto WP son\\n\\nReducción del 15% de los gastos generales en los primeros 12 meses\\nReducción del 10% de la rotación de personal en los primeros 12 meses\\nReducción inmediata del 50% en el tiempo de generación de informes financieros semanales y mensuales\\nReducción inmediata del 25% del tiempo necesario para resolver los problemas de las nóminas\\n\\n\\n\\nLas estimaciones iniciales para el proyecto WP son\\n\\nReducción del 15% de los gastos generales en los primeros 12 meses\\nReducción del 10% de la rotación de personal en los primeros 12 meses\\nReducción inmediata del 50% del tiempo necesario para generar informes financieros semanales y mensuales\\nReducción inmediata del 25% del tiempo necesario para resolver los problemas de las nóminas\\n\\n\\n\",\"changed_at\":\"2021-04-29T15:05:46.198Z\"}",
+     "column": {
+      "title": "Justificación"
+     }
+    },
+    {
+     "id": "bca_board_link",
+     "text": "https://mondaypm.monday.com/boards/581281498",
+     "value": "\"https://mondaypm.monday.com/boards/581281498\"",
+     "column": {
+      "title": "Enlace del tablero de BCA"
+     }
+    },
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gestor del proyecto"
+     }
+    },
+    {
+     "id": "numbers3",
+     "text": "550000",
+     "value": "\"550000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Aprobado",
+     "value": "{\"index\":14,\"post_id\":null,\"changed_at\":\"2020-05-26T22:12:48.085Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260196",
+   "name": "Proyecto Romeo",
+   "group": {
+    "id": "new_group99699",
+    "title": "Aprobado"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Iniciador"
+     }
+    },
+    {
+     "id": "date4",
+     "text": "2020-02-19",
+     "value": "{\"date\":\"2020-02-19\",\"changed_at\":\"2020-05-26T22:14:13.963Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "Este caso de negocio describe cómo el proyecto de plataforma web (WP) abordará las preocupaciones actuales de la empresa, los beneficios del proyecto, y las recomendaciones y la justificación del proyecto. El caso de negocio también discute los objetivos detallados del proyecto, las medidas de rendimiento, las suposiciones, las limitaciones y las opciones alternativas.\n",
+     "value": "{\"text\":\"Este caso de negocio describe cómo el proyecto de plataforma web (WP) abordará las preocupaciones actuales de la empresa, los beneficios del proyecto, y las recomendaciones y la justificación del proyecto. El caso de negocio también discute los objetivos detallados del proyecto, las medidas de rendimiento, las suposiciones, las limitaciones y las opciones alternativas.\\n\",\"changed_at\":\"2021-04-29T15:09:55.715Z\"}",
+     "column": {
+      "title": "Resumen ejecutivo"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "Debido a una base de clientes en expansión, Smith Consulting ha pasado a un modelo de negocio descentralizado en los últimos 2 años. A medida que continuamos apoyando a más clientes en más lugares, la administración de nuestra fuerza de trabajo se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como los informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\n",
+     "value": "{\"text\":\"Debido a una base de clientes en expansión, Smith Consulting ha pasado a un modelo de negocio descentralizado en los últimos 2 años. A medida que continuamos apoyando a más clientes en más lugares, la administración de nuestra fuerza de trabajo se ha vuelto más difícil. Hasta ahora, muchos de nuestros requisitos internos, como los informes, las actividades de nómina y la gestión de recursos, se han realizado a través de sistemas mainframe heredados. A medida que nuestra plantilla se amplía en número y área, estos sistemas mainframe heredados se han vuelto inadecuados para gestionar eficazmente estas actividades administrativas. Esta inadecuación se manifiesta en un aumento de los costes y de la rotación de personal que hemos observado en los últimos 12 meses. Con el fin de gestionar más eficazmente nuestra administración, reducir los costes y mejorar la rotación de los empleados, Smith Consulting debe pasar a una aplicación basada en la web como se indica en este caso de negocio para el Proyecto WP. Al hacerlo, los empleados asumirán un mayor papel en la gestión de sus asuntos administrativos, tendrán acceso a las hojas de tiempo de forma segura en línea, y la empresa podrá gestionar su administración desde una plataforma central y común\\n\",\"changed_at\":\"2021-04-29T15:10:20.924Z\"}",
+     "column": {
+      "title": "Asunto"
+     }
+    },
+    {
+     "id": "long_text9",
+     "text": "El cambio a una plataforma administrativa centralizada basada en la web permitirá a Smith Consulting gestionar los sistemas de nóminas de sus empleados y las funciones administrativas de una manera fluida y consolidada. Esta migración tecnológica reducirá los costes generales asociados a la gran plantilla que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\n",
+     "value": "{\"text\":\"El cambio a una plataforma administrativa centralizada basada en la web permitirá a Smith Consulting gestionar los sistemas de nóminas de sus empleados y las funciones administrativas de una manera fluida y consolidada. Esta migración tecnológica reducirá los costes generales asociados a la gran plantilla que se necesita actualmente para gestionar estas tareas. Los empleados descentralizados tendrán más autonomía para gestionar sus elecciones de nóminas, la formación, los informes y otras tareas administrativas diversas. La empresa también se beneficiará de unos informes financieros más puntuales y precisos gracias a la capacidad de nuestros directores regionales para introducir y actualizar continuamente sus parámetros financieros. Este acceso en tiempo real reduce los errores, mejora el tiempo de los ciclos y está disponible para cualquier usuario autorizado.\\n\",\"changed_at\":\"2021-04-29T15:10:43.309Z\"}",
+     "column": {
+      "title": "Resultados previstos"
+     }
+    },
+    {
+     "id": "anticipated_outcomes",
+     "text": "Se analizaron varias opciones y alternativas para determinar la mejor manera de aprovechar la tecnología para mejorar los procesos empresariales y reducir los gastos generales dentro de Smith Consulting. El enfoque descrito en este documento nos permite cumplir nuestros objetivos corporativos de mejorar continuamente la eficiencia, reducir los costes y capitalizar la tecnología. El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web con el fin de preservar la integridad de los datos y permitir un tiempo adecuado para formar a todos los empleados y gerentes en sus responsabilidades y respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son\n\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\nLos datos de las hojas de tiempo y las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\n\n\n",
+     "value": "{\"text\":\"Se analizaron varias opciones y alternativas para determinar la mejor manera de aprovechar la tecnología para mejorar los procesos empresariales y reducir los gastos generales dentro de Smith Consulting. El enfoque descrito en este documento nos permite cumplir nuestros objetivos corporativos de mejorar continuamente la eficiencia, reducir los costes y capitalizar la tecnología. El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web con el fin de preservar la integridad de los datos y permitir un tiempo adecuado para formar a todos los empleados y gerentes en sus responsabilidades y respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son\\n\\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\\nLos datos de las hojas de tiempo y las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\\n\\n\\n\",\"changed_at\":\"2021-04-29T15:11:07.923Z\"}",
+     "column": {
+      "title": "Recomendación"
+     }
+    },
+    {
+     "id": "long_text93",
+     "text": "La migración de las nóminas y otras funciones administrativas del sistema central heredado a la plataforma basada en la web dará lugar a una mayor eficiencia en lo que respecta a los recursos y los procesos empresariales de la empresa. El proyecto WP también está alineado con la estrategia y los objetivos corporativos, ya que utiliza la tecnología para mejorar la forma de hacer negocios. Aunque se analizaron otras alternativas y el statu quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\n\nLas estimaciones iniciales del proyecto WP son\n\nReducción del 15% de los gastos generales en los primeros 12 meses\nReducción del 10% de la rotación de personal en los primeros 12 meses\nReducción inmediata del 50% en el tiempo de generación de informes financieros semanales y mensuales\nReducción inmediata del 25% del tiempo necesario para resolver los problemas de las nóminas\n\n\n",
+     "value": "{\"text\":\"La migración de las nóminas y otras funciones administrativas del sistema central heredado a la plataforma basada en la web dará lugar a una mayor eficiencia en lo que respecta a los recursos y los procesos empresariales de la empresa. El proyecto WP también está alineado con la estrategia y los objetivos corporativos, ya que utiliza la tecnología para mejorar la forma de hacer negocios. Aunque se analizaron otras alternativas y el statu quo, se seleccionó el proyecto WP para proponerlo en este caso de negocio porque ofrece la mejor oportunidad de obtener beneficios de forma acelerada, a la vez que permite la mayor mejora en eficiencia y reducción de costes. Otras alternativas suponían un mayor riesgo, proporcionaban menos beneficios, eran demasiado difíciles de definir o no estaban adecuadamente alineadas con la estrategia y/o los objetivos corporativos actuales.\\n\\nLas estimaciones iniciales del proyecto WP son\\n\\nReducción del 15% de los gastos generales en los primeros 12 meses\\nReducción del 10% de la rotación de personal en los primeros 12 meses\\nReducción inmediata del 50% en el tiempo de generación de informes financieros semanales y mensuales\\nReducción inmediata del 25% del tiempo necesario para resolver los problemas de las nóminas\\n\\n\\n\",\"changed_at\":\"2021-04-29T15:11:27.244Z\"}",
+     "column": {
+      "title": "Justificación"
+     }
+    },
+    {
+     "id": "bca_board_link",
+     "text": "https://mondaypm.monday.com/boards/578299444/views/8307737",
+     "value": "\"https://mondaypm.monday.com/boards/578299444/views/8307737\"",
+     "column": {
+      "title": "Enlace del tablero de BCA"
+     }
+    },
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gestor del proyecto"
+     }
+    },
+    {
+     "id": "numbers3",
+     "text": "380000",
+     "value": "\"380000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Aprobado",
+     "value": "{\"index\":14,\"post_id\":null,\"changed_at\":\"2020-05-26T22:12:48.085Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260188",
+   "name": "Proyecto India",
+   "group": {
+    "id": "new_group99699",
+    "title": "Aprobado"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Iniciador"
+     }
+    },
+    {
+     "id": "date4",
+     "text": "2020-04-10",
+     "value": "{\"date\":\"2020-04-10\",\"changed_at\":\"2020-05-26T21:58:58.278Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "LIC cuenta con una enorme zona industrial que hoy no se utiliza. El plan es llevar 2/3 de los 3 centros de abastecimiento de todo el país  ",
+     "value": "{\"text\":\"LIC cuenta con una enorme zona industrial que hoy no se utiliza. El plan es llevar 2/3 de los 3 centros de abastecimiento de todo el país  \",\"changed_at\":\"2021-04-29T15:11:48.397Z\"}",
+     "column": {
+      "title": "Resumen ejecutivo"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "El LIC no está disfrutando de todo su potencial en términos de área industrial, población y vida social. ",
+     "value": "{\"text\":\"El LIC no está disfrutando de todo su potencial en términos de área industrial, población y vida social. \",\"changed_at\":\"2021-04-29T15:12:08.312Z\"}",
+     "column": {
+      "title": "Asunto"
+     }
+    },
+    {
+     "id": "long_text9",
+     "text": "Una inmigración positiva a LIC desde toda la ciudad. 35K nuevos puestos de trabajo y el posicionamiento de LIC como la mayor zona industrial de la costa este.",
+     "value": "{\"text\":\"Una inmigración positiva a LIC desde toda la ciudad. 35K nuevos puestos de trabajo y el posicionamiento de LIC como la mayor zona industrial de la costa este.\",\"changed_at\":\"2021-04-29T15:12:23.672Z\"}",
+     "column": {
+      "title": "Resultados previstos"
+     }
+    },
+    {
+     "id": "anticipated_outcomes",
+     "text": " El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web, con el fin de preservar la integridad de los datos y dar el tiempo necesario para formar a todos los empleados y directivos sobre sus responsabilidades y sus respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son\n\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\nLos datos de las hojas de tiempo y las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\n\n\n",
+     "value": "{\"text\":\" El proyecto WP recomendado migrará metódicamente los datos y las funciones de nuestro actual sistema mainframe a nuestra nueva plataforma basada en la web, con el fin de preservar la integridad de los datos y dar el tiempo necesario para formar a todos los empleados y directivos sobre sus responsabilidades y sus respectivas funciones administrativas. La plataforma basada en la web es compatible con todos los demás sistemas informáticos actuales y mejorará la eficacia y la precisión de los informes en toda la empresa. Algunas de las formas en que esta tecnología logrará los resultados deseados son\\n\\nLos empleados podrán introducir y editar los datos de sus hojas de horas en cualquier momento y desde cualquier lugar, en lugar de llamar por teléfono a su director regional para que los introduzca en el sistema central.\\nLos datos de las hojas de tiempo y las nóminas serán inmediatamente accesibles para el control de calidad y la elaboración de informes, lo que reducirá la necesidad de que el personal de los puestos no facturables reúna, analice y compile los datos.\\nLos empleados podrán registrarse para recibir formación, lo que reducirá la carga de los directores y del personal de formación.\\n\\n\\n\",\"changed_at\":\"2021-04-29T15:12:53.886Z\"}",
+     "column": {
+      "title": "Recomendación"
+     }
+    },
+    {
+     "id": "long_text93",
+     "text": "Por decidirse. ",
+     "value": "{\"text\":\"Por decidirse. \",\"changed_at\":\"2021-04-29T15:13:03.321Z\"}",
+     "column": {
+      "title": "Justificación"
+     }
+    },
+    {
+     "id": "bca_board_link",
+     "text": "https://mondaypm.monday.com/boards/578299444/views/8307737",
+     "value": "\"https://mondaypm.monday.com/boards/578299444/views/8307737\"",
+     "column": {
+      "title": "Enlace del tablero de BCA"
+     }
+    },
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gestor del proyecto"
+     }
+    },
+    {
+     "id": "numbers3",
+     "text": "240000",
+     "value": "\"240000\"",
+     "column": {
+      "title": "Presupuesto aprobado del proyecto"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Aprobado",
+     "value": "{\"index\":14,\"post_id\":null,\"changed_at\":\"2020-05-26T22:12:48.085Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "1452260183",
+   "name": "Proyecto Bravo",
+   "group": {
+    "id": "new_group55269",
+    "title": "Rechazado"
+   },
+   "column_values": [
+    {
+     "id": "person",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Iniciador"
+     }
+    },
+    {
+     "id": "date4",
+     "text": "2020-05-14",
+     "value": "{\"date\":\"2020-05-14\",\"changed_at\":\"2020-05-26T21:59:02.128Z\"}",
+     "column": {
+      "title": "Fecha de solicitud"
+     }
+    },
+    {
+     "id": "long_text",
+     "text": "Es hora de que los Knicks hagan algo con ellos mismos\n",
+     "value": "{\"text\":\"Es hora de que los Knicks hagan algo con ellos mismos\\n\",\"changed_at\":\"2021-04-29T15:16:04.906Z\"}",
+     "column": {
+      "title": "Resumen ejecutivo"
+     }
+    },
+    {
+     "id": "long_text4",
+     "text": "Los Knicks se convirtieron en la broma de la liga \n",
+     "value": "{\"text\":\"Los Knicks se convirtieron en la broma de la liga \\n\",\"changed_at\":\"2021-04-29T15:16:19.296Z\"}",
+     "column": {
+      "title": "Asunto"
+     }
+    },
+    {
+     "id": "long_text9",
+     "text": "Devolver la energía de los jóvenes de Nueva York en lo que respecta a la carrera de basketball\n",
+     "value": "{\"text\":\"Devolver la energía de los jóvenes de Nueva York en lo que respecta a la carrera de basketball\\n\",\"changed_at\":\"2021-04-29T15:16:50.920Z\"}",
+     "column": {
+      "title": "Resultados previstos"
+     }
+    },
+    {
+     "id": "anticipated_outcomes",
+     "text": "Por decidirse. ",
+     "value": "{\"text\":\"Por decidirse. \",\"changed_at\":\"2021-04-29T15:17:01.978Z\"}",
+     "column": {
+      "title": "Recomendación"
+     }
+    },
+    {
+     "id": "long_text93",
+     "text": "Por decidirse. ",
+     "value": "{\"text\":\"Por decidirse. \",\"changed_at\":\"2021-04-29T15:17:02.802Z\"}",
+     "column": {
+      "title": "Justificación"
+     }
+    },
+    {
+     "id": "bca_board_link",
+     "text": "https://mondaypm.monday.com/boards/578299444/views/8307737",
+     "value": "\"https://mondaypm.monday.com/boards/578299444/views/8307737\"",
+     "column": {
+      "title": "Enlace del tablero de BCA"
+     }
+    },
+    {
+     "id": "people",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Gestor del proyecto"
+     }
+    },
+    {
+     "id": "numbers3",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Presupuesto aprobado del proyecto"
+     }
+    },
+    {
+     "id": "status",
+     "text": "Rechazado",
+     "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2020-01-20T13:22:45.134Z\"}",
+     "column": {
+      "title": "Estado"
+     }
+    }
+   ]
+  }
+ ]
+}

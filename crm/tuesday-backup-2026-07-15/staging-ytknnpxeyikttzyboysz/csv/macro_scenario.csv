@@ -1,0 +1,4 @@
+id,set_id,name,probability,fx_mxn_usd,cfe_tariff_delta_pct,domestic_rate_delta_bps,generation_factor,is_downside,sort
+d9bb88ba-cdfd-45b5-8bec-56354eb7d507,7b959d23-2463-4b76-a04c-90f2b8e41ac7,Base,0.50,18.5,0,0,1.00,f,1
+d3b4b0ff-a452-4aed-aa08-0a4355e39700,7b959d23-2463-4b76-a04c-90f2b8e41ac7,Optimista,0.20,17.5,0.05,-50,1.02,f,2
+c0483f5a-56c8-4269-9c10-ecc03a444edc,7b959d23-2463-4b76-a04c-90f2b8e41ac7,Adverso,0.30,22.0,-0.10,150,0.92,t,3

@@ -1,0 +1,181 @@
+{
+ "board": {
+  "id": "8062624692",
+  "name": "Activities",
+  "state": "active",
+  "board_kind": "public",
+  "description": "The activities board shows all the activities that are added using the Emails & Activities in the page.\nEvery time you add an activity through Emails & Activities, a new activity will be added to this board.",
+  "workspace": {
+   "id": "9174044",
+   "name": "Not workspace"
+  }
+ },
+ "columns": [
+  {
+   "id": "name",
+   "title": "Name",
+   "type": "name",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_owner",
+   "title": "Owner",
+   "type": "people",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_item",
+   "title": "Item",
+   "type": "board_relation",
+   "settings_str": "{\"allowMultipleBoards\":true,\"boardIds\":[8062624681,8062624689,8062624667,8062624686,8062624692],\"boardId\":8062624681}"
+  },
+  {
+   "id": "activity_start_time",
+   "title": "Start time",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_end_time",
+   "title": "End time",
+   "type": "date",
+   "settings_str": "{}"
+  },
+  {
+   "id": "activity_status",
+   "title": "Status",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[4],\"color_mapping\":{\"0\":102,\"1\":14,\"4\":15,\"6\":4,\"14\":1,\"15\":6,\"102\":0},\"labels\":{\"3\":\"Open\",\"4\":\"Done\"},\"labels_positions_v2\":{\"3\":0,\"4\":1,\"5\":2},\"labels_colors\":{\"3\":{\"color\":\"#007eb5\",\"border\":\"#3db0df\",\"var_name\":\"blue-links\"},\"4\":{\"color\":\"#9cd326\",\"border\":\"#89b921\",\"var_name\":\"lime-green\"}}}"
+  },
+  {
+   "id": "activity_type",
+   "title": "Activity Type",
+   "type": "status",
+   "settings_str": "{\"done_colors\":[1],\"color_mapping\":{\"7\":153,\"153\":7},\"labels\":{\"0\":\"Call summary\",\"107\":\"Meeting\",\"153\":\"Phone call\"},\"labels_positions_v2\":{\"0\":2,\"5\":3,\"107\":0,\"153\":1},\"labels_colors\":{\"0\":{\"color\":\"#fdab3d\",\"border\":\"#e99729\",\"var_name\":\"orange\"},\"107\":{\"color\":\"#225091\",\"border\":\"#225091\",\"var_name\":\"navy\"},\"153\":{\"color\":\"#579bfc\",\"border\":\"#4387e8\",\"var_name\":\"bright-blue\"}}}"
+  }
+ ],
+ "groups": [
+  {
+   "id": "topics",
+   "title": "Account Activities"
+  }
+ ],
+ "items": [
+  {
+   "id": "8062625541",
+   "name": "This is an activity",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Item"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2022-06-28 10:00",
+     "value": "{\"date\":\"2022-06-28\",\"time\":\"08:00:00\",\"changed_at\":\"2023-06-30T00:28:18.999Z\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Done",
+     "value": "{\"index\":4,\"post_id\":null,\"changed_at\":\"2022-05-11T14:47:26.929Z\"}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_type",
+     "text": "Phone call",
+     "value": "{\"index\":153,\"post_id\":null,\"changed_at\":\"2022-05-11T14:47:28.692Z\"}",
+     "column": {
+      "title": "Activity Type"
+     }
+    }
+   ]
+  },
+  {
+   "id": "8062625554",
+   "name": "Deal 1 - Meeting",
+   "group": {
+    "id": "topics",
+    "title": "Account Activities"
+   },
+   "column_values": [
+    {
+     "id": "activity_owner",
+     "text": "",
+     "value": null,
+     "column": {
+      "title": "Owner"
+     }
+    },
+    {
+     "id": "activity_item",
+     "text": null,
+     "value": null,
+     "column": {
+      "title": "Item"
+     }
+    },
+    {
+     "id": "activity_start_time",
+     "text": "2024-11-15 15:11",
+     "value": "{\"date\":\"2024-11-15\",\"time\":\"14:11:00\"}",
+     "column": {
+      "title": "Start time"
+     }
+    },
+    {
+     "id": "activity_end_time",
+     "text": "2024-11-15 15:41",
+     "value": "{\"date\":\"2024-11-15\",\"time\":\"14:41:00\"}",
+     "column": {
+      "title": "End time"
+     }
+    },
+    {
+     "id": "activity_status",
+     "text": "Done",
+     "value": "{\"index\":4,\"post_id\":null}",
+     "column": {
+      "title": "Status"
+     }
+    },
+    {
+     "id": "activity_type",
+     "text": "Meeting",
+     "value": "{\"index\":107,\"post_id\":null}",
+     "column": {
+      "title": "Activity Type"
+     }
+    }
+   ]
+  }
+ ]
+}

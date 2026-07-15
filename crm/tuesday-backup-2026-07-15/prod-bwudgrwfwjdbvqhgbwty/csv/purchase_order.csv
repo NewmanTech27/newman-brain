@@ -1,0 +1,1 @@
+id,project_id,cost_id,category,supplier_name,supplier_rfc,currency,contract_value_fx,fx_rate_underwritten,fx_rate_po,hedged,mxn_committed,need_by_date,expected_delivery_date,retainage_pct,status,created_by,approved_by,created_at,updated_at
