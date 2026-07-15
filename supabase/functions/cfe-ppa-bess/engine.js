@@ -209,7 +209,54 @@ export const DEFAULT_INPUTS = {
   epc_bess: 280.0, om_bess: null, comision: 0.5, falla_meses: 3, bess_yrs: 15,
   pct_autoconsumo: null, curva: null, texc: 0.0,
   wacc: 0.12, esc_cfe: 0.05, fianza: 0.139, horizon: 20, escenario: "Hibrido",
+  // rev4 GEPP solar-charge dispatch (dispatch_cs.sim_month port). OFF by
+  // default: with solar_charge=false the compute() output is bit-for-bit
+  // identical to the pre-flag engine (golden gate).
+  solar_charge: false,
 };
+
+// ============================================================================
+// rev4 solar-charge dispatch — dispatch_cs.py sim_month port (flag-gated)
+// ============================================================================
+// Split the fixed monthly BESS charge energy (carga = desc/rte) into
+// carga_solar (charged from same-day PV EXCESS, hourly sim, power-capped) and
+// carga_base (grid top-up in base hours). Mirrors dispatch_cs.sim_month:
+//   - hourly frame: load curve (giro) scaled to kwh_total; PV bell scaled to gen
+//   - exceso = Σ max(0, pv_h - load_h) over all days (hourly excess)
+//   - representative punta day = weekday (MF); avail = Σ min(exc_MF_h, bess_kw)
+//   - cs_day = min(charge_energy/dias_punta, avail); carga_solar = min(cs_day *
+//     dias_punta, exceso, exced_month) — the extra exced_month cap enforces the
+//     three-bucket no-double-count against the engine's MONTHLY-NETTING
+//     accounting: under medición neta every excess kWh inside the netting
+//     credit (aprov) is already valued at bnd_i, so only the engine's own
+//     rejected excess (exced = gen - aprov, worth texc≈0) may charge the BESS
+//     at opportunity cost texc.
+// Buckets (no double count): self/netting credit (aprov @ bnd_i) + BESS charge
+// (carga_solar @ texc) + exported remainder (exced_export @ texc); the three
+// partition gen exactly: aprov + carga_solar + exced_export = gen.
+export function solar_charge_split(curvaKey, year, month, kwh_total, gen_month,
+                                   bess_kw, charge_energy, dias_punta, exced_month) {
+  if (!dias_punta || charge_energy <= 0 || gen_month <= 0 || kwh_total <= 0)
+    return { carga_solar: 0.0, exceso: 0.0 };
+  const curve = CURVES[curvaKey] || CURVES["Otro"];
+  const cnt = day_counts(year, month);
+  const days = cnt.MF + cnt.SA + cnt.DO;
+  let load_units = 0.0;
+  for (const dt of ["MF", "SA", "DO"]) for (let h = 0; h < 24; h++) load_units += curve[dt][h] * cnt[dt];
+  const ls = load_units ? kwh_total / load_units : 0.0;
+  const gs = days ? gen_month / (days * _PV_SUM) : 0.0;
+  let exceso = 0.0;
+  for (const dt of ["MF", "SA", "DO"])
+    for (let h = 0; h < 24; h++)
+      exceso += Math.max(0.0, PV_BELL[h] * gs - curve[dt][h] * ls) * cnt[dt];
+  let avail_solar_day = 0.0;
+  for (let h = 0; h < 24; h++)
+    avail_solar_day += Math.min(Math.max(0.0, PV_BELL[h] * gs - curve.MF[h] * ls), bess_kw);
+  const C_day = charge_energy / dias_punta;
+  const cs_day = Math.min(C_day, avail_solar_day);
+  const carga_solar = Math.max(0.0, Math.min(cs_day * dias_punta, exceso, exced_month, charge_energy));
+  return { carga_solar, exceso };
+}
 
 export function merge_inputs(over) {
   over = over || {};
@@ -286,22 +333,34 @@ export function compute(inputs, bills) {
     const dem_bess_h = (f_prebess - f_post_h) * r_cap;
     const desc = ph ? Math.min(p.deliv * wd, kp) : 0.0;
     const carga = p.rte ? desc / p.rte : 0.0;
-    const arb = desc * bnd_p - carga * bnd_b;
-    const s_hib = ah_pv + dem_pv + dem_bess_h + arb;
+    const arb_grid = desc * bnd_p - carga * bnd_b; // rev3: BESS charges 100% from grid base
+    // rev4 solar-charge dispatch (flag-gated; OFF => bit-for-bit legacy path)
+    let arb = arb_grid, ah_pv_h = ah_pv, carga_solar = 0.0, carga_base = carga, exced_export = exced;
+    if (p.solar_charge) {
+      const c_oport = p.texc; // opportunity cost of BESS-absorbed excess ≈ excess tariff (~0)
+      ({ carga_solar } = solar_charge_split(p.curva, y, m, kwh_tot, gen, p.bess_kw, carga, wd, exced));
+      carga_base = carga - carga_solar;
+      exced_export = exced - carga_solar; // BESS-absorbed excess is NOT exported
+      // three buckets, no double count: aprov@bnd_i + carga_solar@c_oport + exced_export@texc
+      ah_pv_h = aprov * bnd_i + exced_export * p.texc;
+      arb = desc * bnd_p - (carga_base * bnd_b + carga_solar * c_oport);
+    }
+    const s_hib = ah_pv_h + dem_pv + dem_bess_h + arb;
     const hib = s_hib + claw(s_hib);
     const f_post_b = Math.min(resid, umbral);
     const dem_bess_o = (f_pre - f_post_b) * r_cap;
-    const s_bo = dem_bess_o + arb;
+    const s_bo = dem_bess_o + arb_grid; // BESS-only has no PV to solar-charge from
     const bess_only = s_bo + claw(s_bo);
     const antes = mem + bonif;
     rows.push({
       year: y, month: m, days, kwh_total: kwh_tot, kwh_punta: kp,
       gen, gen_aprov: aprov, exced, desc,
-      ah_pv, dem_pv, dem_bess_h, arb,
+      ah_pv: ah_pv_h, dem_pv, dem_bess_h, arb,
       pv_only, bess_only, hibrido: hib, pct_ac: pct_m,
       antes, despues_hib: antes - hib,
       pct_hib: antes ? hib / antes : 0.0,
       fp_cargo: b.cargo_fp_penalty || 0.0,
+      ...(p.solar_charge ? { carga_solar, carga_base, exced_export, arb_grid } : {}),
     });
   }
   const n_meses = rows.length;
@@ -313,6 +372,15 @@ export function compute(inputs, bills) {
     ah_pv: T("ah_pv"), dem_pv: T("dem_pv"), dem_bess_h: T("dem_bess_h"),
     arb: T("arb"), fp_cargo: T("fp_cargo"),
   };
+  if (p.solar_charge) {
+    // BESS-absorbed excess is excluded from the exported-excess figure (and
+    // therefore from the 5% excedente reject rule downstream).
+    annual.carga_solar = T("carga_solar");
+    annual.carga_base = T("carga_base");
+    annual.exced_export = T("exced_export");
+    annual.arb_grid = T("arb_grid");
+    annual.solar_charge_bonus = annual.arb - annual.arb_grid; // = Σ carga_solar·(bnd_b − texc) ≥ 0
+  }
   annual.meses = n_meses;
   annual.factor_anual = ann;
   annual.anualizado = ann !== 1.0;
@@ -345,8 +413,9 @@ function _regimen(p, bills, rows, annual) {
     alerts.push(["warn", `Demanda máx ${kwmax.toFixed(0)} kW — cerca del gate de 100 kW; revisar si la tarifa correcta es GDMTO`]);
   if (p.bess_kw > (p.demanda_contratada || Infinity))
     alerts.push(["error", `BESS ${p.bess_kw.toFixed(0)} kW > demanda contratada ${p.demanda_contratada.toFixed(0)} kW — viola condición SAE-CC`]);
-  if (annual.exced > 1.0)
-    alerts.push(["warn", `${Math.round(annual.exced).toLocaleString()} kWh/año de excedentes valuados a $${p.texc.toFixed(2)} — bajo medición neta los créditos expiran a PML en 12 meses; ajustar kWp al consumo`]);
+  const exced_eff = p.solar_charge ? annual.exced_export : annual.exced; // BESS-absorbed excess doesn't count
+  if (exced_eff > 1.0)
+    alerts.push(["warn", `${Math.round(exced_eff).toLocaleString()} kWh/año de excedentes valuados a $${p.texc.toFixed(2)} — bajo medición neta los créditos expiran a PML en 12 meses; ajustar kWp al consumo`]);
   if (annual.fp_cargo > 0)
     alerts.push(["opp", `Cargos FP por $${Math.round(annual.fp_cargo).toLocaleString()}/año — la corrección FP suele ser el ROI más alto y es ortogonal a PV/BESS`]);
   if (p.division !== "SIN")
