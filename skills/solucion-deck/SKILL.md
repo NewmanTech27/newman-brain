@@ -15,9 +15,9 @@ description: >-
 # Newman "Solución Energética" HTML deck (AFC/GEPP style)
 
 Turns proposal workbook(s) into ONE interactive client-facing HTML: portada →
-manifiesto → problemática → resumen portafolio → esquemas → superficie → consumo →
-solución (cascada) → despacho → proyección 20 años → supuestos → cierre.
-Reference implementations (GEPP, jul-2026) live in `assets/`.
+manifiesto → trayectoria (proyectos en operación) → problemática → resumen portafolio →
+esquemas → superficie → consumo → solución (cascada) → despacho → proyección 20 años →
+supuestos → cierre. Reference implementation (GEPP v5, jul-2026) lives in `assets/`.
 
 ## Inputs & access
 - Proposal xlsx books live in a **client Drive folder owned by `mario@newman.re`**.
@@ -43,10 +43,27 @@ Reference implementations (GEPP, jul-2026) live in `assets/`.
    from Supuestos, GEPP=4.0)` vs disponible. If it fits → report utilization % and
    holgura; if not → report % que cabe (`disp/req`), kWp que caben (`disp/densidad`)
    and m² faltantes. Flag >98.5 % utilization as "al límite del predio".
-4. **Build the HTML** from `assets/template_gepp_v2.html`: replace `__MODEL__` with
-   the JSON; adapt copy (client name, problemática cards quoting the client's own
-   words + answer with proposal numbers, autoabasto/cliff story only if applicable),
-   and the META/site keys.
+4. **Build the HTML** from `assets/template_gepp_v5.html` (THE template; v2 kept only
+   as historical reference). Replace the inlined model with the JSON; adapt copy
+   (client name, problemática cards quoting the client's own words + answer with
+   proposal numbers, autoabasto/cliff story only if applicable), and the META/site keys.
+   **v5 feature checklist (see `assets/v5_features_spec.md` for exact HTML/CSS):**
+   - **Montaña cover-band** blending portada→manifiesto: `.cover-band` band at the
+     bottom of `#portada` (`bottom:-22vh`, `#portada padding-bottom:34vh`), faded via
+     `mask-image` linear-gradient + a `::after` `--canvas` gradient (the mask-image
+     technique — no mix-blend, no SVG). Image = `assets/mountain_duo.webp` (brand art,
+     client-agnostic) wired as photo slot `portada`.
+   - **ZONA FOTOS editable photo system**: every swappable photo lives in a
+     `<script type="text/plain" data-photo="KEY">data:…</script>` block after `<body>`,
+     targeted by `<img data-photo-slot="KEY">` (no src), filled by the loader before
+     `</body>`; preceded by the "CÓMO EDITAR" comment guide. Keeps data-driven
+     helioscope/sembrado images in `IMAGES{}` (they switch with the selector); only
+     static decoration photos become slots.
+   - **Trayectoria photo mosaic** (section 03 `#trayectoria`): 5-figure `.ph-grid` /
+     `figure.pframe` "Proyectos en operación" gallery (lead spans both rows).
+   - **Cierre crew photo**: `<img class="crew" data-photo-slot="cierre">` leading `.cta`.
+   - **v5 print-CSS**: `@media print` overrides for `.cover-band` (un-mask, static),
+     `.ph-grid` (fixed rows), `#portada` padding, and despacho chart de-animation.
    **Manifiesto (Quiénes somos) is STANDARD copy — do not rewrite per client** (user-
    approved 2026-07-13, already in the template): opener «Es un tiempo nuevo, tiempo
    de cambios, tiempo de adaptarse e innovar, tiempo de atreverse a crear la nueva era
@@ -84,16 +101,34 @@ Reference implementations (GEPP, jul-2026) live in `assets/`.
      rebuild: fake `document.getElementById` returning innerHTML-capturing objects)
      running EVERY renderer × every site key × both options × both seasons +
      portfolio; then grep all captured HTML for `NaN|undefined` leaks;
+   - **photo-slot check**: every `data-photo-slot` img resolves to a matching
+     `<script data-photo>` block (and vice-versa) — no empty/broken slots;
+   - **montaña band present**: the `.cover-band` exists on `#portada` with slot `portada`;
    - eyeball in a browser if one is available (usually not on this box — say so).
 6. **Deliver**: multipart-upload the HTML to the same client Drive folder
    (`uploadType=multipart`, metadata JSON with `parents:[folderId]`). Report the
    webViewLink and remind the user Drive preview doesn't run JS (download → open).
 7. **Memory**: update the client's auto-memory with file id + what changed.
 
+## Variantes / portafolios (multi-proposal clients)
+When a client has multiple proposal VARIANTS (site-selection / sizing, e.g. 1MW /
+3.9MW / 4.4MW), the option selector switches VARIANTS (use `.vname` spans, not GEPP's
+two-option `.opname`). Lessons:
+- Map helioscope images **per variant** — a site's design can differ in size between
+  variants; caption illustrative images honestly (say when a shot is illustrative).
+- Show mounting-type chips per site (techo / suelo / pedestal / carport / mixto).
+- **PV-only portfolios**: omit ALL BESS chart elements (no despacho charge/discharge,
+  no punta-shave story) — use the Medición-Neta narrative.
+- Derive gasto actual from **Σ recibos**, never a stale workbook indicator.
+
 ## Naming
 `<Cliente> - Solucion Energetica[ vN].html` — matches the AFC/GEPP convention.
 
 ## Assets
-- `assets/template_gepp_v2.html` — full reference template (option selector,
-  superficie section, all charts; `__MODEL__` placeholder).
+- `assets/template_gepp_v5.html` — **canonical reference** (built GEPP v5: montaña
+  cover-band, ZONA FOTOS system + all 7 data-photo blocks, Trayectoria mosaic, cierre
+  crew, v5 print-CSS). Model is inlined here — swap it for the new client's JSON.
+- `assets/v5_features_spec.md` — exact HTML/CSS for every v5 feature over v2.
+- `assets/mountain_duo.webp` — the montaña (portada cover-band brand art, client-agnostic).
+- `assets/template_gepp_v2.html` — historical reference (v2 layout, `__MODEL__` placeholder).
 - `assets/extract_gepp.py` — anchor-scan extractor for the rev2 workbook layout.

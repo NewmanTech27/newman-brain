@@ -1,4 +1,9 @@
-# GEPP — BESS Carga Solar + Autoconsumo Max (NR)
+# Solar Charge BESS Calculator
+
+Solar-charge BESS calculator — dispatch model, sizing sweeps, and analysis probes.
+Worked example: GEPP (rev4 "Carga Solar" + "Autoconsumo Max"/NR scenario); the calculator
+books it produces live in `entregables/calculadoras/` ("GEPP - Solucion Energetica
+Solar-Charge BESS - *.xlsx"). HTML deck rules live in `skills/solucion-deck/`.
 
 Mirror of `~/CFE Brain/work/gepp-carga-solar/` (2026-07-15). The solar-charge dispatch model
 (rev4) and the "Autoconsumo Max / sin restricción de superficie" (NR) scenario for GEPP —
@@ -30,7 +35,7 @@ the pre-formalization prototype of the engine's future solar-charge mode
 ## Running
 
 ```sh
-cd tools/gepp-carga-solar
+cd tools/solar-charge-bess-calculator
 BOOKS_DATA=$PWD/books_data.json python3 dispatch_cs.py     # or any probe/build script
 ```
 
