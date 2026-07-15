@@ -29,3 +29,8 @@ Executed per keep/kill decision against `service-inventory-2026-07-15.md`. No ma
 
 
 - 2026-07-15: droplet 584049096 newman-crm-nonprod (67.207.89.80) destroyed via DO API; verified not_found. Note: Vault also holds CRM_NONPROD_SSH_KEY (now moot).
+
+## Addendum (later 2026-07-15)
+- Droplet 584049096 `newman-crm-nonprod` (67.207.89.80): destroyed via DO API (token from Vault). Verified 404.
+- `newman-review.service` (vps): disabled + stopped; `/opt/newman-review/newman-review.env` (plaintext Twilio token + pooler password) shredded — Twilio token lives in Supabase secrets. review.newman.re now 301 → tuesday.newman.re/review (feature migrated into Tuesday CRM).
+- Supabase bwud security fixes (migration `security_advisor_fixes`): RLS enabled on client.ocr_retry/collector_heartbeat/processed_media; crm.todo_subtask always-true policy → crm.is_newman(); 4 cfe.* views → security_invoker.
