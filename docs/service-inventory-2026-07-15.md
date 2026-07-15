@@ -5,18 +5,18 @@ Hosts surveyed: newman-vps (100.74.96.63 / DO), newman-crm droplet (167.172.142.
 
 ## Public endpoints (Cloudflare zone newman.re)
 
-| URL | Backing | Host | What it is | Env | Status 2026-07-15 |
-|---|---|---|---|---|---|
-| newman.re / www.newman.re | CF Pages `newman-site.pages.dev` | Cloudflare Pages | Company landing site | prod | live |
-| tuesday.newman.re | tunnel 693801f5… → localhost:3000 | newman-crm droplet (167.172.142.136) | Tuesday CRM web (Next.js, `apps/crm-web`, branch `dev`) | prod | live (307→/login) |
-| login.newman.re | tunnel b7cefd82… → nginx :8091 → /opt/newman-sso/login | newman-vps | Central SSO login page + `newman-sso.service` validator (nginx auth_request → Supabase Auth) | prod | live (200) |
-| dev-tuesday.newman.re | A 67.207.89.80 (Caddy) | unknown droplet 67.207.89.80 | Tuesday CRM dev instance | dev | live (307→/login) |
-| staging-tuesday.newman.re | A 67.207.89.80 (Caddy) | unknown droplet 67.207.89.80 | Tuesday CRM staging instance | staging | live (307→/login) |
-| curvas.newman.re | A 67.205.146.19 | droplet 67.205.146.19 | "curvas" app (repo `deploy/curvas`) | prod? | live (200) |
-| excalidraw.newman.re | tunnel b7cefd82… → :8091 | newman-vps | Excalidraw whiteboard (SSO-gated, 302) | prod | live |
-| review.newman.re | tunnel b7cefd82… → :8091 | newman-vps | newman-review app (`newman-review.service`) | prod | live (302) |
-| wa.newman.re | tunnel b7cefd82… → :8080 | newman-vps | WhatsApp/Twilio webhook gateway (`newman-agent@gateway-webhook`) | prod | 404 on `/` (webhook only) |
-| api.kameloso.com | cloudflared on mini | Mac mini | Newman Data API (FastAPI docker `newman-api`) | prod | 404 on `/` (API) |
+| URL | Backing | Host | What it is | Env | Status 2026-07-15 | Decision |
+|---|---|---|---|---|---|---|
+| newman.re / www.newman.re | CF Pages `newman-site.pages.dev` | Cloudflare Pages | Company landing site | prod | live | **KEEP** |
+| tuesday.newman.re | tunnel 693801f5… → localhost:3000 | newman-crm droplet (167.172.142.136) | Tuesday CRM web (Next.js, `apps/crm-web`, branch `dev`) | prod | live (307→/login) | **KEEP** |
+| login.newman.re | tunnel b7cefd82… → nginx :8091 → /opt/newman-sso/login | newman-vps | Central SSO login page + `newman-sso.service` validator (nginx auth_request → Supabase Auth) | prod | live (200) | **KEEP (SSO gate for review)** |
+| dev-tuesday.newman.re | A 67.207.89.80 (Caddy) | unknown droplet 67.207.89.80 | Tuesday CRM dev instance | dev | live (307→/login) | **KILLED (DNS deleted; droplet flagged for manual destroy)** |
+| staging-tuesday.newman.re | A 67.207.89.80 (Caddy) | unknown droplet 67.207.89.80 | Tuesday CRM staging instance | staging | live (307→/login) | **KILLED (DNS deleted; droplet flagged for manual destroy)** |
+| curvas.newman.re | A 67.205.146.19 | droplet 67.205.146.19 | "curvas" app (repo `deploy/curvas`) | prod? | live (200) | **KEEP** |
+| excalidraw.newman.re | tunnel b7cefd82… → :8091 | newman-vps | Excalidraw whiteboard (SSO-gated, 302) | prod | live | **KEEP (user reversal 2026-07-15)** |
+| review.newman.re | tunnel b7cefd82… → :8091 | newman-vps | newman-review app (`newman-review.service`) | prod | live (302) | **KEEP** |
+| wa.newman.re | tunnel b7cefd82… → :8080 | newman-vps | WhatsApp/Twilio webhook gateway (`newman-agent@gateway-webhook`) | prod | 404 on `/` (webhook only) | **KEEP** |
+| api.kameloso.com | cloudflared on mini | Mac mini | Newman Data API (FastAPI docker `newman-api`) | prod | 404 on `/` (API) | **KILLED (newman-api removed; hostname kept only for /newman/pipeline/* endpoint)** |
 
 ## newman-vps (100.74.96.63) — systemd services
 
@@ -29,7 +29,7 @@ Hosts surveyed: newman-vps (100.74.96.63 / DO), newman-crm droplet (167.172.142.
 | vault.service | HashiCorp Vault (authoritative secrets) | keep |
 | cloudflared.service | tunnel b7cefd82 (login/excalidraw/review/wa) | keep with above |
 | nginx (vhosts: login, excalidraw, review on 127.0.0.1:8091) | multiplexer behind tunnel | |
-| nordvpnd, tailscaled, fail2ban, droplet-agent | infra | |
+| ~~nordvpnd~~ (KILLED 2026-07-15: disabled, socket disabled, killswitch masked), tailscaled, fail2ban, droplet-agent | infra | |
 | tmux agent org (7 agents) | not running at snapshot time (`tmux ls` empty) | |
 
 ## newman-crm droplet (167.172.142.136, DO nyc1, s-1vcpu-2gb) — from deploy/crm-web/README.md
@@ -51,13 +51,13 @@ Serves dev-tuesday + staging-tuesday behind Caddy. Deployment path unknown (no G
 
 | Service | What it does |
 |---|---|
-| docker: newman-api | Newman Data API → api.kameloso.com |
-| docker: n8n (127.0.0.1:5678) | automation jobs |
-| docker: open-webui (:3000), searxng (:8888), paperclip (:3100) | local AI stack (Duncan) |
+| docker: newman-api | **KILLED 2026-07-15** — container removed, tunnel ingress trimmed (pipeline path kept) |
+| docker: n8n (127.0.0.1:5678) | **KILLED 2026-07-15** — empty instance, export saved, volume n8n_n8n_data preserved |
+| docker: open-webui (:3000), searxng (:8888), paperclip (:3100) | **KILLED 2026-07-15** — containers removed, launchd/compose disabled, volumes + bind data preserved |
 | launchd: actions.runner.NewmanTech27-newman-architecture.mini | GitHub Actions self-hosted runner |
 | launchd: com.newman.pipeline-deploy / pipeline-endpoint | newman-rebuild executor deploy + endpoint |
 | launchd: com.newman.collector | CFE invoice collector |
-| launchd: com.newman.tarifa-cuotas, com.newman.twilio-reconcile | tariff refresh, Twilio reconcile |
+| launchd: com.newman.tarifa-cuotas, com.newman.twilio-reconcile | **KILLED 2026-07-15** — bootout + plists renamed .disabled |
 | postgres :5433 (tariffs), pg `bess` | local warehouses |
 
 ## MacBook Air (this machine)
@@ -79,3 +79,5 @@ launchd: energy.newman.intake-worker, energy.newman.email-intake, com.newman.col
 - deploy.yml: CI-green on `main` → SSH newman-vps.
 - deploy-mini.yml: → mac mini self-hosted runner.
 - ci.yml / ci-integration.yml / ci-miespacio.yml / db-tests.yml: CI only.
+
+> 2026-07-15 decommission executed — see docs/decommission-log-2026-07-15.md. All rows not marked KILLED are KEEP.
