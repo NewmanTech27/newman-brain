@@ -27,6 +27,13 @@
 - GDMTH deals need kWh base/intermedio/punta, FRI-weighted billed demand, tariff division, and 12-mo history; missing input → flag, never guess.
 - Mario's engine (newman-brain/cfe-brain) now runs as a pg_cron job writing one offer per RPU toward a `client.calculo` schema.
 
+### Mario's proposal-book conventions (Jul 12–14, VPS)
+- Standard defaults baked into `make_project_book.py` / the `/solucion-deck` skill: **investor IRR 19%** default in the editable books, deck escalators PPA and CFE both **4%** (later re-solved so combined investor TIR = exactly **14.0%**), PV degradation **1.0% yr1 / 0.4% yr2+**, an "Ahorro % después del PPA" column, and a **BESS gate** that auto-drops the battery when it isn't financially justified (fired on KFC Tuxtla Centro) ([[2026-07-12-afc-kfc-pizzahut-proposal]], [[2026-07-13-gepp-solucion-deck]]).
+- Per-meter trust signal: reconstruction checksum Σ(real importes)×1.16 vs facturación — flags unreliable meters (e.g. Yazaki chico 15.77% = UNRELIABLE) ([[2026-07-08-cfe-ppa-bess-engine-to-edge-functions]]).
+- **Short-term PPA math** (Pueblo Bonito 6-yr): tarifa solved so sponsor NPV@18% = 0 → `(CAPEX + VP O&M 1–6) ÷ VP kWh entregados 1–6`, zero terminal value; watch pre-tax vs post-tax IRR (18% pre-tax ≈ 14.1% post-tax with accelerated depreciation) and the EPC price chip (only 0.65 USD/Wp viable at 6-yr term) ([[2026-07-13-pueblo-bonito-desaladora]]).
+- **Counterparty DD**: reusable ratio engine + Newman DD framework scoring (El Camarón Dorado 3.31/5 "requiere mitigantes"; apto threshold 3.5); watch related-party loans and qualified audit opinions ([[2026-07-10-camaron-dorado-financial-dd]]).
+- Delivery gotcha affecting **every** JS-injected HTML deck: phones don't run scripts in previews — prerender with headless Chrome (`work/prerender.py`) before delivering ([[2026-07-12-fibrahotel-proposals]]).
+
 ## Related Notes
 - [[2026-06-20-pepsico-ppa-proposal]]
 - [[2026-07-03-kfc-ppa-offer-workflow]]
@@ -38,3 +45,9 @@
 - [[2026-07-03-agent-committee-reviews-ppa-cfe]]
 - [[2026-07-03-review-committee-judges]]
 - [[2026-07-15-mario-engine-client-calculo]]
+- [[2026-07-08-cfe-ppa-bess-engine-to-edge-functions]]
+- [[2026-07-12-afc-kfc-pizzahut-proposal]]
+- [[2026-07-13-gepp-solucion-deck]]
+- [[2026-07-13-pueblo-bonito-desaladora]]
+- [[2026-07-10-camaron-dorado-financial-dd]]
+- [[2026-07-12-fibrahotel-proposals]]

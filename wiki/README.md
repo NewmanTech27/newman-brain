@@ -1,6 +1,6 @@
 # Newman Brain — Karpathy-style LLM Wiki
 
-A plain-markdown personal knowledge base distilled from **all Newman Claude Code sessions** across the MacBook, mac mini, and (pending) the newman-vps/droplet. It follows Andrej Karpathy's "LLM-wiki" idea: a durable, human-readable store that a future LLM can load and reason over instead of re-deriving everything from scratch.
+A plain-markdown personal knowledge base distilled from **all Newman Claude Code sessions** across the MacBook, mac mini, and the newman-vps/droplet (jesus + mario). It follows Andrej Karpathy's "LLM-wiki" idea: a durable, human-readable store that a future LLM can load and reason over instead of re-deriving everything from scratch.
 
 ## How to query it
 
@@ -140,8 +140,50 @@ Every note (session and topic) uses `_templates/note.md`:
 | 2026-07-12-rebuild-repo-audit-readme-issues | 07-12 | newman-rebuild repo audit: README, infra issues, #109 merge |
 | 2026-07-15-mario-engine-client-calculo | 07-15 | Mario's savings engine → pg_cron offers into client.calculo |
 
-**Totals: 64 MacBook + 9 mini = 73 session notes; 12 topic syntheses.**
+### newman-vps — jesus (`sessions/vps-jesus/`)
 
-## Pending
+| File | Date | Summary |
+|---|---|---|
+| 2026-07-07-cfe-cicd-tests-pseudo-api | 07-07 | CFE CI/CD fix, unit tests, __doPostBack pseudo-API probe (blocked on mini SSH) |
+| 2026-07-07-monday-mcp-seat-audit | 07-07 | Monday MCP reorg attempt; no API path to a paid CRM seat |
+| 2026-07-07-vault-secrets-hardening | 07-07 | HashiCorp Vault auto-unseal + token rotations on newman-vps |
+| 2026-07-08-curvas-consumption-curves | 07-08 | Load-curve tables + curvas.newman.re; Vault→Supabase secrets |
+| 2026-07-08-excalidraw-sso-crm-prod | 07-08 | Excalidraw self-host, login.newman.re SSO gate, dev/main fork discovered |
+| 2026-07-08-huddle-todos-agent | 07-08 | Huddle-minutes agent → Tuesday kanban + ToDos tab |
+| 2026-07-08-mario-access-and-vps-onboarding | 07-08 | tmux seats, Supabase MCP, Mario SSH key on the droplet |
+| 2026-07-08-newman-landing-deploy | 07-08 | Landing-page CI/CD to dev.newman.re (Actions + cloudflared) |
+| 2026-07-08-tuesday-crm-committee-loop | 07-08 | /loop built Tuesday CRM under committee scoring (→88/100) |
+| 2026-07-09-ceo-org-real-invoice-gate0 | 07-09 | CEO seat: real WhatsApp invoice test, GATE-0 preserve-both ruling |
+| 2026-07-09-cfe-real-invoice-claim-media | 07-09 | claim_media (016) + bulk_pdf status (017) prod bugs traced/fixed |
+| 2026-07-09-cto-verification-freeze | 07-09 | Verify-claims-against-artifacts rule; REVOKE client-facing freeze |
+| 2026-07-09-phase1-assessments | 07-09 | Parser/ppa seat assessments; enrich.py reconciliation is a tautology |
+| 2026-07-09-sizing-materiality | 07-09 | sizing.py divergence quantified: net oversell of savings |
+| 2026-07-09-supabase-devops-gate0 | 07-09 | DEL-4 (prod 5/75 migrations), freeze execution, gate0 merge |
+| 2026-07-09-token-audit-baseline | 07-09 | $2,475 token audit: median 147k carried context is the driver |
+| 2026-07-09-tuesday-inputs-spec | 07-09 | Tuesday input-surface spec (56/100, WhatsApp silent drop) |
+| 2026-07-09-vps-reboot-cleanup | 07-09 | Reboot recovery; vault-fetch boot race + NordVPN snap removed |
+| 2026-07-10-flock-overnight-golden-proof | 07-10 | Golden extraction proof 18/18, sizing.py fix, org-wide drain |
+| 2026-07-10-newman-rebuild-seat-org | 07-10 | Issue-driven rebuild seats: orchestration schema, golden CI, SSO capture |
 
-The **newman-vps / droplet** and **mario's** sessions on the mini and VPS are **not yet mined** — tailscale SSH re-auth was pending as of 2026-07-15 (mini + newman-vps unreachable at distillation time). Those hosts hold additional agent-org and harvest history to fold in once reachable. Update this README and add `sessions/vps/` when they are harvested.
+### newman-vps — mario (`sessions/vps-mario/`)
+
+| File | Date | Summary |
+|---|---|---|
+| 2026-07-08-cfe-ppa-bess-engine-to-edge-functions | 07-08 | PPA+BESS engine → edge function; newman-brain repo born; Yazaki runs |
+| 2026-07-08-supabase-mcp-and-auth-setup | 07-08 | Supabase MCP/CLI + gcloud auth patterns and gotchas |
+| 2026-07-09-bess-portfolio-master-document | 07-09 | 136-project BESS portfolio master doc (129.9 MWh / 72.3 MW) |
+| 2026-07-09-helioscope-roof-sizing-pipeline | 07-09 | Helioscope roof pipeline + Tongwei packing + HOUSE_STYLE |
+| 2026-07-10-camaron-dorado-financial-dd | 07-10 | El Camarón Dorado financial DD: 3.31/5 requiere mitigantes |
+| 2026-07-11-gdmto-vs-gdmth-bess-value | 07-11 | BESS barely pays under GDMTO (no punta, umbral-bound capacidad) |
+| 2026-07-12-afc-kfc-pizzahut-proposal | 07-12 | AFC live-motor Excel + deck; PV-only $617,636/yr (26.22%) |
+| 2026-07-12-fable-opus-handoff-tooling | 07-12 | /handoff command; orchestrate-in-Fable, execute-in-Opus doctrine |
+| 2026-07-12-fibrahotel-proposals | 07-12 | 5 Posadas hotels; BCS DIV/0 fix; deck mobile prerender fix |
+| 2026-07-13-gepp-solucion-deck | 07-13 | GEPP deck v4–v7 + the /solucion-deck skill frozen |
+| 2026-07-13-pueblo-bonito-desaladora | 07-13 | 6-yr/18% desaladora PPA; SIN-vs-BCS motor limitation found |
+| 2026-07-14-gepp-solar-charge-bess-dispatch | 07-14 | Solar-charge BESS dispatch rev4 (+$954k/yr portfolio) |
+
+**Totals: 64 MacBook + 9 mini + 20 vps-jesus + 12 vps-mario = 105 session notes; 12 topic syntheses.**
+
+## Coverage
+
+**All three hosts mined as of 2026-07-15** — MacBook, mac mini, and newman-vps (both jesus's and mario's sessions). Future sessions should be distilled into `sessions/<host>/` and folded into the topic notes as they land.

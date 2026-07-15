@@ -27,6 +27,12 @@
 - OCR discipline: never guess digits; RMU-print mismatch → needs_human; check for embedded XML in the PDF before burning vision OCR; per-field confidence thresholds (XML 0.95+, text-PDF 0.85+, vision 0.6+).
 - SAT descarga masiva **cannot** replace the harvest — the needed data lives in CFE's CFDI Addenda, not SAT.
 
+### Pipeline validation (from the VPS agent org, Jul 07–10)
+- The pseudo-API `__doPostBack` probe was scripted on the VPS but MUST run from the mac mini (Mexican residential/NordVPN IP); Tailscale gotcha: `tailscale ssh` does not accept `-o` OpenSSH flags, and the mini's sshd rejects keys unless Tailscale SSH or an authorized keypair exists ([[2026-07-07-cfe-cicd-tests-pseudo-api]]).
+- Real-invoice WhatsApp test exposed two prod bugs: migration **016** `claim_media` declared ROW_COUNT into a boolean (silent loss, messages stuck 'processing'); **017** widened `bulk_pdf_status_chk` to all 7 statuses actually written (pending/needs_ocr/needs_name/…). Filed finding: `needs_name` has NO outbound prompt consumer — intake acks "Te confirmaremos los RPUs" but nothing ever asks the sender for the titular ([[2026-07-09-cfe-real-invoice-claim-media]]).
+- **enrich.py reconciliation is a near-tautology**: it checks the SAT fiscal identity (`SubTotal − Descuento + IVA − Ret == Total`) — true for every stamped CFDI by construction — NOT the MEM-breakdown completeness check; `reconciled=true` doesn't validate the data feeding sizing ([[2026-07-09-phase1-assessments]]).
+- **CFDI XML has NO base/intermedio/punta split** — enrich.py dumped the total into kwh_base, so the sizing engine is GIGO until the recibo PDF's "Desglose del consumo" is captured; the newman-rebuild harvest seat built the recibo split parser for exactly this ([[2026-07-10-flock-overnight-golden-proof]], [[2026-07-10-newman-rebuild-seat-org]]).
+
 ### Operational gotchas (newman-rebuild issue #19)
 Empty-account census blocker; Consulta 6-cap vs MiEspacio full history; raw `<NOMBRE>` titular matching; `cfe_lock` leak on external kill; drain-budget scaling; KC/K9/KX document taxonomy. Standing instruction: keep appending harvest findings to issue #19.
 
@@ -44,3 +50,7 @@ Empty-account census blocker; Consulta 6-cap vs MiEspacio full history; raw `<NO
 - [[2026-07-03-review-qa-photo-pipeline]]
 - [[2026-07-03-agent-committee-reviews-ppa-cfe]]
 - [[2026-07-07-newman-architecture-cleanroom-deploy]]
+- [[2026-07-07-cfe-cicd-tests-pseudo-api]]
+- [[2026-07-09-cfe-real-invoice-claim-media]]
+- [[2026-07-09-phase1-assessments]]
+- [[2026-07-10-flock-overnight-golden-proof]]
