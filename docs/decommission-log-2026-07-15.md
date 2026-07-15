@@ -26,3 +26,6 @@ Executed per keep/kill decision against `service-inventory-2026-07-15.md`. No ma
 ## Outstanding
 1. Destroy droplet 67.207.89.80 (dev/staging tuesday) manually in the DigitalOcean console — no SSH access.
 2. Optional: remove open-webui + n8n/searxng docker bits from the mini's nix-darwin config so a darwin-rebuild doesn't resurrect the open-webui LaunchAgent.
+
+
+- 2026-07-15: droplet 584049096 newman-crm-nonprod (67.207.89.80) destroyed via DO API; verified not_found. Note: Vault also holds CRM_NONPROD_SSH_KEY (now moot).
