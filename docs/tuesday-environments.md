@@ -11,7 +11,8 @@ NewmanTech27/newman-architecture), each pinned to its own Supabase branch.
 
 ## newman-crm-nonprod droplet
 
-- DigitalOcean nyc1, `s-1vcpu-2gb` (~$12/mo), Ubuntu 24.04, Node 22.
+- DigitalOcean nyc1, `s-1vcpu-2gb` (~$12/mo), Ubuntu 24.04, Node 22, **2G swapfile**
+  (`/swapfile`, in fstab — without it `npm ci`/`next build` gets OOM-killed on 2GB).
 - IP **137.184.19.31** — SSH as `root`/`deploy` with Vault
   `secret/synaptiq/backend:CRM_NONPROD_SSH_KEY` (this replaces the destroyed
   67.207.89.80 box; new box uses a cloudflared tunnel, not Caddy).
