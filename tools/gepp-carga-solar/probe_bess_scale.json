@@ -1,0 +1,194 @@
+{
+ "sites": {
+  "ixt": {
+   "kwp_nr": 5430.0,
+   "N_binding_months": {
+    "punta(kWh)": 6,
+    "energy(C30·d)": 6
+   },
+   "scale_rows": [
+    {
+     "scale": 1.0,
+     "kwp_opt": 5450.0,
+     "ahorro_opt": 10622828.0,
+     "N_annual": 1829374.0,
+     "carga_solar": 820346.0,
+     "bono": 912243.0,
+     "capex_bess": 36363600.0
+    },
+    {
+     "scale": 1.5,
+     "kwp_opt": 5450.0,
+     "ahorro_opt": 7741865.0,
+     "N_annual": 2187643.0,
+     "carga_solar": 820346.0,
+     "bono": 912243.0,
+     "capex_bess": 54545400.0
+    },
+    {
+     "scale": 2.0,
+     "kwp_opt": 5450.0,
+     "ahorro_opt": 4561671.0,
+     "N_annual": 2188696.0,
+     "carga_solar": 820346.0,
+     "bono": 912243.0,
+     "capex_bess": 72727200.0
+    },
+    {
+     "scale": 3.0,
+     "kwp_opt": 5450.0,
+     "ahorro_opt": -1800425.0,
+     "N_annual": 2188696.0,
+     "carga_solar": 820346.0,
+     "bono": 912243.0,
+     "capex_bess": 109090800.0
+    }
+   ]
+  },
+  "aca": {
+   "kwp_nr": 2270.0,
+   "N_binding_months": {
+    "punta(kWh)": 7,
+    "energy(C30·d)": 5
+   },
+   "scale_rows": [
+    {
+     "scale": 1.0,
+     "kwp_opt": 2250.0,
+     "ahorro_opt": 4214043.0,
+     "N_annual": 759294.0,
+     "carga_solar": 586541.0,
+     "bono": 588058.0,
+     "capex_bess": 16196544.0
+    },
+    {
+     "scale": 1.5,
+     "kwp_opt": 2300.0,
+     "ahorro_opt": 2892467.0,
+     "N_annual": 857678.0,
+     "carga_solar": 651812.0,
+     "bono": 653229.0,
+     "capex_bess": 24294816.0
+    },
+    {
+     "scale": 2.0,
+     "kwp_opt": 2300.0,
+     "ahorro_opt": 1475611.0,
+     "N_annual": 857678.0,
+     "carga_solar": 651812.0,
+     "bono": 653229.0,
+     "capex_bess": 32393088.0
+    },
+    {
+     "scale": 3.0,
+     "kwp_opt": 2300.0,
+     "ahorro_opt": -1358101.0,
+     "N_annual": 857678.0,
+     "carga_solar": 651812.0,
+     "bono": 653229.0,
+     "capex_bess": 48589632.0
+    }
+   ]
+  },
+  "can": {
+   "kwp_nr": 1410.0,
+   "N_binding_months": {
+    "punta(kWh)": 7,
+    "energy(C30·d)": 5
+   },
+   "scale_rows": [
+    {
+     "scale": 1.0,
+     "kwp_opt": 1400.0,
+     "ahorro_opt": 2583236.0,
+     "N_annual": 452699.0,
+     "carga_solar": 212951.0,
+     "bono": 274355.0,
+     "capex_bess": 9641268.0
+    },
+    {
+     "scale": 1.5,
+     "kwp_opt": 1400.0,
+     "ahorro_opt": 1775682.0,
+     "N_annual": 494180.0,
+     "carga_solar": 212951.0,
+     "bono": 274355.0,
+     "capex_bess": 14461902.0
+    },
+    {
+     "scale": 2.0,
+     "kwp_opt": 1400.0,
+     "ahorro_opt": 932274.0,
+     "N_annual": 494180.0,
+     "carga_solar": 212951.0,
+     "bono": 274355.0,
+     "capex_bess": 19282536.0
+    },
+    {
+     "scale": 3.0,
+     "kwp_opt": 1400.0,
+     "ahorro_opt": -754541.0,
+     "N_annual": 494180.0,
+     "carga_solar": 212951.0,
+     "bono": 274355.0,
+     "capex_bess": 28923804.0
+    }
+   ]
+  },
+  "pro": {
+   "kwp_nr": 20000.0,
+   "N_binding_months": {
+    "energy(C30·d)": 10,
+    "punta(kWh)": 2
+   },
+   "scale_rows": [
+    {
+     "scale": 1.0,
+     "kwp_opt": 20000.0,
+     "ahorro_opt": 39761140.0,
+     "N_annual": 6173297.0,
+     "carga_solar": 1048313.0,
+     "bono": 1184247.0,
+     "capex_bess": 115842636.0
+    },
+    {
+     "scale": 1.5,
+     "kwp_opt": 20000.0,
+     "ahorro_opt": 30806499.0,
+     "N_annual": 7620896.0,
+     "carga_solar": 1048313.0,
+     "bono": 1184247.0,
+     "capex_bess": 173763954.0
+    },
+    {
+     "scale": 2.0,
+     "kwp_opt": 20000.0,
+     "ahorro_opt": 20889976.0,
+     "N_annual": 7891185.0,
+     "carga_solar": 1048313.0,
+     "bono": 1184247.0,
+     "capex_bess": 231685272.0
+    },
+    {
+     "scale": 3.0,
+     "kwp_opt": 20000.0,
+     "ahorro_opt": 622403.0,
+     "N_annual": 7891185.0,
+     "carga_solar": 1048313.0,
+     "bono": 1184247.0,
+     "capex_bess": 347527908.0
+    }
+   ]
+  }
+ },
+ "meta": {
+  "scales": [
+   1.0,
+   1.5,
+   2.0,
+   3.0
+  ],
+  "capex_basis": "BESS CAPEX = C29(kWh)*B7(0.28)*1000*FX(17.55) = $4914/kWh; scales linearly with BESS energy. O&M BESS = B23(180)*C29 also scales. Capacidad Q=min(1,C30/Qdiv) already =1 at all sites -> more BESS energy adds ZERO capacidad savings.",
+  "note": "Step2: standalone k re-solved per kWp with scaled BESS CAPEX+O&M included."
+ }
+}
