@@ -1,0 +1,7 @@
+id,dimension,bucket_key,basis,limit_value,warning_pct,hard,active,note
+04cc1d1e-1151-495b-a632-1e97faeb7640,single_obligor,,pct_of_portfolio_ead,0.25,0.80,t,t,Max. exposicion a un solo acreditado
+ccd266aa-914f-4b9d-a21c-df488513253c,connected_group,,pct_of_portfolio_ead,0.35,0.80,t,t,Max. exposicion a grupo/parte relacionada
+aaf121ed-1b65-4af4-af64-6d31e611a455,offtaker,CFE,pct_of_portfolio_ead,0.70,0.85,f,t,Exposicion a tarifa/offtaker CFE
+f8e5840f-7b50-467a-9bf5-7b79e2963c50,technology,BESS,pct_of_portfolio_ead,0.40,0.80,t,t,Max. exposicion a almacenamiento (BESS)
+c22d75b0-2eb5-4d0d-8c32-42dbe6cbf48e,technology,PV,pct_of_portfolio_ead,0.85,0.90,f,t,Exposicion a solar FV
+cb2100fa-f8a7-49be-ba1f-14978c2bee3c,geography,,pct_of_portfolio_ead,0.40,0.80,f,t,Max. exposicion por estado

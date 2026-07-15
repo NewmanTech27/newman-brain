@@ -1,0 +1,1 @@
+id,deal_id,ead,pd,lgd,expected_loss,el_rate,capital_charge_rate,cost_of_funds_rate,opex_rate,required_all_in_rate,offered_rate,required_spread_bps,offered_spread_bps,raroc_pct,hurdle_pct,verdict,config_version,inputs,computed_by,computed_at

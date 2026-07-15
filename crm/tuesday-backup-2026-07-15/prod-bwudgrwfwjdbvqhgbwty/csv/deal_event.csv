@@ -1,0 +1,17 @@
+id,deal_id,from_stage,to_stage,actor,detail,created_at
+5,70f2eea3-0e5e-47e5-a098-fd88c5f30d59,,lead,whatsapp-intake,Lead creado automáticamente desde WhatsApp,2026-07-08 15:29:39.624776+00
+6,94e8e4d4-83d8-49a7-9288-8106fdf5d763,,,huddle-agent,Card created from huddle: Contactar a Arturo,2026-07-08 15:30:26.214472+00
+7,aa870e4f-3f75-4165-a9a8-72b07822d81e,,,huddle-agent,Huddle note: Contactar a Pepsi,2026-07-08 15:30:26.214472+00
+8,06485826-79b5-4122-bd40-42cc78d4ca8f,,,huddle-agent,Card created from huddle: Finalizar números,2026-07-08 15:30:26.214472+00
+9,63590cdb-e329-42bd-8d77-c730f3fa6b03,,,huddle-agent,Card created from huddle: Investigar oportunidad,2026-07-08 15:30:26.214472+00
+10,5276fbae-e50d-467b-83bf-6ef851bbf805,,,huddle-agent,Card created from huddle: Revisar NAWA,2026-07-08 15:30:26.214472+00
+11,1bcaae26-bea2-44af-919e-5f5059634955,,,huddle-agent,Card created from huddle: Recopilar Informacion,2026-07-08 15:30:26.214472+00
+12,1dff85e8-7419-4b82-bbbe-acf7963d756b,,lead,whatsapp-intake,Lead creado automáticamente desde WhatsApp,2026-07-08 17:19:58.016264+00
+13,1dff85e8-7419-4b82-bbbe-acf7963d756b,lead,closed,web,test-epc,2026-07-08 17:22:57.201512+00
+14,1dff85e8-7419-4b82-bbbe-acf7963d756b,closed,lead,web,revert-test,2026-07-08 17:22:57.201512+00
+15,1dff85e8-7419-4b82-bbbe-acf7963d756b,lead,closed,jesus@newman.re,evm-test,2026-07-08 18:31:43.995144+00
+16,1dff85e8-7419-4b82-bbbe-acf7963d756b,closed,lead,jesus@newman.re,revert,2026-07-08 18:31:43.995144+00
+17,1dff85e8-7419-4b82-bbbe-acf7963d756b,lead,closed,jesus@newman.re,evm-test2,2026-07-08 18:32:07.652157+00
+18,1dff85e8-7419-4b82-bbbe-acf7963d756b,closed,lead,jesus@newman.re,revert,2026-07-08 18:32:07.652157+00
+19,aa870e4f-3f75-4165-a9a8-72b07822d81e,,in_signing,cliente,Propuesta firmada por Ing. Cliente,2026-07-08 21:36:15.749796+00
+20,aa870e4f-3f75-4165-a9a8-72b07822d81e,lead,forwards,jesus@newman.re,Actualización en campo,2026-07-08 22:04:14.188323+00

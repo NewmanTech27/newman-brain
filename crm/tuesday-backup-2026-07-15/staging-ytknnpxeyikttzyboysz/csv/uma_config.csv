@@ -1,0 +1,2 @@
+id,version,or_threshold_uma,structuring_window_days,structuring_uma_floor,deviation_ratio_trigger,active,approved_by,created_at
+145ead97-a3f6-48df-83a1-9cc4bf606c89,v2026.1,1605,30,500,3.0,t,system:seed,2026-07-09 07:55:56.857393+00

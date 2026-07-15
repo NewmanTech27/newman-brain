@@ -1,0 +1,14 @@
+id,auth_uid,monday_user_id,name,email,role,active,created_at,phone
+71c5356f-76af-4c70-af57-cabf1f8b192f,,,Alfredo Lopez Matus,,member,t,2026-07-08 15:27:43.631084+00,
+41ff3fba-451b-45fb-8958-41d19468fa11,639ca1fc-3b19-48ed-a740-1eef948ae25c,100603085,Jesus Lopez Palacios,jesus@newman.re,admin,t,2026-07-08 15:27:43.631084+00,+41789349500
+a903de09-898e-4493-9ba4-4af20738e9d0,,21740086,Chandel Chan,ahmexico15@gmail.com,member,t,2026-07-08 23:26:25.333098+00,6871211015
+5e994892-5075-4470-9361-fbf20b6247a4,,34479983,Perla Partida,ahmexico186@gmail.com,member,t,2026-07-08 23:26:25.333098+00,
+a7bca45b-6ca1-421b-9b1d-75969a4af96a,,72538939,Natan,natan@newman.re,member,t,2026-07-08 23:26:25.333098+00,+525519888845
+f583084a-ec8d-40ba-877c-99a91fa00c0e,,85073272,Paola Quiñonez,paola@newman.re,member,t,2026-07-08 23:26:25.333098+00,6692807156
+4afd6745-be39-40b2-8298-7a23cc1ea5e9,,94001113,Alejandra Bracamontes López,alejandra@newman.re,member,t,2026-07-08 23:26:25.333098+00,
+2779d180-9943-4a41-9317-a7b581a0c75d,,95553656,Arturo Garduño,arturo@newman.re,member,t,2026-07-08 23:26:25.333098+00,6691293223
+2c8bbf6f-edec-44aa-92b9-fc81a252ae5c,,100493605,Valeria Nahomi Hernandez Bustamante,valeria@newman.re,member,t,2026-07-08 23:26:25.333098+00,5577541674
+fb257b70-144e-405d-a275-8867791ffba1,,100493625,Annel Flores Osuna,annel@newman.re,member,t,2026-07-08 23:26:25.333098+00,
+ce09b6c1-6c35-4335-a03e-4009dab1cb60,,102616244,Santiago,santiago@newman.re,member,t,2026-07-08 23:26:25.333098+00,5634284942
+94665966-e6b1-4f2d-950e-88c0385a9b33,69d01993-2043-49a1-99e6-fcc94d01ed91,2611048,Jonathan Zuniga,jonathan@newman.re,admin,t,2026-07-08 15:27:43.631084+00,6672992848
+3ab07d9d-58d6-46af-ab1b-d5020d67fde1,3b216b94-2649-4ae4-8f3f-f73d534b43c4,16103085,Mario Vidaña,mario@newman.re,admin,t,2026-07-08 15:27:43.631084+00,6671832887

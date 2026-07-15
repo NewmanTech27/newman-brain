@@ -1,0 +1,1 @@
+id,deal_id,contact_id,channel,to_address,subject,body,status,external_id,error,created_by,created_at,sent_at,provider,provider_message_id,attempts,last_error,next_retry_at,body_html,subject_line,in_reply_to,tracking_id

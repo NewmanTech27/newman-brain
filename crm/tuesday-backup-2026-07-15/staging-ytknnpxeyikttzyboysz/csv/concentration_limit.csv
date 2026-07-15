@@ -1,0 +1,5 @@
+id,dimension,key,limit_pct,note
+6a000d9d-932e-4083-96a4-74c7140712b9,single_obligor,,0.25,Máx exposición a un solo obligado
+923bcdcc-7939-4e99-8829-aae21184aa85,sector,,0.40,Máx por sector
+74385a77-5535-4204-88bc-8449f1bd8fc9,estado,,0.40,Máx por estado
+05e04579-9a9f-4fdd-82b1-0573c30995c8,fx_usd,,0.60,Máx libro USD (deuda USD / ingreso MXN)

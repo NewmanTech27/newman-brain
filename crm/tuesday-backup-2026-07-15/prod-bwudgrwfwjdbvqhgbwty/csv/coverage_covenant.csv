@@ -1,0 +1,5 @@
+id,facility_id,ratio_type,threshold,action,active
+e635044c-a7e4-400e-996c-f417a37a86fc,,llcr,1.10,lock_up,t
+2ac8f9e4-a549-43c1-8d3c-1125c973ebe7,,llcr,1.05,cash_sweep,t
+e2ac08e2-4e1f-4d29-9964-9a62fe97d244,,llcr,1.00,default,t
+3c2e715e-1604-4072-aaa5-8224978bc413,,plcr,1.05,lock_up,t

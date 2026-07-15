@@ -1,0 +1,7 @@
+instrument_type,default_haircut_pct
+fideicomiso_garantia,0.20
+fideicomiso_administracion,0.25
+garantia_mobiliaria,0.35
+dsra_cash_reserve,0.00
+aval_obligado_solidario,0.50
+cesion_derechos_cfe,0.30

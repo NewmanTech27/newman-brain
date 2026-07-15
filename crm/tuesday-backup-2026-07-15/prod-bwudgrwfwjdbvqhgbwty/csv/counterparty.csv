@@ -1,0 +1,18 @@
+id,name,rfc,entity_type,roles,dd_status,risk_score,risk_tier,notes,created_at,updated_at,clearance_status,clearance_requested_by,cleared_by,cleared_at,ebr_grade,dd_level,company_id
+fb4b436c-a428-44d0-b917-fe872502991f,LaComer,,,{},not_started,,,,2026-07-08 15:33:44.25747+00,2026-07-08 15:33:44.25747+00,none,,,,,,cfa2e6b5-8e8e-4897-8105-3bee86ecfce1
+c558c3f2-cb8c-4af7-97f3-c51216eab07a,Covestro,,,{},not_started,,,,2026-07-08 15:35:01.813357+00,2026-07-08 15:35:01.813357+00,none,,,,,,63bcac24-299c-42e7-adc1-d11b88e2d6e6
+3c1f3011-7278-4085-80f5-84119913e922,Seguro Social,,,{},not_started,,,,2026-07-08 15:35:14.993006+00,2026-07-08 15:35:14.993006+00,none,,,,,,410f6049-da6e-486f-90ab-4eb51cca7530
+bad00614-a981-449d-aa44-9b17a3d573b9,Frisa,,,{},not_started,,,,2026-07-08 15:58:18.398013+00,2026-07-08 15:58:18.398013+00,none,,,,,,87ceccaa-b750-460d-a961-f97b8b8fd3f2
+7ea97672-68f6-4c06-89ec-35d6f82add55,Inzentrum SA de CV,,,{},not_started,,,,2026-07-08 15:58:21.085699+00,2026-07-08 15:58:21.085699+00,none,,,,,,6eb574a7-cb4d-454a-af7d-02eacf179b37
+3b05c8a2-527a-4682-93da-56c40113f8a1,Calimax,,,{},not_started,,,,2026-07-08 16:48:25.310885+00,2026-07-08 16:48:25.310885+00,none,,,,,,c986755c-65d9-4236-9244-e7c23c70c326
+33741010-1f89-4dbf-9bfd-e067972a7e96,Grupo Aceites Del Mayo Sa Cv,,,{},not_started,,,,2026-07-08 16:50:27.781127+00,2026-07-08 16:50:27.781127+00,none,,,,,,0ace8981-c65a-444a-9baf-4eca10ec6f0c
+ed5394b8-ab43-491f-a4a5-88f09847e6b1,La Comer,,,{},not_started,,,,2026-07-08 16:51:24.37598+00,2026-07-08 16:51:24.37598+00,none,,,,,,f6e08363-1ffb-4db0-be4c-1eb978c0f48d
+2dd3cc75-e880-4f82-bec9-156d2c01f900,Universidad Autónoma del Edo. de Hidalgo,,,{},not_started,,,,2026-07-08 16:48:59.929407+00,2026-07-08 16:59:57.775759+00,none,,,,,,23ed11a5-5c8a-4cf7-aee0-90ee26b2a215
+596544b1-1e7a-42a7-ac9b-807be1f3beec,Galeria Del Chocolate,,,{},not_started,,,,2026-07-08 17:13:51.154403+00,2026-07-08 17:13:51.154403+00,none,,,,,,e0624dbe-a78e-4971-9538-4be2a7fb6a65
+733a3d49-ffb7-470c-9db0-4b6f15c26598,Yazaki,,,{},not_started,,,,2026-07-08 17:16:45.197946+00,2026-07-08 17:16:45.197946+00,none,,,,,,12b350be-332c-485c-af0f-c0266a8eb4e1
+b5b8f84a-90bc-43cc-8ea2-4c3fd5fab003,Productos Chachitos,,,{},not_started,,,,2026-07-08 17:21:32.957732+00,2026-07-08 17:21:32.957732+00,none,,,,,,9d122668-5636-4a9b-83a4-1d93b96b73ee
+c83ef629-575d-4f20-8219-7d36e0223f88,Fincas Urbanas Cajeme,,,{},not_started,,,,2026-07-08 23:13:00.987423+00,2026-07-08 23:13:00.987423+00,none,,,,,,
+cfd96189-be46-4926-ae9c-fc2bccae8e19,Aurum Ortus,,,{},not_started,,,,2026-07-09 11:45:58.329836+00,2026-07-09 11:45:58.329836+00,none,,,,,,
+7e4dc877-9490-440a-aad0-9be0892df8f0,African Safari,,,{},not_started,,,,2026-07-09 11:46:12.8687+00,2026-07-09 11:46:12.8687+00,none,,,,,,
+e42a5cdc-5e3b-4d9f-8166-4376833d3a06,YAQUI,,,{},not_started,,,,2026-07-12 12:29:13.357723+00,2026-07-12 12:29:13.357723+00,none,,,,,,
+c46fd732-4261-4a3b-9dc7-0a6f8e817ab3,Intermedica Pachuca,,,{},not_started,,,,2026-07-12 22:39:56.771997+00,2026-07-12 22:39:56.771997+00,none,,,,,,

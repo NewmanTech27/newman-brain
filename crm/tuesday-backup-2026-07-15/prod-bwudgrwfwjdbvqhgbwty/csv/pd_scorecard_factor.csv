@@ -1,0 +1,7 @@
+code,label,weight,seq
+base_dscr,DSCR base,0.30,1
+downside_dscr,DSCR en downside,0.25,2
+offtaker_quality,Calidad del offtaker,0.20,3
+tenor,Plazo,0.10,4
+sponsor_strength,Fortaleza del patrocinador,0.10,5
+completion_risk,Riesgo de terminación (pre-COD),0.05,6
