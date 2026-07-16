@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CFE Brain OS — Centro de Mando</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg0:#070b14;--bg1:#0b1120;--card:rgba(20,28,46,.72);--line:#1f2b44;--line2:#2c3c5e;
+  --txt:#e9eef7;--mut:#8b9bb4;--acc:#34d399;--acc2:#10b981;--amber:#fbbf24;--err:#f87171;
+  --info:#60a5fa;--violet:#a78bfa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:14px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif;color:var(--txt);
+  background:var(--bg0);min-height:100vh;padding:0 0 70px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(1000px 500px at 20% -10%, rgba(52,211,153,.14), transparent 60%),
+  radial-gradient(900px 450px at 95% 5%, rgba(96,165,250,.11), transparent 55%),
+  radial-gradient(800px 600px at 50% 115%, rgba(167,139,250,.09), transparent 60%),
+  linear-gradient(180deg,var(--bg0),var(--bg1))}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;background-image:
+  linear-gradient(rgba(44,60,94,.14) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(44,60,94,.14) 1px,transparent 1px);
+  background-size:42px 42px;mask-image:radial-gradient(900px 600px at 50% 0%,#000 30%,transparent 80%)}
+.wrap{max-width:1240px;margin:auto;padding:0 24px}
+
+/* ---------- hero ---------- */
+.hero{padding:54px 0 26px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:18px}
+.bolt{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;font-size:30px;
+  background:linear-gradient(135deg,#0e2e22,#123a2b);border:1px solid rgba(52,211,153,.45);
+  box-shadow:0 0 38px rgba(52,211,153,.3);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 28px rgba(52,211,153,.22)}50%{box-shadow:0 0 48px rgba(52,211,153,.4)}}
+h1{font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1.1;
+  background:linear-gradient(90deg,#e9eef7 20%,#34d399 75%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:14px;margin-top:6px;max-width:560px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+a.btn{display:inline-block;text-decoration:none;background:linear-gradient(135deg,var(--acc),var(--acc2));
+  color:#04130c;font-weight:700;border-radius:12px;padding:13px 26px;transition:.15s;
+  box-shadow:0 6px 22px rgba(16,185,129,.3)}
+a.btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(16,185,129,.45)}
+a.btn.ghost{background:transparent;color:var(--acc);border:1px solid rgba(52,211,153,.5);box-shadow:none}
+a.btn.ghost:hover{background:rgba(52,211,153,.08)}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:10px 0 30px}
+.stat{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;
+  padding:18px;position:relative;overflow:hidden;transition:.18s}
+.stat:hover{transform:translateY(-2px);border-color:var(--line2)}
+.stat::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;
+  background:linear-gradient(90deg,var(--c,#34d399),transparent)}
+.stat h3{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.09em;font-weight:600}
+.stat .v{font-size:30px;font-weight:800;margin:6px 0 0;letter-spacing:-.02em;color:var(--c,#34d399)}
+.stat .d{font-size:11.5px;color:var(--mut);margin-top:3px}
+.stat button{margin-top:8px;background:transparent;border:1px solid rgba(52,211,153,.45);color:var(--acc);
+  border-radius:8px;padding:6px 14px;cursor:pointer;font:inherit;font-size:12px;font-weight:600;transition:.15s}
+.stat button:hover{background:rgba(52,211,153,.1)}
+.stat button:disabled{opacity:.5;cursor:wait}
+
+/* ---------- sections ---------- */
+h2.sec{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);
+  margin:34px 0 16px;display:flex;align-items:center;gap:12px}
+h2.sec::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+
+/* ---------- capability grid ---------- */
+.caps{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.cap{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;
+  padding:18px;transition:.18s;position:relative;display:flex;flex-direction:column;gap:9px}
+.cap:hover{transform:translateY(-3px);border-color:var(--line2);box-shadow:0 12px 34px rgba(0,0,0,.35)}
+.cap .top{display:flex;align-items:center;gap:11px}
+.cap .ico{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:18px;
+  background:rgba(255,255,255,.04);border:1px solid var(--line2)}
+.cap h3{font-size:15px;font-weight:700;letter-spacing:-.01em}
+.cap .how{font-size:12.5px;color:var(--mut)}
+.cap .how code{font:11.5px ui-monospace,Consolas,monospace;color:#9fd4ff;background:#0a101d;
+  border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+.cap .out{font-size:12px;color:var(--mut)}
+.cap .out b{color:var(--txt);font-weight:600}
+.badge{position:absolute;top:14px;right:14px;font-size:9.5px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 9px;border-radius:99px;border:1px solid}
+.badge.op{color:var(--acc);border-color:rgba(52,211,153,.5);background:rgba(52,211,153,.07)}
+.badge.pre{color:var(--amber);border-color:rgba(251,191,36,.5);background:rgba(251,191,36,.07)}
+.badge.web{color:var(--info);border-color:rgba(96,165,250,.5);background:rgba(96,165,250,.07)}
+a.caplink{text-decoration:none;color:inherit}
+
+/* ---------- activity ---------- */
+.act{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;padding:6px 18px}
+.act .row{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid rgba(31,43,68,.55);font-size:13px}
+.act .row:last-child{border-bottom:none}
+.act .date{font:11.5px ui-monospace,Consolas,monospace;color:var(--mut);white-space:nowrap}
+.tag{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:2px 9px;
+  border-radius:99px;border:1px solid var(--line2);color:var(--mut);white-space:nowrap}
+.tag.build{color:var(--acc);border-color:rgba(52,211,153,.45)}
+.tag.ingest{color:var(--info);border-color:rgba(96,165,250,.45)}
+.tag.audit,.tag.correction{color:var(--err);border-color:rgba(248,113,113,.45)}
+.tag.query,.tag.addendum{color:var(--violet);border-color:rgba(167,139,250,.45)}
+.tag.savings,.tag.ppa-pricing{color:var(--amber);border-color:rgba(251,191,36,.45)}
+
+/* ---------- rules / limits ---------- */
+.duo{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+@media(max-width:900px){.duo{grid-template-columns:1fr}}
+.panel{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;padding:20px}
+.panel h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:12px}
+.panel ol{margin-left:18px;display:flex;flex-direction:column;gap:8px;font-size:13px}
+.panel ol li::marker{color:var(--acc);font-weight:700}
+.panel ul{margin-left:16px;display:flex;flex-direction:column;gap:7px;font-size:12.5px;color:var(--mut)}
+.panel ul li::marker{color:var(--amber)}
+.rpus{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.rpu{font:11.5px ui-monospace,Consolas,monospace;color:#9fd4ff;background:#0a101d;
+  border:1px solid var(--line);border-radius:8px;padding:4px 10px}
+.foot{color:var(--mut);font-size:11px;margin-top:34px;line-height:1.7;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="brand">
+    <div class="bolt">⚡</div>
+    <div>
+      <h1>CFE Brain OS</h1>
+      <div class="sub">Sistema operativo de la empresa — PPAs · PV · BESS bajo regulación mexicana.
+      Los números salen del motor determinístico; la lógica, del wiki de fuentes primarias. Nunca de memoria.</div>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="btn" href="/cotizador">⚡ Abrir cotizador</a>
+    <a class="btn ghost" href="/portafolio">📊 Portafolio</a>
+    <a class="btn ghost" href="/chat">💬 Chat</a>
+    <a class="btn ghost" href="#caps">Ver capacidades ↓</a>
+  </div>
+</div>
+
+<div class="stats" id="stats">
+  <div class="stat" style="--c:#34d399"><h3>Páginas wiki</h3><div class="v" id="s-wiki">…</div><div class="d" id="s-wiki-d"></div></div>
+  <div class="stat" style="--c:#60a5fa"><h3>Análisis archivados</h3><div class="v" id="s-ana">…</div><div class="d">wiki/analyses/</div></div>
+  <div class="stat" style="--c:#a78bfa"><h3>Fuentes ingeridas</h3><div class="v" id="s-src">…</div><div class="d">wiki/sources/</div></div>
+  <div class="stat" style="--c:#fbbf24"><h3>Servicios (RPU)</h3><div class="v" id="s-rpu">…</div><div class="d" id="s-rpu-d">raw/bills/</div></div>
+  <div class="stat" style="--c:#34d399;cursor:pointer" onclick="location.href='/portafolio'"><h3>Ahorro identificado</h3>
+    <div class="v" id="s-ahorro">…</div><div class="d" id="s-ahorro-d">portafolio · motor v2</div></div>
+  <div class="stat" style="--c:#34d399"><h3>Motor GDMTH v2</h3><div class="v" id="s-golden" style="font-size:19px;margin-top:10px">golden-tested</div>
+    <button id="goldenbtn">▶ Correr golden test</button><div class="d" id="s-golden-d">18 checks · peso-exacto · RPU 780881200029</div></div>
+</div>
+
+<h2 class="sec" id="caps">Capacidades — qué puede hacer el sistema</h2>
+<div class="caps">
+
+  <a class="caplink" href="/cotizador"><div class="cap"><span class="badge web">webapp</span>
+    <div class="top"><div class="ico">⚡</div><h3>Cotizador interactivo</h3></div>
+    <div class="how">Arrastra recibos CFE (PDF/XML) → escenarios en vivo</div>
+    <div class="out"><b>PV · BESS · Híbrido</b> + solver PPA + descarga de propuesta. Todo local.</div>
+  </div></a>
+
+  <a class="caplink" href="/chat"><div class="cap"><span class="badge web">webapp</span>
+    <div class="top"><div class="ico">💬</div><h3>Chat con el sistema</h3></div>
+    <div class="how">Pregunta sobre proyectos, normas y reglas en <code>/chat</code></div>
+    <div class="out">Responde <b>leyendo el wiki</b> (citas [[página]]) y puede correr el motor; vía Claude Code CLI, local</div>
+  </div></a>
+
+  <a class="caplink" href="/portafolio"><div class="cap"><span class="badge web">webapp</span>
+    <div class="top"><div class="ico">📊</div><h3>Vista portafolio</h3></div>
+    <div class="how">Todos los RPU de <code>raw/bills/</code> en una pasada — o CLI: <code>python tools/portfolio.py</code></div>
+    <div class="out"><b>Ahorro agregado + ranking de palancas</b> por servicio; recibos que no cuadran quedan excluidos y marcados</div>
+  </div></a>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">📊</div><h3>Análisis de ahorros</h3></div>
+    <div class="how">Recibos en <code>raw/bills/&lt;RPU&gt;/</code> → di a Claude: <code>analiza ahorros</code></div>
+    <div class="out">Tabla mensual validada al centavo, 3 escenarios, finanzas proyecto/financiador → <b>wiki/analyses/</b></div>
+  </div>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">🤝</div><h3>Cotizar PPA</h3></div>
+    <div class="how"><code>cotiza el PPA de &lt;RPU&gt; a TIR 18%</code></div>
+    <div class="out">Resuelve la <b>tarifa $/kWh</b> (o comisión BESS) para el retorno objetivo del financiador + sensibilidad + vista cliente</div>
+  </div>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">📄</div><h3>Propuesta cliente</h3></div>
+    <div class="how"><code>genera la propuesta para &lt;RPU&gt;</code> — o botón en el cotizador</div>
+    <div class="out"><b>Propuesta - &lt;RPU&gt;.md</b> es-MX lista para enviar: situación validada, sistema, ahorro mensual, inversión, opción PPA</div>
+  </div>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">✅</div><h3>Project check</h3></div>
+    <div class="how">Describe el proyecto → <code>project check</code></div>
+    <div class="out">7 capas: tarifa, línea 0.7 MW, interconexión, NOMs, comportamiento del recibo, equipo → <b>veredicto + obligaciones</b></div>
+  </div>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">🔍</div><h3>Auditoría financiera</h3></div>
+    <div class="how"><code>audita este modelo</code> + el Excel/propuesta del tercero</div>
+    <div class="out">Re-corre sus números en el motor bajo <b>sus propios supuestos</b>; cada delta clasificado (error CFE / error de modelo / supuesto)</div>
+  </div>
+
+  <div class="cap"><span class="badge pre">prefactibilidad</span>
+    <div class="top"><div class="ico">🏪</div><h3>GDMTO / PDBT</h3></div>
+    <div class="how">Pestaña <code>GDMTO/PDBT</code> del cotizador (filas manuales)</div>
+    <div class="out">Tarifa plana: PV + umbral FC 0.55; sin parser hasta el primer recibo real de esas tarifas</div>
+  </div>
+
+  <div class="cap"><span class="badge op">skill</span>
+    <div class="top"><div class="ico">📥</div><h3>Descarga de recibos CFE</h3></div>
+    <div class="how"><code>descarga los recibos de &lt;RPU&gt;</code> (maneja Chrome en el portal CFE)</div>
+    <div class="out">~12 meses XML+PDF → <b>raw/bills/&lt;RPU&gt;/</b></div>
+  </div>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">📚</div><h3>Ingesta regulatoria</h3></div>
+    <div class="how">Archivo a <code>raw/</code> → <code>ingest &lt;archivo&gt;</code></div>
+    <div class="out">Página fuente + 5–15 páginas wiki actualizadas; <b>contradicciones con invariantes se flaggean</b>, no se sobreescriben</div>
+  </div>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">🩺</div><h3>Salud del sistema</h3></div>
+    <div class="how"><code>lint</code> o <code>health check</code></div>
+    <div class="out">Contradicciones, datos vencidos ([[rate-inputs]] caduca mensual), huecos, divergencia motor/wiki</div>
+  </div>
+
+  <div class="cap"><span class="badge op">operativo</span>
+    <div class="top"><div class="ico">📈</div><h3>Excel calculadora</h3></div>
+    <div class="how"><code>llena la calculadora de &lt;RPU&gt;</code></div>
+    <div class="out"><b>Calculadora - &lt;RPU&gt;.xlsx</b> — espejo exacto del motor (Excel = CLI = webapp = mismo número)</div>
+  </div>
+
+  <div class="cap"><span class="badge pre">backlog</span>
+    <div class="top"><div class="ico">📡</div><h3>Datos 15-min (HM)</h3></div>
+    <div class="how">La mejora #1 pendiente — pide: <code>construye la ingesta 15-min</code></div>
+    <div class="out">Curvas medidas reemplazan supuestos → sizing y shave <b>bancables</b></div>
+  </div>
+
+</div>
+
+<h2 class="sec">Actividad reciente</h2>
+<div class="act" id="activity"><div class="row"><span class="date">cargando…</span></div></div>
+
+<div class="duo" style="margin-top:34px">
+  <div class="panel">
+    <h3>Reglas que no se negocian</h3>
+    <ol>
+      <li><b>Recibo que no cuadra (&gt;0.5%) detiene todo</b> — probable error CFE; se reporta, no se construye encima.</li>
+      <li><b>Golden test sagrado</b> — todo cambio al motor corre los 18 checks peso-exactos antes y después.</li>
+      <li><b>TIR proyecto ≠ TIR financiador</b> — una dice si vale la pena construir; la otra se <i>resuelve</i> con el PPA pricer.</li>
+      <li><b>Corrección FP = palanca separada</b> — nunca mezclada en la atribución PV/BESS; suele ser el ROI más alto.</li>
+      <li><b>Niveles de hecho en toda respuesta</b> — fuente-confirmado / derivado-del-motor / supuesto.</li>
+      <li><b><code>raw/</code> es inmutable</b> — las fuentes originales no se tocan.</li>
+    </ol>
+  </div>
+  <div class="panel">
+    <h3>Límites honestos (hoy)</h3>
+    <ul>
+      <li>BC/BCS: horarios reconciliados pero sin sitio real validado con recibo.</li>
+      <li>GDMTO/PDBT sin parser — captura manual hasta el primer recibo real.</li>
+      <li>Rendimiento municipal + curvas por giro = prefactibilidad; 15-min lo vuelve bancable.</li>
+      <li>Análisis regulatorio, no opinión legal — abogado en el loop para trámites.</li>
+      <li>[[rate-inputs]] caduca mensualmente; el recibo es la verdad de su mes.</li>
+    </ul>
+    <h3 style="margin-top:18px">Servicios con recibos</h3>
+    <div class="rpus" id="rpulist"></div>
+  </div>
+</div>
+
+<div class="foot">
+CFE Brain OS · motor determinístico golden-validado · wiki de fuentes primarias · todo corre local<br>
+Front door documental: <b>OS - Centro de Mando.md</b> · contrato del agente: <b>CLAUDE.md</b> (workflows 1–7)
+</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+
+fetch("/api/os").then(r=>r.json()).then(d=>{
+  $("s-wiki").textContent=d.wiki_total;
+  $("s-wiki-d").textContent=Object.entries(d.wiki_by_dir).map(([k,v])=>`${k} ${v}`).join(" · ");
+  $("s-ana").textContent=d.analyses;
+  $("s-src").textContent=d.sources;
+  $("s-rpu").textContent=d.rpus.length;
+  $("s-rpu-d").textContent=d.rpus.map(r=>r.rpu).join(" · ")||"raw/bills/ vacío";
+  $("rpulist").innerHTML=d.rpus.map(r=>`<span class="rpu">${r.rpu} · ${r.bills} recibos</span>`).join("")||"<span style='color:var(--mut);font-size:12px'>ninguno aún</span>";
+  $("activity").innerHTML=d.log.map(e=>
+    `<div class="row"><span class="date">${e.date}</span><span class="tag ${e.type}">${e.type}</span><span>${e.title}</span></div>`
+  ).join("")||"<div class='row'>sin entradas</div>";
+}).catch(()=>{ $("activity").innerHTML="<div class='row'>no se pudo leer /api/os</div>"; });
+
+fetch("/api/portfolio").then(r=>r.json()).then(d=>{
+  const a=d.aggregate;
+  $("s-ahorro").textContent="$"+(a.total/1e6).toLocaleString("es-MX",{maximumFractionDigits:1})+" M/a\u00f1o";
+  $("s-ahorro-d").textContent=(100*a.pct).toFixed(1)+"% del bill \u00b7 "+a.ok+" servicios \u2192 ver portafolio";
+}).catch(()=>{ $("s-ahorro").textContent="\u2014"; });
+
+$("goldenbtn").onclick=async()=>{
+  const b=$("goldenbtn"), v=$("s-golden"), d=$("s-golden-d");
+  b.disabled=true; b.textContent="corriendo\u2026"; v.textContent="\u23f3";
+  try{
+    const r=await fetch("/api/golden",{method:"POST"});
+    const out=await r.json();
+    if(out.passed){ v.textContent=out.result; v.style.color="#34d399"; d.textContent="peso-exacto \u00b7 "+new Date().toLocaleTimeString("es-MX"); }
+    else{ v.textContent=out.result||"FALL\u00d3"; v.style.color="#f87171"; d.textContent="revisar el motor \u2014 NO usar resultados hasta resolver"; }
+  }catch(e){ v.textContent="error"; v.style.color="#f87171"; }
+  b.disabled=false; b.textContent="\u25b6 Correr golden test";
+};
+</script>
+</body>
+</html>

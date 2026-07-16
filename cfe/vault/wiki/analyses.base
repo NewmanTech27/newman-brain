@@ -1,0 +1,40 @@
+filters:
+  and:
+    - 'type == "analysis"'
+    - 'file.inFolder("wiki/analyses")'
+    - 'file.name != "_TEMPLATE-yearly-savings"'
+properties:
+  note.cliente:
+    displayName: Cliente
+  note.rpu:
+    displayName: RPU
+  note.status:
+    displayName: Estado
+  note.created:
+    displayName: Fecha
+  note.tags:
+    displayName: Etiquetas
+views:
+  - type: table
+    name: Todos
+    order:
+      - file.name
+      - cliente
+      - rpu
+      - status
+      - created
+      - tags
+    sort:
+      - property: created
+        direction: DESC
+  - type: table
+    name: Recientes
+    limit: 6
+    order:
+      - file.name
+      - cliente
+      - status
+      - created
+    sort:
+      - property: created
+        direction: DESC

@@ -1,0 +1,8 @@
+  crm-platform
+* dev
+  main
+  staging
+  remotes/origin/crm-platform
+  remotes/origin/dev
+  remotes/origin/main
+  remotes/origin/staging

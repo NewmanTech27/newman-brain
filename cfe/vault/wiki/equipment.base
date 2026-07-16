@@ -1,0 +1,22 @@
+filters:
+  and:
+    - 'file.inFolder("wiki/equipment")'
+    - 'file.name != "index"'
+properties:
+  note.title:
+    displayName: Categoría
+  note.updated:
+    displayName: Actualizada
+  note.tags:
+    displayName: Etiquetas
+views:
+  - type: table
+    name: Catálogo
+    order:
+      - file.name
+      - title
+      - tags
+      - updated
+    sort:
+      - property: file.name
+        direction: ASC

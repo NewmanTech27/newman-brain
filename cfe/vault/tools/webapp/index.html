@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CFE Brain OS — Cotizador PV · BESS · PPA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg0:#070b14;--bg1:#0b1120;--card:rgba(20,28,46,.72);--line:#1f2b44;--line2:#2c3c5e;
+  --txt:#e9eef7;--mut:#8b9bb4;--acc:#34d399;--acc2:#10b981;--amber:#fbbf24;--err:#f87171;
+  --info:#60a5fa;--violet:#a78bfa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:14px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif;color:var(--txt);
+  background:var(--bg0);min-height:100vh;padding:0 0 60px}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+  radial-gradient(900px 420px at 15% -5%, rgba(52,211,153,.13), transparent 60%),
+  radial-gradient(800px 400px at 90% 0%, rgba(96,165,250,.10), transparent 55%),
+  radial-gradient(700px 500px at 50% 110%, rgba(167,139,250,.08), transparent 60%),
+  linear-gradient(180deg,var(--bg0),var(--bg1))}
+.wrap{max-width:1200px;margin:auto;padding:0 22px}
+header{padding:34px 0 10px}
+.brand{display:flex;align-items:center;gap:14px}
+.bolt{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;
+  background:linear-gradient(135deg,#0e2e22,#123a2b);border:1px solid rgba(52,211,153,.4);
+  box-shadow:0 0 24px rgba(52,211,153,.25)}
+h1{font-size:24px;font-weight:800;letter-spacing:-.02em;
+  background:linear-gradient(90deg,#e9eef7,#34d399 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:13px;margin-top:2px}
+.chips{margin:14px 0 4px;display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:11px;padding:4px 12px;border-radius:99px;border:1px solid var(--line2);color:var(--mut);
+  background:rgba(255,255,255,.02)}
+.chip b{color:var(--acc);font-weight:600}
+.tabs{display:flex;gap:6px;margin:22px 0 18px;border-bottom:1px solid var(--line);padding-bottom:0}
+.tab{padding:10px 20px;border-radius:10px 10px 0 0;cursor:pointer;color:var(--mut);font-weight:600;
+  border:1px solid transparent;border-bottom:none;transition:.15s}
+.tab.on{color:var(--txt);background:var(--card);border-color:var(--line)}
+.tab:hover{color:var(--txt)}
+.card{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);
+  border-radius:16px;padding:20px 22px;margin-bottom:18px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+h2{font-size:14px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:10px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--txt)}
+h2 .n{width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-size:12px;
+  background:linear-gradient(135deg,rgba(52,211,153,.2),rgba(96,165,250,.15));
+  border:1px solid rgba(52,211,153,.35);color:var(--acc)}
+h2 small{color:var(--mut);font-weight:400;text-transform:none;letter-spacing:0}
+#drop{border:1.5px dashed var(--line2);border-radius:14px;padding:38px;text-align:center;
+  color:var(--mut);cursor:pointer;transition:.2s;background:rgba(255,255,255,.015)}
+#drop:hover,#drop.over{border-color:var(--acc);color:var(--acc);background:rgba(52,211,153,.05);
+  box-shadow:inset 0 0 40px rgba(52,211,153,.05)}
+#drop .big{font-size:30px;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:12px}
+label{display:block;font-size:10.5px;color:var(--mut);margin-bottom:4px;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+input,select,textarea{width:100%;background:#0a101d;border:1px solid var(--line);border-radius:9px;
+  color:#9fd4ff;padding:8px 11px;font:inherit;transition:.15s}
+textarea{font:12px/1.6 ui-monospace,Consolas,monospace;color:#b8c7dd}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(52,211,153,.12)}
+input:disabled{color:var(--mut);background:#0a0f1a}
+button{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04130c;font-weight:700;
+  border:0;border-radius:10px;padding:11px 24px;cursor:pointer;font:inherit;font-weight:700;
+  transition:.15s;box-shadow:0 4px 18px rgba(16,185,129,.25)}
+button:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(16,185,129,.4)}
+button.sec{background:transparent;color:var(--acc);border:1px solid rgba(52,211,153,.5);box-shadow:none}
+button.sec:hover{background:rgba(52,211,153,.08)}
+button.blue{background:linear-gradient(135deg,#60a5fa,#3b82f6);color:#06101f;box-shadow:0 4px 18px rgba(59,130,246,.25)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:var(--mut);font-weight:600;text-align:right;padding:7px 9px;border-bottom:1px solid var(--line2);
+  font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;position:sticky;top:0;background:rgba(11,17,32,.95)}
+td{text-align:right;padding:6px 9px;border-bottom:1px solid rgba(31,43,68,.6);font-variant-numeric:tabular-nums}
+tr:hover td{background:rgba(255,255,255,.02)}
+th:first-child,td:first-child{text-align:left}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.kpi{background:linear-gradient(160deg,rgba(255,255,255,.03),rgba(255,255,255,0));
+  border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer;transition:.18s;position:relative;overflow:hidden}
+.kpi:hover{transform:translateY(-2px);border-color:var(--line2)}
+.kpi.sel{border-color:rgba(52,211,153,.6);box-shadow:0 0 26px rgba(52,211,153,.12)}
+.kpi.sel::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--acc),transparent)}
+.kpi h3{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.07em}
+.kpi .v{font-size:24px;font-weight:800;margin:6px 0 2px;letter-spacing:-.02em}
+.kpi .d{font-size:12px;color:var(--mut)}
+.kpi .pos{color:var(--acc)}
+.alert{padding:9px 13px;border-radius:10px;margin-bottom:7px;font-size:13px;border:1px solid;
+  background:rgba(255,255,255,.015)}
+.alert.warn{border-color:rgba(251,191,36,.45);color:var(--amber)}
+.alert.err{border-color:rgba(248,113,113,.5);color:var(--err)}
+.alert.info{border-color:rgba(96,165,250,.45);color:var(--info)}
+.alert.opp{border-color:rgba(52,211,153,.5);color:var(--acc)}
+.pill{display:inline-block;padding:3px 11px;border-radius:99px;font-size:11px;border:1px solid var(--line2);margin:2px;color:var(--mut)}
+.pill.ok{color:var(--acc);border-color:rgba(52,211,153,.5);background:rgba(52,211,153,.06)}
+.pill.bad{color:var(--err);border-color:rgba(248,113,113,.5);background:rgba(248,113,113,.06)}
+.regimen{font-size:13px;padding:12px 14px;background:rgba(96,165,250,.06);border-radius:10px;
+  border:1px solid rgba(96,165,250,.25);border-left:3px solid var(--info);margin-bottom:12px}
+.hide{display:none}
+.foot{color:var(--mut);font-size:11px;margin-top:20px;line-height:1.7}
+details summary{cursor:pointer;color:var(--mut);font-size:13px;margin:4px 0 10px;user-select:none}
+details summary:hover{color:var(--txt)}
+.row2{display:flex;gap:12px;align-items:end;flex-wrap:wrap}
+.bignum{font-size:34px;font-weight:800;letter-spacing:-.02em;
+  background:linear-gradient(90deg,var(--acc),#86efac);-webkit-background-clip:text;background-clip:text;color:transparent}
+canvas{width:100%;background:#0a101d;border:1px solid var(--line);border-radius:12px}
+.mono{font:12px ui-monospace,Consolas,monospace;color:var(--mut)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <div class="bolt">⚡</div>
+    <div>
+      <h1>CFE Brain OS</h1>
+      <div class="sub">Cotizador PV · BESS · PPA — motor determinístico golden-validado · todo corre local, los recibos no salen de tu máquina</div>
+    </div>
+  </div>
+  <div class="chips"><a class="chip" href="/" style="text-decoration:none">⌂ Centro de mando</a>
+  <a class="chip" href="/portafolio" style="text-decoration:none">📊 Portafolio</a>
+  <a class="chip" href="/chat" style="text-decoration:none">💬 Chat</a>
+    <span class="chip">Tarifas <b>GDMTH · GDMTO · PDBT</b></span>
+    <span class="chip">Régimen <b>&lt;0.7 MW medición neta · ≥0.7 MW autoconsumo CNE</b></span>
+    <span class="chip">BESS <b>SAE-CC sin inyección</b></span>
+    <span class="chip">Validación <b>(MEM+FP)×1.16 vs total impreso</b></span>
+  </div>
+</header>
+
+<div class="tabs">
+  <div class="tab on" id="tab-h" onclick="tab('h')">GDMTH · recibos</div>
+  <div class="tab" id="tab-f" onclick="tab('f')">GDMTO / PDBT · manual</div>
+</div>
+
+<!-- ====================== GDMTH ====================== -->
+<div id="pane-h">
+
+<div class="card">
+  <h2><span class="n">1</span> Recibos CFE <small>(PDF o CFDI XML · 12 meses ideal)</small></h2>
+  <div id="drop"><div class="big">⤓</div>Arrastra aquí los recibos o haz clic para elegir
+    <input type="file" id="fileinp" multiple accept=".pdf,.xml" class="hide"></div>
+  <div id="parsestat" style="margin-top:12px"></div>
+</div>
+
+<div class="card hide" id="inputscard">
+  <h2><span class="n">2</span> Cliente y sistema <small>(auto-detectado — todo editable)</small></h2>
+  <div class="grid">
+    <div><label>RPU</label><input id="rpu" disabled></div>
+    <div><label>Municipio (CP)</label><input id="municipio" disabled></div>
+    <div><label>División</label><select id="division"><option>SIN</option><option>BC</option><option>BCS</option></select></div>
+    <div><label>Giro</label><select id="giro"></select></div>
+    <div><label>Demanda contratada kW</label><input id="dcon" type="number" step="1"></div>
+    <div><label>Rendimiento kWh/kWp/año</label><input id="yanual" disabled></div>
+    <div><label>PV kWp</label><input id="kwp" type="number" step="1"></div>
+    <div><label>BESS kWh</label><input id="bkwh" type="number" step="10"></div>
+    <div><label>BESS kW</label><input id="bkw" type="number" step="10"></div>
+    <div><label>Curva de consumo</label><select id="curva"></select></div>
+    <div><label>% autoconsumo (≥0.7 MW)</label><input id="pctac" type="number" step="0.05" min="0" max="1" placeholder="auto (curva×solar)"></div>
+    <div><label>Tarifa excedentes $/kWh</label><input id="texc" type="number" step="0.1" value="0"></div>
+    <div><label>Corrección FP</label><select id="fptog"><option value="no">No</option><option value="si">Sí</option></select></div>
+  </div>
+  <details style="margin-top:14px"><summary>Supuestos financieros (defaults del engine)</summary>
+    <div class="grid">
+      <div><label>EPC PV USD/Wp</label><input id="epcpv" type="number" step="0.05" value="0.75"></div>
+      <div><label>EPC BESS USD/kWh</label><input id="epcb" type="number" step="10" value="280"></div>
+      <div><label>FX MXN/USD</label><input id="fx" type="number" step="0.05" value="17.55"></div>
+      <div><label>Escalación CFE %/año</label><input id="esc" type="number" step="0.01" value="0.05"></div>
+      <div><label>WACC</label><input id="wacc" type="number" step="0.01" value="0.12"></div>
+      <div><label>Meses falla BESS/año</label><input id="fallam" type="number" step="1" value="3"></div>
+      <div><label>Tarifa PPA $/kWh</label><input id="ppa" type="number" step="0.1" value="1.5"></div>
+      <div><label>Comisión BESS</label><input id="comis" type="number" step="0.05" value="0.5"></div>
+    </div>
+  </details>
+  <div class="row2" style="margin-top:16px">
+    <button id="runbtn">Calcular escenarios</button>
+    <button class="sec" id="propbtn" title="kWp min(carga,699) · BESS pico punta promedio">Usar sizing propuesto</button>
+    <span id="propnote" style="color:var(--mut);font-size:12px"></span>
+  </div>
+  <div id="curvefit" style="margin-top:18px"></div>
+  <div class="row2" style="margin-top:10px">
+    <div><label>Temporada de la gráfica</label><select id="temporada"><option value="verano">Verano</option><option value="invierno">Invierno</option></select></div>
+    <span style="color:var(--mut);font-size:12px">Curva semanal (lun→dom) · zona sombreada = horario punta · línea punteada = campana solar</span>
+  </div>
+  <canvas id="chart" width="1100" height="200" style="margin-top:8px"></canvas>
+</div>
+
+<div class="card hide" id="rescard">
+  <h2><span class="n">3</span> Resultados <small>(año 0, bruto — neto de disponibilidad indicado)</small></h2>
+  <div class="regimen" id="regimen"></div>
+  <div id="alerts"></div>
+  <div class="cards" id="kpis" style="margin-top:14px"></div>
+  <canvas id="barchart" width="1100" height="190" style="margin-top:16px"></canvas>
+  <div style="margin-top:16px;overflow-x:auto">
+    <div class="row2" style="margin-bottom:10px">
+      <div><label>Escenario de la tabla / finanzas</label>
+      <select id="escsel"><option value="Hibrido">Híbrido</option><option value="PV">PV solo</option><option value="BESS">BESS solo</option></select></div>
+    </div>
+    <table id="months"></table>
+  </div>
+  <div style="margin-top:18px"><h2 style="margin-bottom:10px">Finanzas <small>(perspectivas separadas)</small></h2><table id="fintab"></table></div>
+</div>
+
+<div class="card hide" id="dealcard">
+  <h2><span class="n">4</span> Estructurar deal <small>(PPA / ahorro compartido + propuesta cliente)</small></h2>
+  <div class="split">
+    <div>
+      <div class="grid">
+        <div><label>TIR financiador objetivo</label><input id="tirr" type="number" step="0.01" value="0.18"></div>
+        <div><label>Resolver</label><select id="solvemode"><option value="ppa">Tarifa PPA $/kWh</option><option value="comision">Comisión BESS</option></select></div>
+        <div><label>Plazo PPA años</label><input id="pterm" type="number" step="1" value="15"></div>
+        <div><label>Escalación PPA</label><input id="pesc" type="number" step="0.01" value="0.05"></div>
+      </div>
+      <div class="row2" style="margin-top:14px">
+        <button class="blue" id="ppabtn">Resolver término del deal</button>
+      </div>
+      <div id="ppaout" style="margin-top:16px"></div>
+    </div>
+    <div>
+      <div style="font-size:13px;color:var(--mut);margin-bottom:12px">Genera la propuesta cliente (es-MX, markdown) con la situación actual validada, el sistema, la tabla mensual de ahorro, finanzas y — si ya resolviste el deal — la sección PPA.</div>
+      <button id="docbtn">⬇ Descargar propuesta</button>
+      <div id="docstat" style="margin-top:10px;font-size:12px;color:var(--mut)"></div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /pane-h -->
+
+<!-- ====================== GDMTO / PDBT ====================== -->
+<div id="pane-f" class="hide">
+
+<div class="card">
+  <h2><span class="n">1</span> Filas de recibo <small>(manual — aún no hay parser para estas tarifas; prefactibilidad)</small></h2>
+  <div class="grid" style="grid-template-columns:180px 1fr">
+    <div><label>Tarifa</label><select id="ftarifa"><option>GDMTO</option><option>PDBT</option></select></div>
+    <div><label id="fcols">año,mes,días,kWh,kW_max,energía$,distribución$,capacidad$,suministro$[,fp_cargo$][,total$]</label>
+      <textarea id="fcsv" rows="13" placeholder="2025,5,30,30000,80,63000,7600,25600,550
+2025,6,30,29500,78,61950,7410,24960,550
+…un renglón por mes (importes sin IVA)"></textarea></div>
+  </div>
+  <div class="grid" style="margin-top:12px">
+    <div><label>PV kWp</label><input id="fkwp" type="number" step="1" value="0"></div>
+    <div><label>CP (rendimiento municipal)</label><input id="fcp" placeholder="ej. 47730"></div>
+    <div><label>… o kWh/kWp/año uniforme</label><input id="fyld" type="number" step="10" placeholder="1700"></div>
+    <div><label>BESS shave kW (GDMTO, supuesto)</label><input id="fshave" type="number" step="5" value="0"></div>
+    <div><label>BESS kWh (para CAPEX)</label><input id="fbkwh" type="number" step="10" value="0"></div>
+    <div><label>Corrección FP</label><select id="ffp"><option value="no">No</option><option value="si">Sí</option></select></div>
+  </div>
+  <div class="row2" style="margin-top:14px"><button id="fbtn">Calcular</button></div>
+</div>
+
+<div class="card hide" id="frescard">
+  <h2><span class="n">2</span> Resultados <small>(prefactibilidad)</small></h2>
+  <div class="regimen" id="fregimen"></div>
+  <div id="falerts"></div>
+  <div class="cards" id="fkpis" style="margin-top:14px"></div>
+  <div style="margin-top:16px;overflow-x:auto"><table id="fmonths"></table></div>
+</div>
+
+</div><!-- /pane-f -->
+
+<div class="foot">
+Niveles de hecho: recibo = fuente primaria · ahorros y finanzas = derivados del motor (golden-validado) ·
+% autoconsumo, rendimiento municipal y curva intradía = supuestos. Prefactibilidad: datos 15-min harían el shave bancable.
+Caps regulatorios: &lt;0.7 MW medición neta · ≥0.7 MW autoconsumo (excedentes solo CFE) · BESS SAE-CC sin inyección ·
+gate 100 kW GDMTO↔GDMTH. La TIR del proyecto responde "¿vale la pena construirlo?"; la del financiador depende del deal.
+</div>
+</div><!-- /wrap -->
+
+<script>
+const $=id=>document.getElementById(id);
+const mxn=x=>(x<0?"−$":"$")+Math.abs(x).toLocaleString("es-MX",{maximumFractionDigits:0});
+const pct=x=>(100*x).toFixed(1)+"%";
+const kwh=x=>x.toLocaleString("es-MX",{maximumFractionDigits:0});
+const MES=["","Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+let BILLS=[], DERIVED=null, RES=null, GIROS={}, CURVAS=null, PPARES=null;
+
+function tab(t){
+  ["h","f"].forEach(x=>{
+    $("tab-"+x).classList.toggle("on",x===t);
+    $("pane-"+x).classList.toggle("hide",x!==t);
+  });
+}
+
+fetch("/api/defaults").then(r=>r.json()).then(d=>{
+  GIROS=d.giros;
+  const opts=Object.keys(GIROS).map(g=>`<option>${g}</option>`).join("");
+  $("giro").innerHTML=opts; $("curva").innerHTML=opts;
+  $("giro").value="Otro"; $("curva").value="Otro";
+});
+$("giro").onchange=()=>{$("curva").value=$("giro").value; drawChart();};
+$("curva").onchange=()=>drawChart();
+$("temporada").onchange=()=>drawChart();
+$("division").onchange=()=>{if(BILLS.length)loadCurves();};
+
+const drop=$("drop");
+drop.onclick=()=>$("fileinp").click();
+$("fileinp").onchange=e=>handle([...e.target.files]);
+drop.ondragover=e=>{e.preventDefault();drop.classList.add("over");};
+drop.ondragleave=()=>drop.classList.remove("over");
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove("over");handle([...e.dataTransfer.files]);};
+
+async function handle(files){
+  $("parsestat").innerHTML="Leyendo "+files.length+" archivo(s)…";
+  const payload=await Promise.all(files.map(f=>new Promise(res=>{
+    const r=new FileReader();
+    r.onload=()=>res({name:f.name,b64:r.result.split(",")[1]});
+    r.readAsDataURL(f);
+  })));
+  const resp=await fetch("/api/parse",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({files:payload})});
+  const out=await resp.json();
+  if(out.error){$("parsestat").innerHTML=`<span class="alert err">${out.error}</span>`;return;}
+  BILLS=out.bills; DERIVED=out.derived;
+  const chips=DERIVED.validacion.map(v=>`<span class="pill ${v.ok?"ok":"bad"}">${MES[v.month]}-${String(v.year).slice(2)} ${v.ok?"✓":"✗ "+(100*v.diff).toFixed(2)+"%"}</span>`).join("");
+  const errs=(out.errors||[]).map(e=>`<div class="alert err">${e}</div>`).join("");
+  $("parsestat").innerHTML=`<div>${BILLS.length} recibo(s) válidos — validación (MEM+FP)×1.16 vs total impreso:</div><div style="margin-top:8px">${chips}</div>${errs}`;
+  $("inputscard").classList.remove("hide");
+  $("rpu").value=DERIVED.rpu||"";
+  $("municipio").value=DERIVED.municipio?`${DERIVED.municipio} (${DERIVED.cp})`:"no detectado — revisa rendimiento";
+  $("division").value=DERIVED.division||"SIN";
+  $("dcon").value=DERIVED.demanda_contratada||"";
+  $("yanual").value=DERIVED.yield_anual?Math.round(DERIVED.yield_anual):"";
+  if(DERIVED.propuesta){
+    $("propnote").textContent=`Propuesta: ${DERIVED.propuesta.kwp} kWp · BESS ${DERIVED.propuesta.bess_kwh} kWh / ${DERIVED.propuesta.bess_kw} kW (${DERIVED.propuesta.nota})`;
+  }
+  loadCurves();
+}
+
+async function loadCurves(){
+  const resp=await fetch("/api/curves",{method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({bills:BILLS,division:$("division").value})});
+  CURVAS=await resp.json();
+  if(CURVAS.fit?.best){ $("curva").value=CURVAS.fit.best; }
+  const rows=CURVAS.fit.ranking.filter(r=>r.mae!=null).map((r,i)=>
+    `<tr${i===0?' style="color:var(--acc);font-weight:600"':''}><td>${r.giro}${i===0?" ← mejor ajuste":""}</td><td>${(100*r.mae).toFixed(1)}%</td></tr>`).join("");
+  const warn=CURVAS.fit.ranking[0]?.mae>0.08?`<div class="alert warn" style="margin-top:6px">Ninguna curva ajusta bien (MAE>8%) — el perfil real difiere de la librería; confiar en los recibos y pedir datos 15-min</div>`:"";
+  $("curvefit").innerHTML=`<label>Ajuste curva modelada vs kWh B/I/P de los recibos (MAE — menor es mejor)</label>
+    <table style="max-width:440px"><tr><th>Curva</th><th>Error medio</th></tr>${rows}</table>${warn}`;
+  drawChart();
+}
+
+function drawChart(){
+  if(!CURVAS)return;
+  const cv=$("chart"), ctx=cv.getContext("2d");
+  const W=cv.width,H=cv.height,padL=8,padB=16,n=168,bw=(W-2*padL)/n;
+  ctx.clearRect(0,0,W,H);
+  const giro=$("curva").value, temp=$("temporada").value;
+  const curve=CURVAS.curves[giro]; if(!curve)return;
+  const win=CURVAS.windows[temp];
+  const days=["MF","MF","MF","MF","MF","SA","DO"], names=["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"];
+  for(let d=0;d<7;d++)for(let h=0;h<24;h++){
+    const lab=win[days[d]][h], x=padL+(d*24+h)*bw;
+    if(lab==="P"){ctx.fillStyle="rgba(248,113,113,.22)";ctx.fillRect(x,0,bw,H-padB);}
+    else if(lab==="B"){ctx.fillStyle="rgba(96,165,250,.07)";ctx.fillRect(x,0,bw,H-padB);}
+  }
+  ctx.strokeStyle="#1f2b44";ctx.fillStyle="#8b9bb4";ctx.font="10px sans-serif";
+  for(let d=0;d<7;d++){const x=padL+d*24*bw;
+    ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H-padB);ctx.stroke();
+    ctx.fillText(names[d],x+4,H-4);}
+  ctx.strokeStyle="#34d399";ctx.lineWidth=2;ctx.beginPath();
+  for(let d=0;d<7;d++)for(let h=0;h<24;h++){
+    const v=curve[days[d]][h], x=padL+(d*24+h)*bw+bw/2, y=(H-padB)*(1-.88*v)-2;
+    (d===0&&h===0)?ctx.moveTo(x,y):ctx.lineTo(x,y);}
+  ctx.stroke();
+  ctx.strokeStyle="#fbbf24";ctx.lineWidth=1.5;ctx.setLineDash([4,4]);ctx.beginPath();
+  for(let d=0;d<7;d++)for(let h=0;h<24;h++){
+    const v=CURVAS.pv_bell[h], x=padL+(d*24+h)*bw+bw/2, y=(H-padB)*(1-.88*v)-2;
+    (d===0&&h===0)?ctx.moveTo(x,y):ctx.lineTo(x,y);}
+  ctx.stroke();ctx.setLineDash([]);
+}
+
+function collectInputs(){
+  return {
+    rpu:$("rpu").value, division:$("division").value, giro:$("giro").value,
+    demanda_contratada:+$("dcon").value||0, fp_correction:$("fptog").value==="si",
+    kwp:+$("kwp").value||0, bess_kwh:+$("bkwh").value||0, bess_kw:+$("bkw").value||0,
+    pct_autoconsumo:$("pctac").value===""?null:+$("pctac").value,
+    curva:$("curva").value, texc:+$("texc").value||0,
+    yield_monthly:DERIVED.yield_monthly||{},
+    municipio:$("municipio").value,
+    epc_usd_wp:+$("epcpv").value, epc_bess:+$("epcb").value, fx:+$("fx").value,
+    esc_cfe:+$("esc").value, wacc:+$("wacc").value, falla_meses:+$("fallam").value,
+    ppa:+$("ppa").value, comision:+$("comis").value,
+  };
+}
+
+$("propbtn").onclick=()=>{ if(!DERIVED?.propuesta)return;
+  $("kwp").value=DERIVED.propuesta.kwp; $("bkwh").value=DERIVED.propuesta.bess_kwh; $("bkw").value=DERIVED.propuesta.bess_kw; run(); };
+$("runbtn").onclick=run;
+$("escsel").onchange=()=>render();
+
+async function run(){
+  if(!BILLS.length)return;
+  const resp=await fetch("/api/run",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({inputs:collectInputs(),bills:BILLS})});
+  RES=await resp.json();
+  if(RES.error){alert(RES.error);return;}
+  $("rescard").classList.remove("hide"); $("dealcard").classList.remove("hide");
+  PPARES=null; $("ppaout").innerHTML="";
+  render();
+  $("rescard").scrollIntoView({behavior:"smooth"});
+}
+
+function barChart(){
+  const cv=$("barchart"), ctx=cv.getContext("2d");
+  const W=cv.width,H=cv.height,padL=10,padB=18,padT=14;
+  ctx.clearRect(0,0,W,H);
+  if(!RES)return;
+  const sel=$("escsel").value, key=sel==="PV"?"pv_only":sel==="BESS"?"bess_only":"hibrido";
+  const M=RES.monthly, n=M.length, gw=(W-2*padL)/n, bw=gw*0.62;
+  const mx=Math.max(...M.map(r=>r.antes));
+  ctx.font="10px sans-serif";
+  M.forEach((r,i)=>{
+    const x=padL+i*gw+gw*0.19;
+    const hA=(H-padB-padT)*r.antes/mx, hS=(H-padB-padT)*r[key]/mx;
+    ctx.fillStyle="rgba(139,155,180,.25)";
+    ctx.fillRect(x,H-padB-hA,bw,hA);
+    ctx.fillStyle="rgba(52,211,153,.85)";
+    ctx.fillRect(x,H-padB-hS,bw,hS);
+    ctx.fillStyle="#8b9bb4";
+    ctx.fillText(MES[r.month],x,H-5);
+  });
+  ctx.fillStyle="#8b9bb4";
+  ctx.fillText("█ factura antes (gris) · █ ahorro "+sel+" (verde) — escala mensual",padL,padT-3);
+}
+
+function render(){
+  if(!RES)return;
+  const an=RES.annual, sel=$("escsel").value;
+  $("regimen").textContent=RES.regimen.regimen;
+  $("alerts").innerHTML=RES.regimen.alerts.map(([l,m])=>`<div class="alert ${l==="error"?"err":l}">${m}</div>`).join("");
+  const defs=[["PV","PV solo",an.pv_only,an.neto_disp.pv],["BESS","BESS solo",an.bess_only,an.neto_disp.bess],["Hibrido","Híbrido",an.hibrido,an.neto_disp.hibrido]];
+  let cards=defs.map(([k,lbl,v,n])=>{const f=RES.finance[k];
+    return `<div class="kpi ${k===sel?"sel":""}" onclick="$('escsel').value='${k}';render()"><h3>${lbl}</h3><div class="v pos">${mxn(v)}</div>
+    <div class="d">${pct(v/an.antes)} de la factura · neto disp. ${mxn(n)}</div>
+    <div class="d">TIR proy ${f.tir_proyecto!=null?pct(f.tir_proyecto):"–"} · payback ${f.payback_proyecto??"–"} a · CAPEX ${mxn(f.capex)}</div></div>`;}).join("");
+  if(an.fp_cargo>0) cards+=`<div class="kpi"><h3>+ Corrección FP (separada)</h3><div class="v" style="color:var(--amber)">${mxn(an.fp_cargo)}</div><div class="d">${RES.inputs.fp_correction?"incluida en total":"no incluida — activar arriba"} · ortogonal a PV/BESS</div></div>`;
+  $("kpis").innerHTML=cards;
+  barChart();
+  const key=sel==="PV"?"pv_only":sel==="BESS"?"bess_only":"hibrido";
+  let rows=RES.monthly.map(r=>{const ah=r[key];
+    return `<tr><td>${MES[r.month]}-${String(r.year).slice(2)}</td><td>${kwh(r.kwh_total)}</td>
+    <td>${sel==="BESS"?"–":kwh(r.gen)}</td><td>${sel==="PV"?"–":kwh(r.desc)}</td>
+    <td>${mxn(r.antes)}</td><td>${mxn(r.antes-ah)}</td><td>${mxn(ah)}</td><td>${pct(ah/r.antes)}</td></tr>`;}).join("");
+  const tot=RES.monthly.reduce((a,r)=>a+r[key],0);
+  rows+=`<tr style="font-weight:700"><td>TOTAL</td><td>${kwh(RES.monthly.reduce((a,r)=>a+r.kwh_total,0))}</td><td></td><td></td>
+    <td>${mxn(an.antes)}</td><td>${mxn(an.antes-tot)}</td><td>${mxn(tot)}</td><td>${pct(tot/an.antes)}</td></tr>`;
+  $("months").innerHTML=`<tr><th>Mes</th><th>kWh</th><th>Gen kWh</th><th>Desc BESS kWh</th><th>Antes</th><th>Después</th><th>Ahorro</th><th>%</th></tr>`+rows;
+  const f=RES.finance[sel];
+  $("fintab").innerHTML=`<tr><th>Indicador</th><th>Proyecto (unlevered) — ¿vale la pena construirlo?</th><th>Financiador — deal-specific</th></tr>
+  <tr><td>TIR</td><td>${f.tir_proyecto!=null?pct(f.tir_proyecto):"–"}</td><td>${f.tir_financiador!=null?pct(f.tir_financiador):"–"}</td></tr>
+  <tr><td>VPN @ WACC</td><td>${mxn(f.vpn_proyecto)}</td><td>${mxn(f.vpn_financiador)}</td></tr>
+  <tr><td>Payback</td><td>${f.payback_proyecto??"–"} años</td><td>${f.payback_financiador??"–"} años</td></tr>
+  <tr><td>CAPEX</td><td colspan="2">${mxn(f.capex)}</td></tr>`;
+}
+
+/* ---------- PPA solver ---------- */
+$("ppabtn").onclick=async()=>{
+  if(!BILLS.length)return;
+  $("ppaout").innerHTML="Resolviendo…";
+  const body={inputs:collectInputs(),bills:BILLS,target_irr:+$("tirr").value,
+    solve:$("solvemode").value,term:+$("pterm").value,esc_ppa:+$("pesc").value,
+    escenario:$("escsel").value};
+  const r=await fetch("/api/ppa",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  PPARES=await r.json();
+  if(PPARES.error){$("ppaout").innerHTML=`<div class="alert err">${PPARES.error}</div>`;return;}
+  if(!PPARES.feasible){$("ppaout").innerHTML=`<div class="alert err">No alcanzable: ni el término extremo llega a la TIR objetivo — revisar CAPEX/sizing o bajar el target.</div>`;return;}
+  const c=PPARES.cliente, big=PPARES.solve==="ppa"?`$${PPARES.ppa_rate.toFixed(2)}/kWh`:pct(PPARES.comision);
+  let html=`<div class="kpi sel" style="cursor:default"><h3>${PPARES.solve==="ppa"?"Tarifa PPA":"Comisión BESS"} para TIR ${pct(PPARES.target_irr)}</h3>
+    <div class="bignum">${big}</div>
+    <div class="d">plazo ${PPARES.ppa_yrs} años · esc. ${pct(PPARES.esc_ppa)} · escenario ${PPARES.escenario} · TIR verificada ${pct(PPARES.tir_financiador)}</div></div>
+    <div style="margin-top:10px;font-size:13px">
+    Cliente sin invertir: <b style="color:var(--acc)">${mxn(c.beneficio_anio1)}</b> año 1
+    (retiene ${pct(c.pct_ahorro_retenido_a1)} del ahorro) · acumulado ${mxn(c.beneficio_total)}<br>
+    Tarifa CFE blend actual: <b>$${c.tarifa_cfe_blend.toFixed(2)}/kWh</b>${PPARES.solve==="ppa"?` vs PPA <b>$${PPARES.ppa_rate.toFixed(2)}/kWh</b>`:""}</div>`;
+  if(c.anios_negativos.length)html+=`<div class="alert err" style="margin-top:8px">Años con beneficio NEGATIVO para el cliente: ${c.anios_negativos.join(", ")} — re-estructurar antes de ofrecer.</div>`;
+  if(PPARES.sensibilidad){
+    const cells=Object.entries(PPARES.sensibilidad).map(([k,v])=>`<tr><td>${k}</td><td>${v==null?"–":"$"+v.toFixed(2)}</td></tr>`).join("");
+    html+=`<div style="margin-top:12px"><label>Sensibilidad plazo/escalación → PPA $/kWh</label><table style="max-width:320px"><tr><th>Término</th><th>Tarifa</th></tr>${cells}</table></div>`;
+  }
+  $("ppaout").innerHTML=html;
+};
+
+/* ---------- proposal download ---------- */
+$("docbtn").onclick=async()=>{
+  if(!BILLS.length)return;
+  $("docstat").textContent="Generando propuesta…";
+  const body={inputs:collectInputs(),bills:BILLS};
+  if(PPARES?.feasible&&PPARES.solve==="ppa")body.target_irr=PPARES.target_irr;
+  const r=await fetch("/api/proposal",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  const out=await r.json();
+  if(out.error){$("docstat").innerHTML=`<span style="color:var(--err)">${out.error}</span>`;return;}
+  const blob=new Blob([out.markdown],{type:"text/markdown;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download=out.filename; a.click();
+  URL.revokeObjectURL(a.href);
+  $("docstat").textContent="✓ "+out.filename+(body.target_irr?" (incluye sección PPA)":" (sin sección PPA — resuelve el deal primero si la quieres)");
+};
+
+/* ---------- GDMTO / PDBT ---------- */
+$("ftarifa").onchange=()=>{
+  $("fcols").textContent=$("ftarifa").value==="GDMTO"
+    ?"año,mes,días,kWh,kW_max,energía$,distribución$,capacidad$,suministro$[,fp_cargo$][,total$]"
+    :"año,mes,días,kWh,energía$,suministro$[,total$]";
+};
+$("fbtn").onclick=async()=>{
+  const tarifa=$("ftarifa").value;
+  const lines=$("fcsv").value.trim().split("\n").map(l=>l.trim()).filter(Boolean);
+  if(!lines.length){alert("Pega al menos un renglón");return;}
+  const bills=[];
+  try{
+    for(const l of lines){
+      const v=l.split(/[,;\t]+/).map(x=>parseFloat(x));
+      if(tarifa==="GDMTO"){
+        if(v.length<9)throw new Error("GDMTO requiere ≥9 columnas: "+l);
+        bills.push({year:v[0],month:v[1],days:v[2],kwh:v[3],kw_max:v[4],energia:v[5],
+          distribucion:v[6],capacidad:v[7],suministro:v[8],fp_cargo:v[9]||0,total:v[10]||null});
+      }else{
+        if(v.length<6)throw new Error("PDBT requiere ≥6 columnas: "+l);
+        bills.push({year:v[0],month:v[1],days:v[2],kwh:v[3],energia:v[4],suministro:v[5],total:v[6]||null});
+      }
+    }
+  }catch(e){alert(e.message);return;}
+  const inputs={kwp:+$("fkwp").value||0,bess_kwh:+$("fbkwh").value||0,
+    bess_shave_kw:+$("fshave").value||0,fp_correction:$("ffp").value==="si"};
+  const y=+$("fyld").value;
+  if(y&&!$("fcp").value){inputs.yield_monthly={};for(let m=1;m<=12;m++)inputs.yield_monthly[m]=y/12;}
+  const r=await fetch("/api/run_flat",{method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({inputs,bills,tarifa,cp:$("fcp").value||null})});
+  const out=await r.json();
+  if(out.error){alert(out.error);return;}
+  $("frescard").classList.remove("hide");
+  const an=out.annual;
+  $("fregimen").textContent=out.regimen.regimen+" · tarifa "+tarifa;
+  $("falerts").innerHTML=out.regimen.alerts.map(([l,m])=>`<div class="alert ${l==="error"?"err":l}">${m}</div>`).join("");
+  const f=out.finance.PV, fh=out.finance.Hibrido;
+  $("fkpis").innerHTML=`
+    <div class="kpi"><h3>Factura anual (sin IVA)</h3><div class="v">${mxn(an.antes)}</div></div>
+    <div class="kpi sel"><h3>Ahorro PV</h3><div class="v pos">${mxn(an.pv_only)}</div>
+      <div class="d">${pct(an.pv_only/an.antes)} · TIR ${f.tir_proyecto!=null?pct(f.tir_proyecto):"–"} · CAPEX ${mxn(f.capex)}</div></div>
+    <div class="kpi"><h3>Ahorro híbrido</h3><div class="v pos">${mxn(an.hibrido)}</div>
+      <div class="d">${pct(an.hibrido/an.antes)} · TIR ${fh.tir_proyecto!=null?pct(fh.tir_proyecto):"–"}</div></div>
+    ${an.fp_cargo>0?`<div class="kpi"><h3>+ Corrección FP</h3><div class="v" style="color:var(--amber)">${mxn(an.fp_cargo)}</div></div>`:""}`;
+  let rows=out.monthly.map(r2=>`<tr><td>${MES[r2.month]}-${String(r2.year).slice(2)}</td>
+    <td>${kwh(r2.kwh_total)}</td><td>${kwh(r2.gen)}</td><td>${mxn(r2.antes)}</td>
+    <td>${mxn(r2.antes-r2.hibrido)}</td><td>${mxn(r2.hibrido)}</td><td>${pct(r2.pct_hib)}</td></tr>`).join("");
+  rows+=`<tr style="font-weight:700"><td>TOTAL</td><td>${kwh(out.monthly.reduce((a2,r2)=>a2+r2.kwh_total,0))}</td>
+    <td>${kwh(an.gen)}</td><td>${mxn(an.antes)}</td><td>${mxn(an.antes-an.hibrido)}</td>
+    <td>${mxn(an.hibrido)}</td><td>${pct(an.hibrido/an.antes)}</td></tr>`;
+  $("fmonths").innerHTML=`<tr><th>Mes</th><th>kWh</th><th>Gen kWh</th><th>Antes</th><th>Después</th><th>Ahorro</th><th>%</th></tr>`+rows;
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+========================================================================================================================
+SUPUESTOS SHEET (v3) - COMPREHENSIVE CELL DUMP
+========================================================================================================================
+
+A1: value=SUPUESTOS — PÁGINA DE CONTROL EN VIVO (edita los valores en AZUL; toda la cartera se recalcula)
+A2: value=Cifras PRE-IVA (el IVA es acreditable para GEPP). Mecánica tarifaria = fuente primaria; ahorros = motor determinista; costos/escalaciones/PPA = supuestos.
+A3: value=Parámetro
+B3: value=Valor
+C3: value=Nota / Fuente
+A4: value=EPC PV (USD/Wp)
+B4: value=0.75
+C4: value=Llave en mano CC; supuesto MX 2026
+A5: value=Tipo de cambio (MXN/USD)
+B5: value=17.55
+C5: value=Supuesto
+A6: value=EPC BESS (USD/kWh)
+B6: value=280
+C6: value=LFP instalado
+A7: value=WACC / descuento
+B7: value=0.12
+C7: value=Para VPN
+A8: value=Escalación CFE / año
+B8: value=0.06
+C8: value=Conservador (tarifa sube)
+A9: value=Escalación PPA / año
+B9: value=0.05
+C9: value=< CFE → brecha a favor del cliente
+A10: value=Disponibilidad (sobre ahorro BESS)
+B10: value=0.75
+C10: value=Supuesto de downtime
+A11: value=Degradación PV / año
+B11: value=0.005
+C11: value=TOPCon/HJT
+A12: value=Degradación BESS / año
+B12: value=0.0125
+C12: value=LFP
+A13: value=TIR financiador objetivo
+B13: value=0.18
+C13: value=Negociable (14–18%); las tarifas PPA semilla resuelven 18%
+A14: value=Comisión BESS financiador (default)
+B14: value=0.5
+C14: value=Ahorro compartido (override por proyecto abajo)
+A15: value=Horizonte (años)
+B15: value=20
+C15: value=Proyección financiera
+A16: value=FC (factor de carga umbral)
+B16: value=0.57
+C16: value=A/158/2024 — [[demanda-facturable]]
+A17: value=DoD batería
+B17: value=0.96
+C17: value=Profundidad de descarga
+A18: value=RTE batería (round-trip)
+B18: value=0.96
+C18: value=Eficiencia de ciclo
+A19: value=O&M PV (MXN/kWp-año)
+B19: value=310
+C19: value=Supuesto
+A20: value=O&M BESS (MXN/kWh-año)
+B20: value=180
+C20: value=Supuesto
+A21: value=Descuento autoabasto vs CFE (ref.)
+B21: value=0.1
+C21: value=Tala ~10%; ENEL precio bajo embebido — ver hojas
+A22: value=Vencimiento autoabasto (año)
+B22: value=2032
+C22: value=Tala y ENEL expiran 2032 → escalón a CFE pleno
+A23: value=Plazo PPA default (años)
+B23: value=15
+C23: value=PV se transfiere al cliente al término (override por proyecto)
+A24: value=Año de inicio del proyecto
+B24: value=2026
+C24: value=Para el escalón 2032
+A26: value=B. VARIABLES POR PROYECTO (AZUL = editable) — afectan cada hoja de sitio, el Comparativo y la Proyección
+A27: value=Proyecto
+B27: value=PV kWp
+C27: value=BESS kW
+D27: value=BESS kWh
+E27: value=FP corr
+F27: value=PV USD/Wp
+G27: value=BESS USD/kWh
+H27: value=Capacitor capex $
+I27: value=PPA $/kWh
+J27: value=PPA plazo (años)
+K27: value=Comisión BESS %
+L27: value=BESS (años)
+M27: value=TIR financiador
+N27: value=TIR compra
+O27: value=Ahorro bruto/año $
+P27: value=Ahorro PPA&SAAS anual
+Q27: value=Ahorro PPA&SAAS 20 años
+A28: value=Ixtlahuacán
+B28: value=2529.67
+C28: value=751.5
+D28: value=1470
+E28: value=No
+F28: value=0.75
+G28: value=280
+H28: value=0
+I28: value=1.5574
+J28: value=15
+K28: value=0.5
+L28: value=20
+M28: value=0.18294207038367039 | formula==Ixtlahuacán!$G$101
+N28: value=0.30515621116007785 | formula==Ixtlahuacán!$G$100
+O28: value=11170648.508450959 | formula==Ixtlahuacán!$J$72
+P28: value=3573170.277914498 | formula==Ixtlahuacán!$K$79
+Q28: value=221921451.82530957 | formula==+Ixtlahuacán!K99
+A29: value=Acapulco
+B29: value=1020.305
+C29: value=250.5
+D29: value=490
+E29: value=Sí
+F29: value=0.75
+G29: value=280
+H29: value=300000
+I29: value=1.5781
+J29: value=15
+K29: value=0.5
+L29: value=20
+M29: value=0.1867913676030568 | formula==Acapulco!$G$101
+N29: value=0.4309255857867136 | formula==Acapulco!$G$100
+O29: value=6212518.28048595 | formula==Acapulco!$J$72
+P29: value=3353681.2868334334 | formula==+Acapulco!K79
+Q29: value=157591753.10498247 | formula==+Acapulco!K99
+A30: value=Cancún
+B30: value=839.41
+C30: value=0
+D30: value=0
+E30: value=Sí
+F30: value=0.75
+G30: value=280
+H30: value=250000
+I30: value=1.6838
+J30: value=15
+K30: value=0.5
+L30: value=20
+M30: value=0.18090211762494435 | formula==Cancún!$G$101
+N30: value=0.4359692322611084 | formula==Cancún!$G$100
+O30: value=4331791.862867367 | formula==Cancún!$J$72
+P30: value=2462692.9029052546 | formula==+Cancún!K79
+Q30: value=112919614.50729914 | formula==+Cancún!K99
+A31: value=Proplasa PR1
+B31: value=1859.715
+C31: value=501
+D31: value=980
+E31: value=No
+F31: value=0.75
+G31: value=280
+H31: value=0
+I31: value=1.5171
+J31: value=15
+K31: value=0.5
+L31: value=20
+M31: value=0.17856480197367586 | formula=='Proplasa PR1'!$G$101
+N31: value=0.2769698005801793 | formula=='Proplasa PR1'!$G$100
+O31: value=7594918.587183725 | formula=='Proplasa PR1'!$J$72
+P31: value=2035521.4132127068 | formula==+'Proplasa PR1'!K79
+Q31: value=126074636.48979828 | formula==+'Proplasa PR1'!K99
+A32: value=Proplasa PR2
+B32: value=5220.215
+C32: value=1252.5
+D32: value=2450
+E32: value=No
+F32: value=0.75
+G32: value=280
+H32: value=0
+I32: value=1.5327
+J32: value=15
+K32: value=0.5
+L32: value=20
+M32: value=0.17998307596611363 | formula=='Proplasa PR2'!$G$101
+N32: value=0.27624166526107774 | formula=='Proplasa PR2'!$G$100
+O32: value=20674250.43970367 | formula=='Proplasa PR2'!$J$72
+P32: value=5424741.214687325 | formula==+'Proplasa PR2'!K79
+Q32: value=346606068.2303224 | formula==+'Proplasa PR2'!K99
+A33: value=Proplasa Tapas
+B33: value=3429.855
+C33: value=751.5
+D33: value=1470
+E33: value=No
+F33: value=0.75
+G33: value=280
+H33: value=0
+I33: value=1.523
+J33: value=15
+K33: value=0.5
+L33: value=20
+M33: value=0.18033944585078143 | formula=='Proplasa Tapas'!$G$101
+N33: value=0.27514649879405373 | formula=='Proplasa Tapas'!$G$100
+O33: value=13315358.592070684 | formula=='Proplasa Tapas'!$J$72
+P33: value=3444306.3186998954 | formula==+'Proplasa Tapas'!K79
+Q33: value=222973043.35642996 | formula==+'Proplasa Tapas'!K99
+A34: value=PORTAFOLIO
+B34: value=14899.17 | formula==SUM(B28:B33)
+D34: value=6860 | formula==SUM(D28:D33)
+H34: value=550000 | formula==SUM(H28:H33)
+O34: value=63299486.270762354 | formula==SUM(O28:O33)
+P34: value=20294113.414253116 | formula==SUM(P28:P33)
+Q34: value=1188086567.5141418 | formula==SUM(Q28:Q33)
+A40: value=Las tarifas PPA semilla resuelven una TIR del financiador de 18% con plazo 15 años (PV se transfiere al cliente al término) + comisión BESS 20 años. Cambia cualquier celda azul y observa el efecto en vivo.

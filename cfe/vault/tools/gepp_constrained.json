@@ -1,0 +1,8 @@
+{
+  "gepp-ixtlahuacan":   {"area_m2": 4938, "fp_correction": false},
+  "gepp-acapulco":      {"area_m2": 4938, "fp_correction": true,  "capacitor": 1000000},
+  "gepp-cancun":        {"area_m2": 4938, "fp_correction": true,  "capacitor": 500000},
+  "gepp-proplasa-pr1":  {"area_m2": 4938, "fp_correction": false},
+  "gepp-proplasa-pr2":  {"area_m2": 4938, "fp_correction": false},
+  "gepp-proplasa-tap":  {"area_m2": 4938, "fp_correction": false}
+}

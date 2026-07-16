@@ -1,0 +1,72 @@
+========================================================================================================================
+RESUMEN EJECUTIVO SHEET (v3) - STRUCTURE & KEY FORMULAS
+========================================================================================================================
+
+Cell map:
+Row  1: A=GEPP — SOLUCIÓN ENERGÉTICA POR
+Row  2: A=PV + BESS + corrección FP por 
+Row  4: A=INDICADORES CLAVE (PRE-IVA, añ
+Row  5: A=Gasto eléctrico actual 2025 (C | C=Ahorro autoabasto (Tala+ENEL) | E=Ahorro PV+BESS+FP (proyecto) | G=Generación solar kWh/año
+Row  6: A=[FORMULA] | C=[FORMULA] | E=[FORMULA] | G=[FORMULA]
+Row  8: A=Inversión total (compra) | C=Beneficio GEPP año 1 (compra) | E=Beneficio cliente año 1 (PPA) | G=Ahorro proyecto % vs gasto act
+Row  9: A=[FORMULA] | C=[FORMULA] | E=[FORMULA] | G=[FORMULA]
+Row 11: A=RECOMENDACIÓN POR PROYECTO
+Row 12: A=Sitio | B=Consumo GWh/a | C=Solución | D=Régimen LSE | E=Ahorro bruto a1 | F=Ahorro % | G=Inversión | H=TIR compra | I=PPA $/kWh | J=Benef. PPA a1
+Row 13: A=Ixtlahuacán | B=22.17 | C=PV 2.5 MWp + BESS 850 kW | D=Autoconsumo CNE | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA] | J=[FORMULA]
+Row 14: A=Acapulco | B=8.91 | C=FP + PV 1.0 MWp + BESS 320 kW | D=Autoconsumo CNE | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA] | J=[FORMULA]
+Row 15: A=Cancún | B=4.75 | C=FP + PV 0.7 MWp (sin BESS) | D=Exento <0.7 MW | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA] | J=[FORMULA]
+Row 16: A=Proplasa PR1 | B=16.29 | C=PV 1.86 MWp + BESS 360 kW | D=Autoconsumo CNE | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA] | J=[FORMULA]
+Row 17: A=Proplasa PR2 | B=45.72 | C=PV 5.22 MWp + BESS 1.22 MW | D=Autoconsumo CNE | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA] | J=[FORMULA]
+Row 18: A=Proplasa Tapas | B=30.03 | C=PV 3.43 MWp + BESS 790 kW | D=Autoconsumo CNE | E=[FORMULA] | F=[FORMULA] | G=[FORMULA] | H=[FORMULA] | I=[FORMULA] | J=[FORMULA]
+Row 19: A=PORTAFOLIO | B=[FORMULA] | E=[FORMULA] | G=[FORMULA] | J=[FORMULA]
+Row 21: A=Comprar maximiza el ahorro de 
+Row 24: A=AUTOABASTO Y EL ESCALÓN 2032
+Row 25: A=En 2025 GEPP pagó $294.6M (CFE
+
+
+========================================================================================================================
+FORMULA SAMPLES FROM EACH SHEET TYPE
+========================================================================================================================
+
+
+Resumen Ejecutivo:
+  A6: ='Proyección 20 años'!C5/(1+Supuestos!$B$8)
+  C6: =Ixtlahuacán!$B$11+Acapulco!$B$11+Cancún!$B$11+'Proplasa PR1'!$B$11+'Proplasa PR2'!$B$11+'Proplasa T
+  E6: =Ixtlahuacán!$B$21+Acapulco!$B$21+Cancún!$B$21+'Proplasa PR1'!$B$21+'Proplasa PR2'!$B$21+'Proplasa T
+  G6: =Ixtlahuacán!$D$17+Acapulco!$D$17+Cancún!$D$17+'Proplasa PR1'!$D$17+'Proplasa PR2'!$D$17+'Proplasa T
+  A9: =Ixtlahuacán!$B$106+Acapulco!$B$106+Cancún!$B$106+'Proplasa PR1'!$B$106+'Proplasa PR2'!$B$106+'Propl
+
+Supuestos:
+  M28: =Ixtlahuacán!$G$101
+  N28: =Ixtlahuacán!$G$100
+  O28: =Ixtlahuacán!$J$72
+  P28: =Ixtlahuacán!$K$79
+  Q28: =+Ixtlahuacán!K99
+
+Ixtlahuacán:
+  B6: =Supuestos!$B$28
+  D6: =Supuestos!$C$28
+  F6: =Supuestos!$D$28
+  H6: =Supuestos!$D$28*Supuestos!$B$17*SQRT(Supuestos!$B$18)
+  J6: =Supuestos!$E$28
+
+Acapulco:
+  B6: =Supuestos!$B$29
+  D6: =Supuestos!$C$29
+  F6: =Supuestos!$D$29
+  H6: =Supuestos!$D$29*Supuestos!$B$17*SQRT(Supuestos!$B$18)
+  J6: =Supuestos!$E$29
+
+Cancún:
+  B6: =Supuestos!$B$30
+  D6: =Supuestos!$C$30
+  F6: =Supuestos!$D$30
+  H6: =Supuestos!$D$30*Supuestos!$B$17*SQRT(Supuestos!$B$18)
+  J6: =Supuestos!$E$30
+
+Proplasa PR1:
+  B6: =Supuestos!$B$31
+  D6: =Supuestos!$C$31
+  F6: =Supuestos!$D$31
+  H6: =Supuestos!$D$31*Supuestos!$B$17*SQRT(Supuestos!$B$18)
+  J6: =Supuestos!$E$31

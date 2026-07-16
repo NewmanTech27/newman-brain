@@ -1,0 +1,5 @@
+{
+  "_comment": "Overrides por RPU para tools/portfolio.py — vive aquí porque raw/ es inmutable. Claves = inputs de calc_core (giro, cliente, pct_autoconsumo, kwp, ...).",
+  "780881200029": {"giro": "Hotel/Turismo", "cliente": "Grupo Posadas"},
+  "456220800389": {"giro": "Industrial 24/7", "cliente": "Industrial Tototlán"}
+}

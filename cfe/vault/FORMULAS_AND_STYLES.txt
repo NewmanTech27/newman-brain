@@ -1,0 +1,82 @@
+========================================================================================================================
+SUPUESTOS SHEET - BLUE (EDITABLE) CELLS & FORMULAS
+========================================================================================================================
+
+BLUE (EDITABLE) CELLS:
+  B4: 0.75 | color=FFFFF2CC
+  B5: 17.55 | color=FFFFF2CC
+  B6: 280 | color=FFFFF2CC
+  B7: 0.12 | color=FFFFF2CC
+  B8: 0.06 | color=FFFFF2CC
+  B9: 0.05 | color=FFFFF2CC
+  B10: 0.75 | color=FFFFF2CC
+  B11: 0.005 | color=FFFFF2CC
+  B12: 0.0125 | color=FFFFF2CC
+  B13: 0.18 | color=FFFFF2CC
+  B14: 0.5 | color=FFFFF2CC
+  B15: 20 | color=FFFFF2CC
+  B16: 0.57 | color=FFFFF2CC
+  B17: 0.96 | color=FFFFF2CC
+  B18: 0.96 | color=FFFFF2CC
+  B19: 310 | color=FFFFF2CC
+  B20: 180 | color=FFFFF2CC
+  B21: 0.1 | color=FFFFF2CC
+  B22: 2032 | color=FFFFF2CC
+  B23: 15 | color=FFFFF2CC
+  B24: 2026 | color=FFFFF2CC
+  A26: B. VARIABLES POR PROYECTO (AZUL = editable) — afectan cada hoja de sitio, el Comparativo y la Proyección | color=FF1F4E5F
+  B26: None | color=FF1F4E5F
+  C26: None | color=FF1F4E5F
+  D26: None | color=FF1F4E5F
+  E26: None | color=FF1F4E5F
+  F26: None | color=FF1F4E5F
+  G26: None | color=FF1F4E5F
+  H26: None | color=FF1F4E5F
+  I26: None | color=FF1F4E5F
+
+
+FORMULA CELLS (sample):
+  M28: =Ixtlahuacán!$G$101
+  N28: =Ixtlahuacán!$G$100
+  O28: =Ixtlahuacán!$J$72
+  P28: =Ixtlahuacán!$K$79
+  Q28: =+Ixtlahuacán!K99
+  M29: =Acapulco!$G$101
+  N29: =Acapulco!$G$100
+  O29: =Acapulco!$J$72
+  P29: =+Acapulco!K79
+  Q29: =+Acapulco!K99
+  M30: =Cancún!$G$101
+  N30: =Cancún!$G$100
+  O30: =Cancún!$J$72
+  P30: =+Cancún!K79
+  Q30: =+Cancún!K99
+  M31: ='Proplasa PR1'!$G$101
+  N31: ='Proplasa PR1'!$G$100
+  O31: ='Proplasa PR1'!$J$72
+  P31: =+'Proplasa PR1'!K79
+  Q31: =+'Proplasa PR1'!K99
+
+
+========================================================================================================================
+SITE SHEET (Ixtlahuacán) - KEY FORMULA SAMPLES
+========================================================================================================================
+
+Formulas (structured by section):
+  B6: =Supuestos!$B$28
+  H6: =Supuestos!$D$28*Supuestos!$B$17*SQRT(Supuestos!$B$18)
+  C10: =B10/D10
+  D12: =D10
+  B17: =F72
+  B19: =H72
+  C21: =B21/B12
+  B25: =$B$6*1000*Supuestos!$F$28*Supuestos!$B$5
+  D26: =B25+D25+B26
+  C45: =(B30+C30+D30)/(E30*24*Supuestos!$B$16)
+  F45: =((B30+C30+D30)-D45)/(E30*24*Supuestos!$B$16)
+  I45: =(G45-H45)*K30
+  L45: =(H45-K45)*K30
+  P45: =M30+B30*I30+C30*H30+D30*J30+G45*K30+MIN(G30,C45)*L30
+  B46: =$B$6*N31
+  E46: =D46*H31*O46
+  H46: =MIN(F31,F46)

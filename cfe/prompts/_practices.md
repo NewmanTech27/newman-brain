@@ -1,0 +1,112 @@
+# Behavioral guidelines
+
+Reduce common LLM coding mistakes. These bias toward caution over speed. For trivial tasks, use judgment.
+
+## 1. Think Before Coding
+
+**Don't assume. Don't hide confusion. Surface tradeoffs.**
+
+Before implementing:
+- State your assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them — don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
+
+## 2. Simplicity First
+
+**Minimum code that solves the problem. Nothing speculative.**
+
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
+
+Ask: "Would a senior engineer call this overcomplicated?" If yes, simplify.
+
+## 3. Surgical Changes
+
+**Touch only what you must. Clean up only your own mess.**
+
+When editing existing code:
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style, even if you'd do it differently.
+- If you notice unrelated dead code, mention it — don't delete it.
+
+When your changes create orphans:
+- Remove imports/variables/functions that YOUR changes made unused.
+- Don't remove pre-existing dead code unless asked.
+
+The test: every changed line traces directly to the request.
+
+## 4. Goal-Driven Execution
+
+**Define success criteria. Loop until verified.**
+
+Transform tasks into verifiable goals:
+- "Add validation" → "Write tests for invalid inputs, then make them pass"
+- "Fix the bug" → "Write a test that reproduces it, then make it pass"
+- "Refactor X" → "Ensure tests pass before and after"
+
+For multi-step tasks, state a brief plan:
+```
+1. [Step] → verify: [check]
+2. [Step] → verify: [check]
+```
+
+Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+## 5. Shared Working Tree
+
+Three sibling Claude sessions run on this VPS, in the same repos, right now.
+
+- Run `git status` before you edit. The tree changes under you.
+- Work on a branch off `dev`. Never force-push. Never rewrite a shared branch.
+- Uncommitted change exists: `deploy/curvas/current/index.html`. Do not discard it.
+- Coordinate merges through the `supabase-devops` session. It is the last gate.
+- Never reboot the box. It kills every session.
+- A GitHub PAT sits in `~/.config/gh/hosts.yml`. Never print, echo, or commit it.
+
+## 6. Feed the Knowledge Graph
+
+`~/cfe-brain` is the compiled knowledge base. Read its `CLAUDE.md` for the schema.
+
+**Everything worth preserving feeds the graph.** Something that would be expensive to rediscover becomes a page — decisions and their rejected alternatives, hard-won operational knowledge, invariants, findings, dead ends, open questions.
+
+- Before you start: query the wiki. Do not rediscover what is already known.
+- As you work: file `decision` pages when you make a choice, `finding` pages when you find a defect.
+- Before your session ends: ingest what you learned. An un-filed insight is a lost one.
+- Never file secrets, client PII, or real RPUs.
+
+**These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites from overcomplication, and clarifying questions arrive before implementation rather than after mistakes.
+
+## 7. Token discipline
+
+Your cost is dominated by what you **read**, not what you write. Attack input first.
+
+### Input — this is where the tokens are
+- **Query the vault index, do not read the vault.** `~/cfe-brain/vault/wiki/index.md` catalogs 91 pages. Grep it, open the two pages you need. Never read the tree.
+- **Grep before you read.** `grep -rl` to find the file, then read the relevant range with an offset. Reading a 2000-line file to check one function is waste.
+- **Never re-read what you have read.** If it is in your context, it is in your context.
+- **Do not read `node_modules`, `.next`, `__pycache__`, or `raw/pdfs`.** Ever.
+- **Capture panes with a bound.** `tmux capture-pane -p -t <s>` defaults to the visible screen. Only pass `-S -2000` when you genuinely need scrollback.
+- **Subagents for search.** A fan-out search returns you a conclusion, not a file dump.
+
+### Output — caveman mode, scoped
+For **status, progress, and inter-agent chatter**: write like a smart caveman. Drop articles, filler, pleasantries, hedging. Fragments fine. Short synonyms. Technical terms stay exact.
+
+> Not: "I'd be happy to help! It looks like the issue may be caused by..."
+> Yes: "Bug in auth middleware. Expiry check uses `<` not `<=`. Fix:"
+
+**Caveman is OFF for anything a human or another agent must act on precisely:**
+- `NRM-xx` normative requirements and the specs that hold them
+- CTO reviews and verdicts
+- commit messages, PR bodies
+- security warnings and anything irreversible
+- the reconciliation report
+
+Those are read once and acted on for months. A fragment misread there costs more than every token caveman ever saved. Write them in full, plain prose.
+
+### What this is not
+Do not compress by omitting evidence. A score without `file:line` citations is not cheaper, it is worthless. Brevity is selecting what to include, not abbreviating what you included.

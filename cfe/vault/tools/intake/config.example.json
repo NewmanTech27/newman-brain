@@ -1,0 +1,19 @@
+{
+  "_comment": "Copy to config.json and fill. For Gmail use an App Password (Google Account > Security > App passwords), NOT your login password. config.json is git-ignored.",
+  "imap": {
+    "host": "imap.gmail.com",
+    "port": 993,
+    "user": "tucorreo@gmail.com",
+    "password": "APP_PASSWORD_AQUI"
+  },
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "user": "tucorreo@gmail.com",
+    "password": "APP_PASSWORD_AQUI",
+    "from_name": "CFE Brain"
+  },
+  "mailbox": "INBOX",
+  "allowed_senders": [],
+  "reply_subject": "Información para su análisis de ahorro — CFE Brain"
+}

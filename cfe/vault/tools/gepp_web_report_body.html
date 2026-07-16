@@ -1,0 +1,603 @@
+<style>
+__FONTS__
+:root{
+  --bg:#F6F4F9; --bg-2:#ECE7F3; --surface:#FFFFFF; --accent-tint:#F1E9F4;
+  --text:#221A33; --muted:#5F5870; --on-dark:#EDEAF4; --on-dark-muted:#B7B0C8;
+  --navy:#191B4D; --accent:#621558; --accent-hover:#4C1043; --magenta:#B80E65;
+  --line:#E4DEF1; --white:#FFFFFF;
+  --display:'Space Grotesk','Arial Narrow',Arial,sans-serif;
+  --body:'Inter',-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+  --r-sm:8px; --r-nav:16px; --r-input:12px; --r-card:24px; --r-pill:100px;
+  --ring:0 0 0 3px rgba(98,21,88,.30);
+  --shadow:0 12px 44px rgba(34,26,51,.12);
+  /* chart marks — validated (dataviz six checks, light surface #FFFFFF) */
+  --cPV:#B45309; --cBESS:#1D4ED8; --cFP:#B80E65; --cANTES:#6D5BB8; --cDESP:#82246E;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:15px;line-height:1.6;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+svg{display:block;max-width:100%}
+:where(a,button,summary,[tabindex]):focus-visible{outline:none;box-shadow:var(--ring);border-radius:var(--r-sm)}
+.wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(20px,5vw,40px)}
+
+/* ---- nav: floating accent pill, reversed all-white logo ---- */
+.nav{position:sticky;top:16px;z-index:50;margin-inline:auto;max-width:1200px;padding-inline:clamp(12px,3vw,20px)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--accent);
+  border:1px solid rgba(255,255,255,.10);border-radius:var(--r-nav);padding:11px clamp(14px,3vw,22px);flex-wrap:wrap}
+.nav .brand svg{height:20px;width:auto}
+.tabs{display:flex;gap:2px;flex-wrap:wrap}
+.tab{font-family:var(--display);font-size:13.5px;font-weight:400;letter-spacing:.02em;color:#fff;opacity:.72;
+  background:none;border:0;border-radius:var(--r-pill);padding:7px 13px;cursor:pointer;transition:opacity .15s,background .15s}
+.tab:hover{opacity:1}
+.tab.on{opacity:1;background:#fff;color:var(--accent);font-weight:500}
+
+/* ---- hero ---- */
+.hero{position:relative;overflow:hidden;background:var(--bg-2);margin-top:-62px;padding-top:62px}
+.hero-mark{position:absolute;right:clamp(-80px,-5vw,-40px);top:-30px;width:clamp(280px,40vw,560px);opacity:.07;pointer-events:none}
+.hero .wrap{position:relative;padding-block:clamp(48px,7vw,84px) clamp(36px,5vw,56px)}
+.hero h1{font-family:var(--display);font-weight:300;font-size:clamp(32px,5.4vw,58px);line-height:1.02;letter-spacing:.01em;color:var(--navy);text-wrap:balance}
+.hero h1 b{font-weight:600;color:var(--accent)}
+.hero .lead{margin-top:18px;max-width:62ch;color:var(--text);font-weight:300;font-size:clamp(15.5px,1.9vw,18px);line-height:1.65}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:500;font-size:12px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.kicker::before{content:"";width:6px;height:6px;background:var(--magenta);flex:none}
+.hero .kicker{margin-bottom:22px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.pill{display:inline-block;border:1px solid var(--line);background:var(--surface);border-radius:var(--r-pill);
+  padding:6px 15px;font-size:12.5px;color:var(--muted)}
+.pill.warn{color:#9a6510;border-color:#e6d4ac;background:#fdf8ec}
+
+/* ---- sections ---- */
+main{padding-block:36px 10px}
+h2.sec{display:flex;align-items:center;gap:8px;font-family:var(--display);font-weight:500;font-size:12.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:44px 0 16px}
+h2.sec::before{content:"";width:6px;height:6px;background:var(--magenta);flex:none}
+h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* ---- kpis / stats ---- */
+.kpis{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:18px 20px 16px;transition:border-color .2s}
+.kpi:hover{border-color:var(--accent)}
+.kpi .l{font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.kpi .v{font-family:var(--display);font-weight:300;font-size:30px;line-height:1.1;margin-top:6px;color:var(--accent);
+  font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.kpi .v.navy{color:var(--navy)}
+.kpi .d{font-size:12.5px;color:var(--muted);margin-top:4px}
+
+/* ---- cards / panels ---- */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:clamp(18px,3vw,26px);margin-bottom:14px;transition:border-color .2s}
+.panel:hover{border-color:#d4cbe6}
+.panel h3{font-family:var(--display);font-weight:500;font-size:18px;color:var(--navy);margin-bottom:6px;letter-spacing:.005em}
+.panel .cap{color:var(--muted);font-size:13px;max-width:80ch}
+.grid2{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.cells{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-top:14px}
+.cell{border:1px solid var(--line);border-radius:var(--r-input);padding:11px 14px;background:var(--bg)}
+.cell .l{font-family:var(--display);font-size:10.5px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.cell .v{font-family:var(--display);font-weight:500;font-size:17px;margin-top:3px;color:var(--text);font-variant-numeric:tabular-nums}
+.cell.hi .v{color:var(--accent)}
+.cell.warnv .v{color:#9a6510}
+.rpu{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;color:var(--accent);background:var(--accent-tint);
+  border:1px solid var(--line);border-radius:7px;padding:2px 8px}
+.badge{display:inline-block;font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;border-radius:var(--r-sm);padding:4px 11px;border:1px solid}
+.badge.ok{color:#1f7a57;border-color:#bfe0d1;background:#effaf4}
+.badge.warn{color:#9a6510;border-color:#e6d4ac;background:#fdf8ec}
+
+/* ---- tables ---- */
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:13.5px;color:var(--text)}
+th{font-family:var(--display);font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+  font-weight:500;text-align:right;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+tr.tot td{font-weight:600;color:var(--accent);border-top:2px solid var(--accent);border-bottom:0}
+tr.click{cursor:pointer} tr.click:hover td{background:var(--accent-tint)}
+.tblwrap{overflow-x:auto}
+.note{font-size:12.5px;color:var(--muted)}
+
+/* ---- charts ---- */
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:var(--muted);margin-top:10px}
+.legend .sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legend b{color:var(--text);font-weight:600}
+#tip{position:fixed;z-index:99;pointer-events:none;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r-input);padding:9px 12px;font-size:12.5px;line-height:1.5;box-shadow:var(--shadow);
+  opacity:0;transition:opacity .08s;max-width:270px;color:var(--muted)}
+#tip b{color:var(--text)}
+
+/* ---- alerts ---- */
+.alerts{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.alert{display:flex;gap:12px;align-items:flex-start;font-size:13px;border:1px solid var(--line);
+  border-radius:var(--r-input);padding:10px 14px;background:var(--bg);color:var(--text)}
+.alert .t{flex:none;font-family:var(--display);font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 9px;border-radius:var(--r-pill);margin-top:2px;color:#fff}
+.alert.warn .t{background:#9a6510}.alert.info .t{background:var(--accent)}
+.alert.err .t{background:#b3382c}.alert.opp .t{background:#1f7a57}
+ul.cav{margin:6px 0 0 18px;display:flex;flex-direction:column;gap:8px;font-size:13.5px;color:var(--text)}
+ul.cav li::marker{color:var(--magenta)}
+ul.cav b{color:var(--navy)}
+
+/* ---- deal ---- */
+.deal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.deal .panel{margin:0}
+.big{font-family:var(--display);font-weight:300;font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--accent);margin:6px 0 4px}
+
+details{border:1px solid var(--line);border-radius:var(--r-input);padding:10px 14px;margin-top:14px;background:var(--bg)}
+summary{cursor:pointer;color:var(--muted);font-size:13px;font-family:var(--display)}
+details[open] summary{margin-bottom:10px}
+
+/* ---- footer: navy anchor ---- */
+.footer{background:var(--navy);color:var(--on-dark-muted);margin-top:56px;padding-block:36px 28px}
+.footer .bar{height:4px;width:100%;background:var(--accent);border-radius:var(--r-pill);margin-bottom:28px}
+.footer svg{height:18px;width:auto;margin-bottom:14px}
+.footer p{font-size:12.5px;max-width:90ch}
+/* compact hero on site views — the drill-down starts above the fold */
+body.siteview .hero .lead,body.siteview .hero .pills{display:none}
+body.siteview .hero .wrap{padding-block:34px 26px}
+body.siteview .hero h1{font-size:clamp(24px,3.2vw,36px)}
+body.siteview .hero .kicker{margin-bottom:12px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
+@media print{.nav{display:none}body{background:#fff}.panel,.kpi,.cell{border-color:#ccc}}
+</style>
+
+<header class="nav"><div class="row">
+  <span class="brand" aria-label="Newman">
+    <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman">
+      <g fill="#fff">
+        <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+        <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+        <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+        <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+        <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+        <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/><polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/><polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/><polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/><polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+      </g>
+    </svg>
+  </span>
+  <div class="tabs" id="tabs" role="tablist"></div>
+</div></header>
+
+<section class="hero">
+  <svg class="hero-mark" viewBox="0 0 266.95 185.03" aria-hidden="true">
+    <g fill="#621558"><polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/><polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/><polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/><polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/><polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/></g>
+  </svg>
+  <div class="wrap">
+    <p class="kicker">Propuesta · Solución Energética · GEPP · 2 jul 2026</p>
+    <h1>Ahorro máximo por sitio,<br><b>sin invertir</b> un peso.</h1>
+    <p class="lead">PV + BESS dimensionados para maximizar su ahorro, bajo el esquema que ustedes pidieron:
+      PPA solar + almacenamiento con ahorro compartido 50/50 — sobre los 12 meses reales de 2025
+      de sus 6 servicios GDMTH. Motor determinista CFE Brain, calibrado al peso contra recibos reales.</p>
+    <div class="pills">
+      <span class="pill">6 servicios GDMTH · SIN</span>
+      <span class="pill">2025 año completo · 12 meses</span>
+      <span class="pill warn">Prefactibilidad — curva modelada, no 15-min</span>
+    </div>
+  </div>
+</section>
+
+<main class="wrap" id="main"></main>
+
+<footer class="footer"><div class="wrap">
+  <div class="bar"></div>
+  <svg viewBox="0 0 1865.2 185.03" role="img" aria-label="Newman">
+    <g fill="#fff" opacity=".92">
+      <path d="M329.74,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+      <path d="M607.21,37.45v36.41h113.62v28.12h-113.62v40.1h119.38v30.65h-161.32V6.8h161.32v30.65h-119.38Z"/>
+      <path d="M1057.29,6.8l-64.3,165.93h-49.09l-38.03-111.77-2.77-8.99-2.54,8.99-38.03,111.77h-49.09L749.16,6.8h43.56l45.63,133.44,44.25-129.06h41.25l41.25,120.07,3,8.99,3.22-9.22,42.41-124.22h43.56Z"/>
+      <path d="M1086.78,6.8h52.08l57.85,99.1,4.15,6.68,61.76-105.78h51.86v165.93h-37.57V47.13l-5.07,8.76-54.62,90.8h-32.96l-59.69-99.56v125.6h-37.79V6.8Z"/>
+      <path d="M1489.85,136.78h-91.49l-16.36,35.95h-42.87L1419.79,6.8h48.17l80.89,165.93h-42.63l-16.36-35.95ZM1476.72,107.97l-32.5-71.44-32.73,71.44h65.22Z"/>
+      <path d="M1573.27,6.8h41.71l111.77,119.15V6.8h38.95v165.93h-42.87l-110.39-119.15v119.15h-39.18V6.8Z"/>
+      <polygon points="2.47 3.06 0 0 85.76 0 86.47 1.3 168.41 152.36 147.28 185.03 2.47 3.06"/><polygon points="95.54 3.04 93.17 0 151.49 0 152.2 1.33 204.39 96.74 188.98 120.56 95.54 3.04"/><polygon points="161.87 3.07 159.39 0 197.72 0 198.42 1.33 229.39 58.08 218.74 74.54 161.87 3.07"/><polygon points="205.52 0 228.73 0 246.42 31.75 239.32 42.72 205.52 0"/><polygon points="236.11 0 266.95 0 253.06 21.48 236.11 0"/>
+    </g>
+  </svg>
+  <p>Newman · Soluciones en Energía — propuesta de prefactibilidad elaborada con el motor determinista
+    CFE Brain OS, calibrado al peso contra recibos CFE reales, sobre el perfil de consumo 2025 proporcionado por GEPP.
+    Cifras pre-IVA. Documento para revisión del cliente; sujeto a validación con recibos originales y data de medidor.</p>
+</div></footer>
+<div id="tip"></div>
+
+<script>
+const DATA = __DATA__;
+const MES = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+const C = {pv:"#B45309", bess:"#1D4ED8", fp:"#B80E65", antes:"#6D5BB8", desp:"#82246E",
+           grid:"#ECE7F3", axis:"#5F5870", line:"#E4DEF1", txt:"#221A33", surf:"#FFFFFF"};
+const $ = s => document.querySelector(s);
+const fM  = x => "$" + (x/1e6).toLocaleString("es-MX",{minimumFractionDigits:1,maximumFractionDigits:1}) + " M";
+const f$  = x => "$" + Math.round(x).toLocaleString("es-MX");
+const fP  = x => (100*x).toLocaleString("es-MX",{minimumFractionDigits:1,maximumFractionDigits:1}) + "%";
+const fK  = x => x.toLocaleString("es-MX");
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+
+/* ---------- tooltip ---------- */
+const tip = $("#tip");
+function showTip(ev, html){ tip.innerHTML = html; tip.style.opacity = 1;
+  const w = tip.offsetWidth, x = Math.min(ev.clientX + 14, innerWidth - w - 10);
+  tip.style.left = x + "px"; tip.style.top = (ev.clientY + 14) + "px"; }
+function hideTip(){ tip.style.opacity = 0; }
+document.addEventListener("mousemove", ev => {
+  const t = ev.target.closest("[data-tip]");
+  if (t) showTip(ev, t.dataset.tip); else hideTip();
+});
+
+/* ---------- charts ---------- */
+function monthlyChart(rows){
+  const W=960, H=270, L=64, R=12, T=14, B=30, pw=W-L-R, ph=H-T-B;
+  const max = Math.max(...rows.map(r=>r.antes)) * 1.06;
+  const y = v => T + ph - v/max*ph;
+  const n = rows.length, gw = pw/n, bw = Math.min(17, gw*0.30);
+  const dec = max >= 20e6 ? 0 : 1;
+  let g = "";
+  for (let i=0;i<=4;i++){ const v=max*i/4, yy=y(v);
+    g += `<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="${C.grid}" stroke-width="1"/>`;
+    g += `<text x="${L-8}" y="${yy+4}" text-anchor="end" font-size="10" fill="${C.axis}">${(v/1e6).toFixed(dec)}M</text>`; }
+  rows.forEach((r,i)=>{ const cx = L + gw*i + gw/2;
+    const tipTxt = `<b>${MES[r.m-1]} 2025</b><br>Antes ${f$(r.antes)}<br>Después ${f$(r.desp)}<br>Ahorro <b>${f$(r.antes-r.desp)}</b>`;
+    g += `<rect x="${cx-bw-1.5}" y="${y(r.antes)}" width="${bw}" height="${T+ph-y(r.antes)}" rx="3" fill="${C.antes}"/>`;
+    g += `<rect x="${cx+1.5}" y="${y(r.desp)}" width="${bw}" height="${T+ph-y(r.desp)}" rx="3" fill="${C.desp}"/>`;
+    g += `<rect x="${L+gw*i}" y="${T}" width="${gw}" height="${ph}" fill="transparent" data-tip="${esc(tipTxt).replace(/"/g,"&quot;")}"/>`;
+    g += `<text x="${cx}" y="${H-10}" text-anchor="middle" font-size="10.5" fill="${C.axis}">${MES[r.m-1]}</text>`; });
+  g += `<line x1="${L}" x2="${W-R}" y1="${T+ph}" y2="${T+ph}" stroke="${C.line}" stroke-width="1"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" font-family="Inter" role="img" aria-label="Facturación mensual antes vs después">${g}</svg>` +
+    `<div class="legend"><span><span class="sw" style="background:${C.antes}"></span>Factura actual (CFE pleno)</span>` +
+    `<span><span class="sw" style="background:${C.desp}"></span>Con PV + BESS</span></div>`;
+}
+
+function curveChart(pts, xKey, yKey, opts={}){
+  const W=460, H=250, L=58, R=14, T=16, B=34, pw=W-L-R, ph=H-T-B;
+  const xs = pts.map(p=>p[xKey]), ys = pts.map(p=>p[yKey]);
+  const xmin=Math.min(...xs), xmax=Math.max(...xs);
+  const ymin=Math.min(0,...ys), ymax=Math.max(...ys)*1.06;
+  const X = v => L + (v-xmin)/(xmax-xmin||1)*pw;
+  const Y = v => T + ph - (v-ymin)/(ymax-ymin||1)*ph;
+  const dec = (ymax-ymin) >= 20e6 ? 0 : 1;
+  let g = "";
+  for (let i=0;i<=4;i++){ const v=ymin+(ymax-ymin)*i/4, yy=Y(v);
+    g += `<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="${C.grid}"/>`;
+    g += `<text x="${L-7}" y="${yy+4}" text-anchor="end" font-size="10" fill="${C.axis}">${(v/1e6).toFixed(dec)}M</text>`; }
+  const sec = opts.sec || (()=>false);
+  const main = pts.filter(p=>!sec(p));
+  const path = main.map((p,i)=>(i?"L":"M")+X(p[xKey]).toFixed(1)+" "+Y(p[yKey]).toFixed(1)).join(" ");
+  g += `<path d="${path}" fill="none" stroke="${opts.color||C.bess}" stroke-width="2" stroke-linejoin="round"/>`;
+  const best = main.reduce((a,b)=>b[yKey]>a[yKey]?b:a);
+  pts.forEach(p=>{ const on = p===best, isSec = sec(p);
+    g += `<circle cx="${X(p[xKey])}" cy="${Y(p[yKey])}" r="${on?5.5:isSec?4:3}" fill="${isSec?"#9A93AC":(opts.color||C.bess)}" stroke="${C.surf}" stroke-width="2"/>`;
+    g += `<circle cx="${X(p[xKey])}" cy="${Y(p[yKey])}" r="13" fill="transparent" data-tip="${esc(opts.tip(p)).replace(/"/g,"&quot;")}"/>`; });
+  const lx = Math.min(Math.max(X(best[xKey]), L+26), W-R-30);
+  g += `<text x="${lx}" y="${Math.max(Y(best[yKey])-12, 11)}" text-anchor="middle" font-size="10.5" fill="${C.txt}" font-weight="600">óptimo</text>`;
+  const tickVals = opts.xtickVals || Array.from({length:6},(_,i)=>xmin+(xmax-xmin)*i/5);
+  tickVals.forEach(v=>{
+    g += `<text x="${X(v)}" y="${H-12}" text-anchor="middle" font-size="10" fill="${C.axis}">${opts.xfmt?opts.xfmt(v):v}</text>`; });
+  g += `<line x1="${L}" x2="${W-R}" y1="${T+ph}" y2="${T+ph}" stroke="${C.line}"/>`;
+  if (ymin<0) g += `<line x1="${L}" x2="${W-R}" y1="${Y(0)}" y2="${Y(0)}" stroke="${C.line}" stroke-dasharray="3 3"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" font-family="Inter" role="img" aria-label="${opts.aria||''}">${g}</svg>`;
+}
+
+function leverBar(pv, bess, fp){
+  const tot = pv+bess+fp; if (!tot) return "";
+  const segs=[["PV",pv,C.pv],["BESS",bess,C.bess],["FP",fp,C.fp]].filter(s=>s[1]>0);
+  let x=0, g="";
+  segs.forEach(([n,v,c])=>{ const w = v/tot*960 - 2;
+    g += `<rect x="${x}" y="6" width="${Math.max(w,2)}" height="20" rx="4" fill="${c}" data-tip="${n}: <b>${f$(v)}</b> (${fP(v/tot)})"/>`;
+    x += v/tot*960; });
+  const leg = segs.map(([n,v,c])=>`<span><span class="sw" style="background:${c}"></span>${n==="PV"?"PV (energía + umbral)":n==="BESS"?"BESS (demanda punta + arbitraje)":"Corrección FP"} · <b>${fM(v)}</b></span>`).join("");
+  return `<svg viewBox="0 0 960 32" font-family="Inter">${g}</svg><div class="legend">${leg}</div>`;
+}
+
+/* ---------- deal card: esquema PPA + BESS ahorro compartido 50/50 ---------- */
+function dealCards(s){
+  const d = s.deal;
+  return `<div class="cells" style="margin-top:0">
+      <div class="cell"><div class="l">PPA solar</div><div class="v">$${d.ppa.toFixed(2)}/kWh</div></div>
+      <div class="cell"><div class="l">Su tarifa CFE hoy (blend)</div><div class="v">$${d.blend.toFixed(2)}/kWh</div></div>
+      <div class="cell"><div class="l">Plazo / escalación PPA</div><div class="v">${d.ppa_yrs} años · ${fP(d.esc_ppa)}</div></div>
+      <div class="cell"><div class="l">Ahorro BESS</div><div class="v">50 / 50</div></div>
+      <div class="cell hi"><div class="l">Su beneficio año 1</div><div class="v">${f$(d.cli_a1 + (s.fp.activo?s.proj.rows[0].fp:0))}</div></div>
+      <div class="cell"><div class="l">Su beneficio 20 años</div><div class="v">${fM(d.cum_cli)}</div></div>
+    </div>
+    <div class="note" style="margin-top:12px">Cómo funciona: ustedes NO invierten. El financiador fondea todo el CAPEX
+    (PV, BESS${s.fp.activo?" y capacitor FP":""}). Pagan cada kWh solar a $${d.ppa.toFixed(2)} — por debajo de los
+    $${d.blend.toFixed(2)}/kWh que hoy le pagan a CFE — y el ahorro que produce la batería se reparte 50/50.
+    ${s.fp.activo?"El ahorro por corrección de factor de potencia es 100% suyo desde el día uno. ":""}Al término
+    del PPA (año ${d.ppa_yrs}) el sistema se les transfiere: años ${d.ppa_yrs+1}–20 el 100% del ahorro es suyo.</div>`;
+}
+
+/* ---------- resumen mensual + proyección 20 años (idea de la calculadora) ---------- */
+function projChart(rows){
+  const W=960, H=280, L=70, R=14, T=16, B=30, pw=W-L-R, ph=H-T-B;
+  let cc=0, cp=0;
+  const pts = rows.map(r=>({y:r.y, compra:(cc+=r.compra), cli:(cp+=r.cli)}));
+  const ymax = Math.max(...pts.map(p=>Math.max(p.compra,p.cli)))*1.06;
+  const ymin = Math.min(0, ...pts.map(p=>Math.min(p.compra,p.cli)));
+  const X = v => L + (v-1)/19*pw, Y = v => T + ph - (v-ymin)/(ymax-ymin||1)*ph;
+  let g = "";
+  for (let i=0;i<=4;i++){ const v=ymin+(ymax-ymin)*i/4, yy=Y(v);
+    g += `<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="${C.grid}"/>`;
+    g += `<text x="${L-8}" y="${yy+4}" text-anchor="end" font-size="10" fill="${C.axis}">${(v/1e6).toFixed(0)}M</text>`; }
+  [["compra","#191B4D"],["cli","#B80E65"]].forEach(([k,col])=>{
+    g += `<path d="${pts.map((p,i)=>(i?"L":"M")+X(p.y).toFixed(1)+" "+Y(p[k]).toFixed(1)).join(" ")}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linejoin="round"/>`; });
+  pts.forEach(p=>{ const t=`<b>Año ${p.y}</b><br>Acum. compra ${fM(p.compra)}<br>Acum. cliente PPA ${fM(p.cli)}`;
+    g += `<rect x="${X(p.y)-pw/38}" y="${T}" width="${pw/19}" height="${ph}" fill="transparent" data-tip="${esc(t).replace(/"/g,"&quot;")}"/>`; });
+  [1,5,10,15,20].forEach(v=>{ g += `<text x="${X(v)}" y="${H-8}" text-anchor="middle" font-size="10" fill="${C.axis}">${v}</text>`; });
+  g += `<line x1="${L}" x2="${W-R}" y1="${T+ph}" y2="${T+ph}" stroke="${C.line}"/>`;
+  if (ymin<0) g += `<line x1="${L}" x2="${W-R}" y1="${Y(0)}" y2="${Y(0)}" stroke="${C.line}" stroke-dasharray="3 3"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" font-family="Inter" role="img" aria-label="Flujo acumulado a 20 años">${g}</svg>` +
+    `<div class="legend"><span><span class="sw" style="background:#191B4D"></span>Compra — flujo acumulado</span>` +
+    `<span><span class="sw" style="background:#B80E65"></span>Ahorro compartido — flujo cliente acumulado</span></div>`;
+}
+
+function resumenMensual(s){
+  const fp = s.fp.activo;
+  const T = s.monthly.reduce((a,r)=>{ for (const k of ["kwh","gen","desc","antes","pv","bess","fp","desp","hib"]) a[k]=(a[k]||0)+r[k]; return a; },{});
+  const row = r => `<tr><td>${MES[r.m-1]}</td><td>${fK(r.kwh)}</td><td>${fK(r.gen)}</td><td>${fK(r.desc)}</td><td>${fK(r.antes)}</td><td>${fK(r.pv)}</td><td>${fK(r.bess)}</td>${fp?`<td>${fK(r.fp)}</td>`:""}<td>${fK(r.desp)}</td><td>${fK(r.hib)}</td><td>${fP(r.hib/r.antes)}</td></tr>`;
+  return `<div class="tblwrap"><table>
+    <tr><th>Mes</th><th>kWh consumo</th><th>Gen PV kWh</th><th>BESS desc kWh</th><th>Factura actual $</th><th>Ahorro PV $</th><th>Ahorro BESS $</th>${fp?"<th>Multa FP $</th>":""}<th>Costo c/proyecto $</th><th>Ahorro $</th><th>%</th></tr>
+    ${s.monthly.map(row).join("")}
+    <tr class="tot"><td>Total</td><td>${fK(T.kwh)}</td><td>${fK(T.gen)}</td><td>${fK(T.desc)}</td><td>${fK(T.antes)}</td><td>${fK(T.pv)}</td><td>${fK(T.bess)}</td>${fp?`<td>${fK(T.fp)}</td>`:""}<td>${fK(T.desp)}</td><td>${fK(T.hib)}</td><td>${fP(T.hib/T.antes)}</td></tr>
+    </table></div>
+    <div class="note" style="margin-top:10px">Valores del motor (calc_core) sobre los 12 meses reales de 2025, pre-IVA. Factura actual = carga total a tarifa CFE plena. Ahorro = PV + BESS${fp?"; la multa FP se muestra aparte — su corrección (capacitor) es una palanca separada y aditiva, no incluida en la columna Ahorro":""}.</div>`;
+}
+
+function proyeccion20(s){
+  const p = s.proj, fp = s.fp.activo;
+  const etapa = y => y<=p.ppa_yrs ? "PPA + 50/50" : "Suyo al 100%";
+  const neg = x => x<0 ? `−${fK(-x)}` : fK(x);
+  const rows = p.rows.map(r=>`<tr><td>${r.y}</td><td style="text-align:left">${etapa(r.y)}</td><td>${fK(r.tarifa)}</td><td>${fK(r.pv)}</td><td>${fK(r.bess)}</td>${fp?`<td>${fK(r.fp)}</td>`:""}<td>${fK(r.costo)}</td><td>${neg(r.compra)}</td><td>${fK(r.ppa)}</td><td>${fK(r.com)}</td><td>${neg(r.cli)}</td></tr>`).join("");
+  const blank = fp ? "<td></td><td></td><td></td><td></td><td></td>" : "<td></td><td></td><td></td><td></td>";
+  return `
+    <div class="cells" style="margin-top:0;margin-bottom:14px">
+      <div class="cell"><div class="l">Con PPA + 50/50: su beneficio 20a</div><div class="v">${fM(p.cum_cli)}</div><div class="l" style="margin-top:2px">sin invertir</div></div>
+      <div class="cell hi"><div class="l">Si mejor compran: beneficio 20a</div><div class="v">${fM(p.cum_compra)}</div><div class="l" style="margin-top:2px">invirtiendo ${fM(p.capex)}</div></div>
+      <div class="cell"><div class="l">Compra: VPN 20a @12%</div><div class="v">${fM(p.vpn_compra)}</div></div>
+      <div class="cell"><div class="l">Compra: recuperación</div><div class="v">${p.payback} años</div></div>
+    </div>
+    ${projChart(p.rows)}
+    <details><summary>Ver tabla año por año (valores del motor)</summary><div class="tblwrap"><table>
+      <tr><th>Año</th><th style="text-align:left">Etapa</th><th>Factura actual $</th><th>Ahorro PV $</th><th>Ahorro BESS $</th>${fp?"<th>Ahorro FP $</th>":""}<th>Costo c/proy $</th><th>Flujo compra $</th><th>Pago PPA $</th><th>BESS 50/50 $</th><th>Su flujo PPA $</th></tr>
+      <tr><td>0</td><td style="text-align:left">Inversión</td>${blank}<td>−${fK(p.capex)}</td><td></td><td></td><td>0</td></tr>
+      ${rows}
+      <tr class="tot"><td>Σ</td><td></td>${blank}<td>${neg(p.cum_compra)}</td><td></td><td></td><td>${neg(p.cum_cli)}</td></tr>
+      </table></div></details>
+    <div class="note" style="margin-top:10px">Esquema: PPA $${p.ppa.toFixed(2)}/kWh (${p.ppa_yrs} años, escalación ${fP(p.esc_ppa)}/año) + ahorro BESS compartido 50/50; "BESS 50/50 $" es la mitad del ahorro de batería que corresponde al financiador. Supuestos del motor: escalación CFE 5%/año, degradación PV 0.5%/año y BESS 1.25%/año, ahorro BESS neto de disponibilidad (9/12 meses), O&amp;M durante el plazo del contrato (en PPA lo absorbe el financiador; en compra corre por su cuenta y ya está descontado del Flujo compra). El ahorro FP va fuera de estos flujos — es 100% suyo desde el día uno${fp?" (columna informativa)":""}. Al término del PPA el sistema se les transfiere: años ${p.ppa_yrs+1}–20 retienen el 100% del ahorro.</div>`;
+}
+
+function proyPortafolio(P){
+  const p = P.proj;
+  const rows = p.rows.map(r=>`<tr><td>${r.y}</td><td>${fK(r.tarifa)}</td><td>${fK(r.tarifa - r.costo)}</td><td>${fK(r.costo)}</td><td>${fK(r.compra)}</td><td>${fK(r.cli)}</td><td>${fK(r.cum_compra)}</td><td>${fK(r.cum_cli)}</td></tr>`).join("");
+  return `
+    <div class="cells" style="margin-top:0;margin-bottom:14px">
+      <div class="cell hi"><div class="l">Con PPA + 50/50: su beneficio 20a</div><div class="v">${fM(p.cum_cli)}</div><div class="l" style="margin-top:2px">sin invertir un peso</div></div>
+      <div class="cell"><div class="l">Si mejor compran: beneficio 20a</div><div class="v">${fM(p.cum_compra)}</div><div class="l" style="margin-top:2px">invirtiendo ${fM(p.capex)}</div></div>
+      <div class="cell"><div class="l">Beneficio año 1 (PPA + 50/50)</div><div class="v">${fM(P.deal.cli_a1 + P.fp)}</div><div class="l" style="margin-top:2px">incl. 100% del ahorro FP</div></div>
+    </div>
+    ${projChart(p.rows)}
+    <details><summary>Ver tabla año por año (suma de los 6 sitios)</summary><div class="tblwrap"><table>
+      <tr><th>Año</th><th>Factura actual $</th><th>Ahorro total $</th><th>Costo c/proyecto $</th><th>Flujo compra $</th><th>Su flujo PPA $</th><th>Acum. compra $</th><th>Acum. PPA $</th></tr>
+      ${rows}
+      </table></div></details>
+    <div class="note" style="margin-top:10px">Suma de las proyecciones de los 6 sitios bajo el mismo esquema (PPA $${P.deal.ppa.toFixed(2)}/kWh + BESS 50/50). Factura actual escalada 5%/año; Ahorro total incluye PV + BESS + FP; los flujos PPA excluyen FP (100% suyo, aparte). Años ${P.deal.ppa_yrs+1}–20: sistema transferido — retienen el 100% del ahorro.</div>`;
+}
+
+/* ---------- cómo afecta cada esquema su recibo CFE ---------- */
+function esquemasBilling(){
+  return `<div class="grid2">
+    <div class="panel"><h3>Medición neta — generador exento <span class="badge ok" style="margin-left:6px">lo propuesto</span></h3>
+      <div class="cap">PV hasta <b>0.7 MW AC (839 kWp DC)</b> por servicio, sin permiso de generación.
+      Cada kWh solar se <b>neteá contra los kWh de su recibo en el mismo periodo horario</b> (base/intermedio/punta):
+      el cargo de energía baja directo, ~$1.8–2.1 por kWh desplazado. Los cargos de <b>demanda</b> (capacidad y
+      distribución) siguen igual — salvo donde el umbral de demanda facturable se recorre (Cancún). Trámite:
+      solo contrato de interconexión con CFE, sin CNE. Es el esquema de la propuesta principal.</div></div>
+    <div class="panel"><h3>Autoconsumo — arriba de 0.7 MW</h3>
+      <div class="cap">Para PV mayor a 0.7 MW la ley lo clasifica <b>autoconsumo</b>: permiso CNE
+      (simplificado hasta 20 MW; ordinario arriba), registro anual y respaldo obligatorio para intermitentes
+      (lo cubre el BESS). En su recibo: <b>solo el kWh que consumen en el instante en que se genera</b> deja de
+      facturarse; el excedente <b>no se netea</b> — se vende únicamente a CFE a precio bajo (aquí lo valuamos a $0,
+      conservador). Por eso crecer más allá del consumo diurno real destruye valor. Es el régimen del escenario
+      "cobertura total" de abajo.</div></div>
+    <div class="panel"><h3>BESS — almacenamiento tras el medidor (SAE-CC)</h3>
+      <div class="cap">La batería no necesita permiso y no inyecta a la red. Ataca lo que el PV no puede:
+      los <b>cargos de demanda</b>. Descarga en la ventana de punta (2h) → recorta el kW facturable de
+      capacidad y distribución; además carga barato en base y descarga caro en punta (arbitraje de energía).
+      En sus recibos: baja el renglón de capacidad/distribución y parte del de energía punta. Es el esquema
+      del ahorro compartido 50/50.</div></div>
+    <div class="panel"><h3>Factor de potencia — capacitores</h3>
+      <div class="cap">Acapulco y Cancún pagan <b>multa por FP &lt; 90%</b> mes tras mes. Un banco de capacitores
+      la elimina y convierte la multa en <b>bonificación</b> (hasta 2.5% de crédito en el recibo). El financiador
+      fondea el capacitor y este ahorro es <b>100% suyo desde el día uno</b> — no entra al reparto 50/50 ni al PPA.</div></div>
+  </div>`;
+}
+
+/* ---------- escenario cobertura total del consumo ---------- */
+function fullSitio(s){
+  const f = s.full;
+  const aprov = (f.gen - f.exced) / f.gen;
+  const permiso = f.ordinario ? "CNE ordinario (>20 MW)" : "CNE simplificado (0.7–20 MW)";
+  return `
+    <div class="cells" style="margin-top:0">
+      <div class="cell"><div class="l">PV requerido</div><div class="v">${fK(Math.round(f.kwp))} kWp</div></div>
+      <div class="cell"><div class="l">vs propuesto</div><div class="v">${fK(Math.round(s.kwp))} kWp</div></div>
+      <div class="cell"><div class="l">Generación anual</div><div class="v">${(f.gen/1e6).toFixed(1)} GWh = consumo</div></div>
+      <div class="cell warnv"><div class="l">Aprovechado en sitio</div><div class="v">${fP(aprov)}</div></div>
+      <div class="cell"><div class="l">Excedente (a CFE)</div><div class="v">${(f.exced/1e6).toFixed(1)} GWh</div></div>
+      <div class="cell"><div class="l">Ahorro año 1</div><div class="v">${fM(f.hib)} · ${fP(f.pct)}</div></div>
+      <div class="cell"><div class="l">Inversión de referencia</div><div class="v">${fM(f.capex)}</div></div>
+      <div class="cell"><div class="l">Permiso</div><div class="v" style="font-size:13.5px">${permiso}</div></div>
+    </div>
+    <div class="note" style="margin-top:12px">Para generar el 100% de su consumo anual este sitio necesita
+    ${fK(Math.round(f.kwp))} kWp — pero al ser carga 24/7, solo ${fP(aprov)} de esa energía coincide con el sol y
+    se aprovecha en el recibo; el resto sale como excedente que bajo autoconsumo solo puede venderse a CFE a precio
+    bajo (aquí valuado a $0, conservador). El ahorro sube a ${fP(f.pct)} del recibo, pero cada peso invertido rinde
+    menos que en la propuesta principal. Recomendación: arrancar con los ${fK(Math.round(s.kwp))} kWp exentos
+    (sin permiso, neteo completo) y crecer por fases hacia autoconsumo cuando haya data de medidor 15-min que
+    confirme el perfil diurno real.</div>`;
+}
+
+function fullPortafolio(P){
+  const f = P.full;
+  const aprov = (f.gen - f.exced) / f.gen;
+  const rows = DATA.order.map(k=>{ const s=DATA.sites[k], x=s.full, ap=(x.gen-x.exced)/x.gen;
+    return `<tr class="click" onclick="go('${k}')"><td>${s.corto}</td><td>${fK(Math.round(x.kwp))}</td>
+      <td>${(x.gen/1e6).toFixed(1)}</td><td>${fP(ap)}</td><td>${fM(x.hib)}</td><td>${fP(x.pct)}</td>
+      <td>${fM(x.capex)}</td><td style="text-align:left">${x.ordinario?"CNE ordinario (&gt;20 MW)":"CNE simplificado"}</td></tr>`; }).join("");
+  return `
+    <div class="cells" style="margin-top:0;margin-bottom:14px">
+      <div class="cell"><div class="l">PV total requerido</div><div class="v">${(f.kwp/1000).toFixed(1)} MWp</div><div class="l" style="margin-top:2px">vs ${(P.kwp/1000).toFixed(1)} MWp propuestos</div></div>
+      <div class="cell"><div class="l">Generación = consumo</div><div class="v">${(f.gen/1e6).toFixed(0)} GWh/año</div></div>
+      <div class="cell warnv"><div class="l">Aprovechado en sitio</div><div class="v">${fP(aprov)}</div><div class="l" style="margin-top:2px">${(f.exced/1e6).toFixed(0)} GWh de excedente</div></div>
+      <div class="cell"><div class="l">Ahorro año 1</div><div class="v">${fM(f.hib)} · ${fP(f.hib/f.antes)}</div></div>
+      <div class="cell"><div class="l">Inversión de referencia</div><div class="v">${fM(f.capex)}</div><div class="l" style="margin-top:2px">vs ${fM(P.capex)} propuestos</div></div>
+    </div>
+    <div class="tblwrap"><table>
+      <tr><th>Sitio</th><th>PV kWp</th><th>Gen GWh</th><th>Aprovechado</th><th>Ahorro $/a</th><th>% recibo</th><th>Inversión</th><th style="text-align:left">Permiso</th></tr>
+      ${rows}</table></div>
+    <div class="note" style="margin-top:10px">Escenario a solicitud: PV dimensionado para generar el 100% del
+    consumo anual de cada sitio (mismo BESS que la propuesta). Todos los sitios cruzan a <b>autoconsumo</b>
+    (permiso CNE; Proplasa PR2 supera 20 MW → permiso ordinario) y su facturación cambia de neteo por periodo a
+    autoconsumo instantáneo: siendo cargas 24/7, solo ~${fP(aprov)} de la energía coincide con el sol — el resto
+    es excedente vendible solo a CFE (valuado a $0, conservador). El ahorro llega a ${fP(f.hib/f.antes)} del recibo
+    del portafolio (${(f.hib/P.hib).toFixed(1)}× el de la propuesta), pero exige ${(f.kwp/P.kwp).toFixed(0)}× la
+    superficie, permisos CNE y ${(f.capex/P.capex).toFixed(1)}× la inversión — cada peso invertido rinde menos.
+    Nuestra recomendación: capturar HOY el máximo exento por sitio (sin permiso, neteo completo) y crecer por
+    fases hacia autoconsumo cuando la data de medidor 15-min confirme el perfil diurno real.</div>`;
+}
+
+/* ---------- views ---------- */
+function viewPortfolio(){
+  const P = DATA.portfolio;
+  const kpis = `
+    <div class="kpis">
+      <div class="kpi"><div class="l">Gasto actual (CFE pleno, pre-IVA)</div><div class="v navy">${fM(P.antes)}</div><div class="d">6 servicios · 2025 real</div></div>
+      <div class="kpi"><div class="l">Ahorro año 1 (bruto)</div><div class="v">${fM(P.hib)}</div><div class="d">${fP(P.pct)} del gasto · + FP ${fM(P.fp)}</div></div>
+      <div class="kpi"><div class="l">Sistema</div><div class="v navy">${(P.kwp/1000).toFixed(2)} MWp</div><div class="d">+ BESS ${(P.bess_kw/1000).toFixed(1)} MW / ${(P.bess_kwh/1000).toFixed(1)} MWh (2h)</div></div>
+      <div class="kpi"><div class="l">Beneficio año 1 · PPA + 50/50</div><div class="v">${fM(P.deal.cli_a1 + P.fp)}</div><div class="d">sin invertir · incl. 100% del ahorro FP</div></div>
+      <div class="kpi"><div class="l">Beneficio 20 años · PPA + 50/50</div><div class="v">${fM(P.deal.cum_cli)}</div><div class="d">el sistema es suyo del año ${P.deal.ppa_yrs+1} en adelante</div></div>
+    </div>`;
+  const tbl = DATA.order.map(k=>{ const s=DATA.sites[k], d=s.deal;
+    return `<tr class="click" onclick="go('${k}')"><td>${s.corto} <span class="rpu">${s.rpu}</span></td>
+      <td>${fK(Math.round(s.kwp))}</td><td>${fK(s.bess.kw)} / ${fK(s.bess.kwh)}</td>
+      <td>${s.fp.activo?f$(s.annual.fp):"—"}</td><td>${fM(s.annual.hib)}</td><td>${fP(s.annual.pct)}</td>
+      <td>$${d.blend.toFixed(2)}</td><td>$${d.ppa.toFixed(2)}</td>
+      <td>${fM(d.cli_a1 + (s.fp.activo?s.proj.rows[0].fp:0))}</td></tr>`; }).join("");
+  const tot = `<tr class="tot"><td>Portafolio</td><td>${fK(Math.round(P.kwp))}</td>
+    <td>${fK(P.bess_kw)} / ${fK(P.bess_kwh)}</td><td>${fM(P.fp)}</td><td>${fM(P.hib)}</td>
+    <td>${fP(P.pct)}</td><td>—</td><td>$${P.deal.ppa.toFixed(2)}</td><td>${fM(P.deal.cli_a1 + P.fp)}</td></tr>`;
+  const explain = `
+    <div class="grid2">
+      <div class="panel"><h3 style="color:${C.pv}">PV — energía (+ umbral)</h3><div class="cap">Los 6 sitios al tope de generador exento:
+        <b>839.41 kWp DC = 0.7 MW AC</b> (sin permiso, medición neta). Desplaza energía intermedia (~$1.8–2.1/kWh);
+        en Cancún además recorta demanda vía umbral (satura 9/12 meses). El barrido confirma que cruzar a autoconsumo
+        (permiso CNE + BESS obligatorio + ~1 año de retraso) <b>no agrega NPV en ningún sitio</b>.</div></div>
+      <div class="panel"><h3 style="color:${C.bess}">BESS — demanda punta + arbitraje</h3><div class="cap">La palanca dominante:
+        ${fM(P.bess_lever)}/año de los ${fM(P.hib)}. SAE-CC behind-the-meter (sin permiso, sin inyección).
+        Óptimo de duración = <b>2 horas</b> a potencia de pico de punta en los seis sitios — la ventana de verano (2h, may–oct)
+        domina el año completo. Este es el ahorro que se comparte 50/50.</div></div>
+      <div class="panel"><h3 style="color:${C.fp}">Corrección FP</h3><div class="cap">Acapulco (FP 85–86%, ${fM(DATA.sites["gepp-acapulco"].annual.fp)}/año)
+        y Cancún (FP ~89%, ${fM(DATA.sites["gepp-cancun"].annual.fp)}/año). Capacitores ${fM(P.capacitores)} — payback en meses,
+        palanca separada y aditiva (nunca mezclada con PV/BESS).</div></div>
+    </div>`;
+  const deal = `
+    <div class="deal">
+      <div class="panel"><h3>PPA + BESS 50/50 — sin invertir</h3>
+        <div class="big">${fM(P.deal.cli_a1 + P.fp)}/año</div>
+        <div class="cap">beneficio GEPP año 1 (incl. 100% FP), cero inversión. PPA solar $${P.deal.ppa.toFixed(2)}/kWh
+        (${P.deal.ppa_yrs} años, esc. ${fP(P.deal.esc_ppa)}); el ahorro de la batería se reparte 50/50.
+        Años ${P.deal.ppa_yrs+1}–20: el sistema es suyo y retienen el 100%.</div></div>
+      <div class="panel"><h3>Compra (GEPP invierte)</h3>
+        <div class="big">${fM(P.hib + P.fp)}/año</div>
+        <div class="cap">ahorro bruto año 1 (incl. FP) quedándose el 100% desde el día uno ·
+        inversión ${fM(P.capex + P.capacitores)} · VPN 20a ${fM(P.vpn)} · recuperación ${P.payback_min}–${P.payback_max} años por sitio</div></div>
+      <div class="panel"><h3>Factor de potencia — suyo al 100%</h3>
+        <div class="big">${fM(P.fp)}/año</div>
+        <div class="cap">multas FP de Acapulco y Cancún eliminadas con capacitores (${fM(P.capacitores)}, los fondea
+        el financiador). Este ahorro NO entra al reparto 50/50 — es de GEPP desde el primer recibo.</div></div>
+    </div>`;
+  const cavs = DATA.global_caveats.map(c=>`<li><b>${c[0].toUpperCase()}</b> — ${c[1]}</li>`).join("");
+  const steps = `
+    <ul class="cav">
+      <li><b>Data 15-min de los medidores HM</b> — vuelve bancable el recorte de punta (la parte del BESS, 2/3 del valor del deal).</li>
+      <li><b>Recibos CFE originales (PDF/CFDI)</b> — sustituyen la reconstrucción del workbook y cierran las divergencias de Cancún.</li>
+      <li><b>Áreas de techo/estacionamiento por sitio</b> — confirmar que caben los 839 kWp (~4,940 m² por sitio).</li>
+      <li><b>Contratos Tala e ENEL</b> — take-or-pay, penalidades y coexistencia con medición neta (Ixtlahuacán).</li>
+      <li><b>Arrancar FP ya</b> — capacitores en Acapulco y Cancún: ${fM(P.fp)}/año con payback en meses, independiente de todo lo demás.</li>
+    </ul>`;
+  return `${kpis}
+    <h2 class="sec">Palancas de ahorro — año 1</h2><div class="panel">${leverBar(P.pv_lever, P.bess_lever, P.fp)}</div>
+    <h2 class="sec">Los 6 sitios</h2><div class="panel"><div class="tblwrap"><table>
+      <tr><th>Sitio</th><th>PV kWp</th><th>BESS kW/kWh</th><th>FP $/a</th><th>Ahorro $/a</th><th>%</th><th>Su tarifa CFE $/kWh</th><th>PPA $/kWh</th><th>Su beneficio a1</th></tr>
+      ${tbl}${tot}</table></div>
+      <div class="note" style="margin-top:10px">Clic en un sitio para el detalle. Su beneficio a1 = lo que queda para GEPP en el año 1 bajo PPA + BESS 50/50, incluido el 100% del ahorro FP donde aplica.</div></div>
+    <h2 class="sec">Factura mensual del portafolio — 2025</h2><div class="panel">${monthlyChart(P.monthly)}</div>
+    <h2 class="sec">Cómo ahorra cada palanca</h2>${explain}
+    <h2 class="sec">Cómo afecta cada esquema su recibo CFE</h2>${esquemasBilling()}
+    <h2 class="sec">El esquema propuesto — PPA + almacenamiento 50/50</h2>${deal}
+    <h2 class="sec">Proyección 20 años — portafolio</h2><div class="panel">${proyPortafolio(P)}</div>
+    <h2 class="sec">¿Y si atendemos el 100% de su consumo? — escenario autoconsumo</h2><div class="panel">${fullPortafolio(P)}</div>
+    <h2 class="sec">Supuestos y alcance</h2><div class="panel"><ul class="cav">${cavs}</ul></div>
+    <h2 class="sec">Siguientes pasos</h2><div class="panel">${steps}</div>`;
+}
+
+function viewSite(k){
+  const s = DATA.sites[k];
+  const header = `
+    <div class="panel"><div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+      <h3 style="font-size:20px">${s.nombre}</h3><span class="rpu">${s.rpu}</span>
+      <span class="badge ok">Generador exento &lt;0.7 MW AC</span>
+      ${s.fp.activo?'<span class="badge warn">FP con multa</span>':""}
+    </div>
+    <div class="cells">
+      <div class="cell"><div class="l">Municipio</div><div class="v" style="font-size:13.5px">${s.municipio}, ${s.estado}</div></div>
+      <div class="cell"><div class="l">Demanda contratada</div><div class="v">${fK(s.dem)} kW</div></div>
+      <div class="cell"><div class="l">Rendimiento solar</div><div class="v" style="font-size:13.5px">${s.yield_src.split("(")[1]?s.yield_src.replace(")","").split("(")[1]:s.yield_src}</div></div>
+      <div class="cell"><div class="l">Fuente yield</div><div class="v" style="font-size:13.5px">${s.yield_src.split("(")[0]}</div></div>
+    </div></div>`;
+  const kpis = `
+    <div class="kpis">
+      <div class="kpi"><div class="l">Factura actual</div><div class="v navy">${fM(s.annual.antes)}</div><div class="d">2025, CFE pleno pre-IVA</div></div>
+      <div class="kpi"><div class="l">Ahorro año 1</div><div class="v">${fM(s.annual.hib)}</div><div class="d">${fP(s.annual.pct)}${s.fp.activo?` · + FP ${fM(s.annual.fp)}`:""}</div></div>
+      <div class="kpi"><div class="l">Sistema</div><div class="v navy" style="font-size:21px">${fK(Math.round(s.kwp))} kWp${s.bess.kw?` + ${fK(s.bess.kw)} kW`:""}</div><div class="d">${s.bess.kw?`BESS ${fK(s.bess.kwh)} kWh (${s.bess.h}h nominal)`:"sin BESS adicional"}</div></div>
+      <div class="kpi"><div class="l">Inversión (la fondea el financiador)</div><div class="v navy">${fM(s.fin.capex)}</div><div class="d">${s.fp.activo?`+ capacitor ${fM(s.fp.capacitor)}`:"sin capacitor"}</div></div>
+      <div class="kpi"><div class="l">Su beneficio año 1 · PPA + 50/50</div><div class="v">${f$(s.deal.cli_a1 + (s.fp.activo?s.proj.rows[0].fp:0))}</div><div class="d">sin invertir${s.fp.activo?" · incl. 100% FP":""}</div></div>
+    </div>`;
+  const bessTip = p => `<b>${p.h} h (${fK(p.kwh)} kWh)</b><br>NPV ${fM(p.npv)}<br>Ahorro/año ${f$(p.ahorro)}`;
+  const pvTip = p => `<b>${fK(Math.round(p.kwp))} kWp</b> · ${p.regimen}<br>NPV (con mejor BESS) ${fM(p.npv)}`;
+  const curves = `
+    <div class="grid2">
+      <div class="panel"><h3>BESS — NPV vs duración (h nominales)</h3>
+        <div class="cap">Potencia fija = pico de punta (${fK(Math.round(s.bess.pico))} kW); se barre la duración. Óptimo: <b>${s.bess.h} h</b>.</div>
+        ${curveChart(s.bessCurve,"h","npv",{color:C.bess,xfmt:v=>v.toFixed(1)+"h",aria:"NPV vs duración BESS",tip:bessTip})}</div>
+      <div class="panel"><h3>PV — NPV vs tamaño (kWp DC)</h3>
+        <div class="cap">Cada punto lleva su mejor BESS. Tope exento = 839.41 kWp DC (0.7 MW AC); el punto gris (840 kWp) es autoconsumo: cruzar 0.7 MW <b>no paga</b>.</div>
+        ${curveChart(s.pvCurve,"kwp","npv",{color:C.pv,xfmt:v=>fK(Math.round(v)),aria:"NPV vs tamaño PV",tip:pvTip,
+          sec:p=>p.regimen==="autoconsumo",xtickVals:[100,300,500,700,839]})}</div>
+    </div>`;
+  const fpCard = s.fp.activo ? `
+    <div class="panel"><h3 style="color:${C.fp}">Corrección de factor de potencia</h3>
+      <div class="cells">
+        <div class="cell"><div class="l">Multa FP actual</div><div class="v">${f$(s.fp.cargo)}/año</div></div>
+        <div class="cell"><div class="l">Capacitor</div><div class="v">${f$(s.fp.capacitor)}</div></div>
+        <div class="cell hi"><div class="l">Payback</div><div class="v">${s.fp.payback_m} meses</div></div>
+      </div>
+      <div class="note" style="margin-top:10px">Palanca separada y aditiva — nunca mezclada en la atribución PV/BESS. En el deal PPA el financiador fondea el capacitor y el cliente conserva el 100% del ahorro FP.</div></div>` : "";
+  const alerts = s.alerts.length ? `<div class="alerts">` + s.alerts.map(a=>
+      `<div class="alert ${a[0]}"><span class="t">${a[0]}</span><span>${esc(a[1])}</span></div>`).join("") + `</div>` : "";
+  return `${header}${kpis}
+    <h2 class="sec">Palancas de ahorro — año 1</h2><div class="panel">${leverBar(s.annual.pv, s.annual.bess, s.annual.fp)}</div>
+    <h2 class="sec">Factura mensual 2025 — antes vs después</h2><div class="panel">${monthlyChart(s.monthly)}</div>
+    <h2 class="sec">Resumen mensual — 2025 (motor)</h2><div class="panel">${resumenMensual(s)}</div>
+    <h2 class="sec">Curvas de dimensionado</h2>${curves}
+    ${fpCard?'<h2 class="sec">Factor de potencia</h2>'+fpCard:""}
+    <h2 class="sec">El esquema — PPA + almacenamiento 50/50</h2><div class="panel">${dealCards(s)}</div>
+    <h2 class="sec">Proyección 20 años — PPA + 50/50 vs compra</h2><div class="panel">${proyeccion20(s)}</div>
+    <h2 class="sec">¿Y si atendemos el 100% del consumo de este sitio?</h2><div class="panel">${fullSitio(s)}</div>
+    <h2 class="sec">Alertas del motor</h2><div class="panel">${alerts||'<div class="note">Sin alertas.</div>'}</div>
+    <h2 class="sec">Consideraciones del sitio</h2><div class="panel"><ul class="cav">${s.caveats.map(c=>`<li>${c}</li>`).join("")}</ul></div>`;
+}
+
+/* ---------- tabs ---------- */
+const TABS = [["portafolio","Portafolio"], ...DATA.order.map(k=>[k, DATA.sites[k].corto])];
+function go(id){
+  document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("on", b.dataset.id===id));
+  document.body.classList.toggle("siteview", id!=="portafolio");
+  $("#main").innerHTML = id==="portafolio" ? viewPortfolio() : viewSite(id);
+  window.scrollTo({top:0, behavior:"instant"});
+}
+$("#tabs").innerHTML = TABS.map(([id,l])=>`<button class="tab" data-id="${id}" onclick="go('${id}')">${l}</button>`).join("");
+go("portafolio");
+</script>

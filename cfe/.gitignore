@@ -1,0 +1,9 @@
+raw/*.tmp
+# Real CFE bill PDFs / fixtures (client PII, real RPUs) — never tracked
+vault/raw/
+# Local Python venv for the savings engine (pdfplumber/openpyxl)
+.venv/
+.DS_Store
+.obsidian/workspace*.json
+.obsidian/cache
+__pycache__/

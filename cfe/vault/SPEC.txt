@@ -1,0 +1,5 @@
+GEPP EXCEL WORKBOOK STRUCTURE SPECIFICATION v3
+========================================================================================================================
+
+Sheet Count: 10
+Sheet Names: ['Resumen Ejecutivo', 'Supuestos', 'Ixtlahuacán', 'Acapulco', 'Cancún', 'Proplasa PR1', 'Proplasa PR2', 'Proplasa Tapas', 'Comparativo Comercial', 'Proyección 20 años']

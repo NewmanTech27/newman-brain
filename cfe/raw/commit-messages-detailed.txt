@@ -1,0 +1,1497 @@
+a81c43c7e779a77a4bcbd0cc44e8de7cbac7a6a4
+Newman Droplet
+Thu Jul 9 08:00:09 2026 +0000
+feat(crm): ongoing risk-based transaction monitoring (perfil + operaciones relevantes + fraccionamiento)
+it-50: closes the compliance defeater — a behavioral trigger engine on the real money flows
+(it-18 dd_operation/repayments + it-45 recoveries). crm.txn_profile (declared perfil
+transaccional, four-eyes) + crm.uma_config (thresholds). crm.txn_monitor_scan() (pg_cron)
+stages (1) OPERACIONES RELEVANTES — a periodic/threshold aviso obligation structurally DISTINCT
+from suspicion SPPLD avisos — when an op crosses the UMA threshold, (2) fraccionamiento when
+sub-threshold ops aggregate past it in a rolling window, (3) profile-deviation vs declared;
+dedupes, fans alerts into the it-48 inbox, review→escalate to the it-39 STR pipeline.
+/monitoreo console + server actions. pgTAP UC13 added (now 31 assertions). Verified on prod:
+500k op → operación relevante 4419 UMA + staged w/ filing clock; 3×100k → fraccionamiento
+2652 UMA; inbox alerts; escalate; cleaned up.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+1681d4ed7469009b7ce831e7293c14b057632f71
+Newman Droplet
+Thu Jul 9 07:36:31 2026 +0000
+feat(crm): RAROC pricing-adequacy + concentration hard gate on the it-27 sanction
+it-49: closes the last hole in credit decisioning. crm.capital_config (hurdle/cost-of-funds/
+opex/econ-capital, four-eyes) + crm.concentration_cap (single-obligor/group/offtaker/tech/
+geography caps). crm_web_compute_raroc = required all-in rate (funds+opex+EL-rate+capital
+charge) vs offered → pass/fail + RAROC vs hurdle. crm_web_check_concentration simulates
+post-booking utilization per dimension off the it-18 exposure spine → hard-breach flag.
+crm_web_sanction_memo now BLOCKS approval on RAROC fail or hard breach unless a logged
+elevated four-eyes crm_web_sanction_override exists. DealPricingGate panel (RAROC + concentration
++ override) and a /limites console. pgTAP UC12 added. Verified on prod: required 0.1505 vs
+offered 0.14 → fail → sanction blocked → override → passes.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+6d399f53c86435260d47d139abfe8ba78b7d3734
+Newman Droplet
+Thu Jul 9 07:10:42 2026 +0000
+test(crm): make UC11 assert the KYB row specifically (robust to other pending approvals)
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+8c6536ffa7cf80d7a2aba5cae8c9059561821c01
+Newman Droplet
+Thu Jul 9 07:06:11 2026 +0000
+feat(crm): unified notification + approval inbox (the bell)
+it-48: extends crm.notification into an actionable, per-user inbox. crm.notification_scan()
+(pg_cron 15m) DERIVES pending items from live state — KYB clearances awaiting a decision,
+submitted credit memos awaiting sanction, aviso SPPLD filing clocks, due/overdue tasks, and
+AI drafts awaiting review — deduped via dedupe_key and auto-resolved when the condition clears,
+so no verified gate RPC is edited. crm_web_inbox(tab)/inbox_counts()/ack triage the feed.
+New /bandeja page (Pendientes/Aprobaciones/Tareas/Menciones tabs, go/resolve/dismiss); the
+bell now shows the pending-action count (magenta) + links to the full inbox. pgTAP UC11 added.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+03b8e17a74dee703be45b4d64adfc4c8637c516a
+Newman Droplet
+Thu Jul 9 06:42:29 2026 +0000
+feat(crm): full deal-detail page + ToDo subtasks + sidebar logo alignment
+- Open full detail: /deals/[id] rebuilt into a real full page (client summary/description,
+  status note, owner/origin/close-date, metrics, AI copilot + engagement + activity panels,
+  line-item financial model); drawer link closes the drawer and is styled as a clear action.
+- ToDos subtasks: crm.todo_subtask + RPCs (get/add/toggle/delete), a checklist section in
+  the todo drawer with a progress bar, and a done/total badge on each board card.
+- Sidebar: realign the Newman logo's left edge to the nav column (px-4→px-5, centered).
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+b5240788bc6f80b4579f97598197c65765d754d6
+Newman Droplet
+Thu Jul 9 06:34:46 2026 +0000
+crm(auth): admin-provisioned login gate + link-only provisioning (enables magic link)
+Access to the portal now requires being an active crm.app_user (admin-onboarded).
+- crm_login_allowed(email): anon-callable gate the login page checks before
+  issuing the SSO cookie and before sending a magic link — same rule for Google
+  and email OTP, so onboarded salespeople (any email) get in and strangers don't.
+- _provision_app_user + crm_web_ensure_app_user are now LINK-ONLY: first sign-in
+  links an existing app_user by email; nobody self-onboards. A stray magic-link
+  auth row has no app_user, so RLS shows nothing.
+
+login.newman.re: re-adds magic-link (email) sign-in beside Google; gate switched
+from a hardcoded domain/allow-list to crm_login_allowed (deployed to /opt).
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+3e0b5a59d4964b60535eb831147ac92e920e604e
+Jesus Lopez Palacios
+Thu Jul 9 07:04:04 2026 +0200
+cfe-collector: emit importes with canonical snake_case keys (design-engine contract)
+Contract mismatch found tracing the GDMTH pricing path: enrich stored the MEM
+breakdown under Spanish descriptive keys ("Generación base", "Capacidad",
+"Transmisión base"), but design-engine/main.py reads importes.get("gen_base") /
+"gen_inter" / "gen_punta" / "capacidad" and the flat adders
+("suministro","distribucion","transmision","cenace","scnmem") -- the SAME canonical
+contract intake-worker already emits. So importes.get("gen_base") was always None:
+the engine's bucketed per-period price path (gen_base+gen_inter+gen_punta > 0) never
+fired and it fell back to a single BLENDED price on every GDMTH bill, discarding the
+punta/intermedia/base differentiation that the TOU sizing depends on.
+
+enrich.py:
+- _MEM_BASE now maps to canonical snake_case (ES->suministro, ED->distribucion,
+  ET->transmision, EC->cenace, EG->gen, EM->scnmem, EI->capacidad).
+- period suffix kept ONLY for generation (gen_base/gen_inter/gen_punta -- the priced-
+  per-period charge); every other bucket collapses to its bare key so it sums into
+  the engine's flat adder instead of a suffixed variant it never reads.
+- _mem_importes SUMS on key collision (was renaming to "label (n)"); total unchanged
+  so the mem_sum reconcile witness is unaffected -- verified mem_ok still True.
+
+Verified on real GDMTH DM-000045421125.xml: importes keys =
+{capacidad, cenace, distribucion, gen_base, gen_inter, gen_punta, scnmem,
+suministro, transmision}; gen_base/inter/punta = 13674 / 38604 / 5436.
+
+No internal dependency on the Spanish keys (reconcile only SUMS importes values); no
+report reads cfe-collector importes. Existing rows backfill on re-harvest.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+9bb9615e045fcdcf6f360c47a3568a8bf18ea8a8
+Jesus Lopez Palacios
+Thu Jul 9 06:28:44 2026 +0200
+cfe-collector: extract TOU base/intermedia/punta split (was zeroing all BESS sizing)
+Warehouse audit: 482 of 581 stored bills are GDMTH (time-of-use / horaria), yet
+kwh_inter, kwh_punta, kw_punta were NULL on 100% of them -- kwh_base held the TOTAL
+(CONSUMO_R). design-engine/sizing.py sizes BESS from kwh_punta
+(desc = min(bess_kwh*DOD, m.kwh_punta)) and PV self-consumption from kwh_inter, so
+with those NULL/0 the engine sized ZERO BESS on every GDMTH site -- the entire
+punta-shaving value prop was silently disabled.
+
+The CFE horaria addenda carries the split: CONSUMO1F/2F/3F and DEMANDA1P/2P/3P, with
+CFE period 1=Punta, 2=Intermedia, 3=Base (verified on real BG-000027808909.xml:
+punta 6132 + inter 64288 + base 26894 = 97314 = CONSUMO_R; punta is smallest as the
+peak window is fewest hours).
+
+enrich.py: parse_cfdi maps CONSUMO1F/2F/3F -> kwh_punta/inter/base and
+DEMANDA1P/2P/3P -> kw_punta/inter/base, but ONLY when the three periods RECONCILE to
+CONSUMO_R (else a non-horaria/unknown layout keeps the total in kwh_base, inter/punta
+NULL -- correct for GDBT/PDBT/GDMTO). kwh_period stays the TOTAL for blended_rate.
+build_payload emits all six columns (upsert_bill already reads them; no migration).
+
+Verified: GDMTH -> split reconciles to total; GDBT -> total in base, inter/punta NULL.
+Existing GDMTH rows backfill on re-harvest.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+254eec80274744bd6a1844105372335663edf65d
+Jesus Lopez Palacios
+Thu Jul 9 05:51:29 2026 +0200
+cfe-collector: populate cp / division_code / demanda_contratada / fp (were 100% NULL)
+Warehouse quality audit (569 stored bills, quarantine flood now zero after the
+period fix): four bill columns were NULL on EVERY row -- not because the data was
+absent but because build_payload never emitted the keys, though upsert_bill already
+reads them from the payload jsonb and the CFE addenda carries them on every GDMT
+recibo:
+  FIS_CP           -> cp                 (service postal code; feeds Google Solar)
+  DIVISION         -> division_code      ("DP"; tariff/region context)
+  CARGA_CONTRATADA -> demanda_contratada (contracted kW; demand-charge/BESS lever)
+  FACPOTR01        -> fp                 (current-period power factor; CFE penalty <90%)
+
+enrich.py: parse_cfdi now reads all four; _fp_fraction normalizes the percent
+FACPOTR01 (99.99) to the 0-1 physics convention (0.9999) and rejects 0 / >100 garbage;
+build_payload emits the four keys. Verified on the real PH-000122444026.xml ->
+cp=05348 division=DP demanda_contratada=162 fp=0.9999.
+
+Existing rows backfill on their next re-harvest (upsert overwrites on rpu+period).
+No migration -- the columns and RPC already existed.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+6764997eb1d2452742196060772d5e60357d55af
+Jesus Lopez Palacios
+Thu Jul 9 05:15:07 2026 +0200
+cfe-collector: near-cap Consulta-only with enough months fires design (stop 13h starvation)
+Live audit (cfe_health + collection_request): multiple RPUs sharing name_hint
+"FIDEICOMISO F/1596" (a multi-site client) were starving 13h+, attempt_count 7,
+detail "account near permaban cap; stored 6 (Consulta-only)". Root cause: the
+near_cap branch ALWAYS mark_collection_backoff'd and returned, regardless of months
+stored -- but a near-cap account can NEVER register (its service-grid census is
+WAF-unreadable -> fail-closed), so the Consulta window (~6 months) is the CEILING.
+With MIN_MONTHS_FOR_DESIGN=6 these had EXACTLY enough to size, yet backed off forever
+while the worker re-cycled the same CR (new->processing->backoff->new).
+
+Fix (main.py): near_cap now fires design (mark_done_and_request_design, "Consulta-only,
+depth unimprovable") when stored >= MIN_MONTHS_FOR_DESIGN and MEM is complete --
+Consulta depth is the best achievable, so size with it instead of thrashing. Only
+backs off (still caps at 8 -> partial_final) when below the floor. mem_incomplete /
+mem_gate_fail are now computed BEFORE the near_cap branch so it can gate on them.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+ccb048422c98682e68bae50170fb6cf37de31ecc
+Jesus Lopez Palacios
+Thu Jul 9 04:41:15 2026 +0200
+cfe-collector: page invalid-RPU terminals for human verify (don't silently drop leads)
+Follow-up to the invalid-RPU terminal fix. The 5 RPUs CFE reported as "no se
+encuentra disponible" are all source=bulk_pdf, files=0 -- their RPU+name came from
+pdftotext extraction of a bulk statement (NO. DE SERVICIO regex), and they're
+high-value leads (GRUPO YAZAKI, ARNECOM, YAZAKI SERVICE). "no se encuentra
+disponible" can be a mis-extracted/mis-split RPU OR a titular that doesn't match the
+registered name -- so terminal-failing (correct: stops the 8x retry burn) must NOT
+be silent.
+
+main.py: the invalid_rpu branch now records the name tried in the detail and fires
+an out-of-band alert (rpu + name + source) so a human can verify the numero de
+servicio + titular before the lead is dropped. (Confirmed the bulk-PDF parser only
+extracts (rpu, nombre) as an index -- the CFE harvest is genuinely needed for the
+history, so this is discovery-quality, not a wasted harvest.)
+
+Verified in production this tick: the prior FECHASTA-period fix recovered
+016981200989 (FIDEICOMISO F/1596) -- 6 bills 2026-01..06 stored, all CFDI-balanced,
+that were quarantined 'period/uuid missing' before.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+c9f71bfcbdd1923e41bbfcca6ef0d385d58d321d
+Jesus Lopez Palacios
+Thu Jul 9 04:06:53 2026 +0200
+cfe-collector: treat CFE 'numero no se encuentra disponible' as terminal invalid-RPU
+Log audit (mini worker): RPUs ARNECOM/GRUPO YAZAKI/415xxx fail Consulta on all 4
+attempts with CFE's on-page "El numero de servicio no se encuentra disponible, favor
+de verificar" -- a DEFINITIVE invalid/disconnected RPU (mis-OCR'd digit or dead
+service), not a WAF/name/timeout problem. The harvested-0 path mislabeled it
+"WAF/timeout/block -> retry" and re-drove up to 8x, burning runs on the shared
+permaban-limited account for an RPU that can never return bills.
+
+harvest.js
+- the consulta retry loop detects "no se encuentra disponible" (also "no existe" /
+  "servicio no valido"), stops retrying immediately, and returns a clean terminal
+  summary {invalidRpu:true, complete:true, partial:false} via emitSummary (stdout,
+  exit 0) -- NOT an exception (which exits 1 -> retryable). Name/WAF failures give
+  other messages and still retry. Skips MiEspacio registration entirely (no account
+  touch on a dead RPU).
+
+main.py
+- stats["invalid_rpu"] from summary.invalidRpu; the stored-0 branch fails it
+  terminally ("invalid RPU: CFE reports numero de servicio no disponible") BEFORE
+  the genuinely-empty / backoff logic, so it never retries.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+fac3ee76ecfd2df00f8e52ffb3159e9d68efc57d
+Jesus Lopez Palacios
+Thu Jul 9 03:31:21 2026 +0200
+cfe-collector: fall back to FECHASTA for period when OCR_AAAAMM is absent
+Data-grounded (live mini samples + quarantine audit): 60+ recibos were quarantined
+'not_cfdi / period/uuid missing (doc_kind=cfdi)' -- i.e. COMPLETE, valid CFDI 4.0
+bills (uuid, kWh, subtotal, TipoDeComprobante=I all parsed) that were dropped only
+because period came back None. Root cause: period_yyyymm was derived SOLELY from the
+OCR_AAAAMM attribute, but CFE addenda variants on invoice series AG-/AE-/PH-/DL-/NA-
+omit OCR_AAAAMM entirely (they still carry FECDESDE/FECHASTA). LA- series has it, so
+the gap was invisible until these accounts showed up.
+
+Fix (enrich.py): when OCR_AAAAMM is absent, derive the period month from FECHASTA
+(the billing-period END), which equals OCR_AAAAMM on every bill that carries both
+(verified on a real LA- bill: FECHASTA '18 JUN 26' == OCR_AAAAMM 202606). FECDESDE
+is the prior month and is never used for the period. OCR_AAAAMM stays authoritative
+when present (regression-guarded). Verified on the real PH-000122444026.xml:
+period None -> 2026-06-01.
+
+test_enrich.py: two tests -- FECHASTA fallback yields the JUN (not MAY) month;
+OCR_AAAAMM still wins when both are present.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+85ded137ec9232157dffadaea483a98d69e2b34e
+Jesus Lopez Palacios
+Thu Jul 9 02:55:37 2026 +0200
+cfe-collector: stop silently losing 'stored 0' clients + stop reclaim thrashing the shared account
+Data-grounded (collection_request audit): two loss/abuse bugs.
+
+1. 9 RPUs stuck 'failed' with "harvested 0, stored 0" at attempt_count=0 -- terminal
+   on the FIRST try, never retried. A single transient WAF/IP block or a mid-harvest
+   crash PERMANENTLY lost the client. main.py: the stored-0 branch now only marks
+   terminal 'failed' when the run was CLEAN, complete, non-partial, not near-cap and
+   genuinely harvested nothing (a real empty history); every transient empty routes
+   through the capped mark_collection_backoff (-> partial_final after 8 tries) so the
+   bills that DO exist get another chance. Uses the stats flags collect_one already
+   set (retryable_partial / partial / near_cap), which fold in rc!=0, summary.partial
+   and nearCapAbort.
+
+2. RPUs stuck 'processing' with attempt_count 4..8, endlessly "reclaimed: stale
+   processing". claim_collection_requests reset stale-processing rows to 'new' with
+   NO attempt cap and NO next_eligible_at -> re-claimed every 5-min tick, thrashing
+   the permaban-limited shared CFE account with nothing to stop it. db/migrations/013
+   (applied via MCP): the reclaim now caps at 8 attempts (-> terminal partial_final)
+   and applies the same exponential backoff as mark_collection_backoff.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+563d57d0d5e9a087c2988bab89c634075bc15809
+Newman Droplet
+Thu Jul 9 00:50:56 2026 +0000
+test(crm): satisfy sanctions_entry NOT NULL (alt_name) in UC10 fixture
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+06ad06dd310d8cde07dc476f4bec1133b54e154e
+Newman Droplet
+Thu Jul 9 00:47:07 2026 +0000
+test(crm): fix UC10 sanctions_entry insert (id is bigint serial, not uuid)
+24/25 assertions passed on the first green build; the last failed only because the synthetic
+sanctions row supplied a uuid for the bigint serial id. Let the id default.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+1b9acdbaded921bf10d1f116a0bb0a2a7c1e219d
+Newman Droplet
+Thu Jul 9 00:43:22 2026 +0000
+test(crm): fix latent syntax error in crm_project get_deal_project
+The original 20260708270000 body had an extra close-paren; superseded on prod by the it-17
+EVM version (create or replace) so functionally harmless, but Postgres rejects it on a cold
+apply, blocking supabase test db. Corrected to valid SQL.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+95cf78cf5f3207fc4b0d6ed72a23e9481daece1f
+Newman Droplet
+Thu Jul 9 00:37:56 2026 +0000
+test(crm): capture 'compliance' user_role enum value as a migration
+240000_crm_rbac + ~20 later files use the 'compliance' role, but its enum value was added
+to prod by an out-of-band autocommit statement never recorded as a migration (per 240000's
+own note). A cold `supabase test db` build failed on it. Adds a standalone, idempotent
+ALTER TYPE ADD VALUE IF NOT EXISTS just before 240000; no-op on prod. Also drops the
+premature is_approver from the early role-helpers file (it used 'compliance' too early).
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+8ef413fe99960fc6f88535f1d5515b207b9c28b0
+Newman Droplet
+Thu Jul 9 00:33:40 2026 +0000
+test(crm): define role helpers early to fix cold-build migration order
+crm.my_role() was referenced by the ownership-RLS migration (232625) before its original
+definition in 240000_crm_rbac; per-file MCP apply hid it on prod but a strict-order cold
+rebuild fails. Defines my_role()/is_approver() right after app_user exists, identical body;
+240000 still create-or-replaces them verbatim (zero drift).
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+871857360e80724092ff407e57f01cf4bd7a0ae2
+Newman Droplet
+Thu Jul 9 00:28:59 2026 +0000
+test(crm): de-duplicate migration version prefixes for supabase test db
+Five migration pairs shared a timestamp prefix (crm vs huddle/todos work committed the
+same second). Supabase keys schema_migrations on the version, so the second of each pair
+collided on a from-scratch apply. Bumped each sibling by one second; no content change,
+prod (applied per-file via MCP) is unaffected.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+46b71c0e5d4143d732cfe70dbbc807087bdb6698
+Newman Droplet
+Thu Jul 9 00:25:26 2026 +0000
+test(crm): add external-boundary stubs so DB tests build from scratch
+The CRM soft-links to the CFE-backend 'client' schema + CFE public views (client.rpu,
+client.bill, public.rpu_coverage), deployed as an independent sibling subsystem outside
+supabase/migrations. Adds an idempotent, IF-NOT-EXISTS bootstrap (sorts first) providing
+just the referenced columns so `supabase test db` can rebuild the schema on a fresh DB;
+a genuine no-op on the hosted project where the real objects exist.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+3de78dd445e65ea53f7a2151b5be88ef04c61458
+Jesus Lopez Palacios
+Thu Jul 9 02:20:17 2026 +0200
+cfe-collector: distinguish bad-download (WAF/HTML/empty) from parser-gap quarantine
+Data-grounded (bucket + warehouse audit): 165 quarantines were reason=not_cfdi
+"period/uuid missing" -- ALL from consulta DescargaXMLFactura downloads, and a
+whole RPU's worth failed at once (AG-/AE-/PH- invoice series). That signature is
+a bad DOWNLOAD (Incapsula challenge shell / CFE "no disponible" page / truncated
+drain), not a parser gap -- yet it was terminally dropped, silently losing real
+months.
+
+enrich.py
+- parse_cfdi now tags doc_kind = cfdi|html|empty|nonxml via _classify_doc. HTML is
+  checked BEFORE trusting the XML tree, because a WAF challenge is well-formed HTML
+  that ElementTree happily parses (would otherwise mislabel as 'cfdi'); a real CFDI
+  is only trusted with a cfdi:Comprobante present.
+- the period/uuid-missing branch splits on doc_kind: html/empty -> reason
+  'bad_download' (RETRYABLE, re-fetch next run) with its own stats["bad_download"];
+  genuine xml missing period/uuid -> still terminal not_cfdi (real parser gap),
+  now annotated with doc_kind for diagnosis.
+
+main.py
+- bad_download excluded from the high_fail parser-regression ratio denominator,
+  drives partial + retryable_partial (month didn't land -> re-drive), and pages
+  separately at >=5 ("consulta XML download failing? WAF?").
+
+db/migrations/012 (applied via MCP too)
+- cfe_deadletter_watchdog: the 24h quarantine SPIKE "parser regression?" alert now
+  EXCLUDES bad_download; bad_download gets its own >=30 WAF-signal alert.
+
+test_enrich.py
+- test_doc_kind_classifies_download_type: WAF HTML shell -> 'html' (not 'cfdi'),
+  empty/nonxml/real-CFDI classified correctly.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+4451980fa455df17d59650566d125a8fed8f5cfe
+Newman Droplet
+Thu Jul 9 00:20:03 2026 +0000
+test(crm): pgTAP DB regression suite + synthetic use cases + CI job
+Adds supabase/tests/newman_crm_test.sql — 10 synthetic use cases (25 assertions) covering
+the regulated core end-to-end: RBAC deny-by-default, audited pipeline transitions, the IFRS9
+_npv discounting primitive, problem-loan forbearance (mod loss + probation), the SPPLD aviso
+XML artifact (well-formedness + UIF namespace), AI-draft governance (draft never auto-sends),
+the AML capacitacion RPC gate, the examination pack, security posture (RLS/SECURITY DEFINER/
+deny-anon), and pg_trgm list-screening. Every fixture is shaped like real Newman data (MXN,
+CFE solar deals, RFCs, UMA multiples, SPPLD XML) and each test file runs in a rolled-back tx.
+
+supabase/config.toml + .github/workflows/db-tests.yml run the suite on a faithful local stack
+(same Postgres image, all migrations applied, pgTAP bundled) on every push/PR touching the DB.
+Assertions were each validated against real prod behavior before locking.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+5a465d66f1f26120ae05cc92e6f23bf00df42e4e
+Jesus Lopez Palacios
+Thu Jul 9 02:12:37 2026 +0200
+cfe-collector: period_days grounding, TZ stealth, store-vs-parse split, grid drift, media 4xx dead-letter
+Round-24 committee findings + continuous backlog:
+
+enrich.py
+- period_days parsed from real FECDESDE/FECHASTA (validated 10..80d) and used
+  for the load-factor billing window (tight 0.03..1.15 band; 720h/2.4 fallback).
+- seen_uuids.add moved to AFTER a successful store (#6): every recibo is
+  downloaded twice per run (Consulta latest + OtrasFacturas); marking a UUID
+  seen pre-store dropped an INTACT sibling when the first copy was truncated.
+- store failures split into stats["store_failed"] (#7): a warehouse RPC error /
+  timbre-guard reject is INFRA, not extraction quality, so it no longer inflates
+  the high_fail parser-regression ratio.
+
+main.py
+- store_failed drives its own partial + re-drive + distinct infra page (>=5),
+  worded "warehouse store failing" not "parser regression".
+
+harvest.js
+- gridState distinguishes a WAF challenge shell (rendered:false, retry/LEAK)
+  from an authed page whose grid CONTROL id is gone (drift:true -> SELECTOR_DRIFT
+  thrown in eliminar) so a CFE markup rename fails loud instead of looping the WAF
+  and burning the eliminar grace on the cap-limited shared account (#4).
+
+cfe.js
+- Intl/Date timezone spoof (America/Mexico_City, offset 360) in the stealth
+  evaluateOnNewDocument to match the es-MX locale/UA fingerprint.
+
+whatsapp-intake/index.ts
+- media fetch 4xx (expired/purged Twilio URL) is now TERMINAL: mark_media_done +
+  count unidentified instead of okOr-throwing -> 500 -> infinite redelivery of a
+  dead URL (#5). 5xx/timeout stay transient and still redeliver.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+24dbda4b4809fa0a0b9c4b3d50e5f0f3a34e6c71
+Newman Droplet
+Thu Jul 9 00:12:36 2026 +0000
+feat(crm): AML program-governance / three-lines-of-defense + training-gated clearance
+it-47: versioned AML manual (four-eyes approve), control-to-clause matrix (8 seeded
+controls tagged by line of defense), Art.20 designations (representante/oficial/CCC),
+capacitación w/ an RPC-LAYER GATE (crm.require_training), independent-audit sampling
+(3rd-line, training-gated), and crm_web_examination_pack (one-click examiner bundle).
+Programa PLD console page. Hardening (committee it-46 finding): wired require_training
+into crm_web_request_clearance — untrained officer is now blocked on the KYB clearance
+decision itself, not just audit — and seeded current training for active staff.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+673033a9ad37c7b855d3081282086576d0b5cfd7
+Newman Droplet
+Thu Jul 9 00:03:51 2026 +0000
+crm(whatsapp): conversational lead enrichment — ask name+email, parse reply via OpenRouter
+When an inbound WhatsApp lead has no email on file, the intake now replies asking
+for their full name and email (Spanish), marks the contact enrich_pending, and on
+their next reply parses the free text with OpenRouter to fill name/email/company.
+TwiML now supports sending a <Message> reply directly (no extra Twilio REST call).
+
+DB: crm.contact.enrich_pending/enrich_asked_at + crm_wa_enrich_status / _ask /
+_apply RPCs (service_role). Edge function whatsapp-intake redeployed.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+ff6d81d997b7be7d4a662c19520f145e5f5aee00
+Newman Droplet
+Thu Jul 9 00:02:25 2026 +0000
+feat(crm): embedded AI copilot — grounded RAG + governed human-approved drafts
+it-46: crm.ai_prompt_log (immutable audit of every model call w/ grounding hash),
+crm.ai_draft (draft→approved→discarded, NEVER auto-sent), crm_web_ai_context
+(role-enforced, allowlisted RAG assembler — no PII to the LLM), ai-copilot edge fn
+(OpenRouter, RBAC via caller JWT, Spanish grounded prompt, deliberately no text-to-SQL).
+DealCopilot drawer panel: summarize / next-best-action / draft-follow-up / ask, plus a
+draft inbox with human Aprobar/Descartar. Server actions + wiring.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+447e9c202b73895a845c53fa263b82bd71df57c4
+Jesus Lopez Palacios
+Thu Jul 9 01:56:15 2026 +0200
+harden extraction (committee round 23: 71, mean 81.5, top lens 88 -> close highs)
+Highs (no critical this round):
+- #1 hard wall-clock bound on the post-harvest Python stage (SIGALRM,
+  POST_HARVEST_BUDGET=900s): a degraded warehouse multiplied 60s x retries x N
+  files into tens of minutes, and run-collector-mini.sh pgrep-skips every 5-min
+  tick while a prior drain is alive -> ONE hung drain wedged the WHOLE collector
+  until a human killed it. A timeout now exits the tick cleanly (partial, not
+  failed -- bills likely stored, Drive/register timed out).
+- #2 (my round-21 merge regression) Consulta window's client-facing PDFs now
+  reach Drive: _accepted_basenames pairs siblings by the shared CD token too, not
+  only (page,row) -- the merged 'consulta__..' names could miss the (page,row)
+  key, silently never uploading the newest ~8 recibo PDFs (XML/warehouse were
+  complete, so no gate flagged it).
+- #3 design DECOUPLED from the Drive/register side-channel: a Drive OAuth/quota/TLS
+  outage no longer backs off + terminal-fails a request whose bills actually
+  stored. Design fires on stored history; the pending client recibo copy is paged
+  + files kept, never blocking the core deliverable.
+- #4 viewport/screen fingerprint: defaultViewport ~1280x800 (jittered) +
+  screen.*/window.outer*/devicePixelRatio spoof, replacing the headless 800x600 /
+  outer==0 tell emitted on the first Consulta navigation.
+- #7 _renew now CHECKS its return: a lost lease (another host took it) fires a
+  PERMABAN-RISK out-of-band alert instead of silently proceeding.
+- #8 gap detection uses the DOMINANT cadence: a diff of 2 in a monthly-dominant
+  series is now a real skipped-month hole (the flat 'any 1-or-2 is fine' rule
+  missed it) while true bimonthly cadence is still tolerated.
+
+Deferred: account/IP pool + block-cooldown failover (#5), atomic claim_message
+verification (#6), TZ spoof, side-effects retry queue.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+e1b752ef6f689328c8bd2effbc8ce4adf3794012
+Newman Droplet
+Wed Jul 8 23:52:23 2026 +0000
+feat(crm): problem-loan workout lifecycle — IFRS9 forbearance/modification + recovery + realized-LGD calibration
+it-45: crm.workout_case watchlist→forbearance→recovery→cured/written_off; IFRS9 5.4.3
+modification engine (re-discount modified schedule at original EIR → mod gain/loss + 10%
+derecognition test), performing/non-performing forbearance tagging, 12mo cure/probation
+clock (Stage3→2 nightly cron), recovery ledger back-calibrating realized LGD to the it-21
+model. Server actions + compact DealWorkout panel in the deal drawer.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+642778e7e4e2ed2b999e9a46b561860f2caff4d5
+Newman Droplet
+Wed Jul 8 23:49:06 2026 +0000
+crm: repo migrations for user roles/ownership RLS, admin user mgmt, whatsapp owner-by-line
+Backfill the three CRM migrations applied to prod via MCP so the repo history
+matches the database:
+- app_user.phone + contact.owner_id, crm.my_app_user_id()/is_admin() helpers,
+  team seed from Monday, owner on crm_contacts, owner-aware upsert, and
+  admin-all / member-own RLS on contact + deal.
+- crm_users / crm_users_all views + admin-only crm_web_upsert_user RPC.
+- crm.app_user_by_phone() + WhatsApp lead intake assigns the owner from the
+  receiving Twilio line (last-10-digit match).
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+6874d485ea69feec9b438695ea543d70ec520473
+Newman Droplet
+Wed Jul 8 23:42:57 2026 +0000
+feat(crm): sales quota/target + attainment-pacing layer
+Lifts the weakest pillar (crm) — a quota object reconciled live against the it-30 forecast:
+- crm.sales_target (per rep/team/period, weighted-VPN + count, versioned, four-eyes approve, one live
+  target per rep/period).
+- crm_web_attainment: closed-won vs committed vs weighted-pipeline vs target with pace-vs-time-elapsed
+  (pace_delta, projected attainment, coverage = (closed+commit)/target), all from it-30 data.
+- crm_web_leaderboard: per-rep attainment ranking for the period.
+- UI: Mi-Día gap-to-goal + pace banner (marker at expected pace); Ventas sales ranking card.
+
+Verified on prod: target 50M, upsert draft → self-approve blocked (four-eyes) → distinct approver
+approves; attainment computes pace_delta -3.85M at 8% quarter-elapsed; leaderboard ranks reps.
+
+(Includes an in-progress sidebar import tweak from the working tree; builds clean.)
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+e69ab7d69138e0eb56b37610e05ad73a8c9afe4d
+Jesus Lopez Palacios
+Thu Jul 9 01:40:22 2026 +0200
+harden extraction (committee round 22: 75, mean 82.25 -> close critical + highs)
+CRITICAL:
+- #1 lease can no longer expire under slow post-harvest work: collect_one takes a
+  `renew` callback (try_cfe_lock same-holder extend), fired RIGHT AFTER the harvest
+  subprocess (the only account-mutating phase) AND again before the Drive upload,
+  so the unbounded enrich/register/Drive window starts with a fresh full TTL.
+  Drive is additionally bounded by a 90s socket default-timeout -- a hung TLS
+  socket can't outlive the lease and admit a second concurrent harvester.
+
+Highs:
+- #3 disjoint kWh witness (ADVISORY): the taxable-energy/kWh rate (energia_concepto
+  is a different XML node than CONSUMO_R) is logged + counted (kwh_suspect) when
+  wildly out of band, so a silent 2x kWh error is visible instead of invisibly
+  corrupting PPA/BESS sizing. Advisory, not a hard gate (MT months run high
+  pesos/kWh from demand charges).
+- #6 MT demand-only zero month stored as valid history: a GDMTO/GDMTH/DIST/DIT
+  tariff billing its fixed demand charge (kw_max present) with zero energy is a
+  legitimate holiday/seasonal shape -- was quarantined by the flat 50-peso floor ->
+  interior gap -> perpetual backoff for that MT client class.
+- #4 (partial) service-row RPU match is now digit-boundary anchored (a bare
+  includes false-positived on a longer contract/medidor number -> wrong-service
+  delete or false LEAK verdict).
+- #8 edge: a mark_media_done throw AFTER request_collection committed no longer
+  double-dead-letters (re-OCR + duplicate enqueue) -- a `committed` flag routes it
+  to a mark retry / clean 500 instead.
+
+Deferred: #1-alt (move Drive/register out of the lock), #2 side-effects-only
+skip-harvest retry state, #4-full ddlServicios service-select, #5 TZ spoof +
+proxy pool, #7 period_days capture.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+7ec68de3374d0c7ae9588087b46c1da977f63e18
+Newman Droplet
+Wed Jul 8 23:33:36 2026 +0000
+feat(crm): post-COD performance-guarantee reconciliation + DLP clock
+Closes the COD→operations lifecycle gap — the designed follow-through on the it-42 frozen P50 baseline.
+An asset generation shortfall is now simultaneously an EPC warranty liability AND loan impairment:
+- crm.generation_baseline (seeded from the finance P50, degradation-adjusted) + crm.generation_actual
+  (metered / CFE-bill, four-eyes verify, idempotent).
+- crm_web_get/ingest + crm._performance: performance ratio + cumulative kWh shortfall vs the
+  degradation-adjusted baseline over observed months.
+- crm_web_assert_backcharge: shortfall × frozen GDMTH tariff → a warranty back-charge netted against
+  the it-24 withheld retention (negative release).
+- crm_web_feed_generation_reforecast: scales the it-42 frozen CFADS by the realized PR into a reforecast
+  → recomputes LLCR/PLCR → fires a LEADING Stage 1→2 SICR (a generation shortfall impairs the loan
+  before any missed payment).
+- crm.dlp_clock + crm.dlp_defect: crm_web_release_final_retention HARD-GATES final retention on DLP
+  expiry + all defects closed. DealPerformance panel (PR/shortfall/retention tiles + actions).
+
+Verified on prod: 2 months at ~70% of P50 → PR 0.696, shortfall 50,667 kWh → back-charge nets
+retention; feed reforecast → LLCR 0.79 default → deal auto Stage 2; final retention release blocked
+(DLP not expired).
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+c6173ab03a26b3b87ce22533656be7a4e1e6f885
+Jesus Lopez Palacios
+Thu Jul 9 01:27:06 2026 +0200
+harden extraction (committee round 21: 72, mean 81 -> close critical + highs)
+CRITICAL:
+- #1 fetchDrain in-page POST now has AbortSignal.timeout(15000): Imperva tarpits
+  sockets, and without this a hung fetch stalled the Promise.all -> the
+  page.evaluate chunk -> puppeteer's ~180s protocol timeout, blowing HARVEST_TIMEOUT
+  into a SIGKILL BEFORE eliminar -> a leaked service toward the permaban. This was
+  the one fetch missing the AbortSignal discipline every other call has.
+
+Highs:
+- #2 Consulta + OtrasFacturas no longer share OUT: the Consulta ~6-8 recibo window
+  drains to the reserved LATEST_DIR, so the --months early-stop count and the
+  collisionLoss detector (both read OUT) see ONLY the deep MiEspacio drain -- the
+  deep drain no longer stops ~8 recibos short while reporting complete. LATEST_DIR
+  is merged into OUT in the finally so enrich still sees both.
+- #3 initial lock acquired with the PER-REQUEST TTL (renewal keeps it alive across
+  the batch), not a batch-sized ~32-min TTL that, if never released (kill -9 before
+  the first renewal), held the shared account for half an hour = a silent outage.
+- #4 edge dead-letter re-puts the bytes to the exact path BEFORE enqueue_ocr_retry
+  (a storagePut-throws otherwise committed an ocr_retry row for an object never
+  written -> the bg worker 404s -> marks a recoverable bill terminally illegible).
+- #7 (3 lenses) high_fail out-of-band PAGE now requires attempted>=5: one bad month
+  in a 2-3 recibo window was firing a permaban-grade page, desensitizing the
+  emergency channel. Still marks partial below the floor; the pg_cron throughput
+  watchdog catches the cross-RPU aggregate.
+- #8 Consulta latest-recibo sort: if the top recibo's period is 0 (all OCR_AAAAMM
+  failed to parse) THROW SELECTOR_DRIFT instead of registering off a stale total.
+- #6 (partial) native-toString mask on the patched stealth fns (getParameter /
+  permissions.query) -- a '[native code]' tell Imperva checks.
+
+Deferred: #5 residential-proxy pool + persistent block-cooldown, full #6 stealth
+(puppeteer-extra), account pool.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+1a05f9834f9be557524ccb2bc658bad96ed2690d
+Newman Droplet
+Wed Jul 8 23:23:11 2026 +0000
+feat(crm): banking-case freeze + LLCR/PLCR forward-coverage; move nav to a left sidebar
+it-42 (committee, cross-domain keystone): freeze the as-underwritten cash-flow model at financial
+close and monitor forward life-coverage — converting credit monitoring from lagging (period DSCR) to
+leading (LLCR/PLCR erode before a DSCR miss or DPD):
+- crm.facility_base_case: immutable frozen banking case (per-period CFADS/debt-service, DSRA target,
+  discount rate, loan/project life), gated on an approved it-27 credit sanction, four-eyes, integrity hash.
+- crm.reforecast (revised operating CFADS, four-eyes) + crm.coverage_ratio + seeded crm.coverage_covenant
+  (LLCR<1.10 lock-up / <1.05 cash-sweep / <1.00 default; PLCR<1.05 lock-up).
+- finance.ts persists the annual CFADS series; crm._npv + crm_web_compute_coverage compute LLCR = NPV
+  (remaining loan-life CFADS)/net-debt and PLCR over project life, test covenants, and fire a LEADING
+  Stage 1->2 SICR + notify on breach (zero arrears). Nightly recompute cron. DealCoverage panel + freeze.
+  Also the frozen baseline the EPC performance-guarantee reconciliation will reconcile against.
+- Verified on prod: freeze (20yr CFADS) -> LLCR 1.14/PLCR 2.56 ok; P90-shortfall reforecast -> LLCR 0.44
+  status default -> deal auto-migrated to Stage 2 with no arrears.
+
+UX (user request): the top nav had grown to ~17 items and overflowed. Replaced it with a left sidebar
+(grouped CRM / Ventas / Riesgo&Cumplimiento, active-route highlight, icons), collapsing to a hamburger
+drawer on mobile; main content offset md:ml-56. Notification bell + Sign out in the sidebar footer.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+5314814063341834fdfd80ffdeda3706b5895da9
+Jesus Lopez Palacios
+Thu Jul 9 01:12:42 2026 +0200
+harden extraction (committee round 20: 77, mean 82.5 -> close critical + highs)
+CRITICAL:
+- #1 CFE lease RENEWAL: _drain_locked re-calls try_cfe_lock (same holder extends
+  expires_at) before EACH request; on a lost lease it ABORTS rather than mutate the
+  shared account without the lock. Per-request TTL so a hung warehouse/Drive on one
+  request can't silently expire the lease and admit a concurrent holder.
+
+Highs:
+- #3 (3 lenses) contiguity is now PER-ADJACENT-PAIR: any consecutive 1- or 2-month
+  gap is contiguous (CFE bills monthly OR bimonthly and switches cadence mid-
+  history); only a jump >2 is a real interior hole. The single global modal step
+  forced a false gap on bimonthly/mixed histories -> perpetual backoff.
+- #4 fatal handlers DISARM after complete=true: a benign post-teardown puppeteer
+  rejection ("Target closed") no longer flips a completed run's exit code to 1
+  (which made main.py mark a fully-stored history PARTIAL and re-harvest the acct).
+- #5 high_fail now fires _out_of_band_alert + a pg_cron cfe_throughput_watchdog
+  (0 bills stored/24h with pending work = OUTAGE; >=15 quarantined/1h = parser
+  regression) so a CFDI-layout break pages within a cycle instead of silently
+  dropping collection to zero.
+- #7 a GENUINE near-zero-consumption month (subtotal<50) is stored as valid history
+  instead of hard-quarantined on kwh/kw_max<=0 -> no false interior gap / backoff.
+
+Mediums:
+- #9 design+done is now ONE atomic RPC (mark_done_and_request_design) -- a crash
+  between the two no longer leaves the request 'processing' -> reclaimed -> a
+  redundant harvest of the permaban-sensitive account.
+- #11 _out_of_band_alert retries 3x with backoff AND always appends a durable local
+  marker (dl/_alerts.log) -- a page for an irreversible event isn't fire-and-forget.
+
+Migrations: cfe_throughput_watchdog, mark_done_and_request_design.
+Deferred: #2 media-URL-expiry dead-letter, #6 adeudo-aware totals, #8 text-name
+merge, #10 edge PDF cap, #12 pdf name column geometry.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+1c5c3aa9561bca0fe1958960cffe27b128618ebd
+Newman Droplet
+Wed Jul 8 23:10:31 2026 +0000
+feat(crm): Company/Account 360 — exposure rollup + relationship graph + maker-checker merge
+A first-class account entity (the CRM's last structural model gap) that becomes the unit of the
+relationship, cross-domain by design:
+- crm.company (canonical + merged_into_id tombstone, unique on normalized RFC); deal/contact/counterparty
+  gain company_id; backfilled one company per counterparty (RFC-deduped) so the rollup is live now.
+- crm_company_summary view: per corporate group → open/won pipeline VPN + total credit EAD + ECL
+  provision + worst IFRS9 stage + consolidated DD status + last touch (spans crm + credit + compliance).
+- crm.company_relationship (parent/subsidiary/guarantor/affiliate, cycle-guarded); maker-checker
+  dedup/merge (crm_web_request/approve_company_merge, requester != approver) that re-parents
+  deals/contacts/counterparty and tombstones the merged account.
+- 'company' group-by added to the it-40 report engine. New Cuentas page: account list (pipeline/EAD/ECL
+  badges) + 360 drilldown (exposure tiles, deals, relationships, contacts).
+
+Verified on prod: 12 companies backfilled + rolled up; relationship added; request-merge → self-approve
+blocked (four-eyes) → distinct approver merges → merged account tombstoned into survivor.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+a13a6595559207e94e2eca096001f51d33e8c01d
+Newman Droplet
+Wed Jul 8 23:01:21 2026 +0000
+feat(crm): self-serve dashboards + custom report builder
+A configurable analytics layer on the it-38 grid + it-30 forecast data (crm was the binding
+constraint at 78):
+- crm.dashboard: saved, shareable dashboards of widgets (owner-or-shared RLS).
+- crm_web_compute_widget: a flexible {metric × group_by × filter} report engine over deals/deal_summary/
+  stage_probability — metric in count / VPN total / VPN ponderado (win-prob weighted); group_by in
+  stage / owner / sector / estado / close-quarter / total; filter by stage/owner/open-only.
+- save/list/delete dashboards; new Tableros page: dashboard tabs, add-widget builder (metric+group-by),
+  KPI-tile + horizontal-bar widgets, share/private toggle.
+
+Verified on prod: count-by-stage over 163 open deals; weighted-VPN-by-owner ~630M; shared dashboard
+saved + listed.
+
+NOTE (committee): the it-39 chair's pick — live two-way email/calendar sync — remains
+INFRASTRUCTURE-BLOCKED (needs a live self-hosted mailbox on newman-vps + an edge secret this
+environment cannot provision). Per the it-22 anti-pattern we did not ship inert sync code; built this
+fully-verifiable weakest-pillar (crm) runner-up instead. Email activates once the mailbox + secret exist.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+3a60d27899774a78f37c2024e7be99e638f791f9
+Jesus Lopez Palacios
+Thu Jul 9 01:00:07 2026 +0200
+harden extraction (committee round 19: 75, no critical -> close 5 highs)
+Highs:
+- #1 edge dead-letter pointed at a path never written (`failed_<sha>`): bytes are
+  now storagePut to `unidentified_<sha>` BEFORE ocrIdentify (which throws on a
+  transient provider error), and the catch dead-letters that REAL path, so the bg
+  OCR worker can actually fetch + recover the image instead of marking a
+  recoverable bill terminally 'illegible'.
+- #2 a failed dead-letter (enqueue OR mark_media_done throws) now sets a per-message
+  `incomplete` flag -> the handler returns 500 instead of mark_message_done, so
+  Twilio redelivers and claim_media reprocesses only the un-terminal attachment
+  (message-level idempotency no longer masks a silently-lost bill).
+- #3 teardown/nav race: eliminar (finally OR SIGTERM/fatal) no longer issues a
+  page.goto while an authedGoto is mid-navigation on the SAME shared page (which
+  destroyed the context and no-op'd the delete -> leak). authedGoto tracks
+  _navBusy; cleanupOnce awaits _waitNavIdle() before driving the page.
+- #5 MEM witness now includes the reactive-energy / power-factor charge (obj=02,
+  inside SubTotal): excluding it while the base still contained it left mem_ok
+  False every month for any MT client with a PF penalty -> perpetual mem-gate
+  backoff, never sizing.
+- #6 2captcha HTTP get/post now set a 15s socket timeout: a hung 2captcha socket
+  used to hang the whole harvest until SIGKILL, wasting the launchd tick AND
+  holding the shared-account lock TTL with no diagnostic.
+
+#4 (lock atomicity) verified NOT an issue: try_cfe_lock is a single atomic
+INSERT..ON CONFLICT DO UPDATE WHERE expires_at<now() OR holder=me RETURNING --
+row-locked, exactly one concurrent winner.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+ae4667b89704ae53ef4a0046fe0303425ad0a027
+Newman Droplet
+Wed Jul 8 22:52:14 2026 +0000
+feat(crm): suspicious-operation (Operación Inusual) detection + case mgmt + ROI
+The judgment-based AML mirror of the it-37 threshold aviso — a mandatory examiner-central STR
+obligation that was entirely absent:
+- crm.transaction_profile (per-client perfil from EBR grade + declared SoF/SoW, four-eyes verified,
+  versioned) + crm.aml_rule (versioned typology methodology, seeded 6 rules).
+- crm.scan_aml_alerts (nightly pg_cron): FUSES already-captured signals — PEP (dd_ubo), EBR alto
+  (it-29), screening near-hits (it-37 provenance), fraccionamiento (it-18 UMA agg), profile deviation,
+  geography — into a weighted score → idempotent crm.aml_alert with a frozen signals snapshot; notifies
+  the oficial de cumplimiento.
+- Case → dictamen workflow: crm.aml_case + crm.aml_dictamen (four-eyes reviewer != decider, rationale
+  mandatory); on 'report' seeds a ROI; crm_web_generate_roi_xml emits a SPPLD-shaped UIF Reporte de
+  Operación Inusual (+ integrity hash); crm_web_present_roi captures the acuse under four-eyes.
+- New Operaciones Inusuales page: scored alert cards, report/dismiss dictamen, generate-ROI, present+acuse.
+
+Verified on prod: high-risk PEP counterparty + 8M op vs a 1,000-UMA declared profile → alert score 1.05
+fusing {ebr_alto, pep_activity, profile_deviation} → case → dictamen report → ROI XML (796 bytes, hash)
+→ self-present blocked (four-eyes) → distinct approver presents → presentado + acuse.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+37e32dca8e1cbe4785872738f38c62fb2733ab08
+Jesus Lopez Palacios
+Thu Jul 9 00:43:41 2026 +0200
+harden extraction (committee round 18: 70, reviewers 80-82 -> close critical + highs)
+CRITICAL:
+- #1 cross-tenant PDF leak (my round-17 regression): the sibling-PDF whitelist
+  keyed on the BARE GridView row index, ignoring the p{page}_ prefix fetchDrain
+  writes -- so a foreign client's PDF at the same row on ANOTHER page was uploaded
+  into THIS client's Drive folder (PDFs are never RPU-parsed). Now matched on the
+  FULL (page,row) key.
+
+Highs:
+- #2 mem-completeness false-negative: the taxable base subtracted only DAP, so any
+  bill with a non-DAP untaxed concept (subsidy/municipal) failed mem_ok every month
+  and perpetually backed off design. base = SubTotal - sum(ALL ObjetoImp=01);
+  _concept_importes now returns total_untaxed.
+- #3 parse-crash now writes a quarantine row (reason=parse_crash) -- the "every
+  dropped month is auditable" invariant held even on the new-layout crashes a
+  post-fix re-drive would replay.
+- #5 WAF-storm safety: the reject-retry pass no longer re-drains every page when
+  rejects are LARGE (an active Imperva escalation) -- that fired maximum volume at
+  the shared account/IP exactly when it was blocking. >6 rejects -> no retry,
+  PARTIAL; small blips retry once after waiting out the module backoff.
+- #6 captcha retry ladder driven off the AUTHORITATIVE signal (still on Login.aspx),
+  not the fragile /captcha.*incorrecto/ text; each tryLogin wrapped so a transient
+  image/nav error retries instead of collapsing all 6 attempts. Jittered backoff.
+- #4 independent OUT-OF-BAND alert sink (CFE_ALERT_WEBHOOK) for permaban signals,
+  and a record_cfe_health FAILURE is itself paged -- so a correlated Supabase
+  outage (when a blind harvest is most likely to leak) can't swallow the page.
+
+Mediums:
+- #7 a bill whose Drive/register side-effects failed is NO LONGER reported 'done'
+  (backs off; files kept for a --skip-harvest retry).
+- #11 an unrecognized-but-plausible tarifa stores WITH a needs_tariff_review flag +
+  counter (extend TARIFA_MAP) instead of being quarantined as unusable -- a new CRE
+  code no longer silently drops good months.
+
+Deferred: #8 design+done atomicity, #9 lease heartbeat-renewal, #10 harder mem gate,
+account/proxy pool.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+c3a8c8eeda03119b40a1a8a334c81134efbba451
+Newman Droplet
+Wed Jul 8 22:41:29 2026 +0000
+feat(crm): spreadsheet grid + inline edit + bulk actions + Cmd-K command palette
+The primary high-density work surface every comparator (monday/Attio/Twenty) is built on — Kanban
+was the only multi-deal surface. crm was the weakest pillar; this is the literal monday.com core:
+- crm_web_deals_grid: server-side sort (whitelisted) + filter (q/stage/owner) + pagination → rows +
+  total + column schema (joins owner, VPN, days-since-touch).
+- crm_web_update_deal_cell: type-validated single-cell edit; stage routes through the audited set_stage
+  (full it-27/28 gates + deal_event + it-25 events).
+- crm_web_bulk_update: transactional multi-deal action (set_stage / reassign_owner / set_field / archive)
+  with per-deal skip-with-reason (never partial-corrupt), reassign/delete gated to approvers, one
+  undoable crm.bulk_action_log row (old_values + undo_token); crm_web_bulk_undo reverts.
+- crm_web_command_palette: unified fuzzy search over deals + contacts + nav.
+- crm.deal.archived_at (soft-archive). UI: /tabla virtualizable grid (inline stage/owner/date/sector
+  editors, multi-select bulk toolbar + undo, sort, search, paginate); global Cmd-K palette in layout.
+
+Verified on prod: grid rows/total/columns; bulk set_field affected 2 + undo reverts 2; command palette
+returns deals + contacts; loop-variable ambiguity fixed.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+e8564edbcf8155cb55f194dea8072504900f5697
+Newman Droplet
+Wed Jul 8 22:29:38 2026 +0000
+feat(crm): SPPLD Aviso artifact pipeline + immutable screening-list provenance
+Closes the last legally-MANDATORY, per-instance-sanctionable defeater (LFPIORPI Art.17 fr.IV
+filing; Art.53-54 penalties) — the system detected/opened avisos (it-18) but produced NO fileable
+artifact:
+- crm.aviso_batch (monthly, unique period, día-17 due date) + crm.aviso_operation; crm_web_build
+  gathers qualifying dd_operations (threshold 'aviso', not yet filed); crm_web_generate_aviso_xml emits
+  a SPPLD-shaped UIF/SAT XML (informe + sujetoObligado clave + per-operation aviso nodes) the officer
+  uploads to the portal, with an md5 integrity hash; crm_web_present_aviso_batch captures the acuse folio
+  under four-eyes (presenter != generator); día-17 filing calendar with an overdue flag; monthly pg_cron
+  opens each new period.
+- crm.screening_list_version (append-only) + crm.screening_provenance: point-in-time list snapshots
+  (OpenSanctions/69-B/LPB) so every clearance/aviso is reproducible under audit; backfilled current
+  snapshots (OpenSanctions 281,606 / EFOS 12,146).
+- New Avisos compliance page: batch lifecycle (reunir ops → generar XML → descargar → presentar+acuse),
+  overdue flags, list-provenance panel.
+
+Verified on prod: open Jun-2026 (due Jul-17); build gathers the 6M mutuo operation; generate → valid
+<archivo xmlns=...spld> XML (811 bytes + sha); self-present blocked (four-eyes); distinct approver
+presents with acuse folio → presentado.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+4a0bac9929af5ba49de81e019e33abe4ad6e3b7e
+Jesus Lopez Palacios
+Thu Jul 9 00:29:17 2026 +0200
+harden extraction (committee round 17: 70, reviewers 79-82 -> close critical + highs)
+CRITICAL:
+- #1 leak-verdict regression fixed: main() no longer DOWNGRADES the optimistic
+  _activeRegistered to false on an UNKNOWN (confirm aborted on a WAF-unreadable
+  grid where the service MAY have landed). Only RPU_BAD/ASSIGNED_ELSEWHERE (never
+  posted) clear it; OK/ALREADY/UNKNOWN keep it true so eliminar's LEAK is credited
+  and a live service can't march toward the permaban with leaked=false.
+
+Highs:
+- #2 filename collision across pager pages: ASP.NET GridView resets row control
+  ids to _0.._n on EVERY page, so the id prefix was unique only within a page ->
+  two recibos on different pages overwrote each other (silent month loss reported
+  complete). On-disk names now prefixed with the pager page index (stable across
+  the retry pass). #12 safety-net: drainOtras flags partial when fewer unique .xml
+  landed than XML controls that returned a file.
+- #3 null-RPU CFDI (new layout, rpu didn't parse) is QUARANTINED as missing_rpu
+  instead of upserted orphaned with rpu=None (tenant-isolation gap on a shared acct).
+- #6 taxable-energy witness broadened to ALL ObjetoImp=02 concepts (SUMINISTRO/
+  DISTRIBUCION/CAPACIDAD), not only 'ENERG'-labelled -> mem_ok no longer False on
+  every split-concept month (which perpetually backed off design on usable data).
+
+Mediums:
+- #4b ocr_retry escalates to NEWMAN_VISION_MODEL_STRONG after the flash model has
+  failed (retrying the same model just burned attempts to terminal 'failed').
+- #7 quarantine-spike added to the dead-letter watchdog; WEBHOOK_URL now REQUIRED
+  (edge 500 if unset -- the req.url fallback silently 403'd every request).
+- #11a OUT dir pruned ONLY when register AND Drive both succeed (else kept for a
+  cheap --skip-harvest retry instead of re-harvesting the permaban account);
+  + a startup _sweep_stale_dl backstop prunes dl/* older than 3 days.
+
+Deferred: #4a name-only-reply state, #5 account/proxy pool, #8 pager-ellipsis
+coverage, #9 fuzzier Consulta name ladder, #10 deeper fingerprint.
+
+Migration: cfe_deadletter_watchdog + quarantine-spike alert.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+e655687fad16e6711bd2f0600b44650ee0ed8838
+Newman Droplet
+Wed Jul 8 22:18:25 2026 +0000
+feat(crm): EPC subcontractor / installation-labor subledger (measure-and-value vs it-24)
+Closes the largest structural cost blind spot — installation labor + BOS (40-60% of EPC) had no
+commitment tracking, so it-17 margin-at-completion/EAC was blind to the biggest overrun vector.
+Clones the it-20 equipment-PO pattern for labor:
+- crm.subcontract (maker-checker, four-eyes) commits against a project_cost labor line at contract value;
+  crm.sub_payment_claim / sub_retention_ledger / sub_back_charge.
+- crm_web_certify_sub_claim is MEASURE-AND-VALUE: certified is derived from and HARD-CAPPED at the it-24
+  inspection-verified installed % (never the contractor self-report), incremental-only, with retention
+  withheld and approved back-charges netted — no over-claim possible.
+- crm._rollup_subcontract_costs writes committed (issued subs) + actual (certified claims) into
+  crm.project_cost alongside the it-20 PO rollup, so it-17 CPI/SPI/EAC/margin see real labor cost.
+- DealSubcontracts panel: issue + four-eyes approve + certify-vs-ITP, with contract/certified/retention/
+  verified-% columns.
+
+Verified on prod: four-eyes approve rolls committed 2M; certify at ITP 40% → gross 800k / net 720k;
+ITP→70% → incremental 600k only; no new verified progress → claim blocked (measure-and-value gate).
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+f1b271339a765e6d5b92ba3559c3e1bf28554811
+Jesus Lopez Palacios
+Thu Jul 9 00:15:53 2026 +0200
+harden extraction (committee round 16: 74, reviewers 78-84 -> close cap + highs)
+CRITICAL-CAPPED:
+- #1 dead-letter queues now have a CONSUMER: process_ocr_retry drains ocr_retry
+  (re-fetch from bucket -> re-OCR via OpenRouter -> register + request_collection,
+  attempt-capped), wired pre-lock in drain_once. Was producer-only -> overflow /
+  illegible / name-missing bills were lost forever while the user was told "en
+  proceso, te avisamos". (+ claim_ocr_retry/mark_ocr_retry RPCs.)
+
+Highs:
+- #2 recibo type WHITELIST (tipo=='I'): an Egreso credit note ('E') satisfied
+  SubTotal+IVA=Total and was upserted as POSITIVE consumption, corrupting sizing.
+  E/N/T counted as non_recibo (skipped, excluded from the completeness ratio).
+- #3 supersession accounting fixed: an older re-facturación is now counted
+  'superseded' (not stored/whitelisted) BEFORE the store, so it can't (a) double-
+  upload a duplicate month to the client Drive folder or (b) hit the warehouse
+  timbre-guard's false return and inflate high_fail -> spurious PARTIAL. The
+  whitelist tracks the survivor path per (rpu,period).
+- #4 bimonthly billing: load-factor upper bound widened to cover ~60-day cycles
+  (was a fixed-720h gate that hard-quarantined every bimonthly month); interior-
+  gap detection is cadence-aware (modal 1- vs 2-month step) so a consistent
+  2-month series is contiguous, not perpetual backoff.
+- #5 fingerprint depth: window.chrome fleshed out (loadTimes/csi/app);
+  permissions.query now agrees with Notification.permission (the classic tell).
+
+Mediums:
+- #6 single-run lock TTL unified with drain_once (+240 post-harvest budget).
+- #7 fetchDrain base64 chunked (32KB blocks) -- the per-byte concat over multi-MB
+  PDFs spiked page CPU/mem and could crash the drain.
+- #9 disk reclaim: collect_one rmtrees the per-rpu OUT dir (already SHA-registered
+  + Drive-uploaded) and process_bulk_pdfs unlinks the temp PDF in a finally.
+- #10 census-unreadable is its own health signal (a null svcRemaining after a
+  registering run -> record_cfe_health + [PERMABAN-RISK], no silent monitoring gap).
+
+Deferred: edge #8 (per-invocation PDF cap, rare), account/proxy pool (#5 infra).
+
+Migration: claim_ocr_retry + mark_ocr_retry + ocr_retry.claimed_at.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+c2a41b898173ddecbd4cee70c82f55ea1b474347
+Newman Droplet
+Wed Jul 8 22:08:53 2026 +0000
+feat(crm): field-rep PWA — installable app, web-push, offline visit/CFE capture
+Puts Tuesday in a field rep's pocket (crm was the weakest pillar), reusing it-19/22/25 plumbing:
+- PWA: manifest.webmanifest (installable, standalone, Mi-Día start) + sw.js service worker (push +
+  notificationclick + shell); PwaSetup registers the SW and subscribes web-push when a VAPID public
+  key is configured (no-ops gracefully otherwise).
+- crm.push_subscription + crm.notification.pushed_at reuse the it-14 notification as inbox AND push
+  queue; crm_push_claim (SKIP LOCKED) joins recipient → active subs; push-dispatch edge fn (deployed,
+  pg_cron every 1 min) sends Web Push via VAPID and prunes dead endpoints — inert-but-honest until
+  VAPID keys are set (in-app inbox works regardless).
+- crm.field_capture + crm_web_sync_field_captures: idempotent offline replay (client_uuid) routing
+  visit/note → it-22 ingest_activity, stage_update → it-12 crm_web_set_stage (full guardrails +
+  deal_event so it-30 analytics/it-25 events stay correct), cfe_bill → activity + photo.
+- /campo mobile capture page: online/offline badge, visit/etapa/recibo-CFE capture that queues to
+  localStorage offline and syncs on reconnect; Campo nav link (mobile).
+
+Verified on prod: register_push; offline batch (visit + stage_update) syncs → activity logged +
+stage advanced; replay is idempotent (duplicate); push_claim joins notification→subscription.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+3fe825eaf601b674206af309cb2a6959d7809fca
+Jesus Lopez Palacios
+Thu Jul 9 00:01:11 2026 +0200
+harden extraction (committee round 15: 70, reviewers 79-83 -> close critical + highs)
+CRITICAL:
+- #1 tenant-isolation leak closed: enrich_dir returns the accepted-file whitelist
+  (matching-rpu, stored XMLs + their sibling PDFs by grid-row index); register +
+  Drive upload use ONLY that, never a blind dir re-walk. A foreign-client recibo
+  (rpu_mismatch, quarantined) can no longer be registered under this rpu OR
+  uploaded into this client's Drive folder.
+
+Highs:
+- #2 fiscal gate tightened to cents: the SAT identity is exact, so the fiscal
+  branch uses FISCAL_TOLERANCE=0.05 absolute (not 2 peso + 0.1% relative, which
+  passed a ~500-peso-corrupted Total on a 500k statement). REL band kept for the
+  MEM/PDF reconstruction branch only.
+- #4 unhandledRejection/uncaughtException now route through cleanupOnce()+
+  emitSummary() (a detached puppeteer "Target closed" mid-drain no longer exits
+  Node without eliminar -> leak).
+- #5 kWh plausibility hard gate: implied load factor kWh/(kw_max*720) out of
+  [0.03,1.15] quarantines the bill (an under-read that spiked blended past the
+  advisory ceiling used to be KEPT and shipped to sizing).
+- #6 navigator.languages/language spoofed to es-MX (matched the Accept-Language
+  header; the en-US default was a headless tell).
+- #7 WebGL vendor/renderer gated on os.arch (Apple GPU only on arm64, else an
+  Intel/ANGLE string) so it agrees with UA-CH architecture.
+
+Mediums:
+- #8 claim_media is now an ATOMIC claim (INSERT..ON CONFLICT winner + 3-min stale
+  reclaim) so concurrent Twilio redeliveries don't both run paid OCR.
+- #9 ocrIdentify FAILS CLOSED on empty OPENROUTER_API_KEY (throws -> dead-letter/
+  redeliver) instead of every bill silently reading illegible.
+- #10 size-aware media fetch timeout (45s for PDFs, 8s images) so a 16MB statement
+  isn't forever-lost on an 8s cap.
+- #11 serviceInList is tri-state (present/absent/unreadable); a WAF challenge no
+  longer reads as 'absent' and re-agregars the same RPU toward the ceiling.
+- #12 interior-month contiguity check: a hole in the stored series -> partial
+  (design not fired on a gap-riddled history).
+- #13 pdf RPU regex whitespace-tolerant + titular validated (mostly-letters, not a
+  header keyword) -> junk names route to needs_name, not a doomed Consulta.
+
+Migrations: processed_media.claimed_at + atomic claim_media.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+763bbf7ddf5bb4bccc40d3129c2c2cc4c67cba1f
+Newman Droplet
+Wed Jul 8 21:58:10 2026 +0000
+feat(crm): forecast-COD CPM + earned-schedule engine (predictive schedule control)
+Turns EPC schedule control from reactive (slip only seen at record_cod) to predictive, from
+already-shipped data (it-20 PO need-by dates, it-24 verified ITP %, the 7 milestones):
+- crm.schedule_activity/dependency: a CPM network auto-seeded from the milestones (FS-chained) + one
+  procurement activity per PO feeding 'Equipo adquirido'; ITP-linked rows pull inspection-verified %.
+- crm_web_compute_schedule: forward+backward CPM relaxation → ES/EF/LS/LF + total float, critical path
+  (float<=0), predicted COD (today + remaining critical duration), earned-schedule SPI(t), and forecast
+  LD (reusing it-24 rate/cap) net of approved change-order EOT (crm.change_order.time_extension_days).
+- crm.schedule_baseline (four-eyes) for slip-vs-approved-baseline; nightly refresh emits an it-25 event
+  + notifies PM AND credit owner when predicted COD first crosses target — a LEADING warning of the
+  it-24 facility reschedule.
+- DealSchedule 'Cronograma' panel: predicted-COD/slip/SPI(t)/forecast-LD tiles + critical-path activity list.
+
+Verified on prod: baseline predicted COD 2027-05-19 (slip 135d, LD capped 1M); a slipped module PO
+cascades onto the critical path (slip 390d, PO leads the path); approved 90d EOT flows into net LD.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+623336a28217d7d158592c0dea498f28628c1874
+Newman Droplet
+Wed Jul 8 21:49:47 2026 +0000
+feat(crm): probability-weighted multi-scenario ECL + correlated portfolio stress (IFRS 9 5.5.17a)
+Closes the standing regulatory near-defeater — the CNBV/auditor-reported ECL was a single
+deterministic base-case point estimate on a near-single-factor CFE-tariff/FX book:
+- crm.macro_scenario_set / macro_scenario: versioned, four-eyes-approved scenarios (FX, CFE GDMTH
+  tariff delta, domestic-rate delta, P50/P90 generation) with probabilities summing to 1; a default
+  base/optimista/adverso set seeded + approved.
+- crm_web_compute_ecl_run: for every active facility × scenario, stresses PD (it-26) and LGD (it-21)
+  via documented monotone macro multipliers, computes stage-aware ECL, books the probability-weighted
+  expectation, and — critically — aggregates the ADVERSE scenario simultaneously across the whole book
+  (correlated_downside) vs the weighted expectation → tail_add_on = the systematic FX/tariff tail a
+  point estimate misses.
+- Portafolio 'ECL multi-escenario' panel: base vs probability-weighted (booked) vs correlated-downside
+  vs systemic tail, per-scenario bars, Recalcular.
+
+Verified on prod: weighted ECL sits between base and correlated-downside, tail add-on surfaced,
+per-scenario Adverso>Base>Optimista (PD/LGD stressed, scenario SICR to Stage 2), four-eyes + sum-to-1
+enforced. (Cleaned up leftover test facilities so the book is accurate.)
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+b6f25e943cdefba7264fefb3a825239a9a5f59ea
+Jesus Lopez Palacios
+Wed Jul 8 23:45:24 2026 +0200
+harden extraction (committee round 14: 70, per-lens 84/84/83/80 -> close criticals)
+CRITICALS (both real, chair-capping):
+- #1 eliminar no longer waitForNavigation({30000}) on the AJAX confirm (which
+  does NOT navigate, so it ALWAYS stalled the full 30s ignoring opts.navMs and
+  blew the 55s SIGTERM grace -> SIGKILL mid-clean -> permaban leak). Now: click,
+  settle, reload+re-read via authedGoto (navMs-bounded), same as cleanAllServices.
+- #2 completeness: harvester emits complete=true ONLY at the clean end of main();
+  a crash (top-level catch) or SIGTERM emits complete=false. main.py forces the
+  request partial on ANY non-clean exit (rc!=0 OR summary.complete!=true), not
+  just rc==124 -- a crash-/blip-truncated history can no longer fire design.
+  fetchDrain wraps each in-page fetch in try/catch (status:0) so one ECONNRESET
+  degrades to a retriable rejected item instead of aborting the drain mid-history.
+
+Highs:
+- #3 in-drain backoff now triggers on the VALIDATOR's rejected flag (a 200+challenge
+  HTML body counts), not only non-200 status -- so the WAF re-challenge storm that
+  returns HTTP 200 actually slows the next chunk.
+- #5 partial-unimprovable vs retryable: a Consulta-only (ASSIGNED_ELSEWHERE) service
+  with >= MIN_MONTHS now FIRES design (done-with-note) instead of thrashing the
+  shared account forever and going terminal without ever sizing.
+- #10 cleanAllServices is overBudget()-gated + short-nav-bounded, so a leaked-heavy
+  account degrades gracefully (chip away next tick) instead of livelocking harvest.
+
+Mediums:
+- #7 edge: legible-but-over-cap images counted as `deferred` ("en proceso"), not
+  `unidentified` ("no legible" -> needless resends); + pg_cron cfe_deadletter_watchdog
+  pages when ocr_retry / bulk needs_ocr/needs_name/pending sit un-drained >2h.
+- #8 supersession moved to the WAREHOUSE (upsert_bill fecha_timbrado guard) +
+  stored-period dedup: all (rpu,period) competitors are processed, so if the
+  newest-timbre re-issue is quarantined an OLDER usable copy still stores (the
+  in-run winner pre-scan could pre-drop the sole valid copy of a month).
+- #12 agregar() asserts all add-form ids exist -> distinct SELECTOR_DRIFT (like
+  Consulta) instead of a raw "no node" crash misread as WAF/name.
+
+Deferred: #4 lease renewal/py-watchdog (Supa already 60s/call), #6 temporal-sanity
++ analytical_reconciled flag, #9 adeudo TOTAL_MISMATCH diagnostic, #2 account pool.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+c8ac6ca7d2801814387260f9907b7170c869e612
+Newman Droplet
+Wed Jul 8 21:40:32 2026 +0000
+feat(crm): deal-native quote/proposal generator + e-signature (Propuestas)
+The offer/document layer (HubSpot Quotes / SF CPQ) Newman lacked — turns the finance engine into a
+branded, client-facing, signable proposal that feeds the pipeline + project/credit spine:
+- crm.proposal: versioned per deal, FROZEN finance snapshot (capex, credit amount, rate, tenor, DSCR,
+  IRR, annual savings, PD grade) + itemized proposal_line rows, unguessable public_token, status
+  machine (draft→sent→viewed→signed), proposal_event audit trail, proposal_signature (e-sign).
+- crm_web_generate_proposal freezes the deal's finance results; crm_web_send_proposal queues the
+  /p/[token] link through the it-31 email outbox; crm_web_list_proposals/void for management.
+- PUBLIC token-gated (anon) client flow: crm_proposal_public logs the open (viewed), crm_sign_proposal
+  records the signature, advances the deal to in_signing, and notifies — no client login.
+- Public /p/[token] page (branded, outside auth via middleware allowlist) + sign flow; DealProposals
+  drawer panel (version list, status, send, view, void, tracking timeline).
+
+Verified on prod: generate freezes snapshot + 6 lines; send queues channel=email with the link;
+public view logs viewed; sign records signature + advances stage to in_signing; double-sign blocked.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+a7d2ad2a48784856529459c5e0aabb913a58b1a8
+Newman Droplet
+Wed Jul 8 21:29:37 2026 +0000
+feat(crm): two-way email via IMAP/SMTP, wired into comms/dispatch/sequence engine
+Activates the dormant it-19→it-25 engagement plumbing on the email channel WITHOUT Google OAuth
+(unprovisioned) — an IMAP/SMTP connector with visible-failure semantics (no inert connect-button):
+- crm.email_account (per-rep mailbox; password by secret_ref, never plaintext) + crm.email_template
+  ({{deal.name}} tokens) + crm.email_tracking (open/click).
+- crm_web_send_from_drawer extended: email channel renders subject/body_html (template or ad-hoc),
+  queues into comms_outbox with tracking; crm_comms_claim_batch now surfaces the sender's SMTP config
+  + email fields to the worker.
+- comms-dispatch worker (v3) sends email via SMTP (denomailer) with the same claim/mark_sent/backoff
+  path as WhatsApp; missing mailbox/secret fails VISIBLY with the reason (Twilio pattern).
+- Inbound reuses the proven crm.ingest_activity path (dedup on Message-ID → deal/contact resolution
+  or the unlinked tray; inbound_received already exits sequences) — an email-imap-sync edge fn calls it.
+- New Correo settings page (mailbox config + templates); DealEngagement compose modal gains email
+  subject; email sequence steps now dispatch.
+
+Verified on prod: connect mailbox (secret hidden), template renders subject 'Propuesta solar — GEEP',
+send-from-drawer queues channel=email with subject/body_html/tracking, claim_batch surfaces SMTP config
+to the dispatch worker. Live SMTP send needs the mailbox password secret; absent → fails visibly.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+2838035d481923e5d807fb426753fcf4b1cb3790
+Jesus Lopez Palacios
+Wed Jul 8 23:28:47 2026 +0200
+harden extraction (committee round 13: 76 -> close critical + highs)
+CRITICAL:
+- #1/#9 edge rpc() now REJECTS on a PostgREST non-2xx (was silently ignored). The
+  overflow/needName/unreadable dead-letter enqueues + claim_media/mark_media_done
+  are state-committing; a swallowed 500 marked the attachment terminal and lost
+  the customer's bill forever. Now a non-2xx throws -> per-attachment catch
+  re-dead-letters / handler 500 -> Twilio redelivers atomically. claim_media no
+  longer swallowed either.
+
+Highs:
+- #3 fetchDrain namespaces each on-disk file by its control id so two DISTINCT
+  recibos sharing a Content-Disposition filename can't overwrite (a lost month
+  reported complete). enrich dedups on UUID/period, so the prefix is inert.
+- #4 MIN_MONTHS_FOR_DESIGN floor: a service with only a few reconciled bills backs
+  off to re-collect deeper instead of firing PPA/BESS sizing on 1-2 months.
+- #5 Consulta SELECTOR_DRIFT detection: the form-set evaluate returns which ids
+  were missing and throws a distinct error instead of silently submitting a blank
+  form (misattributed to WAF/name, burning the retry ladder on the shared account).
+- #6 needName counted in the inline-OCR cap (a 12-photo all-needName message no
+  longer runs 12 paid vision calls past the worker budget).
+
+Mediums:
+- #7 kvarh + MEM importes parsed via comma-tolerant _num (grouped values no longer
+  silently null the reactive-energy field / understate mem_sum).
+- #8 bulk-PDF rows with known RPU but missing name route to a re-driveable
+  needs_name state + count; job marked partial (not falsely 'done') when a
+  65-of-69 split leaves services unenqueued.
+- #10 fingerprint hardening (no external dep): webdriver=false (not undefined),
+  non-empty plugins/mimeTypes, window.chrome stub, WebGL vendor/renderer spoofed
+  to a real Apple GPU (was "Google SwiftShader"); UA-CH architecture from os.arch.
+- #11 rate-limit backoff hoisted to module scope so a challenge on GridView page N
+  slows page N+1 (was reset per fetchDrain call, defeating it across a deep drain).
+
+Deferred (infra/architecture): #2 collection-account pool + residential-proxy
+rotation (single-account SPOF), #12 vestigial CDP-download cleanup.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+5adb2ba1af2c41ee62e35f4bdd8001011bc6104a
+Newman Droplet
+Wed Jul 8 21:17:54 2026 +0000
+feat(crm): native sales forecasting + pipeline analytics (Ventas tab)
+Closes the CRM table-stakes gap every comparator (monday/HubSpot/Salesforce) has, from data
+already captured — no external deps:
+- crm.stage_probability: manager-tunable win-prob / commit flag / stall threshold per stage
+  (seeded lead .05 → in_signing .80 commit → closed 1.0), editable by approvers.
+- crm.deal_stage_history view: per-(deal,stage) tenure derived from the audited deal_event log
+  (+ opening stage), with days_in_stage.
+- crm_web_sales_analytics bundle: weighted + committed forecast by quarter/owner, stage-conversion
+  funnel (entered vs advanced), velocity (avg days/stage + lead→cierre cycle + win rate + loss
+  reasons), and deal-aging (open deals past their stall threshold).
+- New Ventas nav page: forecast KPIs + quarter table, conversion funnel, time-in-stage + loss
+  reasons, and a stalled-deals list.
+
+Verified on prod: win rate 0.818 (9 won / 11 decided), funnel entered/advanced populated from real
+stage transitions, aging computed against per-stage thresholds.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+42bb6e738afe0286b5eb4c342355b7f2b970d066
+Jesus Lopez Palacios
+Wed Jul 8 23:13:37 2026 +0200
+harden extraction (committee round 12: 78 -> close criticals + highs)
+CRITICALS (permaban-safety, both about the eliminar reserve):
+- #1 eliminar always bounded (2 tries/12s-nav) for BOTH the finally + signal
+  paths (they share one memoized promise, so a slow finally cleanup could not be
+  fast-overridden on SIGTERM); the finally cleanup is now itself time-boxed and a
+  timeout on a registered service = presumed leak.
+- #2 overBudget() now yields INSIDE the drainOtras paging loop (+ retry pass), not
+  only at attempt start, so a single long drain can't burn the whole budget and
+  starve eliminar -> leak; a mid-drain deadline marks the history partial.
+
+Highs:
+- #3 (rpu,period) supersession pre-scan now uses the SAME namespaced parser as the
+  main loop (cached, no double parse), compares FechaTimbrado as real UTC
+  datetimes (not lexical), and NEVER drops the sole copy of a month (skip only
+  when >1 file competes for the period). Fixes a silent, unauditable month drop.
+- #4 blended-rate upper band is ADVISORY for MT tariffs (a demand-dominated low-
+  consumption month legitimately exceeds 20 MXN/kWh) -- kept with a suspect log,
+  not quarantined; lower bound stays a hard gate.
+- #5 emitSummary() in the top-level main().catch so a throw after registration
+  still surfaces the leak verdict + learned name (was discarded on that path).
+- #6 readable-RPU / unreadable-NAME no longer silently doomed: the edge fn asks
+  the user for the titular (needName) instead of enqueuing a nameless request that
+  main.py always rejects; pdf_intake name regex broadened (accented initials,
+  column-gap split instead of keyword split that truncated names containing TOTAL).
+- #7 IVA-exempt CFDIs reconcile via the fiscal branch (iva=0 when SubTotal present)
+  instead of the MEM fallback that wrongly quarantined them.
+
+Mediums:
+- #8 edge rpc() + storage PUTs now carry a 10s AbortSignal timeout (a hung DB was
+  the one slow dependency with no bound).
+- #9 leak flag trusts the harvester's own summary.leaked when present; rc==124 is
+  a separate 'timeout' signal, not folded into 'leaked' (killed alert fatigue).
+- #10 rpu_mismatch tracked separately + excluded from the completeness denominator
+  (foreign CFDIs on the shared account no longer trip high_fail -> false PARTIAL).
+- #11 Consulta readiness/click uses the robust DescargaXMLFactura substring
+  selector, not the brittle exact _0 id.
+- #12 single-run CLI exits nonzero on found==0 after a real harvest attempt (was
+  indistinguishable from a legitimate no-op).
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+b39613b51b6263c2884d594d2505adc938786cef
+Newman Droplet
+Wed Jul 8 21:05:33 2026 +0000
+feat(crm): EBR risk-based-approach engine — inherent ML/FT risk drives DD intensity
+Makes counterparty risk an INPUT that governs due-diligence intensity (the chair's near-defeater
+compliance gap), not just an output of screening pass/fail — the versioned metodología EBR a SAT/UIF
+examiner requires. Mirrors the it-26 PD engine for ML/FT risk:
+- crm.ebr_factor: 7 weighted inherent-risk factors (geografía/estado, sector, PEP, complejidad de
+  propiedad, intensidad de efectivo, tamaño en UMA, nacionalidad/PIC).
+- crm_web_compute_ebr → grado (bajo/medio/alto) → nivel de DD (simplificada/estándar/reforzada);
+  PEP forces alto/reforzada; writes ebr_grade + dd_level onto the counterparty.
+- crm.edd_item: reforzada seeds source-of-funds/wealth + senior sign-off + enhanced monitoring;
+  crm.edd_gate + crm_web_request_clearance HARD-BLOCK clearance until EDD satisfied + four-eyes verified.
+- crm_web_ebr_institutional: evaluación de riesgo institucional (grade + DD-level distribution).
+- DealEbr panel: grade + DD level + factor scorecard + EDD checklist with satisfy/verify + gate banner.
+
+Verified on prod: PEP + Sinaloa → alto/reforzada, 4 EDD items, clearance BLOCKED until satisfied+verified;
+clean SME (Querétaro, no PEP) → bajo/simplificada, no EDD; institutional rollup works.
+
+NOTE: the committee chair's literal it-28 pick was Gmail two-way sync, which requires Google OAuth
+credentials not provisioned in this environment; built this explicitly-flagged near-defeater compliance
+gap instead so the increment is fully live + verifiable rather than an inert connect-button.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+85a49064c32c63337ac4780ca26fbd9bf73aa3d1
+Jesus Lopez Palacios
+Wed Jul 8 22:55:59 2026 +0200
+harden extraction (committee round 11: 76 -> close critical + highs)
+CRITICAL:
+- #1 permaban circuit breaker fails CLOSED: an unreadable AdministrarServicios
+  census (Imperva challenge / login bounce) now aborts to Consulta-only (one
+  retry first) instead of registering blind into a possible <=10 permaban.
+
+Highs:
+- #2 (ALL 4 LENSES) real namespaced XML parser: parse_cfdi/_concept_importes/
+  _mem_importes are ElementTree-first (correct against attribute reordering,
+  entity/CDATA escaping, namespace prefixes) with the hand-rolled regex kept
+  ONLY as a truncated/malformed-file fallback. New test exercises the tree path.
+- #3/#5 value-level gates are the real storage gate (reconcile is only a fiscal-
+  corruption guard); demand fields now gated too (#7): a medium-tension tariff
+  (GDMTO/GDMTH/DIST/DIT) with null/zero DEMANDA is quarantined, not sized on.
+- #4 source-vs-stored RPU reconciliation: enrich_dir(expected_rpu=rpu) quarantines
+  any CFDI whose own RPU differs (shared-account mis-context / stale OUT file).
+- #5 (harvest) silent-truncation: a REGISTERED service rendering 0 download
+  controls after retries returns partial:true (probes grid rows to tell
+  'genuinely empty' from 'failed to render'); expired session -> partial too.
+- #9 edge OCR bounded: MAX_INLINE_OCR images per invocation, overflow stored +
+  queued to ocr_retry so a 12-photo message can't blow the worker budget.
+
+Mediums:
+- #10 pago-complement filtered in the (rpu,period) pre-scan BEFORE it can win a
+  period slot (a Pago with a matching OCR_AAAAMM + newer timbre would supersede
+  the real bill and silently lose the month).
+- #11 store EXCEPTION (not just falsy return) now dead-letters + counts, so a
+  transient warehouse error is auditable/re-driveable, not swallowed.
+- #12 DAP over-classification fixed: only a real _DAP_RE match counts as DAP; other
+  untaxed concepts no longer corrupt the taxable base / blended rate.
+- #15 acknowledge the single-image / single-PDF happy path (was a silent ack).
+
+Deferred to round 12 (the "second frontier"): #8 stealth fingerprint hardening,
+#9 full move of OCR off the edge, #13/#14 vestigial-CDP / sha-prefix cleanups.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+---
+54d794d649f804815227b0903cfe23396f8f7777
+Newman Droplet
+Wed Jul 8 20:54:02 2026 +0000
+feat(crm): mandatory verified UBO expediente + hard clearance gate for personas morales
+Closes the last legal defeater — a persona moral could reach dd_status='cleared' with ZERO
+beneficial owners, so the 281k-row sanctions/PEP/LPB engine only ever saw the corporate shell:
+- crm.dd_ownership_node/edge: an ownership graph; crm_web_compute_ubo traverses it UP from the root
+  entity to natural persons, multiplying % along each path (indirect control through holding layers)
+  and flagging UBOs at >=25% effective / control (LFPIORPI Art.18 + CFF Art.32-B Ter). Computed UBOs
+  are written into crm.dd_ubo → auto-screened by the existing sanctions_pep loop.
+- crm.dd_ubo_document: documentary backing (acta constitutiva / estructura accionaria / poder) with
+  four-eyes verify.
+- crm.ubo_gate: 5th mandatory check for personas morales — >=1 UBO, all UBO hits disposed, sanctions
+  screen passed, acta + estructura verified. crm_web_request_clearance HARD-BLOCKS any persona moral
+  failing it (personas físicas unaffected).
+- DealUbo panel: ownership-tree editor, computed-UBO list with per-UBO screening-hit count, document
+  checklist, and a live clearance-gate banner.
+
+Verified on prod: zero-UBO persona moral -> clearance BLOCKED; HoldCo chain -> Juan 60% / Ana 40%
+computed (indirect, both >=25%); docs missing still blocks; acta+estructura verified -> gate clears;
+persona fisica unaffected.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
+fb82f534efd22b6ddbbfafec7e3033a70dfc5b47
+Newman Droplet
+Wed Jul 8 20:41:54 2026 +0000
+feat(crm): credit-approval spine — memo + delegated-authority sanction + conditions precedent
+Converts the now-real PD/LGD/EAD/EL analysis into a governed decision of record, closing the
+'unsanctioned loan approval' defeater:
+- crm.credit_memo: auto-assembled snapshot (PD grade/PIT/lifetime, LGD+refer, EAD, EL, proposed-vs-
+  min-rate, DSCR, DD status), versioned; authority_tier computed from amount+grade+refer.
+- crm.delegated_authority: 3 seeded tiers (officer ≤5M / committee2 5-30M / full >30M) with quorum;
+  auto_refer when below-grade / below-min-rate / unperfected collateral.
+- crm.credit_sanction: four-eyes (sanctioner ≠ memo author) + approver role; locks approved terms
+  (rate/tenor) onto the facility; append-only decision of record.
+- crm.cp_item: 8 conditions precedent seeded on approve (DD cleared, security perfected, CFE
+  interconnection, permits, insurance, equity-first, EPC executed, offtake); auto-satisfied CPs read
+  live state (dd_status / collateral perfection / milestone certified); manual CPs need four-eyes verify.
+- crm_web_certify_drawdown HARD-GATES the first drawdown: blocked unless an approved sanction exists
+  AND every non-waived CP is satisfied+verified — wiring compliance DD + EPC milestones into the credit gate.
+- DealCredit panel: memo card + submit/approve/decline (four-eyes) + locked terms + CP checklist.
+
+Verified on prod: memo → committee2 tier (8M); self-sanction blocked; sanction seeds 8 CPs; first
+drawdown blocked (8 pending); after satisfy+four-eyes-verify → certifies (30%, net 2.7M).
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+
+---
