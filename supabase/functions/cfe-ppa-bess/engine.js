@@ -6,7 +6,8 @@
 // Golden doctrine (see CFE Brain/CLAUDE.md):
 //   < 700 kWp : generador exento / medicion neta — PV credited up to monthly kWh intermedio
 //   >= 700 kWp: autoconsumo — only pct_autoconsumo credited; excedentes at texc (default 0)
-//   BESS      : SAE-CC — discharge only punta weekdays, capped at the bill's punta kWh
+//   BESS      : SAE-CC — discharge only punta DAYS (schedule-aware: SIN wkday +
+//               SIN-winter Sat, BCS/BC summer Sat), capped at the bill's punta kWh
 //   capacidad on kW_punta, distribucion on max(B,I,P), umbral = kWh/(days*24*FC), FC=0.57
 //
 // Plain ESM JS (no TS types) so it runs unchanged under Node (tests) and Deno (edge).
@@ -139,6 +140,21 @@ function day_counts(year, month) {
     else out.DO++;
   }
   return out;
+}
+
+// Schedule-aware punta-day count: days in the month whose day-type (MF/SA/DO)
+// actually carries a punta hour for this division+season — NOT just Mon-Fri.
+// SIN winter Saturdays (19-21) and BCS/BC summer Saturdays have punta; the
+// legacy punta_weekdays() ignored them. Reads the same WINDOWS the whole
+// engine is calibrated on (A/158/2024, cross-checked vs cfe.tarifa_horario).
+export function punta_days(division, year, month) {
+  const dKey = (division || "SIN").toUpperCase();
+  const winKey = (dKey === "BC" || dKey === "BCS" ? dKey : "SIN") + "|" + season(division, month);
+  const win = WINDOWS[winKey];
+  const cnt = day_counts(year, month);
+  let total = 0;
+  for (const td of ["MF", "SA", "DO"]) if (win[td].includes("P")) total += cnt[td];
+  return total;
 }
 
 export function model_split(giro, division, year, month) {
@@ -310,7 +326,7 @@ export function compute(inputs, bills) {
     const bnd_b = kb ? ((b.gen_base || 0.0) / kb + flat) : bnd_i;
     const bnd_p = kp ? ((b.gen_punta || 0.0) / kp + flat) : 0.0;
     const ph = punta_hours(p.division, m);
-    const wd = punta_weekdays(y, m);
+    const wd = punta_days(p.division, y, m);
     const gen = p.kwp * (p.yield_monthly[m] || 0.0);
     let pct_m;
     if (!autoc) pct_m = 1.0;
