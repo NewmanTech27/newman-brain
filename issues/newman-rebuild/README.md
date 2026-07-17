@@ -1,6 +1,6 @@
 # newman-rebuild — GitHub Issues Map
 
-Mirror of all issues in NewmanTech27/newman-rebuild as of 2026-07-15. Full bodies+comments per issue in `issue-NNN.md`; raw dump in `issues-full.json`.
+Mirror of all issues in NewmanTech27/newman-rebuild as of 2026-07-17. Full bodies+comments per issue in `issue-NNN.md`; raw dump in `issues-full.json`.
 
 | # | State | Title | Closed |
 |---|-------|-------|--------|
@@ -127,3 +127,4 @@ Mirror of all issues in NewmanTech27/newman-rebuild as of 2026-07-15. Full bodie
 | [175](issue-175.md) | OPEN | docs: sync stale golden numbers in CFE Brain cfe_savings/README (mario's vault) |  |
 | [180](issue-180.md) | OPEN | rates P2: misbilling detector — bill-derived rates vs published cuotas |  |
 | [181](issue-181.md) | OPEN | rates P3: operationalize cuotas — monthly scrape job + promotion + prod cp backfill |  |
+| [193](issue-193.md) | OPEN | Migration drift: DBs run 20260715* migrations that exist on no git branch |  |

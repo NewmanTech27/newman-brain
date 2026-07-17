@@ -32,3 +32,15 @@ New scope: REBUILD as automated scraper + Supabase-tracked HISTORICAL price stor
 ## Comment by NewmanTech27 (2026-07-15T10:32:52Z)
 
 Backfill v2 live on develop: 14 divisiones × 6 cargos/month (Fijo $/mes, Base/Intermedia/Punta $/kWh, Capacidad/Distribución $/kW — the full GDMTH rate card), ~5 min/month after the #179 speedup, walking 2026→2024 (extend to 2017 next run). Demand charges cross-validate against real bills (see #180 comment).
+
+## Comment by NewmanTech27 (2026-07-16T06:33:54Z)
+
+Backfill state (develop, 2026-07-16): **7,848 cuota rows, 16 divisiones, 87 months 2019-05→2026-07.** 15 divisiones complete across the full span; BAJA CALIFORNIA SUR at 46/87 (its rows were re-scraped after the #197 label-overwrite fix and the pass didn't finish).
+
+Scraper hardening shipped this session: per-card VDM attribution (#183), transient-CDP retry (#195), estado-level rewarm retry (#198), single-card label fix (#197), paged resume-set (#199/#200).
+
+**Stopping the aggressive backfill** — after ~10 supervised restarts the Imperva WAF now throttles sustained sessions (a fresh run hangs in gotoThroughWaf with no hard-block signal). Remaining work, deferred to a WAF-cooled window, is mechanical and non-blocking:
+1. one completion pass to finish BCS (41 months) + extend 2019-04→2017-01 (uses the same idempotent resume; likely needs day-scale spacing between runs, not minute-scale)
+2. copy develop history → prod so the monthly job (#181) continues from a full base (prod currently has only the months its own cron scraped)
+
+The engine/offers pipeline does NOT depend on this table — it's reference data for the misbilling detector (#180) and forward-rate projections. 87 months × 15 divisiones is already sufficient for both.
