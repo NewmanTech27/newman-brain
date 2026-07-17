@@ -15,7 +15,7 @@
 // Numbers-only, deterministic; no external calls, no secrets.
 
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
-import { compute, size_bess_verano } from "./engine.js";
+import { compute, optimize_sizing, size_bess_verano } from "./engine.js";
 import { GEPP } from "./gepp_data.js";
 
 const CORS = {
@@ -41,6 +41,10 @@ const USAGE = {
     "size-bess": {
       body: { mode: "size-bess", bills: "array", hours: "block hours (default 2 = verano)", dod: "default 0.96", rte: "default 0.96" },
       returns: "{ bess_kw, bess_kwh, avg_summer_punta_kw, basis }",
+    },
+    "optimize-sizing": {
+      body: { mode: "optimize-sizing", inputs: "base calc_core inputs", bills: "array", opts: "{ kwp_grid (required), bess_hours?=[1,2,4], bess_grid?, objective?=irr|npv, reject_exced_kwh?, kwp_max?, m2_per_kwp?=4.0 }" },
+      returns: "{ best, ranking, objective, key, sizing_params:{ sweep, kwp_cap, kwp_opt_unconstrained, m2_faltantes, ... } }",
     },
     gepp: {
       body: { mode: "gepp", pv_kwp: "optional {slug:kWp} to layer PV", fp_correction: "optional {slug:bool}" },
@@ -143,6 +147,10 @@ Deno.serve(async (req: Request) => {
     if (mode === "size-bess") {
       if (!Array.isArray(body.bills)) return json({ error: "size-bess requires {bills[]}" }, 400);
       return json(size_bess_verano(body.bills, { hours: body.hours, dod: body.dod, rte: body.rte }));
+    }
+    if (mode === "optimize-sizing") {
+      if (!body.inputs || !Array.isArray(body.bills)) return json({ error: "optimize-sizing requires {inputs, bills[]}" }, 400);
+      return json(optimize_sizing(body.inputs, body.bills, body.opts || {}));
     }
     if (mode === "gepp") return json(runGepp(body));
     return json({ error: `Unknown mode '${mode}'. See GET / for usage.`, usage: USAGE }, 400);

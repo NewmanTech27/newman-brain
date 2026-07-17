@@ -213,6 +213,10 @@ export const DEFAULT_INPUTS = {
   // default: with solar_charge=false the compute() output is bit-for-bit
   // identical to the pre-flag engine (golden gate).
   solar_charge: false,
+  // rev4 per-period PV credit (gap 5, dispatch_cs.sim_month self_per port).
+  // OFF by default: with pv_credit_periods=false the compute() output is
+  // bit-for-bit identical to the monthly-netting aprov=min(usable,ki) path.
+  pv_credit_periods: false,
 };
 
 // ============================================================================
@@ -256,6 +260,39 @@ export function solar_charge_split(curvaKey, year, month, kwh_total, gen_month,
   const cs_day = Math.min(C_day, avail_solar_day);
   const carga_solar = Math.max(0.0, Math.min(cs_day * dias_punta, exceso, exced_month, charge_energy));
   return { carga_solar, exceso };
+}
+
+// ============================================================================
+// rev4 per-period PV credit — dispatch_cs.py sim_month self_per/exc_per port
+// (gap 5, flag-gated)
+// ============================================================================
+// Hourly overlap of the scaled load curve vs the scaled solar bell, labeled by
+// the CFE tariff window (B/I/P) of each hour. Mirrors dispatch_cs.sim_month's
+// per-period accumulation exactly:
+//   self_per[p] = Σ min(load_h, pv_h)   over all days whose window labels hour h as p
+//   exc_per[p]  = Σ max(0, pv_h-load_h) idem
+// self_per.B+I+P is the hourly-derived self-consumption (== autoconsumo_pct's
+// selfc); exc_per.B+I+P is the same `exceso` solar_charge_split computes.
+export function pv_period_split(curvaKey, division, year, month, kwh_total, gen_month) {
+  const curve = CURVES[curvaKey] || CURVES["Otro"];
+  const dKey = (division || "SIN").toUpperCase();
+  const win = WINDOWS[(dKey === "BC" || dKey === "BCS" ? dKey : "SIN") + "|" + season(division, month)];
+  const cnt = day_counts(year, month);
+  const days = cnt.MF + cnt.SA + cnt.DO;
+  let load_units = 0.0;
+  for (const dt of ["MF", "SA", "DO"]) for (let h = 0; h < 24; h++) load_units += curve[dt][h] * cnt[dt];
+  const ls = load_units ? kwh_total / load_units : 0.0;
+  const gs = days ? gen_month / (days * _PV_SUM) : 0.0;
+  const self_per = { B: 0.0, I: 0.0, P: 0.0 }, exc_per = { B: 0.0, I: 0.0, P: 0.0 };
+  for (const dt of ["MF", "SA", "DO"]) {
+    for (let h = 0; h < 24; h++) {
+      const load = curve[dt][h] * ls, pv = PV_BELL[h] * gs;
+      const p = win[dt][h];
+      self_per[p] += Math.min(load, pv) * cnt[dt];
+      exc_per[p] += Math.max(0.0, pv - load) * cnt[dt];
+    }
+  }
+  return { self_per, exc_per };
 }
 
 export function merge_inputs(over) {
@@ -317,9 +354,20 @@ export function compute(inputs, bills) {
     else if (p.pct_mode === "manual") pct_m = p.pct_autoconsumo;
     else pct_m = autoconsumo_pct(p.curva, y, m, kwh_tot, gen);
     const usable = gen * pct_m;
-    const aprov = Math.min(usable, ki);
+    // rev4 per-period PV credit (gap 5, flag-gated; OFF => bit-for-bit legacy
+    // path): hourly self-consumption split B/I/P credited at each period's
+    // bundled rate, replacing monthly netting aprov=min(usable,ki) @ bnd_i.
+    // The hourly frame supersedes pct_autoconsumo (manual or curva): the
+    // credited fraction IS self_tot/gen, dispatch_cs self-basis.
+    let aprov = Math.min(usable, ki), aprov_per = null;
+    if (p.pv_credit_periods) {
+      aprov_per = pv_period_split(p.curva, p.division, y, m, kwh_tot, gen).self_per;
+      aprov = aprov_per.B + aprov_per.I + aprov_per.P;
+    }
     const exced = gen - aprov;
-    const ah_pv = aprov * bnd_i + exced * p.texc;
+    const ah_pv = aprov_per
+      ? aprov_per.B * bnd_b + aprov_per.I * bnd_i + aprov_per.P * bnd_p + exced * p.texc
+      : aprov * bnd_i + exced * p.texc;
     const umb_post = days ? (kwh_tot - aprov) / (days * 24 * p.fc) : 0.0;
     const f_pre = basis_cap;
     const f_prebess = kwp_ === 0 ? umb_post : Math.min(kwp_, umb_post);
@@ -342,7 +390,9 @@ export function compute(inputs, bills) {
       carga_base = carga - carga_solar;
       exced_export = exced - carga_solar; // BESS-absorbed excess is NOT exported
       // three buckets, no double count: aprov@bnd_i + carga_solar@c_oport + exced_export@texc
-      ah_pv_h = aprov * bnd_i + exced_export * p.texc;
+      ah_pv_h = aprov_per
+        ? aprov_per.B * bnd_b + aprov_per.I * bnd_i + aprov_per.P * bnd_p + exced_export * p.texc
+        : aprov * bnd_i + exced_export * p.texc;
       arb = desc * bnd_p - (carga_base * bnd_b + carga_solar * c_oport);
     }
     const s_hib = ah_pv_h + dem_pv + dem_bess_h + arb;
@@ -356,11 +406,12 @@ export function compute(inputs, bills) {
       year: y, month: m, days, kwh_total: kwh_tot, kwh_punta: kp,
       gen, gen_aprov: aprov, exced, desc,
       ah_pv: ah_pv_h, dem_pv, dem_bess_h, arb,
-      pv_only, bess_only, hibrido: hib, pct_ac: pct_m,
+      pv_only, bess_only, hibrido: hib, pct_ac: aprov_per ? (gen ? aprov / gen : 1.0) : pct_m,
       antes, despues_hib: antes - hib,
       pct_hib: antes ? hib / antes : 0.0,
       fp_cargo: b.cargo_fp_penalty || 0.0,
       ...(p.solar_charge ? { carga_solar, carga_base, exced_export, arb_grid } : {}),
+      ...(p.pv_credit_periods ? { aprov_base: aprov_per.B, aprov_inter: aprov_per.I, aprov_punta: aprov_per.P } : {}),
     });
   }
   const n_meses = rows.length;
@@ -380,6 +431,11 @@ export function compute(inputs, bills) {
     annual.exced_export = T("exced_export");
     annual.arb_grid = T("arb_grid");
     annual.solar_charge_bonus = annual.arb - annual.arb_grid; // = Σ carga_solar·(bnd_b − texc) ≥ 0
+  }
+  if (p.pv_credit_periods) {
+    annual.aprov_base = T("aprov_base");
+    annual.aprov_inter = T("aprov_inter");
+    annual.aprov_punta = T("aprov_punta");
   }
   annual.meses = n_meses;
   annual.factor_anual = ann;
@@ -504,4 +560,105 @@ export function size_bess_verano(bills, opts = {}) {
   const power = Math.round(nominal / 2);
   return { bess_kw: power, bess_kwh: nominal, avg_summer_punta_kw: avg_punta,
     basis: `${hours}h × prom. demanda punta verano (m${lo}-${hi}) ${avg_punta.toFixed(0)} kW, 0.5C, DoD ${dod} √RTE` };
+}
+
+// ============================================================================
+// Sizing sweep (gaps 2/4) — optimizeSizing (newman-rebuild engine/sizing.mjs)
+// widened with a bess_hours axis {1,2,4} (sweep_cs.py / probe_bess_scale.py
+// doctrine) + superficie sweep output (sizing_params.sweep, kwp_opt_unconstrained)
+// ============================================================================
+// Search loop only — every candidate is priced through compute(); the flags in
+// `inputs` (solar_charge, pv_credit_periods) apply to every point. Objective =
+// financier IRR ("irr", default) or financier NPV ("npv"), tie-break financier
+// NPV (IRR is scale-invariant across PV-only sizes under a flat yield).
+//   opts.kwp_grid          : candidate kWp values (required; max = roof cap)
+//   opts.bess_hours        : sizing-basis durations, default [1,2,4] (gap 2)
+//   opts.bess_grid         : explicit [{bess_kwh,bess_hours}] — skips seeding
+//   opts.reject_exced_kwh  : reject candidates whose annual exported excess
+//                            exceeds this (exced_export when solar_charge —
+//                            BESS-absorbed excess doesn't count)
+//   opts.kwp_max           : unconstrained-sweep ceiling, default 3× roof cap
+//   opts.m2_per_kwp        : superficie density, default 4.0 (Supuestos!B24)
+// Candidate power tracks the sizing duration: bess_kw = bess_kwh/bess_hours
+// (hours=2 reproduces the engine's 0.5C convention in size_bess_verano).
+export function optimize_sizing(inputs, bills, opts = {}) {
+  const objective = opts.objective ?? "irr";
+  const key = objective === "npv" ? "vpn_financiador" : "tir_financiador";
+  const kwpGrid = opts.kwp_grid;
+  if (!Array.isArray(kwpGrid) || !kwpGrid.length)
+    throw new Error("optimize_sizing: opts.kwp_grid required (candidate kWp from roof cap)");
+  const dod = inputs.dod ?? 0.96, rte = inputs.rte ?? 0.96;
+  const hoursGrid = opts.bess_hours ?? [1, 2, 4];
+  let bessGrid = opts.bess_grid;
+  if (!Array.isArray(bessGrid) || !bessGrid.length) {
+    // gap 2: widened grid — per-duration verano seed ± steps + coarse scale
+    // points (probe_bess_scale SCALES 1.5/2/3), rounded to 100 kWh
+    bessGrid = [{ bess_kwh: 0, bess_hours: 0 }];
+    const seen = new Set(["0|0"]);
+    for (const h of hoursGrid) {
+      const seed = size_bess_verano(bills, { hours: h, dod, rte }).bess_kwh;
+      const kwhs = [seed - 400, seed - 200, seed, seed + 200, seed + 400,
+        Math.round(seed * 1.5 / 100) * 100, seed * 2, seed * 3];
+      for (const kwh of kwhs) {
+        if (kwh <= 0 || seen.has(kwh + "|" + h)) continue;
+        seen.add(kwh + "|" + h);
+        bessGrid.push({ bess_kwh: kwh, bess_hours: h });
+      }
+    }
+  }
+  const score = (kwp, g) => {
+    const bess_kw = g.bess_kwh > 0 ? Math.round(g.bess_kwh / (g.bess_hours || 2)) : 0;
+    const res = compute({ ...inputs, kwp, bess_kw, bess_kwh: g.bess_kwh }, bills);
+    const fin = res.finance.Hibrido;
+    return {
+      kwp, bess_kw, bess_kwh: g.bess_kwh, bess_hours: g.bess_hours,
+      tir_financiador: fin.tir_financiador, vpn_financiador: fin.vpn_financiador,
+      vpn_proyecto: fin.vpn_proyecto, capex: fin.capex,
+      hibrido: res.annual.hibrido,
+      exced: inputs.solar_charge ? res.annual.exced_export : res.annual.exced,
+    };
+  };
+  const admit = (s) => {
+    if (opts.reject_exced_kwh != null && s.exced > opts.reject_exced_kwh) return false;
+    if (s[key] == null) return false; // no IRR => non-financeable
+    return true;
+  };
+  const byObjective = (a, b) => (b[key] - a[key]) || (b.vpn_financiador - a.vpn_financiador);
+  const sweep = [];
+  for (const kwp of kwpGrid) for (const g of bessGrid) {
+    const s = score(kwp, g);
+    if (admit(s)) sweep.push(s);
+  }
+  if (!sweep.length)
+    throw new Error("optimize_sizing: no financeable candidate survived the grid/filters");
+  sweep.sort(byObjective);
+  const best = sweep[0];
+  // gap 4: when the roof cap binds, keep sweeping past it on the same grid
+  // step to find kwp_opt_unconstrained ("faltan N m2" for sales)
+  const cap = Math.max(...kwpGrid);
+  const m2_per_kwp = opts.m2_per_kwp ?? 4.0;
+  let kwp_opt_unconstrained = best.kwp, unconstrained = null;
+  if (best.kwp === cap) {
+    const sorted = [...kwpGrid].sort((a, b) => a - b);
+    const step = sorted.length > 1 ? sorted[sorted.length - 1] - sorted[sorted.length - 2]
+      : Math.max(100.0, Math.round(cap * 0.2 / 100) * 100);
+    const kwp_max = opts.kwp_max ?? cap * 3;
+    let cand = best;
+    for (let kwp = cap + step; kwp <= kwp_max + 1e-9; kwp += step) {
+      const pts = bessGrid.map((g) => score(kwp, g)).filter(admit);
+      if (!pts.length) break; // exced reject killed the whole column — stop
+      pts.sort(byObjective);
+      if (byObjective(pts[0], cand) < 0) { cand = pts[0]; unconstrained = pts[0]; }
+    }
+    kwp_opt_unconstrained = cand.kwp;
+  }
+  const m2_faltantes = Math.max(0.0, (kwp_opt_unconstrained - cap) * m2_per_kwp);
+  return {
+    best, ranking: sweep, objective, key,
+    sizing_params: {
+      sweep, kwp_grid: kwpGrid, bess_grid: bessGrid,
+      kwp_cap: cap, kwp_opt_unconstrained, unconstrained_point: unconstrained,
+      m2_per_kwp, m2_faltantes, bess_hours: hoursGrid,
+    },
+  };
 }
