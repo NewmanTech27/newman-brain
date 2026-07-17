@@ -200,3 +200,16 @@ def curve_payload(division: str) -> dict:
     return dict(curves=CURVES,
                 windows={s: WINDOWS[(key, s)] for s in ("verano", "invierno")},
                 pv_bell=PV_BELL)
+
+
+def punta_days(division, year, month):
+    """Days in the month whose day-type actually carries a punta hour for this
+    division+season (SIN winter Saturdays 19-21, BCS/BC summer Saturdays) — not
+    just Mon-Fri. Reads the same WINDOWS (A/158/2024) the engine is calibrated
+    on; cross-checked vs cfe.tarifa_horario. Replaces the legacy weekday-only
+    count, which understated punta days where weekend punta applies."""
+    dkey = (division or "SIN").upper()
+    dkey = dkey if dkey in ("BC", "BCS") else "SIN"
+    win = WINDOWS[(dkey, season(division, month))]
+    cnt = day_counts(year, month)
+    return sum(cnt[td] for td in ("MF", "SA", "DO") if "P" in win[td])

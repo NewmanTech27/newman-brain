@@ -92,7 +92,8 @@ def compute(inputs: dict, bills: list[dict]) -> dict:
         bnd_b = ((b["gen_base"] or 0.0) / kb + flat) if kb else bnd_i
         bnd_p = ((b["gen_punta"] or 0.0) / kp + flat) if kp else 0.0
         ph = punta_hours(p["division"], m)
-        wd = punta_weekdays(y, m)
+        from load_curves import punta_days as _pd
+        wd = _pd(p["division"], y, m)
         gen = p["kwp"] * p["yield_monthly"].get(m, 0.0)
         if not autoc:
             pct_m = 1.0
