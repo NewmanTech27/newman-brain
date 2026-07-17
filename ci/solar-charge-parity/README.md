@@ -62,3 +62,32 @@ which punta-day basis governs GEPP re-quotes is part of the #5/#1 TIR decision
 (prototype PPA k solved at combined investor TIR 14.0%, `solve_k_cs.json`; prod
 `pipeline.config ppa_target_irr` = 19%) — recorded open, not forced by this
 harness.
+
+## Gaps 2/4/5 sibling harness (issue #2)
+
+```
+python3 ci/solar-charge-parity/run_gaps.py
+```
+
+Same fixture, same doctrine, for the remaining ported gaps — gap 2 (sizing
+sweep, `optimize_sizing` with the `bess_hours` {1,2,4} axis), gap 4
+(superficie sweep output: `sizing_params.sweep`, `kwp_opt_unconstrained`,
+`m2_faltantes`) and gap 5 (per-period PV credit, `pv_credit_periods` flag):
+
+| # | Check | Tolerance | Result 2026-07-17 |
+|---|-------|-----------|-------------------|
+| B1 | `pv_period_split()` vs `sim_month()` self/exc per B/I/P, 7×12 | 1e-6 kWh | PASS (worst 7.3e-10) |
+| B2 | `compute(pv_credit_periods:true)` credit identity + flag inert vs `baseline_off.json` | 0.01 MXN / bit-for-bit | PASS (worst 1.2e-9 MXN) |
+| B5 | both flags: `aprov + carga_solar + exced_export == gen` monthly; bonus pins | 1e-6 kWh / ±$2 | PASS (bonus pins identical to A3 — the exced cap never binds here) |
+| B3a | `solar_charge_split()` vs `sim_month()` at BESS scales ×{1,1.5,2,3} | 1e-6 kWh | PASS (worst 8.6e-10) |
+| B3b | sweep grid integrity: {1,2,4} h seeds, `bess_kw = kwh/hours`, ranking order, `sizing_params.sweep == ranking` | exact | PASS (4h seeds at pr2/tap IRR-filtered as non-financeable — in grid, out of ranking) |
+| B3c/B4 | engine-own pins: free-run best + rev4-run `kwp_opt_unconstrained` / `m2_faltantes` | 0.5 kWp / 1e-4 TIR | PASS (cap binds 2/7 sites: pro faltan 27,716 m², tap 8,022 m²) |
+
+Why B3c/B4 pin engine numbers instead of diffing prototype optima:
+`sweep_cs.py` / `probe_bess_scale.py` optimize CLIENT ahorro with the PPA k
+re-solved per point at combined investor TIR **14.0%** (gap 3 — deal-solved
+PPA — shipped separately at TIR 19% via `pipeline.config ppa_target_irr`,
+excluded from #2), and charge over the book's billing-period `dias_punta`;
+`optimize_sizing` prices at the FIXED input PPA, ranks by financier IRR/NPV,
+and rides the engine's calendar `punta_weekdays`. Optima are not comparable by
+design; the shared per-point physics IS compared, exactly (B1/B3a).
