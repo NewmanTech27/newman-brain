@@ -124,6 +124,16 @@ two-option `.opname`). Lessons:
 ## Naming
 `<Cliente> - Solucion Energetica[ vN].html` — matches the AFC/GEPP convention.
 
+## Build-time inputs (`scripts/` — issue #3)
+When building from `crm.bill` + `design.current_offer` (no rev2 workbook), generate the
+MODEL gaps with `scripts/build_deck_inputs.py OFFER.json --target-irr X --punta-basis B`:
+régimen dual-run Op1/Op2 (single-option fallback <700 kWp), PPA terms from the pricer,
+20-yr projection, synthetic despacho 24 h (ALWAYS keep its "ilustrativo" footnote), and
+the 12-mo baseline. `--target-irr` (0.14 vs 0.19) and `--punta-basis` (billing vs
+calendar) are OPEN decisions — required flags, no default; both variants' GEPP numbers
+live in `scripts/baselines.json`. Gate before use: `python3 scripts/golden_test.py`
+(pins vs the delivered GEPP rev3/rev4 books + deck).
+
 ## Assets
 - `assets/template_gepp_v5.html` — **canonical reference** (built GEPP v5: montaña
   cover-band, ZONA FOTOS system + all 7 data-photo blocks, Trayectoria mosaic, cierre

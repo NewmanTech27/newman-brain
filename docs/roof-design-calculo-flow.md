@@ -106,19 +106,23 @@ against `design.current_offer.engine_output`):
 | PV kWp, BESS kW/kWh | `current_offer.pv_kwp/bess_kwh`, `engine_output.bess_kw` | available |
 | ahorro año-1 $ / %, TIR/VPN/payback/capex | `ahorro_mxn/ahorro_pct/tir/payback_years`, `engine_output.finance.*` | available |
 | modelo mensual | `engine_output.monthly[]` | available |
-| régimen (Op1 vs Op2 selector) | `engine_output.regimen` — ONE regime per offer | needs 2 engine runs (or single-option deck) |
-| PPA price/pago/participación | nowhere — pricer stage only | **missing** |
-| proyección 20 años | derivable (monthly + escalations +7%/5.5%/4%) | build-time script |
-| despacho 24 h inv/ver | engine emits monthly only | synthetic fallback or engine ext (gap 1 frame) |
+| régimen (Op1 vs Op2 selector) | `skills/solucion-deck/scripts/` dual-run (2× calc_core, single-option fallback <700 kWp) | built (#3) |
+| PPA price/pago/participación | pricer port (`ppa_pricer` / book k-solve), target-TIR parameterized — 14 vs 19 OPEN | built (#3) |
+| proyección 20 años | `scripts/` build-time (anchors + Supuestos escalations; golden vs rev4 deck) | built (#3) |
+| despacho 24 h inv/ver | `scripts/` synthetic typical-day, footnoted "ilustrativo"; punta basis billing/calendar OPEN | built (#3) |
 | superficie disponible | `crm.rpu_config.superficie_m2` — now populated by /roof saves | available (new) |
 
 **"Generar propuesta" from Tuesday — adoption plan (bounded, ~2–4 d, not
 implemented)**: button on the deal/RPU → endpoint (mini FastAPI or a Tuesday
 route) → query oioy (client, bills 12 m, latest offer, roof_fit) → MODEL JSON →
 inject into `assets/template_gepp_v2.html` → node+DOM-stub QA → upload to the
-client Drive folder → link back. Missing pieces to build: PPA-pricing port,
+client Drive folder → link back. The four missing pieces (PPA-pricing port,
 20-yr projection script, single-option fallback, synthetic despacho footnoted
-as ilustrativo.
+as ilustrativo) shipped in `skills/solucion-deck/scripts/` (issue #3;
+`build_deck_inputs.py` = offer JSON → MODEL fragment, `golden_test.py` = gates
+vs the delivered GEPP rev3/rev4 books). Target TIR (14 vs 19) and punta-day
+basis (billing vs calendar) stay parameterized — both required CLI flags, both
+variants pinned in `scripts/baselines.json` for the decision-maker.
 
 ## Evidence / deploys
 

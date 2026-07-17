@@ -1,0 +1,975 @@
+{
+ "ppa_book_matrix": {
+  "billing_tir19": {
+   "op1": {
+    "k": 1.4818334142880032,
+    "irr": 0.18999999999999917,
+    "price_ixt": 1.9038938506985525,
+    "ixt_neto_anio1": 4762919.093572539,
+    "ixt_van_cliente": 66731175.95312076
+   },
+   "op2": {
+    "k": 1.6783099799165555,
+    "irr": 0.18999999999999917,
+    "price_ixt": 2.5227754647274763,
+    "ixt_neto_anio1": 4537941.595123902,
+    "ixt_van_cliente": 49909979.33924874
+   }
+  },
+  "calendar_tir14": {
+   "op1": {
+    "k": 1.0259479721859477,
+    "irr": 0.1400000000000019,
+    "price_ixt": 1.3181616884513312,
+    "ixt_neto_anio1": 9648265.942634122,
+    "ixt_van_cliente": 106385366.7878966
+   },
+   "op2": {
+    "k": 1.0280930462580316,
+    "irr": 0.13999999999999668,
+    "price_ixt": 1.5453926530816715,
+    "ixt_neto_anio1": 5928852.801014184,
+    "ixt_van_cliente": 61127736.80700337
+   }
+  },
+  "calendar_tir19": {
+   "op1": {
+    "k": 1.4983393379326926,
+    "irr": 0.18999999999999917,
+    "price_ixt": 1.9251010432373463,
+    "ixt_neto_anio1": 4474672.260211203,
+    "ixt_van_cliente": 64194708.99835719
+   },
+   "op2": {
+    "k": 1.7065194555899368,
+    "irr": 0.1900000000000044,
+    "price_ixt": 2.56517893843212,
+    "ixt_neto_anio1": 4402085.590942522,
+    "ixt_van_cliente": 48676949.822460726
+   }
+  }
+ },
+ "dual_run_ixt": {
+  "op1": {
+   "regimen": "AUTOCONSUMO interconectado 0.7–20 MW — permiso SIMPLIFICADO CNE (Núm. 2.2 DACG)",
+   "antes": 53473849.49967345,
+   "hibrido": 28233535.761477552,
+   "pct": 0.5279877178404739
+  },
+  "op2": {
+   "regimen": "GENERADOR EXENTO — Medición Neta (sin permiso; Art. 30 LSE; RES/142/2017)",
+   "kwp": 699.9,
+   "hibrido": 15236741.06413071
+  }
+ },
+ "ppa_engine_ixt": {
+  "tir14": {
+   "precio_ppa": 1.7132486860192389,
+   "participacion": 0.5,
+   "pago_anio1": 15718180.61080493,
+   "cliente_anio1": 8316655.980265756,
+   "tir_financiador": 0.1399999999999998
+  },
+  "tir19": {
+   "precio_ppa": 2.222177892956318,
+   "participacion": 0.5,
+   "pago_anio1": 20387345.83943123,
+   "cliente_anio1": 3647490.7516394565,
+   "tir_financiador": 0.19000000000000006
+  }
+ },
+ "despacho_synthetic_ixt": {
+  "billing": {
+   "inv": {
+    "prof": [
+     {
+      "h": 0,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 1,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 2,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 3,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 4,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 5,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 6,
+      "per": "Intermedio",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2632.65
+     },
+     {
+      "h": 7,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2925.17
+     },
+     {
+      "h": 8,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 786.39,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2138.78
+     },
+     {
+      "h": 9,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 1519.2,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1405.97
+     },
+     {
+      "h": 10,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2148.47,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 776.7
+     },
+     {
+      "h": 11,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2631.32,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 293.85
+     },
+     {
+      "h": 12,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2934.86,
+      "chg": -9.69,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 13,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 3038.39,
+      "chg": -113.22,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 14,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2934.86,
+      "chg": -9.69,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 15,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2631.32,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 293.85
+     },
+     {
+      "h": 16,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2148.47,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 776.7
+     },
+     {
+      "h": 17,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 1519.2,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1405.97
+     },
+     {
+      "h": 18,
+      "per": "Punta",
+      "carga": 2925.17,
+      "pv": 786.39,
+      "chg": 0.0,
+      "dis": 1260.02,
+      "neta": 878.76
+     },
+     {
+      "h": 19,
+      "per": "Punta",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 1900.15,
+      "neta": 878.76
+     },
+     {
+      "h": 20,
+      "per": "Punta",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 1900.15,
+      "neta": 878.76
+     },
+     {
+      "h": 21,
+      "per": "Punta",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 1900.15,
+      "neta": 878.76
+     },
+     {
+      "h": 22,
+      "per": "Intermedio",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2778.91
+     },
+     {
+      "h": 23,
+      "per": "Intermedio",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2778.91
+     }
+    ],
+    "lect": "Despacho ilustrativo — curva de giro escalada al recibo mensual + campana solar sintética, sin medición 15-minutal (prefactibilidad).",
+    "design_month": "2025-12"
+   },
+   "ver": {
+    "prof": [
+     {
+      "h": 0,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 1,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 2,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 3,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 4,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 5,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 6,
+      "per": "Intermedio",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2659.6
+     },
+     {
+      "h": 7,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2955.11
+     },
+     {
+      "h": 8,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 924.51,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2030.6
+     },
+     {
+      "h": 9,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 1786.01,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1169.1
+     },
+     {
+      "h": 10,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 2525.8,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 429.31
+     },
+     {
+      "h": 11,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3093.46,
+      "chg": -138.35,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 12,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3450.3,
+      "chg": -495.2,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 13,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3572.02,
+      "chg": -616.91,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 14,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3450.3,
+      "chg": -495.2,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 15,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3093.46,
+      "chg": -138.35,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 16,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 2525.8,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 429.31
+     },
+     {
+      "h": 17,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 1786.01,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1169.1
+     },
+     {
+      "h": 18,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 924.51,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2030.6
+     },
+     {
+      "h": 19,
+      "per": "Intermedio",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2807.35
+     },
+     {
+      "h": 20,
+      "per": "Punta",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 2688.16,
+      "neta": 119.19
+     },
+     {
+      "h": 21,
+      "per": "Punta",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 2688.16,
+      "neta": 119.19
+     },
+     {
+      "h": 22,
+      "per": "Intermedio",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2807.35
+     },
+     {
+      "h": 23,
+      "per": "Intermedio",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2807.35
+     }
+    ],
+    "lect": "Despacho ilustrativo — curva de giro escalada al recibo mensual + campana solar sintética, sin medición 15-minutal (prefactibilidad).",
+    "design_month": "2025-05"
+   }
+  },
+  "calendar": {
+   "inv": {
+    "prof": [
+     {
+      "h": 0,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 1,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 2,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 3,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 4,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 5,
+      "per": "Base",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": -1186.31,
+      "dis": 0.0,
+      "neta": 3818.97
+     },
+     {
+      "h": 6,
+      "per": "Intermedio",
+      "carga": 2632.65,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2632.65
+     },
+     {
+      "h": 7,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2925.17
+     },
+     {
+      "h": 8,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 786.39,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2138.78
+     },
+     {
+      "h": 9,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 1519.2,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1405.97
+     },
+     {
+      "h": 10,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2148.47,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 776.7
+     },
+     {
+      "h": 11,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2631.32,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 293.85
+     },
+     {
+      "h": 12,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2934.86,
+      "chg": -9.69,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 13,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 3038.39,
+      "chg": -113.22,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 14,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2934.86,
+      "chg": -9.69,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 15,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2631.32,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 293.85
+     },
+     {
+      "h": 16,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 2148.47,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 776.7
+     },
+     {
+      "h": 17,
+      "per": "Intermedio",
+      "carga": 2925.17,
+      "pv": 1519.2,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1405.97
+     },
+     {
+      "h": 18,
+      "per": "Punta",
+      "carga": 2925.17,
+      "pv": 786.39,
+      "chg": 0.0,
+      "dis": 1260.02,
+      "neta": 878.76
+     },
+     {
+      "h": 19,
+      "per": "Punta",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 1900.15,
+      "neta": 878.76
+     },
+     {
+      "h": 20,
+      "per": "Punta",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 1900.15,
+      "neta": 878.76
+     },
+     {
+      "h": 21,
+      "per": "Punta",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 1900.15,
+      "neta": 878.76
+     },
+     {
+      "h": 22,
+      "per": "Intermedio",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2778.91
+     },
+     {
+      "h": 23,
+      "per": "Intermedio",
+      "carga": 2778.91,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2778.91
+     }
+    ],
+    "lect": "Despacho ilustrativo — curva de giro escalada al recibo mensual + campana solar sintética, sin medición 15-minutal (prefactibilidad).",
+    "design_month": "2025-12"
+   },
+   "ver": {
+    "prof": [
+     {
+      "h": 0,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 1,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 2,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 3,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 4,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 5,
+      "per": "Base",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": -894.41,
+      "dis": 0.0,
+      "neta": 3554.01
+     },
+     {
+      "h": 6,
+      "per": "Intermedio",
+      "carga": 2659.6,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2659.6
+     },
+     {
+      "h": 7,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2955.11
+     },
+     {
+      "h": 8,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 924.51,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2030.6
+     },
+     {
+      "h": 9,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 1786.01,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1169.1
+     },
+     {
+      "h": 10,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 2525.8,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 429.31
+     },
+     {
+      "h": 11,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3093.46,
+      "chg": -138.35,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 12,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3450.3,
+      "chg": -495.2,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 13,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3572.02,
+      "chg": -616.91,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 14,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3450.3,
+      "chg": -495.2,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 15,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 3093.46,
+      "chg": -138.35,
+      "dis": 0.0,
+      "neta": 0.0
+     },
+     {
+      "h": 16,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 2525.8,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 429.31
+     },
+     {
+      "h": 17,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 1786.01,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 1169.1
+     },
+     {
+      "h": 18,
+      "per": "Intermedio",
+      "carga": 2955.11,
+      "pv": 924.51,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2030.6
+     },
+     {
+      "h": 19,
+      "per": "Intermedio",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2807.35
+     },
+     {
+      "h": 20,
+      "per": "Punta",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 2807.35,
+      "neta": 0.0
+     },
+     {
+      "h": 21,
+      "per": "Punta",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 2807.35,
+      "neta": 0.0
+     },
+     {
+      "h": 22,
+      "per": "Intermedio",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2807.35
+     },
+     {
+      "h": 23,
+      "per": "Intermedio",
+      "carga": 2807.35,
+      "pv": 0.0,
+      "chg": 0.0,
+      "dis": 0.0,
+      "neta": 2807.35
+     }
+    ],
+    "lect": "Despacho ilustrativo — curva de giro escalada al recibo mensual + campana solar sintética, sin medición 15-minutal (prefactibilidad).",
+    "design_month": "2025-05"
+   }
+  }
+ }
+}
