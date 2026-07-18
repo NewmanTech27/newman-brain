@@ -1,3 +1,13 @@
+> **⚠️ FROZEN — 2026-07-19.** This repo is vendored into
+> [`NewmanTech27/newman-rebuild`](https://github.com/NewmanTech27/newman-rebuild)
+> (PR [#240](https://github.com/NewmanTech27/newman-rebuild/pull/240), issue #239):
+> the physics engine now lives at `engine/core/` and the knowledge base at `brain/`
+> (see `brain/IMPORT-MANIFEST.md` there for what moved and what was skipped).
+> **Do not commit here — newman-rebuild is the single source of truth.**
+> This repo remains as a read-only historical reference.
+
+---
+
 # newman-brain
 
 The CFE Brain logic, as code. This repo is the home for the deterministic engines behind the
